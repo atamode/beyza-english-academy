@@ -1,4 +1,4 @@
-const CACHE="beyza-english-8fcd3a650344-deploy-20260628-222124";
+const CACHE="beyza-english-dc588f696349";
 const ASSETS=[
   "./",
   "index.html",
@@ -28,6 +28,7 @@ const ASSETS=[
   "data/diagnostic-test.json",
   "data/module1-review.json",
   "data/module2-review.json",
+  "data/module3-review.json",
   "data/vocabulary.json",
   "assets/icons/icon.svg",
   "data/lessons/000-quick-start.json",
@@ -45,7 +46,13 @@ const ASSETS=[
   "data/lessons/012-short-answers.json",
   "data/lessons/013-adverbs-frequency.json",
   "data/lessons/014-time-daily-routine.json",
-  "data/lessons/015-hobbies-preferences.json"
+  "data/lessons/015-hobbies-preferences.json",
+  "data/lessons/016-there-is-there-are.json",
+  "data/lessons/017-prepositions-place.json",
+  "data/lessons/018-describing-room.json",
+  "data/lessons/019-places-town.json",
+  "data/lessons/020-giving-directions.json",
+  "data/lessons/021-imperatives.json"
 ];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));

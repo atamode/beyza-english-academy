@@ -1,5 +1,5 @@
 {
-  "sprint": 2.3,
+  "sprint": 2.4,
   "modules": [
     {
       "id": "module-0",
@@ -174,6 +174,73 @@
           "status": "published",
           "prerequisites": [
             "014-time-daily-routine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Ev ve ?ehir",
+      "description": "There is/are, yer edatlar?, oda tasviri, ?ehir yerleri, yol tarifi ve talimatlar",
+      "lessons": [
+        {
+          "id": "016-there-is-there-are",
+          "order": 16,
+          "title": "There is / There are",
+          "file": "data/lessons/016-there-is-there-are.json",
+          "status": "published",
+          "prerequisites": [
+            "015-hobbies-preferences"
+          ]
+        },
+        {
+          "id": "017-prepositions-place",
+          "order": 17,
+          "title": "Prepositions of Place",
+          "file": "data/lessons/017-prepositions-place.json",
+          "status": "published",
+          "prerequisites": [
+            "016-there-is-there-are"
+          ]
+        },
+        {
+          "id": "018-describing-room",
+          "order": 18,
+          "title": "Describing a Room",
+          "file": "data/lessons/018-describing-room.json",
+          "status": "published",
+          "prerequisites": [
+            "017-prepositions-place"
+          ]
+        },
+        {
+          "id": "019-places-town",
+          "order": 19,
+          "title": "Places in Town",
+          "file": "data/lessons/019-places-town.json",
+          "status": "published",
+          "prerequisites": [
+            "018-describing-room"
+          ]
+        },
+        {
+          "id": "020-giving-directions",
+          "order": 20,
+          "title": "Giving Directions",
+          "file": "data/lessons/020-giving-directions.json",
+          "status": "published",
+          "prerequisites": [
+            "019-places-town"
+          ]
+        },
+        {
+          "id": "021-imperatives",
+          "order": 21,
+          "title": "Imperatives",
+          "file": "data/lessons/021-imperatives.json",
+          "status": "published",
+          "prerequisites": [
+            "020-giving-directions"
           ]
         }
       ]

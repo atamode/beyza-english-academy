@@ -1,0 +1,555 @@
+{
+  "id": "module-3-review",
+  "moduleId": "module-3",
+  "title": "Modül 3 Genel Tekrar",
+  "description": "016–021 derslerindeki ev, şehir, yer ve yön konularını ölçer.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "m3r01",
+      "type": "multiple-choice",
+      "topicTag": "there-is-are",
+      "topicLabel": "There is / There are",
+      "title": "Tekil varlık",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "___ a net in the middle of the court.",
+        "options": [
+          "There is",
+          "There are",
+          "Are there",
+          "There aren't"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 'A net' tekildir; bu yüzden 'There is' kullanılır.",
+          "'There are' çoğul isimlerle kullanılır; burada bir file var.",
+          "'Are there' soru başlatır; cümle düz olumlu cümle.",
+          "'There aren't' olumsuz ve çoğul yapıdır; anlamı bozar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r02",
+      "type": "multiple-choice",
+      "topicTag": "there-is-are",
+      "topicLabel": "There is / There are",
+      "title": "Çoğul varlık",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "Look! ___ three posters on the wall.",
+        "options": [
+          "There is",
+          "There are",
+          "Is there",
+          "There isn't"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "'Three posters' çoğuldur; 'There is' tekil için kullanılır.",
+          "Doğru. Üç poster çoğul olduğu için 'There are' gerekir.",
+          "'Is there' tekil soru yapısıdır; burada düz cümle var.",
+          "'There isn't' tekil olumsuzdur; hem sayı hem anlam yanlış olur."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r03",
+      "type": "fill-blank",
+      "topicTag": "there-is-are",
+      "topicLabel": "There is / There are",
+      "title": "Olumsuz varlık",
+      "instructionTr": "Boşluğu tamamla.",
+      "content": {
+        "prompt": "There ___ any players in the room.",
+        "acceptedAnswers": [
+          "aren't",
+          "are not"
+        ],
+        "hintTr": "Any players çoğuldur; olumsuzda aren't kullanılır.",
+        "feedbackCorrectTr": "Doğru. 'Players' çoğul olduğu için 'There aren't' uygundur.",
+        "feedbackIncorrectTr": "'Players' çoğul olduğundan 'isn't' değil 'aren't' gerekir."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r04",
+      "type": "sentence-order",
+      "topicTag": "there-is-are",
+      "topicLabel": "There is / There are",
+      "title": "Soru kur",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "Are",
+          "there",
+          "two",
+          "singers",
+          "on",
+          "the",
+          "stage"
+        ],
+        "answer": "Are there two singers on the stage?",
+        "feedbackCorrectTr": "Doğru. Çoğul soruda 'Are there...' ile başlanır.",
+        "feedbackIncorrectTr": "İki şarkıcı çoğul olduğu için soru 'Are there' ile başlamalı."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r05",
+      "type": "multiple-choice",
+      "topicTag": "prepositions-place",
+      "topicLabel": "Yer edatları",
+      "title": "İçinde mi üstünde mi?",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "The ticket is ___ the bag. Open the bag and take it.",
+        "options": [
+          "in",
+          "on",
+          "behind",
+          "between"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. Çantayı açıp almak gerekiyorsa bilet çantanın içindedir.",
+          "'On' yüzey üstünde demektir; çantayı açma ipucu 'in' ister.",
+          "'Behind' arkasında demektir; açma ipucuyla uyuşmaz.",
+          "'Between' iki şeyin arasında demektir; burada iki nesne yok."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r06",
+      "type": "multiple-choice",
+      "topicTag": "prepositions-place",
+      "topicLabel": "Yer edatları",
+      "title": "Duvar yüzeyi",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "The Manifest poster is ___ the wall.",
+        "options": [
+          "in",
+          "under",
+          "on",
+          "between"
+        ],
+        "correctIndex": 2,
+        "explanationsTr": [
+          "Poster duvarın içinde olmaz; yüzeye asılır.",
+          "'Under' altında demektir; poster için verilen yer duvar yüzeyi.",
+          "Doğru. Poster, resim ve saat gibi şeyler duvarın üzerinde 'on' olur.",
+          "'Between' iki şey arasında kullanılır; burada tek duvar var."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r07",
+      "type": "fill-blank",
+      "topicTag": "prepositions-place",
+      "topicLabel": "Yer edatları",
+      "title": "Yanında",
+      "instructionTr": "Boşluğu tamamla.",
+      "content": {
+        "prompt": "The microphone is ___ the guitar.",
+        "acceptedAnswers": [
+          "next to"
+        ],
+        "hintTr": "'Next to' bitişiğinde/yanında demektir.",
+        "feedbackCorrectTr": "Doğru. 'Next to the guitar' gitarın yanında anlamına gelir.",
+        "feedbackIncorrectTr": "'Next' tek başına yer edatı olmaz; 'next to' gerekir."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r08",
+      "type": "error-find",
+      "topicTag": "prepositions-place",
+      "topicLabel": "Yer edatları",
+      "title": "Hatalı edat",
+      "instructionTr": "Hatalı bölümü bul ve düzelt.",
+      "content": {
+        "sentence": "The poster is in the wall.",
+        "error": "in",
+        "correction": "on",
+        "explanationTr": "Poster duvarın içine girmez; yüzeye asıldığı için 'on the wall' kullanılır."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r09",
+      "type": "multiple-choice",
+      "topicTag": "describing-room",
+      "topicLabel": "Oda tasviri",
+      "title": "Oda tasviri",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "My desk is ___ the window, so I can see the garden.",
+        "options": [
+          "next to",
+          "under",
+          "in",
+          "between of"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. Pencerenin yanında anlamı için 'next to' kullanılır.",
+          "'Under the window' pencerenin altında demektir; görme ipucu yanındayı destekler.",
+          "'In the window' doğal oda tasviri değildir.",
+          "'Between of' yanlış yapıdır; between'den sonra of gelmez."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r10",
+      "type": "fill-blank",
+      "topicTag": "describing-room",
+      "topicLabel": "Oda tasviri",
+      "title": "Room kelimesi",
+      "instructionTr": "Boşluğu tamamla.",
+      "content": {
+        "prompt": "There is a small ___ next to my bed.",
+        "acceptedAnswers": [
+          "lamp"
+        ],
+        "hintTr": "Yatağın yanında olabilecek küçük eşya: lamp.",
+        "feedbackCorrectTr": "Doğru. 'A small lamp' tekil ve oda eşyasıdır.",
+        "feedbackIncorrectTr": "Bu cümlede oda eşyası ve tekil isim gerekir; kaynak kelime 'lamp'."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r11",
+      "type": "sentence-order",
+      "topicTag": "describing-room",
+      "topicLabel": "Oda tasviri",
+      "title": "Oda cümlesi",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "There",
+          "is",
+          "a",
+          "carpet",
+          "on",
+          "the",
+          "floor"
+        ],
+        "answer": "There is a carpet on the floor.",
+        "feedbackCorrectTr": "Doğru. Tekil halı için 'There is' ve yer için 'on the floor' kullanılır.",
+        "feedbackIncorrectTr": "Cümle tekil varlıkla başlar: There is a carpet..."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r12",
+      "type": "multiple-choice",
+      "topicTag": "describing-room",
+      "topicLabel": "Oda tasviri",
+      "title": "Kısa okuma ipucu",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "A bed, a desk and a wardrobe are room words. Which one is NOT a room word?",
+        "options": [
+          "wardrobe",
+          "stadium",
+          "desk",
+          "bed"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "Wardrobe oda eşyasıdır; yanlış seçenek değildir.",
+          "Doğru. Stadium şehir/spor yeridir, oda eşyası değildir.",
+          "Desk oda eşyasıdır.",
+          "Bed oda eşyasıdır."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r13",
+      "type": "multiple-choice",
+      "topicTag": "places-town",
+      "topicLabel": "Şehirdeki yerler",
+      "title": "Şehir yeri",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "You watch films at the ___.",
+        "options": [
+          "hospital",
+          "cinema",
+          "school",
+          "music shop"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "Hospital hastane demektir; film izleme yeri değildir.",
+          "Doğru. Film izlenen yer 'cinema'dır.",
+          "School öğrenme yeridir; film izleme ipucu cinema ister.",
+          "Music shop müzik aleti/ürün yeri olabilir; film için cinema gerekir."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r14",
+      "type": "fill-blank",
+      "topicTag": "places-town",
+      "topicLabel": "Şehirdeki yerler",
+      "title": "Spor yeri",
+      "instructionTr": "Boşluğu tamamla.",
+      "content": {
+        "prompt": "Beyza watches a volleyball match at the sports ___.",
+        "acceptedAnswers": [
+          "centre",
+          "center"
+        ],
+        "hintTr": "İngiliz İngilizcesinde sports centre yazılır.",
+        "feedbackCorrectTr": "Doğru. Kaynak yazım 'sports centre'dır.",
+        "feedbackIncorrectTr": "Bu kalıp 'sports centre' şeklindedir; İngiliz İngilizcesinde centre yazımı tercih edilir."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r15",
+      "type": "error-find",
+      "topicTag": "places-town",
+      "topicLabel": "Şehirdeki yerler",
+      "title": "Yer adı hatası",
+      "instructionTr": "Hatalı bölümü bul ve düzelt.",
+      "content": {
+        "sentence": "The cinema is next the park.",
+        "error": "next",
+        "correction": "next to",
+        "explanationTr": "Yer belirtirken 'next' tek başına kullanılmaz; 'next to the park' gerekir."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r16",
+      "type": "matching",
+      "topicTag": "places-town",
+      "topicLabel": "Şehirdeki yerler",
+      "title": "Eşleştirme",
+      "instructionTr": "Yerleri işlevleriyle eşleştir.",
+      "content": {
+        "pairs": [
+          {
+            "left": "hospital",
+            "right": "see a doctor"
+          },
+          {
+            "left": "music shop",
+            "right": "buy a guitar"
+          },
+          {
+            "left": "park",
+            "right": "walk outside"
+          },
+          {
+            "left": "stadium",
+            "right": "watch a match"
+          }
+        ],
+        "feedbackCorrectTr": "Doğru. Her yer kendi işleviyle eşleşti.",
+        "feedbackIncorrectTr": "Yer adının günlük işlevini düşün: hospital doktor, music shop gitar, stadium maç."
+      },
+      "points": 5
+    },
+    {
+      "id": "m3r17",
+      "type": "multiple-choice",
+      "topicTag": "directions",
+      "topicLabel": "Yol tarifi",
+      "title": "Yol tarifi",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "'Dümdüz git' İngilizcede hangisidir?",
+        "options": [
+          "Turn right",
+          "Go straight on",
+          "Go past",
+          "On the left"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "Bu sağa dön demektir.",
+          "Doğru. 'Go straight on' dümdüz git demektir.",
+          "Bu bir yeri geç demektir.",
+          "Bu sağ/sol tarafta yapısıdır, hareket talimatı değildir."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r18",
+      "type": "fill-blank",
+      "topicTag": "directions",
+      "topicLabel": "Yol tarifi",
+      "title": "Get to kalıbı",
+      "instructionTr": "Boşluğu tamamla.",
+      "content": {
+        "prompt": "How do I ___ to the stadium?",
+        "acceptedAnswers": [
+          "get"
+        ],
+        "hintTr": "Yol sorma kalıbı: How do I get to...?",
+        "feedbackCorrectTr": "Doğru. 'How do I get to...' bir yere nasıl gidileceğini sorar.",
+        "feedbackIncorrectTr": "Bu kalıpta 'goes' veya 'turn' değil 'get' kullanılır."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r19",
+      "type": "sentence-order",
+      "topicTag": "directions",
+      "topicLabel": "Yol tarifi",
+      "title": "Yön sırala",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "Go",
+          "past",
+          "the",
+          "cinema",
+          "and",
+          "turn",
+          "left"
+        ],
+        "answer": "Go past the cinema and turn left.",
+        "feedbackCorrectTr": "Doğru. Önce bir yeri geç, sonra sola dön talimatı verilir.",
+        "feedbackIncorrectTr": "Yol tarifinde 'Go past...' kalıbı birlikte durmalı."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r20",
+      "type": "error-find",
+      "topicTag": "directions",
+      "topicLabel": "Yol tarifi",
+      "title": "Left/right hatası",
+      "instructionTr": "Hatalı bölümü bul ve düzelt.",
+      "content": {
+        "sentence": "Turn to left at the school.",
+        "error": "to left",
+        "correction": "left",
+        "explanationTr": "Yön verirken 'turn left/right' deriz; left'ten önce 'to' gelmez."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r21",
+      "type": "multiple-choice",
+      "topicTag": "imperatives",
+      "topicLabel": "Emir ve talimatlar",
+      "title": "Olumlu talimat",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "___ the ball to the captain!",
+        "options": [
+          "Pass",
+          "Passes",
+          "Passing",
+          "To pass"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. Emir cümlesi yalın fiille başlar.",
+          "'-s' üçüncü tekil ekidir; emir cümlesinde kullanılmaz.",
+          "'-ing' talimat başlatmaz.",
+          "'To pass' mastardır; doğrudan talimat için yalın fiil gerekir."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r22",
+      "type": "multiple-choice",
+      "topicTag": "imperatives",
+      "topicLabel": "Emir ve talimatlar",
+      "title": "Olumsuz talimat",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "content": {
+        "prompt": "The baby is sleeping. ___ shout.",
+        "options": [
+          "Doesn't",
+          "Don't",
+          "No",
+          "Aren't"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "Doesn't üçüncü tekil olumsuzdur; emir cümlesi için kullanılmaz.",
+          "Doğru. Olumsuz talimatlar 'Don't + fiil' ile kurulur.",
+          "No tek başına fiili olumsuz yapmaz.",
+          "Aren't be fiilidir; shout eylemini yasaklamaz."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r23",
+      "type": "fill-blank",
+      "topicTag": "imperatives",
+      "topicLabel": "Emir ve talimatlar",
+      "title": "Dinle talimatı",
+      "instructionTr": "Boşluğu tamamla.",
+      "content": {
+        "prompt": "___ to the teacher carefully.",
+        "acceptedAnswers": [
+          "listen"
+        ],
+        "hintTr": "Talimatlar fiilin yalın hâliyle başlar.",
+        "feedbackCorrectTr": "Doğru. 'Listen to...' doğru talimat yapısıdır.",
+        "feedbackIncorrectTr": "'Listens/listening' değil yalın emir fiili 'listen' gerekir."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r24",
+      "type": "error-find",
+      "topicTag": "imperatives",
+      "topicLabel": "Emir ve talimatlar",
+      "title": "Don't yapısı",
+      "instructionTr": "Hatalı bölümü bul ve düzelt.",
+      "content": {
+        "sentence": "No touch the guitar.",
+        "error": "No",
+        "correction": "Don't",
+        "explanationTr": "Bir eylemi yapma demek için 'No' değil 'Don't + fiil' kullanılır."
+      },
+      "points": 4
+    },
+    {
+      "id": "m3r25",
+      "type": "listening",
+      "topicTag": "directions",
+      "topicLabel": "Yol tarifi",
+      "title": "Dinleme turu",
+      "instructionTr": "Önce dinle, sonra soruyu cevapla.",
+      "content": {
+        "audioText": "Go straight on. Turn right at the music shop. The sports centre is next to the cinema.",
+        "question": "Where must you turn right?",
+        "options": [
+          "at the music shop",
+          "at the hospital",
+          "under the cinema",
+          "in the park"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. Dinlemede 'Turn right at the music shop' deniyor.",
+          "Hospital dinlemede dönme noktası olarak geçmiyor.",
+          "Under yer edatıdır; yön tarifi noktası değildir.",
+          "Park bu dinleme metninde dönme noktası değildir."
+        ]
+      },
+      "points": 5
+    }
+  ]
+}

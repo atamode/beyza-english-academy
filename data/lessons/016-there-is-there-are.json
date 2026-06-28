@@ -1,0 +1,671 @@
+{
+  "id": "016-there-is-there-are",
+  "title": "There is / There are",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek.",
+    "Tekil (Singular) ve Çoğul (Plural) isimleri ayırt ederek doğru yapıyı (is/are) seçebilmek.",
+    "Olumsuz durumlarda \"There isn't\" ve \"There aren't\" yapılarını kurabilmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu dersimizde İngilizcede oldukça önemli olan \"Var / Yok\" konusunu işledik. Tek bir şeyden bahsederken \"There is\" (Örn: There is a book), birden fazla şeyden bahsederken \"There are\" (Örn: There are two books) kalıplarını kullanıyoruz. Evde etrafınızdaki nesneleri göstererek \"Oturma odasında bir televizyon var mı?\" (Is there a TV in the living room?) gibi sorularla mini oyunlar oynayabilirsiniz.",
+    "todayGoal": "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek.",
+    "teachingTips": [
+      "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "There is a book on the desk. (Sırada bir kitap var.)",
+      "There are two chairs in the room. (Odada iki sandalye var.)",
+      "There is a volleyball in the garden. (Bahçede bir voleybol topu var.)",
+      "There are five players in the team. (Takımda beş oyuncu var.)"
+    ],
+    "listeningScripts": [
+      "Welcome to the sports centre. Look at the volleyball court. There is a net in the middle. There are six players in each team. There is a referee. It is a great match."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "There is / There are Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "_______ a band on the stage.",
+          "options": [
+            "There is",
+            "There are",
+            "Is there"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Look! _______ three volleyballs in the sports centre.",
+          "options": [
+            "There is",
+            "There are",
+            "Is there"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ a concert tonight?",
+          "options": [
+            "Is there",
+            "Are there",
+            "There is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "________ (var) a red guitar in the room.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "________ (yok - çoğul) five players on the court.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / a / there / volleyball / match / today",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: There are a new microphone on the stage.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "There is",
+        "There is",
+        "Is there",
+        "There is",
+        "There aren't",
+        "There is a volleyball match today",
+        "\"a new microphone\" tekil olduğu için 'are' yerine 'is' olmalıdır.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "016-there-is-there-are-w1",
+    "016-there-is-there-are-w2",
+    "016-there-is-there-are-w3",
+    "016-there-is-there-are-w4",
+    "016-there-is-there-are-w5",
+    "016-there-is-there-are-w6",
+    "016-there-is-there-are-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "There is / There are",
+      "instructionTr": "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 16",
+        "heroText": "There is a book on the desk. (Sırada bir kitap var.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Beyza, bir odada, sınıfta veya spor salonunda nelerin bulunduğunu anlatırken Türkçede “var” ve “yok” kelimelerini kullanırız. İngilizcede bu işi There is ve There are yapıları yapar.",
+      "content": {
+        "examples": [
+          "Bahsettiğimiz şey bir tane ise There is kullanırız:\n* *There is a ball.* (Bir top var.)",
+          "Bahsettiğimiz şey birden fazla ise There are kullanırız:\n* *There are two balls.* (İki top var.)"
+        ],
+        "noteTr": "Beyza, bir odada, sınıfta veya spor salonunda nelerin bulunduğunu anlatırken Türkçede “var” ve “yok” kelimelerini kullanırız. İngilizcede bu işi There is ve There are yapıları yapar."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "There is a book on the desk. (Sırada bir kitap var.)",
+          "There are two chairs in the room. (Odada iki sandalye var.)",
+          "There is a volleyball in the garden. (Bahçede bir voleybol topu var.)",
+          "There are five players in the team. (Takımda beş oyuncu var.)",
+          "There is a microphone on the stage. (Sahnede bir mikrofon var.)",
+          "There aren't ten guitars in the music shop. (Müzik dükkânında on gitar yok.)",
+          "There isn't a match on Sunday. (Pazar günü maç yok.)",
+          "Is there a Manifest poster on your wall? (Duvarında bir Manifest posteri var mı?)",
+          "Are there two singers in the band? (Grupta iki şarkıcı mı var?)",
+          "There are many people at the concert. (Konserde çok insan var.)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu (+)",
+            "There is a...",
+            "There are two/three..."
+          ],
+          [
+            "Olumsuz (-)",
+            "There isn't a...",
+            "There aren't two/three..."
+          ],
+          [
+            "Soru (?)",
+            "Is there a...?",
+            "Are there two/three...?"
+          ]
+        ]
+      },
+      "explanationTr": "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek. Tekil (Singular) ve Çoğul (Plural) isimleri ayırt ederek doğru yapıyı (is/are) seçebilmek. Olumsuz durumlarda \"There isn't\" ve \"There aren't\" yapılarını kurabilmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* There are a volleyball. ❌\n* *Doğrusu:* There is a volleyball. (\"a\" kelimesi bir tane demektir, bu yüzden \"is\" kullanılır.)\n* *Hata:* There is two microphones. ❌\n* *Doğrusu:* There are two microphones. (İki mikrofondan bahsedildiği için \"are\" kullanılmalıdır.)\n* *Hata:* There have a concert. ❌\n* *Doğrusu:* There is a concert. (İngilizcede bir yerdeki varlığı anlatırken 'have' değil 'there is/are' yapısı kullanılır.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "_______ a band on the stage.",
+      "content": {
+        "options": [
+          "There is",
+          "There are",
+          "Is there"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"There are\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Is there\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Look! _______ three volleyballs in the sports centre.",
+      "content": {
+        "options": [
+          "There is",
+          "There are",
+          "Is there"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"There are\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Is there\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "________ (var) a red guitar in the room.",
+      "content": {
+        "answer": "There is",
+        "accepted": [
+          "There is"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "a red guitar tekildir."
+      },
+      "hintTr": "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "a",
+          "there",
+          "volleyball",
+          "match",
+          "today"
+        ],
+        "answer": [
+          "There",
+          "is",
+          "a",
+          "volleyball",
+          "match",
+          "today"
+        ],
+        "explanationTr": "Doğru sıra: There is a volleyball match today"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "There",
+          "are",
+          "a",
+          "new",
+          "microphone",
+          "on",
+          "the",
+          "stage."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"a new microphone\" tekil olduğu için 'are' yerine 'is' olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "do"
+          ],
+          [
+            "She",
+            "does"
+          ],
+          [
+            "They",
+            "do"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "Look at this photo of a music studio. There is a big drum set in the corner. There are two guitars on the floor. There is a microphone for the singer. There aren't any windows in the studio.",
+        "questions": [
+          {
+            "prompt": "How many guitars are there?",
+            "options": [
+              "There are two guitars.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: There are two guitars.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: There are two guitars.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: There are two guitars."
+            ]
+          },
+          {
+            "prompt": "Is there a microphone?",
+            "options": [
+              "Yes, there is.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: Yes, there is.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: Yes, there is.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: Yes, there is."
+            ]
+          },
+          {
+            "prompt": "Are there any windows?",
+            "options": [
+              "No, there aren't.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: No, there aren't.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: No, there aren't.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: No, there aren't."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Is there a net in the middle?",
+      "content": {
+        "audioText": "Welcome to the sports centre. Look at the volleyball court. There is a net in the middle. There are six players in each team. There is a referee. It is a great match.",
+        "options": [
+          "Yes, there is.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Yes, there is.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "*Soru:* Beyza, odanda olan bir eşyayı \"There is a...\", odanda olan birden fazla eşyayı da \"There are...\" kullanarak anlatır mısın?\n*İpucu Örneği:* \"There is a bed in my room. There are two books.\"",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ a concert tonight?",
+            "options": [
+              "Is there",
+              "Are there",
+              "There is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There _______ four volleyballs on the court.",
+            "options": [
+              "is",
+              "are",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ a concert poster on the door.",
+            "options": [
+              "There are",
+              "Is there",
+              "There is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ two teachers in the classroom?",
+            "options": [
+              "Is there",
+              "Are there",
+              "There are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There _______ a cat in the garden. It is a dog.",
+            "options": [
+              "isn't",
+              "aren't",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ five girls in the volleyball team.",
+            "options": [
+              "There is",
+              "There are",
+              "Is there"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ a guitar in your bag?",
+            "options": [
+              "Is there",
+              "Are there",
+              "There is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "Look! There _______ three microphones on the stage.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There _______ a match today, because the players are tired.",
+            "options": [
+              "is",
+              "isn't",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ ten desks in the classroom.",
+            "options": [
+              "There are",
+              "There is",
+              "Are there"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "016-there-is-there-are-w1",
+            "word": "court",
+            "example": "There is a volleyball court. (Bir voleybol sahası var.)",
+            "audioText": "court",
+            "prompt": "İngilizce-Türkçe eşleştir: court",
+            "options": [
+              "Afiş / Poster",
+              "File / Ağ",
+              "İnsanlar",
+              "Saha (Tenis, voleybol vb.)"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "016-there-is-there-are-w2",
+            "word": "net",
+            "example": "There is a net on the court. (Sahada bir file var.)",
+            "audioText": "net",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Afiş / Poster",
+              "File / Ağ",
+              "İnsanlar",
+              "Saha (Tenis, voleybol vb.)"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "016-there-is-there-are-w3",
+            "word": "poster",
+            "example": "There is a concert poster. (Bir konser afişi var.)",
+            "audioText": "poster",
+            "prompt": "Eksik harfi tamamla: p_ster",
+            "options": [
+              "court",
+              "net",
+              "people",
+              "poster"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "016-there-is-there-are-w4",
+            "word": "people",
+            "example": "There are two people. (İki insan var.)",
+            "audioText": "people",
+            "prompt": "Karışık harfleri düzelt: elpoep",
+            "options": [
+              "court",
+              "net",
+              "people",
+              "poster"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "016-there-is-there-are-w5",
+            "word": "singer",
+            "example": "Are there two singers? (İki şarkıcı var mı?)",
+            "audioText": "singer",
+            "prompt": "Kelimeyi doğru cümleye koy: Are there two ___s? (İki şarkıcı var mı?)",
+            "options": [
+              "court",
+              "net",
+              "poster",
+              "singer"
+            ],
+            "correctIndex": 3
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "İngilizcede bir nesnenin veya kişinin \"var olduğunu\" belirtmek için \"There is\" ve \"There are\" yapılarını kullanabilmek.",
+          "Tekil (Singular) ve Çoğul (Plural) isimleri ayırt ederek doğru yapıyı (is/are) seçebilmek.",
+          "Hedef kelimeler: court, net, poster, people, singer, bag, middle"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

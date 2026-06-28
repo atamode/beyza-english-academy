@@ -1,0 +1,671 @@
+{
+  "id": "018-describing-room",
+  "title": "Describing a Room",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek.",
+    "Oda içindeki temel mobilya ve eşyaların (bed, desk, wardrobe, shelf, lamp vb.) İngilizce karşılıklarını öğrenmek ve kullanmak.",
+    "Günlük dilde kendi kişisel alanını (odasını veya çalışma alanını) tanıtan kısa metinler oluşturabilmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu derste Beyza ile önceki iki dersi birleştirerek bir odanın ya da çalışma alanının tarifini (Describing a Room) yapmayı öğrendik. Artık Beyza \"There is a bed next to the window\" (Pencerenin yanında bir yatak var) diyerek eşyaların hem varlığını hem de konumunu aynı cümlede ifade edebiliyor. Odasını toplarken ona \"Where is the book?\" gibi sorular yönelterek veya odasını size İngilizce tanıtmasını isteyerek bu konuyu evde çok rahat pekiştirebilirsiniz.",
+    "todayGoal": "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek.",
+    "teachingTips": [
+      "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "This is my room. It is big. (Bu benim odam. O büyüktür.)",
+      "There is a bed next to the door. (Kapının yanında bir yatak var.)",
+      "There is a desk in front of the window. (Pencerenin önünde bir çalışma masası var.)",
+      "There are books on the desk. (Çalışma masasının üstünde kitaplar var.)"
+    ],
+    "listeningScripts": [
+      "The music practice room is very big. There is a stage in the middle. There is a drum set on the stage. There are three microphones in front of the stage. There is a poster of the band on the wall."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Describing a Room Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "There is a nice lamp _______ the desk.",
+          "options": [
+            "on",
+            "in",
+            "between"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ a big wardrobe next to my bed.",
+          "options": [
+            "There are",
+            "There is",
+            "Is there"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ a blue wardrobe in the bedroom.",
+          "options": [
+            "There is",
+            "There are",
+            "Is there"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "There ________ (var) three books on the shelf.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "There is a carpet ________ (üstünde/yüzeyinde) the floor.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: room / my / is / this / .",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: There is a volleyball under of the bed.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "on",
+        "There are",
+        "There is",
+        "are",
+        "on",
+        "This is my room",
+        "\"under\" edatından sonra \"of\" gelmez, doğrudan nesne söylenir.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "018-describing-room-w1",
+    "018-describing-room-w2",
+    "018-describing-room-w3",
+    "018-describing-room-w4",
+    "018-describing-room-w5",
+    "018-describing-room-w6",
+    "018-describing-room-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Describing a Room",
+      "instructionTr": "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 18",
+        "heroText": "This is my room. It is big. (Bu benim odam. O büyüktür.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bu derste önceki iki konuyu birleştiriyoruz: Bir odada nelerin bulunduğunu ve bu eşyaların nerede olduğunu anlatacağız. Böylece kısa ama düzenli bir oda tanıtımı yapabileceksin.",
+      "content": {
+        "examples": [
+          "Bunu yapmak için önce eşyanın var olduğunu söyleriz, sonra da yerini ekleriz:\nThere is + (eşya) + (yer edatı) + (nerede olduğu).",
+          "* *There is a bed.* (Bir yatak var.) -> Bu basit hali.\n* *There is a bed next to the window.* (Pencerenin yanında bir yatak var.) -> İşte şimdi odayı tarif ettik!"
+        ],
+        "noteTr": "Bu derste önceki iki konuyu birleştiriyoruz: Bir odada nelerin bulunduğunu ve bu eşyaların nerede olduğunu anlatacağız. Böylece kısa ama düzenli bir oda tanıtımı yapabileceksin."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "This is my room. It is big. (Bu benim odam. O büyüktür.)",
+          "There is a bed next to the door. (Kapının yanında bir yatak var.)",
+          "There is a desk in front of the window. (Pencerenin önünde bir çalışma masası var.)",
+          "There are books on the desk. (Çalışma masasının üstünde kitaplar var.)",
+          "There is a Manifest poster on the wall. (Duvarda bir Manifest posteri var.)",
+          "There is a small lamp next to the bed. (Yatağın yanında küçük bir lamba var.)",
+          "There is a wardrobe behind the door. (Kapının arkasında bir gardırop var.)",
+          "There are two volleyballs under the bed. (Yatağın altında iki voleybol topu var.)",
+          "There is a guitar between the desk and the wardrobe. (Çalışma masası ile gardırobun arasında bir gitar var.)",
+          "There is a red carpet on the floor. (Yerde kırmızı bir halı var.)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "There is",
+            "a lamp",
+            "on the desk.",
+            "Masanın üstünde bir lamba var."
+          ],
+          [
+            "There is",
+            "a guitar",
+            "next to the bed.",
+            "Yatağın yanında bir gitar var."
+          ],
+          [
+            "There are",
+            "two balls",
+            "under the chair.",
+            "Sandalyenin altında iki top var."
+          ]
+        ]
+      },
+      "explanationTr": "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek. Oda içindeki temel mobilya ve eşyaların (bed, desk, wardrobe, shelf, lamp vb.) İngilizce karşılıklarını öğrenmek ve kullanmak. Günlük dilde kendi kişisel alanını (odasını veya çalışma alanını) tanıtan kısa metinler oluşturabilmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* There is a bed on the window. ❌\n* *Doğrusu:* There is a bed next to the window. (Yatak pencerenin üstüne çıkamayacağı için 'on' değil, 'next to' veya 'in front of' kullanılır.)\n* *Hata:* There is two posters on the wall. ❌\n* *Doğrusu:* There are two posters on the wall. (Çoğul nesnelerde her zaman 'are' kullanılır.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "There is a nice lamp _______ the desk.",
+      "content": {
+        "options": [
+          "on",
+          "in",
+          "between"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"in\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"between\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "_______ a big wardrobe next to my bed.",
+      "content": {
+        "options": [
+          "There are",
+          "There is",
+          "Is there"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"There is\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Is there\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "There ________ (var) three books on the shelf.",
+      "content": {
+        "answer": "are",
+        "accepted": [
+          "are"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "Three books çoğul olduğu için are kullanılır."
+      },
+      "hintTr": "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "room",
+          "my",
+          "is",
+          "this",
+          "."
+        ],
+        "answer": [
+          "This",
+          "is",
+          "my",
+          "room"
+        ],
+        "explanationTr": "Doğru sıra: This is my room"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "There",
+          "is",
+          "a",
+          "volleyball",
+          "under",
+          "of",
+          "the",
+          "bed."
+        ],
+        "wrongIndex": 4,
+        "explanationTr": "\"under\" edatından sonra \"of\" gelmez, doğrudan nesne söylenir."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "do"
+          ],
+          [
+            "She",
+            "does"
+          ],
+          [
+            "They",
+            "do"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "My name is Ali. This is my bedroom. It is very nice. There is a big bed. Next to the bed, there is a desk. I always do my homework here. There is a guitar under the bed. I play it every evening. There aren't any posters on the walls.",
+        "questions": [
+          {
+            "prompt": "Where is the desk?",
+            "options": [
+              "It is next to the bed.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: It is next to the bed.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: It is next to the bed.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: It is next to the bed."
+            ]
+          },
+          {
+            "prompt": "What is under the bed?",
+            "options": [
+              "There is a guitar under the bed.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: There is a guitar under the bed.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: There is a guitar under the bed.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: There is a guitar under the bed."
+            ]
+          },
+          {
+            "prompt": "Are there any posters on the walls?",
+            "options": [
+              "No, there aren't.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: No, there aren't.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: No, there aren't.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: No, there aren't."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Is the practice room big or small?",
+      "content": {
+        "audioText": "The music practice room is very big. There is a stage in the middle. There is a drum set on the stage. There are three microphones in front of the stage. There is a poster of the band on the wall.",
+        "options": [
+          "It is very big.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. It is very big.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "*Soru:* Beyza, hayalindeki spor veya müzik temalı odayı düşün. \"There is...\" ve \"There are...\" kullanarak iki cümle kur. Eşyaların yerini de (on, under, next to) belirt.\n*İpucu Örneği:* \"There is a volleyball poster on the wall. There is a guitar next to the desk.\"",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ a blue wardrobe in the bedroom.",
+            "options": [
+              "There is",
+              "There are",
+              "Is there"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There are two chairs _______ the desk.",
+            "options": [
+              "next",
+              "next to",
+              "in"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There is a lamp _______ the shelf.",
+            "options": [
+              "on",
+              "under of",
+              "next"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ five books on my bed.",
+            "options": [
+              "There is",
+              "There are",
+              "Are there"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There is a nice carpet _______ the floor.",
+            "options": [
+              "in",
+              "under",
+              "on"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Open the wardrobe and take the volleyball. It is _______ the wardrobe.",
+            "options": [
+              "in",
+              "on",
+              "next"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ two beds in the room. It is a shared room.",
+            "options": [
+              "There are",
+              "There is",
+              "They are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There is a poster _______ the door.",
+            "options": [
+              "in",
+              "on",
+              "under of"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There are guitars _______ the music room.",
+            "options": [
+              "in",
+              "on",
+              "next"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ a small desk next to the window?",
+            "options": [
+              "Is there",
+              "There is",
+              "Are there"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "018-describing-room-w1",
+            "word": "room",
+            "example": "This is my room. (Bu benim odam.)",
+            "audioText": "room",
+            "prompt": "İngilizce-Türkçe eşleştir: room",
+            "options": [
+              "Çalışma Masası",
+              "Gardırop",
+              "Oda",
+              "Yatak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "018-describing-room-w2",
+            "word": "bed",
+            "example": "There is a big bed. (Büyük bir yatak var.)",
+            "audioText": "bed",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Çalışma Masası",
+              "Gardırop",
+              "Oda",
+              "Yatak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "018-describing-room-w3",
+            "word": "desk",
+            "example": "My books are on the desk. (Kitaplarım çalışma masasında.)",
+            "audioText": "desk",
+            "prompt": "Eksik harfi tamamla: d_sk",
+            "options": [
+              "bed",
+              "desk",
+              "room",
+              "wardrobe"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "018-describing-room-w4",
+            "word": "wardrobe",
+            "example": "The clothes are in the wardrobe. (Kıyafetler gardırobun içinde.)",
+            "audioText": "wardrobe",
+            "prompt": "Karışık harfleri düzelt: ebordraw",
+            "options": [
+              "bed",
+              "desk",
+              "room",
+              "wardrobe"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "018-describing-room-w5",
+            "word": "shelf",
+            "example": "There is a lamp on the shelf. (Rafta bir lamba var.)",
+            "audioText": "shelf",
+            "prompt": "Kelimeyi doğru cümleye koy: There is a lamp on the ___. (Rafta bir lamba var.)",
+            "options": [
+              "bed",
+              "desk",
+              "room",
+              "shelf"
+            ],
+            "correctIndex": 3
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Ders 16'daki \"There is/are\" ve Ders 17'deki yer edatlarını birleştirerek bir odanın detaylı tasvirini yapabilmek.",
+          "Oda içindeki temel mobilya ve eşyaların (bed, desk, wardrobe, shelf, lamp vb.) İngilizce karşılıklarını öğrenmek ve kullanmak.",
+          "Hedef kelimeler: room, bed, desk, wardrobe, shelf, lamp, carpet"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}
