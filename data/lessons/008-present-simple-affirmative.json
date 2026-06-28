@@ -1,0 +1,599 @@
+{
+  "id": "008-present-simple-affirmative",
+  "title": "Present Simple — Olumlu Cümleler",
+  "level": "A1",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Günlük rutinleri Present Simple ile anlatmak",
+    "I/you/we/they ile fiilin yalın hâlini kullanmak",
+    "He/she/it ile -s, -es ve -ies kurallarını uygulamak"
+  ],
+  "prerequisites": [
+    "007-demonstratives"
+  ],
+  "parentGuide": {
+    "summaryTr": "Present Simple, her gün ya da düzenli yapılan işleri anlatır. I/you/we/they ile fiil yalın kalır. He/she/it ile fiile çoğunlukla -s; -sh, -ch, -ss, -x, -o sonlarında -es; sessiz harf + y sonunda -ies gelir.",
+    "todayGoal": "Beyza'nın kendi rutinini en az dört doğru olumlu cümleyle anlatması ve üçüncü tekil eklerini ayırt etmesi.",
+    "teachingTips": [
+      "Önce zaman ifadesini buldurun: every day, on Mondays, usually.",
+      "Her cümlede öznenin he/she/it grubunda olup olmadığını sorun.",
+      "Yanlış ekte cevabı söylemeden önce fiilin son harflerine baktırın."
+    ],
+    "questionsToAsk": [
+      "What time do you get up?",
+      "What does your best friend do after school?",
+      "Which verbs take -es?",
+      "Why does study become studies?"
+    ],
+    "listeningScripts": [
+      "Maya gets up at seven. She washes her face and has breakfast. Her brother Kerem leaves home at eight. They walk to school together."
+    ],
+    "speakingRubric": [
+      "10 puan: En az dört doğru, anlaşılır cümle",
+      "5 puan: İki veya üç doğru cümle ya da az yardım",
+      "0 puan: Henüz bağımsız cümle kuramadı; örneklerle tekrar"
+    ],
+    "worksheet": [
+      "I ___ (get) up at seven.",
+      "My sister ___ (watch) TV after dinner.",
+      "Efe ___ (study) English on Tuesdays.",
+      "We ___ (go) to the library on Saturdays.",
+      "Duru ___ (finish) school at three."
+    ]
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Bir Günün İngilizcesi",
+      "instructionTr": "Bugün günlük düzenimizi doğru ve doğal İngilizce cümlelerle anlatacağız.",
+      "content": {
+        "eyebrow": "DERS 08 · GÜNLÜK HAYAT",
+        "heroText": "I get up at seven. She gets up at seven."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Ne zaman kullanırız?",
+      "instructionTr": "Her gün, genellikle veya belirli günlerde tekrarlanan işler için Present Simple kullanırız.",
+      "content": {
+        "examples": [
+          "I walk to school every day.",
+          "We play volleyball on Fridays.",
+          "My dad cooks dinner at weekends."
+        ],
+        "noteTr": "Şu anda gözünün önünde olan tek bir anı değil, düzeni ve alışkanlığı anlatıyoruz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Rutin dedektifi",
+      "instructionTr": "Zaman ifadeleri cümlenin bir alışkanlık anlattığını gösterir.",
+      "content": {
+        "examples": [
+          {
+            "sentence": "I read before bed every night.",
+            "focus": "every night"
+          },
+          {
+            "sentence": "Beyza usually studies after dinner.",
+            "focus": "usually"
+          },
+          {
+            "sentence": "They visit their aunt on Sundays.",
+            "focus": "on Sundays"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "İki özne grubu, iki kural",
+      "instructionTr": "Önce özneye bak. Fiilin biçimine sonra karar ver.",
+      "content": {
+        "rows": [
+          [
+            "I / You / We / They",
+            "play · read · go"
+          ],
+          [
+            "He / She / It",
+            "plays · reads · goes"
+          ]
+        ]
+      },
+      "explanationTr": "He, she ve it tek bir kişiyi, hayvanı ya da şeyi gösterir. Bu grupta fiil bir ek alır."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Özne grubunu seç",
+      "instructionTr": "My friends ___ chess at lunch.",
+      "content": {
+        "options": [
+          "plays",
+          "play",
+          "playing",
+          "is play"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "My friends çoğuldur; -s eki gelmez.",
+          "Doğru. My friends = they, bu yüzden play yalın kalır.",
+          "Playing tek başına yüklem değildir; yardımcı fiil ister.",
+          "Is play İngilizcede kullanılan bir yapı değildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "explanation",
+      "title": "He, she, it neden farklı?",
+      "instructionTr": "Tek bir kişi ya da şey günlük bir iş yapıyorsa fiile çoğunlukla -s ekleriz.",
+      "content": {
+        "examples": [
+          "I drink water. → She drinks water.",
+          "They read comics. → Arda reads comics.",
+          "We sleep early. → The cat sleeps early."
+        ],
+        "noteTr": "Özel isim de tek kişiyse he veya she gibi davranır: Beyza reads."
+      }
+    },
+    {
+      "id": "s06n",
+      "type": "explanation",
+      "title": "Sonraki derslere kısa bakış",
+      "instructionTr": "Olumsuz ve soru cümleleri ayrı derslerde ayrıntılı çalışılacak. Şimdilik yalnız biçim farkını fark et.",
+      "content": {
+        "examples": [
+          "Mina drinks milk. → Mina doesn't drink coffee.",
+          "Your brother walks. → Does your brother walk?"
+        ],
+        "noteTr": "Bu ön izleme puanlanmaz. Bu derste hedefimiz yalnız olumlu cümleyi güvenle kurmak."
+      }
+    },
+    {
+      "id": "s07",
+      "type": "fill-blank",
+      "title": "-s ekini uygula",
+      "instructionTr": "Ece ___ (listen) to music after school.",
+      "content": {
+        "answer": "listens",
+        "accepted": [
+          "listens"
+        ],
+        "placeholder": "Doğru fiili yaz",
+        "explanationTr": "Ece tek kişidir, yani she grubundadır. Listen fiiline -s gelir: listens."
+      },
+      "hintTr": "Ece yerine she diyebilir misin?",
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "multiple-choice",
+      "title": "-es takımını tanı",
+      "instructionTr": "My uncle ___ the dishes after dinner.",
+      "content": {
+        "options": [
+          "washs",
+          "washes",
+          "wash",
+          "washies"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Wash, -sh ile biter; yalnız -s eklenmez.",
+          "Doğru. -sh ile biten fiile -es gelir: washes.",
+          "My uncle = he olduğu için fiil ek almalıdır.",
+          "-ies kuralı sessiz harf + y ile biten fiiller içindir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "matching",
+      "title": "Fiilleri doğru eşleştir",
+      "instructionTr": "Yalın fiili he/she/it biçimiyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "watch",
+            "watches"
+          ],
+          [
+            "go",
+            "goes"
+          ],
+          [
+            "fix",
+            "fixes"
+          ]
+        ],
+        "explanationTr": "-sh, -ch, -ss, -x ve -o ile biten fiiller çoğunlukla -es alır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s10",
+      "type": "explanation",
+      "title": "Y harfinin küçük sırrı",
+      "instructionTr": "Fiil sessiz harf + y ile bitiyorsa y gider, -ies gelir.",
+      "content": {
+        "examples": [
+          "study → studies",
+          "carry → carries",
+          "try → tries"
+        ],
+        "noteTr": "Ama y'den önce sesli harf varsa yalnız -s gelir: play → plays, enjoy → enjoys."
+      }
+    },
+    {
+      "id": "s11",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "homework",
+          "after",
+          "does",
+          "Zeynep",
+          "dinner",
+          "her"
+        ],
+        "answer": [
+          "Zeynep",
+          "does",
+          "her",
+          "homework",
+          "after",
+          "dinner"
+        ],
+        "explanationTr": "Olumlu cümlede sıra: özne + fiil + nesne + zaman ifadesi."
+      },
+      "hintTr": "Trenin lokomotifi özne: Zeynep.",
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “Kerem study English every evening.”",
+      "content": {
+        "sentence": [
+          "Kerem",
+          "study",
+          "English",
+          "every",
+          "evening"
+        ],
+        "wrongIndex": 1,
+        "correctWord": "studies",
+        "explanationTr": "Kerem tek kişidir ve study sessiz harf + y ile biter. Bu yüzden studies olur."
+      },
+      "points": 10
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Maya'nın sabahı",
+      "instructionTr": "Metni dinle, sonra soruyu yanıtla: Who leaves home at eight?",
+      "content": {
+        "audioText": "Maya gets up at seven. She washes her face and has breakfast. Her brother Kerem leaves home at eight. They walk to school together.",
+        "options": [
+          "Maya",
+          "Kerem",
+          "Both of them",
+          "Their mother"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Maya'nın yedide kalktığı söyleniyor; sekizde evden çıktığı söylenmiyor.",
+          "Doğru. Metinde Kerem leaves home at eight deniyor.",
+          "Birlikte okula yürüyorlar ama sekizde çıkan kişi olarak Kerem belirtiliyor.",
+          "Annelerinden söz edilmiyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Mikrofon sende",
+      "instructionTr": "Kendi rutinini en az dört cümleyle anlat. Her cümleye I ile başla.",
+      "content": {
+        "sentenceStarters": [
+          "I get up at ...",
+          "I have breakfast ...",
+          "I go to ...",
+          "I ... after school."
+        ],
+        "timerSeconds": 45,
+        "selfCheckTr": "Dört cümle kurabildiysen ve fiilleri yalın kullandıysan görevi tamamlandı olarak işaretle."
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "reading",
+      "title": "Two Different Mornings",
+      "instructionTr": "Metni dikkatlice oku ve iki soruyu yanıtla.",
+      "content": {
+        "text": "Beyza gets up at seven on school days. She packs her bag and walks to school with Ada. Her cousin Mert lives farther away. He catches the bus at half past seven and reads on the journey.",
+        "questions": [
+          {
+            "prompt": "Who walks to school?",
+            "options": [
+              "Mert",
+              "Beyza and Ada",
+              "Beyza's cousin and Ada"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Mert otobüse biniyor.",
+              "Doğru. Beyza, Ada ile okula yürüyor.",
+              "Kuzeni Mert'in Ada ile yürüdüğü söylenmiyor."
+            ]
+          },
+          {
+            "prompt": "What does Mert do on the bus?",
+            "options": [
+              "He sleeps.",
+              "He packs his bag.",
+              "He reads."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "Uyuduğuna dair bilgi yok.",
+              "Çantasını hazırlayan Beyza'dır.",
+              "Doğru. Mert yolculuk sırasında kitap okur."
+            ]
+          }
+        ]
+      },
+      "points": 20
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Doğru Kapı",
+      "instructionTr": "Her cümlede doğru fiilin yazdığı kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She ___ her teeth.",
+            "options": [
+              "brush",
+              "brushes"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "She ile brush, -sh sonu nedeniyle brushes olur."
+          },
+          {
+            "prompt": "They ___ lunch at school.",
+            "options": [
+              "eat",
+              "eats"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "They ile fiil yalın kalır: eat."
+          },
+          {
+            "prompt": "Emir ___ maths after dinner.",
+            "options": [
+              "studys",
+              "studies"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Study, sessiz harf + y ile biter: studies."
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s17",
+      "type": "multiple-choice",
+      "title": "Kural seçimi",
+      "instructionTr": "Which sentence is correct?",
+      "content": {
+        "options": [
+          "My sister go to bed at ten.",
+          "My sister goes to bed at ten.",
+          "My sister going to bed at ten.",
+          "My sister is go to bed at ten."
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "My sister = she, bu yüzden go ek almalıdır.",
+          "Doğru. Go, he/she/it ile goes olur.",
+          "Going yardımcı fiilsiz kullanılamaz ve rutin için hedef yapı değildir.",
+          "Is go doğru bir İngilizce fiil yapısı değildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s18",
+      "type": "fill-blank",
+      "title": "Yazım ustası",
+      "instructionTr": "My teacher ___ (finish) the lesson at three.",
+      "content": {
+        "answer": "finishes",
+        "accepted": [
+          "finishes"
+        ],
+        "placeholder": "Fiili doğru biçimde yaz",
+        "explanationTr": "Teacher tekildir. Finish -sh ile bittiği için -es alır: finishes."
+      },
+      "hintTr": "-sh ile biten fiiller hangi eki alıyordu?",
+      "points": 10
+    },
+    {
+      "id": "s19",
+      "type": "mini-game",
+      "title": "Ders Sonu Mini Test",
+      "instructionTr": "Dört soruda bütün kuralları bir araya getir.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I ___ my room on Saturdays.",
+            "options": [
+              "tidy",
+              "tidies"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "I ile fiil yalın kalır."
+          },
+          {
+            "prompt": "Selin ___ the piano every day.",
+            "options": [
+              "practice",
+              "practices"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Selin = she, practice + s olur."
+          },
+          {
+            "prompt": "The baby ___ when it is hungry.",
+            "options": [
+              "crys",
+              "cries"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Cry sessiz harf + y ile biter: cries."
+          },
+          {
+            "prompt": "Our bus ___ at eight.",
+            "options": [
+              "arrive",
+              "arrives"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Our bus = it, bu yüzden arrives."
+          }
+        ]
+      },
+      "points": 40
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "008-present-simple-affirmative-w1",
+            "word": "get up",
+            "example": "I get up at seven.",
+            "audioText": "get up",
+            "prompt": "İngilizce-Türkçe eşleştir: get up",
+            "options": [
+              "ders çalışmak",
+              "kahvaltı yapmak",
+              "kalkmak",
+              "okula gitmek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "008-present-simple-affirmative-w2",
+            "word": "have breakfast",
+            "example": "She has breakfast at home.",
+            "audioText": "have breakfast",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "ders çalışmak",
+              "kahvaltı yapmak",
+              "kalkmak",
+              "okula gitmek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "008-present-simple-affirmative-w3",
+            "word": "go to school",
+            "example": "We go to school on weekdays.",
+            "audioText": "go to school",
+            "prompt": "Eksik harfi tamamla: g_ to school",
+            "options": [
+              "get up",
+              "go to school",
+              "have breakfast",
+              "study"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "008-present-simple-affirmative-w4",
+            "word": "study",
+            "example": "He studies after dinner.",
+            "audioText": "study",
+            "prompt": "Karışık harfleri düzelt: yduts",
+            "options": [
+              "get up",
+              "go to school",
+              "have breakfast",
+              "study"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "008-present-simple-affirmative-w5",
+            "word": "watch",
+            "example": "They watch a documentary.",
+            "audioText": "watch",
+            "prompt": "Kelimeyi doğru cümleye koy: They ___ a documentary.",
+            "options": [
+              "get up",
+              "go to school",
+              "have breakfast",
+              "watch"
+            ],
+            "correctIndex": 3
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s20",
+      "type": "summary",
+      "title": "Artık rutini anlatabilirsin",
+      "instructionTr": "Özneyi bul, doğru fiil biçimini seç ve düzenli yaptığın işleri anlat.",
+      "content": {
+        "points": [
+          "I/you/we/they + fiilin yalın hâli",
+          "He/she/it + çoğunlukla -s",
+          "-sh, -ch, -ss, -x, -o → -es",
+          "sessiz harf + y → -ies",
+          "Cümle sırası: özne + fiil + diğer bilgiler"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "008-present-simple-affirmative-w1",
+    "008-present-simple-affirmative-w2",
+    "008-present-simple-affirmative-w3",
+    "008-present-simple-affirmative-w4",
+    "008-present-simple-affirmative-w5",
+    "008-present-simple-affirmative-w6"
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "id": "005-possessive-adjectives",
+  "title": "Possessive Adjectives",
+  "level": "A1",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Bir şeyin kime ait olduğunu iyelik sıfatıyla anlatmak",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [
+    "004-to-be-questions"
+  ],
+  "parentGuide": {
+    "summaryTr": "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+    "todayGoal": "Bir şeyin kime ait olduğunu iyelik sıfatıyla anlatmak",
+    "teachingTips": [
+      "Önce sahibini, sonra sahip olunan ismi iki farklı renkle işaretleyin.",
+      "His ve her seçimini eşyanın değil sahibinin cinsiyetine göre yaptırın.",
+      "Its ile it's yazımlarını karıştırmaması için apostrofsuz its'i vurgulayın."
+    ],
+    "questionsToAsk": [
+      "Show one object and say My ...",
+      "Describe a friend's object with his or her.",
+      "Describe your family's home with our.",
+      "Describe two classmates' project with their."
+    ],
+    "listeningScripts": [
+      "Our class has a media club. Eren brings his microphone. Duru edits videos on her laptop. Their teacher checks the final programme."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "Possessive Adjectives Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "We finish ___ history project tonight.",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "I charge ___ phone.",
+          "options": [
+            "my",
+            "his"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The dog finds ___ ball.",
+          "options": [
+            "its",
+            "their"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We clean ___ room.",
+          "options": [
+            "our",
+            "her"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Ali wears ___ coat.",
+          "options": [
+            "his",
+            "your"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: I ↔ my password | Emir ↔ his bicycle | the fox ↔ its tail | the students ↔ their lockers",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: equipment / its / shares / team / Our",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Leyla visits his grandmother on Sundays.",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Show one object and say My ...",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "our",
+        "my",
+        "its",
+        "our",
+        "his",
+        "I → my password, Emir → his bicycle, the fox → its tail, the students → their lockers",
+        "Our team shares its equipment",
+        "Leyla visits her grandmother on Sundays.",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Possessive Adjectives",
+      "instructionTr": "Bir şeyin kime ait olduğunu iyelik sıfatıyla anlatmak",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 5",
+        "heroText": "My sketchbook is full."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+      "content": {
+        "examples": [
+          "My sketchbook is full.",
+          "Your idea is practical.",
+          "His helmet is black."
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "Her playlist is energetic.",
+          "The bird cleans its feathers.",
+          "Our project is about clean water.",
+          "Their garden has solar lights.",
+          "Mert checks his calendar."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "I / you",
+            "my / your"
+          ],
+          [
+            "he / she / it",
+            "his / her / its"
+          ],
+          [
+            "we / they",
+            "our / their"
+          ]
+        ]
+      },
+      "explanationTr": "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "Selin brings ___ guitar to rehearsal.",
+      "content": {
+        "options": [
+          "his",
+          "her",
+          "its",
+          "their"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "His bir erkeğe ait şeyi gösterir.",
+          "Doğru. Selin için her kullanılır.",
+          "Its hayvan veya nesneye ait şeyler içindir.",
+          "Their birden fazla kişiye ait şeyler içindir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "We finish ___ history project tonight.",
+      "content": {
+        "answer": "our",
+        "accepted": [
+          "our"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "We öznesine ait bir şey için our kullanılır."
+      },
+      "hintTr": "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "my password"
+          ],
+          [
+            "Emir",
+            "his bicycle"
+          ],
+          [
+            "the fox",
+            "its tail"
+          ],
+          [
+            "the students",
+            "their lockers"
+          ]
+        ],
+        "explanationTr": "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "equipment",
+          "its",
+          "shares",
+          "team",
+          "Our"
+        ],
+        "answer": [
+          "Our",
+          "team",
+          "shares",
+          "its",
+          "equipment"
+        ],
+        "explanationTr": "Doğru sıra: Our team shares its equipment."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “Leyla visits his grandmother on Sundays.”",
+      "content": {
+        "sentence": [
+          "Leyla",
+          "visits",
+          "his",
+          "grandmother",
+          "on",
+          "Sundays."
+        ],
+        "wrongIndex": 2,
+        "correctWord": "her",
+        "explanationTr": "Leyla için iyelik sıfatı her olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "Whose laptop is used for editing?",
+      "content": {
+        "audioText": "Our class has a media club. Eren brings his microphone. Duru edits videos on her laptop. Their teacher checks the final programme.",
+        "options": [
+          "Eren's",
+          "Duru's",
+          "The teacher's",
+          "The class's"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Eren mikrofon getiriyor.",
+          "Doğru. Her laptop ifadesi Duru'ya aittir.",
+          "Öğretmen programı kontrol ediyor.",
+          "Sınıfa ait bir laptop belirtilmiyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Show one object and say My ...",
+          "Describe a friend's object with his or her.",
+          "Describe your family's home with our.",
+          "Describe two classmates' project with their."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "Bora and Elif run a book blog. Their reviews are short and honest. Bora takes photos with his phone. Elif writes on her tablet. Their readers share the posts.",
+        "questions": [
+          {
+            "prompt": "Whose reviews are short?",
+            "options": [
+              "Bora and Elif's",
+              "Only Bora's",
+              "The readers'"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “Bora and Elif's” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“Only Bora's” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “Bora and Elif's” der.",
+              "Sorudaki ipucu “Bora and Elif's” cevabına götürür; “The readers'” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "What does Bora use?",
+            "options": [
+              "His tablet",
+              "His phone",
+              "Their camera"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “His phone” bilgisini verir; “His tablet” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “His phone” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “His phone” cevabına götürür; “Their camera” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Who shares the posts?",
+            "options": [
+              "Their readers",
+              "Elif's teacher",
+              "Bora's family"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “Their readers” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“Elif's teacher” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “Their readers” der.",
+              "Sorudaki ipucu “Their readers” cevabına götürür; “Bora's family” bu ipucunu karşılamaz."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I charge ___ phone.",
+            "options": [
+              "my",
+              "his"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“my” doğru seçimdir. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+            "wrongExplanationTr": "“his” bu cümlede kullanılamaz; doğru biçim “my”. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+          },
+          {
+            "prompt": "The dog finds ___ ball.",
+            "options": [
+              "its",
+              "their"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“its” doğru seçimdir. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+            "wrongExplanationTr": "“their” bu cümlede kullanılamaz; doğru biçim “its”. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+          },
+          {
+            "prompt": "We clean ___ room.",
+            "options": [
+              "our",
+              "her"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“our” doğru seçimdir. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+            "wrongExplanationTr": "“her” bu cümlede kullanılamaz; doğru biçim “our”. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+          },
+          {
+            "prompt": "Ali wears ___ coat.",
+            "options": [
+              "his",
+              "your"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“his” doğru seçimdir. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+            "wrongExplanationTr": "“your” bu cümlede kullanılamaz; doğru biçim “his”. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+          },
+          {
+            "prompt": "The twins ride ___ bikes.",
+            "options": [
+              "their",
+              "our"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“their” doğru seçimdir. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+            "wrongExplanationTr": "“our” bu cümlede kullanılamaz; doğru biçim “their”. my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "İyelik sözcüğü cümlede kalır",
+      "instructionTr": "Olumlu, olumsuz ve soruda iyelik sıfatının isimden önce kaldığını gör.",
+      "content": {
+        "examples": [
+          "Her camera is new.",
+          "Her camera isn't new.",
+          "Is her camera new?"
+        ],
+        "noteTr": "Cümle amacı değişse de her, camera isminin hemen önünde kalır."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "My cousins upload ___ travel photos every week.",
+            "options": [
+              "their",
+              "our"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Fotoğraflar cousins grubuna ait; they → their.",
+            "wrongExplanationTr": "Our konuşanın dahil olduğu we grubuna ait şeyleri gösterir."
+          },
+          {
+            "prompt": "The museum updates ___ website every month.",
+            "options": [
+              "its",
+              "his"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Museum bir kurum/şeydir; iyelik sıfatı its olur.",
+            "wrongExplanationTr": "His erkek bir insana ait şeyi gösterir; museum insan değildir."
+          },
+          {
+            "prompt": "I forgot ___ library card at home.",
+            "options": [
+              "my",
+              "your"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kart konuşana, yani I kişisine ait; my gerekir.",
+            "wrongExplanationTr": "Your dinlenen kişiye ait şeyi gösterir; burada sahibi I."
+          },
+          {
+            "prompt": "Eda and I present ___ poster first.",
+            "options": [
+              "our",
+              "their"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Eda and I = we; we grubunun iyelik sıfatı our'dır.",
+            "wrongExplanationTr": "Their konuşanın dahil olmadığı they grubuna aittir."
+          },
+          {
+            "prompt": "Kerem checks ___ messages after practice.",
+            "options": [
+              "his",
+              "her"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kerem erkek bir kişidir; his kullanılır.",
+            "wrongExplanationTr": "Her kız/kadın bir kişiye ait şeyi gösterir; Kerem için uygun değildir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "005-possessive-adjectives-w1",
+            "word": "my",
+            "example": "My notebook is blue.",
+            "audioText": "my",
+            "prompt": "İngilizce-Türkçe eşleştir: my",
+            "options": [
+              "benim",
+              "bizim",
+              "onun (kız)",
+              "senin / sizin"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "005-possessive-adjectives-w2",
+            "word": "your",
+            "example": "Your idea is clever.",
+            "audioText": "your",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "benim",
+              "bizim",
+              "onun (kız)",
+              "senin / sizin"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "005-possessive-adjectives-w3",
+            "word": "her",
+            "example": "Her bag is red.",
+            "audioText": "her",
+            "prompt": "Eksik harfi tamamla: h_r",
+            "options": [
+              "her",
+              "my",
+              "our",
+              "your"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "005-possessive-adjectives-w4",
+            "word": "our",
+            "example": "Our team is ready.",
+            "audioText": "our",
+            "prompt": "Karışık harfleri düzelt: ruo",
+            "options": [
+              "her",
+              "my",
+              "our",
+              "your"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "005-possessive-adjectives-w5",
+            "word": "their",
+            "example": "Their song is new.",
+            "audioText": "their",
+            "prompt": "Kelimeyi doğru cümleye koy: Their song is new.",
+            "options": [
+              "her",
+              "my",
+              "their",
+              "your"
+            ],
+            "correctIndex": 2
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "Bir şeyin kime ait olduğunu iyelik sıfatıyla anlatmak",
+          "my, your, his, her, its, our ve their bir ismin önüne gelir. Kişinin kendisini değil, ona ait olan şeyi gösterir: Ece has a camera. Her camera is new.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "005-possessive-adjectives-w1",
+    "005-possessive-adjectives-w2",
+    "005-possessive-adjectives-w3",
+    "005-possessive-adjectives-w4",
+    "005-possessive-adjectives-w5",
+    "005-possessive-adjectives-w6"
+  ]
+}

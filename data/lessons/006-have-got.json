@@ -1,0 +1,645 @@
+{
+  "id": "006-have-got",
+  "title": "have got / has got",
+  "level": "A1",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Sahip olunan şeyleri ve özellikleri anlatmak",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [
+    "005-possessive-adjectives"
+  ],
+  "parentGuide": {
+    "summaryTr": "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+    "todayGoal": "Sahip olunan şeyleri ve özellikleri anlatmak",
+    "teachingTips": [
+      "Sahip olunan gerçek eşyalarla have got/has got cümleleri kurdurun.",
+      "He/she/it grubunda has, diğerlerinde have seçimini önce yaptırın.",
+      "Soruda Have/Has'ın başa geçtiğini kartları yer değiştirerek gösterin."
+    ],
+    "questionsToAsk": [
+      "Say two things you have got.",
+      "Say one thing you haven't got.",
+      "Describe a friend's feature with has got.",
+      "Ask someone Have you got ...?"
+    ],
+    "listeningScripts": [
+      "Our makers' club has got a new room. We have got tools and recycled materials. The room hasn't got a printer yet, but our teacher has got a plan."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "have got / has got Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "My friends ___ tickets for the final.",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "He ___ a compass.",
+          "options": [
+            "has got",
+            "have got"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They ___ enough water.",
+          "options": [
+            "have got",
+            "has got"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ you got a pen?",
+          "options": [
+            "Have",
+            "Has"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Mina ___ a bicycle.",
+          "options": [
+            "hasn't got",
+            "haven't got"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: I ↔ have got a map | Sena ↔ has got a badge | we ↔ haven't got homework | the robot ↔ hasn't got wheels",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: theatre / a / got / school / your / Has",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Efe have got a new skateboard.",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Say two things you have got.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "have got",
+        "has got",
+        "have got",
+        "Have",
+        "hasn't got",
+        "I → have got a map, Sena → has got a badge, we → haven't got homework, the robot → hasn't got wheels",
+        "Has your school got a theatre",
+        "Efe has got a new skateboard.",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "have got / has got",
+      "instructionTr": "Sahip olunan şeyleri ve özellikleri anlatmak",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 6",
+        "heroText": "I have got a digital watch."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+      "content": {
+        "examples": [
+          "I have got a digital watch.",
+          "You have got a good memory.",
+          "He has got curly hair."
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "She has got two tickets.",
+          "It has got a long battery life.",
+          "We have got enough time.",
+          "They have got matching jackets.",
+          "The studio has got three cameras."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "I / you / we / they",
+            "have got / haven't got"
+          ],
+          [
+            "he / she / it",
+            "has got / hasn't got"
+          ],
+          [
+            "Soru",
+            "Have/Has + özne + got ...?"
+          ]
+        ]
+      },
+      "explanationTr": "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "Our new computer ___ a large screen.",
+      "content": {
+        "options": [
+          "have got",
+          "has got",
+          "got has",
+          "is got"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Computer tekildir; have got uygun değildir.",
+          "Doğru. Tekil bir nesne has got alır.",
+          "Kelime sırası has got olmalıdır.",
+          "Sahiplik is got ile kurulmaz."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "My friends ___ tickets for the final.",
+      "content": {
+        "answer": "have got",
+        "accepted": [
+          "have got"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "Friends çoğuldur; have got kullanılır."
+      },
+      "hintTr": "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "have got a map"
+          ],
+          [
+            "Sena",
+            "has got a badge"
+          ],
+          [
+            "we",
+            "haven't got homework"
+          ],
+          [
+            "the robot",
+            "hasn't got wheels"
+          ]
+        ],
+        "explanationTr": "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "theatre",
+          "a",
+          "got",
+          "school",
+          "your",
+          "Has"
+        ],
+        "answer": [
+          "Has",
+          "your",
+          "school",
+          "got",
+          "a",
+          "theatre"
+        ],
+        "explanationTr": "Doğru sıra: Has your school got a theatre."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “Efe have got a new skateboard.”",
+      "content": {
+        "sentence": [
+          "Efe",
+          "have",
+          "got",
+          "a",
+          "new",
+          "skateboard."
+        ],
+        "wrongIndex": 1,
+        "correctWord": "has",
+        "explanationTr": "Efe tek kişidir; has got gerekir."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "What hasn't the room got?",
+      "content": {
+        "audioText": "Our makers' club has got a new room. We have got tools and recycled materials. The room hasn't got a printer yet, but our teacher has got a plan.",
+        "options": [
+          "Tools",
+          "Materials",
+          "A printer",
+          "A plan"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "Kulübün araçları var.",
+          "Geri dönüştürülmüş malzemeler var.",
+          "Doğru. Room hasn't got a printer yet deniyor.",
+          "Plan öğretmene ait."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Say two things you have got.",
+          "Say one thing you haven't got.",
+          "Describe a friend's feature with has got.",
+          "Ask someone Have you got ...?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "Melis has got a small balcony garden. It has got six pots. The tomatoes have got strong stems, but one plant hasn't got any flowers. Has Melis got a watering system? Yes, she has.",
+        "questions": [
+          {
+            "prompt": "How many pots are there?",
+            "options": [
+              "Four",
+              "Six",
+              "Eight"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Six” bilgisini verir; “Four” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Six” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Six” cevabına götürür; “Eight” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "What hasn't one plant got?",
+            "options": [
+              "Strong stems",
+              "Flowers",
+              "Leaves"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Flowers” bilgisini verir; “Strong stems” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Flowers” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Flowers” cevabına götürür; “Leaves” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Has Melis got a watering system?",
+            "options": [
+              "Yes, she has.",
+              "No, she hasn't.",
+              "The text doesn't say."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “Yes, she has.” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“No, she hasn't.” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “Yes, she has.” der.",
+              "Sorudaki ipucu “Yes, she has.” cevabına götürür; “The text doesn't say.” bu ipucunu karşılamaz."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "He ___ a compass.",
+            "options": [
+              "has got",
+              "have got"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“has got” doğru seçimdir. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+            "wrongExplanationTr": "“have got” bu cümlede kullanılamaz; doğru biçim “has got”. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+          },
+          {
+            "prompt": "They ___ enough water.",
+            "options": [
+              "have got",
+              "has got"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“have got” doğru seçimdir. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+            "wrongExplanationTr": "“has got” bu cümlede kullanılamaz; doğru biçim “have got”. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+          },
+          {
+            "prompt": "___ you got a pen?",
+            "options": [
+              "Have",
+              "Has"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Have” doğru seçimdir. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+            "wrongExplanationTr": "“Has” bu cümlede kullanılamaz; doğru biçim “Have”. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+          },
+          {
+            "prompt": "Mina ___ a bicycle.",
+            "options": [
+              "hasn't got",
+              "haven't got"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“hasn't got” doğru seçimdir. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+            "wrongExplanationTr": "“haven't got” bu cümlede kullanılamaz; doğru biçim “hasn't got”. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+          },
+          {
+            "prompt": "___ the phone got GPS?",
+            "options": [
+              "Has",
+              "Have"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Has” doğru seçimdir. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+            "wrongExplanationTr": "“Have” bu cümlede kullanılamaz; doğru biçim “Has”. I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "Sahipliği üç biçimde anlat",
+      "instructionTr": "Olumlu, olumsuz ve soru biçimlerini karşılaştır.",
+      "content": {
+        "examples": [
+          "Efe has got a ticket.",
+          "Efe hasn't got a ticket.",
+          "Has Efe got a ticket?"
+        ],
+        "noteTr": "Soruda Has başa geçer; olumsuzda hasn't got kullanılır."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "The new bus ___ USB ports.",
+            "options": [
+              "has got",
+              "have got"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Bus tekildir; has got gerekir.",
+            "wrongExplanationTr": "Have got I/you/we/they ve çoğul özneler içindir."
+          },
+          {
+            "prompt": "We ___ any spare batteries.",
+            "options": [
+              "haven't got",
+              "hasn't got"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "We ile olumsuz sahiplik haven't got olur.",
+            "wrongExplanationTr": "Hasn't got he/she/it grubuna aittir; we ile kullanılmaz."
+          },
+          {
+            "prompt": "___ Ela got a passport?",
+            "options": [
+              "Has",
+              "Have"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Ela tek kişidir; soru Has ile başlar.",
+            "wrongExplanationTr": "Have çoğul veya I/you/we/they özneleriyle kullanılır."
+          },
+          {
+            "prompt": "My headphones ___ a volume button.",
+            "options": [
+              "have got",
+              "has got"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Headphones çoğuldur; have got gerekir.",
+            "wrongExplanationTr": "Has got tekil özne içindir; headphones çoğuldur."
+          },
+          {
+            "prompt": "Has the hotel got a pool?",
+            "options": [
+              "Yes, it has.",
+              "Yes, it have."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Hotel yerine it gelir ve kısa cevap has ile biter.",
+            "wrongExplanationTr": "It ile have kullanılmaz; yardımcı fiil has olmalıdır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "006-have-got-w1",
+            "word": "helmet",
+            "example": "I have got a helmet.",
+            "audioText": "helmet",
+            "prompt": "İngilizce-Türkçe eşleştir: helmet",
+            "options": [
+              "dizlik",
+              "file",
+              "kask",
+              "tablet"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "006-have-got-w2",
+            "word": "tablet",
+            "example": "She has got a tablet.",
+            "audioText": "tablet",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "dizlik",
+              "file",
+              "kask",
+              "tablet"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "006-have-got-w3",
+            "word": "knee pad",
+            "example": "They have got knee pads.",
+            "audioText": "knee pad",
+            "prompt": "Eksik harfi tamamla: kn_e pad",
+            "options": [
+              "helmet",
+              "knee pad",
+              "net",
+              "tablet"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "006-have-got-w4",
+            "word": "net",
+            "example": "We have got a new net.",
+            "audioText": "net",
+            "prompt": "Karışık harfleri düzelt: ten",
+            "options": [
+              "helmet",
+              "knee pad",
+              "net",
+              "tablet"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "006-have-got-w5",
+            "word": "guitar",
+            "example": "He has got a guitar.",
+            "audioText": "guitar",
+            "prompt": "Kelimeyi doğru cümleye koy: He has got a ___.",
+            "options": [
+              "guitar",
+              "helmet",
+              "knee pad",
+              "tablet"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "Sahip olunan şeyleri ve özellikleri anlatmak",
+          "I/you/we/they ile have got; he/she/it ile has got kullanılır. Olumsuz haven't got / hasn't got, soru Have/Has ... got? biçimindedir.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "006-have-got-w1",
+    "006-have-got-w2",
+    "006-have-got-w3",
+    "006-have-got-w4",
+    "006-have-got-w5",
+    "006-have-got-w6"
+  ]
+}

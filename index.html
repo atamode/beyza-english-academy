@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#16213e">
+  <meta name="description" content="Beyza için çevrimdışı, etkileşimli İngilizce öğrenme uygulaması">
+  <title>Beyza English Academy</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/sprint2.css">
+  <link rel="stylesheet" href="css/quality.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+  <a class="skip-link" href="#app">İçeriğe geç</a>
+  <header class="topbar">
+    <button class="brand" data-route="home" aria-label="Ana sayfa">
+      <span class="brand-mark" aria-hidden="true">B</span>
+      <span><strong>Beyza English</strong><small>Academy</small></span>
+    </button>
+    <nav class="top-actions" aria-label="Uygulama araçları">
+      <button id="sound-toggle" class="icon-button" aria-pressed="false" title="Sesi aç veya kapat">🔊<span>Ses</span></button>
+      <button id="theme-toggle" class="icon-button" title="Temayı değiştir">◐<span>Tema</span></button>
+      <button id="fullscreen-toggle" class="icon-button" title="Tam ekran">⛶<span>Tam ekran</span></button>
+      <button class="parent-button" data-route="parent">Veli Modu</button>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript>Bu uygulamanın çalışması için JavaScript açık olmalıdır.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

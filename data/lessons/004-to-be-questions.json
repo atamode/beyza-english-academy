@@ -1,0 +1,642 @@
+{
+  "id": "004-to-be-questions",
+  "title": "To be — Sorular",
+  "level": "A1",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "am, is ve are ile soru ve kısa cevap kurmak",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [
+    "003-to-be-negative"
+  ],
+  "parentGuide": {
+    "summaryTr": "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+    "todayGoal": "am, is ve are ile soru ve kısa cevap kurmak",
+    "teachingTips": [
+      "Olumlu cümledeki am/is/are sözcüğünü fiziksel bir kartla başa taşıyın.",
+      "Kısa cevapta sorudaki yardımcı fiilin tekrar edildiğini gösterin.",
+      "Tekil isimlerde Is, çoğullarda Are kontrolünü her soruda yaptırın."
+    ],
+    "questionsToAsk": [
+      "Ask if a friend is ready.",
+      "Ask if two books are new.",
+      "Ask if you are in the right place.",
+      "Answer one question with a short answer."
+    ],
+    "listeningScripts": [
+      "Are you new here? Is your name Bora? Are your parents in the hall? Is this your first chess tournament?"
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "To be — Sorular Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "___ your cousins in İzmir?",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "___ I late?",
+          "options": [
+            "Am",
+            "Is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ the film funny?",
+          "options": [
+            "Is",
+            "Are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ we in Group B?",
+          "options": [
+            "Are",
+            "Is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ your shoes clean?",
+          "options": [
+            "Are",
+            "Is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: Is Ece here? ↔ Yes, she is. | Are the doors locked? ↔ No, they aren't. | Am I early? ↔ Yes, you are. | Are we ready? ↔ No, we aren't.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: nearby / school / new / your / Is",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Are your brother at home?",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Ask if a friend is ready.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "are",
+        "Am",
+        "Is",
+        "Are",
+        "Are",
+        "Is Ece here? → Yes, she is., Are the doors locked? → No, they aren't., Am I early? → Yes, you are., Are we ready? → No, we aren't.",
+        "Is your new school nearby",
+        "Is your brother at home?",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "To be — Sorular",
+      "instructionTr": "am, is ve are ile soru ve kısa cevap kurmak",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 4",
+        "heroText": "Am I in the right room?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+      "content": {
+        "examples": [
+          "Am I in the right room?",
+          "Are you free after lunch?",
+          "Is he your neighbour?"
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "Is she good at chess?",
+          "Is it far from here?",
+          "Are we on the same team?",
+          "Are they at the cinema?",
+          "Is the bus late?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "Am/Is/Are + özne + ...?",
+            "Is Ada at home?"
+          ],
+          [
+            "Yes + özne + yardımcı fiil",
+            "Yes, she is."
+          ],
+          [
+            "No + özne + olumsuz yardımcı fiil",
+            "No, she isn't."
+          ]
+        ]
+      },
+      "explanationTr": "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "___ the science lab on this floor?",
+      "content": {
+        "options": [
+          "Am",
+          "Is",
+          "Are",
+          "Does"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Am yalnız I ile soru kurar.",
+          "Doğru. Science lab tekildir; Is başa gelir.",
+          "Are çoğul isimlerle kullanılır.",
+          "Bu cümlede asıl fiil yok; to be sorusu gerekir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "___ your cousins in İzmir?",
+      "content": {
+        "answer": "are",
+        "accepted": [
+          "are"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "Cousins çoğuldur; soru Are ile başlar."
+      },
+      "hintTr": "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Is Ece here?",
+            "Yes, she is."
+          ],
+          [
+            "Are the doors locked?",
+            "No, they aren't."
+          ],
+          [
+            "Am I early?",
+            "Yes, you are."
+          ],
+          [
+            "Are we ready?",
+            "No, we aren't."
+          ]
+        ],
+        "explanationTr": "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "nearby",
+          "school",
+          "new",
+          "your",
+          "Is"
+        ],
+        "answer": [
+          "Is",
+          "your",
+          "new",
+          "school",
+          "nearby"
+        ],
+        "explanationTr": "Doğru sıra: Is your new school nearby."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “Are your brother at home?”",
+      "content": {
+        "sentence": [
+          "Are",
+          "your",
+          "brother",
+          "at",
+          "home?"
+        ],
+        "wrongIndex": 0,
+        "correctWord": "Is",
+        "explanationTr": "Brother tek bir kişidir; soru Is ile başlamalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "Which question asks about Bora's family?",
+      "content": {
+        "audioText": "Are you new here? Is your name Bora? Are your parents in the hall? Is this your first chess tournament?",
+        "options": [
+          "Are you new here?",
+          "Is your name Bora?",
+          "Are your parents in the hall?",
+          "Is this your first tournament?"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "Bu soru Bora'nın yeni olup olmadığını sorar.",
+          "Bu soru adını doğrular.",
+          "Doğru. Parents aile üyeleridir.",
+          "Bu soru turnuva deneyimini sorar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Ask if a friend is ready.",
+          "Ask if two books are new.",
+          "Ask if you are in the right place.",
+          "Answer one question with a short answer."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "Aylin is at a photography workshop. “Is this seat free?” she asks. “Yes, it is,” says Can. “Are the cameras ready?” “No, they aren't. The batteries are upstairs.”",
+        "questions": [
+          {
+            "prompt": "Where is Aylin?",
+            "options": [
+              "At a workshop",
+              "At school",
+              "At a cinema"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “At a workshop” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“At school” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “At a workshop” der.",
+              "Sorudaki ipucu “At a workshop” cevabına götürür; “At a cinema” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Is the seat free?",
+            "options": [
+              "Yes, it is.",
+              "No, it isn't.",
+              "We don't know."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “Yes, it is.” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“No, it isn't.” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “Yes, it is.” der.",
+              "Sorudaki ipucu “Yes, it is.” cevabına götürür; “We don't know.” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Are the cameras ready?",
+            "options": [
+              "Yes, they are.",
+              "No, they aren't.",
+              "Only one is ready."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “No, they aren't.” bilgisini verir; “Yes, they are.” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “No, they aren't.” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “No, they aren't.” cevabına götürür; “Only one is ready.” bu ipucunu karşılamaz."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "___ I late?",
+            "options": [
+              "Am",
+              "Is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Am” doğru seçimdir. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+            "wrongExplanationTr": "“Is” bu cümlede kullanılamaz; doğru biçim “Am”. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+          },
+          {
+            "prompt": "___ the film funny?",
+            "options": [
+              "Is",
+              "Are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Is” doğru seçimdir. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+            "wrongExplanationTr": "“Are” bu cümlede kullanılamaz; doğru biçim “Is”. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+          },
+          {
+            "prompt": "___ we in Group B?",
+            "options": [
+              "Are",
+              "Is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Are” doğru seçimdir. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+            "wrongExplanationTr": "“Is” bu cümlede kullanılamaz; doğru biçim “Are”. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+          },
+          {
+            "prompt": "___ your shoes clean?",
+            "options": [
+              "Are",
+              "Is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Are” doğru seçimdir. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+            "wrongExplanationTr": "“Is” bu cümlede kullanılamaz; doğru biçim “Are”. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+          },
+          {
+            "prompt": "Is Mina busy? No, ___.",
+            "options": [
+              "she isn't",
+              "she aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“she isn't” doğru seçimdir. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+            "wrongExplanationTr": "“she aren't” bu cümlede kullanılamaz; doğru biçim “she isn't”. To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "Olumlu, olumsuz ve soru görünümü",
+      "instructionTr": "Aynı bilgiyi üç farklı amaçla kur.",
+      "content": {
+        "examples": [
+          "Mina is ready.",
+          "Mina isn't ready.",
+          "Is Mina ready?"
+        ],
+        "noteTr": "Olumlu cümlede is özneden sonra, soruda özneden önce gelir; olumsuzda not alır."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "___ the documentary in English?",
+            "options": [
+              "Is",
+              "Are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Documentary tekildir; soru Is ile başlar.",
+            "wrongExplanationTr": "Are çoğul özne ister; documentary tekildir."
+          },
+          {
+            "prompt": "___ I on the correct platform?",
+            "options": [
+              "Am",
+              "Is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "I ile soru Am ile başlar.",
+            "wrongExplanationTr": "Is, I öznesiyle kullanılmaz."
+          },
+          {
+            "prompt": "Are the costumes ready?",
+            "options": [
+              "Yes, they are.",
+              "Yes, they is."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Çoğul costumes yerine they ve aynı yardımcı fiil are kullanılır.",
+            "wrongExplanationTr": "They ile is eşleşmez; kısa cevap are ile bitmelidir."
+          },
+          {
+            "prompt": "Is your aunt an architect?",
+            "options": [
+              "No, she isn't.",
+              "No, she aren't."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Aunt yerine she gelir; she ile isn't kullanılır.",
+            "wrongExplanationTr": "Aren't you/we/they grubuna aittir; she ile kullanılmaz."
+          },
+          {
+            "prompt": "___ this information correct?",
+            "options": [
+              "Is",
+              "Are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Information sayılamayan tekil bir kavramdır; Is gerekir.",
+            "wrongExplanationTr": "Are çoğul özneler içindir; information çoğul değildir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "004-to-be-questions-w1",
+            "word": "home",
+            "example": "Is she at home?",
+            "audioText": "home",
+            "prompt": "İngilizce-Türkçe eşleştir: home",
+            "options": [
+              "bugün",
+              "evde",
+              "maç",
+              "servis"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "004-to-be-questions-w2",
+            "word": "today",
+            "example": "Are we ready today?",
+            "audioText": "today",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "bugün",
+              "evde",
+              "maç",
+              "servis"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "004-to-be-questions-w3",
+            "word": "match",
+            "example": "Is the match today?",
+            "audioText": "match",
+            "prompt": "Eksik harfi tamamla: m_tch",
+            "options": [
+              "home",
+              "match",
+              "serve",
+              "today"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "004-to-be-questions-w4",
+            "word": "serve",
+            "example": "Is your serve strong?",
+            "audioText": "serve",
+            "prompt": "Karışık harfleri düzelt: evres",
+            "options": [
+              "home",
+              "match",
+              "serve",
+              "today"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "004-to-be-questions-w5",
+            "word": "concert",
+            "example": "Is the concert soon?",
+            "audioText": "concert",
+            "prompt": "Kelimeyi doğru cümleye koy: Is the ___ soon?",
+            "options": [
+              "concert",
+              "home",
+              "match",
+              "today"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "am, is ve are ile soru ve kısa cevap kurmak",
+          "To be sorusunda am/is/are öznenin önüne geçer. Kısa cevapta aynı yardımcı fiil kullanılır: Is she ready? Yes, she is.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "004-to-be-questions-w1",
+    "004-to-be-questions-w2",
+    "004-to-be-questions-w3",
+    "004-to-be-questions-w4",
+    "004-to-be-questions-w5",
+    "004-to-be-questions-w6"
+  ]
+}

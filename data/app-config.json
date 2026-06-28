@@ -1,0 +1,1 @@
+{"appName":"Beyza English Academy","version":"2.3.0","defaultStudent":"Beyza","curriculumUrl":"data/curriculum.json","diagnosticUrl":"data/diagnostic-test.json","reviewUrl":"data/module1-review.json","moduleReviews":{"module-1":"data/module1-review.json","module-2":"data/module2-review.json"},"vocabularyUrl":"data/vocabulary.json","defaultLessonId":"001-subject-pronouns"}

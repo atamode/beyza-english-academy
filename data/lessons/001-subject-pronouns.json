@@ -1,0 +1,654 @@
+{
+  "id": "001-subject-pronouns",
+  "title": "Subject Pronouns",
+  "level": "A1-bridge",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "İsimlerin yerine doğru özne zamirini seçmek",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+    "todayGoal": "İsimlerin yerine doğru özne zamirini seçmek",
+    "teachingTips": [
+      "İsmi parmağınızla gösterip yerine gelecek zamiri sorun.",
+      "Konuşanın gruba dahil olup olmadığını özellikle ayırt ettirin.",
+      "It ile they seçiminde nesnenin tekil veya çoğul olduğuna baktırın."
+    ],
+    "questionsToAsk": [
+      "Introduce yourself with I.",
+      "Describe a friend with he or she.",
+      "Describe an object with it.",
+      "Describe your class with we or they."
+    ],
+    "listeningScripts": [
+      "Zeynep and I join the coding club. We meet on Wednesdays. Our teacher, Mr Can, helps us. He explains difficult ideas clearly."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "Subject Pronouns Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "My brother and I collect comics. ___ swap them on Fridays.",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "My parents work at a hospital.",
+          "options": [
+            "They",
+            "We"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "This tablet is light.",
+          "options": [
+            "It",
+            "He"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Efe and I make videos.",
+          "options": [
+            "We",
+            "They"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Ms Deniz teaches art.",
+          "options": [
+            "She",
+            "It"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: Beyza ↔ she | the telescope ↔ it | Arda and Cem ↔ they | my aunt and I ↔ we",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: podcast / school / a / plan / They",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Mert is my cousin. She lives in Ankara.",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Introduce yourself with I.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "we",
+        "They",
+        "It",
+        "We",
+        "She",
+        "Beyza → she, the telescope → it, Arda and Cem → they, my aunt and I → we",
+        "They plan a school podcast",
+        "Mert is my cousin. He lives in Ankara.",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Subject Pronouns",
+      "instructionTr": "İsimlerin yerine doğru özne zamirini seçmek",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 1",
+        "heroText": "I design a robot."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+      "content": {
+        "examples": [
+          "I design a robot.",
+          "You solve the puzzle.",
+          "Kerem is eleven. He loves space."
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "Ada reads mysteries. She visits the library.",
+          "The drone is fast. It flies indoors.",
+          "Mina and I play chess. We practise after school.",
+          "Ece and you work together. You share the notes.",
+          "My cousins live in Bursa. They call on Sundays."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "Konuşan kişi",
+            "I"
+          ],
+          [
+            "Dinleyen kişi/kişiler",
+            "you"
+          ],
+          [
+            "Tek erkek / tek kız",
+            "he / she"
+          ],
+          [
+            "Tek hayvan veya nesne",
+            "it"
+          ],
+          [
+            "Ben + başkaları",
+            "we"
+          ],
+          [
+            "Birden çok kişi/şey",
+            "they"
+          ]
+        ]
+      },
+      "explanationTr": "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "Lara is my science partner. ___ builds clever models.",
+      "content": {
+        "options": [
+          "He",
+          "She",
+          "It",
+          "They"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Lara bir kız adıdır; he uygun değildir.",
+          "Doğru. Tek bir kız için she kullanılır.",
+          "It insanlardan söz ederken kullanılmaz.",
+          "They birden fazla kişi için kullanılır."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "My brother and I collect comics. ___ swap them on Fridays.",
+      "content": {
+        "answer": "we",
+        "accepted": [
+          "we"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "My brother and I grubunda konuşan kişi de vardır; bu yüzden we."
+      },
+      "hintTr": "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Beyza",
+            "she"
+          ],
+          [
+            "the telescope",
+            "it"
+          ],
+          [
+            "Arda and Cem",
+            "they"
+          ],
+          [
+            "my aunt and I",
+            "we"
+          ]
+        ],
+        "explanationTr": "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "podcast",
+          "school",
+          "a",
+          "plan",
+          "They"
+        ],
+        "answer": [
+          "They",
+          "plan",
+          "a",
+          "school",
+          "podcast"
+        ],
+        "explanationTr": "Doğru sıra: They plan a school podcast."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “Mert is my cousin. She lives in Ankara.”",
+      "content": {
+        "sentence": [
+          "Mert",
+          "is",
+          "my",
+          "cousin.",
+          "She",
+          "lives",
+          "in",
+          "Ankara."
+        ],
+        "wrongIndex": 4,
+        "correctWord": "He",
+        "explanationTr": "Mert bir erkek adıdır; ikinci cümle He ile başlamalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "Who does the word “He” describe?",
+      "content": {
+        "audioText": "Zeynep and I join the coding club. We meet on Wednesdays. Our teacher, Mr Can, helps us. He explains difficult ideas clearly.",
+        "options": [
+          "Zeynep",
+          "The coding club",
+          "Mr Can",
+          "Zeynep and the speaker"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "Zeynep için she kullanılırdı.",
+          "Bir kulüp için it kullanılırdı.",
+          "Doğru. He, Mr Can'ın yerine kullanılmıştır.",
+          "İki kişi için they veya we gerekir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Introduce yourself with I.",
+          "Describe a friend with he or she.",
+          "Describe an object with it.",
+          "Describe your class with we or they."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "Sarp has a rescue dog named Moka. He takes Moka to the park. Moka follows a red ball because it is her favourite toy. Sarp's neighbours Ece and Arda join the game. Ece and Arda bring water. They play with Moka until sunset.",
+        "questions": [
+          {
+            "prompt": "Who does “He” describe?",
+            "options": [
+              "Moka",
+              "Sarp",
+              "The neighbours"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Sarp” bilgisini verir; “Moka” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Sarp” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Sarp” cevabına götürür; “The neighbours” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "What does “it” describe?",
+            "options": [
+              "The park",
+              "The red ball",
+              "Sunset"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “The red ball” bilgisini verir; “The park” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “The red ball” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “The red ball” cevabına götürür; “Sunset” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Who does “they” describe?",
+            "options": [
+              "Ece and Arda",
+              "Only Sarp",
+              "Only Moka"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. They zamiri hemen önce adı verilen Ece and Arda grubuna gönderme yapıyor.",
+              "Only Sarp tek kişidir ve he ile gösterilir; they, Ece and Arda adlı iki kişiyi anlatıyor.",
+              "Moka tek bir köpektir ve it ile gösterilir; they zamiri Ece and Arda grubunun yerini tutuyor."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "My parents work at a hospital.",
+            "options": [
+              "They",
+              "We"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“They” doğru seçimdir. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+            "wrongExplanationTr": "“We” bu cümlede kullanılamaz; doğru biçim “They”. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+          },
+          {
+            "prompt": "This tablet is light.",
+            "options": [
+              "It",
+              "He"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“It” doğru seçimdir. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+            "wrongExplanationTr": "“He” bu cümlede kullanılamaz; doğru biçim “It”. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+          },
+          {
+            "prompt": "Efe and I make videos.",
+            "options": [
+              "We",
+              "They"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“We” doğru seçimdir. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+            "wrongExplanationTr": "“They” bu cümlede kullanılamaz; doğru biçim “We”. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+          },
+          {
+            "prompt": "Ms Deniz teaches art.",
+            "options": [
+              "She",
+              "It"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“She” doğru seçimdir. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+            "wrongExplanationTr": "“It” bu cümlede kullanılamaz; doğru biçim “She”. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+          },
+          {
+            "prompt": "Can and you are captains.",
+            "options": [
+              "You",
+              "They"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“You” doğru seçimdir. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+            "wrongExplanationTr": "“They” bu cümlede kullanılamaz; doğru biçim “You”. Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "Zamir iz sürücüsü",
+      "instructionTr": "Zamirin hangi ismin yerine geçtiğini açıkça bul.",
+      "content": {
+        "examples": [
+          "Elif opens the window. She checks the weather.",
+          "The buses arrive. They stop near the gate."
+        ],
+        "noteTr": "She yalnız Elif'e, they yalnız buses grubuna gönderme yapar."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "My skateboard is under the desk. ___ needs a new wheel.",
+            "options": [
+              "It",
+              "They"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Skateboard tek bir nesnedir; yerine it gelir.",
+            "wrongExplanationTr": "They çoğul isimlerin yerini tutar; skateboard tekildir."
+          },
+          {
+            "prompt": "Aslı and Nehir host the radio show. ___ choose the songs together.",
+            "options": [
+              "They",
+              "She"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "İki kişi olduğu için Aslı and Nehir yerine they kullanılır.",
+            "wrongExplanationTr": "She yalnız tek bir kızın yerini tutar; burada iki kişi var."
+          },
+          {
+            "prompt": "My father and I prepare dinner. ___ try a new recipe.",
+            "options": [
+              "We",
+              "They"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Konuşan kişi gruba dahil olduğu için we gerekir.",
+            "wrongExplanationTr": "They konuşanı içermeyen bir gruptur; father and I grubunda konuşan kişi vardır."
+          },
+          {
+            "prompt": "Which pronoun replaces ‘the old camera’?",
+            "options": [
+              "It",
+              "He"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Tek bir nesne olan camera için it kullanılır.",
+            "wrongExplanationTr": "He yalnız erkek bir insan için kullanılır; camera insan değildir."
+          },
+          {
+            "prompt": "You and Deniz are in the final. ___ need two microphones.",
+            "options": [
+              "You",
+              "We"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "You, dinlenen kişiyi ve onun grubunu da kapsayabilir.",
+            "wrongExplanationTr": "We konuşan kişinin dahil olduğu gruptur; cümlede you and Deniz deniyor."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "001-subject-pronouns-w1",
+            "word": "library",
+            "example": "They meet at the library.",
+            "audioText": "library",
+            "prompt": "İngilizce-Türkçe eşleştir: library",
+            "options": [
+              "kaptan",
+              "kütüphane",
+              "robot",
+              "takım arkadaşı"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "001-subject-pronouns-w2",
+            "word": "robot",
+            "example": "It is a small robot.",
+            "audioText": "robot",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "kaptan",
+              "kütüphane",
+              "robot",
+              "takım arkadaşı"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "001-subject-pronouns-w3",
+            "word": "captain",
+            "example": "She is the captain.",
+            "audioText": "captain",
+            "prompt": "Eksik harfi tamamla: c_ptain",
+            "options": [
+              "captain",
+              "library",
+              "robot",
+              "teammate"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "001-subject-pronouns-w4",
+            "word": "teammate",
+            "example": "He is my teammate.",
+            "audioText": "teammate",
+            "prompt": "Karışık harfleri düzelt: etammaet",
+            "options": [
+              "captain",
+              "library",
+              "robot",
+              "teammate"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "001-subject-pronouns-w5",
+            "word": "melody",
+            "example": "It is a calm melody.",
+            "audioText": "melody",
+            "prompt": "Kelimeyi doğru cümleye koy: It is a calm ___.",
+            "options": [
+              "captain",
+              "library",
+              "melody",
+              "robot"
+            ],
+            "correctIndex": 2
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "İsimlerin yerine doğru özne zamirini seçmek",
+          "Özne, cümlede işi yapan kişi ya da şeydir. Tekrarı önlemek için isimlerin yerine I, you, he, she, it, we veya they kullanırız.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "001-subject-pronouns-w1",
+    "001-subject-pronouns-w2",
+    "001-subject-pronouns-w3",
+    "001-subject-pronouns-w4",
+    "001-subject-pronouns-w5",
+    "001-subject-pronouns-w6"
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "id": "002-am-is-are",
+  "title": "am / is / are",
+  "level": "A1-bridge",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Özneyle doğru to be biçimini eşleştirmek",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [
+    "001-subject-pronouns"
+  ],
+  "parentGuide": {
+    "summaryTr": "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+    "todayGoal": "Özneyle doğru to be biçimini eşleştirmek",
+    "teachingTips": [
+      "Önce öznenin altını çizdirin, sonra am/is/are seçtirin.",
+      "Tekil isimleri he/she/it grubuyla, çoğulları they grubuyla ilişkilendirin.",
+      "I am eşleşmesini ayrı bir sabit çift olarak tekrar edin."
+    ],
+    "questionsToAsk": [
+      "Say where you are.",
+      "Describe one object with is.",
+      "Describe two people with are.",
+      "Say how you feel with am."
+    ],
+    "listeningScripts": [
+      "I am at the youth centre. The sports hall is busy, but the study rooms are quiet. My friends are upstairs."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "am / is / are Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "My gloves ___ in my backpack.",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "I ___ eleven.",
+          "options": [
+            "am",
+            "is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The keys ___ here.",
+          "options": [
+            "are",
+            "is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Our coach ___ patient.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "You ___ early.",
+          "options": [
+            "are",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: I ↔ am curious | the concert ↔ is tonight | we ↔ are prepared | those shoes ↔ are comfortable",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: floor / second / the / on / is / classroom / Our",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: The players is very focused.",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Say where you are.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "are",
+        "am",
+        "are",
+        "is",
+        "are",
+        "I → am curious, the concert → is tonight, we → are prepared, those shoes → are comfortable",
+        "Our classroom is on the second floor",
+        "The players are very focused.",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "am / is / are",
+      "instructionTr": "Özneyle doğru to be biçimini eşleştirmek",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 2",
+        "heroText": "I am ready for the match."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+      "content": {
+        "examples": [
+          "I am ready for the match.",
+          "You are a careful researcher.",
+          "He is at the skate park."
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "She is proud of her project.",
+          "It is cold outside.",
+          "We are in the same orchestra.",
+          "They are excited about the trip.",
+          "The museum is open."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "I",
+            "am"
+          ],
+          [
+            "he / she / it / tekil isim",
+            "is"
+          ],
+          [
+            "you / we / they / çoğul isim",
+            "are"
+          ]
+        ]
+      },
+      "explanationTr": "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "The documentary ___ interesting.",
+      "content": {
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Am yalnız I ile kullanılır.",
+          "Doğru. Documentary tek bir şeydir ve is alır.",
+          "Are çoğul öznelerle kullanılır.",
+          "Be bu cümlede özneye göre çekimlenmelidir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "My gloves ___ in my backpack.",
+      "content": {
+        "answer": "are",
+        "accepted": [
+          "are"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "Gloves çoğuldur; çoğul isimlerle are kullanılır."
+      },
+      "hintTr": "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "am curious"
+          ],
+          [
+            "the concert",
+            "is tonight"
+          ],
+          [
+            "we",
+            "are prepared"
+          ],
+          [
+            "those shoes",
+            "are comfortable"
+          ]
+        ],
+        "explanationTr": "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "floor",
+          "second",
+          "the",
+          "on",
+          "is",
+          "classroom",
+          "Our"
+        ],
+        "answer": [
+          "Our",
+          "classroom",
+          "is",
+          "on",
+          "the",
+          "second",
+          "floor"
+        ],
+        "explanationTr": "Doğru sıra: Our classroom is on the second floor."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “The players is very focused.”",
+      "content": {
+        "sentence": [
+          "The",
+          "players",
+          "is",
+          "very",
+          "focused."
+        ],
+        "wrongIndex": 2,
+        "correctWord": "are",
+        "explanationTr": "Players çoğuldur; are kullanılmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "Which place is quiet?",
+      "content": {
+        "audioText": "I am at the youth centre. The sports hall is busy, but the study rooms are quiet. My friends are upstairs.",
+        "options": [
+          "The sports hall",
+          "The study rooms",
+          "The youth centre café",
+          "Upstairs"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Sports hall için busy deniyor.",
+          "Doğru. Study rooms are quiet deniyor.",
+          "Kafeden söz edilmiyor.",
+          "Upstairs bir konumdur; quiet olarak tanımlanmıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Say where you are.",
+          "Describe one object with is.",
+          "Describe two people with are.",
+          "Say how you feel with am."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "The robotics fair is today. Nil is near the entrance. Her machines are on a long table. I am in her team, and we are nervous but ready.",
+        "questions": [
+          {
+            "prompt": "When is the fair?",
+            "options": [
+              "Today",
+              "Tomorrow",
+              "Next week"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “Today” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“Tomorrow” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “Today” der.",
+              "Sorudaki ipucu “Today” cevabına götürür; “Next week” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Where are the machines?",
+            "options": [
+              "Near the door",
+              "On a table",
+              "Under a chair"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “On a table” bilgisini verir; “Near the door” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “On a table” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “On a table” cevabına götürür; “Under a chair” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "How is the team feeling?",
+            "options": [
+              "Bored",
+              "Nervous but ready",
+              "Angry"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Nervous but ready” bilgisini verir; “Bored” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Nervous but ready” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Nervous but ready” cevabına götürür; “Angry” bu ipucunu karşılamaz."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I ___ eleven.",
+            "options": [
+              "am",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“am” doğru seçimdir. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+            "wrongExplanationTr": "“is” bu cümlede kullanılamaz; doğru biçim “am”. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+          },
+          {
+            "prompt": "The keys ___ here.",
+            "options": [
+              "are",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“are” doğru seçimdir. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+            "wrongExplanationTr": "“is” bu cümlede kullanılamaz; doğru biçim “are”. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+          },
+          {
+            "prompt": "Our coach ___ patient.",
+            "options": [
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“is” doğru seçimdir. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+            "wrongExplanationTr": "“are” bu cümlede kullanılamaz; doğru biçim “is”. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+          },
+          {
+            "prompt": "You ___ early.",
+            "options": [
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“are” doğru seçimdir. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+            "wrongExplanationTr": "“am” bu cümlede kullanılamaz; doğru biçim “are”. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+          },
+          {
+            "prompt": "The weather ___ warm.",
+            "options": [
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“is” doğru seçimdir. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+            "wrongExplanationTr": "“are” bu cümlede kullanılamaz; doğru biçim “is”. Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "Kişi ve sayı kontrolü",
+      "instructionTr": "Henüz olumsuz ve soru kurmadan özne–to be eşleşmesini sağlamlaştır.",
+      "content": {
+        "examples": [
+          "I am calm.",
+          "The captain is calm.",
+          "The players are calm."
+        ],
+        "noteTr": "Anlam aynı kalsa da özne değişince am, is veya are değişir."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "The climbing wall ___ ten metres high.",
+            "options": [
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Wall tekil olduğu için is kullanılır.",
+            "wrongExplanationTr": "Are çoğul özneler içindir; wall tek bir duvardır."
+          },
+          {
+            "prompt": "I ___ responsible for the blue folder.",
+            "options": [
+              "am",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "I yalnız am ile eşleşir.",
+            "wrongExplanationTr": "Is he/she/it ile kullanılır; I ile kullanılmaz."
+          },
+          {
+            "prompt": "Beyza and Ekin ___ in the debate team.",
+            "options": [
+              "are",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "İki kişilik çoğul özne are alır.",
+            "wrongExplanationTr": "Is tekil özne içindir; Beyza and Ekin çoğuldur."
+          },
+          {
+            "prompt": "Your advice ___ useful.",
+            "options": [
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Advice sayılamayan tek bir kavram gibi davranır ve is alır.",
+            "wrongExplanationTr": "Are çoğul öznelerle kullanılır; advice çoğul değildir."
+          },
+          {
+            "prompt": "These batteries ___ rechargeable.",
+            "options": [
+              "are",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Batteries çoğul olduğu için are gerekir.",
+            "wrongExplanationTr": "Is tek bir battery ile kullanılabilirdi; burada birden fazla var."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "002-am-is-are-w1",
+            "word": "ready",
+            "example": "I am ready.",
+            "audioText": "ready",
+            "prompt": "İngilizce-Türkçe eşleştir: ready",
+            "options": [
+              "birlikte",
+              "hazır",
+              "parlak",
+              "saha"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "002-am-is-are-w2",
+            "word": "bright",
+            "example": "The room is bright.",
+            "audioText": "bright",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "birlikte",
+              "hazır",
+              "parlak",
+              "saha"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "002-am-is-are-w3",
+            "word": "together",
+            "example": "We are together.",
+            "audioText": "together",
+            "prompt": "Eksik harfi tamamla: t_gether",
+            "options": [
+              "bright",
+              "court",
+              "ready",
+              "together"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "002-am-is-are-w4",
+            "word": "court",
+            "example": "The court is clean.",
+            "audioText": "court",
+            "prompt": "Karışık harfleri düzelt: truoc",
+            "options": [
+              "bright",
+              "court",
+              "ready",
+              "together"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "002-am-is-are-w5",
+            "word": "coach",
+            "example": "He is a coach.",
+            "audioText": "coach",
+            "prompt": "Kelimeyi doğru cümleye koy: He is a ___.",
+            "options": [
+              "bright",
+              "coach",
+              "ready",
+              "together"
+            ],
+            "correctIndex": 1
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "Özneyle doğru to be biçimini eşleştirmek",
+          "Türkçedeki “-im, -sin, -dır” anlamını İngilizcede am, is ve are taşır. I yalnız am; he, she, it is; you, we, they are ile kullanılır.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "002-am-is-are-w1",
+    "002-am-is-are-w2",
+    "002-am-is-are-w3",
+    "002-am-is-are-w4",
+    "002-am-is-are-w5",
+    "002-am-is-are-w6"
+  ]
+}

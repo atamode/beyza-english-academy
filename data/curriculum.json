@@ -1,0 +1,224 @@
+{
+  "sprint": 2.3,
+  "modules": [
+    {
+      "id": "module-0",
+      "title": "Hızlı Başlangıç",
+      "description": "Grammar bilmeden başlayan öğrenci için öğretici ilk adım",
+      "lessons": [
+        {
+          "id": "000-quick-start",
+          "order": 0,
+          "title": "Ders 0 — Hızlı Başlangıç",
+          "file": "data/lessons/000-quick-start.json",
+          "status": "published",
+          "prerequisites": []
+        }
+      ]
+    },
+    {
+      "id": "module-1",
+      "title": "Cümle Kurma Köprüsü",
+      "description": "Özne, to be, iyelik ve temel gösterme yapıları",
+      "lessons": [
+        {
+          "id": "001-subject-pronouns",
+          "order": 1,
+          "title": "Subject Pronouns",
+          "file": "data/lessons/001-subject-pronouns.json",
+          "status": "published",
+          "prerequisites": []
+        },
+        {
+          "id": "002-am-is-are",
+          "order": 2,
+          "title": "am / is / are",
+          "file": "data/lessons/002-am-is-are.json",
+          "status": "published",
+          "prerequisites": [
+            "001-subject-pronouns"
+          ]
+        },
+        {
+          "id": "003-to-be-negative",
+          "order": 3,
+          "title": "To be — Olumsuz",
+          "file": "data/lessons/003-to-be-negative.json",
+          "status": "published",
+          "prerequisites": [
+            "002-am-is-are"
+          ]
+        },
+        {
+          "id": "004-to-be-questions",
+          "order": 4,
+          "title": "To be — Sorular",
+          "file": "data/lessons/004-to-be-questions.json",
+          "status": "published",
+          "prerequisites": [
+            "003-to-be-negative"
+          ]
+        },
+        {
+          "id": "005-possessive-adjectives",
+          "order": 5,
+          "title": "Possessive Adjectives",
+          "file": "data/lessons/005-possessive-adjectives.json",
+          "status": "published",
+          "prerequisites": [
+            "004-to-be-questions"
+          ]
+        },
+        {
+          "id": "006-have-got",
+          "order": 6,
+          "title": "have got / has got",
+          "file": "data/lessons/006-have-got.json",
+          "status": "published",
+          "prerequisites": [
+            "005-possessive-adjectives"
+          ]
+        },
+        {
+          "id": "007-demonstratives",
+          "order": 7,
+          "title": "this / that / these / those",
+          "file": "data/lessons/007-demonstratives.json",
+          "status": "published",
+          "prerequisites": [
+            "006-have-got"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Günlük Hayat",
+      "description": "Rutinler ve Present Simple",
+      "lessons": [
+        {
+          "id": "008-present-simple-affirmative",
+          "order": 8,
+          "title": "Present Simple — Olumlu Cümleler",
+          "file": "data/lessons/008-present-simple-affirmative.json",
+          "status": "published",
+          "prerequisites": [
+            "007-demonstratives"
+          ]
+        },
+        {
+          "id": "009-third-person-s",
+          "order": 9,
+          "title": "Third Person -s",
+          "file": "data/lessons/009-third-person-s.json",
+          "status": "published",
+          "prerequisites": [
+            "008-present-simple-affirmative"
+          ]
+        },
+        {
+          "id": "010-present-simple-negative",
+          "order": 10,
+          "title": "Present Simple Negative",
+          "file": "data/lessons/010-present-simple-negative.json",
+          "status": "published",
+          "prerequisites": [
+            "009-third-person-s"
+          ]
+        },
+        {
+          "id": "011-do-does-questions",
+          "order": 11,
+          "title": "Do / Does Questions",
+          "file": "data/lessons/011-do-does-questions.json",
+          "status": "published",
+          "prerequisites": [
+            "010-present-simple-negative"
+          ]
+        },
+        {
+          "id": "012-short-answers",
+          "order": 12,
+          "title": "Short Answers",
+          "file": "data/lessons/012-short-answers.json",
+          "status": "published",
+          "prerequisites": [
+            "011-do-does-questions"
+          ]
+        },
+        {
+          "id": "013-adverbs-frequency",
+          "order": 13,
+          "title": "Adverbs of Frequency",
+          "file": "data/lessons/013-adverbs-frequency.json",
+          "status": "published",
+          "prerequisites": [
+            "012-short-answers"
+          ]
+        },
+        {
+          "id": "014-time-daily-routine",
+          "order": 14,
+          "title": "Telling the Time and Daily Routine",
+          "file": "data/lessons/014-time-daily-routine.json",
+          "status": "published",
+          "prerequisites": [
+            "013-adverbs-frequency"
+          ]
+        },
+        {
+          "id": "015-hobbies-preferences",
+          "order": 15,
+          "title": "Hobbies and Preferences",
+          "file": "data/lessons/015-hobbies-preferences.json",
+          "status": "published",
+          "prerequisites": [
+            "014-time-daily-routine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Şu An",
+      "description": "Present Continuous ve zaman seçimi",
+      "lessons": [
+        {
+          "id": "026-present-simple-vs-continuous",
+          "order": 26,
+          "title": "Present Simple vs Present Continuous",
+          "status": "planned",
+          "prerequisites": []
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "Geçmiş",
+      "description": "Geçmişteki olaylar",
+      "lessons": [
+        {
+          "id": "041-was-were",
+          "order": 41,
+          "title": "was / were",
+          "status": "planned",
+          "prerequisites": []
+        }
+      ]
+    },
+    {
+      "id": "module-10",
+      "title": "A2 Devam",
+      "description": "Deneyimler ve daha gelişmiş yapılar",
+      "lessons": [
+        {
+          "id": "056-present-perfect-intro",
+          "order": 56,
+          "title": "Present Perfect — Giriş",
+          "status": "planned",
+          "prerequisites": []
+        }
+      ]
+    }
+  ]
+}

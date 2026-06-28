@@ -1,0 +1,676 @@
+{
+  "id": "014-time-daily-routine",
+  "title": "Telling the Time and Daily Routine",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek.",
+    "Günlük yapılan işleri (wake up, have breakfast, go to school) geniş zaman kuralları ile ifade edebilmek.",
+    "Saat bildirirken \"at\" edatını doğru kullanmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu dersimizde Beyza ile günlük yaşantımızı anlatırken en çok ihtiyaç duyduğumuz saatler konusunu işledik. Beyza tam saatleri ve buçukları söylemeyi ve bir işi yaparken saatin önüne \"at\" koymayı öğrendi. Evde duvar saatine bakarak \"What time is it?\" diye sorup İngilizce saat söylemesini isteyebilirsiniz.",
+    "todayGoal": "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek.",
+    "teachingTips": [
+      "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "It is 3 o'clock.",
+      "It is half past 5.",
+      "I wake up at 6 o'clock.",
+      "She has breakfast at 7 o'clock."
+    ],
+    "listeningScripts": [
+      "A music band has a big rehearsal today. The members come to the studio at 2 o'clock. They practise their songs. The rehearsal finishes at half past 5. They go home happy."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Telling the Time and Daily Routine Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "What time is it? (04:30)",
+          "options": [
+            "It is four o'clock.",
+            "It is half past four.",
+            "It is half past five."
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She goes to volleyball practice _______ half past three.",
+          "options": [
+            "on",
+            "at",
+            "in"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "It is _______ (11:00).",
+          "options": [
+            "eleven o'clock",
+            "half past eleven",
+            "eleven past"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I have dinner ________ half past seven.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "He ________ (wake up) at 8 o'clock.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: school / at / I / go / to / 8 o'clock",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: The concert starts on half past eight.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "It is half past four.",
+        "at",
+        "eleven o'clock",
+        "at",
+        "wakes up",
+        "I go to school at 8 o'clock",
+        "Saat ifadelerinden önce \"on\" değil \"at\" kullanılır.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "014-time-daily-routine-w1",
+    "014-time-daily-routine-w2",
+    "014-time-daily-routine-w3",
+    "014-time-daily-routine-w4",
+    "014-time-daily-routine-w5",
+    "014-time-daily-routine-w6",
+    "014-time-daily-routine-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Telling the Time and Daily Routine",
+      "instructionTr": "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 14",
+        "heroText": "It is 3 o'clock."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bu derste hem saat söylemeyi hem de günlük rutinlerimizi (her gün yaptığımız standart işleri) anlatmayı öğreneceğiz.",
+      "content": {
+        "examples": [
+          "Saat sormak için: What time is it?",
+          "Cevap verirken iki temel kural:\n1. Tam saatler: Saatin tam olduğunu belirtmek için sayının sonuna o'clock ekleriz.\n   * *It is 7 o'clock.* (Saat 7.)\n2. Yarım saatler (buçuklar): Half past + saat sayısı kullanılır.\n   * *It is half past 8.* (Saat 8 buçuk.)"
+        ],
+        "noteTr": "Bu derste hem saat söylemeyi hem de günlük rutinlerimizi (her gün yaptığımız standart işleri) anlatmayı öğreneceğiz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "It is 3 o'clock.",
+          "It is half past 5.",
+          "I wake up at 6 o'clock.",
+          "She has breakfast at 7 o'clock.",
+          "We go to school at half past 8.",
+          "He plays volleyball at 4 o'clock.",
+          "The music band practises at half past 6.",
+          "She does her homework at 8 o'clock.",
+          "My coach wakes up early every day.",
+          "The concert starts at half past 9."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "Tam Saat",
+            "It is [Sayı] o'clock",
+            "It is 5 o'clock.",
+            "Saat 5."
+          ],
+          [
+            "Yarım Saat",
+            "It is half past [Sayı]",
+            "It is half past 2.",
+            "Saat 2 buçuk."
+          ],
+          [
+            "Eylem Zamanı",
+            "Fiil + at + [Saat]",
+            "I sleep at 10 o'clock.",
+            "Saat 10'da uyurum."
+          ]
+        ]
+      },
+      "explanationTr": "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek. Günlük yapılan işleri (wake up, have breakfast, go to school) geniş zaman kuralları ile ifade edebilmek. Saat bildirirken \"at\" edatını doğru kullanmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* I wake up 7 o'clock. ❌\n* *Doğrusu:* I wake up at 7 o'clock. (Saatlerden önce \"-de/-da\" anlamına gelen \"at\" kesinlikle kullanılmalıdır.)",
+          "* *Hata:* It is half past 4 o'clock. ❌\n* *Doğrusu:* It is half past 4. (\"o'clock\" yalnızca tam saatlerde kullanılır; buçuklu saatlerde kullanılmaz.)",
+          "* *Hata:* She wake up at 6 o'clock. ❌\n* *Doğrusu:* She wakes up at 6 o'clock. (\"She\" öznesiyle \"wake\" → \"wakes\".)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "What time is it? (04:30)",
+      "content": {
+        "options": [
+          "It is four o'clock.",
+          "It is half past four.",
+          "It is half past five."
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"It is four o'clock.\" bu cümlede hedef kurala uymaz. Saat 04:30 buçuklu bir saattir; \"half past four\" doğru cevaptır. A seçeneği 04:00 tam saatini verir. C seçeneği 05:30'u verir.",
+          "Doğru. Saat 04:30 buçuklu bir saattir; \"half past four\" doğru cevaptır. A seçeneği 04:00 tam saatini verir. C seçeneği 05:30'u verir.",
+          "\"It is half past five.\" bu cümlede hedef kurala uymaz. Saat 04:30 buçuklu bir saattir; \"half past four\" doğru cevaptır. A seçeneği 04:00 tam saatini verir. C seçeneği 05:30'u verir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "She goes to volleyball practice _______ half past three.",
+      "content": {
+        "options": [
+          "on",
+          "at",
+          "in"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"on\" bu cümlede hedef kurala uymaz. Saat ifadelerinin önünde zaman bildirmek için \"at\" kullanılır. A seçeneği \"on\" gün ve tarih bildirmek içindir. C seçeneği \"in\" ay, yıl ve yer bildirmek içindir.",
+          "Doğru. Saat ifadelerinin önünde zaman bildirmek için \"at\" kullanılır. A seçeneği \"on\" gün ve tarih bildirmek içindir. C seçeneği \"in\" ay, yıl ve yer bildirmek içindir.",
+          "\"in\" bu cümlede hedef kurala uymaz. Saat ifadelerinin önünde zaman bildirmek için \"at\" kullanılır. A seçeneği \"on\" gün ve tarih bildirmek içindir. C seçeneği \"in\" ay, yıl ve yer bildirmek içindir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I have dinner ________ half past seven.",
+      "content": {
+        "answer": "at",
+        "accepted": [
+          "at"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "Saat yapılarının önüne \"at\" gelir."
+      },
+      "hintTr": "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "school",
+          "at",
+          "I",
+          "go",
+          "to",
+          "8 o'clock"
+        ],
+        "answer": [
+          "I",
+          "go",
+          "to",
+          "school",
+          "at",
+          "8",
+          "o'clock"
+        ],
+        "explanationTr": "Doğru sıra: I go to school at 8 o'clock"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "The",
+          "concert",
+          "starts",
+          "on",
+          "half",
+          "past",
+          "eight."
+        ],
+        "wrongIndex": 3,
+        "explanationTr": "Saat ifadelerinden önce \"on\" değil \"at\" kullanılır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "10:00",
+            "It is ten o'clock."
+          ],
+          [
+            "10:30",
+            "It is half past ten."
+          ],
+          [
+            "She goes to bed _______ 9 o'clock.",
+            "at"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "Buse is a busy girl. She wakes up at 6 o'clock every morning. She has breakfast with her family at half past 6. Then she goes to school. After school, she plays volleyball at 4 o'clock. She loves her daily routine.",
+        "questions": [
+          {
+            "prompt": "What time does Buse wake up?",
+            "options": [
+              "She wakes up at 6 o'clock.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She wakes up at 6 o'clock.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She wakes up at 6 o'clock.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She wakes up at 6 o'clock."
+            ]
+          },
+          {
+            "prompt": "Who does she have breakfast with?",
+            "options": [
+              "She has breakfast with her family.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She has breakfast with her family.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She has breakfast with her family.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She has breakfast with her family."
+            ]
+          },
+          {
+            "prompt": "What does she do at 4 o'clock?",
+            "options": [
+              "She plays volleyball.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She plays volleyball.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She plays volleyball.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She plays volleyball."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What time do the band members come to the studio?",
+      "content": {
+        "audioText": "A music band has a big rehearsal today. The members come to the studio at 2 o'clock. They practise their songs. The rehearsal finishes at half past 5. They go home happy.",
+        "options": [
+          "They come at 2 o'clock.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. They come at 2 o'clock.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Sabah saat kaçta uyandığını ve akşam saat kaçta uyuduğunu belirten iki İngilizce cümle kur. \"at\" kelimesini kullanmayı unutma!",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "It is _______ (11:00).",
+            "options": [
+              "eleven o'clock",
+              "half past eleven",
+              "eleven past"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "11:00 tam saat olduğu için \"eleven o'clock\" doğrudur. B seçeneği \"half past eleven\" 11:30'u ifade eder. C seçeneği \"eleven past\" İngilizcede kullanılmayan bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. 11:00 tam saat olduğu için \"eleven o'clock\" doğrudur. B seçeneği \"half past eleven\" 11:30'u ifade eder. C seçeneği \"eleven past\" İngilizcede kullanılmayan bir yapıdır."
+          },
+          {
+            "prompt": "He has breakfast _______ seven o'clock.",
+            "options": [
+              "in",
+              "at",
+              "on"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Saat ifadelerinin önüne \"at\" gelir. A seçeneği \"in\" ay ve yıl için kullanılır. C seçeneği \"on\" gün ve tarih için kullanılır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Saat ifadelerinin önüne \"at\" gelir. A seçeneği \"in\" ay ve yıl için kullanılır. C seçeneği \"on\" gün ve tarih için kullanılır."
+          },
+          {
+            "prompt": "My father _______ to work at half past eight.",
+            "options": [
+              "go",
+              "goes",
+              "going"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"My father\" (He) için \"go\" → \"goes\". A seçeneğinde \"-s\" eki eksiktir. C seçeneği \"-ing\" şimdiki zaman için kullanılır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"My father\" (He) için \"go\" → \"goes\". A seçeneğinde \"-s\" eki eksiktir. C seçeneği \"-ing\" şimdiki zaman için kullanılır."
+          },
+          {
+            "prompt": "What _______ is it? — It is 2 o'clock.",
+            "options": [
+              "day",
+              "clock",
+              "time"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Saat sormak için standart kalıp \"What time is it?\"tir. A seçeneği \"day\" gün sorar. B seçeneği \"clock\" nesneyi ifade eder, soru sözcüğü değildir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Saat sormak için standart kalıp \"What time is it?\"tir. A seçeneği \"day\" gün sorar. B seçeneği \"clock\" nesneyi ifade eder, soru sözcüğü değildir."
+          },
+          {
+            "prompt": "She does her homework _______ half past four.",
+            "options": [
+              "at",
+              "inside",
+              "under"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Saat \"4 buçukta\" demek için \"at half past four\" yazılır. B seçeneği \"inside\" yer bildirmek içindir. C seçeneği \"under\" altında anlamına gelir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Saat \"4 buçukta\" demek için \"at half past four\" yazılır. B seçeneği \"inside\" yer bildirmek içindir. C seçeneği \"under\" altında anlamına gelir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "It is _______ (01:30).",
+            "options": [
+              "half past one",
+              "one o'clock",
+              "half past two"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "01:30 buçuklu saattir; \"half past one\" doğrudur. B seçeneği tam saat 01:00'ı verir. C seçeneği 02:30'u verir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. 01:30 buçuklu saattir; \"half past one\" doğrudur. B seçeneği tam saat 01:00'ı verir. C seçeneği 02:30'u verir."
+          },
+          {
+            "prompt": "The volleyball match starts _______ 5 o'clock.",
+            "options": [
+              "at",
+              "on",
+              "in"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Saat ifadelerinden önce \"at\" kullanılır. B seçeneği \"on\" gün ve tarih için kullanılır. C seçeneği \"in\" ay ve yıl için kullanılır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Saat ifadelerinden önce \"at\" kullanılır. B seçeneği \"on\" gün ve tarih için kullanılır. C seçeneği \"in\" ay ve yıl için kullanılır."
+          },
+          {
+            "prompt": "I _______ my room at half past three.",
+            "options": [
+              "cleans",
+              "clean",
+              "cleaning"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"I\" öznesiyle geniş zamanda fiil yalın kalır: \"clean\". A seçeneği He/She/It özneleri için kullanılır. C seçeneği şimdiki zaman ekidir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"I\" öznesiyle geniş zamanda fiil yalın kalır: \"clean\". A seçeneği He/She/It özneleri için kullanılır. C seçeneği şimdiki zaman ekidir."
+          },
+          {
+            "prompt": "The singer _______ on stage at 8 o'clock.",
+            "options": [
+              "sings",
+              "sing",
+              "singes"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"The singer\" (He/She) tekil özne; \"sing\" → \"sings\". B seçeneğinde \"-s\" eki eksiktir. C seçeneği \"singes\" yanlış yazımdır; \"sing\" \"-es\" almaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"The singer\" (He/She) tekil özne; \"sing\" → \"sings\". B seçeneğinde \"-s\" eki eksiktir. C seçeneği \"singes\" yanlış yazımdır; \"sing\" \"-es\" almaz."
+          },
+          {
+            "prompt": "We _______ dinner at half past seven.",
+            "options": [
+              "has",
+              "have",
+              "haves"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"We\" öznesiyle \"have dinner\" yapısında ek gelmez. A seçeneği He/She/It özneleri içindir. C seçeneği \"haves\" yoktur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"We\" öznesiyle \"have dinner\" yapısında ek gelmez. A seçeneği He/She/It özneleri içindir. C seçeneği \"haves\" yoktur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "014-time-daily-routine-w1",
+            "word": "o'clock",
+            "example": "It is nine o'clock.",
+            "audioText": "o'clock",
+            "prompt": "İngilizce-Türkçe eşleştir: o'clock",
+            "options": [
+              "... buçuk",
+              "Kahvaltı",
+              "Saat (tam saatlerde)",
+              "Uyanmak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "014-time-daily-routine-w2",
+            "word": "half past",
+            "example": "It is half past ten.",
+            "audioText": "half past",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "... buçuk",
+              "Kahvaltı",
+              "Saat (tam saatlerde)",
+              "Uyanmak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "014-time-daily-routine-w3",
+            "word": "wake up",
+            "example": "I wake up early.",
+            "audioText": "wake up",
+            "prompt": "Eksik harfi tamamla: w_ke up",
+            "options": [
+              "breakfast",
+              "half past",
+              "o'clock",
+              "wake up"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "014-time-daily-routine-w4",
+            "word": "breakfast",
+            "example": "She has breakfast at 7.",
+            "audioText": "breakfast",
+            "prompt": "Karışık harfleri düzelt: tsafkaerb",
+            "options": [
+              "breakfast",
+              "half past",
+              "o'clock",
+              "wake up"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "014-time-daily-routine-w5",
+            "word": "homework",
+            "example": "Do your homework.",
+            "audioText": "homework",
+            "prompt": "Kelimeyi doğru cümleye koy: Do your ___.",
+            "options": [
+              "half past",
+              "homework",
+              "o'clock",
+              "wake up"
+            ],
+            "correctIndex": 1
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "İngilizcede tam saatleri (o'clock) ve yarım saatleri (half past) doğru kalıplarla söyleyebilmek.",
+          "Günlük yapılan işleri (wake up, have breakfast, go to school) geniş zaman kuralları ile ifade edebilmek.",
+          "Hedef kelimeler: o'clock, half past, wake up, breakfast, homework, dinner, time"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

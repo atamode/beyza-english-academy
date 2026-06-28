@@ -1,0 +1,573 @@
+{
+  "id": "module-2-review",
+  "moduleId": "module-2",
+  "title": "Modül 2 Genel Tekrar",
+  "description": "008–015 derslerindeki Present Simple, kısa cevap, sıklık, saat-rutin ve tercih konularını dengeli ölçer.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "m2r01",
+      "type": "multiple-choice",
+      "topicTag": "present-simple-affirmative",
+      "topicLabel": "Present Simple olumlu",
+      "title": "Takım rutini",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "We ___ volleyball after school.",
+        "options": [
+          "play",
+          "plays",
+          "are play",
+          "playing"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 'We' ile Present Simple olumlu cümlede fiilin yalın hâli kullanılır: play.",
+          "'Plays' he/she/it için kullanılır; 'we' çoğul olduğu için fiile -s gelmez.",
+          "'Are play' iki yapıyı karıştırır. Present Simple olumlu cümlede yardımcı fiil gerekmez.",
+          "'Playing' tek başına Present Simple cümleyi tamamlamaz; burada alışkanlık anlatılıyor."
+        ]
+      }
+    },
+    {
+      "id": "m2r02",
+      "type": "fill-blank",
+      "topicTag": "present-simple-affirmative",
+      "topicLabel": "Present Simple olumlu",
+      "title": "Müzik kulübü",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "They ___ a new song every Friday.",
+        "acceptedAnswers": [
+          "sing"
+        ],
+        "hintTr": "They çoğul özne; fiil yalın kalır.",
+        "feedbackCorrectTr": "Doğru. 'They sing' düzenli yapılan bir işi anlatır.",
+        "feedbackIncorrectTr": "Burada 'they' ile fiile -s eklenmez; doğru cevap 'sing'."
+      }
+    },
+    {
+      "id": "m2r03",
+      "type": "multiple-choice",
+      "topicTag": "third-person-s",
+      "topicLabel": "He/She/It + -s",
+      "title": "Tek kişi alışkanlığı",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "Beyza ___ the ball over the net.",
+        "options": [
+          "hit",
+          "hits",
+          "hitting",
+          "are hits"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "'Hit' yalın fiildir; Beyza tek kişi olduğu için burada -s gerekir.",
+          "Doğru. Beyza = she gibi tek kişi; Present Simple'da fiil 'hits' olur.",
+          "'Hitting' burada tek başına alışkanlık cümlesi kurmaz.",
+          "'Are hits' doğru bir Present Simple yapısı değildir."
+        ]
+      }
+    },
+    {
+      "id": "m2r04",
+      "type": "fill-blank",
+      "topicTag": "third-person-s",
+      "topicLabel": "He/She/It + -s",
+      "title": "Gitar provası",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "He ___ the guitar in his room.",
+        "acceptedAnswers": [
+          "practises",
+          "practices"
+        ],
+        "hintTr": "He tek kişidir; fiile -s eklenir.",
+        "feedbackCorrectTr": "Doğru. 'He practises/practices' tek kişinin düzenli yaptığı işi anlatır.",
+        "feedbackIncorrectTr": "He/she/it ile fiilin üçüncü tekil hâli gerekir: practises/practices."
+      }
+    },
+    {
+      "id": "m2r05",
+      "type": "error-find",
+      "topicTag": "third-person-s",
+      "topicLabel": "He/She/It + -s",
+      "title": "Hata avcısı",
+      "instructionTr": "Cümledeki hatalı bölümü bul ve düzelt.",
+      "points": 4,
+      "content": {
+        "sentence": "My sister play chess on Sundays.",
+        "error": "play",
+        "correction": "plays",
+        "explanationTr": "'My sister' tek kişidir. Present Simple'da he/she/it gibi düşünülür ve fiil 'plays' olur."
+      }
+    },
+    {
+      "id": "m2r06",
+      "type": "multiple-choice",
+      "topicTag": "present-simple-negative",
+      "topicLabel": "don't / doesn't",
+      "title": "Olumsuz rutin",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "She ___ play the guitar at night.",
+        "options": [
+          "don't",
+          "doesn't",
+          "isn't",
+          "not"
+        ],
+        "correctIndex": 1,
+        "explanationsTr": [
+          "'Don't' I/you/we/they ile kullanılır; 'she' için 'doesn't' gerekir.",
+          "Doğru. 'She doesn't play...' deriz; doesn't gelince ana fiil yalın kalır.",
+          "'Isn't' isim/sıfat cümlelerinde kullanılır; burada fiil 'play' var.",
+          "'Not' tek başına Present Simple olumsuz cümle kurmaz."
+        ]
+      }
+    },
+    {
+      "id": "m2r07",
+      "type": "fill-blank",
+      "topicTag": "present-simple-negative",
+      "topicLabel": "don't / doesn't",
+      "title": "Hafta içi planı",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "They ___ train on Mondays.",
+        "acceptedAnswers": [
+          "don't",
+          "do not"
+        ],
+        "hintTr": "They ile olumsuzda don't kullanılır.",
+        "feedbackCorrectTr": "Doğru. 'They don't train' çoğul öznenin yapmadığı bir rutindir.",
+        "feedbackIncorrectTr": "They çoğul olduğu için 'doesn't' değil 'don't' gerekir."
+      }
+    },
+    {
+      "id": "m2r08",
+      "type": "error-find",
+      "topicTag": "present-simple-negative",
+      "topicLabel": "don't / doesn't",
+      "title": "Ana fiil yalın kalır",
+      "instructionTr": "Cümledeki hatalı bölümü bul ve düzelt.",
+      "points": 4,
+      "content": {
+        "sentence": "Beyza doesn't plays volleyball before breakfast.",
+        "error": "plays",
+        "correction": "play",
+        "explanationTr": "'Doesn't' zaten üçüncü tekil eki taşır. Bu yüzden ana fiil yalın kalır: doesn't play."
+      }
+    },
+    {
+      "id": "m2r09",
+      "type": "multiple-choice",
+      "topicTag": "do-does-questions",
+      "topicLabel": "Do / Does soruları",
+      "title": "Soru seçimi",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "___ your friends like pop music?",
+        "options": [
+          "Do",
+          "Does",
+          "Are",
+          "Is"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 'Your friends' çoğul olduğu için soru 'Do your friends...' diye başlar.",
+          "'Does' tek kişi için kullanılır; friends çoğuldur.",
+          "'Are' be fiili sorusudur; burada ana fiil 'like' var.",
+          "'Is' tekil be fiilidir; bu cümlede uygun değildir."
+        ]
+      }
+    },
+    {
+      "id": "m2r10",
+      "type": "sentence-order",
+      "topicTag": "do-does-questions",
+      "topicLabel": "Do / Does soruları",
+      "title": "Does sorusu",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "points": 4,
+      "content": {
+        "tokens": [
+          "Does",
+          "Beyza",
+          "play",
+          "volleyball",
+          "on",
+          "Saturdays"
+        ],
+        "answer": "Does Beyza play volleyball on Saturdays?",
+        "feedbackCorrectTr": "Doğru. Tek kişi için soru 'Does + özne + yalın fiil' sırasıyla kurulur.",
+        "feedbackIncorrectTr": "Soru 'Does' ile başlar; 'plays' değil 'play' kullanılır."
+      }
+    },
+    {
+      "id": "m2r11",
+      "type": "fill-blank",
+      "topicTag": "do-does-questions",
+      "topicLabel": "Do / Does soruları",
+      "title": "Do mu Does mu?",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "___ he practise the guitar after school?",
+        "acceptedAnswers": [
+          "does"
+        ],
+        "hintTr": "He tek kişidir; soru Does ile başlar.",
+        "feedbackCorrectTr": "Doğru. 'Does he practise...' doğru soru yapısıdır.",
+        "feedbackIncorrectTr": "He/she/it için Present Simple soruda 'Does' gerekir."
+      }
+    },
+    {
+      "id": "m2r12",
+      "type": "multiple-choice",
+      "topicTag": "short-answers",
+      "topicLabel": "Kısa cevaplar",
+      "title": "Kısa cevap",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "Do they sing in the club? — Yes, they ___.",
+        "options": [
+          "do",
+          "does",
+          "are",
+          "sing"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 'Do they...?' sorusuna kısa cevap 'Yes, they do.' olur.",
+          "'Does' tek kişi içindir; 'they' ile kullanılmaz.",
+          "'Are' be fiili sorularında kullanılır; soru 'Do' ile başladı.",
+          "Kısa cevapta ana fiili tekrar etmeyiz; yardımcı fiili kullanırız."
+        ]
+      }
+    },
+    {
+      "id": "m2r13",
+      "type": "multiple-choice",
+      "topicTag": "short-answers",
+      "topicLabel": "Kısa cevaplar",
+      "title": "Are cevabı",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "Are your teammates ready? — No, they ___.",
+        "options": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "correctIndex": 2,
+        "explanationsTr": [
+          "'Don't' ana fiilli Present Simple sorularında kullanılır; burada soru 'Are' ile başladı.",
+          "'Doesn't' tek kişi ve ana fiilli cümleler içindir.",
+          "Doğru. 'Are...' sorusunun olumsuz kısa cevabı 'No, they aren't.' olur.",
+          "'Isn't' tek kişi içindir; 'they' çoğuldur."
+        ]
+      }
+    },
+    {
+      "id": "m2r14",
+      "type": "multiple-choice",
+      "topicTag": "frequency",
+      "topicLabel": "Sıklık zarfları",
+      "title": "Hafta sonu kanıtı",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "She plays volleyball every weekend. She ___ plays volleyball on weekends.",
+        "options": [
+          "always",
+          "never",
+          "rarely",
+          "doesn't"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. Every weekend = her hafta sonu; bu yüzden 'always' en uygunudur.",
+          "'Never' hiç yapmaz demektir; cümle her hafta sonu oynadığını söylüyor.",
+          "'Rarely' nadiren demektir; every weekend ile çelişir.",
+          "'Doesn't' olumsuz yardımcıdır; boşluk bir sıklık zarfı istiyor."
+        ]
+      }
+    },
+    {
+      "id": "m2r15",
+      "type": "fill-blank",
+      "topicTag": "frequency",
+      "topicLabel": "Sıklık zarfları",
+      "title": "Sıklık zarfı yeri",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "I ___ listen to music after dinner. (usually)",
+        "acceptedAnswers": [
+          "usually"
+        ],
+        "hintTr": "Sıklık zarfı ana fiilden önce gelir.",
+        "feedbackCorrectTr": "Doğru. 'I usually listen...' doğal sıralamadır.",
+        "feedbackIncorrectTr": "Boşluğa bir sıklık zarfı gelmeli; 'usually' ana fiilden önce kullanılır."
+      }
+    },
+    {
+      "id": "m2r16",
+      "type": "error-find",
+      "topicTag": "frequency",
+      "topicLabel": "Sıklık zarfları",
+      "title": "Yanlış anlam",
+      "instructionTr": "Cümledeki hatalı bölümü bul ve düzelt.",
+      "points": 4,
+      "content": {
+        "sentence": "They never practise on Tuesdays, because they practise every Tuesday.",
+        "error": "never",
+        "correction": "always",
+        "explanationTr": "'Every Tuesday' her salı demektir. Bu bilgiye göre 'never' değil 'always' anlamlıdır."
+      }
+    },
+    {
+      "id": "m2r17",
+      "type": "multiple-choice",
+      "topicTag": "time-routines",
+      "topicLabel": "Saat ve günlük rutin",
+      "title": "Saat okuma",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "7:30 = ___",
+        "options": [
+          "half past seven",
+          "quarter past seven",
+          "seven o'clock",
+          "quarter to seven"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 7:30 İngilizcede 'half past seven' diye söylenir.",
+          "'Quarter past seven' 7:15 demektir.",
+          "'Seven o'clock' tam 7:00 demektir.",
+          "'Quarter to seven' 6:45 demektir."
+        ]
+      }
+    },
+    {
+      "id": "m2r18",
+      "type": "fill-blank",
+      "topicTag": "time-routines",
+      "topicLabel": "Saat ve günlük rutin",
+      "title": "Rutin saati",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "Beyza ___ breakfast at eight o'clock.",
+        "acceptedAnswers": [
+          "has"
+        ],
+        "hintTr": "Beyza tek kişi; have fiili has olur.",
+        "feedbackCorrectTr": "Doğru. 'Beyza has breakfast...' doğru günlük rutin cümlesidir.",
+        "feedbackIncorrectTr": "Beyza tek kişi olduğu için 'have' değil 'has' kullanılır."
+      }
+    },
+    {
+      "id": "m2r19",
+      "type": "multiple-choice",
+      "topicTag": "preferences",
+      "topicLabel": "Hobiler ve tercihler",
+      "title": "İsimle tercih",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "She loves ___, but she doesn't like cold weather.",
+        "options": [
+          "volleyball",
+          "to volleyball",
+          "plays volleyball",
+          "volleyballed"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 'Love + isim' yapısında volleyball doğrudan kullanılabilir.",
+          "'To volleyball' doğru bir isim ya da fiil yapısı değildir.",
+          "'Plays volleyball' ayrı bir cümle parçasıdır; love'dan sonra bu şekilde gelmez.",
+          "'Volleyballed' bu anlamda kullanılan doğru bir kelime değildir."
+        ]
+      }
+    },
+    {
+      "id": "m2r20",
+      "type": "fill-blank",
+      "topicTag": "preferences",
+      "topicLabel": "Hobiler ve tercihler",
+      "title": "Olumsuz tercih",
+      "instructionTr": "Boşluğu tamamla.",
+      "points": 4,
+      "content": {
+        "prompt": "He ___ like loud concerts.",
+        "acceptedAnswers": [
+          "doesn't",
+          "does not"
+        ],
+        "hintTr": "He tek kişi; olumsuzda doesn't kullanılır.",
+        "feedbackCorrectTr": "Doğru. 'He doesn't like...' tek kişinin sevmediği şeyi anlatır.",
+        "feedbackIncorrectTr": "He/she/it ile 'don't' değil 'doesn't' kullanılır; ana fiil 'like' kalır."
+      }
+    },
+    {
+      "id": "m2r21",
+      "type": "multiple-choice",
+      "topicTag": "preferences",
+      "topicLabel": "Hobiler ve tercihler",
+      "title": "Hazır kalıp tanıma",
+      "instructionTr": "En doğru seçeneği işaretle.",
+      "points": 4,
+      "content": {
+        "prompt": "I like listening to music after homework. Bu cümlede anlatılan şey nedir?",
+        "options": [
+          "Bir tercih",
+          "Bir saat sorma",
+          "Bir olumsuzluk",
+          "Bir sahiplik"
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. 'I like listening to music' hazır kalıp olarak bir tercih anlatır.",
+          "Cümlede saat sorulmuyor; after homework sadece zaman bilgisi verir.",
+          "Cümlede don't/doesn't gibi olumsuzluk yok.",
+          "Cümlede my/your/have got gibi sahiplik anlatımı yok."
+        ]
+      }
+    },
+    {
+      "id": "m2r22",
+      "type": "reading",
+      "topicTag": "present-simple-negative",
+      "topicLabel": "don't / doesn't",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruyu cevapla.",
+      "points": 5,
+      "content": {
+        "text": "Beyza has a busy Wednesday. She plays volleyball after school. Her brother practises the guitar in his room. They don't watch TV before homework. In the evening, Beyza listens to music and prepares her school bag.",
+        "questions": [
+          {
+            "prompt": "What don't they do before homework?",
+            "options": [
+              "watch TV",
+              "play volleyball",
+              "practise the guitar",
+              "prepare a school bag"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metinde açıkça 'They don't watch TV before homework.' yazıyor.",
+              "Beyza okuldan sonra voleybol oynuyor; bu olumsuz verilen eylem değil.",
+              "Kardeşi gitar çalışıyor; metinde bunun yapılmadığı söylenmiyor.",
+              "Beyza çantasını akşam hazırlıyor; before homework için olumsuz bilgi bu değil."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "m2r23",
+      "type": "listening",
+      "topicTag": "do-does-questions",
+      "topicLabel": "Do / Does soruları",
+      "title": "Dinleme sorusu",
+      "instructionTr": "Önce dinle, sonra soruyu cevapla.",
+      "points": 5,
+      "content": {
+        "audioText": "Does Beyza play volleyball on Saturdays? Yes, she does. Do her friends sing in the music room? No, they don't.",
+        "question": "Which short answer is correct for Beyza?",
+        "options": [
+          "Yes, she does.",
+          "No, she doesn't.",
+          "Yes, they do.",
+          "No, he doesn't."
+        ],
+        "correctIndex": 0,
+        "explanationsTr": [
+          "Doğru. Dinlemede 'Does Beyza play...? Yes, she does.' deniyor.",
+          "Bu cevap olumsuzdur; dinlemede Beyza için olumlu kısa cevap var.",
+          "'They' arkadaşlar için kullanılır; Beyza tek kişi olduğu için 'she' gerekir.",
+          "'He' erkek tek kişi için kullanılır; Beyza için doğru zamir 'she'dir."
+        ]
+      }
+    },
+    {
+      "id": "m2r24",
+      "type": "matching",
+      "topicTag": "third-person-s",
+      "topicLabel": "He/She/It + -s",
+      "title": "Eşleştir",
+      "instructionTr": "Özne ile doğru fiil parçasını eşleştir.",
+      "points": 5,
+      "content": {
+        "pairs": [
+          {
+            "left": "She",
+            "right": "plays the drums"
+          },
+          {
+            "left": "They",
+            "right": "play the drums"
+          },
+          {
+            "left": "He",
+            "right": "hits the ball"
+          },
+          {
+            "left": "We",
+            "right": "train after school"
+          }
+        ],
+        "feedbackCorrectTr": "Doğru. Tek kişi öznelerde fiile -s gelir; çoğul öznelerde fiil yalın kalır.",
+        "feedbackIncorrectTr": "Eşleşmeleri özneye göre kontrol et: she/he tek kişi, they/we çoğul."
+      }
+    },
+    {
+      "id": "m2r25",
+      "type": "matching",
+      "topicTag": "frequency",
+      "topicLabel": "Sıklık zarfları",
+      "title": "Karışık kavramlar",
+      "instructionTr": "Sıklık ifadesini anlamıyla eşleştir.",
+      "points": 5,
+      "content": {
+        "pairs": [
+          {
+            "left": "always",
+            "right": "her zaman"
+          },
+          {
+            "left": "usually",
+            "right": "genellikle"
+          },
+          {
+            "left": "sometimes",
+            "right": "bazen"
+          },
+          {
+            "left": "never",
+            "right": "asla"
+          }
+        ],
+        "feedbackCorrectTr": "Doğru. Sıklık kelimeleri bir işin ne kadar sık yapıldığını anlatır.",
+        "feedbackIncorrectTr": "Anlamları tekrar düşün: always en sık, never hiç yapılmayan durumdur."
+      }
+    }
+  ]
+}

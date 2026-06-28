@@ -1,0 +1,644 @@
+{
+  "id": "003-to-be-negative",
+  "title": "To be — Olumsuz",
+  "level": "A1",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "am, is ve are ile olumsuz cümle kurmak",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [
+    "002-am-is-are"
+  ],
+  "parentGuide": {
+    "summaryTr": "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+    "todayGoal": "am, is ve are ile olumsuz cümle kurmak",
+    "teachingTips": [
+      "Olumlu cümledeki yardımcı fiili bulup hemen sonrasına not ekletin.",
+      "I am not biçiminde amn't olmadığını hatırlatın.",
+      "Tekil ve çoğul özneye göre isn't/aren't seçimini sözlü yaptırın."
+    ],
+    "questionsToAsk": [
+      "Say one feeling you do not have.",
+      "Say one place you are not in.",
+      "Describe an object that is not new.",
+      "Say one adjective that describes what your friends aren't, such as ‘They aren't noisy.’"
+    ],
+    "listeningScripts": [
+      "The library isn't closed today. The computers aren't available, but the reading room is not busy. I am not disappointed because I have my book."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "To be — Olumsuz Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "I ___ angry; I just need some quiet time.",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "He ___ absent.",
+          "options": [
+            "isn't",
+            "aren't"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We ___ ready.",
+          "options": [
+            "aren't",
+            "isn't"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I ___ cold.",
+          "options": [
+            "am not",
+            "isn't"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The screen ___ broken.",
+          "options": [
+            "isn't",
+            "aren't"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: I ↔ am not lost | the lift ↔ isn't working | we ↔ aren't finished | those facts ↔ aren't correct",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: drawer / the / in / aren't / headphones / My",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I amn't interested in that game.",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Say one feeling you do not have.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "am not",
+        "isn't",
+        "aren't",
+        "am not",
+        "isn't",
+        "I → am not lost, the lift → isn't working, we → aren't finished, those facts → aren't correct",
+        "My headphones aren't in the drawer",
+        "I am not interested in that game.",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "To be — Olumsuz",
+      "instructionTr": "am, is ve are ile olumsuz cümle kurmak",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 3",
+        "heroText": "I am not sleepy."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+      "content": {
+        "examples": [
+          "I am not sleepy.",
+          "You aren't late.",
+          "He isn't at the gym."
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "She is not worried.",
+          "It isn't expensive.",
+          "We aren't opponents.",
+          "They are not online.",
+          "The café isn't crowded."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "I",
+            "am not"
+          ],
+          [
+            "he / she / it",
+            "is not / isn't"
+          ],
+          [
+            "you / we / they",
+            "are not / aren't"
+          ]
+        ]
+      },
+      "explanationTr": "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "The tickets ___ cheap; they cost a lot.",
+      "content": {
+        "options": [
+          "isn't",
+          "aren't",
+          "am not",
+          "not are"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Tickets çoğuldur; isn't tekil içindir.",
+          "Doğru. Çoğul tickets ile aren't kullanılır.",
+          "Am not yalnız I ile kullanılır.",
+          "Not, are yardımcı fiilinden sonra gelmelidir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "I ___ angry; I just need some quiet time.",
+      "content": {
+        "answer": "am not",
+        "accepted": [
+          "am not"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "I öznesinin olumsuzu am not biçimindedir; amn't kullanılmaz."
+      },
+      "hintTr": "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "am not lost"
+          ],
+          [
+            "the lift",
+            "isn't working"
+          ],
+          [
+            "we",
+            "aren't finished"
+          ],
+          [
+            "those facts",
+            "aren't correct"
+          ]
+        ],
+        "explanationTr": "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "drawer",
+          "the",
+          "in",
+          "aren't",
+          "headphones",
+          "My"
+        ],
+        "answer": [
+          "My",
+          "headphones",
+          "aren't",
+          "in",
+          "the",
+          "drawer"
+        ],
+        "explanationTr": "Doğru sıra: My headphones aren't in the drawer."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “I amn't interested in that game.”",
+      "content": {
+        "sentence": [
+          "I",
+          "amn't",
+          "interested",
+          "in",
+          "that",
+          "game."
+        ],
+        "wrongIndex": 1,
+        "correctWord": "am not",
+        "explanationTr": "İngilizcede amn't kullanılmaz; I am not deriz."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "What is unavailable?",
+      "content": {
+        "audioText": "The library isn't closed today. The computers aren't available, but the reading room is not busy. I am not disappointed because I have my book.",
+        "options": [
+          "The library",
+          "The computers",
+          "The reading room",
+          "The speaker's book"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "Kütüphane kapalı değil.",
+          "Doğru. Computers aren't available deniyor.",
+          "Okuma odası yoğun değil ama kullanılabilir olmadığı söylenmiyor.",
+          "Konuşanın kitabı yanında."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Say one feeling you do not have.",
+          "Say one place you are not in.",
+          "Describe an object that is not new.",
+          "Say one adjective that describes what your friends aren't, such as ‘They aren't noisy.’"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "The school festival isn't outdoors because the garden is wet. The music rooms aren't small, so the bands are inside. Deniz is not nervous; she is excited.",
+        "questions": [
+          {
+            "prompt": "Why isn't the festival outdoors?",
+            "options": [
+              "The garden is wet.",
+              "The bands are late.",
+              "It is too hot."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “The garden is wet.” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“The bands are late.” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “The garden is wet.” der.",
+              "Sorudaki ipucu “The garden is wet.” cevabına götürür; “It is too hot.” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Are the music rooms small?",
+            "options": [
+              "Yes, they are.",
+              "No, they aren't.",
+              "The text doesn't say."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “No, they aren't.” bilgisini verir; “Yes, they are.” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “No, they aren't.” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “No, they aren't.” cevabına götürür; “The text doesn't say.” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "How does Deniz feel?",
+            "options": [
+              "Nervous",
+              "Excited",
+              "Tired"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Excited” bilgisini verir; “Nervous” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Excited” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Excited” cevabına götürür; “Tired” bu ipucunu karşılamaz."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "He ___ absent.",
+            "options": [
+              "isn't",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“isn't” doğru seçimdir. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+            "wrongExplanationTr": "“aren't” bu cümlede kullanılamaz; doğru biçim “isn't”. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+          },
+          {
+            "prompt": "We ___ ready.",
+            "options": [
+              "aren't",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“aren't” doğru seçimdir. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+            "wrongExplanationTr": "“isn't” bu cümlede kullanılamaz; doğru biçim “aren't”. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+          },
+          {
+            "prompt": "I ___ cold.",
+            "options": [
+              "am not",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“am not” doğru seçimdir. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+            "wrongExplanationTr": "“isn't” bu cümlede kullanılamaz; doğru biçim “am not”. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+          },
+          {
+            "prompt": "The screen ___ broken.",
+            "options": [
+              "isn't",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“isn't” doğru seçimdir. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+            "wrongExplanationTr": "“aren't” bu cümlede kullanılamaz; doğru biçim “isn't”. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+          },
+          {
+            "prompt": "My cousins ___ here.",
+            "options": [
+              "aren't",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“aren't” doğru seçimdir. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+            "wrongExplanationTr": "“isn't” bu cümlede kullanılamaz; doğru biçim “aren't”. Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "not'un doğru yeri",
+      "instructionTr": "Olumlu cümleyle olumsuz cümleyi karşılaştır.",
+      "content": {
+        "examples": [
+          "The room is quiet. → The room isn't quiet.",
+          "We are late. → We aren't late."
+        ],
+        "noteTr": "Not, is/are yardımcı fiilinden sonra gelir; I ile am not kullanılır."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "The backstage door ___ open; we need the key.",
+            "options": [
+              "isn't",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Door tekildir; is not kısaltması isn't gerekir.",
+            "wrongExplanationTr": "Aren't çoğul öznelerle kullanılır; door tekildir."
+          },
+          {
+            "prompt": "I ___ unsure anymore; the map is clear.",
+            "options": [
+              "am not",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "I ile olumsuz biçim am not olur.",
+            "wrongExplanationTr": "Isn't he/she/it içindir; I ile kullanılamaz."
+          },
+          {
+            "prompt": "The final scores ___ online yet.",
+            "options": [
+              "aren't",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Scores çoğul olduğu için aren't kullanılır.",
+            "wrongExplanationTr": "Isn't tekil isim içindir; scores çoğuldur."
+          },
+          {
+            "prompt": "Which sentence is correct?",
+            "options": [
+              "The soup isn't cold.",
+              "The soup aren't cold."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Soup tekil olduğu için isn't doğrudur.",
+            "wrongExplanationTr": "Aren't çoğul özneler ister; soup tekildir."
+          },
+          {
+            "prompt": "We ___ in a hurry today.",
+            "options": [
+              "aren't",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "We öznesi are ile eşleşir; olumsuzu aren't olur.",
+            "wrongExplanationTr": "Isn't he/she/it grubuna aittir; we ile kullanılmaz."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "003-to-be-negative-w1",
+            "word": "quiet",
+            "example": "They aren't quiet.",
+            "audioText": "quiet",
+            "prompt": "İngilizce-Türkçe eşleştir: quiet",
+            "options": [
+              "boş",
+              "geç",
+              "sessiz",
+              "yorgun"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "003-to-be-negative-w2",
+            "word": "late",
+            "example": "I am not late.",
+            "audioText": "late",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "boş",
+              "geç",
+              "sessiz",
+              "yorgun"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "003-to-be-negative-w3",
+            "word": "empty",
+            "example": "The bag isn't empty.",
+            "audioText": "empty",
+            "prompt": "Eksik harfi tamamla: _mpty",
+            "options": [
+              "empty",
+              "late",
+              "quiet",
+              "tired"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "003-to-be-negative-w4",
+            "word": "tired",
+            "example": "The players aren't tired.",
+            "audioText": "tired",
+            "prompt": "Karışık harfleri düzelt: derit",
+            "options": [
+              "empty",
+              "late",
+              "quiet",
+              "tired"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "003-to-be-negative-w5",
+            "word": "noisy",
+            "example": "They aren't noisy.",
+            "audioText": "noisy",
+            "prompt": "Kelimeyi doğru cümleye koy: They aren't ___.",
+            "options": [
+              "empty",
+              "late",
+              "noisy",
+              "quiet"
+            ],
+            "correctIndex": 2
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "am, is ve are ile olumsuz cümle kurmak",
+          "Bir durum doğru değilse am/is/are sonrasına not gelir. am not ayrı yazılır; is not = isn't ve are not = aren't kısaltılabilir.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "003-to-be-negative-w1",
+    "003-to-be-negative-w2",
+    "003-to-be-negative-w3",
+    "003-to-be-negative-w4",
+    "003-to-be-negative-w5",
+    "003-to-be-negative-w6"
+  ]
+}

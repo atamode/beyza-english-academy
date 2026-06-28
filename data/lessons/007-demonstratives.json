@@ -1,0 +1,647 @@
+{
+  "id": "007-demonstratives",
+  "title": "this / that / these / those",
+  "level": "A1",
+  "module": "Cümle Kurma Köprüsü",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Yakınlık ve tekillik durumuna göre doğru gösterme sözcüğünü seçmek",
+    "Kuralı farklı bağlamlarda uygulamak",
+    "Kendi cümlelerini kurup kontrol etmek"
+  ],
+  "prerequisites": [
+    "006-have-got"
+  ],
+  "parentGuide": {
+    "summaryTr": "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+    "todayGoal": "Yakınlık ve tekillik durumuna göre doğru gösterme sözcüğünü seçmek",
+    "teachingTips": [
+      "Yakındaki nesneye dokunup this/these, uzaktakini gösterip that/those dedirtin.",
+      "Önce tekil-çoğul, sonra yakın-uzak kararı verdirin.",
+      "Sınıftaki gerçek nesnelerle dört kutulu bir yakınlık oyunu oynayın."
+    ],
+    "questionsToAsk": [
+      "Hold an object and use this.",
+      "Point to one distant object and use that.",
+      "Show two nearby objects and use these.",
+      "Point to distant objects and use those."
+    ],
+    "listeningScripts": [
+      "This map in my hand shows the old town. That castle on the hill is the museum. These blue lines are walking routes, and those red marks show cafés far from here."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: İki veya üç madde için destek gerekli",
+      "0 puan: Örnekleri yeniden dinleyip tekrar"
+    ],
+    "worksheet": {
+      "title": "this / that / these / those Çalışma Sayfası",
+      "instructionTr": "Soruları sırayla çöz. Seçenekli sorularda doğru cevabı işaretle; yazma alanlarında tam cümle kullan.",
+      "questions": [
+        {
+          "type": "fill",
+          "prompt": "___ shoes here beside me are on sale.",
+          "spaceLines": 2
+        },
+        {
+          "type": "choice",
+          "prompt": "___ pen in my hand",
+          "options": [
+            "This",
+            "That"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ planes in the sky",
+          "options": [
+            "Those",
+            "These"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ photos here",
+          "options": [
+            "These",
+            "Those"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "___ lighthouse over there",
+          "options": [
+            "That",
+            "This"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "matching",
+          "prompt": "Eşleştir: yakın tek kitap ↔ this book | uzak tek köprü ↔ that bridge | yakın iki kart ↔ these cards | uzak dağlar ↔ those mountains",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: tonight / visible / stars / those / Are",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: This posters are for the concert.",
+          "spaceLines": 2
+        },
+        {
+          "type": "writing",
+          "prompt": "Hold an object and use this.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Bu dersteki temel kuralı kendi sözlerinle Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "these",
+        "This",
+        "Those",
+        "These",
+        "That",
+        "yakın tek kitap → this book, uzak tek köprü → that bridge, yakın iki kart → these cards, uzak dağlar → those mountains",
+        "Are those stars visible tonight",
+        "These posters are for the concert.",
+        "Öğrencinin hedef yapıyı doğru kullanan özgün cevabı.",
+        "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "this / that / these / those",
+      "instructionTr": "Yakınlık ve tekillik durumuna göre doğru gösterme sözcüğünü seçmek",
+      "content": {
+        "eyebrow": "MODÜL 1 · DERS 7",
+        "heroText": "This notebook is mine."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Konunun mantığı",
+      "instructionTr": "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+      "content": {
+        "examples": [
+          "This notebook is mine.",
+          "That tower is very old.",
+          "These headphones are comfortable."
+        ],
+        "noteTr": "Önce anlamı, sonra özneyi ve biçimi kontrol et."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Farklı bağlamlarda örnekler",
+      "instructionTr": "Örneklerde hedef yapının nasıl değiştiğini incele.",
+      "content": {
+        "examples": [
+          "Those clouds look dark.",
+          "Is this your seat?",
+          "That isn't our bus.",
+          "These are my design sketches.",
+          "Those aren't real diamonds."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural haritası",
+      "instructionTr": "Kararını bu kısa tabloyla kontrol et.",
+      "content": {
+        "rows": [
+          [
+            "yakın + tekil",
+            "this"
+          ],
+          [
+            "uzak + tekil",
+            "that"
+          ],
+          [
+            "yakın + çoğul",
+            "these"
+          ],
+          [
+            "uzak + çoğul",
+            "those"
+          ]
+        ]
+      },
+      "explanationTr": "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+    },
+    {
+      "id": "s05",
+      "type": "multiple-choice",
+      "title": "Kuralı seç",
+      "instructionTr": "Look across the street. ___ building is the new library.",
+      "content": {
+        "options": [
+          "This",
+          "That",
+          "These",
+          "Those"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "This yakındaki tekil şey içindir.",
+          "Doğru. Karşıdaki tek bir bina için that kullanılır.",
+          "These yakındaki çoğul şeyler içindir.",
+          "Those çoğul şeyler içindir; building tekildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s06",
+      "type": "fill-blank",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "___ shoes here beside me are on sale.",
+      "content": {
+        "answer": "these",
+        "accepted": [
+          "these"
+        ],
+        "placeholder": "Doğru yapıyı yaz",
+        "explanationTr": "Shoes çoğul ve konuşana yakın; these kullanılır."
+      },
+      "hintTr": "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "matching",
+      "title": "Anlamı ve biçimi eşleştir",
+      "instructionTr": "Soldaki öğeyi doğru ifadeyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "yakın tek kitap",
+            "this book"
+          ],
+          [
+            "uzak tek köprü",
+            "that bridge"
+          ],
+          [
+            "yakın iki kart",
+            "these cards"
+          ],
+          [
+            "uzak dağlar",
+            "those mountains"
+          ]
+        ],
+        "explanationTr": "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+      },
+      "points": 20
+    },
+    {
+      "id": "s08",
+      "type": "sentence-order",
+      "title": "Cümle treni",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "tonight",
+          "visible",
+          "stars",
+          "those",
+          "Are"
+        ],
+        "answer": [
+          "Are",
+          "those",
+          "stars",
+          "visible",
+          "tonight"
+        ],
+        "explanationTr": "Doğru sıra: Are those stars visible tonight."
+      },
+      "hintTr": "Özneyle başla; sonra hedef yapıyı yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "error-find",
+      "title": "Editör masası",
+      "instructionTr": "Yanlış kelimeyi seç: “This posters are for the concert.”",
+      "content": {
+        "sentence": [
+          "This",
+          "posters",
+          "are",
+          "for",
+          "the",
+          "concert."
+        ],
+        "wrongIndex": 0,
+        "correctWord": "These",
+        "explanationTr": "Posters çoğuldur ve yakın gösteriliyor; These gerekir."
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "listening",
+      "title": "Dinle ve ayırt et",
+      "instructionTr": "What do the red marks show?",
+      "content": {
+        "audioText": "This map in my hand shows the old town. That castle on the hill is the museum. These blue lines are walking routes, and those red marks show cafés far from here.",
+        "options": [
+          "The museum",
+          "Walking routes",
+          "Cafés",
+          "The old town"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "Müze tepedeki kaledir.",
+          "Mavi çizgiler yürüyüş rotalarını gösterir.",
+          "Doğru. Those red marks show cafés deniyor.",
+          "Haritanın tamamı eski şehri gösteriyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "speaking",
+      "title": "Söz sende",
+      "instructionTr": "45 saniyede dört kısa cümle veya soru üret.",
+      "content": {
+        "sentenceStarters": [
+          "Hold an object and use this.",
+          "Point to one distant object and use that.",
+          "Show two nearby objects and use these.",
+          "Point to distant objects and use those."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Dört farklı cümle söyledim.",
+          "Hedef yapıyı her cümlede kullandım.",
+          "Özne ve kelime sırasını kontrol ettim.",
+          "Cümlelerimi anlaşılır söyledim."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Bağlam içinde oku",
+      "instructionTr": "Metni oku ve üç farklı ayrıntıyı bul.",
+      "content": {
+        "text": "At the technology exhibition, Arda points to a small device in his hand. “This is a pollution sensor,” he says. Across the hall, a large screen flashes. “That shows today's air quality. These numbers here are live, but those charts on the wall are from last year.”",
+        "questions": [
+          {
+            "prompt": "What is in Arda's hand?",
+            "options": [
+              "A sensor",
+              "A screen",
+              "A chart"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Metindeki “A sensor” ayrıntısı soruyu doğrudan karşılıyor.",
+              "“A screen” başka bir ayrıntıyla karışıyor. Sorulan noktada metin “A sensor” der.",
+              "Sorudaki ipucu “A sensor” cevabına götürür; “A chart” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "What does the large screen show?",
+            "options": [
+              "Last year's charts",
+              "Today's air quality",
+              "Ticket prices"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Today's air quality” bilgisini verir; “Last year's charts” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Today's air quality” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Today's air quality” cevabına götürür; “Ticket prices” bu ipucunu karşılamaz."
+            ]
+          },
+          {
+            "prompt": "Which information is from last year?",
+            "options": [
+              "These numbers",
+              "Those charts",
+              "This sensor"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Metin “Those charts” bilgisini verir; “These numbers” metinde bu görevle ilişkilendirilmez.",
+              "Doğru. Metindeki “Those charts” ayrıntısı soruyu doğrudan karşılıyor.",
+              "Sorudaki ipucu “Those charts” cevabına götürür; “This sensor” bu ipucunu karşılamaz."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "mini-game",
+      "title": "Hızlı kararlar",
+      "instructionTr": "Beş farklı bağlamda doğru kapıyı seç.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "___ pen in my hand",
+            "options": [
+              "This",
+              "That"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“This” doğru seçimdir. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+            "wrongExplanationTr": "“That” bu cümlede kullanılamaz; doğru biçim “This”. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+          },
+          {
+            "prompt": "___ planes in the sky",
+            "options": [
+              "Those",
+              "These"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“Those” doğru seçimdir. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+            "wrongExplanationTr": "“These” bu cümlede kullanılamaz; doğru biçim “Those”. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+          },
+          {
+            "prompt": "___ photos here",
+            "options": [
+              "These",
+              "Those"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“These” doğru seçimdir. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+            "wrongExplanationTr": "“Those” bu cümlede kullanılamaz; doğru biçim “These”. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+          },
+          {
+            "prompt": "___ lighthouse over there",
+            "options": [
+              "That",
+              "This"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“That” doğru seçimdir. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+            "wrongExplanationTr": "“This” bu cümlede kullanılamaz; doğru biçim “That”. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+          },
+          {
+            "prompt": "Are ___ your bags beside you?",
+            "options": [
+              "these",
+              "that"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "“these” doğru seçimdir. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+            "wrongExplanationTr": "“that” bu cümlede kullanılamaz; doğru biçim “these”. Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s14",
+      "type": "explanation",
+      "title": "Gösterme sözcükleri üç cümlede",
+      "instructionTr": "Aynı nesneyi olumlu, olumsuz ve soru cümlesinde göster.",
+      "content": {
+        "examples": [
+          "This seat is free.",
+          "This seat isn't free.",
+          "Is this seat free?"
+        ],
+        "noteTr": "This, seat isminden önce kalır; is'in yeri cümle amacına göre değişir."
+      }
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kuralı uygulama bölümünde görmediğin yeni örneklere bağımsız uygula.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Can you see ___ island far away?",
+            "options": [
+              "that",
+              "this"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Uzakta ve tekil olan island için that kullanılır.",
+            "wrongExplanationTr": "This yakındaki tekil bir şeyi gösterir; island uzakta."
+          },
+          {
+            "prompt": "___ sandwiches here are for our team.",
+            "options": [
+              "These",
+              "Those"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Yakında ve çoğul olan sandwiches için these gerekir.",
+            "wrongExplanationTr": "Those uzaktaki çoğul şeyleri gösterir; sandviçler burada."
+          },
+          {
+            "prompt": "What are ___ lights on the distant hill?",
+            "options": [
+              "those",
+              "that"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Lights çoğul ve uzakta; those doğru seçimdir.",
+            "wrongExplanationTr": "That tekil bir isimle kullanılır; lights çoğuldur."
+          },
+          {
+            "prompt": "Is ___ your notebook in my hand?",
+            "options": [
+              "this",
+              "these"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Eldeki notebook yakın ve tekildir; this gerekir.",
+            "wrongExplanationTr": "These yakın ama çoğul isimlerle kullanılır; notebook tekildir."
+          },
+          {
+            "prompt": "I don't recognise ___ person across the hall.",
+            "options": [
+              "that",
+              "those"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Person tekil ve uzakta; that kullanılır.",
+            "wrongExplanationTr": "Those çoğul isimler içindir; person tekildir."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s-vocab",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "007-demonstratives-w1",
+            "word": "this",
+            "example": "This is my notebook.",
+            "audioText": "this",
+            "prompt": "İngilizce-Türkçe eşleştir: this",
+            "options": [
+              "bu",
+              "bunlar",
+              "şu / o",
+              "şunlar / onlar"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "007-demonstratives-w2",
+            "word": "that",
+            "example": "That is the old gym.",
+            "audioText": "that",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "bu",
+              "bunlar",
+              "şu / o",
+              "şunlar / onlar"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "007-demonstratives-w3",
+            "word": "these",
+            "example": "These are clean shoes.",
+            "audioText": "these",
+            "prompt": "Eksik harfi tamamla: th_se",
+            "options": [
+              "that",
+              "these",
+              "this",
+              "those"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "007-demonstratives-w4",
+            "word": "those",
+            "example": "Those are volleyballs.",
+            "audioText": "those",
+            "prompt": "Karışık harfleri düzelt: esoht",
+            "options": [
+              "that",
+              "these",
+              "this",
+              "those"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "007-demonstratives-w5",
+            "word": "near",
+            "example": "This microphone is near.",
+            "audioText": "near",
+            "prompt": "Kelimeyi doğru cümleye koy: This microphone is ___.",
+            "options": [
+              "near",
+              "that",
+              "these",
+              "this"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s16",
+      "type": "summary",
+      "title": "Köprü tamam",
+      "instructionTr": "Artık bu yapıyı günlük bağlamlarda tanıyıp kullanabilirsin.",
+      "content": {
+        "points": [
+          "Yakınlık ve tekillik durumuna göre doğru gösterme sözcüğünü seçmek",
+          "Yakındaki tek şey this, uzaktaki tek şey that; yakındaki çoğul şeyler these, uzaktaki çoğul şeyler those ile gösterilir.",
+          "Yanlışta özne, sayı ve anlam ipuçlarını yeniden kontrol et."
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  },
+  "vocabulary": [
+    "007-demonstratives-w1",
+    "007-demonstratives-w2",
+    "007-demonstratives-w3",
+    "007-demonstratives-w4",
+    "007-demonstratives-w5",
+    "007-demonstratives-w6"
+  ]
+}

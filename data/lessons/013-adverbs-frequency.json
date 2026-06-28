@@ -1,0 +1,684 @@
+{
+  "id": "013-adverbs-frequency",
+  "title": "Adverbs of Frequency",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek.",
+    "Sıklık zarflarının cümle içindeki konumunu (özne ile fiil arasında) doğru uygulamak.",
+    "\"Never\" zarfının cümleye yapıca olumlu ama anlamca olumsuz anlam kattığını fark etmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu dersimizde Beyza eylemleri ne sıklıkla yaptığımızı ifade eden \"always, usually, often, sometimes, never\" sıklık zarflarını öğrendi. Bu kelimeler özne ile fiil arasına gelir. Özellikle \"never\" kelimesinin cümleyi anlamca olumsuz yaptığını ama yanına \"don't/doesn't\" gelmediğini evde ufak hatırlatmalarla pekiştirebilirsiniz.",
+    "todayGoal": "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek.",
+    "teachingTips": [
+      "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "I always listen to music.",
+      "She usually plays volleyball after school.",
+      "We often watch music concerts.",
+      "He sometimes hits the ball poorly."
+    ],
+    "listeningScripts": [
+      "Our volleyball coach is very organised. He always comes to the sports hall early. He usually brings a new ball. He often speaks to the players one by one. But he never shouts at us."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Adverbs of Frequency Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ plays volleyball on weekends. She loves it!",
+          "options": [
+            "never",
+            "always",
+            "sometimes"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We _______ listen to rock music because we don't like it.",
+          "options": [
+            "always",
+            "usually",
+            "never"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They _______ watch a concert on TV.",
+          "options": [
+            "often",
+            "often do",
+            "are often"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "He ________ (usually / go) to the music studio.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "I ________ (never / hit) my friends.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: sings / she / always / stage / on",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: We often watches the volleyball match.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "always",
+        "never",
+        "often",
+        "usually goes",
+        "never hit",
+        "She always sings on stage",
+        "\"We\" çoğul özne olduğu için fiil ek almaz; \"often\" bunu değiştirmez.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "013-adverbs-frequency-w1",
+    "013-adverbs-frequency-w2",
+    "013-adverbs-frequency-w3",
+    "013-adverbs-frequency-w4",
+    "013-adverbs-frequency-w5",
+    "013-adverbs-frequency-w6",
+    "013-adverbs-frequency-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Adverbs of Frequency",
+      "instructionTr": "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 13",
+        "heroText": "I always listen to music."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Birileri sana \"Ne sıklıkla voleybol oynarsın?\" diye sorarsa, işte bu derste öğreneceğin kelimeler işine yarayacak! Bir işi ne kadar sık yaptığımızı anlatan kelimelere sıklık zarfları (Adverbs of Frequency) diyoruz.",
+      "content": {
+        "examples": [
+          "En sık kullanılan beş kelimeyi sıklık derecesine göre öğrenelim:",
+          "1. Always (%100 — Her zaman)\n2. Usually (%80 — Genellikle)\n3. Often (%60 — Sık sık)\n4. Sometimes (%40 — Bazen)\n5. Never (%0 — Asla)"
+        ],
+        "noteTr": "Birileri sana \"Ne sıklıkla voleybol oynarsın?\" diye sorarsa, işte bu derste öğreneceğin kelimeler işine yarayacak! Bir işi ne kadar sık yaptığımızı anlatan kelimelere sıklık zarfları (Adverbs of Frequency) diyoruz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "I always listen to music.",
+          "She usually plays volleyball after school.",
+          "We often watch music concerts.",
+          "He sometimes hits the ball poorly.",
+          "They never practise at night.",
+          "My teacher always smiles in the classroom.",
+          "The school team usually wins the matches.",
+          "She often holds the microphone with two hands.",
+          "I sometimes play the drums in my room.",
+          "He never goes to football matches."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "Always",
+            "Her zaman",
+            "%100",
+            "I always play. / She always plays."
+          ],
+          [
+            "Usually",
+            "Genellikle",
+            "%80",
+            "We usually sing. / He usually sings."
+          ],
+          [
+            "Often",
+            "Sık sık",
+            "%60",
+            "You often jump. / It often runs."
+          ],
+          [
+            "Sometimes",
+            "Bazen",
+            "%40",
+            "They sometimes watch. / She sometimes watches."
+          ],
+          [
+            "Never",
+            "Asla",
+            "%0",
+            "I never play. / He never plays."
+          ]
+        ]
+      },
+      "explanationTr": "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek. Sıklık zarflarının cümle içindeki konumunu (özne ile fiil arasında) doğru uygulamak. \"Never\" zarfının cümleye yapıca olumlu ama anlamca olumsuz anlam kattığını fark etmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* Always I play volleyball. ❌\n* *Doğrusu:* I always play volleyball. (Sıklık zarfları cümlenin başına değil, özne ile fiilin arasına gelir.)",
+          "* *Hata:* She usually play volleyball. ❌\n* *Doğrusu:* She usually plays volleyball. (Araya \"usually\" girse bile \"She\" öznesiyle fiilin \"-s\" takısı düşmez.)",
+          "* *Hata:* He doesn't never sing. ❌\n* *Doğrusu:* He never sings. (\"Never\" kelimesinin olduğu cümlede \"doesn't\" kullanılmaz; fiilin \"-s\" takısı da yerinde durur.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ plays volleyball on weekends. She loves it!",
+      "content": {
+        "options": [
+          "never",
+          "always",
+          "sometimes"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"never\" bu cümlede hedef kurala uymaz. \"She loves it\" ifadesi çok yüksek bir sıklığa işaret eder; \"always\" (her zaman) doğru cevaptır. A seçeneği \"never\" tam tersi anlamda olduğu için cümleyle çelişir. C seçeneği \"sometimes\" yeterince güçlü değildir.",
+          "Doğru. \"She loves it\" ifadesi çok yüksek bir sıklığa işaret eder; \"always\" (her zaman) doğru cevaptır. A seçeneği \"never\" tam tersi anlamda olduğu için cümleyle çelişir. C seçeneği \"sometimes\" yeterince güçlü değildir.",
+          "\"sometimes\" bu cümlede hedef kurala uymaz. \"She loves it\" ifadesi çok yüksek bir sıklığa işaret eder; \"always\" (her zaman) doğru cevaptır. A seçeneği \"never\" tam tersi anlamda olduğu için cümleyle çelişir. C seçeneği \"sometimes\" yeterince güçlü değildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "We _______ listen to rock music because we don't like it.",
+      "content": {
+        "options": [
+          "always",
+          "usually",
+          "never"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"always\" bu cümlede hedef kurala uymaz. \"Because we don't like it\" eylemi hiç yapmadıklarını gösterir; \"never\" (asla) doğru cevaptır. A seçeneği \"always\" anlamca tamamen zıttır. B seçeneği \"usually\" ise eylemi sık yaptıkları anlamı taşır, bu da \"don't like it\" ile çelişir.",
+          "\"usually\" bu cümlede hedef kurala uymaz. \"Because we don't like it\" eylemi hiç yapmadıklarını gösterir; \"never\" (asla) doğru cevaptır. A seçeneği \"always\" anlamca tamamen zıttır. B seçeneği \"usually\" ise eylemi sık yaptıkları anlamı taşır, bu da \"don't like it\" ile çelişir.",
+          "Doğru. \"Because we don't like it\" eylemi hiç yapmadıklarını gösterir; \"never\" (asla) doğru cevaptır. A seçeneği \"always\" anlamca tamamen zıttır. B seçeneği \"usually\" ise eylemi sık yaptıkları anlamı taşır, bu da \"don't like it\" ile çelişir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "He ________ (usually / go) to the music studio.",
+      "content": {
+        "answer": "usually goes",
+        "accepted": [
+          "usually goes"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "Sıklık zarfı özne ile fiil arasına gelir; \"He\" öznesiyle \"go\" → \"goes\"."
+      },
+      "hintTr": "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "sings",
+          "she",
+          "always",
+          "stage",
+          "on"
+        ],
+        "answer": [
+          "She",
+          "always",
+          "sings",
+          "on",
+          "stage"
+        ],
+        "explanationTr": "Doğru sıra: She always sings on stage"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "We",
+          "often",
+          "watches",
+          "the",
+          "volleyball",
+          "match."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"We\" çoğul özne olduğu için fiil ek almaz; \"often\" bunu değiştirmez."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "sometimes play volleyball in the park."
+          ],
+          [
+            "She",
+            "always sings on stage."
+          ],
+          [
+            "The band",
+            "never misses a concert."
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "Eda is a student in the school band. She always wakes up early. She usually practises her songs before school. She often meets her band friends. She sometimes plays the guitar, but she never plays the drums because she thinks it is difficult.",
+        "questions": [
+          {
+            "prompt": "What does Eda always do early?",
+            "options": [
+              "She always wakes up early.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She always wakes up early.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She always wakes up early.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She always wakes up early."
+            ]
+          },
+          {
+            "prompt": "How often does she play the guitar?",
+            "options": [
+              "She sometimes plays the guitar.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She sometimes plays the guitar.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She sometimes plays the guitar.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She sometimes plays the guitar."
+            ]
+          },
+          {
+            "prompt": "Does she play the drums?",
+            "options": [
+              "No, she never plays the drums.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: No, she never plays the drums.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: No, she never plays the drums.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: No, she never plays the drums."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Who always comes early?",
+      "content": {
+        "audioText": "Our volleyball coach is very organised. He always comes to the sports hall early. He usually brings a new ball. He often speaks to the players one by one. But he never shouts at us.",
+        "options": [
+          "Our volleyball coach always comes early.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Our volleyball coach always comes early.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Gün içinde \"her zaman\" yaptığın bir şeyi (always) ve \"asla\" yapmadığın bir şeyi (never) içeren iki İngilizce cümle kur.",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "They _______ watch a concert on TV.",
+            "options": [
+              "often",
+              "often do",
+              "are often"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Sıklık zarfı özne ile fiil arasına doğrudan gelir. B seçeneğinde gereksiz \"do\" eklenmiştir; sıklık zarfı yardımcı fiile ihtiyaç duymaz. C seçeneğinde \"are\" tamamen yanlış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Sıklık zarfı özne ile fiil arasına doğrudan gelir. B seçeneğinde gereksiz \"do\" eklenmiştir; sıklık zarfı yardımcı fiile ihtiyaç duymaz. C seçeneğinde \"are\" tamamen yanlış bir yapıdır."
+          },
+          {
+            "prompt": "Gizem _______ jumps high in the match.",
+            "options": [
+              "always",
+              "always is",
+              "alwayses"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Gizem\" (She) öznesiyle \"always\" zarfı doğrudan kullanılır; fiil \"jumps\" olarak kalır. B seçeneğinde gereksiz \"is\" eklenmiştir. C seçeneği \"alwayses\" diye bir kelime yoktur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Gizem\" (She) öznesiyle \"always\" zarfı doğrudan kullanılır; fiil \"jumps\" olarak kalır. B seçeneğinde gereksiz \"is\" eklenmiştir. C seçeneği \"alwayses\" diye bir kelime yoktur."
+          },
+          {
+            "prompt": "He _______ listens to old songs.",
+            "options": [
+              "sometimes",
+              "sometimes does",
+              "don't sometimes"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Sometimes\" özne ile fiil arasına gelir. B seçeneğinde gereksiz \"does\" eklenmiştir. C seçeneğinde \"don't sometimes\" yanlış sıralanmış ve yanlış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Sometimes\" özne ile fiil arasına gelir. B seçeneğinde gereksiz \"does\" eklenmiştir. C seçeneğinde \"don't sometimes\" yanlış sıralanmış ve yanlış bir yapıdır."
+          },
+          {
+            "prompt": "I _______ eat apples. I don't like them.",
+            "options": [
+              "usually",
+              "never",
+              "always"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"I don't like them\" eylemi hiç yapılmadığını gösterir; \"never\" doğrudur. A seçeneği \"usually\" eylemi sıkça yaptığı anlamını taşır, bu cümleyle çelişir. C seçeneği \"always\" tam tersi anlamındadır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"I don't like them\" eylemi hiç yapılmadığını gösterir; \"never\" doğrudur. A seçeneği \"usually\" eylemi sıkça yaptığı anlamını taşır, bu cümleyle çelişir. C seçeneği \"always\" tam tersi anlamındadır."
+          },
+          {
+            "prompt": "The team _______ wins the cup.",
+            "options": [
+              "usually",
+              "usually do",
+              "usually is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Usually\" özne ile fiil arasına gelir; \"The team\" tekil olduğu için \"wins\" doğrudur. B seçeneğinde gereksiz \"do\" eklenmiştir. C seçeneğinde \"is\" tamamen yanlış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Usually\" özne ile fiil arasına gelir; \"The team\" tekil olduğu için \"wins\" doğrudur. B seçeneğinde gereksiz \"do\" eklenmiştir. C seçeneğinde \"is\" tamamen yanlış bir yapıdır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ wakes up at 6 o'clock. It is her daily routine.",
+            "options": [
+              "always",
+              "always does",
+              "alwayses"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Always\" özne ile fiil arasına tek başına gelir; \"wakes\" yerinde durur. B seçeneğinde \"does\" gereksizdir. C seçeneği \"alwayses\" yoktur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Always\" özne ile fiil arasına tek başına gelir; \"wakes\" yerinde durur. B seçeneğinde \"does\" gereksizdir. C seçeneği \"alwayses\" yoktur."
+          },
+          {
+            "prompt": "He _______ plays the guitar at night. His family sleeps.",
+            "options": [
+              "never",
+              "doesn't never",
+              "never does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Never\" tek başına olumsuzluk anlamı taşır; fiilin \"-s\" takısı korunur. B seçeneği çift olumsuzluk hatası içerir. C seçeneğinde \"does\" gereksizdir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Never\" tek başına olumsuzluk anlamı taşır; fiilin \"-s\" takısı korunur. B seçeneği çift olumsuzluk hatası içerir. C seçeneğinde \"does\" gereksizdir."
+          },
+          {
+            "prompt": "We _______ have practice on Fridays. It is our schedule.",
+            "options": [
+              "usually",
+              "usually have",
+              "are usually"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Usually\" özne ile fiil arasına gelir. B seçeneğinde \"have\" iki kez tekrarlanmış olur. C seçeneğinde \"are\" yanlış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Usually\" özne ile fiil arasına gelir. B seçeneğinde \"have\" iki kez tekrarlanmış olur. C seçeneğinde \"are\" yanlış bir yapıdır."
+          },
+          {
+            "prompt": "The band _______ arrives at the studio on time.",
+            "options": [
+              "often",
+              "often does",
+              "is often"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"Often\" özne ile fiil arasına gelir; \"The band\" tekil olduğu için \"arrives\" doğrudur. B seçeneğinde \"does\" gereksizdir. C seçeneğinde \"is\" tamamen yanlış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Often\" özne ile fiil arasına gelir; \"The band\" tekil olduğu için \"arrives\" doğrudur. B seçeneğinde \"does\" gereksizdir. C seçeneğinde \"is\" tamamen yanlış bir yapıdır."
+          },
+          {
+            "prompt": "She plays volleyball every weekend. She ___ plays volleyball on weekends.",
+            "options": [
+              "always",
+              "don't always",
+              "always is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Every weekend düzenli ve güçlü bir sıklık ipucudur; bu yüzden always uygundur. B seçeneğinde gereksiz don't vardır. C seçeneğinde are/is gibi to be yardımı bu eylem cümlesine eklenmez.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Every weekend düzenli ve güçlü bir sıklık ipucudur; bu yüzden always uygundur. B seçeneğinde gereksiz don't vardır. C seçeneğinde are/is gibi to be yardımı bu eylem cümlesine eklenmez."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "013-adverbs-frequency-w1",
+            "word": "always",
+            "example": "I always play volleyball.",
+            "audioText": "always",
+            "prompt": "İngilizce-Türkçe eşleştir: always",
+            "options": [
+              "Bazen",
+              "Genellikle",
+              "Her zaman",
+              "Sık sık"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "013-adverbs-frequency-w2",
+            "word": "usually",
+            "example": "She usually sings here.",
+            "audioText": "usually",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Bazen",
+              "Genellikle",
+              "Her zaman",
+              "Sık sık"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "013-adverbs-frequency-w3",
+            "word": "often",
+            "example": "We often go to concerts.",
+            "audioText": "often",
+            "prompt": "Eksik harfi tamamla: _ften",
+            "options": [
+              "always",
+              "often",
+              "sometimes",
+              "usually"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "013-adverbs-frequency-w4",
+            "word": "sometimes",
+            "example": "He sometimes plays drums.",
+            "audioText": "sometimes",
+            "prompt": "Karışık harfleri düzelt: semitemos",
+            "options": [
+              "always",
+              "often",
+              "sometimes",
+              "usually"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "013-adverbs-frequency-w5",
+            "word": "never",
+            "example": "I never lose a match.",
+            "audioText": "never",
+            "prompt": "Kelimeyi doğru cümleye koy: I ___ lose a match.",
+            "options": [
+              "always",
+              "never",
+              "often",
+              "usually"
+            ],
+            "correctIndex": 1
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geniş zamanda bir eylemin ne sıklıkla yapıldığını ifade eden temel sıklık zarflarını (always, usually, often, sometimes, never) öğrenmek.",
+          "Sıklık zarflarının cümle içindeki konumunu (özne ile fiil arasında) doğru uygulamak.",
+          "Hedef kelimeler: always, usually, often, sometimes, never, early, studio"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}
