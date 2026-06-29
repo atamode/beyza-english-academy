@@ -1,0 +1,695 @@
+{
+  "id": "062-first-conditional",
+  "title": "First Conditional",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "If + Present Simple, will + fiil yapısını kullanmak.",
+    "Gelecekte mümkün koşul ve sonuçları anlatmak.",
+    "Cümle sırasının değişebileceğini görmek.",
+    "Okul, sağlık, spor ve günlük hayat bağlamında koşul cümleleri kurmak.",
+    "if cümlesinde will kullanılmadığını öğrenmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Önce mümkün bir durum söyleyin, Beyza sonucunu tamamlasın. If bölümünde Present Simple, sonuç bölümünde will kullandığını kontrol edin.",
+    "todayGoal": "If + Present Simple, will + fiil yapısını kullanmak.",
+    "teachingTips": [
+      "Bu derste \"First Conditional\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "If I study, I will learn.",
+      "If it rains, we will stay at home.",
+      "If she practises, she will improve.",
+      "If they arrive early, they will warm up."
+    ],
+    "listeningScripts": [
+      "\"The team has a match tomorrow. If the players arrive early, they will have enough time to warm up. If they drink water, they will feel better. If they work together, they will have a good chance to win.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "First Conditional Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "If I study, I _______ pass.",
+          "options": [
+            "will",
+            "am",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "If it _______ , we will stay home.",
+          "options": [
+            "will rain",
+            "rains",
+            "raining"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "If I study, I _______ learn.",
+          "options": [
+            "will",
+            "am",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "If she practises, she _______ improve.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "If we _______ now, we will be on time.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: if / I / study / I will pass",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: If he will come, we will start.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What will happen if Beyza studies?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "First Conditional yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "First Conditional kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "will",
+        "rains",
+        "will",
+        "will",
+        "leave",
+        "if I study I will pass",
+        "\"will come\" burada hatalıdır; doğru cevap \"comes\" olmalıdır.",
+        "She will feel ready.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "062-first-conditional-w1",
+    "062-first-conditional-w2",
+    "062-first-conditional-w3",
+    "062-first-conditional-w4",
+    "062-first-conditional-w5",
+    "062-first-conditional-w6",
+    "062-first-conditional-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "First Conditional",
+      "instructionTr": "If + Present Simple, will + fiil yapısını kullanmak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 62",
+        "heroText": "If I study, I will learn."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "First Conditional, gelecekte gerçekleşmesi mümkün bir durum ve sonucunu anlatır. Kural: If + Present Simple, will + fiilin yalın hâli - If I study, I will pass the test. - If it rains, we will stay at home. - If the team practises, it will improve. Cümle sırası değişebilir: - If you drink water, you will feel better. - You will feel better if you drink water. Önemli: - If it will rain... ❌ - If it rains... ✅",
+      "content": {
+        "examples": [],
+        "noteTr": "First Conditional, gelecekte gerçekleşmesi mümkün bir durum ve sonucunu anlatır. Kural: If + Present Simple, will + fiilin yalın hâli - If I study, I will pass the test. - If it rains, we will stay at home. - If the team practises, it will improve. Cümle sırası değişebilir: - If you drink water, you will feel better. - You will feel better if you drink water. Önemli: - If it will rain... ❌ - If it rains... ✅"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "If I study, I will learn.",
+          "If it rains, we will stay at home.",
+          "If she practises, she will improve.",
+          "If they arrive early, they will warm up.",
+          "If you drink water, you will feel better.",
+          "If Beyza finishes her homework, she will play a game.",
+          "If the team works together, it will play better.",
+          "If we leave now, we will be on time.",
+          "If he doesn't sleep early, he will feel tired.",
+          "If the students prepare well, the show will be successful."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "If cümlesi",
+            "Present Simple",
+            "If I study..."
+          ],
+          [
+            "Sonuç cümlesi",
+            "will + fiil",
+            "...I will pass."
+          ]
+        ]
+      },
+      "explanationTr": "If + Present Simple, will + fiil yapısını kullanmak. Gelecekte mümkün koşul ve sonuçları anlatmak. Cümle sırasının değişebileceğini görmek. Okul, sağlık, spor ve günlük hayat bağlamında koşul cümleleri kurmak. if cümlesinde will kullanılmadığını öğrenmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "If I will study, I will pass. ❌ → If I study, I will pass. ✅",
+          "If she practises, she will improves. ❌ → she will improve ✅",
+          "If it rain ❌ → If it rains ✅",
+          "İki cümlede de will kullanmak başlangıç düzeyinde yanlıştır."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "If I study, I _______ pass.",
+      "content": {
+        "options": [
+          "will",
+          "am",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "If it _______ , we will stay home.",
+      "content": {
+        "options": [
+          "will rain",
+          "rains",
+          "raining"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"will rain\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rains\" çünkü rains seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. rains seçeneği cümledeki hedef kurala uyar.",
+          "\"raining\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rains\" çünkü rains seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "If she practises, she _______ improve.",
+      "content": {
+        "answer": "will",
+        "accepted": [
+          "will"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"will\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "If + Present Simple, will + fiil yapısını kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "if",
+          "I",
+          "study",
+          "I will pass"
+        ],
+        "answer": [
+          "if",
+          "I",
+          "study",
+          "I will pass"
+        ],
+        "explanationTr": "Doğru sıra: if I study I will pass"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "If",
+          "he",
+          "will",
+          "come,",
+          "we",
+          "will",
+          "start."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"will come\" burada hatalıdır; doğru cevap \"comes\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "If it rains",
+            "we will stay home."
+          ],
+          [
+            "If I study",
+            "I will pass."
+          ],
+          [
+            "If the team practises",
+            "it will improve."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has an English quiz tomorrow. If she studies tonight, she will feel ready. If she finishes early, she will prepare her volleyball bag too. If she sleeps late, she will feel tired in the morning.",
+        "questions": [
+          {
+            "prompt": "What will happen if Beyza studies?",
+            "options": [
+              "She will feel ready.",
+              "She will prepare her volleyball bag.",
+              "She will feel tired."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She will feel ready.\" olmalıdır.",
+              "\"She will prepare her volleyball bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will feel ready.\".",
+              "\"She will feel tired.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will feel ready.\"."
+            ]
+          },
+          {
+            "prompt": "What will she do if she finishes early?",
+            "options": [
+              "She will feel tired.",
+              "She will prepare her volleyball bag.",
+              "She will feel ready."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She will feel tired.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will prepare her volleyball bag.\".",
+              "Doğru. Bu soruda cevap \"She will prepare her volleyball bag.\" olmalıdır.",
+              "\"She will feel ready.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will prepare her volleyball bag.\"."
+            ]
+          },
+          {
+            "prompt": "How will she feel if she sleeps late?",
+            "options": [
+              "She will feel ready.",
+              "She will prepare her volleyball bag.",
+              "She will feel tired."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She will feel ready.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will feel tired.\".",
+              "\"She will prepare her volleyball bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will feel tired.\".",
+              "Doğru. Bu soruda cevap \"She will feel tired.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What will happen if they arrive early?",
+      "content": {
+        "audioText": "\"The team has a match tomorrow. If the players arrive early, they will have enough time to warm up. If they drink water, they will feel better. If they work together, they will have a good chance to win.\"",
+        "questions": [
+          {
+            "prompt": "What will happen if they arrive early?",
+            "options": [
+              "They will have enough time to warm up.",
+              "They will feel better.",
+              "They will have a good chance to win."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"They will have enough time to warm up.\" olmalıdır.",
+              "\"They will feel better.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They will have enough time to warm up.\".",
+              "\"They will have a good chance to win.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They will have enough time to warm up.\"."
+            ]
+          },
+          {
+            "prompt": "How will they feel if they drink water?",
+            "options": [
+              "They will have a good chance to win.",
+              "They will feel better.",
+              "They will have enough time to warm up."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"They will have a good chance to win.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They will feel better.\".",
+              "Doğru. Bu soruda cevap \"They will feel better.\" olmalıdır.",
+              "\"They will have enough time to warm up.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They will feel better.\"."
+            ]
+          },
+          {
+            "prompt": "What will happen if they work together?",
+            "options": [
+              "They will have enough time to warm up.",
+              "They will feel better.",
+              "They will have a good chance to win."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"They will have enough time to warm up.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They will have a good chance to win.\".",
+              "\"They will feel better.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They will have a good chance to win.\".",
+              "Doğru. Bu soruda cevap \"They will have a good chance to win.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dört koşul cümlesi kur: - If I study, ... - If it rains, ... - If I practise, ... - If I sleep late, ...",
+      "content": {
+        "sentenceStarters": [
+          "If I study, ...",
+          "If it rains, ...",
+          "If I practise, ...",
+          "If I sleep late, ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "If I study, I _______ learn.",
+            "options": [
+              "will",
+              "am",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If she _______ , she will improve.",
+            "options": [
+              "practises",
+              "will practise",
+              "practising"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. practises seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practises\" çünkü practises seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If it rains, we _______ stay home.",
+            "options": [
+              "will",
+              "are",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If they _______ early, they will warm up.",
+            "options": [
+              "arrive",
+              "will arrive",
+              "arrived"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. arrive seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will arrive\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"arrive\" çünkü arrive seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You will feel better if you _______.",
+            "options": [
+              "rest",
+              "will rest",
+              "rested"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. rest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will rest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rest\" çünkü rest seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "If he studies, he _______ pass.",
+            "options": [
+              "will",
+              "is",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If we _______ now, we will be on time.",
+            "options": [
+              "leave",
+              "will leave",
+              "left"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. leave seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will leave\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"leave\" çünkü leave seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If she doesn't sleep, she _______ tired.",
+            "options": [
+              "will feel",
+              "feels will",
+              "felt"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will feel seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"feels will\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will feel\" çünkü will feel seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If the team practises, it _______ better.",
+            "options": [
+              "will play",
+              "plays will",
+              "played"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will play seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"plays will\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will play\" çünkü will play seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We will go outside if it _______.",
+            "options": [
+              "doesn't rain",
+              "won't rain",
+              "didn't rain"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. doesn't rain seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"won't rain\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"doesn't rain\" çünkü doesn't rain seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "062-first-conditional-w1",
+            "word": "if",
+            "example": "If I study...",
+            "audioText": "if",
+            "prompt": "\"if\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eğer",
+              "koşul",
+              "sonuç",
+              "geçmek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "062-first-conditional-w2",
+            "word": "condition",
+            "example": "This is the condition.",
+            "audioText": "condition",
+            "prompt": "\"condition\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eğer",
+              "koşul",
+              "sonuç",
+              "geçmek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "062-first-conditional-w3",
+            "word": "result",
+            "example": "This is the result.",
+            "audioText": "result",
+            "prompt": "\"result\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eğer",
+              "koşul",
+              "sonuç",
+              "geçmek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "062-first-conditional-w4",
+            "word": "pass",
+            "example": "I will pass the test.",
+            "audioText": "pass",
+            "prompt": "\"pass\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eğer",
+              "koşul",
+              "sonuç",
+              "geçmek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "062-first-conditional-w5",
+            "word": "chance",
+            "example": "a good chance",
+            "audioText": "chance",
+            "prompt": "\"chance\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "şans/olasılık",
+              "eğer",
+              "koşul",
+              "sonuç"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "If + Present Simple, will + fiil yapısını kullanmak.",
+          "Gelecekte mümkün koşul ve sonuçları anlatmak.",
+          "Hedef kelimeler: if, condition, result, pass, chance, successful, enough"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

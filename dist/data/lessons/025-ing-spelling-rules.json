@@ -1,0 +1,703 @@
+{
+  "id": "025-ing-spelling-rules",
+  "title": "-ing Spelling Rules",
+  "level": "A2.1",
+  "module": "Şu An",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Fiillere -ing eklerken temel yazım değişikliklerini tanımak.",
+    "Çoğu fiile doğrudan -ing eklemek.",
+    "Sonu sessiz e ile biten fiillerde e harfini düşürmek.",
+    "Bazı kısa fiillerde son harfi çiftlemek.",
+    "lie → lying gibi temel özel örneği tanımak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Bu konuda tüm İngilizce yazım kurallarını öğretmeye çalışmayın. Öncelik en sık kullanılan fiillerin uygun cevaplerini tanımaktır. Küçük kartlara fiilin yalın hâlini yazıp Beyza'dan -ing hâlini söylemesini isteyebilirsiniz.",
+    "todayGoal": "Fiillere -ing eklerken temel yazım değişikliklerini tanımak.",
+    "teachingTips": [
+      "Bu derste \"-ing Spelling Rules\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "play → playing",
+      "read → reading",
+      "listen → listening",
+      "make → making"
+    ],
+    "listeningScripts": [
+      "\"The volleyball team is training. One player is running. Another player is jumping. Two girls are sitting near the coach. The coach is writing notes.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "-ing Spelling Rules Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "write fiilinin doğru -ing hâli:",
+          "options": [
+            "writeing",
+            "writing",
+            "writting"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "run fiilinin doğru -ing hâli:",
+          "options": [
+            "runing",
+            "running",
+            "runnung"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "make →",
+          "options": [
+            "making",
+            "makeing",
+            "makking"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "make → _______",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "swim → _______",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / she / writing / now",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He is makeing tea.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Who is dancing?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "-ing Spelling Rules yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "-ing Spelling Rules kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "writing",
+        "running",
+        "making",
+        "making",
+        "swimming",
+        "she is writing now",
+        "\"makeing\" burada hatalıdır; doğru cevap \"making\" olmalıdır.",
+        "One girl is dancing.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "025-ing-spelling-rules-w1",
+    "025-ing-spelling-rules-w2",
+    "025-ing-spelling-rules-w3",
+    "025-ing-spelling-rules-w4",
+    "025-ing-spelling-rules-w5",
+    "025-ing-spelling-rules-w6",
+    "025-ing-spelling-rules-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "-ing Spelling Rules",
+      "instructionTr": "Fiillere -ing eklerken temel yazım değişikliklerini tanımak.",
+      "content": {
+        "eyebrow": "Şu An · DERS 25",
+        "heroText": "play → playing"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Çoğu fiile doğrudan -ing gelir: - read → reading - play → playing - listen → listening Sonu sessiz e ile biten bazı fiillerde e düşer: - make → making - write → writing - dance → dancing Kısa fiillerde bazen son harf çiftlenir: - run → running - sit → sitting - swim → swimming Özel örnek: - lie → lying Bu dersin amacı kuralları ezberlemekten çok doğru örnekleri fark etmektir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Çoğu fiile doğrudan -ing gelir: - read → reading - play → playing - listen → listening Sonu sessiz e ile biten bazı fiillerde e düşer: - make → making - write → writing - dance → dancing Kısa fiillerde bazen son harf çiftlenir: - run → running - sit → sitting - swim → swimming Özel örnek: - lie → lying Bu dersin amacı kuralları ezberlemekten çok doğru örnekleri fark etmektir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "play → playing",
+          "read → reading",
+          "listen → listening",
+          "make → making",
+          "write → writing",
+          "dance → dancing",
+          "run → running",
+          "sit → sitting",
+          "swim → swimming",
+          "lie → lying"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Çoğu fiil",
+            "+ ing",
+            "play → playing"
+          ],
+          [
+            "Sessiz e ile biten",
+            "e düşer + ing",
+            "write → writing"
+          ],
+          [
+            "Kısa fiil",
+            "son harf çiftlenebilir",
+            "run → running"
+          ],
+          [
+            "Özel",
+            "yazım değişir",
+            "lie → lying"
+          ]
+        ]
+      },
+      "explanationTr": "Fiillere -ing eklerken temel yazım değişikliklerini tanımak. Çoğu fiile doğrudan -ing eklemek. Sonu sessiz e ile biten fiillerde e harfini düşürmek. Bazı kısa fiillerde son harfi çiftlemek. lie → lying gibi temel özel örneği tanımak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "writeing ❌ → writing ✅",
+          "runing ❌ → running ✅",
+          "playying ❌ → playing ✅",
+          "lieing ❌ → lying ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "write fiilinin doğru -ing hâli:",
+      "content": {
+        "options": [
+          "writeing",
+          "writing",
+          "writting"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"writeing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"writing\" çünkü writing seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. writing seçeneği cümledeki hedef kurala uyar.",
+          "\"writting\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"writing\" çünkü writing seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "run fiilinin doğru -ing hâli:",
+      "content": {
+        "options": [
+          "runing",
+          "running",
+          "runnung"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"runing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"running\" çünkü running seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. running seçeneği cümledeki hedef kurala uyar.",
+          "\"runnung\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"running\" çünkü running seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "make → _______",
+      "content": {
+        "answer": "making",
+        "accepted": [
+          "making"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"making\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Fiillere -ing eklerken temel yazım değişikliklerini tanımak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "she",
+          "writing",
+          "now"
+        ],
+        "answer": [
+          "she",
+          "is",
+          "writing",
+          "now"
+        ],
+        "explanationTr": "Doğru sıra: she is writing now"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "is",
+          "makeing",
+          "tea."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"makeing\" burada hatalıdır; doğru cevap \"making\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "dance",
+            "dancing"
+          ],
+          [
+            "sit",
+            "sitting"
+          ],
+          [
+            "play",
+            "playing"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "The students are preparing a show. One girl is dancing. Two boys are writing names on cards. A teacher is making a list. Some students are sitting near the stage.",
+        "questions": [
+          {
+            "prompt": "Who is dancing?",
+            "options": [
+              "One girl is dancing.",
+              "They are writing names on cards.",
+              "A teacher is making a list."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"One girl is dancing.\" olmalıdır.",
+              "\"They are writing names on cards.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"One girl is dancing.\".",
+              "\"A teacher is making a list.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"One girl is dancing.\"."
+            ]
+          },
+          {
+            "prompt": "What are the boys writing?",
+            "options": [
+              "A teacher is making a list.",
+              "They are writing names on cards.",
+              "One girl is dancing."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A teacher is making a list.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are writing names on cards.\".",
+              "Doğru. Bu soruda cevap \"They are writing names on cards.\" olmalıdır.",
+              "\"One girl is dancing.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are writing names on cards.\"."
+            ]
+          },
+          {
+            "prompt": "Who is making a list?",
+            "options": [
+              "One girl is dancing.",
+              "They are writing names on cards.",
+              "A teacher is making a list."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"One girl is dancing.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A teacher is making a list.\".",
+              "\"They are writing names on cards.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A teacher is making a list.\".",
+              "Doğru. Bu soruda cevap \"A teacher is making a list.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What is one player doing?",
+      "content": {
+        "audioText": "\"The volleyball team is training. One player is running. Another player is jumping. Two girls are sitting near the coach. The coach is writing notes.\"",
+        "questions": [
+          {
+            "prompt": "What is one player doing?",
+            "options": [
+              "She is running.",
+              "Yes, they are.",
+              "She is writing notes."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She is running.\" olmalıdır.",
+              "\"Yes, they are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is running.\".",
+              "\"She is writing notes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is running.\"."
+            ]
+          },
+          {
+            "prompt": "Are two girls sitting?",
+            "options": [
+              "She is writing notes.",
+              "Yes, they are.",
+              "She is running."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She is writing notes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they are.\".",
+              "Doğru. Bu soruda cevap \"Yes, they are.\" olmalıdır.",
+              "\"She is running.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they are.\"."
+            ]
+          },
+          {
+            "prompt": "What is the coach writing?",
+            "options": [
+              "She is running.",
+              "Yes, they are.",
+              "She is writing notes."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She is running.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is writing notes.\".",
+              "\"Yes, they are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is writing notes.\".",
+              "Doğru. Bu soruda cevap \"She is writing notes.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki fiilleri sözlü olarak -ing hâline getir: - play - write - run - sit - dance",
+      "content": {
+        "sentenceStarters": [
+          "play",
+          "write",
+          "run",
+          "sit",
+          "dance"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "make →",
+            "options": [
+              "making",
+              "makeing",
+              "makking"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. making seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"makeing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"making\" çünkü making seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "sit →",
+            "options": [
+              "siting",
+              "sitting",
+              "siteing"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. sitting seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"siting\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"sitting\" çünkü sitting seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "play →",
+            "options": [
+              "playing",
+              "playying",
+              "plaing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. playing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"playying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"playing\" çünkü playing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "swim →",
+            "options": [
+              "swiming",
+              "swimming",
+              "swimmimg"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. swimming seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"swiming\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"swimming\" çünkü swimming seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "lie →",
+            "options": [
+              "lieing",
+              "lying",
+              "liing"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. lying seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"lieing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"lying\" çünkü lying seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "write →",
+            "options": [
+              "writing",
+              "writeing",
+              "writting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. writing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"writeing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"writing\" çünkü writing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "run →",
+            "options": [
+              "runing",
+              "running",
+              "runnung"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. running seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"runing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"running\" çünkü running seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "dance →",
+            "options": [
+              "dancing",
+              "danceing",
+              "dancceing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. dancing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"danceing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"dancing\" çünkü dancing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "read →",
+            "options": [
+              "reading",
+              "readding",
+              "readning"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. reading seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"readding\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "sit →",
+            "options": [
+              "sitting",
+              "siting",
+              "siteing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. sitting seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"siting\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"sitting\" çünkü sitting seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "025-ing-spelling-rules-w1",
+            "word": "make",
+            "example": "making",
+            "audioText": "make",
+            "prompt": "\"make\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmak/hazırlamak",
+              "dans etmek",
+              "yüzmek",
+              "oturmak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "025-ing-spelling-rules-w2",
+            "word": "dance",
+            "example": "dancing",
+            "audioText": "dance",
+            "prompt": "\"dance\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmak/hazırlamak",
+              "dans etmek",
+              "yüzmek",
+              "oturmak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "025-ing-spelling-rules-w3",
+            "word": "swim",
+            "example": "swimming",
+            "audioText": "swim",
+            "prompt": "\"swim\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmak/hazırlamak",
+              "dans etmek",
+              "yüzmek",
+              "oturmak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "025-ing-spelling-rules-w4",
+            "word": "sit",
+            "example": "sitting",
+            "audioText": "sit",
+            "prompt": "\"sit\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmak/hazırlamak",
+              "dans etmek",
+              "yüzmek",
+              "oturmak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "025-ing-spelling-rules-w5",
+            "word": "run",
+            "example": "running",
+            "audioText": "run",
+            "prompt": "\"run\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "koşmak",
+              "yapmak/hazırlamak",
+              "dans etmek",
+              "yüzmek"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Fiillere -ing eklerken temel yazım değişikliklerini tanımak.",
+          "Çoğu fiile doğrudan -ing eklemek.",
+          "Hedef kelimeler: make, dance, swim, sit, run, lie, jump"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

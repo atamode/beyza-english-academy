@@ -1,0 +1,698 @@
+{
+  "id": "029-a-an-some",
+  "title": "a / an / some",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Tekil sayılabilen isimlerle a / an kullanmak.",
+    "Ünlü sesle başlayan kelimelerde an seçmek.",
+    "Çoğul sayılabilen ve sayılamayan isimlerle some kullanmak.",
+    "Yiyecek ve alışveriş cümleleri kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "A / an seçiminde harfe değil sese odaklanın. Bu düzeyde en sık kullanılan örneklerle pratik yapmak yeterlidir: an apple, an orange, a banana, a sandwich.",
+    "todayGoal": "Tekil sayılabilen isimlerle a / an kullanmak.",
+    "teachingTips": [
+      "Bu derste \"a / an / some\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "a banana",
+      "an apple",
+      "a sandwich",
+      "an orange"
+    ],
+    "listeningScripts": [
+      "\"For the team snack, the coach brings a banana for each player, some sandwiches and some fruit juice. There is also an orange in one bag.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "a / an / some Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I have _______ orange.",
+          "options": [
+            "a",
+            "an",
+            "some"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We need _______ water.",
+          "options": [
+            "a",
+            "an",
+            "some"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ apple",
+          "options": [
+            "a",
+            "an",
+            "some"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "She is eating _______ banana.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "There are _______ apples in the basket.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: an / I / apple / have",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He has a orange.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Does Beyza have an egg?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "a / an / some yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "a / an / some kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "an",
+        "some",
+        "an",
+        "a",
+        "some",
+        "I have an apple",
+        "\"a\" burada hatalıdır; doğru cevap \"an\" olmalıdır.",
+        "Yes, she does.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "029-a-an-some-w1",
+    "029-a-an-some-w2",
+    "029-a-an-some-w3",
+    "029-a-an-some-w4",
+    "029-a-an-some-w5",
+    "029-a-an-some-w6",
+    "029-a-an-some-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "a / an / some",
+      "instructionTr": "Tekil sayılabilen isimlerle a / an kullanmak.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 29",
+        "heroText": "a banana"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Tek bir sayılabilen isimden söz ederken a veya an kullanırız: - a banana - a sandwich - an apple - an orange Kelimenin ilk sesi ünlüyse an, değilse a kullanılır. Some ise şu durumlarda kullanılır: - Çoğul sayılabilen isimler: some apples - Sayılamayan isimler: some milk Örnekler: - I have a sandwich. - She wants an orange. - We need some tomatoes. - There is some water.",
+      "content": {
+        "examples": [],
+        "noteTr": "Tek bir sayılabilen isimden söz ederken a veya an kullanırız: - a banana - a sandwich - an apple - an orange Kelimenin ilk sesi ünlüyse an, değilse a kullanılır. Some ise şu durumlarda kullanılır: - Çoğul sayılabilen isimler: some apples - Sayılamayan isimler: some milk Örnekler: - I have a sandwich. - She wants an orange. - We need some tomatoes. - There is some water."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "a banana",
+          "an apple",
+          "a sandwich",
+          "an orange",
+          "some grapes",
+          "some rice",
+          "I have a bottle of water.",
+          "She is eating an apple.",
+          "We need some bread.",
+          "There are some snacks in the bag."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "a + sessiz ses",
+            "a banana"
+          ],
+          [
+            "an + ünlü ses",
+            "an apple"
+          ],
+          [
+            "some + çoğul",
+            "some tomatoes"
+          ],
+          [
+            "some + sayılamayan",
+            "some milk"
+          ]
+        ]
+      },
+      "explanationTr": "Tekil sayılabilen isimlerle a / an kullanmak. Ünlü sesle başlayan kelimelerde an seçmek. Çoğul sayılabilen ve sayılamayan isimlerle some kullanmak. Yiyecek ve alışveriş cümleleri kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "a apple ❌ → an apple ✅",
+          "an banana ❌ → a banana ✅",
+          "some sandwich ❌ → a sandwich veya some sandwiches ✅",
+          "a rice ❌ → some rice ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I have _______ orange.",
+      "content": {
+        "options": [
+          "a",
+          "an",
+          "some"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. an seçeneği cümledeki hedef kurala uyar.",
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "We need _______ water.",
+      "content": {
+        "options": [
+          "a",
+          "an",
+          "some"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. some seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "She is eating _______ banana.",
+      "content": {
+        "answer": "a",
+        "accepted": [
+          "a"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"a\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Tekil sayılabilen isimlerle a / an kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "an",
+          "I",
+          "apple",
+          "have"
+        ],
+        "answer": [
+          "I",
+          "have",
+          "an",
+          "apple"
+        ],
+        "explanationTr": "Doğru sıra: I have an apple"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "has",
+          "a",
+          "orange."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"a\" burada hatalıdır; doğru cevap \"an\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "apple",
+            "an"
+          ],
+          [
+            "sandwich",
+            "a"
+          ],
+          [
+            "milk",
+            "some"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is making breakfast. She has an egg, a tomato and some cheese. There is some bread on the table. She also has a glass of milk.",
+        "questions": [
+          {
+            "prompt": "Does Beyza have an egg?",
+            "options": [
+              "Yes, she does.",
+              "Some bread.",
+              "Milk."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Yes, she does.\" olmalıdır.",
+              "\"Some bread.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, she does.\".",
+              "\"Milk.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, she does.\"."
+            ]
+          },
+          {
+            "prompt": "What is on the table?",
+            "options": [
+              "Milk.",
+              "Some bread.",
+              "Yes, she does."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Milk.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some bread.\".",
+              "Doğru. Bu soruda cevap \"Some bread.\" olmalıdır.",
+              "\"Yes, she does.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some bread.\"."
+            ]
+          },
+          {
+            "prompt": "What is in the glass?",
+            "options": [
+              "Yes, she does.",
+              "Some bread.",
+              "Milk."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Yes, she does.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Milk.\".",
+              "\"Some bread.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Milk.\".",
+              "Doğru. Bu soruda cevap \"Milk.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What does each player get?",
+      "content": {
+        "audioText": "\"For the team snack, the coach brings a banana for each player, some sandwiches and some fruit juice. There is also an orange in one bag.\"",
+        "questions": [
+          {
+            "prompt": "What does each player get?",
+            "options": [
+              "A banana.",
+              "Yes, there are.",
+              "An orange."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"A banana.\" olmalıdır.",
+              "\"Yes, there are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A banana.\".",
+              "\"An orange.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A banana.\"."
+            ]
+          },
+          {
+            "prompt": "Are there any sandwiches?",
+            "options": [
+              "An orange.",
+              "Yes, there are.",
+              "A banana."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"An orange.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there are.\".",
+              "Doğru. Bu soruda cevap \"Yes, there are.\" olmalıdır.",
+              "\"A banana.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there are.\"."
+            ]
+          },
+          {
+            "prompt": "What fruit is in one bag?",
+            "options": [
+              "A banana.",
+              "Yes, there are.",
+              "An orange."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"A banana.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"An orange.\".",
+              "\"Yes, there are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"An orange.\".",
+              "Doğru. Bu soruda cevap \"An orange.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki kelimelerle doğru başlangıcı söyle: - apple - banana - milk - sandwiches - orange Örnek: - an apple - some sandwiches",
+      "content": {
+        "sentenceStarters": [
+          "apple",
+          "banana",
+          "milk",
+          "sandwiches",
+          "orange"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ apple",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. an seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ sandwich",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a\" çünkü a seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ rice",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ grapes",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ orange",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. an seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I need _______ bottle.",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a\" çünkü a seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has _______ egg.",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. an seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There is _______ cheese.",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have _______ bananas.",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He is eating _______ orange.",
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. an seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "029-a-an-some-w1",
+            "word": "banana",
+            "example": "A banana.",
+            "audioText": "banana",
+            "prompt": "\"banana\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "muz",
+              "portakal",
+              "yumurta",
+              "peynir"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "029-a-an-some-w2",
+            "word": "orange",
+            "example": "An orange.",
+            "audioText": "orange",
+            "prompt": "\"orange\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "muz",
+              "portakal",
+              "yumurta",
+              "peynir"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "029-a-an-some-w3",
+            "word": "egg",
+            "example": "An egg.",
+            "audioText": "egg",
+            "prompt": "\"egg\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "muz",
+              "portakal",
+              "yumurta",
+              "peynir"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "029-a-an-some-w4",
+            "word": "cheese",
+            "example": "Some cheese.",
+            "audioText": "cheese",
+            "prompt": "\"cheese\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "muz",
+              "portakal",
+              "yumurta",
+              "peynir"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "029-a-an-some-w5",
+            "word": "grapes",
+            "example": "Some grapes.",
+            "audioText": "grapes",
+            "prompt": "\"grapes\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "üzüm",
+              "muz",
+              "portakal",
+              "yumurta"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Tekil sayılabilen isimlerle a / an kullanmak.",
+          "Ünlü sesle başlayan kelimelerde an seçmek.",
+          "Hedef kelimeler: banana, orange, egg, cheese, grapes, sandwich, snack"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

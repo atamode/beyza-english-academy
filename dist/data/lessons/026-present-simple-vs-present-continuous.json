@@ -1,0 +1,701 @@
+{
+  "id": "026-present-simple-vs-present-continuous",
+  "title": "Present Simple vs Present Continuous",
+  "level": "A2.1",
+  "module": "Şu An",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Düzenli alışkanlıklarla şu anda yapılan eylemleri ayırt etmek.",
+    "Present Simple için every day, usually, often gibi zaman ifadelerini tanımak.",
+    "Present Continuous için now, right now, at the moment ifadelerini tanımak.",
+    "Doğru zamanı seçmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'ya iki farklı soru sorun: \"What do you do every day?\" ve \"What are you doing now?\" Böylece iki zamanın anlam farkını doğal biçimde görür.",
+    "todayGoal": "Düzenli alışkanlıklarla şu anda yapılan eylemleri ayırt etmek.",
+    "teachingTips": [
+      "Bu derste \"Present Simple vs Present Continuous\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I go to school every day.",
+      "I am doing my homework now.",
+      "She usually plays volleyball.",
+      "She is playing volleyball now."
+    ],
+    "listeningScripts": [
+      "\"Ece plays volleyball every Tuesday and Thursday. Today is Thursday. She is at the sports hall now. She is practising with her team.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Present Simple vs Present Continuous Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Beyza _______ English every day.",
+          "options": [
+            "studies",
+            "is studying",
+            "study"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Beyza _______ English now.",
+          "options": [
+            "studies",
+            "is studying",
+            "studying"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She usually _______ music after school.",
+          "options": [
+            "listens to",
+            "is listening to",
+            "listening to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "We usually _______ volleyball on Saturdays.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "We are _______ volleyball now.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: usually / she / reads / at night",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He is playing football every Sunday.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What time does Beyza usually get up?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Present Simple vs Present Continuous yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Present Simple vs Present Continuous kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "studies",
+        "is studying",
+        "listens to",
+        "play",
+        "playing",
+        "she usually reads at night",
+        "\"is\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır.",
+        "She usually gets up at seven.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "026-present-simple-vs-present-continuous-w1",
+    "026-present-simple-vs-present-continuous-w2",
+    "026-present-simple-vs-present-continuous-w3",
+    "026-present-simple-vs-present-continuous-w4",
+    "026-present-simple-vs-present-continuous-w5",
+    "026-present-simple-vs-present-continuous-w6",
+    "026-present-simple-vs-present-continuous-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Present Simple vs Present Continuous",
+      "instructionTr": "Düzenli alışkanlıklarla şu anda yapılan eylemleri ayırt etmek.",
+      "content": {
+        "eyebrow": "Şu An · DERS 26",
+        "heroText": "I go to school every day."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "İki zamanı ayırmanın en kolay yolu şudur: ### Present Simple Alışkanlık, rutin ve genel durum: - I play volleyball every Saturday. - She usually reads after school. ### Present Continuous Tam şu anda devam eden eylem: - I am playing volleyball now. - She is reading at the moment. İpuçları: Present Simple: - every day - usually - often - sometimes - on Mondays Present Continuous: - now - right now - at the moment - today",
+      "content": {
+        "examples": [],
+        "noteTr": "İki zamanı ayırmanın en kolay yolu şudur: ### Present Simple Alışkanlık, rutin ve genel durum: - I play volleyball every Saturday. - She usually reads after school. ### Present Continuous Tam şu anda devam eden eylem: - I am playing volleyball now. - She is reading at the moment. İpuçları: Present Simple: - every day - usually - often - sometimes - on Mondays Present Continuous: - now - right now - at the moment - today"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I go to school every day.",
+          "I am doing my homework now.",
+          "She usually plays volleyball.",
+          "She is playing volleyball now.",
+          "They often listen to music.",
+          "They are listening to music at the moment.",
+          "The coach trains the team on Fridays.",
+          "The coach is talking to the team now.",
+          "We watch matches on Sundays.",
+          "We are watching a match right now."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Rutin",
+            "Present Simple",
+            "I play every week."
+          ],
+          [
+            "Şu an",
+            "Present Continuous",
+            "I am playing now."
+          ],
+          [
+            "Sıklık",
+            "Present Simple",
+            "She often reads."
+          ],
+          [
+            "Geçici eylem",
+            "Present Continuous",
+            "She is reading now."
+          ]
+        ]
+      },
+      "explanationTr": "Düzenli alışkanlıklarla şu anda yapılan eylemleri ayırt etmek. Present Simple için every day, usually, often gibi zaman ifadelerini tanımak. Present Continuous için now, right now, at the moment ifadelerini tanımak. Doğru zamanı seçmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I am go to school every day. ❌ → I go to school every day. ✅",
+          "She plays volleyball now. ❌ → She is playing volleyball now. ✅",
+          "They are usually watching TV. ❌ → Başlangıç düzeyinde They usually watch TV. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Beyza _______ English every day.",
+      "content": {
+        "options": [
+          "studies",
+          "is studying",
+          "study"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. studies seçeneği cümledeki hedef kurala uyar.",
+          "\"is studying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studies\" çünkü studies seçeneği cümledeki hedef kurala uyar.",
+          "\"study\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studies\" çünkü studies seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Beyza _______ English now.",
+      "content": {
+        "options": [
+          "studies",
+          "is studying",
+          "studying"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"studies\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is studying\" çünkü is studying seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. is studying seçeneği cümledeki hedef kurala uyar.",
+          "\"studying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is studying\" çünkü is studying seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "We usually _______ volleyball on Saturdays.",
+      "content": {
+        "answer": "play",
+        "accepted": [
+          "play"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"play\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Düzenli alışkanlıklarla şu anda yapılan eylemleri ayırt etmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "usually",
+          "she",
+          "reads",
+          "at night"
+        ],
+        "answer": [
+          "she",
+          "usually",
+          "reads",
+          "at night"
+        ],
+        "explanationTr": "Doğru sıra: she usually reads at night"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "is",
+          "playing",
+          "football",
+          "every",
+          "Sunday."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"is\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "every day",
+            "Present Simple"
+          ],
+          [
+            "now",
+            "Present Continuous"
+          ],
+          [
+            "usually",
+            "Present Simple"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza usually gets up at seven. She goes to school on weekdays. Today is Sunday. She isn't going to school. She is sitting at home and reading a book.",
+        "questions": [
+          {
+            "prompt": "What time does Beyza usually get up?",
+            "options": [
+              "She usually gets up at seven.",
+              "No, she doesn't.",
+              "She is reading a book."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She usually gets up at seven.\" olmalıdır.",
+              "\"No, she doesn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She usually gets up at seven.\".",
+              "\"She is reading a book.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She usually gets up at seven.\"."
+            ]
+          },
+          {
+            "prompt": "Does she go to school on Sundays?",
+            "options": [
+              "She is reading a book.",
+              "No, she doesn't.",
+              "She usually gets up at seven."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She is reading a book.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she doesn't.\".",
+              "Doğru. Bu soruda cevap \"No, she doesn't.\" olmalıdır.",
+              "\"She usually gets up at seven.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she doesn't.\"."
+            ]
+          },
+          {
+            "prompt": "What is she doing now?",
+            "options": [
+              "She usually gets up at seven.",
+              "No, she doesn't.",
+              "She is reading a book."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She usually gets up at seven.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is reading a book.\".",
+              "\"No, she doesn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is reading a book.\".",
+              "Doğru. Bu soruda cevap \"She is reading a book.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "When does Ece play volleyball?",
+      "content": {
+        "audioText": "\"Ece plays volleyball every Tuesday and Thursday. Today is Thursday. She is at the sports hall now. She is practising with her team.\"",
+        "questions": [
+          {
+            "prompt": "When does Ece play volleyball?",
+            "options": [
+              "Every Tuesday and Thursday.",
+              "She is at the sports hall.",
+              "She is practising with her team."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Every Tuesday and Thursday.\" olmalıdır.",
+              "\"She is at the sports hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Every Tuesday and Thursday.\".",
+              "\"She is practising with her team.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Every Tuesday and Thursday.\"."
+            ]
+          },
+          {
+            "prompt": "Where is she now?",
+            "options": [
+              "She is practising with her team.",
+              "She is at the sports hall.",
+              "Every Tuesday and Thursday."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She is practising with her team.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is at the sports hall.\".",
+              "Doğru. Bu soruda cevap \"She is at the sports hall.\" olmalıdır.",
+              "\"Every Tuesday and Thursday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is at the sports hall.\"."
+            ]
+          },
+          {
+            "prompt": "What is she doing?",
+            "options": [
+              "Every Tuesday and Thursday.",
+              "She is at the sports hall.",
+              "She is practising with her team."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Every Tuesday and Thursday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is practising with her team.\".",
+              "\"She is at the sports hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is practising with her team.\".",
+              "Doğru. Bu soruda cevap \"She is practising with her team.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "İki cümle kur: 1. Bir rutin: - I usually ... 2. Şu anda yaptığın bir şey: - I am ... now.",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She usually _______ music after school.",
+            "options": [
+              "listens to",
+              "is listening to",
+              "listening to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. listens to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is listening to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"listens to\" çünkü listens to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ music now.",
+            "options": [
+              "listens to",
+              "is listening to",
+              "listen to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. is listening to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"listens to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is listening to\" çünkü is listening to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ volleyball every Friday.",
+            "options": [
+              "play",
+              "are playing",
+              "playing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. play seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ volleyball right now.",
+            "options": [
+              "play",
+              "are playing",
+              "plays"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are playing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"play\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are playing\" çünkü are playing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The coach often _______ notes.",
+            "options": [
+              "writes",
+              "is writing",
+              "writing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. writes seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is writing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"writes\" çünkü writes seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ breakfast every morning.",
+            "options": [
+              "eat",
+              "am eating",
+              "eating"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. eat seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am eating\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eat\" çünkü eat seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ breakfast now.",
+            "options": [
+              "eat",
+              "am eating",
+              "eats"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. am eating seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"eat\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am eating\" çünkü am eating seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They usually _______ at home.",
+            "options": [
+              "practise",
+              "are practising",
+              "practising"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. practise seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are practising\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practise\" çünkü practise seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ on the stage at the moment.",
+            "options": [
+              "perform",
+              "are performing",
+              "performs"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are performing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"perform\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are performing\" çünkü are performing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Beyza often _______ books.",
+            "options": [
+              "reads",
+              "is reading",
+              "reading"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. reads seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is reading\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reads\" çünkü reads seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "026-present-simple-vs-present-continuous-w1",
+            "word": "every day",
+            "example": "Use \"every day\" in this lesson.",
+            "audioText": "every day",
+            "prompt": "\"every day\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "her gün",
+              "genellikle",
+              "sık sık",
+              "şimdi"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "026-present-simple-vs-present-continuous-w2",
+            "word": "usually",
+            "example": "Use \"usually\" in this lesson.",
+            "audioText": "usually",
+            "prompt": "\"usually\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "her gün",
+              "genellikle",
+              "sık sık",
+              "şimdi"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "026-present-simple-vs-present-continuous-w3",
+            "word": "often",
+            "example": "Use \"often\" in this lesson.",
+            "audioText": "often",
+            "prompt": "\"often\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "her gün",
+              "genellikle",
+              "sık sık",
+              "şimdi"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "026-present-simple-vs-present-continuous-w4",
+            "word": "now",
+            "example": "Use \"now\" in this lesson.",
+            "audioText": "now",
+            "prompt": "\"now\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "her gün",
+              "genellikle",
+              "sık sık",
+              "şimdi"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "026-present-simple-vs-present-continuous-w5",
+            "word": "right now",
+            "example": "Use \"right now\" in this lesson.",
+            "audioText": "right now",
+            "prompt": "\"right now\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tam şu anda",
+              "her gün",
+              "genellikle",
+              "sık sık"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Düzenli alışkanlıklarla şu anda yapılan eylemleri ayırt etmek.",
+          "Present Simple için every day, usually, often gibi zaman ifadelerini tanımak.",
+          "Hedef kelimeler: every day, usually, often, now, right now, at the moment, today"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

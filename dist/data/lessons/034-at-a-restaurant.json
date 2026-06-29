@@ -1,0 +1,703 @@
+{
+  "id": "034-at-a-restaurant",
+  "title": "At a Restaurant",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Restoranda basit ve kibar isteklerde bulunmak.",
+    "Menüden yiyecek ve içecek seçmek.",
+    "I'd like..., Anything else?, The bill, please. gibi işlevsel kalıpları kullanmak.",
+    "Basit müşteri–garson diyaloğu kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evde masa kurup kısa restoran oyunu oynayın. Beyza her turda farklı bir yiyecek ve içecek seçsin. Öncelik kusursuz gramer değil, kibar ve anlaşılır iletişimdir.",
+    "todayGoal": "Restoranda basit ve kibar isteklerde bulunmak.",
+    "teachingTips": [
+      "Bu derste \"At a Restaurant\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "Can I have the menu, please?",
+      "I'd like a sandwich, please.",
+      "I'd like some water.",
+      "Anything else?"
+    ],
+    "listeningScripts": [
+      "\"Waiter: Hello. Can I help you? Customer: Yes, I'd like a sandwich and some juice, please. Waiter: Anything else? Customer: No, thank you. Waiter: Here you are.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "At a Restaurant Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Kibarca sipariş vermek için:",
+          "options": [
+            "I'd like a sandwich, please.",
+            "Give sandwich.",
+            "Sandwich now."
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Hesap istemek için:",
+          "options": [
+            "The bill, please.",
+            "The menu is.",
+            "Any bill?"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I'd _______ a sandwich, please.",
+          "options": [
+            "like",
+            "likes",
+            "liking"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I'd _______ some water, please.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "The _______ , please.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: like / I'd / a salad / please",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I like a soup, please.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What does Beyza order?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "At a Restaurant yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "At a Restaurant kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "I'd like a sandwich, please.",
+        "The bill, please.",
+        "like",
+        "like",
+        "bill",
+        "I'd like a salad please",
+        "\"I like\" burada hatalıdır; doğru cevap \"I'd like\" olmalıdır.",
+        "A bowl of soup and a salad.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "034-at-a-restaurant-w1",
+    "034-at-a-restaurant-w2",
+    "034-at-a-restaurant-w3",
+    "034-at-a-restaurant-w4",
+    "034-at-a-restaurant-w5",
+    "034-at-a-restaurant-w6",
+    "034-at-a-restaurant-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "At a Restaurant",
+      "instructionTr": "Restoranda basit ve kibar isteklerde bulunmak.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 34",
+        "heroText": "Can I have the menu, please?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Restoranda kibarca sipariş vermek için şu kalıpları kullanabiliriz: - I'd like a sandwich, please. - I'd like some water, please. - Can I have the menu, please? - Anything else? - No, thank you. - The bill, please. Bu kalıplar günlük iletişim için bütün olarak öğrenilir. I'd like = \"İsterim / rica ederim\" anlamında kibar bir ifadedir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Restoranda kibarca sipariş vermek için şu kalıpları kullanabiliriz: - I'd like a sandwich, please. - I'd like some water, please. - Can I have the menu, please? - Anything else? - No, thank you. - The bill, please. Bu kalıplar günlük iletişim için bütün olarak öğrenilir. I'd like = \"İsterim / rica ederim\" anlamında kibar bir ifadedir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "Can I have the menu, please?",
+          "I'd like a sandwich, please.",
+          "I'd like some water.",
+          "Anything else?",
+          "Yes, a salad, please.",
+          "No, thank you.",
+          "Here you are.",
+          "The bill, please.",
+          "I'd like a bowl of soup.",
+          "The team is ordering food after the match."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Menü isteme",
+            "Can I have...?",
+            "Can I have the menu?"
+          ],
+          [
+            "Sipariş verme",
+            "I'd like...",
+            "I'd like a sandwich."
+          ],
+          [
+            "Ek istek sorma",
+            "Anything else?",
+            "Anything else?"
+          ],
+          [
+            "Hesap isteme",
+            "The bill, please.",
+            "The bill, please."
+          ]
+        ]
+      },
+      "explanationTr": "Restoranda basit ve kibar isteklerde bulunmak. Menüden yiyecek ve içecek seçmek. I'd like..., Anything else?, The bill, please. gibi işlevsel kalıpları kullanmak. Basit müşteri–garson diyaloğu kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I like a sandwich, please. ❌ → Sipariş için I'd like a sandwich, please. ✅",
+          "I want water! ❌ → Daha kibar: I'd like some water, please. ✅",
+          "The money, please. ❌ → The bill, please. ✅",
+          "A soup ❌ → A bowl of soup veya some soup ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Kibarca sipariş vermek için:",
+      "content": {
+        "options": [
+          "I'd like a sandwich, please.",
+          "Give sandwich.",
+          "Sandwich now."
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. I'd like a sandwich, please. seçeneği cümledeki hedef kurala uyar.",
+          "\"Give sandwich.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"I'd like a sandwich, please.\" çünkü I'd like a sandwich, please. seçeneği cümledeki hedef kurala uyar.",
+          "\"Sandwich now.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"I'd like a sandwich, please.\" çünkü I'd like a sandwich, please. seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Hesap istemek için:",
+      "content": {
+        "options": [
+          "The bill, please.",
+          "The menu is.",
+          "Any bill?"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. The bill, please. seçeneği cümledeki hedef kurala uyar.",
+          "\"The menu is.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The bill, please.\" çünkü The bill, please. seçeneği cümledeki hedef kurala uyar.",
+          "\"Any bill?\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The bill, please.\" çünkü The bill, please. seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I'd _______ some water, please.",
+      "content": {
+        "answer": "like",
+        "accepted": [
+          "like"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"like\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Restoranda basit ve kibar isteklerde bulunmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "like",
+          "I'd",
+          "a salad",
+          "please"
+        ],
+        "answer": [
+          "I'd",
+          "like",
+          "a salad",
+          "please"
+        ],
+        "explanationTr": "Doğru sıra: I'd like a salad please"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "like",
+          "a",
+          "soup,",
+          "please."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"I like\" burada hatalıdır; doğru cevap \"I'd like\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Can I have the menu?",
+            "Of course. Here you are."
+          ],
+          [
+            "I'd like a sandwich.",
+            "Certainly."
+          ],
+          [
+            "The bill, please.",
+            "Anything else?"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza and her family are at a restaurant. Beyza looks at the menu. She orders a bowl of soup and a salad. Her sister orders a sandwich. They all drink water. At the end, their father asks for the bill.",
+        "questions": [
+          {
+            "prompt": "What does Beyza order?",
+            "options": [
+              "A bowl of soup and a salad.",
+              "A sandwich.",
+              "Their father."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"A bowl of soup and a salad.\" olmalıdır.",
+              "\"A sandwich.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A bowl of soup and a salad.\".",
+              "\"Their father.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A bowl of soup and a salad.\"."
+            ]
+          },
+          {
+            "prompt": "What does her sister order?",
+            "options": [
+              "Their father.",
+              "A sandwich.",
+              "A bowl of soup and a salad."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Their father.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A sandwich.\".",
+              "Doğru. Bu soruda cevap \"A sandwich.\" olmalıdır.",
+              "\"A bowl of soup and a salad.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A sandwich.\"."
+            ]
+          },
+          {
+            "prompt": "Who asks for the bill?",
+            "options": [
+              "A bowl of soup and a salad.",
+              "A sandwich.",
+              "Their father."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"A bowl of soup and a salad.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their father.\".",
+              "\"A sandwich.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their father.\".",
+              "Doğru. Bu soruda cevap \"Their father.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What does the customer order?",
+      "content": {
+        "audioText": "\"Waiter: Hello. Can I help you? Customer: Yes, I'd like a sandwich and some juice, please. Waiter: Anything else? Customer: No, thank you. Waiter: Here you are.\"",
+        "questions": [
+          {
+            "prompt": "What does the customer order?",
+            "options": [
+              "A sandwich and some juice.",
+              "No.",
+              "\"Here you are.\""
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"A sandwich and some juice.\" olmalıdır.",
+              "\"No.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A sandwich and some juice.\".",
+              "\"\"Here you are.\"\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A sandwich and some juice.\"."
+            ]
+          },
+          {
+            "prompt": "Does the customer want anything else?",
+            "options": [
+              "\"Here you are.\"",
+              "No.",
+              "A sandwich and some juice."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"\"Here you are.\"\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No.\".",
+              "Doğru. Bu soruda cevap \"No.\" olmalıdır.",
+              "\"A sandwich and some juice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No.\"."
+            ]
+          },
+          {
+            "prompt": "What does the waiter say at the end?",
+            "options": [
+              "A sandwich and some juice.",
+              "No.",
+              "\"Here you are.\""
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"A sandwich and some juice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"\"Here you are.\"\".",
+              "\"No.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"\"Here you are.\"\".",
+              "Doğru. Bu soruda cevap \"\"Here you are.\"\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "İki kişilik rol oyunu yapın: Kişi 1: Garson Kişi 2: Müşteri Kullanılacak kalıplar: - Can I help you? - I'd like... - Anything else? - No, thank you. - The bill, please.",
+      "content": {
+        "sentenceStarters": [
+          "Can I help you?",
+          "I'd like...",
+          "Anything else?",
+          "No, thank you.",
+          "The bill, please."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I'd _______ a sandwich, please.",
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. like seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"likes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"like\" çünkü like seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Can I have the _______?",
+            "options": [
+              "menu",
+              "many",
+              "any"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. menu seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"menu\" çünkü menu seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Başka bir şey?\" için:",
+            "options": [
+              "Anything else?",
+              "How old?",
+              "There is?"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Anything else? seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"How old?\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Anything else?\" çünkü Anything else? seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Hesap lütfen.\" için:",
+            "options": [
+              "The bill, please.",
+              "The menu, please.",
+              "A bill is."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. The bill, please. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"The menu, please.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The bill, please.\" çünkü The bill, please. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Buyurunuz.\" için:",
+            "options": [
+              "Here you are.",
+              "How much?",
+              "No bill."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Here you are. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"How much?\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Here you are.\" çünkü Here you are. seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Kibar sipariş:",
+            "options": [
+              "I'd like some water, please.",
+              "Water now.",
+              "Give water."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. I'd like some water, please. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Water now.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"I'd like some water, please.\" çünkü I'd like some water, please. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Menü isteme:",
+            "options": [
+              "Can I have the menu, please?",
+              "Is menu?",
+              "Menu any?"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Can I have the menu, please? seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Is menu?\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Can I have the menu, please?\" çünkü Can I have the menu, please? seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Başka bir şey ister misiniz?\"",
+            "options": [
+              "Anything else?",
+              "How much else?",
+              "Any restaurant?"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Anything else? seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"How much else?\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Anything else?\" çünkü Anything else? seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Hayır, teşekkür ederim.\"",
+            "options": [
+              "No, thank you.",
+              "Not thank.",
+              "No any."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. No, thank you. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Not thank.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, thank you.\" çünkü No, thank you. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Hesap isteme:",
+            "options": [
+              "The bill, please.",
+              "The price is.",
+              "A bill there."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. The bill, please. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"The price is.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The bill, please.\" çünkü The bill, please. seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "034-at-a-restaurant-w1",
+            "word": "menu",
+            "example": "Can I have the menu?",
+            "audioText": "menu",
+            "prompt": "\"menu\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "menü",
+              "sipariş vermek",
+              "garson",
+              "müşteri"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "034-at-a-restaurant-w2",
+            "word": "order",
+            "example": "I want to order food.",
+            "audioText": "order",
+            "prompt": "\"order\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "menü",
+              "sipariş vermek",
+              "garson",
+              "müşteri"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "034-at-a-restaurant-w3",
+            "word": "waiter",
+            "example": "The waiter brings the menu.",
+            "audioText": "waiter",
+            "prompt": "\"waiter\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "menü",
+              "sipariş vermek",
+              "garson",
+              "müşteri"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "034-at-a-restaurant-w4",
+            "word": "customer",
+            "example": "The customer orders soup.",
+            "audioText": "customer",
+            "prompt": "\"customer\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "menü",
+              "sipariş vermek",
+              "garson",
+              "müşteri"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "034-at-a-restaurant-w5",
+            "word": "bill",
+            "example": "The bill, please.",
+            "audioText": "bill",
+            "prompt": "\"bill\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hesap",
+              "menü",
+              "sipariş vermek",
+              "garson"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Restoranda basit ve kibar isteklerde bulunmak.",
+          "Menüden yiyecek ve içecek seçmek.",
+          "Hedef kelimeler: menu, order, waiter, customer, bill, soup, anything else"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

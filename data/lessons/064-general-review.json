@@ -1,0 +1,711 @@
+{
+  "id": "064-general-review",
+  "title": "General Review",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Modül 1–10 arasındaki temel yapıları tekrar etmek.",
+    "Zamanlar, miktarlar, modal fiiller ve karşılaştırmaları ayırt etmek.",
+    "Yanlış cevaplanan konuları belirlemek.",
+    "Karışık türde soruları çözmek.",
+    "Final sınavı öncesinde güçlü ve zayıf alanları görmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Bu derste puandan çok hata türüne odaklanın. Aynı konuda iki veya daha fazla hata varsa ilgili ders tekrar açılmalıdır.",
+    "todayGoal": "Modül 1–10 arasındaki temel yapıları tekrar etmek.",
+    "teachingTips": [
+      "Bu derste \"General Review\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "She is my sister.",
+      "He plays volleyball every Friday.",
+      "There are two books on the desk.",
+      "They are studying now."
+    ],
+    "listeningScripts": [
+      "\"The volleyball team practises every Tuesday. Yesterday, the players worked on serves. Now they are watching a short training video. Next week, they are going to play a match. The coach thinks they will do well.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "General Review Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ volleyball every Saturday.",
+          "options": [
+            "plays",
+            "is playing",
+            "played now"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They _______ to the park yesterday.",
+          "options": [
+            "go",
+            "went",
+            "gone"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She _______ now.",
+          "options": [
+            "studies",
+            "is studying",
+            "studied yesterday"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "There _______ two chairs in the room.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "I have _______ finished my homework.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / she / reading / now",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He can plays volleyball.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How long has Beyza studied English?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "General Review yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "General Review kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "plays",
+        "went",
+        "is studying",
+        "are",
+        "already",
+        "she is reading now",
+        "\"plays\" burada hatalıdır; doğru cevap \"play\" olmalıdır.",
+        "For several months.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "064-general-review-w1",
+    "064-general-review-w2",
+    "064-general-review-w3",
+    "064-general-review-w4",
+    "064-general-review-w5",
+    "064-general-review-w6",
+    "064-general-review-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "General Review",
+      "instructionTr": "Modül 1–10 arasındaki temel yapıları tekrar etmek.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 64",
+        "heroText": "She is my sister."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bu ders yeni bir grammar konusu öğretmez. Amaç, şimdiye kadar öğrenilenleri birlikte kullanmaktır. Tekrar alanları: 1. Subject pronouns ve am/is/are 2. Present Simple 3. There is / There are 4. Present Continuous 5. Countable / uncountable 6. Can, should, must, have to 7. Past Simple 8. Comparatives / superlatives 9. Future forms 10. Present Perfect giriş 11. First Conditional 12. Phrasal verbs Her yanlış cevap tekrar havuzuna eklenmelidir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bu ders yeni bir grammar konusu öğretmez. Amaç, şimdiye kadar öğrenilenleri birlikte kullanmaktır. Tekrar alanları: 1. Subject pronouns ve am/is/are 2. Present Simple 3. There is / There are 4. Present Continuous 5. Countable / uncountable 6. Can, should, must, have to 7. Past Simple 8. Comparatives / superlatives 9. Future forms 10. Present Perfect giriş 11. First Conditional 12. Phrasal verbs Her yanlış cevap tekrar havuzuna eklenmelidir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "She is my sister.",
+          "He plays volleyball every Friday.",
+          "There are two books on the desk.",
+          "They are studying now.",
+          "There is some milk in the fridge.",
+          "You should drink water.",
+          "We went to the park yesterday.",
+          "This bag is heavier than that bag.",
+          "I am going to study tonight.",
+          "I have already finished my homework."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Present Simple",
+            "rutin"
+          ],
+          [
+            "Present Continuous",
+            "şu an"
+          ],
+          [
+            "Past Simple",
+            "tamamlanmış geçmiş"
+          ],
+          [
+            "Going to",
+            "plan"
+          ],
+          [
+            "Will",
+            "anlık karar/tahmin"
+          ],
+          [
+            "Present Perfect",
+            "deneyim/şimdiyle bağlantı"
+          ]
+        ]
+      },
+      "explanationTr": "Modül 1–10 arasındaki temel yapıları tekrar etmek. Zamanlar, miktarlar, modal fiiller ve karşılaştırmaları ayırt etmek. Yanlış cevaplanan konuları belirlemek. Karışık türde soruları çözmek. Final sınavı öncesinde güçlü ve zayıf alanları görmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "Zaman ipuçlarını görmeden fiil seçmek",
+          "Modal fiillerden sonra fiile ek getirmek",
+          "did sonrasında geçmiş fiil kullanmak",
+          "have/has sonrasında ikinci hâli kullanmak",
+          "much/many, for/since ve going to/will ayrımlarını karıştırmak"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ volleyball every Saturday.",
+      "content": {
+        "options": [
+          "plays",
+          "is playing",
+          "played now"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. plays seçeneği cümledeki hedef kurala uyar.",
+          "\"is playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"plays\" çünkü plays seçeneği cümledeki hedef kurala uyar.",
+          "\"played now\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"plays\" çünkü plays seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They _______ to the park yesterday.",
+      "content": {
+        "options": [
+          "go",
+          "went",
+          "gone"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"go\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+          "\"gone\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "There _______ two chairs in the room.",
+      "content": {
+        "answer": "are",
+        "accepted": [
+          "are"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"are\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Modül 1–10 arasındaki temel yapıları tekrar etmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "she",
+          "reading",
+          "now"
+        ],
+        "answer": [
+          "she",
+          "is",
+          "reading",
+          "now"
+        ],
+        "explanationTr": "Doğru sıra: she is reading now"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "can",
+          "plays",
+          "volleyball."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"plays\" burada hatalıdır; doğru cevap \"play\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "every day",
+            "Present Simple"
+          ],
+          [
+            "now",
+            "Present Continuous"
+          ],
+          [
+            "yesterday",
+            "Past Simple"
+          ],
+          [
+            "next week",
+            "Future"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has studied English for several months. She usually practises after school. Yesterday, she completed a past tense lesson. Now she is reviewing vocabulary. Next week, she is going to take the final exam. If she continues practising, she will feel more confident.",
+        "questions": [
+          {
+            "prompt": "How long has Beyza studied English?",
+            "options": [
+              "For several months.",
+              "A past tense lesson.",
+              "Take the final exam."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"For several months.\" olmalıdır.",
+              "\"A past tense lesson.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For several months.\".",
+              "\"Take the final exam.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For several months.\"."
+            ]
+          },
+          {
+            "prompt": "What did she complete yesterday?",
+            "options": [
+              "Take the final exam.",
+              "A past tense lesson.",
+              "For several months."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Take the final exam.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A past tense lesson.\".",
+              "Doğru. Bu soruda cevap \"A past tense lesson.\" olmalıdır.",
+              "\"For several months.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A past tense lesson.\"."
+            ]
+          },
+          {
+            "prompt": "What is she going to do next week?",
+            "options": [
+              "For several months.",
+              "A past tense lesson.",
+              "Take the final exam."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"For several months.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Take the final exam.\".",
+              "\"A past tense lesson.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Take the final exam.\".",
+              "Doğru. Bu soruda cevap \"Take the final exam.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "When does the team usually practise?",
+      "content": {
+        "audioText": "\"The volleyball team practises every Tuesday. Yesterday, the players worked on serves. Now they are watching a short training video. Next week, they are going to play a match. The coach thinks they will do well.\"",
+        "questions": [
+          {
+            "prompt": "When does the team usually practise?",
+            "options": [
+              "Every Tuesday.",
+              "Serves.",
+              "Play a match."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Every Tuesday.\" olmalıdır.",
+              "\"Serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Every Tuesday.\".",
+              "\"Play a match.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Every Tuesday.\"."
+            ]
+          },
+          {
+            "prompt": "What did they work on yesterday?",
+            "options": [
+              "Play a match.",
+              "Serves.",
+              "Every Tuesday."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Play a match.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Serves.\".",
+              "Doğru. Bu soruda cevap \"Serves.\" olmalıdır.",
+              "\"Every Tuesday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Serves.\"."
+            ]
+          },
+          {
+            "prompt": "What are they going to do next week?",
+            "options": [
+              "Every Tuesday.",
+              "Serves.",
+              "Play a match."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Every Tuesday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Play a match.\".",
+              "\"Serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Play a match.\".",
+              "Doğru. Bu soruda cevap \"Play a match.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dört farklı zaman kullan: - Present Simple - Present Continuous - Past Simple - Future Ardından bir Present Perfect deneyim cümlesi ekle.",
+      "content": {
+        "sentenceStarters": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Future"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ now.",
+            "options": [
+              "studies",
+              "is studying",
+              "studied yesterday"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. is studying seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"studies\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is studying\" çünkü is studying seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ there last week.",
+            "options": [
+              "went",
+              "go",
+              "gone"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"go\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You _______ drink more water.",
+            "options": [
+              "should",
+              "should to",
+              "should drinking"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"should to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "This bag is _______ than mine.",
+            "options": [
+              "heavier",
+              "heaviest",
+              "more heavier"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. heavier seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"heaviest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heavier\" çünkü heavier seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I have _______ seen it.",
+            "options": [
+              "already",
+              "yesterday",
+              "last"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. already seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"yesterday\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "There _______ some water.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Did you _______ the film?",
+            "options": [
+              "see",
+              "saw",
+              "seen"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. see seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"see\" çünkü see seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She is going to _______ tomorrow.",
+            "options": [
+              "travel",
+              "travelled",
+              "travelling"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. travel seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"travelled\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"travel\" çünkü travel seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If I study, I _______ pass.",
+            "options": [
+              "will",
+              "am",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have lived here _______ five years.",
+            "options": [
+              "for",
+              "since",
+              "yet"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "064-general-review-w1",
+            "word": "review",
+            "example": "Review the lesson.",
+            "audioText": "review",
+            "prompt": "\"review\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tekrar",
+              "hata",
+              "geliştirmek",
+              "hatırlamak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "064-general-review-w2",
+            "word": "mistake",
+            "example": "Check your mistakes.",
+            "audioText": "mistake",
+            "prompt": "\"mistake\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tekrar",
+              "hata",
+              "geliştirmek",
+              "hatırlamak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "064-general-review-w3",
+            "word": "improve",
+            "example": "Improve your score.",
+            "audioText": "improve",
+            "prompt": "\"improve\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tekrar",
+              "hata",
+              "geliştirmek",
+              "hatırlamak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "064-general-review-w4",
+            "word": "remember",
+            "example": "Remember the rule.",
+            "audioText": "remember",
+            "prompt": "\"remember\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tekrar",
+              "hata",
+              "geliştirmek",
+              "hatırlamak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "064-general-review-w5",
+            "word": "compare",
+            "example": "Compare the answers.",
+            "audioText": "compare",
+            "prompt": "\"compare\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "karşılaştırmak",
+              "tekrar",
+              "hata",
+              "geliştirmek"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Modül 1–10 arasındaki temel yapıları tekrar etmek.",
+          "Zamanlar, miktarlar, modal fiiller ve karşılaştırmaları ayırt etmek.",
+          "Hedef kelimeler: review, mistake, improve, remember, compare, choose, explain"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "id": "035-can-cant",
+  "title": "can / can't",
+  "level": "A2.1",
+  "module": "Yetenek, Tavsiye ve Kurallar",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Bir şeyi yapabildiğini veya yapamadığını söylemek.",
+    "can / can't + fiilin yalın hâli yapısını kullanmak.",
+    "Can you...? sorularını sormak ve kısa cevap vermek.",
+    "Günlük hayat, spor ve müzik bağlamında yeteneklerden söz etmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'dan gerçek yeteneklerini söylemesini isteyin. Ardından aile üyeleriyle mini soru-cevap yapın: Can you cook?, Can you swim? Fiilin her zaman yalın kalmasına dikkat edin.",
+    "todayGoal": "Bir şeyi yapabildiğini veya yapamadığını söylemek.",
+    "teachingTips": [
+      "Bu derste \"can / can't\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I can read English words.",
+      "She can swim.",
+      "He can ride a bike.",
+      "We can play volleyball."
+    ],
+    "listeningScripts": [
+      "\"The school is preparing a small show. One student can play the guitar. Two students can sing. Beyza can help with the posters. The teacher can organise the group.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "can / can't Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She can _______ volleyball.",
+          "options": [
+            "plays",
+            "play",
+            "playing"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Can you ride a bike? — Yes, I _______.",
+          "options": [
+            "do",
+            "can",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I can _______ fast.",
+          "options": [
+            "run",
+            "runs",
+            "running"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ swim, but I can't dive.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "Can she _______ the guitar?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: can / Beyza / play / volleyball",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He can plays the drums.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What can Beyza do?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "can / can't yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "can / can't kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "play",
+        "can",
+        "run",
+        "can",
+        "play",
+        "Beyza can play volleyball",
+        "\"plays\" burada hatalıdır; doğru cevap \"play\" olmalıdır.",
+        "She can play volleyball.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "035-can-cant-w1",
+    "035-can-cant-w2",
+    "035-can-cant-w3",
+    "035-can-cant-w4",
+    "035-can-cant-w5",
+    "035-can-cant-w6",
+    "035-can-cant-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "can / can't",
+      "instructionTr": "Bir şeyi yapabildiğini veya yapamadığını söylemek.",
+      "content": {
+        "eyebrow": "Yetenek, Tavsiye ve Kurallar · DERS 35",
+        "heroText": "I can read English words."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Can, bir şeyi yapabildiğimizi söyler: - I can swim. - She can play volleyball. - They can sing. Can't, yapamadığımızı söyler: - I can't drive. - He can't play the guitar. Kural: Özne + can / can't + fiilin yalın hâli Fiile -s, -ing veya to gelmez: - She can play. ✅ - She can plays. ❌ - She can to play. ❌ Soru: - Can you swim? - Can she sing? Kısa cevap: - Yes, I can. - No, she can't.",
+      "content": {
+        "examples": [],
+        "noteTr": "Can, bir şeyi yapabildiğimizi söyler: - I can swim. - She can play volleyball. - They can sing. Can't, yapamadığımızı söyler: - I can't drive. - He can't play the guitar. Kural: Özne + can / can't + fiilin yalın hâli Fiile -s, -ing veya to gelmez: - She can play. ✅ - She can plays. ❌ - She can to play. ❌ Soru: - Can you swim? - Can she sing? Kısa cevap: - Yes, I can. - No, she can't."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I can read English words.",
+          "She can swim.",
+          "He can ride a bike.",
+          "We can play volleyball.",
+          "They can sing.",
+          "I can't drive a car.",
+          "She can't lift the heavy box.",
+          "Can you serve the ball?",
+          "Can he play the drums?",
+          "The team can work together."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu",
+            "can + fiil",
+            "I can swim."
+          ],
+          [
+            "Olumsuz",
+            "can't + fiil",
+            "I can't swim."
+          ],
+          [
+            "Soru",
+            "Can + özne + fiil?",
+            "Can you swim?"
+          ],
+          [
+            "Kısa cevap",
+            "Yes/No + özne + can/can't",
+            "Yes, I can."
+          ]
+        ]
+      },
+      "explanationTr": "Bir şeyi yapabildiğini veya yapamadığını söylemek. can / can't + fiilin yalın hâli yapısını kullanmak. Can you...? sorularını sormak ve kısa cevap vermek. Günlük hayat, spor ve müzik bağlamında yeteneklerden söz etmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She can plays. ❌ → She can play. ✅",
+          "I can to swim. ❌ → I can swim. ✅",
+          "Can you swimming? ❌ → Can you swim? ✅",
+          "No, I don't can. ❌ → No, I can't. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She can _______ volleyball.",
+      "content": {
+        "options": [
+          "plays",
+          "play",
+          "playing"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"plays\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. play seçeneği cümledeki hedef kurala uyar.",
+          "\"playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Can you ride a bike? — Yes, I _______.",
+      "content": {
+        "options": [
+          "do",
+          "can",
+          "am"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ swim, but I can't dive.",
+      "content": {
+        "answer": "can",
+        "accepted": [
+          "can"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"can\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Bir şeyi yapabildiğini veya yapamadığını söylemek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "can",
+          "Beyza",
+          "play",
+          "volleyball"
+        ],
+        "answer": [
+          "Beyza",
+          "can",
+          "play",
+          "volleyball"
+        ],
+        "explanationTr": "Doğru sıra: Beyza can play volleyball"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "can",
+          "plays",
+          "the",
+          "drums."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"plays\" burada hatalıdır; doğru cevap \"play\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Can you swim?",
+            "Yes, I can."
+          ],
+          [
+            "Can she sing?",
+            "No, she can't."
+          ],
+          [
+            "Can they play volleyball?",
+            "Yes, they can."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza and her friends have different skills. Beyza can play volleyball. Ece can draw very well. Mert can ride a bike, but he can't swim. They help each other and learn new things together.",
+        "questions": [
+          {
+            "prompt": "What can Beyza do?",
+            "options": [
+              "She can play volleyball.",
+              "She can draw very well.",
+              "No, he can't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She can play volleyball.\" olmalıdır.",
+              "\"She can draw very well.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can play volleyball.\".",
+              "\"No, he can't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can play volleyball.\"."
+            ]
+          },
+          {
+            "prompt": "What can Ece do?",
+            "options": [
+              "No, he can't.",
+              "She can draw very well.",
+              "She can play volleyball."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, he can't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can draw very well.\".",
+              "Doğru. Bu soruda cevap \"She can draw very well.\" olmalıdır.",
+              "\"She can play volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can draw very well.\"."
+            ]
+          },
+          {
+            "prompt": "Can Mert swim?",
+            "options": [
+              "She can play volleyball.",
+              "She can draw very well.",
+              "No, he can't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She can play volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, he can't.\".",
+              "\"She can draw very well.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, he can't.\".",
+              "Doğru. Bu soruda cevap \"No, he can't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Who can play the guitar?",
+      "content": {
+        "audioText": "\"The school is preparing a small show. One student can play the guitar. Two students can sing. Beyza can help with the posters. The teacher can organise the group.\"",
+        "questions": [
+          {
+            "prompt": "Who can play the guitar?",
+            "options": [
+              "One student.",
+              "Two students.",
+              "The posters."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"One student.\" olmalıdır.",
+              "\"Two students.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"One student.\".",
+              "\"The posters.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"One student.\"."
+            ]
+          },
+          {
+            "prompt": "How many students can sing?",
+            "options": [
+              "The posters.",
+              "Two students.",
+              "One student."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The posters.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Two students.\".",
+              "Doğru. Bu soruda cevap \"Two students.\" olmalıdır.",
+              "\"One student.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Two students.\"."
+            ]
+          },
+          {
+            "prompt": "What can Beyza help with?",
+            "options": [
+              "One student.",
+              "Two students.",
+              "The posters."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"One student.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The posters.\".",
+              "\"Two students.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The posters.\".",
+              "Doğru. Bu soruda cevap \"The posters.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Üç yapabildiğin ve iki yapamadığın şeyi söyle: - I can ... - I can't ... Sonra bir aile üyesine soru sor: - Can you ...?",
+      "content": {
+        "sentenceStarters": [
+          "I can ...",
+          "I can't ...",
+          "Can you ...?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I can _______ fast.",
+            "options": [
+              "run",
+              "runs",
+              "running"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. run seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"runs\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"run\" çünkü run seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ play the drums.",
+            "options": [
+              "can",
+              "cans",
+              "is can"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"cans\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Can they swim? — No, they _______.",
+            "options": [
+              "don't",
+              "can't",
+              "aren't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. can't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"don't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can't\" çünkü can't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He can't _______ a car.",
+            "options": [
+              "drives",
+              "drive",
+              "driving"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. drive seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"drives\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drive\" çünkü drive seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ you serve the ball?",
+            "options": [
+              "Do",
+              "Are",
+              "Can"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. Can seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Can\" çünkü Can seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She can _______ English.",
+            "options": [
+              "speak",
+              "speaks",
+              "speaking"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. speak seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"speaks\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"speak\" çünkü speak seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ lift this heavy bag.",
+            "options": [
+              "can't",
+              "don't can",
+              "am not can"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. can't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"don't can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can't\" çünkü can't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Can he play volleyball? — Yes, he _______.",
+            "options": [
+              "is",
+              "does",
+              "can"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They can _______ together.",
+            "options": [
+              "works",
+              "work",
+              "working"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. work seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"works\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"work\" çünkü work seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Can you draw? — No, I _______.",
+            "options": [
+              "can't",
+              "don't",
+              "am not"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. can't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"don't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can't\" çünkü can't seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "035-can-cant-w1",
+            "word": "swim",
+            "example": "I can swim.",
+            "audioText": "swim",
+            "prompt": "\"swim\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yüzmek",
+              "sürmek/binmek",
+              "kaldırmak",
+              "konuşmak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "035-can-cant-w2",
+            "word": "ride",
+            "example": "She can ride a bike.",
+            "audioText": "ride",
+            "prompt": "\"ride\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yüzmek",
+              "sürmek/binmek",
+              "kaldırmak",
+              "konuşmak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "035-can-cant-w3",
+            "word": "lift",
+            "example": "I can't lift the box.",
+            "audioText": "lift",
+            "prompt": "\"lift\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yüzmek",
+              "sürmek/binmek",
+              "kaldırmak",
+              "konuşmak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "035-can-cant-w4",
+            "word": "speak",
+            "example": "He can speak English.",
+            "audioText": "speak",
+            "prompt": "\"speak\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yüzmek",
+              "sürmek/binmek",
+              "kaldırmak",
+              "konuşmak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "035-can-cant-w5",
+            "word": "draw",
+            "example": "Ece can draw.",
+            "audioText": "draw",
+            "prompt": "\"draw\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çizmek",
+              "yüzmek",
+              "sürmek/binmek",
+              "kaldırmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Bir şeyi yapabildiğini veya yapamadığını söylemek.",
+          "can / can't + fiilin yalın hâli yapısını kullanmak.",
+          "Hedef kelimeler: swim, ride, lift, speak, draw, skill, together"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

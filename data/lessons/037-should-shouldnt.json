@@ -1,0 +1,695 @@
+{
+  "id": "037-should-shouldnt",
+  "title": "should / shouldn't",
+  "level": "A2.1",
+  "module": "Yetenek, Tavsiye ve Kurallar",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Tavsiye vermek için should kullanmak.",
+    "Yapılmaması gereken şeyler için shouldn't kullanmak.",
+    "Sağlık, okul ve günlük hayat bağlamında basit öneriler oluşturmak.",
+    "What should I do? sorusunu anlamak ve cevaplamak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Günlük durumlar üzerinden tavsiye oyunu oynayın. Beyza'nın her cümlede should/shouldn't sonrasında fiili yalın kullanmasını sağlayın.",
+    "todayGoal": "Tavsiye vermek için should kullanmak.",
+    "teachingTips": [
+      "Bu derste \"should / shouldn't\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "You should drink water.",
+      "You should sleep early.",
+      "You should eat fruit.",
+      "You shouldn't eat too much sugar."
+    ],
+    "listeningScripts": [
+      "\"A player feels tired before practice. The coach says, 'You should sit down and drink some water. You shouldn't continue if you feel ill. Tell an adult if the pain continues.'\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "should / shouldn't Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "You have a headache. You _______ rest.",
+          "options": [
+            "should",
+            "shouldn't",
+            "can't"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "You _______ eat too much sugar.",
+          "options": [
+            "should",
+            "shouldn't",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "You _______ sleep early.",
+          "options": [
+            "should",
+            "shouldn't",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "You _______ drink more water.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "Players _______ skip the warm-up.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: should / you / rest",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: You should to eat fruit.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What should Beyza prepare?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "should / shouldn't yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "should / shouldn't kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "should",
+        "shouldn't",
+        "should",
+        "should",
+        "shouldn't",
+        "you should rest",
+        "\"to eat\" burada hatalıdır; doğru cevap \"eat\" olmalıdır.",
+        "Her bag.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "037-should-shouldnt-w1",
+    "037-should-shouldnt-w2",
+    "037-should-shouldnt-w3",
+    "037-should-shouldnt-w4",
+    "037-should-shouldnt-w5",
+    "037-should-shouldnt-w6",
+    "037-should-shouldnt-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "should / shouldn't",
+      "instructionTr": "Tavsiye vermek için should kullanmak.",
+      "content": {
+        "eyebrow": "Yetenek, Tavsiye ve Kurallar · DERS 37",
+        "heroText": "You should drink water."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Should, \"yapmalısın\" anlamında tavsiye verir: - You should drink water. - You should study regularly. Shouldn't, \"yapmamalısın\" anlamında tavsiye verir: - You shouldn't eat too much sugar. - You shouldn't stay up late. Bu bir emir değildir; doğru veya yararlı olanı önerir. Kural: Özne + should / shouldn't + fiilin yalın hâli Soru: - What should I do? - Should I rest?",
+      "content": {
+        "examples": [],
+        "noteTr": "Should, \"yapmalısın\" anlamında tavsiye verir: - You should drink water. - You should study regularly. Shouldn't, \"yapmamalısın\" anlamında tavsiye verir: - You shouldn't eat too much sugar. - You shouldn't stay up late. Bu bir emir değildir; doğru veya yararlı olanı önerir. Kural: Özne + should / shouldn't + fiilin yalın hâli Soru: - What should I do? - Should I rest?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "You should drink water.",
+          "You should sleep early.",
+          "You should eat fruit.",
+          "You shouldn't eat too much sugar.",
+          "You shouldn't stay up late.",
+          "Players should warm up before practice.",
+          "You should listen to your teacher.",
+          "You shouldn't carry a very heavy bag.",
+          "The team should practise together.",
+          "You should rest if you feel tired."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Tavsiye",
+            "should + fiil",
+            "You should rest."
+          ],
+          [
+            "Olumsuz tavsiye",
+            "shouldn't + fiil",
+            "You shouldn't run."
+          ],
+          [
+            "Soru",
+            "Should + özne + fiil?",
+            "Should I rest?"
+          ]
+        ]
+      },
+      "explanationTr": "Tavsiye vermek için should kullanmak. Yapılmaması gereken şeyler için shouldn't kullanmak. Sağlık, okul ve günlük hayat bağlamında basit öneriler oluşturmak. What should I do? sorusunu anlamak ve cevaplamak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "You should to rest. ❌ → You should rest. ✅",
+          "She should drinks water. ❌ → She should drink water. ✅",
+          "You don't should run. ❌ → You shouldn't run. ✅",
+          "Should I resting? ❌ → Should I rest? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "You have a headache. You _______ rest.",
+      "content": {
+        "options": [
+          "should",
+          "shouldn't",
+          "can't"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+          "\"shouldn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar.",
+          "\"can't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "You _______ eat too much sugar.",
+      "content": {
+        "options": [
+          "should",
+          "shouldn't",
+          "are"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"shouldn't\" çünkü shouldn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. shouldn't seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"shouldn't\" çünkü shouldn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "You _______ drink more water.",
+      "content": {
+        "answer": "should",
+        "accepted": [
+          "should"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"should\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Tavsiye vermek için should kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "should",
+          "you",
+          "rest"
+        ],
+        "answer": [
+          "you",
+          "should",
+          "rest"
+        ],
+        "explanationTr": "Doğru sıra: you should rest"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "You",
+          "should",
+          "to",
+          "eat",
+          "fruit."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"to eat\" burada hatalıdır; doğru cevap \"eat\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I am tired.",
+            "You should rest."
+          ],
+          [
+            "I have a test tomorrow.",
+            "You should study."
+          ],
+          [
+            "My bag is very heavy.",
+            "You shouldn't carry it alone."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has a busy day tomorrow. She has school and volleyball practice. She should prepare her bag tonight. She should sleep early and eat a good breakfast. She shouldn't stay up late.",
+        "questions": [
+          {
+            "prompt": "What should Beyza prepare?",
+            "options": [
+              "Her bag.",
+              "Early.",
+              "She shouldn't stay up late."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Her bag.\" olmalıdır.",
+              "\"Early.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her bag.\".",
+              "\"She shouldn't stay up late.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her bag.\"."
+            ]
+          },
+          {
+            "prompt": "When should she sleep?",
+            "options": [
+              "She shouldn't stay up late.",
+              "Early.",
+              "Her bag."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She shouldn't stay up late.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Early.\".",
+              "Doğru. Bu soruda cevap \"Early.\" olmalıdır.",
+              "\"Her bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Early.\"."
+            ]
+          },
+          {
+            "prompt": "What shouldn't she do?",
+            "options": [
+              "Her bag.",
+              "Early.",
+              "She shouldn't stay up late."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Her bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She shouldn't stay up late.\".",
+              "\"Early.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She shouldn't stay up late.\".",
+              "Doğru. Bu soruda cevap \"She shouldn't stay up late.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What should the player do?",
+      "content": {
+        "audioText": "\"A player feels tired before practice. The coach says, 'You should sit down and drink some water. You shouldn't continue if you feel ill. Tell an adult if the pain continues.'\"",
+        "questions": [
+          {
+            "prompt": "What should the player do?",
+            "options": [
+              "Sit down and drink water.",
+              "No, she shouldn't.",
+              "An adult."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Sit down and drink water.\" olmalıdır.",
+              "\"No, she shouldn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Sit down and drink water.\".",
+              "\"An adult.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Sit down and drink water.\"."
+            ]
+          },
+          {
+            "prompt": "Should the player continue if she feels ill?",
+            "options": [
+              "An adult.",
+              "No, she shouldn't.",
+              "Sit down and drink water."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"An adult.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she shouldn't.\".",
+              "Doğru. Bu soruda cevap \"No, she shouldn't.\" olmalıdır.",
+              "\"Sit down and drink water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she shouldn't.\"."
+            ]
+          },
+          {
+            "prompt": "Who should she tell?",
+            "options": [
+              "Sit down and drink water.",
+              "No, she shouldn't.",
+              "An adult."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Sit down and drink water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"An adult.\".",
+              "\"No, she shouldn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"An adult.\".",
+              "Doğru. Bu soruda cevap \"An adult.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki durumlara tavsiye ver: - I am tired. - I have a test. - I drink very little water. - My school bag is too heavy.",
+      "content": {
+        "sentenceStarters": [
+          "I am tired.",
+          "I have a test.",
+          "I drink very little water.",
+          "My school bag is too heavy."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "You _______ sleep early.",
+            "options": [
+              "should",
+              "shouldn't",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"shouldn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You _______ eat too many sweets.",
+            "options": [
+              "should",
+              "shouldn't",
+              "can"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. shouldn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"shouldn't\" çünkü shouldn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The team should _______ together.",
+            "options": [
+              "practises",
+              "practise",
+              "practising"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. practise seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"practises\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practise\" çünkü practise seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Should I _______?",
+            "options": [
+              "rest",
+              "rested",
+              "resting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. rest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"rested\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rest\" çünkü rest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You shouldn't _______ a heavy bag alone.",
+            "options": [
+              "carries",
+              "carry",
+              "carrying"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. carry seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"carries\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"carry\" çünkü carry seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "You have a cold. You _______ rest.",
+            "options": [
+              "should",
+              "shouldn't",
+              "mustn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"shouldn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You _______ skip breakfast every day.",
+            "options": [
+              "should",
+              "shouldn't",
+              "can"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. shouldn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"shouldn't\" çünkü shouldn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She should _______ more water.",
+            "options": [
+              "drinks",
+              "drink",
+              "drinking"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. drink seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"drinks\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drink\" çünkü drink seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Should we _______ now?",
+            "options": [
+              "leave",
+              "left",
+              "leaving"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. leave seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"left\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"leave\" çünkü leave seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Players shouldn't _______ without warming up.",
+            "options": [
+              "start",
+              "starts",
+              "starting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. start seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"starts\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"start\" çünkü start seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "037-should-shouldnt-w1",
+            "word": "rest",
+            "example": "You should rest.",
+            "audioText": "rest",
+            "prompt": "\"rest\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dinlenmek",
+              "sağlıklı",
+              "yorgun",
+              "baş ağrısı"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "037-should-shouldnt-w2",
+            "word": "healthy",
+            "example": "Eat healthy food.",
+            "audioText": "healthy",
+            "prompt": "\"healthy\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dinlenmek",
+              "sağlıklı",
+              "yorgun",
+              "baş ağrısı"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "037-should-shouldnt-w3",
+            "word": "tired",
+            "example": "I feel tired.",
+            "audioText": "tired",
+            "prompt": "\"tired\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dinlenmek",
+              "sağlıklı",
+              "yorgun",
+              "baş ağrısı"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "037-should-shouldnt-w4",
+            "word": "headache",
+            "example": "I have a headache.",
+            "audioText": "headache",
+            "prompt": "\"headache\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dinlenmek",
+              "sağlıklı",
+              "yorgun",
+              "baş ağrısı"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "037-should-shouldnt-w5",
+            "word": "warm up",
+            "example": "Players should warm up.",
+            "audioText": "warm up",
+            "prompt": "\"warm up\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ısınmak",
+              "dinlenmek",
+              "sağlıklı",
+              "yorgun"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Tavsiye vermek için should kullanmak.",
+          "Yapılmaması gereken şeyler için shouldn't kullanmak.",
+          "Hedef kelimeler: rest, healthy, tired, headache, warm up, regularly, advice"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

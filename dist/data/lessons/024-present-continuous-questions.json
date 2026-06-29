@@ -1,0 +1,692 @@
+{
+  "id": "024-present-continuous-questions",
+  "title": "Present Continuous Questions",
+  "level": "A2.1",
+  "module": "Şu An",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Am / Is / Are ile Present Continuous soru kurmak.",
+    "What ... doing? sorusunu kullanmak.",
+    "Kısa cevap vermek: Yes, I am. / No, she isn't."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Günlük hayatta gerçek sorular sorun: \"Are you eating?\", \"What are you doing?\" Beyza'nın sadece \"yes/no\" yerine kısa cevap kalıbını tamamlamasını isteyin.",
+    "todayGoal": "Am / Is / Are ile Present Continuous soru kurmak.",
+    "teachingTips": [
+      "Bu derste \"Present Continuous Questions\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "Are you listening?",
+      "Is she reading?",
+      "Are they playing volleyball?",
+      "Is he writing a message?"
+    ],
+    "listeningScripts": [
+      "\"Listen carefully. A boy is sitting near the stage. He is checking a microphone. Two girls are carrying chairs. A teacher is giving instructions.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Present Continuous Questions Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "_______ she doing her homework?",
+          "options": [
+            "Is",
+            "Are",
+            "Does"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Are they playing? — Yes, they _______.",
+          "options": [
+            "do",
+            "are",
+            "is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ he running?",
+          "options": [
+            "Is",
+            "Are",
+            "Do"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "What _______ he doing?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: What / are / they / doing",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Are she reading?",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Are two girls playing volleyball?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Present Continuous Questions yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Present Continuous Questions kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Present Continuous Questions ile yeni bir örnek cümle yaz.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "Is",
+        "are",
+        "Is",
+        "is",
+        "What are they doing",
+        "\"Are\" burada hatalıdır; doğru cevap \"Is\" olmalıdır.",
+        "Yes, they are.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "024-present-continuous-questions-w1",
+    "024-present-continuous-questions-w2",
+    "024-present-continuous-questions-w3",
+    "024-present-continuous-questions-w4",
+    "024-present-continuous-questions-w5",
+    "024-present-continuous-questions-w6",
+    "024-present-continuous-questions-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Present Continuous Questions",
+      "instructionTr": "Am / Is / Are ile Present Continuous soru kurmak.",
+      "content": {
+        "eyebrow": "Şu An · DERS 24",
+        "heroText": "Are you listening?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Soru yapmak için am / is / are cümlenin başına geçer: - She is reading. → Is she reading? - They are playing. → Are they playing? - I am speaking. → Am I speaking? Kısa cevaplar: - Is she reading? → Yes, she is. / No, she isn't. - Are they playing? → Yes, they are. / No, they aren't. - Are you listening? → Yes, I am. / No, I'm not. Ne yaptığını sormak için: What is he doing? What are they doing?",
+      "content": {
+        "examples": [],
+        "noteTr": "Soru yapmak için am / is / are cümlenin başına geçer: - She is reading. → Is she reading? - They are playing. → Are they playing? - I am speaking. → Am I speaking? Kısa cevaplar: - Is she reading? → Yes, she is. / No, she isn't. - Are they playing? → Yes, they are. / No, they aren't. - Are you listening? → Yes, I am. / No, I'm not. Ne yaptığını sormak için: What is he doing? What are they doing?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "Are you listening?",
+          "Is she reading?",
+          "Are they playing volleyball?",
+          "Is he writing a message?",
+          "Are we waiting?",
+          "What are you doing?",
+          "What is the coach saying?",
+          "Is the team practising?",
+          "Are the musicians preparing the stage?",
+          "What is Beyza watching?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Am I...?",
+            "Yes, you are.",
+            "No, you aren't."
+          ],
+          [
+            "Is he/she...?",
+            "Yes, he/she is.",
+            "No, he/she isn't."
+          ],
+          [
+            "Are you/we/they...?",
+            "Yes, ... are.",
+            "No, ... aren't."
+          ]
+        ]
+      },
+      "explanationTr": "Am / Is / Are ile Present Continuous soru kurmak. What ... doing? sorusunu kullanmak. Kısa cevap vermek: Yes, I am. / No, she isn't."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She is reading? ❌ → Is she reading? ✅",
+          "Do they playing? ❌ → Are they playing? ✅",
+          "Yes, she does. ❌ → Yes, she is. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "_______ she doing her homework?",
+      "content": {
+        "options": [
+          "Is",
+          "Are",
+          "Does"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Is seçeneği cümledeki hedef kurala uyar.",
+          "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Is\" çünkü Is seçeneği cümledeki hedef kurala uyar.",
+          "\"Does\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Is\" çünkü Is seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Are they playing? — Yes, they _______.",
+      "content": {
+        "options": [
+          "do",
+          "are",
+          "is"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "What _______ he doing?",
+      "content": {
+        "answer": "is",
+        "accepted": [
+          "is"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"is\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Am / Is / Are ile Present Continuous soru kurmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "What",
+          "are",
+          "they",
+          "doing"
+        ],
+        "answer": [
+          "What",
+          "are",
+          "they",
+          "doing"
+        ],
+        "explanationTr": "Doğru sıra: What are they doing"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "Are",
+          "she",
+          "reading?"
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"Are\" burada hatalıdır; doğru cevap \"Is\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Is she reading?",
+            "No, she isn't."
+          ],
+          [
+            "Are they playing?",
+            "Yes, they are."
+          ],
+          [
+            "Are you listening?",
+            "Yes, I am."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is looking at a photo. In the photo, two girls are playing volleyball. A coach is holding a ball. Some parents are watching the game.",
+        "questions": [
+          {
+            "prompt": "Are two girls playing volleyball?",
+            "options": [
+              "Yes, they are.",
+              "Yes, she is.",
+              "No, they aren't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Yes, they are.\" olmalıdır.",
+              "\"Yes, she is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they are.\".",
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they are.\"."
+            ]
+          },
+          {
+            "prompt": "Is the coach holding a ball?",
+            "options": [
+              "No, they aren't.",
+              "Yes, she is.",
+              "Yes, they are."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, she is.\".",
+              "Doğru. Bu soruda cevap \"Yes, she is.\" olmalıdır.",
+              "\"Yes, they are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, she is.\"."
+            ]
+          },
+          {
+            "prompt": "Are the parents playing?",
+            "options": [
+              "Yes, they are.",
+              "Yes, she is.",
+              "No, they aren't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Yes, they are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "\"Yes, she is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "Doğru. Bu soruda cevap \"No, they aren't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Is the boy standing?",
+      "content": {
+        "audioText": "\"Listen carefully. A boy is sitting near the stage. He is checking a microphone. Two girls are carrying chairs. A teacher is giving instructions.\"",
+        "questions": [
+          {
+            "prompt": "Is the boy standing?",
+            "options": [
+              "No, he isn't.",
+              "He is checking a microphone.",
+              "Yes, they are."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"No, he isn't.\" olmalıdır.",
+              "\"He is checking a microphone.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, he isn't.\".",
+              "\"Yes, they are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, he isn't.\"."
+            ]
+          },
+          {
+            "prompt": "What is he checking?",
+            "options": [
+              "Yes, they are.",
+              "He is checking a microphone.",
+              "No, he isn't."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Yes, they are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"He is checking a microphone.\".",
+              "Doğru. Bu soruda cevap \"He is checking a microphone.\" olmalıdır.",
+              "\"No, he isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"He is checking a microphone.\"."
+            ]
+          },
+          {
+            "prompt": "Are the girls carrying chairs?",
+            "options": [
+              "No, he isn't.",
+              "He is checking a microphone.",
+              "Yes, they are."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"No, he isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they are.\".",
+              "\"He is checking a microphone.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they are.\".",
+              "Doğru. Bu soruda cevap \"Yes, they are.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir kişiyi gözlemle ve soru sor: - Is she reading? - Is he using the computer? - What are they doing?",
+      "content": {
+        "sentenceStarters": [
+          "Is she reading?",
+          "Is he using the computer?",
+          "What are they doing?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ he running?",
+            "options": [
+              "Is",
+              "Are",
+              "Do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Is\" çünkü Is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Are the girls practising? — Yes, they _______.",
+            "options": [
+              "are",
+              "do",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "What _______ Beyza doing?",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ you watching the lesson?",
+            "options": [
+              "Is",
+              "Are",
+              "Does"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. Are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Are\" çünkü Are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Is the singer performing? — No, she _______.",
+            "options": [
+              "doesn't",
+              "isn't",
+              "aren't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. isn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"doesn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"isn't\" çünkü isn't seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ they listening to music?",
+            "options": [
+              "Is",
+              "Are",
+              "Do"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. Are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Are\" çünkü Are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "What is he _______?",
+            "options": [
+              "do",
+              "doing",
+              "does"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. doing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"doing\" çünkü doing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Is she reading? — Yes, she _______.",
+            "options": [
+              "is",
+              "does",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"does\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Are you studying? — No, I _______.",
+            "options": [
+              "don't",
+              "am not",
+              "isn't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. am not seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"don't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am not\" çünkü am not seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ the coach talking?",
+            "options": [
+              "Is",
+              "Are",
+              "Does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Is\" çünkü Is seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "024-present-continuous-questions-w1",
+            "word": "ask",
+            "example": "Ask a question.",
+            "audioText": "ask",
+            "prompt": "\"ask\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sormak",
+              "cevaplamak",
+              "tutmak",
+              "taşımak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "024-present-continuous-questions-w2",
+            "word": "answer",
+            "example": "Answer the question.",
+            "audioText": "answer",
+            "prompt": "\"answer\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sormak",
+              "cevaplamak",
+              "tutmak",
+              "taşımak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "024-present-continuous-questions-w3",
+            "word": "hold",
+            "example": "She is holding a ball.",
+            "audioText": "hold",
+            "prompt": "\"hold\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sormak",
+              "cevaplamak",
+              "tutmak",
+              "taşımak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "024-present-continuous-questions-w4",
+            "word": "carry",
+            "example": "They are carrying chairs.",
+            "audioText": "carry",
+            "prompt": "\"carry\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sormak",
+              "cevaplamak",
+              "tutmak",
+              "taşımak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "024-present-continuous-questions-w5",
+            "word": "check",
+            "example": "He is checking the microphone.",
+            "audioText": "check",
+            "prompt": "\"check\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kontrol etmek",
+              "sormak",
+              "cevaplamak",
+              "tutmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Am / Is / Are ile Present Continuous soru kurmak.",
+          "What ... doing? sorusunu kullanmak.",
+          "Hedef kelimeler: ask, answer, hold, carry, check, wait, say"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

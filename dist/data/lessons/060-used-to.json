@@ -1,0 +1,698 @@
+{
+  "id": "060-used-to",
+  "title": "used to",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geçmişte düzenli olan fakat şimdi değişen alışkanlıkları anlatmak.",
+    "used to + fiilin yalın hâli yapısını kullanmak.",
+    "didn't use to ile olumsuz cümle kurmak.",
+    "Did ... use to...? ile soru sormak.",
+    "Geçmiş ve bugünü karşılaştırmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Çocukluk fotoğrafları veya eski alışkanlıklar üzerinden konuşun. Her olumlu cümleden sonra bugünkü durumu da eklemek anlamı güçlendirir.",
+    "todayGoal": "Geçmişte düzenli olan fakat şimdi değişen alışkanlıkları anlatmak.",
+    "teachingTips": [
+      "Bu derste \"used to\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I used to play with toys.",
+      "She used to live in Ankara.",
+      "He used to walk to school.",
+      "We used to watch cartoons."
+    ],
+    "listeningScripts": [
+      "\"The volleyball team used to practise in a small hall. The floor was old, and there wasn't much space. They didn't use to have enough balls. Now they practise in a larger sports centre.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "used to Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I _______ play outside every day.",
+          "options": [
+            "used to",
+            "use to now",
+            "am used"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She didn't _______ like milk.",
+          "options": [
+            "used to",
+            "use to",
+            "using to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ play with toys.",
+          "options": [
+            "used to",
+            "use to",
+            "using to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "We _______ to live near the school.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "Did he _______ to ride a bike?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: used to / I / watch / cartoons",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He didn't used to play volleyball.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What did Beyza use to watch?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "used to yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "used to kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "used to",
+        "use to",
+        "used to",
+        "used",
+        "use",
+        "I used to watch cartoons",
+        "\"used\" burada hatalıdır; doğru cevap \"use\" olmalıdır.",
+        "Cartoons.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "060-used-to-w1",
+    "060-used-to-w2",
+    "060-used-to-w3",
+    "060-used-to-w4",
+    "060-used-to-w5",
+    "060-used-to-w6",
+    "060-used-to-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "used to",
+      "instructionTr": "Geçmişte düzenli olan fakat şimdi değişen alışkanlıkları anlatmak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 60",
+        "heroText": "I used to play with toys."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Used to, geçmişte düzenli olarak yapılan ama artık yapılmayan şeyleri anlatır. - I used to play with toy cars. - She used to live in Ankara. - We used to walk to school. Olumsuz: - I didn't use to like milk. - He didn't use to play volleyball. Soru: - Did you use to ride a bike? - Did she use to live here? Did ve didn't ile used değil, use kullanılır.",
+      "content": {
+        "examples": [],
+        "noteTr": "Used to, geçmişte düzenli olarak yapılan ama artık yapılmayan şeyleri anlatır. - I used to play with toy cars. - She used to live in Ankara. - We used to walk to school. Olumsuz: - I didn't use to like milk. - He didn't use to play volleyball. Soru: - Did you use to ride a bike? - Did she use to live here? Did ve didn't ile used değil, use kullanılır."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I used to play with toys.",
+          "She used to live in Ankara.",
+          "He used to walk to school.",
+          "We used to watch cartoons.",
+          "They used to meet every weekend.",
+          "Beyza used to be shy.",
+          "She didn't use to like English.",
+          "He didn't use to play volleyball.",
+          "Did you use to ride a bike?",
+          "The team used to practise in the old hall."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu",
+            "used to + fiil",
+            "I used to play."
+          ],
+          [
+            "Olumsuz",
+            "didn't use to + fiil",
+            "I didn't use to play."
+          ],
+          [
+            "Soru",
+            "Did + özne + use to + fiil?",
+            "Did you use to play?"
+          ]
+        ]
+      },
+      "explanationTr": "Geçmişte düzenli olan fakat şimdi değişen alışkanlıkları anlatmak. used to + fiilin yalın hâli yapısını kullanmak. didn't use to ile olumsuz cümle kurmak. Did ... use to...? ile soru sormak. Geçmiş ve bugünü karşılaştırmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I use to play. ❌ → I used to play. ✅",
+          "I didn't used to play. ❌ → I didn't use to play. ✅",
+          "Did she used to live here? ❌ → Did she use to live here? ✅",
+          "used to geçmiş alışkanlık içindir; şimdiki rutin için kullanılmaz."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I _______ play outside every day.",
+      "content": {
+        "options": [
+          "used to",
+          "use to now",
+          "am used"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. used to seçeneği cümledeki hedef kurala uyar.",
+          "\"use to now\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"used to\" çünkü used to seçeneği cümledeki hedef kurala uyar.",
+          "\"am used\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"used to\" çünkü used to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "She didn't _______ like milk.",
+      "content": {
+        "options": [
+          "used to",
+          "use to",
+          "using to"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+          "\"using to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "We _______ to live near the school.",
+      "content": {
+        "answer": "used",
+        "accepted": [
+          "used"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"used\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Geçmişte düzenli olan fakat şimdi değişen alışkanlıkları anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "used to",
+          "I",
+          "watch",
+          "cartoons"
+        ],
+        "answer": [
+          "I",
+          "used to",
+          "watch",
+          "cartoons"
+        ],
+        "explanationTr": "Doğru sıra: I used to watch cartoons"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "didn't",
+          "used",
+          "to",
+          "play",
+          "volleyball."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"used\" burada hatalıdır; doğru cevap \"use\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I used to",
+            "like vegetables."
+          ],
+          [
+            "I didn't use to",
+            "play outside."
+          ],
+          [
+            "Did you use to",
+            "ride a bike?"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "When Beyza was younger, she used to watch cartoons every morning. She used to play with building blocks. She didn't use to enjoy English activities, but now she likes vocabulary games. She also used to be shy during group activities.",
+        "questions": [
+          {
+            "prompt": "What did Beyza use to watch?",
+            "options": [
+              "Cartoons.",
+              "Building blocks.",
+              "No, she didn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Cartoons.\" olmalıdır.",
+              "\"Building blocks.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Cartoons.\".",
+              "\"No, she didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Cartoons.\"."
+            ]
+          },
+          {
+            "prompt": "What did she use to play with?",
+            "options": [
+              "No, she didn't.",
+              "Building blocks.",
+              "Cartoons."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, she didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Building blocks.\".",
+              "Doğru. Bu soruda cevap \"Building blocks.\" olmalıdır.",
+              "\"Cartoons.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Building blocks.\"."
+            ]
+          },
+          {
+            "prompt": "Did she use to enjoy English activities?",
+            "options": [
+              "Cartoons.",
+              "Building blocks.",
+              "No, she didn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Cartoons.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she didn't.\".",
+              "\"Building blocks.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she didn't.\".",
+              "Doğru. Bu soruda cevap \"No, she didn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where did the team use to practise?",
+      "content": {
+        "audioText": "\"The volleyball team used to practise in a small hall. The floor was old, and there wasn't much space. They didn't use to have enough balls. Now they practise in a larger sports centre.\"",
+        "questions": [
+          {
+            "prompt": "Where did the team use to practise?",
+            "options": [
+              "In a small hall.",
+              "No, they didn't.",
+              "In a larger sports centre."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"In a small hall.\" olmalıdır.",
+              "\"No, they didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In a small hall.\".",
+              "\"In a larger sports centre.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In a small hall.\"."
+            ]
+          },
+          {
+            "prompt": "Did they use to have enough balls?",
+            "options": [
+              "In a larger sports centre.",
+              "No, they didn't.",
+              "In a small hall."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"In a larger sports centre.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they didn't.\".",
+              "Doğru. Bu soruda cevap \"No, they didn't.\" olmalıdır.",
+              "\"In a small hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they didn't.\"."
+            ]
+          },
+          {
+            "prompt": "Where do they practise now?",
+            "options": [
+              "In a small hall.",
+              "No, they didn't.",
+              "In a larger sports centre."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"In a small hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In a larger sports centre.\".",
+              "\"No, they didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In a larger sports centre.\".",
+              "Doğru. Bu soruda cevap \"In a larger sports centre.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Geçmiş ve bugünü karşılaştır: - I used to ... - I didn't use to ... - Now I ...",
+      "content": {
+        "sentenceStarters": [
+          "I used to ...",
+          "I didn't use to ...",
+          "Now I ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ play with toys.",
+            "options": [
+              "used to",
+              "use to",
+              "using to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. used to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"use to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"used to\" çünkü used to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She didn't _______ like sport.",
+            "options": [
+              "used to",
+              "use to",
+              "uses to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Did he _______ live here?",
+            "options": [
+              "used to",
+              "use to",
+              "using to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We used to _______ to school.",
+            "options": [
+              "walk",
+              "walked",
+              "walking"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. walk seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"walked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"walk\" çünkü walk seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They didn't use to _______ volleyball.",
+            "options": [
+              "play",
+              "played",
+              "playing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. play seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"played\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ be very shy.",
+            "options": [
+              "used to",
+              "use to",
+              "using to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. used to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"use to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"used to\" çünkü used to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I didn't _______ eat vegetables.",
+            "options": [
+              "used to",
+              "use to",
+              "uses to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Did you _______ watch cartoons?",
+            "options": [
+              "use to",
+              "used to",
+              "using to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He used to _______ near the park.",
+            "options": [
+              "live",
+              "lived",
+              "living"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. live seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"lived\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"live\" çünkü live seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We didn't use to _______ there.",
+            "options": [
+              "go",
+              "went",
+              "going"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. go seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "060-used-to-w1",
+            "word": "used to",
+            "example": "I used to play.",
+            "audioText": "used to",
+            "prompt": "\"used to\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eskiden yapardı",
+              "utangaç",
+              "çizgi film",
+              "oyuncak blok"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "060-used-to-w2",
+            "word": "shy",
+            "example": "She used to be shy.",
+            "audioText": "shy",
+            "prompt": "\"shy\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eskiden yapardı",
+              "utangaç",
+              "çizgi film",
+              "oyuncak blok"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "060-used-to-w3",
+            "word": "cartoon",
+            "example": "I used to watch cartoons.",
+            "audioText": "cartoon",
+            "prompt": "\"cartoon\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eskiden yapardı",
+              "utangaç",
+              "çizgi film",
+              "oyuncak blok"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "060-used-to-w4",
+            "word": "block",
+            "example": "building blocks",
+            "audioText": "block",
+            "prompt": "\"block\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "eskiden yapardı",
+              "utangaç",
+              "çizgi film",
+              "oyuncak blok"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "060-used-to-w5",
+            "word": "space",
+            "example": "There wasn't much space.",
+            "audioText": "space",
+            "prompt": "\"space\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "alan",
+              "eskiden yapardı",
+              "utangaç",
+              "çizgi film"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geçmişte düzenli olan fakat şimdi değişen alışkanlıkları anlatmak.",
+          "used to + fiilin yalın hâli yapısını kullanmak.",
+          "Hedef kelimeler: used to, shy, cartoon, block, space, old, now"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

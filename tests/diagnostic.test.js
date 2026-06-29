@@ -1,0 +1,4 @@
+import test from "node:test";import assert from "node:assert/strict";import fs from "node:fs";import {createDiagnosticSession,answerDiagnostic,finishDiagnostic} from "../js/diagnostic-engine.js";
+const data=JSON.parse(fs.readFileSync(new URL("../data/diagnostic-test.json",import.meta.url),"utf8"));
+test("perfect diagnostic yields 25 and top band",()=>{const s=createDiagnosticSession(data.questions);data.questions.forEach((q,i)=>{s.index=i;answerDiagnostic(s,q.correctIndex)});const r=finishDiagnostic(s);assert.equal(r.score,25);assert.equal(r.band.label,"A2 orta başlangıç")});
+test("all-wrong diagnostic yields lower band",()=>{const s=createDiagnosticSession(data.questions);data.questions.forEach((q,i)=>{s.index=i;answerDiagnostic(s,(q.correctIndex+1)%q.options.length)});const r=finishDiagnostic(s);assert.equal(r.score,0);assert.equal(r.band.label,"A1 temel köprü")});

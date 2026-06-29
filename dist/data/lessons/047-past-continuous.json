@@ -1,0 +1,689 @@
+{
+  "id": "047-past-continuous",
+  "title": "Past Continuous",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "was / were + verb-ing yapısını kullanmak.",
+    "Geçmişte belirli bir anda devam eden eylemleri anlatmak.",
+    "at five o'clock, at that moment, while gibi ifadeleri tanımak.",
+    "Past Simple ile Past Continuous arasındaki temel farkı görmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Belirli bir saat vererek soru sorun: What were you doing at eight? Beyza'nın was/were + -ing yapısını birlikte kullanmasına dikkat edin.",
+    "todayGoal": "was / were + verb-ing yapısını kullanmak.",
+    "teachingTips": [
+      "Bu derste \"Past Continuous\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I was reading at eight.",
+      "She was sleeping at ten.",
+      "He was doing his homework.",
+      "We were watching a match."
+    ],
+    "listeningScripts": [
+      "\"At five o'clock, the volleyball team was practising. Two players were serving the ball. The coach was watching them. Other players were waiting near the net.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Past Continuous Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ studying at eight.",
+          "options": [
+            "was",
+            "were",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They were _______ volleyball.",
+          "options": [
+            "play",
+            "playing",
+            "played"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ reading.",
+          "options": [
+            "was",
+            "were",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ reading at nine.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "We were _______ a match.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: was / she / sleeping / at ten",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He were doing homework.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What was Beyza doing?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Past Continuous yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Past Continuous kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "was",
+        "playing",
+        "was",
+        "was",
+        "watching",
+        "she was sleeping at ten",
+        "\"were\" burada hatalıdır; doğru cevap \"was\" olmalıdır.",
+        "She was doing her homework.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "047-past-continuous-w1",
+    "047-past-continuous-w2",
+    "047-past-continuous-w3",
+    "047-past-continuous-w4",
+    "047-past-continuous-w5",
+    "047-past-continuous-w6",
+    "047-past-continuous-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Past Continuous",
+      "instructionTr": "was / were + verb-ing yapısını kullanmak.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 47",
+        "heroText": "I was reading at eight."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Past Continuous, geçmişte belirli bir anda devam eden eylemi anlatır. Kural: Özne + was / were + fiil-ing - I was studying at eight. - She was playing volleyball. - They were listening to music. Özneye göre: - I / He / She / It → was - You / We / They → were Kısa fark: - I studied English yesterday. → Dün İngilizce çalıştım. (tamamlanmış eylem) - I was studying English at eight. → Saat sekizde İngilizce çalışıyordum. (o anda sürüyordu)",
+      "content": {
+        "examples": [],
+        "noteTr": "Past Continuous, geçmişte belirli bir anda devam eden eylemi anlatır. Kural: Özne + was / were + fiil-ing - I was studying at eight. - She was playing volleyball. - They were listening to music. Özneye göre: - I / He / She / It → was - You / We / They → were Kısa fark: - I studied English yesterday. → Dün İngilizce çalıştım. (tamamlanmış eylem) - I was studying English at eight. → Saat sekizde İngilizce çalışıyordum. (o anda sürüyordu)"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I was reading at eight.",
+          "She was sleeping at ten.",
+          "He was doing his homework.",
+          "We were watching a match.",
+          "They were playing volleyball.",
+          "Beyza was carrying her sports bag.",
+          "The coach was talking to the team.",
+          "The students were preparing the stage.",
+          "While the players were warming up, the coach was checking the net.",
+          "At that moment, everyone was listening carefully."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I / He / She / It",
+            "was + ing",
+            "She was reading."
+          ],
+          [
+            "You / We / They",
+            "were + ing",
+            "They were playing."
+          ]
+        ]
+      },
+      "explanationTr": "was / were + verb-ing yapısını kullanmak. Geçmişte belirli bir anda devam eden eylemleri anlatmak. at five o'clock, at that moment, while gibi ifadeleri tanımak. Past Simple ile Past Continuous arasındaki temel farkı görmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She were reading. ❌ → She was reading. ✅",
+          "They was playing. ❌ → They were playing. ✅",
+          "I was read. ❌ → I was reading. ✅",
+          "We were watched TV. ❌ → We were watching TV. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ studying at eight.",
+      "content": {
+        "options": [
+          "was",
+          "were",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+          "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They were _______ volleyball.",
+      "content": {
+        "options": [
+          "play",
+          "playing",
+          "played"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"play\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"playing\" çünkü playing seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. playing seçeneği cümledeki hedef kurala uyar.",
+          "\"played\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"playing\" çünkü playing seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ reading at nine.",
+      "content": {
+        "answer": "was",
+        "accepted": [
+          "was"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"was\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "was / were + verb-ing yapısını kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "was",
+          "she",
+          "sleeping",
+          "at ten"
+        ],
+        "answer": [
+          "she",
+          "was",
+          "sleeping",
+          "at ten"
+        ],
+        "explanationTr": "Doğru sıra: she was sleeping at ten"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "were",
+          "doing",
+          "homework."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"were\" burada hatalıdır; doğru cevap \"was\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I was",
+            "reading a book."
+          ],
+          [
+            "She was",
+            "listening to music."
+          ],
+          [
+            "They were",
+            "playing volleyball."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "At seven o'clock yesterday evening, Beyza was doing her homework. Her sister was drawing a picture. Their parents were making dinner. The television wasn't on because everyone was busy.",
+        "questions": [
+          {
+            "prompt": "What was Beyza doing?",
+            "options": [
+              "She was doing her homework.",
+              "She was drawing a picture.",
+              "No, they weren't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She was doing her homework.\" olmalıdır.",
+              "\"She was drawing a picture.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was doing her homework.\".",
+              "\"No, they weren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was doing her homework.\"."
+            ]
+          },
+          {
+            "prompt": "What was her sister doing?",
+            "options": [
+              "No, they weren't.",
+              "She was drawing a picture.",
+              "She was doing her homework."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they weren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was drawing a picture.\".",
+              "Doğru. Bu soruda cevap \"She was drawing a picture.\" olmalıdır.",
+              "\"She was doing her homework.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was drawing a picture.\"."
+            ]
+          },
+          {
+            "prompt": "Were their parents watching TV?",
+            "options": [
+              "She was doing her homework.",
+              "She was drawing a picture.",
+              "No, they weren't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She was doing her homework.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they weren't.\".",
+              "\"She was drawing a picture.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they weren't.\".",
+              "Doğru. Bu soruda cevap \"No, they weren't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What was the team doing?",
+      "content": {
+        "audioText": "\"At five o'clock, the volleyball team was practising. Two players were serving the ball. The coach was watching them. Other players were waiting near the net.\"",
+        "questions": [
+          {
+            "prompt": "What was the team doing?",
+            "options": [
+              "They were practising.",
+              "Two players.",
+              "Near the net."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"They were practising.\" olmalıdır.",
+              "\"Two players.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They were practising.\".",
+              "\"Near the net.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They were practising.\"."
+            ]
+          },
+          {
+            "prompt": "How many players were serving?",
+            "options": [
+              "Near the net.",
+              "Two players.",
+              "They were practising."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Near the net.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Two players.\".",
+              "Doğru. Bu soruda cevap \"Two players.\" olmalıdır.",
+              "\"They were practising.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Two players.\"."
+            ]
+          },
+          {
+            "prompt": "Where were the other players waiting?",
+            "options": [
+              "They were practising.",
+              "Two players.",
+              "Near the net."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"They were practising.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Near the net.\".",
+              "\"Two players.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Near the net.\".",
+              "Doğru. Bu soruda cevap \"Near the net.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dün belirli bir saatte ne yaptığını söyle: - At eight, I was ... - At nine, my family were ...",
+      "content": {
+        "sentenceStarters": [
+          "At eight, I was ...",
+          "At nine, my family were ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ reading.",
+            "options": [
+              "was",
+              "were",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ playing.",
+            "options": [
+              "was",
+              "were",
+              "is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She was _______ dinner.",
+            "options": [
+              "make",
+              "making",
+              "made"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. making seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"make\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"making\" çünkü making seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We were _______ TV.",
+            "options": [
+              "watching",
+              "watched",
+              "watch"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. watching seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watched\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watching\" çünkü watching seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The coach _______ talking.",
+            "options": [
+              "was",
+              "were",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "He _______ sleeping at eleven.",
+            "options": [
+              "was",
+              "were",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The players _______ warming up.",
+            "options": [
+              "was",
+              "were",
+              "is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I was _______ a book.",
+            "options": [
+              "read",
+              "reading",
+              "reads"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. reading seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"read\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We were _______ near the stage.",
+            "options": [
+              "wait",
+              "waiting",
+              "waited"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. waiting seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"wait\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"waiting\" çünkü waiting seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ carrying a bag.",
+            "options": [
+              "was",
+              "were",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "047-past-continuous-w1",
+            "word": "while",
+            "example": "While they were playing...",
+            "audioText": "while",
+            "prompt": "\"while\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "iken",
+              "an",
+              "akşam",
+              "beklemek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "047-past-continuous-w2",
+            "word": "moment",
+            "example": "At that moment...",
+            "audioText": "moment",
+            "prompt": "\"moment\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "iken",
+              "an",
+              "akşam",
+              "beklemek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "047-past-continuous-w3",
+            "word": "evening",
+            "example": "Yesterday evening.",
+            "audioText": "evening",
+            "prompt": "\"evening\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "iken",
+              "an",
+              "akşam",
+              "beklemek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "047-past-continuous-w4",
+            "word": "wait",
+            "example": "They were waiting.",
+            "audioText": "wait",
+            "prompt": "\"wait\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "iken",
+              "an",
+              "akşam",
+              "beklemek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "047-past-continuous-w5",
+            "word": "carefully",
+            "example": "She was listening carefully.",
+            "audioText": "carefully",
+            "prompt": "\"carefully\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dikkatlice",
+              "iken",
+              "an",
+              "akşam"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "was / were + verb-ing yapısını kullanmak.",
+          "Geçmişte belirli bir anda devam eden eylemleri anlatmak.",
+          "Hedef kelimeler: while, moment, evening, wait, carefully, during, continue"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

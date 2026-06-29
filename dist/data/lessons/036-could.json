@@ -1,0 +1,695 @@
+{
+  "id": "036-could",
+  "title": "could",
+  "level": "A2.1",
+  "module": "Yetenek, Tavsiye ve Kurallar",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geçmişte sahip olunan genel yetenekleri could / couldn't ile anlatmak.",
+    "Could you...? ile kibar rica oluşturmak.",
+    "can ve could arasındaki temel farkı anlamak.",
+    "Kısa cevap ve basit cümleler kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Could dersinde iki kullanım karışabilir. Önce geçmiş yeteneği, sonra kibar ricayı ayrı ayrı çalışın. Fiilin could sonrasında yalın kaldığını vurgulayın.",
+    "todayGoal": "Geçmişte sahip olunan genel yetenekleri could / couldn't ile anlatmak.",
+    "teachingTips": [
+      "Bu derste \"could\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I could read when I was six.",
+      "She could swim at the age of seven.",
+      "He couldn't ride a bike when he was five.",
+      "We could play simple games."
+    ],
+    "listeningScripts": [
+      "\"When the coach was ten, she could serve the ball well. She couldn't jump very high, but she practised every week. Now she can teach young players.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "could Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I _______ read when I was six.",
+          "options": [
+            "could",
+            "can",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Could you _______ the door?",
+          "options": [
+            "opened",
+            "open",
+            "opening"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ swim when I was seven.",
+          "options": [
+            "could",
+            "can",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "She _______ swim when she was seven.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "Could you _______ me, please?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: could / I / read / at six",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He could played volleyball.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What could Beyza do at five?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "could yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "could kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "could",
+        "open",
+        "could",
+        "could",
+        "help",
+        "I could read at six",
+        "\"played\" burada hatalıdır; doğru cevap \"play\" olmalıdır.",
+        "She could count to twenty and draw simple pictures.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "036-could-w1",
+    "036-could-w2",
+    "036-could-w3",
+    "036-could-w4",
+    "036-could-w5",
+    "036-could-w6",
+    "036-could-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "could",
+      "instructionTr": "Geçmişte sahip olunan genel yetenekleri could / couldn't ile anlatmak.",
+      "content": {
+        "eyebrow": "Yetenek, Tavsiye ve Kurallar · DERS 36",
+        "heroText": "I could read when I was six."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Could, geçmişte bir şeyi yapabildiğimizi söyleyebilir: - I could swim when I was seven. - She could read at the age of five. Couldn't, geçmişte yapamadığımızı söyler: - I couldn't ride a bike when I was four. Could you...? ise kibar bir rica kalıbıdır: - Could you open the door, please? - Could you help me? Bu derste iki temel kullanım vardır: 1. Geçmiş yetenek 2. Kibar rica Kural: could / couldn't + fiilin yalın hâli",
+      "content": {
+        "examples": [],
+        "noteTr": "Could, geçmişte bir şeyi yapabildiğimizi söyleyebilir: - I could swim when I was seven. - She could read at the age of five. Couldn't, geçmişte yapamadığımızı söyler: - I couldn't ride a bike when I was four. Could you...? ise kibar bir rica kalıbıdır: - Could you open the door, please? - Could you help me? Bu derste iki temel kullanım vardır: 1. Geçmiş yetenek 2. Kibar rica Kural: could / couldn't + fiilin yalın hâli"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I could read when I was six.",
+          "She could swim at the age of seven.",
+          "He couldn't ride a bike when he was five.",
+          "We could play simple games.",
+          "They couldn't speak English last year.",
+          "Could you help me, please?",
+          "Could you open the window?",
+          "Could you pass the ball?",
+          "Could you check the microphone?",
+          "The coach could play volleyball very well when she was young."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Geçmiş yetenek",
+            "could + fiil",
+            "I could swim."
+          ],
+          [
+            "Geçmişte yapamama",
+            "couldn't + fiil",
+            "I couldn't swim."
+          ],
+          [
+            "Kibar rica",
+            "Could you + fiil?",
+            "Could you help me?"
+          ]
+        ]
+      },
+      "explanationTr": "Geçmişte sahip olunan genel yetenekleri could / couldn't ile anlatmak. Could you...? ile kibar rica oluşturmak. can ve could arasındaki temel farkı anlamak. Kısa cevap ve basit cümleler kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I could swam. ❌ → I could swim. ✅",
+          "She could to read. ❌ → She could read. ✅",
+          "Could you helping me? ❌ → Could you help me? ✅",
+          "I didn't could swim. ❌ → I couldn't swim. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I _______ read when I was six.",
+      "content": {
+        "options": [
+          "could",
+          "can",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. could seçeneği cümledeki hedef kurala uyar.",
+          "\"can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"could\" çünkü could seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"could\" çünkü could seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Could you _______ the door?",
+      "content": {
+        "options": [
+          "opened",
+          "open",
+          "opening"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"opened\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"open\" çünkü open seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. open seçeneği cümledeki hedef kurala uyar.",
+          "\"opening\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"open\" çünkü open seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "She _______ swim when she was seven.",
+      "content": {
+        "answer": "could",
+        "accepted": [
+          "could"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"could\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Geçmişte sahip olunan genel yetenekleri could / couldn't ile anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "could",
+          "I",
+          "read",
+          "at six"
+        ],
+        "answer": [
+          "I",
+          "could",
+          "read",
+          "at six"
+        ],
+        "explanationTr": "Doğru sıra: I could read at six"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "could",
+          "played",
+          "volleyball."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"played\" burada hatalıdır; doğru cevap \"play\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I could swim.",
+            "Geçmişte yapabilme"
+          ],
+          [
+            "I couldn't ride a bike.",
+            "Geçmişte yapamama"
+          ],
+          [
+            "Could you open the window?",
+            "Kibar rica"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "When Beyza was five, she could count to twenty. She could draw simple pictures, but she couldn't read English words. Now she can read short English sentences and play volleyball.",
+        "questions": [
+          {
+            "prompt": "What could Beyza do at five?",
+            "options": [
+              "She could count to twenty and draw simple pictures.",
+              "She couldn't read English words.",
+              "She can read short English sentences and play volleyball."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She could count to twenty and draw simple pictures.\" olmalıdır.",
+              "\"She couldn't read English words.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She could count to twenty and draw simple pictures.\".",
+              "\"She can read short English sentences and play volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She could count to twenty and draw simple pictures.\"."
+            ]
+          },
+          {
+            "prompt": "What couldn't she do?",
+            "options": [
+              "She can read short English sentences and play volleyball.",
+              "She couldn't read English words.",
+              "She could count to twenty and draw simple pictures."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She can read short English sentences and play volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She couldn't read English words.\".",
+              "Doğru. Bu soruda cevap \"She couldn't read English words.\" olmalıdır.",
+              "\"She could count to twenty and draw simple pictures.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She couldn't read English words.\"."
+            ]
+          },
+          {
+            "prompt": "What can she do now?",
+            "options": [
+              "She could count to twenty and draw simple pictures.",
+              "She couldn't read English words.",
+              "She can read short English sentences and play volleyball."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She could count to twenty and draw simple pictures.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can read short English sentences and play volleyball.\".",
+              "\"She couldn't read English words.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can read short English sentences and play volleyball.\".",
+              "Doğru. Bu soruda cevap \"She can read short English sentences and play volleyball.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What could the coach do at ten?",
+      "content": {
+        "audioText": "\"When the coach was ten, she could serve the ball well. She couldn't jump very high, but she practised every week. Now she can teach young players.\"",
+        "questions": [
+          {
+            "prompt": "What could the coach do at ten?",
+            "options": [
+              "She could serve the ball well.",
+              "She couldn't jump very high.",
+              "She can teach young players."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She could serve the ball well.\" olmalıdır.",
+              "\"She couldn't jump very high.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She could serve the ball well.\".",
+              "\"She can teach young players.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She could serve the ball well.\"."
+            ]
+          },
+          {
+            "prompt": "What couldn't she do well?",
+            "options": [
+              "She can teach young players.",
+              "She couldn't jump very high.",
+              "She could serve the ball well."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She can teach young players.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She couldn't jump very high.\".",
+              "Doğru. Bu soruda cevap \"She couldn't jump very high.\" olmalıdır.",
+              "\"She could serve the ball well.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She couldn't jump very high.\"."
+            ]
+          },
+          {
+            "prompt": "What can she do now?",
+            "options": [
+              "She could serve the ball well.",
+              "She couldn't jump very high.",
+              "She can teach young players."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She could serve the ball well.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can teach young players.\".",
+              "\"She couldn't jump very high.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She can teach young players.\".",
+              "Doğru. Bu soruda cevap \"She can teach young players.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "İki geçmiş yetenek ve bir geçmişte yapamadığın şeyi söyle: - I could ... - I couldn't ... Sonra kibar bir rica yap: - Could you ... please?",
+      "content": {
+        "sentenceStarters": [
+          "I could ...",
+          "I couldn't ...",
+          "Could you ... please?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ swim when I was seven.",
+            "options": [
+              "could",
+              "can",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. could seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"could\" çünkü could seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She couldn't _______ a bike.",
+            "options": [
+              "rode",
+              "ride",
+              "riding"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. ride seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"rode\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ride\" çünkü ride seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Could you _______ the light?",
+            "options": [
+              "turn on",
+              "turned on",
+              "turning on"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. turn on seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"turned on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"turn on\" çünkü turn on seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ speak English last year.",
+            "options": [
+              "couldn't",
+              "don't can",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. couldn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"don't can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"couldn't\" çünkü couldn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Could you _______ the ball, please?",
+            "options": [
+              "pass",
+              "passes",
+              "passing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. pass seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"passes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"pass\" çünkü pass seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "He could _______ at five.",
+            "options": [
+              "read",
+              "reads",
+              "reading"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. read seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"reads\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"read\" çünkü read seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ play the guitar last year.",
+            "options": [
+              "couldn't",
+              "can'ted",
+              "didn't can"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. couldn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"can'ted\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"couldn't\" çünkü couldn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Could you _______ me?",
+            "options": [
+              "helped",
+              "help",
+              "helping"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. help seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"helped\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"help\" çünkü help seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She could _______ very fast.",
+            "options": [
+              "ran",
+              "run",
+              "running"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. run seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ran\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"run\" çünkü run seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Could you close the door, _______?",
+            "options": [
+              "please",
+              "much",
+              "any"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. please seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"please\" çünkü please seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "036-could-w1",
+            "word": "help",
+            "example": "Could you help me?",
+            "audioText": "help",
+            "prompt": "\"help\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yardım etmek",
+              "açmak",
+              "kapatmak",
+              "saymak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "036-could-w2",
+            "word": "open",
+            "example": "Could you open the door?",
+            "audioText": "open",
+            "prompt": "\"open\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yardım etmek",
+              "açmak",
+              "kapatmak",
+              "saymak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "036-could-w3",
+            "word": "close",
+            "example": "Could you close the window?",
+            "audioText": "close",
+            "prompt": "\"close\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yardım etmek",
+              "açmak",
+              "kapatmak",
+              "saymak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "036-could-w4",
+            "word": "count",
+            "example": "I could count to twenty.",
+            "audioText": "count",
+            "prompt": "\"count\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yardım etmek",
+              "açmak",
+              "kapatmak",
+              "saymak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "036-could-w5",
+            "word": "young",
+            "example": "She was young.",
+            "audioText": "young",
+            "prompt": "\"young\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "genç/küçük yaşta",
+              "yardım etmek",
+              "açmak",
+              "kapatmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geçmişte sahip olunan genel yetenekleri could / couldn't ile anlatmak.",
+          "Could you...? ile kibar rica oluşturmak.",
+          "Hedef kelimeler: help, open, close, count, young, simple, please"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

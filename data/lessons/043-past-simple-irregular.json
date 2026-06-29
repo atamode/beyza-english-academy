@@ -1,0 +1,721 @@
+{
+  "id": "043-past-simple-irregular",
+  "title": "Past Simple Irregular",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Sık kullanılan düzensiz fiillerin geçmiş hâllerini öğrenmek.",
+    "go → went, have → had, see → saw gibi temel dönüşümleri kullanmak.",
+    "Geçmişte tamamlanan olayları anlatmak.",
+    "Düzenli ve düzensiz fiilleri ayırt etmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Düzensiz fiilleri küçük gruplar hâlinde çalışın. Beş fiillik kartlar hazırlayıp yalın hâlini göstererek geçmiş hâlini söylemesini isteyin.",
+    "todayGoal": "Sık kullanılan düzensiz fiillerin geçmiş hâllerini öğrenmek.",
+    "teachingTips": [
+      "Bu derste \"Past Simple Irregular\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I went to school.",
+      "She had breakfast.",
+      "He ate an apple.",
+      "We saw a volleyball match."
+    ],
+    "listeningScripts": [
+      "\"Yesterday, the students came to the hall at ten. They brought posters, made a list and took the chairs to the stage. At noon, they had a short break and ate sandwiches.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Past Simple Irregular Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Yesterday, I _______ to school.",
+          "options": [
+            "goed",
+            "went",
+            "go"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She _______ an orange.",
+          "options": [
+            "ate",
+            "eated",
+            "eat"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Doğru biçimi seç: go →",
+          "options": [
+            "goed",
+            "went",
+            "gone"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "We _______ a good match. (see)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "He _______ a bottle of water. (drink)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: went / we / to the park",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I buyed a new bag.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Where did Beyza go?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Past Simple Irregular yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Past Simple Irregular kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "went",
+        "ate",
+        "went",
+        "saw",
+        "drank",
+        "we went to the park",
+        "\"buyed\" burada hatalıdır; doğru cevap \"bought\" olmalıdır.",
+        "To the sports centre.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "043-past-simple-irregular-w1",
+    "043-past-simple-irregular-w2",
+    "043-past-simple-irregular-w3",
+    "043-past-simple-irregular-w4",
+    "043-past-simple-irregular-w5",
+    "043-past-simple-irregular-w6",
+    "043-past-simple-irregular-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Past Simple Irregular",
+      "instructionTr": "Sık kullanılan düzensiz fiillerin geçmiş hâllerini öğrenmek.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 43",
+        "heroText": "I went to school."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bazı fiiller geçmiş zamanda -ed almaz. Biçimleri değişir: - go → went - have → had - see → saw - eat → ate - drink → drank - take → took - come → came - get → got - make → made - buy → bought Bu fiiller ezberlenir; ancak tek seferde hepsini değil, sık kullanılanları öğrenmek yeterlidir. Örnek: - I went to school yesterday. - She had breakfast at eight. - We saw a good match.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bazı fiiller geçmiş zamanda -ed almaz. Biçimleri değişir: - go → went - have → had - see → saw - eat → ate - drink → drank - take → took - come → came - get → got - make → made - buy → bought Bu fiiller ezberlenir; ancak tek seferde hepsini değil, sık kullanılanları öğrenmek yeterlidir. Örnek: - I went to school yesterday. - She had breakfast at eight. - We saw a good match."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I went to school.",
+          "She had breakfast.",
+          "He ate an apple.",
+          "We saw a volleyball match.",
+          "They drank water.",
+          "Beyza took her sports bag.",
+          "My friends came to my house.",
+          "The team got a new ball.",
+          "We made sandwiches.",
+          "She bought a concert poster."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "go",
+            "went"
+          ],
+          [
+            "have",
+            "had"
+          ],
+          [
+            "see",
+            "saw"
+          ],
+          [
+            "eat",
+            "ate"
+          ],
+          [
+            "drink",
+            "drank"
+          ],
+          [
+            "take",
+            "took"
+          ],
+          [
+            "come",
+            "came"
+          ],
+          [
+            "get",
+            "got"
+          ],
+          [
+            "make",
+            "made"
+          ],
+          [
+            "buy",
+            "bought"
+          ]
+        ]
+      },
+      "explanationTr": "Sık kullanılan düzensiz fiillerin geçmiş hâllerini öğrenmek. go → went, have → had, see → saw gibi temel dönüşümleri kullanmak. Geçmişte tamamlanan olayları anlatmak. Düzenli ve düzensiz fiilleri ayırt etmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "goed ❌ → went ✅",
+          "eated ❌ → ate ✅",
+          "buyed ❌ → bought ✅",
+          "She wented home. ❌ → She went home. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Yesterday, I _______ to school.",
+      "content": {
+        "options": [
+          "goed",
+          "went",
+          "go"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"goed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+          "\"go\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "She _______ an orange.",
+      "content": {
+        "options": [
+          "ate",
+          "eated",
+          "eat"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. ate seçeneği cümledeki hedef kurala uyar.",
+          "\"eated\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ate\" çünkü ate seçeneği cümledeki hedef kurala uyar.",
+          "\"eat\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ate\" çünkü ate seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "We _______ a good match. (see)",
+      "content": {
+        "answer": "saw",
+        "accepted": [
+          "saw"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"saw\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Sık kullanılan düzensiz fiillerin geçmiş hâllerini öğrenmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "went",
+          "we",
+          "to the park"
+        ],
+        "answer": [
+          "we",
+          "went",
+          "to the park"
+        ],
+        "explanationTr": "Doğru sıra: we went to the park"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "buyed",
+          "a",
+          "new",
+          "bag."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"buyed\" burada hatalıdır; doğru cevap \"bought\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "go",
+            "went"
+          ],
+          [
+            "eat",
+            "ate"
+          ],
+          [
+            "buy",
+            "bought"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Last Saturday, Beyza went to the sports centre with her family. She saw a volleyball match and drank fruit juice. After the match, they went to a café. Beyza ate a sandwich and bought a small key ring.",
+        "questions": [
+          {
+            "prompt": "Where did Beyza go?",
+            "options": [
+              "To the sports centre.",
+              "A volleyball match.",
+              "A small key ring."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"To the sports centre.\" olmalıdır.",
+              "\"A volleyball match.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"To the sports centre.\".",
+              "\"A small key ring.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"To the sports centre.\"."
+            ]
+          },
+          {
+            "prompt": "What did she see?",
+            "options": [
+              "A small key ring.",
+              "A volleyball match.",
+              "To the sports centre."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A small key ring.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A volleyball match.\".",
+              "Doğru. Bu soruda cevap \"A volleyball match.\" olmalıdır.",
+              "\"To the sports centre.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A volleyball match.\"."
+            ]
+          },
+          {
+            "prompt": "What did she buy?",
+            "options": [
+              "To the sports centre.",
+              "A volleyball match.",
+              "A small key ring."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"To the sports centre.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A small key ring.\".",
+              "\"A volleyball match.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A small key ring.\".",
+              "Doğru. Bu soruda cevap \"A small key ring.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What time did they come?",
+      "content": {
+        "audioText": "\"Yesterday, the students came to the hall at ten. They brought posters, made a list and took the chairs to the stage. At noon, they had a short break and ate sandwiches.\"",
+        "questions": [
+          {
+            "prompt": "What time did they come?",
+            "options": [
+              "At ten.",
+              "A list.",
+              "Sandwiches."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"At ten.\" olmalıdır.",
+              "\"A list.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At ten.\".",
+              "\"Sandwiches.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At ten.\"."
+            ]
+          },
+          {
+            "prompt": "What did they make?",
+            "options": [
+              "Sandwiches.",
+              "A list.",
+              "At ten."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Sandwiches.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A list.\".",
+              "Doğru. Bu soruda cevap \"A list.\" olmalıdır.",
+              "\"At ten.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A list.\"."
+            ]
+          },
+          {
+            "prompt": "What did they eat?",
+            "options": [
+              "At ten.",
+              "A list.",
+              "Sandwiches."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"At ten.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Sandwiches.\".",
+              "\"A list.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Sandwiches.\".",
+              "Doğru. Bu soruda cevap \"Sandwiches.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki fiillerle birer geçmiş zaman cümlesi kur: - went - had - saw - ate - bought",
+      "content": {
+        "sentenceStarters": [
+          "went",
+          "had",
+          "saw",
+          "ate",
+          "bought"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Doğru biçimi seç: go →",
+            "options": [
+              "goed",
+              "went",
+              "gone"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"goed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "drink →",
+            "options": [
+              "drank",
+              "drinked",
+              "drunk"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. drank seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"drinked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drank\" çünkü drank seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ a sandwich.",
+            "options": [
+              "made",
+              "maked",
+              "make"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. made seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"maked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"made\" çünkü made seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ a new ball.",
+            "options": [
+              "got",
+              "getted",
+              "get"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. got seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"getted\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"got\" çünkü got seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ to school early.",
+            "options": [
+              "came",
+              "comed",
+              "come"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. came seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"comed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"came\" çünkü came seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ breakfast at eight.",
+            "options": [
+              "had",
+              "haved",
+              "have"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. had seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"haved\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"had\" çünkü had seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ a poster.",
+            "options": [
+              "bought",
+              "buyed",
+              "buy"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. bought seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"buyed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bought\" çünkü bought seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ the match.",
+            "options": [
+              "saw",
+              "seed",
+              "see"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. saw seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"seed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"saw\" çünkü saw seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ water.",
+            "options": [
+              "drank",
+              "drinked",
+              "drink"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. drank seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"drinked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drank\" çünkü drank seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He _______ his bag.",
+            "options": [
+              "took",
+              "taked",
+              "take"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. took seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"taked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"took\" çünkü took seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "043-past-simple-irregular-w1",
+            "word": "went",
+            "example": "We went to school.",
+            "audioText": "went",
+            "prompt": "\"went\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "gitti",
+              "sahipti/yedi-içti",
+              "gördü",
+              "yedi"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "043-past-simple-irregular-w2",
+            "word": "had",
+            "example": "She had breakfast.",
+            "audioText": "had",
+            "prompt": "\"had\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "gitti",
+              "sahipti/yedi-içti",
+              "gördü",
+              "yedi"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "043-past-simple-irregular-w3",
+            "word": "saw",
+            "example": "I saw a match.",
+            "audioText": "saw",
+            "prompt": "\"saw\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "gitti",
+              "sahipti/yedi-içti",
+              "gördü",
+              "yedi"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "043-past-simple-irregular-w4",
+            "word": "ate",
+            "example": "He ate an apple.",
+            "audioText": "ate",
+            "prompt": "\"ate\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "gitti",
+              "sahipti/yedi-içti",
+              "gördü",
+              "yedi"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "043-past-simple-irregular-w5",
+            "word": "drank",
+            "example": "They drank water.",
+            "audioText": "drank",
+            "prompt": "\"drank\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "içti",
+              "gitti",
+              "sahipti/yedi-içti",
+              "gördü"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Sık kullanılan düzensiz fiillerin geçmiş hâllerini öğrenmek.",
+          "go → went, have → had, see → saw gibi temel dönüşümleri kullanmak.",
+          "Hedef kelimeler: went, had, saw, ate, drank, took, bought"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

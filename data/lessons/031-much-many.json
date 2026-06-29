@@ -1,0 +1,695 @@
+{
+  "id": "031-much-many",
+  "title": "much / many",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Sayılabilen çoğul isimlerle many kullanmak.",
+    "Sayılamayan isimlerle much kullanmak.",
+    "How many...? ve How much...? sorularını ayırt etmek.",
+    "Miktar sorularına kısa cevap vermek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'nın önce ismin sayılabilen mi sayılamayan mı olduğuna karar vermesini isteyin. Ardından How many veya How much seçsin. Bu iki adımlı düşünme hataları azaltır.",
+    "todayGoal": "Sayılabilen çoğul isimlerle many kullanmak.",
+    "teachingTips": [
+      "Bu derste \"much / many\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "How many apples are there?",
+      "How much milk is there?",
+      "There are many bananas.",
+      "There isn't much rice."
+    ],
+    "listeningScripts": [
+      "\"The coach is preparing drinks for the team. She asks, 'How many players are there?' There are twelve players. She also asks, 'How much water do we need?' They need six large bottles.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "much / many Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "How _______ oranges are there?",
+          "options": [
+            "much",
+            "many",
+            "any"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "How _______ water do we need?",
+          "options": [
+            "much",
+            "many",
+            "some"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "How _______ eggs are there?",
+          "options": [
+            "much",
+            "many",
+            "some"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "How _______ bottles are in the bag?",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "How _______ rice is in the bowl?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: How / many / apples / are / there",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: How much bananas are there?",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How many apples does she need?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "much / many yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "much / many kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "many",
+        "much",
+        "many",
+        "many",
+        "much",
+        "How many apples are there",
+        "\"much\" burada hatalıdır; doğru cevap \"many\" olmalıdır.",
+        "Six.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "031-much-many-w1",
+    "031-much-many-w2",
+    "031-much-many-w3",
+    "031-much-many-w4",
+    "031-much-many-w5",
+    "031-much-many-w6",
+    "031-much-many-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "much / many",
+      "instructionTr": "Sayılabilen çoğul isimlerle many kullanmak.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 31",
+        "heroText": "How many apples are there?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Many, sayılabilen çoğul isimlerle kullanılır: - many apples - many sandwiches - many bottles Much, sayılamayan isimlerle kullanılır: - much water - much milk - much rice Soru kalıpları: - How many apples are there? - How much water is there? Kısaca: - Kaç tane? → How many - Ne kadar? → How much",
+      "content": {
+        "examples": [],
+        "noteTr": "Many, sayılabilen çoğul isimlerle kullanılır: - many apples - many sandwiches - many bottles Much, sayılamayan isimlerle kullanılır: - much water - much milk - much rice Soru kalıpları: - How many apples are there? - How much water is there? Kısaca: - Kaç tane? → How many - Ne kadar? → How much"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "How many apples are there?",
+          "How much milk is there?",
+          "There are many bananas.",
+          "There isn't much rice.",
+          "How many bottles do we need?",
+          "How much water do the players drink?",
+          "There aren't many sandwiches.",
+          "We don't need much cheese.",
+          "How many chairs are near the stage?",
+          "How much fruit juice is in the bottle?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Sayılabilen çoğul",
+            "many",
+            "How many apples...?"
+          ],
+          [
+            "Sayılamayan",
+            "much",
+            "How much water...?"
+          ]
+        ]
+      },
+      "explanationTr": "Sayılabilen çoğul isimlerle many kullanmak. Sayılamayan isimlerle much kullanmak. How many...? ve How much...? sorularını ayırt etmek. Miktar sorularına kısa cevap vermek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "How much apples? ❌ → How many apples? ✅",
+          "How many water? ❌ → How much water? ✅",
+          "many milk ❌ → much milk ✅",
+          "much sandwiches ❌ → many sandwiches ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "How _______ oranges are there?",
+      "content": {
+        "options": [
+          "much",
+          "many",
+          "any"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+          "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "How _______ water do we need?",
+      "content": {
+        "options": [
+          "much",
+          "many",
+          "some"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+          "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar.",
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "How _______ bottles are in the bag?",
+      "content": {
+        "answer": "many",
+        "accepted": [
+          "many"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"many\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Sayılabilen çoğul isimlerle many kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "How",
+          "many",
+          "apples",
+          "are",
+          "there"
+        ],
+        "answer": [
+          "How",
+          "many",
+          "apples",
+          "are",
+          "there"
+        ],
+        "explanationTr": "Doğru sıra: How many apples are there"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "How",
+          "much",
+          "bananas",
+          "are",
+          "there?"
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"much\" burada hatalıdır; doğru cevap \"many\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "apples",
+            "how many"
+          ],
+          [
+            "water",
+            "how much"
+          ],
+          [
+            "sandwiches",
+            "how many"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is checking the shopping list. She needs six apples, three bananas and two bottles of water. She does not need much bread, but she needs many tomatoes for the salad.",
+        "questions": [
+          {
+            "prompt": "How many apples does she need?",
+            "options": [
+              "Six.",
+              "Two.",
+              "No, she doesn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Six.\" olmalıdır.",
+              "\"Two.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Six.\".",
+              "\"No, she doesn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Six.\"."
+            ]
+          },
+          {
+            "prompt": "How many bottles of water does she need?",
+            "options": [
+              "No, she doesn't.",
+              "Two.",
+              "Six."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, she doesn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Two.\".",
+              "Doğru. Bu soruda cevap \"Two.\" olmalıdır.",
+              "\"Six.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Two.\"."
+            ]
+          },
+          {
+            "prompt": "Does she need much bread?",
+            "options": [
+              "Six.",
+              "Two.",
+              "No, she doesn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Six.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she doesn't.\".",
+              "\"Two.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she doesn't.\".",
+              "Doğru. Bu soruda cevap \"No, she doesn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "How many players are there?",
+      "content": {
+        "audioText": "\"The coach is preparing drinks for the team. She asks, 'How many players are there?' There are twelve players. She also asks, 'How much water do we need?' They need six large bottles.\"",
+        "questions": [
+          {
+            "prompt": "How many players are there?",
+            "options": [
+              "Twelve.",
+              "Six.",
+              "Water."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Twelve.\" olmalıdır.",
+              "\"Six.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Twelve.\".",
+              "\"Water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Twelve.\"."
+            ]
+          },
+          {
+            "prompt": "How many bottles do they need?",
+            "options": [
+              "Water.",
+              "Six.",
+              "Twelve."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Six.\".",
+              "Doğru. Bu soruda cevap \"Six.\" olmalıdır.",
+              "\"Twelve.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Six.\"."
+            ]
+          },
+          {
+            "prompt": "What drink do they need?",
+            "options": [
+              "Twelve.",
+              "Six.",
+              "Water."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Twelve.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Water.\".",
+              "\"Six.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Water.\".",
+              "Doğru. Bu soruda cevap \"Water.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki kelimelerle doğru soru kalıbını söyle: - apples - milk - sandwiches - rice - bottles",
+      "content": {
+        "sentenceStarters": [
+          "apples",
+          "milk",
+          "sandwiches",
+          "rice",
+          "bottles"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "How _______ eggs are there?",
+            "options": [
+              "much",
+              "many",
+              "some"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How _______ juice is there?",
+            "options": [
+              "much",
+              "many",
+              "any"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There aren't _______ sandwiches.",
+            "options": [
+              "much",
+              "many",
+              "a"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We don't need _______ rice.",
+            "options": [
+              "much",
+              "many",
+              "an"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How _______ bottles do the players need?",
+            "options": [
+              "much",
+              "many",
+              "some"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "How _______ bananas are in the basket?",
+            "options": [
+              "much",
+              "many",
+              "any"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How _______ milk is in the fridge?",
+            "options": [
+              "much",
+              "many",
+              "some"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There aren't _______ tomatoes.",
+            "options": [
+              "much",
+              "many",
+              "a"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We don't have _______ bread.",
+            "options": [
+              "much",
+              "many",
+              "an"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How _______ chairs are near the stage?",
+            "options": [
+              "much",
+              "many",
+              "any"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "031-much-many-w1",
+            "word": "many",
+            "example": "many apples",
+            "audioText": "many",
+            "prompt": "\"many\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çok sayıda",
+              "çok miktarda",
+              "liste",
+              "ihtiyaç duymak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "031-much-many-w2",
+            "word": "much",
+            "example": "much water",
+            "audioText": "much",
+            "prompt": "\"much\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çok sayıda",
+              "çok miktarda",
+              "liste",
+              "ihtiyaç duymak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "031-much-many-w3",
+            "word": "list",
+            "example": "a shopping list",
+            "audioText": "list",
+            "prompt": "\"list\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çok sayıda",
+              "çok miktarda",
+              "liste",
+              "ihtiyaç duymak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "031-much-many-w4",
+            "word": "need",
+            "example": "We need water.",
+            "audioText": "need",
+            "prompt": "\"need\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çok sayıda",
+              "çok miktarda",
+              "liste",
+              "ihtiyaç duymak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "031-much-many-w5",
+            "word": "drink",
+            "example": "The players drink water.",
+            "audioText": "drink",
+            "prompt": "\"drink\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "içmek/içecek",
+              "çok sayıda",
+              "çok miktarda",
+              "liste"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Sayılabilen çoğul isimlerle many kullanmak.",
+          "Sayılamayan isimlerle much kullanmak.",
+          "Hedef kelimeler: many, much, list, need, drink, large, salad"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

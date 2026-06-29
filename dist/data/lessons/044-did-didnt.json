@@ -1,0 +1,695 @@
+{
+  "id": "044-did-didnt",
+  "title": "did / didn't",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "didn't + fiilin yalın hâli ile olumsuz cümle kurmak.",
+    "Did + özne + fiilin yalın hâli? yapısını tanımak.",
+    "Geçmiş fiilin did/didn't sonrasında yalın hâle döndüğünü fark etmek.",
+    "Düzenli ve düzensiz fiillerle olumsuz cümleler kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Her olumlu cümleyi olumsuza çevirme oyunu oynayın: She went. → She didn't go. Özellikle fiilin yalın hâle dönmesini kontrol edin.",
+    "todayGoal": "didn't + fiilin yalın hâli ile olumsuz cümle kurmak.",
+    "teachingTips": [
+      "Bu derste \"did / didn't\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I didn't watch TV.",
+      "She didn't play volleyball.",
+      "He didn't clean his room.",
+      "We didn't visit the park."
+    ],
+    "listeningScripts": [
+      "\"The students planned a rehearsal, but the hall was closed. They didn't enter the building. They didn't move the equipment. They called the teacher and went home.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "did / didn't Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She didn't _______ to school.",
+          "options": [
+            "went",
+            "go",
+            "going"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They didn't _______ the match.",
+          "options": [
+            "watched",
+            "watch",
+            "watching"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She didn't _______ volleyball.",
+          "options": [
+            "played",
+            "play",
+            "playing"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I didn't _______ breakfast. (eat)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "We didn't _______ volleyball. (play)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: didn't / she / watch / TV",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He didn't ate lunch.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Why did Beyza stay at home?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "did / didn't yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "did / didn't kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "go",
+        "watch",
+        "play",
+        "eat",
+        "play",
+        "she didn't watch TV",
+        "\"ate\" burada hatalıdır; doğru cevap \"eat\" olmalıdır.",
+        "Because she was tired.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "044-did-didnt-w1",
+    "044-did-didnt-w2",
+    "044-did-didnt-w3",
+    "044-did-didnt-w4",
+    "044-did-didnt-w5",
+    "044-did-didnt-w6",
+    "044-did-didnt-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "did / didn't",
+      "instructionTr": "didn't + fiilin yalın hâli ile olumsuz cümle kurmak.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 44",
+        "heroText": "I didn't watch TV."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Past Simple olumsuz cümlelerinde didn't kullanırız: - I played. → I didn't play. - She went. → She didn't go. Çok önemli: didn't geldikten sonra fiil geçmiş hâlde kalmaz; yalın hâle döner. - didn't went ❌ - didn't go ✅ Soruya hazırlık: - Did you play? - Did she go?",
+      "content": {
+        "examples": [],
+        "noteTr": "Past Simple olumsuz cümlelerinde didn't kullanırız: - I played. → I didn't play. - She went. → She didn't go. Çok önemli: didn't geldikten sonra fiil geçmiş hâlde kalmaz; yalın hâle döner. - didn't went ❌ - didn't go ✅ Soruya hazırlık: - Did you play? - Did she go?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I didn't watch TV.",
+          "She didn't play volleyball.",
+          "He didn't clean his room.",
+          "We didn't visit the park.",
+          "They didn't study last night.",
+          "Beyza didn't go to school on Sunday.",
+          "The players didn't arrive late.",
+          "The coach didn't bring a new ball.",
+          "We didn't see the concert.",
+          "The students didn't forget the posters."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu",
+            "geçmiş fiil",
+            "She went."
+          ],
+          [
+            "Olumsuz",
+            "didn't + yalın fiil",
+            "She didn't go."
+          ],
+          [
+            "Soru",
+            "Did + özne + yalın fiil?",
+            "Did she go?"
+          ]
+        ]
+      },
+      "explanationTr": "didn't + fiilin yalın hâli ile olumsuz cümle kurmak. Did + özne + fiilin yalın hâli? yapısını tanımak. Geçmiş fiilin did/didn't sonrasında yalın hâle döndüğünü fark etmek. Düzenli ve düzensiz fiillerle olumsuz cümleler kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She didn't went. ❌ → She didn't go. ✅",
+          "They didn't played. ❌ → They didn't play. ✅",
+          "He not watched TV. ❌ → He didn't watch TV. ✅",
+          "Did she went? ❌ → Did she go? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She didn't _______ to school.",
+      "content": {
+        "options": [
+          "went",
+          "go",
+          "going"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. go seçeneği cümledeki hedef kurala uyar.",
+          "\"going\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They didn't _______ the match.",
+      "content": {
+        "options": [
+          "watched",
+          "watch",
+          "watching"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"watched\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watch\" çünkü watch seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. watch seçeneği cümledeki hedef kurala uyar.",
+          "\"watching\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watch\" çünkü watch seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I didn't _______ breakfast. (eat)",
+      "content": {
+        "answer": "eat",
+        "accepted": [
+          "eat"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"eat\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "didn't + fiilin yalın hâli ile olumsuz cümle kurmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "didn't",
+          "she",
+          "watch",
+          "TV"
+        ],
+        "answer": [
+          "she",
+          "didn't",
+          "watch",
+          "TV"
+        ],
+        "explanationTr": "Doğru sıra: she didn't watch TV"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "didn't",
+          "ate",
+          "lunch."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"ate\" burada hatalıdır; doğru cevap \"eat\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "went",
+            "didn't go"
+          ],
+          [
+            "watched",
+            "didn't watch"
+          ],
+          [
+            "ate",
+            "didn't eat"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Yesterday, Beyza stayed at home because she was tired. She didn't go to volleyball practice. She didn't watch TV, but she read a book and listened to music. In the evening, she felt better.",
+        "questions": [
+          {
+            "prompt": "Why did Beyza stay at home?",
+            "options": [
+              "Because she was tired.",
+              "No, she didn't.",
+              "She read a book and listened to music."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Because she was tired.\" olmalıdır.",
+              "\"No, she didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because she was tired.\".",
+              "\"She read a book and listened to music.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because she was tired.\"."
+            ]
+          },
+          {
+            "prompt": "Did she go to practice?",
+            "options": [
+              "She read a book and listened to music.",
+              "No, she didn't.",
+              "Because she was tired."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She read a book and listened to music.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she didn't.\".",
+              "Doğru. Bu soruda cevap \"No, she didn't.\" olmalıdır.",
+              "\"Because she was tired.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she didn't.\"."
+            ]
+          },
+          {
+            "prompt": "What did she do instead?",
+            "options": [
+              "Because she was tired.",
+              "No, she didn't.",
+              "She read a book and listened to music."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Because she was tired.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She read a book and listened to music.\".",
+              "\"No, she didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She read a book and listened to music.\".",
+              "Doğru. Bu soruda cevap \"She read a book and listened to music.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Was the hall open?",
+      "content": {
+        "audioText": "\"The students planned a rehearsal, but the hall was closed. They didn't enter the building. They didn't move the equipment. They called the teacher and went home.\"",
+        "questions": [
+          {
+            "prompt": "Was the hall open?",
+            "options": [
+              "No, it wasn't.",
+              "No, they didn't.",
+              "The teacher."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"No, it wasn't.\" olmalıdır.",
+              "\"No, they didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, it wasn't.\".",
+              "\"The teacher.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, it wasn't.\"."
+            ]
+          },
+          {
+            "prompt": "Did they enter the building?",
+            "options": [
+              "The teacher.",
+              "No, they didn't.",
+              "No, it wasn't."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The teacher.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they didn't.\".",
+              "Doğru. Bu soruda cevap \"No, they didn't.\" olmalıdır.",
+              "\"No, it wasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they didn't.\"."
+            ]
+          },
+          {
+            "prompt": "Who did they call?",
+            "options": [
+              "No, it wasn't.",
+              "No, they didn't.",
+              "The teacher."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"No, it wasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The teacher.\".",
+              "\"No, they didn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The teacher.\".",
+              "Doğru. Bu soruda cevap \"The teacher.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dün yapmadığın üç şeyi söyle: - I didn't ... - I didn't ... - I didn't ...",
+      "content": {
+        "sentenceStarters": [
+          "I didn't ...",
+          "I didn't ...",
+          "I didn't ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She didn't _______ volleyball.",
+            "options": [
+              "played",
+              "play",
+              "playing"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. play seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"played\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We didn't _______ to the park.",
+            "options": [
+              "went",
+              "go",
+              "gone"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. go seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He didn't _______ breakfast.",
+            "options": [
+              "ate",
+              "eat",
+              "eating"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. eat seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eat\" çünkü eat seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They didn't _______ the room.",
+            "options": [
+              "cleaned",
+              "clean",
+              "cleaning"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. clean seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"cleaned\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"clean\" çünkü clean seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Beyza didn't _______ late.",
+            "options": [
+              "arrive",
+              "arrived",
+              "arrives"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. arrive seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"arrived\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"arrive\" çünkü arrive seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I didn't _______ TV.",
+            "options": [
+              "watched",
+              "watch",
+              "watching"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. watch seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watched\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watch\" çünkü watch seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She didn't _______ a sandwich.",
+            "options": [
+              "ate",
+              "eat",
+              "eating"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. eat seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eat\" çünkü eat seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We didn't _______ our grandparents.",
+            "options": [
+              "visit",
+              "visited",
+              "visiting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. visit seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"visited\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"visit\" çünkü visit seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They didn't _______ the ball.",
+            "options": [
+              "bring",
+              "brought",
+              "bringing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. bring seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"brought\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bring\" çünkü bring seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He didn't _______ the poster.",
+            "options": [
+              "buy",
+              "bought",
+              "buying"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. buy seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"bought\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "044-did-didnt-w1",
+            "word": "didn't",
+            "example": "I didn't go.",
+            "audioText": "didn't",
+            "prompt": "\"didn't\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmadı",
+              "unutmak",
+              "aramak",
+              "kapalı"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "044-did-didnt-w2",
+            "word": "forget",
+            "example": "She didn't forget.",
+            "audioText": "forget",
+            "prompt": "\"forget\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmadı",
+              "unutmak",
+              "aramak",
+              "kapalı"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "044-did-didnt-w3",
+            "word": "call",
+            "example": "They called the teacher.",
+            "audioText": "call",
+            "prompt": "\"call\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmadı",
+              "unutmak",
+              "aramak",
+              "kapalı"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "044-did-didnt-w4",
+            "word": "closed",
+            "example": "The hall was closed.",
+            "audioText": "closed",
+            "prompt": "\"closed\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yapmadı",
+              "unutmak",
+              "aramak",
+              "kapalı"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "044-did-didnt-w5",
+            "word": "instead",
+            "example": "She read instead.",
+            "audioText": "instead",
+            "prompt": "\"instead\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yerine",
+              "yapmadı",
+              "unutmak",
+              "aramak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "didn't + fiilin yalın hâli ile olumsuz cümle kurmak.",
+          "Did + özne + fiilin yalın hâli? yapısını tanımak.",
+          "Hedef kelimeler: didn't, forget, call, closed, instead, plan, feel"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

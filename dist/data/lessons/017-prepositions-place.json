@@ -1,0 +1,699 @@
+{
+  "id": "017-prepositions-place",
+  "title": "Prepositions of Place",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek.",
+    "\"Where is / Where are\" sorularına doğru yer edatlarıyla cevap verebilmek.",
+    "Bir önceki derste öğrenilen \"There is/are\" yapısını yer edatlarıyla birleştirerek zengin cümleler kurabilmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu derste nesnelerin birbirlerine göre nerede olduklarını gösteren yer edatlarını (in, on, under, next to, behind, in front of, between) işledik. Çocuklar bazen \"next to\" ve \"in front of\" kelimelerindeki ekleri (\"to\" ve \"of\") unutabilmektedir. Evde nesnelerin yerini değiştirerek İngilizce pratik yapabilir, \"Where is the ball?\" sorusunu sorarak Beyza'dan \"It is under the table\" gibi tam cevaplar isteyebilirsiniz.",
+    "todayGoal": "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek.",
+    "teachingTips": [
+      "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "The pencil is on the desk. (Kalem sıranın üstünde.)",
+      "The books are in the bag. (Kitaplar çantanın içinde.)",
+      "The volleyball is under the chair. (Voleybol topu sandalyenin altında.)",
+      "The microphone is next to the guitar. (Mikrofon gitarın yanında.)"
+    ],
+    "listeningScripts": [
+      "We are at the concert. The band is on the stage. The drums are behind the singer. The microphones are in front of the guitar players. The fans are happy."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Prepositions of Place Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "The cat is _______ the box. Its body is inside the box.",
+          "options": [
+            "in",
+            "under",
+            "next to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The coach is standing _______ the net and the team.",
+          "options": [
+            "behind",
+            "between",
+            "in front of"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The teacher is standing _______ the students. She is looking at them.",
+          "options": [
+            "behind",
+            "in front of",
+            "in"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "The guitar is ________ (yanında) the bed.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "The singer is ________ (önünde) the microphone.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / the / ball / bed / under / the",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: The volleyball net is between of the two teams.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "in",
+        "behind",
+        "behind",
+        "next to",
+        "in front of",
+        "The ball is under the bed",
+        "\"between\" kelimesinden sonra \"of\" gelmez, doğrudan nesneler söylenir.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "017-prepositions-place-w1",
+    "017-prepositions-place-w2",
+    "017-prepositions-place-w3",
+    "017-prepositions-place-w4",
+    "017-prepositions-place-w5",
+    "017-prepositions-place-w6",
+    "017-prepositions-place-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Prepositions of Place",
+      "instructionTr": "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 17",
+        "heroText": "The pencil is on the desk. (Kalem sıranın üstünde.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Beyza, bir eşyanın nerede olduğunu anlatmak için yer edatlarını (prepositions of place) kullanırız. “Voleybol topun nerede?” sorusuna İngilizce cevap verirken topun bir kutunun içinde, masanın üstünde veya sandalyenin altında olduğunu bu kelimelerle belirtiriz.",
+      "content": {
+        "examples": [
+          "İşte en çok kullanacağımız 7 temel yer edatımız:\n1. in: İçinde (The ball is in the box - Top kutunun içinde.)\n2. on: Üstünde (The ball is on the box - Top kutunun üstünde, temas ediyor.)\n3. under: Altında (The ball is under the box - Top kutunun altında.)\n4. next to: Bitişiğinde / Yanında (The ball is next to the box - Top kutunun bitişiğinde.)\n5. behind: Arkasında (The ball is behind the box - Top kutunun arkasında.)\n6. in front of: Önünde (The ball is in front of the box - Top kutunun önünde.)\n7. between: Arasında (The ball is between the boxes - Top kutuların arasında. *Not: between kullanıyorsak iki şeyin arasında demektir, bu yüzden \"and\" kullanırız ya da çoğul bir kelime söyleriz.*)",
+          "Soru sorarken Where is (Nerede - tekil) veya Where are (Neredeler - çoğul) kalıplarını kullanırız."
+        ],
+        "noteTr": "Beyza, bir eşyanın nerede olduğunu anlatmak için yer edatlarını (prepositions of place) kullanırız. “Voleybol topun nerede?” sorusuna İngilizce cevap verirken topun bir kutunun içinde, masanın üstünde veya sandalyenin altında olduğunu bu kelimelerle belirtiriz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "The pencil is on the desk. (Kalem sıranın üstünde.)",
+          "The books are in the bag. (Kitaplar çantanın içinde.)",
+          "The volleyball is under the chair. (Voleybol topu sandalyenin altında.)",
+          "The microphone is next to the guitar. (Mikrofon gitarın yanında.)",
+          "The singer is in front of the band. (Şarkıcı grubun önünde.)",
+          "The coach is behind the players. (Antrenör oyuncuların arkasında.)",
+          "The net is between the two teams. (File iki takımın arasında.)",
+          "Where is the concert ticket? It is on the table. (Konser bileti nerede? O masanın üstünde.)",
+          "There is a dog under the car. (Arabanın altında bir köpek var.)",
+          "The school is next to the sports centre. (Okul spor merkezinin yanında.)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "in",
+            "inside",
+            "in the bag",
+            "çantanın içinde"
+          ],
+          [
+            "on",
+            "on a surface",
+            "on the desk",
+            "masanın üstünde"
+          ],
+          [
+            "under",
+            "below",
+            "under the chair",
+            "sandalyenin altında"
+          ],
+          [
+            "next to",
+            "beside",
+            "next to the bed",
+            "yatağın yanında"
+          ],
+          [
+            "behind",
+            "at the back of",
+            "behind the door",
+            "kapının arkasında"
+          ],
+          [
+            "in front of",
+            "at the front of",
+            "in front of the window",
+            "pencerenin önünde"
+          ],
+          [
+            "between",
+            "in the middle of two",
+            "between the desk and the bed",
+            "masa ile yatağın arasında"
+          ]
+        ]
+      },
+      "explanationTr": "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek. \"Where is / Where are\" sorularına doğru yer edatlarıyla cevap verebilmek. Bir önceki derste öğrenilen \"There is/are\" yapısını yer edatlarıyla birleştirerek zengin cümleler kurabilmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* The ball is in front the box. ❌\n* *Doğrusu:* The ball is in front of the box. (\"in front\" her zaman \"of\" ile birlikte kullanılır.)\n* *Hata:* The bag is next the desk. ❌\n* *Doğrusu:* The bag is next to the desk. (\"next\" kelimesi yer belirtirken \"to\" almalıdır.)\n* *Hata:* The poster is in the wall. ❌\n* *Doğrusu:* The poster is on the wall. (Poster duvarın içine giremeyeceği için, yüzeyine yapıştığından \"on\" kullanılır.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "The cat is _______ the box. Its body is inside the box.",
+      "content": {
+        "options": [
+          "in",
+          "under",
+          "next to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"under\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"next to\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "The coach is standing _______ the net and the team.",
+      "content": {
+        "options": [
+          "behind",
+          "between",
+          "in front of"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"between\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"in front of\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "The guitar is ________ (yanında) the bed.",
+      "content": {
+        "answer": "next to",
+        "accepted": [
+          "next to"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "Yanında/bitişiğinde anlamına gelir."
+      },
+      "hintTr": "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "the",
+          "ball",
+          "bed",
+          "under",
+          "the"
+        ],
+        "answer": [
+          "The",
+          "ball",
+          "is",
+          "under",
+          "the",
+          "bed"
+        ],
+        "explanationTr": "Doğru sıra: The ball is under the bed"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "The",
+          "volleyball",
+          "net",
+          "is",
+          "between",
+          "of",
+          "the",
+          "two",
+          "teams."
+        ],
+        "wrongIndex": 4,
+        "explanationTr": "\"between\" kelimesinden sonra \"of\" gelmez, doğrudan nesneler söylenir."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "do"
+          ],
+          [
+            "She",
+            "does"
+          ],
+          [
+            "They",
+            "do"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "This is Kaan's room. There is a desk in his room. His English books are on the desk. His volleyball is under the desk. There is a guitar next to his bed. He loves his room.",
+        "questions": [
+          {
+            "prompt": "Where are the English books?",
+            "options": [
+              "They are on the desk.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: They are on the desk.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: They are on the desk.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: They are on the desk."
+            ]
+          },
+          {
+            "prompt": "Where is the volleyball?",
+            "options": [
+              "It is under the desk.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: It is under the desk.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: It is under the desk.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: It is under the desk."
+            ]
+          },
+          {
+            "prompt": "Is the guitar under the bed?",
+            "options": [
+              "No, it is next to the bed.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: No, it is next to the bed.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: No, it is next to the bed.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: No, it is next to the bed."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where is the music group?",
+      "content": {
+        "audioText": "We are at the concert. The band is on the stage. The drums are behind the singer. The microphones are in front of the guitar players. The fans are happy.",
+        "options": [
+          "The band is on the stage.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. The band is on the stage.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "*Soru:* Beyza, evinde çok sevdiğin iki eşyanı seçip (örneğin kalem, oyuncak, top) şu an nerede olduklarını İngilizce yer edatları (in, on, under vb.) kullanarak söyleyebilir misin?\n*İpucu Örneği:* \"My ball is under the chair. My book is on the desk.\"",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "The teacher is standing _______ the students. She is looking at them.",
+            "options": [
+              "behind",
+              "in front of",
+              "in"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "My shoes are _______ the bed. I can't find them.",
+            "options": [
+              "under",
+              "on",
+              "next"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The sports centre is _______ the school and the hospital.",
+            "options": [
+              "between",
+              "next to",
+              "behind"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There is a nice picture _______ the wall.",
+            "options": [
+              "in",
+              "under",
+              "on"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The ball is _______ the box. Open the box and take it.",
+            "options": [
+              "in",
+              "on",
+              "behind"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Where is my bag? It is _______ the desk.",
+            "options": [
+              "under",
+              "next",
+              "between"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The players are waiting _______ the coach.",
+            "options": [
+              "in front of",
+              "in front",
+              "on"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There is a big clock _______ the whiteboard.",
+            "options": [
+              "next to",
+              "next",
+              "between"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The microphone is _______ the singer's hand.",
+            "options": [
+              "under",
+              "in",
+              "next to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The dog is hiding _______ the tree.",
+            "options": [
+              "on",
+              "between",
+              "behind"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "017-prepositions-place-w1",
+            "word": "behind",
+            "example": "The ball is behind the box. (Top kutunun arkasında.)",
+            "audioText": "behind",
+            "prompt": "İngilizce-Türkçe eşleştir: behind",
+            "options": [
+              "Altında",
+              "Arasında",
+              "Arkasında",
+              "Yanında / Bitişiğinde"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "017-prepositions-place-w2",
+            "word": "between",
+            "example": "The net is between them. (File onların arasında.)",
+            "audioText": "between",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Altında",
+              "Arasında",
+              "Arkasında",
+              "Yanında / Bitişiğinde"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "017-prepositions-place-w3",
+            "word": "under",
+            "example": "The shoes are under the bed. (Ayakkabılar yatağın altında.)",
+            "audioText": "under",
+            "prompt": "Eksik harfi tamamla: _nder",
+            "options": [
+              "behind",
+              "between",
+              "next to",
+              "under"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "017-prepositions-place-w4",
+            "word": "next to",
+            "example": "The desk is next to the bed. (Çalışma masası yatağın yanında.)",
+            "audioText": "next to",
+            "prompt": "Karışık harfleri düzelt: ot txen",
+            "options": [
+              "behind",
+              "between",
+              "next to",
+              "under"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "017-prepositions-place-w5",
+            "word": "wall",
+            "example": "The poster is on the wall. (Afiş duvarın üzerinde.)",
+            "audioText": "wall",
+            "prompt": "Kelimeyi doğru cümleye koy: The poster is on the ___. (Afiş duvarın üzerinde.)",
+            "options": [
+              "behind",
+              "between",
+              "under",
+              "wall"
+            ],
+            "correctIndex": 3
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Nesnelerin birbirlerine göre nerede bulunduklarını tarif eden temel yer edatlarını (in, on, under, next to, behind, in front of, between) kullanabilmek.",
+          "\"Where is / Where are\" sorularına doğru yer edatlarıyla cevap verebilmek.",
+          "Hedef kelimeler: behind, between, under, next to, wall, floor, ticket"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

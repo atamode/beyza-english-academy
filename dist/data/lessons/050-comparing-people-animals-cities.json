@@ -1,0 +1,707 @@
+{
+  "id": "050-comparing-people-animals-cities",
+  "title": "Comparing People, Animals and Cities",
+  "level": "A2.1",
+  "module": "Karşılaştırma",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Comparative ve superlative yapılarını birlikte kullanmak.",
+    "İnsan, hayvan ve şehirlerle ilgili uygun sıfatlar seçmek.",
+    "Basit verileri okuyup karşılaştırma cümlesi kurmak.",
+    "Kısa bir karşılaştırma paragrafı yazmak.",
+    "Tarafsız ve saygılı karşılaştırma dili kullanmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Harita, hayvan kartı veya basit tablo kullanın. Beyza önce veriyi okusun, sonra iki comparative ve bir superlative cümle kursun. Karşılaştırmaların saygılı ve nesnel olmasına dikkat edin.",
+    "todayGoal": "Comparative ve superlative yapılarını birlikte kullanmak.",
+    "teachingTips": [
+      "Bu derste \"Comparing People, Animals and Cities\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "A horse is bigger than a dog.",
+      "A cheetah is faster than a lion.",
+      "An elephant is heavier than a horse.",
+      "A dolphin is more intelligent than many fish."
+    ],
+    "listeningScripts": [
+      "\"Three animals are in the chart: a horse, an elephant and a cheetah. The elephant is the heaviest. The cheetah is the fastest. The horse is taller than the cheetah but lighter than the elephant.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Comparing People, Animals and Cities Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "A cheetah is _______ than a lion.",
+          "options": [
+            "faster",
+            "fastest",
+            "the faster"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The elephant is _______ animal in this group.",
+          "options": [
+            "heavier",
+            "the heaviest",
+            "more heavy"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "A horse is _______ than a dog.",
+          "options": [
+            "bigger",
+            "biggest",
+            "the bigger"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "İstanbul is _______ than Kayseri. (crowded)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "The blue whale is the _______ animal. (big)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: a lion / heavier / is / than / a dog",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: This city is more quieter than that city.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Which city is warmer in winter?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Comparing People, Animals and Cities yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Comparing People, Animals and Cities kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "faster",
+        "the heaviest",
+        "bigger",
+        "more crowded",
+        "biggest",
+        "a lion is heavier than a dog",
+        "\"more quieter\" burada hatalıdır; doğru cevap \"quieter\" olmalıdır.",
+        "Antalya.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "050-comparing-people-animals-cities-w1",
+    "050-comparing-people-animals-cities-w2",
+    "050-comparing-people-animals-cities-w3",
+    "050-comparing-people-animals-cities-w4",
+    "050-comparing-people-animals-cities-w5",
+    "050-comparing-people-animals-cities-w6",
+    "050-comparing-people-animals-cities-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Comparing People, Animals and Cities",
+      "instructionTr": "Comparative ve superlative yapılarını birlikte kullanmak.",
+      "content": {
+        "eyebrow": "Karşılaştırma · DERS 50",
+        "heroText": "A horse is bigger than a dog."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bu derste comparative ve superlative yapılarını birlikte kullanacağız. İki şeyi karşılaştırırken: - A lion is heavier than a dog. - City A is quieter than City B. Bir grubun en üstününü söylerken: - The cheetah is the fastest animal in the list. - City C is the most crowded city. İnsanları karşılaştırırken dış görünüş dışında beceri, hız, yaş veya davranış gibi saygılı özellikler kullanılmalıdır: - Ece is faster than Mina. - Beyza is the youngest player. - Zeynep is more patient than Elif. Bir paragraf düzeni: 1. Konuyu tanıt. 2. İki comparative cümle kur. 3. Bir superlative cümle kur. 4. Kendi görüşünü kısa biçimde ekle.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bu derste comparative ve superlative yapılarını birlikte kullanacağız. İki şeyi karşılaştırırken: - A lion is heavier than a dog. - City A is quieter than City B. Bir grubun en üstününü söylerken: - The cheetah is the fastest animal in the list. - City C is the most crowded city. İnsanları karşılaştırırken dış görünüş dışında beceri, hız, yaş veya davranış gibi saygılı özellikler kullanılmalıdır: - Ece is faster than Mina. - Beyza is the youngest player. - Zeynep is more patient than Elif. Bir paragraf düzeni: 1. Konuyu tanıt. 2. İki comparative cümle kur. 3. Bir superlative cümle kur. 4. Kendi görüşünü kısa biçimde ekle."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "A horse is bigger than a dog.",
+          "A cheetah is faster than a lion.",
+          "An elephant is heavier than a horse.",
+          "A dolphin is more intelligent than many fish.",
+          "The blue whale is the biggest animal.",
+          "Kayseri is colder than Antalya in winter.",
+          "İstanbul is more crowded than Kayseri.",
+          "A small town is usually quieter than a large city.",
+          "Beyza is younger than her sister.",
+          "The tallest player is standing near the net."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "İki şeyi karşılaştırma",
+            "comparative + than",
+            "A is bigger than B."
+          ],
+          [
+            "Bir grubun en üstünü",
+            "the + superlative",
+            "A is the biggest."
+          ],
+          [
+            "Uzun sıfat karşılaştırma",
+            "more + adjective",
+            "more crowded than"
+          ],
+          [
+            "Uzun sıfat üstünlük",
+            "the most + adjective",
+            "the most crowded"
+          ]
+        ]
+      },
+      "explanationTr": "Comparative ve superlative yapılarını birlikte kullanmak. İnsan, hayvan ve şehirlerle ilgili uygun sıfatlar seçmek. Basit verileri okuyup karşılaştırma cümlesi kurmak. Kısa bir karşılaştırma paragrafı yazmak. Tarafsız ve saygılı karşılaştırma dili kullanmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "İstanbul is more bigger than Kayseri. ❌ → İstanbul is bigger than Kayseri. ✅",
+          "A cheetah is the faster animal. ❌ → A cheetah is the fastest animal. ✅",
+          "Beyza is youngest than Ece. ❌ → Beyza is younger than Ece. ✅",
+          "Bir kişiyi küçümseyen veya kırıcı karşılaştırmalardan kaçınılmalıdır."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "A cheetah is _______ than a lion.",
+      "content": {
+        "options": [
+          "faster",
+          "fastest",
+          "the faster"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. faster seçeneği cümledeki hedef kurala uyar.",
+          "\"fastest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"faster\" çünkü faster seçeneği cümledeki hedef kurala uyar.",
+          "\"the faster\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"faster\" çünkü faster seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "The elephant is _______ animal in this group.",
+      "content": {
+        "options": [
+          "heavier",
+          "the heaviest",
+          "more heavy"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"heavier\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the heaviest\" çünkü the heaviest seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. the heaviest seçeneği cümledeki hedef kurala uyar.",
+          "\"more heavy\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the heaviest\" çünkü the heaviest seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "İstanbul is _______ than Kayseri. (crowded)",
+      "content": {
+        "answer": "more crowded",
+        "accepted": [
+          "more crowded"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"more crowded\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Comparative ve superlative yapılarını birlikte kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "a lion",
+          "heavier",
+          "is",
+          "than",
+          "a dog"
+        ],
+        "answer": [
+          "a lion",
+          "is",
+          "heavier",
+          "than",
+          "a dog"
+        ],
+        "explanationTr": "Doğru sıra: a lion is heavier than a dog"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "This",
+          "city",
+          "is",
+          "more",
+          "quieter",
+          "than",
+          "that",
+          "city."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"more quieter\" burada hatalıdır; doğru cevap \"quieter\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "cheetah",
+            "faster than a lion"
+          ],
+          [
+            "elephant",
+            "heavier than a horse"
+          ],
+          [
+            "small town",
+            "quieter than a large city"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Kayseri and Antalya are different cities. Antalya is warmer than Kayseri in winter. Kayseri is usually quieter than Antalya in the summer tourist season. İstanbul is more crowded than both cities. Each city has different advantages.",
+        "questions": [
+          {
+            "prompt": "Which city is warmer in winter?",
+            "options": [
+              "Antalya.",
+              "İstanbul.",
+              "No, they aren't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Antalya.\" olmalıdır.",
+              "\"İstanbul.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Antalya.\".",
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Antalya.\"."
+            ]
+          },
+          {
+            "prompt": "Which city is more crowded than both?",
+            "options": [
+              "No, they aren't.",
+              "İstanbul.",
+              "Antalya."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"İstanbul.\".",
+              "Doğru. Bu soruda cevap \"İstanbul.\" olmalıdır.",
+              "\"Antalya.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"İstanbul.\"."
+            ]
+          },
+          {
+            "prompt": "Are all three cities the same?",
+            "options": [
+              "Antalya.",
+              "İstanbul.",
+              "No, they aren't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Antalya.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "\"İstanbul.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "Doğru. Bu soruda cevap \"No, they aren't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Which animal is the heaviest?",
+      "content": {
+        "audioText": "\"Three animals are in the chart: a horse, an elephant and a cheetah. The elephant is the heaviest. The cheetah is the fastest. The horse is taller than the cheetah but lighter than the elephant.\"",
+        "questions": [
+          {
+            "prompt": "Which animal is the heaviest?",
+            "options": [
+              "The elephant.",
+              "The cheetah.",
+              "No, it isn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"The elephant.\" olmalıdır.",
+              "\"The cheetah.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The elephant.\".",
+              "\"No, it isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The elephant.\"."
+            ]
+          },
+          {
+            "prompt": "Which animal is the fastest?",
+            "options": [
+              "No, it isn't.",
+              "The cheetah.",
+              "The elephant."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, it isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The cheetah.\".",
+              "Doğru. Bu soruda cevap \"The cheetah.\" olmalıdır.",
+              "\"The elephant.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The cheetah.\"."
+            ]
+          },
+          {
+            "prompt": "Is the horse heavier than the elephant?",
+            "options": [
+              "The elephant.",
+              "The cheetah.",
+              "No, it isn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"The elephant.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, it isn't.\".",
+              "\"The cheetah.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, it isn't.\".",
+              "Doğru. Bu soruda cevap \"No, it isn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir kategori seç: - üç hayvan - üç şehir - üç sporcu özelliği En az iki comparative ve bir superlative cümle kur.",
+      "content": {
+        "sentenceStarters": [
+          "üç hayvan",
+          "üç şehir",
+          "üç sporcu özelliği"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "A horse is _______ than a dog.",
+            "options": [
+              "bigger",
+              "biggest",
+              "the bigger"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. bigger seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"biggest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bigger\" çünkü bigger seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The cheetah is _______ animal here.",
+            "options": [
+              "faster",
+              "the fastest",
+              "more fast"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. the fastest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"faster\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the fastest\" çünkü the fastest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "İstanbul is _______ crowded than Kayseri.",
+            "options": [
+              "more",
+              "most",
+              "the most"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. more seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"most\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The elephant is _______ than the horse.",
+            "options": [
+              "heavier",
+              "heaviest",
+              "the heavier"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. heavier seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"heaviest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heavier\" çünkü heavier seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "This is _______ city in the list.",
+            "options": [
+              "the most modern",
+              "more modern",
+              "modernest"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the most modern seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"more modern\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most modern\" çünkü the most modern seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "A dolphin is _______ intelligent than many fish.",
+            "options": [
+              "more",
+              "most",
+              "the most"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. more seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"most\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The blue whale is _______ animal.",
+            "options": [
+              "bigger",
+              "the biggest",
+              "more big"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. the biggest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"bigger\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the biggest\" çünkü the biggest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "A village is usually _______ than a large city.",
+            "options": [
+              "quieter",
+              "quietest",
+              "the quieter"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. quieter seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"quietest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"quieter\" çünkü quieter seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The cheetah is _______ animal in the chart.",
+            "options": [
+              "the fastest",
+              "faster",
+              "the more fast"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the fastest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"faster\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the fastest\" çünkü the fastest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Kayseri is _______ than Antalya in winter.",
+            "options": [
+              "colder",
+              "coldest",
+              "the colder"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. colder seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"coldest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"colder\" çünkü colder seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "050-comparing-people-animals-cities-w1",
+            "word": "crowded",
+            "example": "more crowded than",
+            "audioText": "crowded",
+            "prompt": "\"crowded\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalabalık",
+              "ılık/sıcak",
+              "soğuk",
+              "zeki"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "050-comparing-people-animals-cities-w2",
+            "word": "warm",
+            "example": "warmer than",
+            "audioText": "warm",
+            "prompt": "\"warm\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalabalık",
+              "ılık/sıcak",
+              "soğuk",
+              "zeki"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "050-comparing-people-animals-cities-w3",
+            "word": "cold",
+            "example": "colder than",
+            "audioText": "cold",
+            "prompt": "\"cold\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalabalık",
+              "ılık/sıcak",
+              "soğuk",
+              "zeki"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "050-comparing-people-animals-cities-w4",
+            "word": "intelligent",
+            "example": "more intelligent than",
+            "audioText": "intelligent",
+            "prompt": "\"intelligent\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalabalık",
+              "ılık/sıcak",
+              "soğuk",
+              "zeki"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "050-comparing-people-animals-cities-w5",
+            "word": "patient",
+            "example": "more patient than",
+            "audioText": "patient",
+            "prompt": "\"patient\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sabırlı",
+              "kalabalık",
+              "ılık/sıcak",
+              "soğuk"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Comparative ve superlative yapılarını birlikte kullanmak.",
+          "İnsan, hayvan ve şehirlerle ilgili uygun sıfatlar seçmek.",
+          "Hedef kelimeler: crowded, warm, cold, intelligent, patient, village, advantage"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

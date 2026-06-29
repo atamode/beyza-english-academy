@@ -1,0 +1,697 @@
+{
+  "id": "058-already-yet",
+  "title": "already / yet",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "already ile tamamlanmış eylemleri anlatmak.",
+    "yet ile soru ve olumsuz cümleler kurmak.",
+    "already ve yet kelimelerinin cümledeki yerini öğrenmek.",
+    "Günlük görevler ve hazırlıklar hakkında konuşmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Gerçek günlük görevleri kullanın. Beyza'dan \"çoktan yaptım\" ve \"henüz yapmadım\" cümleleri kurmasını isteyin.",
+    "todayGoal": "already ile tamamlanmış eylemleri anlatmak.",
+    "teachingTips": [
+      "Bu derste \"already / yet\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I have already finished.",
+      "She has already packed her bag.",
+      "We have already eaten.",
+      "They have already arrived."
+    ],
+    "listeningScripts": [
+      "\"The students are preparing a small show. They have already put the posters on the wall. They haven't checked the microphones yet. The teacher has already opened the hall, but the audience hasn't arrived yet.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "already / yet Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I have _______ done my homework.",
+          "options": [
+            "already",
+            "yet",
+            "ago"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Have you finished _______?",
+          "options": [
+            "already at the end",
+            "yet",
+            "never"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She has _______ finished.",
+          "options": [
+            "already",
+            "yet",
+            "ago"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "She has _______ packed her bag.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "We haven't eaten _______.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: already / has / she / finished",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I haven't yet my homework finished.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What has Beyza already packed?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "already / yet yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "already / yet kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "already",
+        "yet",
+        "already",
+        "already",
+        "yet",
+        "she has already finished",
+        "\"haven't\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır.",
+        "Her sports shoes and water bottle.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "058-already-yet-w1",
+    "058-already-yet-w2",
+    "058-already-yet-w3",
+    "058-already-yet-w4",
+    "058-already-yet-w5",
+    "058-already-yet-w6",
+    "058-already-yet-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "already / yet",
+      "instructionTr": "already ile tamamlanmış eylemleri anlatmak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 58",
+        "heroText": "I have already finished."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Already, \"çoktan\" anlamına gelir ve genellikle olumlu cümlede kullanılır: - I have already finished my homework. - She has already packed her bag. Yet, \"henüz\" anlamına gelir ve genellikle soru veya olumsuz cümlenin sonunda kullanılır: - Have you finished yet? - I haven't finished yet. Kural: - have/has + already + V3 - haven't/hasn't + V3 + yet - Have/Has + özne + V3 + yet?",
+      "content": {
+        "examples": [],
+        "noteTr": "Already, \"çoktan\" anlamına gelir ve genellikle olumlu cümlede kullanılır: - I have already finished my homework. - She has already packed her bag. Yet, \"henüz\" anlamına gelir ve genellikle soru veya olumsuz cümlenin sonunda kullanılır: - Have you finished yet? - I haven't finished yet. Kural: - have/has + already + V3 - haven't/hasn't + V3 + yet - Have/Has + özne + V3 + yet?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I have already finished.",
+          "She has already packed her bag.",
+          "We have already eaten.",
+          "They have already arrived.",
+          "I haven't started yet.",
+          "He hasn't called yet.",
+          "Have you finished yet?",
+          "Has the team arrived yet?",
+          "The students have already prepared the stage.",
+          "The coach hasn't checked the net yet."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "already",
+            "olumlu cümle",
+            "She has already finished."
+          ],
+          [
+            "yet",
+            "olumsuz cümle sonu",
+            "She hasn't finished yet."
+          ],
+          [
+            "yet",
+            "soru sonu",
+            "Has she finished yet?"
+          ]
+        ]
+      },
+      "explanationTr": "already ile tamamlanmış eylemleri anlatmak. yet ile soru ve olumsuz cümleler kurmak. already ve yet kelimelerinin cümledeki yerini öğrenmek. Günlük görevler ve hazırlıklar hakkında konuşmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I already have finished. başlangıç düzeyinde hedef biçim → I have already finished. ✅",
+          "She hasn't yet finished. mümkün olsa da hedef biçim → She hasn't finished yet. ✅",
+          "Have you yet finished? ❌ → Have you finished yet? ✅",
+          "He has already went. ❌ → He has already gone. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I have _______ done my homework.",
+      "content": {
+        "options": [
+          "already",
+          "yet",
+          "ago"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. already seçeneği cümledeki hedef kurala uyar.",
+          "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar.",
+          "\"ago\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Have you finished _______?",
+      "content": {
+        "options": [
+          "already at the end",
+          "yet",
+          "never"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"already at the end\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+          "\"never\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "She has _______ packed her bag.",
+      "content": {
+        "answer": "already",
+        "accepted": [
+          "already"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"already\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "already ile tamamlanmış eylemleri anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "already",
+          "has",
+          "she",
+          "finished"
+        ],
+        "answer": [
+          "she",
+          "has",
+          "already",
+          "finished"
+        ],
+        "explanationTr": "Doğru sıra: she has already finished"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "haven't",
+          "finished",
+          "my",
+          "homework",
+          "already."
+        ],
+        "wrongIndex": 5,
+        "explanationTr": "Olumsuz c?mle sonunda \"already\" de?il \"yet\" kullan?l?r. Do?ru c?mle: \"I haven't finished my homework yet.\""
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I have already",
+            "finished."
+          ],
+          [
+            "I haven't",
+            "finished yet."
+          ],
+          [
+            "Have you",
+            "finished yet?"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is getting ready for volleyball practice. She has already packed her sports shoes and water bottle. She hasn't put her towel in the bag yet. Her father has already prepared the car. They haven't left the house yet.",
+        "questions": [
+          {
+            "prompt": "What has Beyza already packed?",
+            "options": [
+              "Her sports shoes and water bottle.",
+              "Her towel.",
+              "No, they haven't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Her sports shoes and water bottle.\" olmalıdır.",
+              "\"Her towel.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her sports shoes and water bottle.\".",
+              "\"No, they haven't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her sports shoes and water bottle.\"."
+            ]
+          },
+          {
+            "prompt": "What hasn't she packed yet?",
+            "options": [
+              "No, they haven't.",
+              "Her towel.",
+              "Her sports shoes and water bottle."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they haven't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her towel.\".",
+              "Doğru. Bu soruda cevap \"Her towel.\" olmalıdır.",
+              "\"Her sports shoes and water bottle.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her towel.\"."
+            ]
+          },
+          {
+            "prompt": "Have they left the house yet?",
+            "options": [
+              "Her sports shoes and water bottle.",
+              "Her towel.",
+              "No, they haven't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Her sports shoes and water bottle.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they haven't.\".",
+              "\"Her towel.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they haven't.\".",
+              "Doğru. Bu soruda cevap \"No, they haven't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What have the students already done?",
+      "content": {
+        "audioText": "\"The students are preparing a small show. They have already put the posters on the wall. They haven't checked the microphones yet. The teacher has already opened the hall, but the audience hasn't arrived yet.\"",
+        "questions": [
+          {
+            "prompt": "What have the students already done?",
+            "options": [
+              "They have put the posters on the wall.",
+              "The microphones.",
+              "No, it hasn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"They have put the posters on the wall.\" olmalıdır.",
+              "\"The microphones.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They have put the posters on the wall.\".",
+              "\"No, it hasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They have put the posters on the wall.\"."
+            ]
+          },
+          {
+            "prompt": "What haven't they checked yet?",
+            "options": [
+              "No, it hasn't.",
+              "The microphones.",
+              "They have put the posters on the wall."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, it hasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The microphones.\".",
+              "Doğru. Bu soruda cevap \"The microphones.\" olmalıdır.",
+              "\"They have put the posters on the wall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The microphones.\"."
+            ]
+          },
+          {
+            "prompt": "Has the audience arrived yet?",
+            "options": [
+              "They have put the posters on the wall.",
+              "The microphones.",
+              "No, it hasn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"They have put the posters on the wall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, it hasn't.\".",
+              "\"The microphones.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, it hasn't.\".",
+              "Doğru. Bu soruda cevap \"No, it hasn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bugünkü görevlerinden söz et: - I have already ... - I haven't ... yet. - Have you ... yet?",
+      "content": {
+        "sentenceStarters": [
+          "I have already ...",
+          "I haven't ... yet.",
+          "Have you ... yet?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She has _______ finished.",
+            "options": [
+              "already",
+              "yet",
+              "ago"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. already seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I haven't eaten _______.",
+            "options": [
+              "already",
+              "yet",
+              "ever"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"already\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Have they arrived _______?",
+            "options": [
+              "yet",
+              "already at the end",
+              "never"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"already at the end\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have already _______ the room.",
+            "options": [
+              "cleaned",
+              "clean",
+              "cleaning"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. cleaned seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"clean\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cleaned\" çünkü cleaned seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He hasn't _______ yet.",
+            "options": [
+              "called",
+              "call",
+              "calling"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. called seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"call\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"called\" çünkü called seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I have _______ done the task.",
+            "options": [
+              "already",
+              "yet",
+              "last"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. already seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She hasn't finished _______.",
+            "options": [
+              "yet",
+              "already",
+              "ever"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"already\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Has the coach arrived _______?",
+            "options": [
+              "yet",
+              "ago",
+              "last"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ago\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They have already _______.",
+            "options": [
+              "left",
+              "leave",
+              "leaving"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. left seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"leave\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"left\" çünkü left seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We haven't _______ the film yet.",
+            "options": [
+              "seen",
+              "saw",
+              "see"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. seen seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "058-already-yet-w1",
+            "word": "already",
+            "example": "I have already finished.",
+            "audioText": "already",
+            "prompt": "\"already\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çoktan",
+              "henüz",
+              "çantaya koymak",
+              "havlu"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "058-already-yet-w2",
+            "word": "yet",
+            "example": "I haven't finished yet.",
+            "audioText": "yet",
+            "prompt": "\"yet\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çoktan",
+              "henüz",
+              "çantaya koymak",
+              "havlu"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "058-already-yet-w3",
+            "word": "pack",
+            "example": "She has packed her bag.",
+            "audioText": "pack",
+            "prompt": "\"pack\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çoktan",
+              "henüz",
+              "çantaya koymak",
+              "havlu"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "058-already-yet-w4",
+            "word": "towel",
+            "example": "She hasn't packed her towel yet.",
+            "audioText": "towel",
+            "prompt": "\"towel\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çoktan",
+              "henüz",
+              "çantaya koymak",
+              "havlu"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "058-already-yet-w5",
+            "word": "arrive",
+            "example": "Has the coach arrived yet?",
+            "audioText": "arrive",
+            "prompt": "\"arrive\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "varmak",
+              "çoktan",
+              "henüz",
+              "çantaya koymak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "already ile tamamlanmış eylemleri anlatmak.",
+          "yet ile soru ve olumsuz cümleler kurmak.",
+          "Hedef kelimeler: already, yet, pack, towel, arrive, leave, audience"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

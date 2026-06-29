@@ -1,0 +1,696 @@
+{
+  "id": "022-present-continuous-affirmative",
+  "title": "Present Continuous Affirmative",
+  "level": "A2.1",
+  "module": "Şu An",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Şu anda devam eden eylemleri anlatmak.",
+    "am / is / are + verb-ing yapısını doğru kullanmak.",
+    "I, he/she/it, we/you/they öznelerine göre yardımcı fiili seçmek.",
+    "Günlük hayat, voleybol ve müzik bağlamında basit olumlu cümleler kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Bu derste amaç, Beyza'nın am / is / are + fiil-ing yapısını fark etmesidir. Evde bir hareket gösterip \"What am I doing?\" diye sorabilir, ardından \"You are walking.\" gibi cevap vermesini isteyebilirsiniz.",
+    "todayGoal": "Şu anda devam eden eylemleri anlatmak.",
+    "teachingTips": [
+      "Bu derste \"Present Continuous Affirmative\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I am reading a book.",
+      "She is writing in her notebook.",
+      "He is playing basketball.",
+      "We are watching a volleyball match."
+    ],
+    "listeningScripts": [
+      "\"Look at the sports hall. Two teams are playing volleyball. The coach is watching the players. One girl is serving the ball. The other players are waiting.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Present Continuous Affirmative Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ reading a comic.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They are _______ a match.",
+          "options": [
+            "watch",
+            "watching",
+            "watches"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ doing my homework.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ listening to music.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "The players are _______ on the court.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / Beyza / reading / a book",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He are playing the guitar.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What is Beyza doing?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Present Continuous Affirmative yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Present Continuous Affirmative kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "is",
+        "watching",
+        "am",
+        "am",
+        "running",
+        "Beyza is reading a book",
+        "\"are\" burada hatalıdır; doğru cevap \"is\" olmalıdır.",
+        "She is reading a short story.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "022-present-continuous-affirmative-w1",
+    "022-present-continuous-affirmative-w2",
+    "022-present-continuous-affirmative-w3",
+    "022-present-continuous-affirmative-w4",
+    "022-present-continuous-affirmative-w5",
+    "022-present-continuous-affirmative-w6",
+    "022-present-continuous-affirmative-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Present Continuous Affirmative",
+      "instructionTr": "Şu anda devam eden eylemleri anlatmak.",
+      "content": {
+        "eyebrow": "Şu An · DERS 22",
+        "heroText": "I am reading a book."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Beyza, bir eylem tam şu anda oluyorsa Present Continuous kullanırız. Kural: Özne + am / is / are + fiil-ing - I am reading. - She is playing volleyball. - They are listening to music. Yardımcı fiil özneye göre değişir: - I → am - He / She / It → is - You / We / They → are Türkçedeki \"-yor\" anlamını verir: - I am studying. → Ders çalışıyorum. - He is running. → O koşuyor. - We are watching a match. → Bir maç izliyoruz.",
+      "content": {
+        "examples": [],
+        "noteTr": "Beyza, bir eylem tam şu anda oluyorsa Present Continuous kullanırız. Kural: Özne + am / is / are + fiil-ing - I am reading. - She is playing volleyball. - They are listening to music. Yardımcı fiil özneye göre değişir: - I → am - He / She / It → is - You / We / They → are Türkçedeki \"-yor\" anlamını verir: - I am studying. → Ders çalışıyorum. - He is running. → O koşuyor. - We are watching a match. → Bir maç izliyoruz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I am reading a book.",
+          "She is writing in her notebook.",
+          "He is playing basketball.",
+          "We are watching a volleyball match.",
+          "They are listening to music.",
+          "You are sitting near the window.",
+          "The coach is talking to the players.",
+          "The girls are practising volleyball.",
+          "A singer is standing near the microphone.",
+          "My friends are preparing a small stage."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I",
+            "am",
+            "I am reading."
+          ],
+          [
+            "He / She / It",
+            "is",
+            "She is playing."
+          ],
+          [
+            "You / We / They",
+            "are",
+            "They are listening."
+          ]
+        ]
+      },
+      "explanationTr": "Şu anda devam eden eylemleri anlatmak. am / is / are + verb-ing yapısını doğru kullanmak. I, he/she/it, we/you/they öznelerine göre yardımcı fiili seçmek. Günlük hayat, voleybol ve müzik bağlamında basit olumlu cümleler kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I is reading. ❌ → I am reading. ✅",
+          "She playing volleyball. ❌ → She is playing volleyball. ✅",
+          "They are play football. ❌ → They are playing football. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ reading a comic.",
+      "content": {
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü She ile is.",
+          "Doğru. She ile is.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü She ile is."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They are _______ a match.",
+      "content": {
+        "options": [
+          "watch",
+          "watching",
+          "watches"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"watch\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watching\" çünkü Present Continuous için fiil -ing alır.",
+          "Doğru. Present Continuous için fiil -ing alır.",
+          "\"watches\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watching\" çünkü Present Continuous için fiil -ing alır."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ listening to music.",
+      "content": {
+        "answer": "am",
+        "accepted": [
+          "am"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"am\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Şu anda devam eden eylemleri anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "Beyza",
+          "reading",
+          "a book"
+        ],
+        "answer": [
+          "Beyza",
+          "is",
+          "reading",
+          "a book"
+        ],
+        "explanationTr": "Doğru sıra: Beyza is reading a book"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "are",
+          "playing",
+          "the",
+          "guitar."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"are\" burada hatalıdır; doğru cevap \"is\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I am",
+            "reading a book."
+          ],
+          [
+            "She is",
+            "playing volleyball."
+          ],
+          [
+            "They are",
+            "listening to music."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "It is Saturday afternoon. Beyza is at home. She is reading a short story. Her sister is listening to music. Their parents are making tea. Everyone is doing something different.",
+        "questions": [
+          {
+            "prompt": "What is Beyza doing?",
+            "options": [
+              "She is reading a short story.",
+              "She is listening to music.",
+              "They are making tea."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She is reading a short story.\" olmalıdır.",
+              "\"She is listening to music.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is reading a short story.\".",
+              "\"They are making tea.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is reading a short story.\"."
+            ]
+          },
+          {
+            "prompt": "What is her sister doing?",
+            "options": [
+              "They are making tea.",
+              "She is listening to music.",
+              "She is reading a short story."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"They are making tea.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is listening to music.\".",
+              "Doğru. Bu soruda cevap \"She is listening to music.\" olmalıdır.",
+              "\"She is reading a short story.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is listening to music.\"."
+            ]
+          },
+          {
+            "prompt": "What are their parents doing?",
+            "options": [
+              "She is reading a short story.",
+              "She is listening to music.",
+              "They are making tea."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She is reading a short story.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are making tea.\".",
+              "\"She is listening to music.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are making tea.\".",
+              "Doğru. Bu soruda cevap \"They are making tea.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What are the teams doing?",
+      "content": {
+        "audioText": "\"Look at the sports hall. Two teams are playing volleyball. The coach is watching the players. One girl is serving the ball. The other players are waiting.\"",
+        "questions": [
+          {
+            "prompt": "What are the teams doing?",
+            "options": [
+              "They are playing volleyball.",
+              "The coach is watching them.",
+              "She is serving the ball."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"They are playing volleyball.\" olmalıdır.",
+              "\"The coach is watching them.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are playing volleyball.\".",
+              "\"She is serving the ball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are playing volleyball.\"."
+            ]
+          },
+          {
+            "prompt": "Who is watching the players?",
+            "options": [
+              "She is serving the ball.",
+              "The coach is watching them.",
+              "They are playing volleyball."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She is serving the ball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The coach is watching them.\".",
+              "Doğru. Bu soruda cevap \"The coach is watching them.\" olmalıdır.",
+              "\"They are playing volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The coach is watching them.\"."
+            ]
+          },
+          {
+            "prompt": "What is one girl doing?",
+            "options": [
+              "They are playing volleyball.",
+              "The coach is watching them.",
+              "She is serving the ball."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"They are playing volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is serving the ball.\".",
+              "\"The coach is watching them.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is serving the ball.\".",
+              "Doğru. Bu soruda cevap \"She is serving the ball.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Beyza, şu anda yaptığın şeyi söyle: - I am sitting. - I am listening. - I am learning English. Sonra evdeki başka bir kişiyi anlat: - My sister is reading.",
+      "content": {
+        "sentenceStarters": [
+          "I am sitting.",
+          "I am listening.",
+          "I am learning English.",
+          "My sister is reading."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ doing my homework.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. am seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He is _______ near the door.",
+            "options": [
+              "stand",
+              "standing",
+              "stands"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. standing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"stand\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"standing\" çünkü standing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ watching a film.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The singer is _______ into the microphone.",
+            "options": [
+              "sing",
+              "singing",
+              "sings"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. singing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"sing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"singing\" çünkü singing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The players are _______ on the court.",
+            "options": [
+              "practise",
+              "practising",
+              "practises"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. practising seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practising\" çünkü practising seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ writing a message.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They are _______ volleyball.",
+            "options": [
+              "playing",
+              "play",
+              "plays"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. playing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"play\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"playing\" çünkü playing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ watching the lesson.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. am seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The coach is _______ to the team.",
+            "options": [
+              "talk",
+              "talking",
+              "talks"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. talking seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"talk\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"talking\" çünkü talking seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ preparing the room.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "022-present-continuous-affirmative-w1",
+            "word": "read",
+            "example": "I am reading.",
+            "audioText": "read",
+            "prompt": "\"read\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "okumak",
+              "yazmak",
+              "izlemek",
+              "dinlemek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "022-present-continuous-affirmative-w2",
+            "word": "write",
+            "example": "She is writing.",
+            "audioText": "write",
+            "prompt": "\"write\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "okumak",
+              "yazmak",
+              "izlemek",
+              "dinlemek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "022-present-continuous-affirmative-w3",
+            "word": "watch",
+            "example": "We are watching a match.",
+            "audioText": "watch",
+            "prompt": "\"watch\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "okumak",
+              "yazmak",
+              "izlemek",
+              "dinlemek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "022-present-continuous-affirmative-w4",
+            "word": "listen",
+            "example": "They are listening.",
+            "audioText": "listen",
+            "prompt": "\"listen\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "okumak",
+              "yazmak",
+              "izlemek",
+              "dinlemek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "022-present-continuous-affirmative-w5",
+            "word": "practise",
+            "example": "The team is practising.",
+            "audioText": "practise",
+            "prompt": "\"practise\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "pratik yapmak",
+              "okumak",
+              "yazmak",
+              "izlemek"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Şu anda devam eden eylemleri anlatmak.",
+          "am / is / are + verb-ing yapısını doğru kullanmak.",
+          "Hedef kelimeler: read, write, watch, listen, practise, prepare, serve"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

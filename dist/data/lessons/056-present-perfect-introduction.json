@@ -1,0 +1,692 @@
+{
+  "id": "056-present-perfect-introduction",
+  "title": "Present Perfect Introduction",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "have / has + past participle yapısını tanımak.",
+    "I/you/we/they ile have, he/she/it ile has kullanmak.",
+    "Hayat deneyimlerinden söz etmek.",
+    "Belirli bir geçmiş zaman verilmediğinde Present Perfect kullanmak.",
+    "Sık kullanılan birkaç düzensiz past participle biçimini tanımak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Bu derste zaman belirtmeden deneyim cümleleri kurun. last year, yesterday gibi belirli geçmiş zaman ifadeleri varsa Past Simple kullanıldığını hatırlatın.",
+    "todayGoal": "have / has + past participle yapısını tanımak.",
+    "teachingTips": [
+      "Bu derste \"Present Perfect Introduction\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I have visited Ankara.",
+      "She has played volleyball.",
+      "He has finished his homework.",
+      "We have watched this film."
+    ],
+    "listeningScripts": [
+      "\"The volleyball team has finished today's practice. The players have served, passed and received the ball many times. The coach has written notes. Everyone has worked hard.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Present Perfect Introduction Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ finished her homework.",
+          "options": [
+            "have",
+            "has",
+            "is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We have _______ this film.",
+          "options": [
+            "saw",
+            "seen",
+            "see"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ finished.",
+          "options": [
+            "have",
+            "has",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ visited this museum.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "He has _______ a short story. (write)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: has / she / finished / her homework",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: They has visited the museum.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What has Beyza learned?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Present Perfect Introduction yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Present Perfect Introduction kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "has",
+        "seen",
+        "have",
+        "have",
+        "written",
+        "she has finished her homework",
+        "\"has\" burada hatalıdır; doğru cevap \"have\" olmalıdır.",
+        "Many new English words.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "056-present-perfect-introduction-w1",
+    "056-present-perfect-introduction-w2",
+    "056-present-perfect-introduction-w3",
+    "056-present-perfect-introduction-w4",
+    "056-present-perfect-introduction-w5",
+    "056-present-perfect-introduction-w6",
+    "056-present-perfect-introduction-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Present Perfect Introduction",
+      "instructionTr": "have / has + past participle yapısını tanımak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 56",
+        "heroText": "I have visited Ankara."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Present Perfect, geçmişte olmuş ama tam zamanı söylenmeyen veya sonucu şimdiyle bağlantılı olan durumları anlatır. Kural: Özne + have / has + fiilin üçüncü hâli - I have visited Ankara. - She has played volleyball. - They have seen this film. Özneye göre: - I / You / We / They → have - He / She / It → has Bazı üçüncü hâller: - play → played - visit → visited - see → seen - go → gone - eat → eaten - do → done - write → written Önemli fark: - I went to Ankara last year. → Zaman belli, Past Simple - I have visited Ankara. → Deneyim, zaman söylenmiyor",
+      "content": {
+        "examples": [],
+        "noteTr": "Present Perfect, geçmişte olmuş ama tam zamanı söylenmeyen veya sonucu şimdiyle bağlantılı olan durumları anlatır. Kural: Özne + have / has + fiilin üçüncü hâli - I have visited Ankara. - She has played volleyball. - They have seen this film. Özneye göre: - I / You / We / They → have - He / She / It → has Bazı üçüncü hâller: - play → played - visit → visited - see → seen - go → gone - eat → eaten - do → done - write → written Önemli fark: - I went to Ankara last year. → Zaman belli, Past Simple - I have visited Ankara. → Deneyim, zaman söylenmiyor"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I have visited Ankara.",
+          "She has played volleyball.",
+          "He has finished his homework.",
+          "We have watched this film.",
+          "They have seen the new sports hall.",
+          "Beyza has written a short English text.",
+          "The team has practised in this hall.",
+          "The students have prepared the stage.",
+          "I have eaten sushi.",
+          "She has gone to the library."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I / You / We / They",
+            "have",
+            "We have finished."
+          ],
+          [
+            "He / She / It",
+            "has",
+            "She has finished."
+          ]
+        ]
+      },
+      "explanationTr": "have / has + past participle yapısını tanımak. I/you/we/they ile have, he/she/it ile has kullanmak. Hayat deneyimlerinden söz etmek. Belirli bir geçmiş zaman verilmediğinde Present Perfect kullanmak. Sık kullanılan birkaç düzensiz past participle biçimini tanımak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She have finished. ❌ → She has finished. ✅",
+          "I has seen it. ❌ → I have seen it. ✅",
+          "They have saw the film. ❌ → They have seen the film. ✅",
+          "I have went. ❌ → I have gone. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ finished her homework.",
+      "content": {
+        "options": [
+          "have",
+          "has",
+          "is"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has\" çünkü has seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. has seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has\" çünkü has seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "We have _______ this film.",
+      "content": {
+        "options": [
+          "saw",
+          "seen",
+          "see"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. seen seçeneği cümledeki hedef kurala uyar.",
+          "\"see\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ visited this museum.",
+      "content": {
+        "answer": "have",
+        "accepted": [
+          "have"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"have\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "have / has + past participle yapısını tanımak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "has",
+          "she",
+          "finished",
+          "her homework"
+        ],
+        "answer": [
+          "she",
+          "has",
+          "finished",
+          "her homework"
+        ],
+        "explanationTr": "Doğru sıra: she has finished her homework"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "They",
+          "has",
+          "visited",
+          "the",
+          "museum."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"has\" burada hatalıdır; doğru cevap \"have\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "see",
+            "seen"
+          ],
+          [
+            "write",
+            "written"
+          ],
+          [
+            "eat",
+            "eaten"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has learned many new English words this year. She has completed several lessons and has written short sentences. She has also played many vocabulary games. She hasn't finished the whole course yet, but she has made good progress.",
+        "questions": [
+          {
+            "prompt": "What has Beyza learned?",
+            "options": [
+              "Many new English words.",
+              "Short sentences.",
+              "No, she hasn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Many new English words.\" olmalıdır.",
+              "\"Short sentences.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Many new English words.\".",
+              "\"No, she hasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Many new English words.\"."
+            ]
+          },
+          {
+            "prompt": "What has she written?",
+            "options": [
+              "No, she hasn't.",
+              "Short sentences.",
+              "Many new English words."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, she hasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Short sentences.\".",
+              "Doğru. Bu soruda cevap \"Short sentences.\" olmalıdır.",
+              "\"Many new English words.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Short sentences.\"."
+            ]
+          },
+          {
+            "prompt": "Has she finished the whole course?",
+            "options": [
+              "Many new English words.",
+              "Short sentences.",
+              "No, she hasn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Many new English words.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "\"Short sentences.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "Doğru. Bu soruda cevap \"No, she hasn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Has the team finished practice?",
+      "content": {
+        "audioText": "\"The volleyball team has finished today's practice. The players have served, passed and received the ball many times. The coach has written notes. Everyone has worked hard.\"",
+        "questions": [
+          {
+            "prompt": "Has the team finished practice?",
+            "options": [
+              "Yes, it has.",
+              "Notes.",
+              "Yes, they have."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Yes, it has.\" olmalıdır.",
+              "\"Notes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, it has.\".",
+              "\"Yes, they have.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, it has.\"."
+            ]
+          },
+          {
+            "prompt": "What has the coach written?",
+            "options": [
+              "Yes, they have.",
+              "Notes.",
+              "Yes, it has."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Yes, they have.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Notes.\".",
+              "Doğru. Bu soruda cevap \"Notes.\" olmalıdır.",
+              "\"Yes, it has.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Notes.\"."
+            ]
+          },
+          {
+            "prompt": "Have the players worked hard?",
+            "options": [
+              "Yes, it has.",
+              "Notes.",
+              "Yes, they have."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Yes, it has.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they have.\".",
+              "\"Notes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they have.\".",
+              "Doğru. Bu soruda cevap \"Yes, they have.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Üç deneyim cümlesi kur: - I have visited ... - I have seen ... - I have played ...",
+      "content": {
+        "sentenceStarters": [
+          "I have visited ...",
+          "I have seen ...",
+          "I have played ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ finished.",
+            "options": [
+              "have",
+              "has",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has _______ the film.",
+            "options": [
+              "saw",
+              "seen",
+              "see"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. seen seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ visited the park.",
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He has _______ his homework.",
+            "options": [
+              "done",
+              "did",
+              "do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. done seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"done\" çünkü done seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have _______ a song.",
+            "options": [
+              "heard",
+              "hear",
+              "hearing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. heard seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"hear\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heard\" çünkü heard seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Beyza _______ learned new words.",
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. has seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has\" çünkü has seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have _______ this place before.",
+            "options": [
+              "visit",
+              "visited",
+              "visiting"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. visited seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"visit\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"visited\" çünkü visited seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He has _______ a sandwich.",
+            "options": [
+              "ate",
+              "eaten",
+              "eat"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. eaten seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eaten\" çünkü eaten seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ completed the activity.",
+            "options": [
+              "has",
+              "have",
+              "are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has _______ to the library.",
+            "options": [
+              "went",
+              "gone",
+              "go"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. gone seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"gone\" çünkü gone seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "056-present-perfect-introduction-w1",
+            "word": "experience",
+            "example": "This is a new experience.",
+            "audioText": "experience",
+            "prompt": "\"experience\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "deneyim",
+              "tamamlamak",
+              "ilerleme",
+              "görmüş"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "056-present-perfect-introduction-w2",
+            "word": "complete",
+            "example": "She has completed the lesson.",
+            "audioText": "complete",
+            "prompt": "\"complete\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "deneyim",
+              "tamamlamak",
+              "ilerleme",
+              "görmüş"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "056-present-perfect-introduction-w3",
+            "word": "progress",
+            "example": "She has made progress.",
+            "audioText": "progress",
+            "prompt": "\"progress\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "deneyim",
+              "tamamlamak",
+              "ilerleme",
+              "görmüş"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "056-present-perfect-introduction-w4",
+            "word": "seen",
+            "example": "I have seen it.",
+            "audioText": "seen",
+            "prompt": "\"seen\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "deneyim",
+              "tamamlamak",
+              "ilerleme",
+              "görmüş"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "056-present-perfect-introduction-w5",
+            "word": "written",
+            "example": "She has written a message.",
+            "audioText": "written",
+            "prompt": "\"written\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yazmış",
+              "deneyim",
+              "tamamlamak",
+              "ilerleme"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "have / has + past participle yapısını tanımak.",
+          "I/you/we/they ile have, he/she/it ile has kullanmak.",
+          "Hedef kelimeler: experience, complete, progress, seen, written, eaten, done"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

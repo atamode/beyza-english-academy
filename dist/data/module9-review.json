@@ -1,0 +1,539 @@
+{
+  "id": "module-9-review",
+  "moduleId": "module-9",
+  "title": "Gelecek Genel Tekrar",
+  "description": "Gelecek derslerini ölçen gerçek kaynak sorularından oluşturuldu.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "module-9-review-01",
+      "type": "multiple-choice",
+      "topicTag": "be-going-to",
+      "topicLabel": "be going to",
+      "title": "be going to tekrar",
+      "instructionTr": "I _______ going to read.",
+      "content": {
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. am seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-02",
+      "type": "multiple-choice",
+      "topicTag": "be-going-to",
+      "topicLabel": "be going to",
+      "title": "be going to tekrar",
+      "instructionTr": "She is going to _______ a sandwich.",
+      "content": {
+        "options": [
+          "make",
+          "makes",
+          "making"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. make seçeneği cümledeki hedef kurala uyar.",
+          "\"makes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"make\" çünkü make seçeneği cümledeki hedef kurala uyar.",
+          "\"making\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"make\" çünkü make seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-03",
+      "type": "multiple-choice",
+      "topicTag": "be-going-to",
+      "topicLabel": "be going to",
+      "title": "be going to tekrar",
+      "instructionTr": "We _______ going to visit the park.",
+      "content": {
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. are seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-04",
+      "type": "multiple-choice",
+      "topicTag": "be-going-to",
+      "topicLabel": "be going to",
+      "title": "be going to tekrar",
+      "instructionTr": "_______ they going to come?",
+      "content": {
+        "options": [
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"Is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Are\" çünkü Are seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. Are seçeneği cümledeki hedef kurala uyar.",
+          "\"Do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Are\" çünkü Are seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-05",
+      "type": "multiple-choice",
+      "topicTag": "will-wont",
+      "topicLabel": "will / won't",
+      "title": "will / won't tekrar",
+      "instructionTr": "I _______ answer the phone.",
+      "content": {
+        "options": [
+          "will",
+          "am",
+          "do"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-06",
+      "type": "multiple-choice",
+      "topicTag": "will-wont",
+      "topicLabel": "will / won't",
+      "title": "will / won't tekrar",
+      "instructionTr": "She will _______ you.",
+      "content": {
+        "options": [
+          "helps",
+          "help",
+          "helping"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"helps\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"help\" çünkü help seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. help seçeneği cümledeki hedef kurala uyar.",
+          "\"helping\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"help\" çünkü help seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-07",
+      "type": "multiple-choice",
+      "topicTag": "will-wont",
+      "topicLabel": "will / won't",
+      "title": "will / won't tekrar",
+      "instructionTr": "They _______ forget.",
+      "content": {
+        "options": [
+          "won't",
+          "aren't",
+          "don't will"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. won't seçeneği cümledeki hedef kurala uyar.",
+          "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"won't\" çünkü won't seçeneği cümledeki hedef kurala uyar.",
+          "\"don't will\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"won't\" çünkü won't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-08",
+      "type": "multiple-choice",
+      "topicTag": "will-wont",
+      "topicLabel": "will / won't",
+      "title": "will / won't tekrar",
+      "instructionTr": "_______ you carry this?",
+      "content": {
+        "options": [
+          "Will",
+          "Are",
+          "Do"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Will seçeneği cümledeki hedef kurala uyar.",
+          "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Will\" çünkü Will seçeneği cümledeki hedef kurala uyar.",
+          "\"Do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Will\" çünkü Will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-09",
+      "type": "multiple-choice",
+      "topicTag": "going-to-vs-will",
+      "topicLabel": "going to vs will",
+      "title": "going to vs will tekrar",
+      "instructionTr": "We planned it yesterday. We _______ visit the museum.",
+      "content": {
+        "options": [
+          "are going to",
+          "will suddenly",
+          "were"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. are going to seçeneği cümledeki hedef kurala uyar.",
+          "\"will suddenly\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar.",
+          "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-10",
+      "type": "multiple-choice",
+      "topicTag": "going-to-vs-will",
+      "topicLabel": "going to vs will",
+      "title": "going to vs will tekrar",
+      "instructionTr": "I am cold. I _______ close the window.",
+      "content": {
+        "options": [
+          "will",
+          "am going to last week",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"am going to last week\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-11",
+      "type": "multiple-choice",
+      "topicTag": "going-to-vs-will",
+      "topicLabel": "going to vs will",
+      "title": "going to vs will tekrar",
+      "instructionTr": "Look at the glass! It _______ fall.",
+      "content": {
+        "options": [
+          "is going to",
+          "will think",
+          "was"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. is going to seçeneği cümledeki hedef kurala uyar.",
+          "\"will think\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is going to\" çünkü is going to seçeneği cümledeki hedef kurala uyar.",
+          "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is going to\" çünkü is going to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-12",
+      "type": "multiple-choice",
+      "topicTag": "going-to-vs-will",
+      "topicLabel": "going to vs will",
+      "title": "going to vs will tekrar",
+      "instructionTr": "I think the match _______ be exciting.",
+      "content": {
+        "options": [
+          "will",
+          "is going to evidence",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"is going to evidence\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-13",
+      "type": "multiple-choice",
+      "topicTag": "holiday-plans",
+      "topicLabel": "Holiday Plans",
+      "title": "Holiday Plans tekrar",
+      "instructionTr": "We are going to travel _______ plane.",
+      "content": {
+        "options": [
+          "by",
+          "in",
+          "on the"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. by seçeneği cümledeki hedef kurala uyar.",
+          "\"in\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"by\" çünkü by seçeneği cümledeki hedef kurala uyar.",
+          "\"on the\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"by\" çünkü by seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-14",
+      "type": "multiple-choice",
+      "topicTag": "holiday-plans",
+      "topicLabel": "Holiday Plans",
+      "title": "Holiday Plans tekrar",
+      "instructionTr": "She is going to _______ her suitcase.",
+      "content": {
+        "options": [
+          "pack",
+          "packs",
+          "packing"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. pack seçeneği cümledeki hedef kurala uyar.",
+          "\"packs\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"pack\" çünkü pack seçeneği cümledeki hedef kurala uyar.",
+          "\"packing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"pack\" çünkü pack seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-15",
+      "type": "multiple-choice",
+      "topicTag": "holiday-plans",
+      "topicLabel": "Holiday Plans",
+      "title": "Holiday Plans tekrar",
+      "instructionTr": "They are going to stay _______ a hotel.",
+      "content": {
+        "options": [
+          "in",
+          "on",
+          "at the top"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. in seçeneği cümledeki hedef kurala uyar.",
+          "\"on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"in\" çünkü in seçeneği cümledeki hedef kurala uyar.",
+          "\"at the top\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"in\" çünkü in seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-16",
+      "type": "multiple-choice",
+      "topicTag": "holiday-plans",
+      "topicLabel": "Holiday Plans",
+      "title": "Holiday Plans tekrar",
+      "instructionTr": "We are going to _______ souvenirs.",
+      "content": {
+        "options": [
+          "buy",
+          "bought",
+          "buying"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. buy seçeneği cümledeki hedef kurala uyar.",
+          "\"bought\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar.",
+          "\"buying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-17",
+      "type": "multiple-choice",
+      "topicTag": "future-predictions",
+      "topicLabel": "Future Predictions",
+      "title": "Future Predictions tekrar",
+      "instructionTr": "I think robots _______ help people.",
+      "content": {
+        "options": [
+          "will",
+          "are",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-18",
+      "type": "multiple-choice",
+      "topicTag": "future-predictions",
+      "topicLabel": "Future Predictions",
+      "title": "Future Predictions tekrar",
+      "instructionTr": "Books won't _______.",
+      "content": {
+        "options": [
+          "disappear",
+          "disappears",
+          "disappearing"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. disappear seçeneği cümledeki hedef kurala uyar.",
+          "\"disappears\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"disappear\" çünkü disappear seçeneği cümledeki hedef kurala uyar.",
+          "\"disappearing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"disappear\" çünkü disappear seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-19",
+      "type": "multiple-choice",
+      "topicTag": "future-predictions",
+      "topicLabel": "Future Predictions",
+      "title": "Future Predictions tekrar",
+      "instructionTr": "Maybe people _______ travel more.",
+      "content": {
+        "options": [
+          "will",
+          "were",
+          "do"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-20",
+      "type": "multiple-choice",
+      "topicTag": "future-predictions",
+      "topicLabel": "Future Predictions",
+      "title": "Future Predictions tekrar",
+      "instructionTr": "Technology will _______ schools.",
+      "content": {
+        "options": [
+          "change",
+          "changes",
+          "changing"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. change seçeneği cümledeki hedef kurala uyar.",
+          "\"changes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"change\" çünkü change seçeneği cümledeki hedef kurala uyar.",
+          "\"changing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"change\" çünkü change seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-9-review-21",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ going to visit my cousin.",
+      "content": {
+        "answer": "am",
+        "accepted": [
+          "am"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"am\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Önceden karar verilmiş gelecek planlarını anlatmak.",
+      "points": 4,
+      "topicTag": "be-going-to",
+      "topicLabel": "be going to"
+    },
+    {
+      "id": "module-9-review-22",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ carry the bag.",
+      "content": {
+        "answer": "will",
+        "accepted": [
+          "will"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"will\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Anlık kararları will ile ifade etmek.",
+      "points": 4,
+      "topicTag": "will-wont",
+      "topicLabel": "will / won't"
+    },
+    {
+      "id": "module-9-review-23",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Look at the dark clouds. It _______ rain.",
+      "content": {
+        "answer": "is going to",
+        "accepted": [
+          "is going to"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"is going to\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Önceden yapılmış planlarda going to kullanmak.",
+      "points": 4,
+      "topicTag": "going-to-vs-will",
+      "topicLabel": "going to vs will"
+    },
+    {
+      "id": "module-9-review-24",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I am going to _______ my suitcase.",
+      "content": {
+        "answer": "pack",
+        "accepted": [
+          "pack"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"pack\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Tatil planlarını going to ile anlatmak.",
+      "points": 4,
+      "topicTag": "holiday-plans",
+      "topicLabel": "Holiday Plans"
+    },
+    {
+      "id": "module-9-review-25",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Robots will _______ people.",
+      "content": {
+        "answer": "help",
+        "accepted": [
+          "help"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"help\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "will / won't ile gelecek tahminleri kurmak.",
+      "points": 4,
+      "topicTag": "future-predictions",
+      "topicLabel": "Future Predictions"
+    }
+  ]
+}

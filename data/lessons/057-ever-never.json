@@ -1,0 +1,699 @@
+{
+  "id": "057-ever-never",
+  "title": "ever / never",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Have you ever...? sorusunu kullanmak.",
+    "never ile hiç yaşanmamış deneyimleri anlatmak.",
+    "Kısa cevap vermek.",
+    "Past Simple ile ek bilgi vermek.",
+    "Deneyim sorularında doğru fiil biçimini kullanmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sorulara yalnız kısa cevap vermekle kalmayın; ardından Past Simple ile bir ayrıntı ekleyin. Bu, iki zamanın farkını doğal biçimde gösterir.",
+    "todayGoal": "Have you ever...? sorusunu kullanmak.",
+    "teachingTips": [
+      "Bu derste \"ever / never\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "Have you ever been to Ankara?",
+      "Have you ever played volleyball?",
+      "Has she ever seen a live match?",
+      "I have never flown in a plane."
+    ],
+    "listeningScripts": [
+      "\"Ece has tried many sports. She has played basketball and volleyball. She has never tried tennis. She has also watched a live concert, but she has never sung on a stage.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "ever / never Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Have you _______ visited İzmir?",
+          "options": [
+            "ever",
+            "never",
+            "yesterday"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I have _______ eaten sushi.",
+          "options": [
+            "ever",
+            "never",
+            "last"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Have you _______ been to Antalya?",
+          "options": [
+            "ever",
+            "never",
+            "last"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "Have you _______ seen a live match?",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "She has _______ flown in a plane.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: Have / you / ever / visited / Ankara?",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I haven't never been there.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Has Beyza played in a volleyball match?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "ever / never yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "ever / never kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "ever",
+        "never",
+        "ever",
+        "ever",
+        "never",
+        "Have you ever visited Ankara?",
+        "\"haven't never\" burada hatalıdır; doğru cevap \"have never\" olmalıdır.",
+        "Yes, she has.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "057-ever-never-w1",
+    "057-ever-never-w2",
+    "057-ever-never-w3",
+    "057-ever-never-w4",
+    "057-ever-never-w5",
+    "057-ever-never-w6",
+    "057-ever-never-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "ever / never",
+      "instructionTr": "Have you ever...? sorusunu kullanmak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 57",
+        "heroText": "Have you ever been to Ankara?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Ever, \"hiç\" anlamında deneyim sorularında kullanılır: - Have you ever visited İstanbul? - Has she ever played volleyball? Never, \"hiçbir zaman\" anlamında olumsuz deneyim bildirir: - I have never flown in a plane. - She has never eaten sushi. Never zaten olumsuz anlam taşır; yanında not kullanılmaz. - I haven't never... ❌ - I have never... ✅ Kısa cevap: - Yes, I have. - No, I haven't. Ek bilgi Past Simple ile verilebilir: - Have you ever visited Ankara? - Yes, I have. I visited it last year.",
+      "content": {
+        "examples": [],
+        "noteTr": "Ever, \"hiç\" anlamında deneyim sorularında kullanılır: - Have you ever visited İstanbul? - Has she ever played volleyball? Never, \"hiçbir zaman\" anlamında olumsuz deneyim bildirir: - I have never flown in a plane. - She has never eaten sushi. Never zaten olumsuz anlam taşır; yanında not kullanılmaz. - I haven't never... ❌ - I have never... ✅ Kısa cevap: - Yes, I have. - No, I haven't. Ek bilgi Past Simple ile verilebilir: - Have you ever visited Ankara? - Yes, I have. I visited it last year."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "Have you ever been to Ankara?",
+          "Have you ever played volleyball?",
+          "Has she ever seen a live match?",
+          "I have never flown in a plane.",
+          "He has never eaten sushi.",
+          "We have never visited that museum.",
+          "Beyza has never missed a lesson.",
+          "Have they ever performed on a stage?",
+          "I have never used that app.",
+          "Has the team ever won this tournament?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Deneyim sorma",
+            "Have/Has + özne + ever + V3?",
+            "Have you ever travelled?"
+          ],
+          [
+            "Hiç yapmama",
+            "have/has never + V3",
+            "I have never travelled."
+          ],
+          [
+            "Kısa cevap",
+            "Yes, ... have/has.",
+            "Yes, I have."
+          ]
+        ]
+      },
+      "explanationTr": "Have you ever...? sorusunu kullanmak. never ile hiç yaşanmamış deneyimleri anlatmak. Kısa cevap vermek. Past Simple ile ek bilgi vermek. Deneyim sorularında doğru fiil biçimini kullanmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "Have you ever went? ❌ → Have you ever gone? ✅",
+          "I haven't never tried it. ❌ → I have never tried it. ✅",
+          "Has she ever saw it? ❌ → Has she ever seen it? ✅",
+          "Yes, I did. yerine hedef kısa cevap Yes, I have. olmalıdır."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Have you _______ visited İzmir?",
+      "content": {
+        "options": [
+          "ever",
+          "never",
+          "yesterday"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. ever seçeneği cümledeki hedef kurala uyar.",
+          "\"never\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ever\" çünkü ever seçeneği cümledeki hedef kurala uyar.",
+          "\"yesterday\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ever\" çünkü ever seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "I have _______ eaten sushi.",
+      "content": {
+        "options": [
+          "ever",
+          "never",
+          "last"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"ever\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"never\" çünkü never seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. never seçeneği cümledeki hedef kurala uyar.",
+          "\"last\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"never\" çünkü never seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Have you _______ seen a live match?",
+      "content": {
+        "answer": "ever",
+        "accepted": [
+          "ever"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"ever\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Have you ever...? sorusunu kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "Have",
+          "you",
+          "ever",
+          "visited",
+          "Ankara?"
+        ],
+        "answer": [
+          "Have",
+          "you",
+          "ever",
+          "visited",
+          "Ankara?"
+        ],
+        "explanationTr": "Doğru sıra: Have you ever visited Ankara?"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "have",
+          "ever",
+          "been",
+          "there."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "Olumlu anlamda \"hiç gitmedim\" demek için \"have never been\" kullanılır; bu cümlede \"ever\" yerine \"never\" gerekir."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Have you ever travelled by plane?",
+            "No, I haven't."
+          ],
+          [
+            "Have you ever played volleyball?",
+            "Yes, I have."
+          ],
+          [
+            "Have you ever eaten sushi?",
+            "No, I have never tried it."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has had many new experiences this year. She has played in a volleyball match and has visited a new museum. She has never travelled abroad, but she wants to do that one day. She has also never performed on a stage.",
+        "questions": [
+          {
+            "prompt": "Has Beyza played in a volleyball match?",
+            "options": [
+              "Yes, she has.",
+              "Another detail from the lesson",
+              "A different time or person"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Yes, she has.\" olmalıdır.",
+              "\"Another detail from the lesson\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, she has.\".",
+              "\"A different time or person\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, she has.\"."
+            ]
+          },
+          {
+            "prompt": "Has she travelled abroad?",
+            "options": [
+              "Another detail from the lesson",
+              "No, she hasn't.",
+              "A different time or person"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Another detail from the lesson\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "Doğru. Bu soruda cevap \"No, she hasn't.\" olmalıdır.",
+              "\"A different time or person\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\"."
+            ]
+          },
+          {
+            "prompt": "Has she performed on a stage?",
+            "options": [
+              "Another detail from the lesson",
+              "A different time or person",
+              "No, she hasn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Another detail from the lesson\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "\"A different time or person\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "Doğru. Bu soruda cevap \"No, she hasn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Which sports has Ece played?",
+      "content": {
+        "audioText": "\"Ece has tried many sports. She has played basketball and volleyball. She has never tried tennis. She has also watched a live concert, but she has never sung on a stage.\"",
+        "questions": [
+          {
+            "prompt": "Which sports has Ece played?",
+            "options": [
+              "Basketball and volleyball.",
+              "No, she hasn't.",
+              "different option 2"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Basketball and volleyball.\" olmalıdır.",
+              "\"No, she hasn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Basketball and volleyball.\".",
+              "\"different option 2\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Basketball and volleyball.\"."
+            ]
+          },
+          {
+            "prompt": "Has she tried tennis?",
+            "options": [
+              "Basketball and volleyball.",
+              "No, she hasn't.",
+              "different detail"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Basketball and volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "Doğru. Bu soruda cevap \"No, she hasn't.\" olmalıdır.",
+              "\"different detail\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\"."
+            ]
+          },
+          {
+            "prompt": "Has she sung on a stage?",
+            "options": [
+              "Basketball and volleyball.",
+              "different detail",
+              "No, she hasn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Basketball and volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "\"different detail\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she hasn't.\".",
+              "Doğru. Bu soruda cevap \"No, she hasn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir aile üyesine üç soru sor: - Have you ever travelled by plane? - Have you ever played volleyball? - Have you ever seen a live concert?",
+      "content": {
+        "sentenceStarters": [
+          "Have you ever travelled by plane?",
+          "Have you ever played volleyball?",
+          "Have you ever seen a live concert?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Have you _______ been to Antalya?",
+            "options": [
+              "ever",
+              "never",
+              "last"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. ever seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"never\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ever\" çünkü ever seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I have _______ tried skiing.",
+            "options": [
+              "ever",
+              "never",
+              "yesterday"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. never seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ever\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"never\" çünkü never seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Has she ever _______ sushi?",
+            "options": [
+              "ate",
+              "eaten",
+              "eat"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. eaten seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eaten\" çünkü eaten seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have never _______ abroad.",
+            "options": [
+              "travelled",
+              "travel",
+              "travelling"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. travelled seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"travel\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"travelled\" çünkü travelled seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Have they ever _______ a match?",
+            "options": [
+              "won",
+              "win",
+              "winning"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. won seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"win\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"won\" çünkü won seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Has he _______ seen this film?",
+            "options": [
+              "ever",
+              "never",
+              "ago"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. ever seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"never\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ever\" çünkü ever seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I have _______ flown in a plane.",
+            "options": [
+              "never",
+              "ever",
+              "last"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. never seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ever\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"never\" çünkü never seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Have you ever _______ this game?",
+            "options": [
+              "played",
+              "play",
+              "playing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. played seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"play\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"played\" çünkü played seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has never _______ a horse.",
+            "options": [
+              "ridden",
+              "rode",
+              "ride"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. ridden seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"rode\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ridden\" çünkü ridden seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Have they ever visited London? — No, they _______.",
+            "options": [
+              "haven't",
+              "didn't",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. haven't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"didn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"haven't\" çünkü haven't seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "057-ever-never-w1",
+            "word": "ever",
+            "example": "Have you ever tried it?",
+            "audioText": "ever",
+            "prompt": "\"ever\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hiç",
+              "hiçbir zaman",
+              "yurt dışı",
+              "uçmuş"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "057-ever-never-w2",
+            "word": "never",
+            "example": "I have never tried it.",
+            "audioText": "never",
+            "prompt": "\"never\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hiç",
+              "hiçbir zaman",
+              "yurt dışı",
+              "uçmuş"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "057-ever-never-w3",
+            "word": "abroad",
+            "example": "She has never travelled abroad.",
+            "audioText": "abroad",
+            "prompt": "\"abroad\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hiç",
+              "hiçbir zaman",
+              "yurt dışı",
+              "uçmuş"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "057-ever-never-w4",
+            "word": "flown",
+            "example": "Have you ever flown?",
+            "audioText": "flown",
+            "prompt": "\"flown\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hiç",
+              "hiçbir zaman",
+              "yurt dışı",
+              "uçmuş"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "057-ever-never-w5",
+            "word": "ridden",
+            "example": "She has ridden a horse.",
+            "audioText": "ridden",
+            "prompt": "\"ridden\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "binmiş",
+              "hiç",
+              "hiçbir zaman",
+              "yurt dışı"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Have you ever...? sorusunu kullanmak.",
+          "never ile hiç yaşanmamış deneyimleri anlatmak.",
+          "Hedef kelimeler: ever, never, abroad, flown, ridden, tried, tournament"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

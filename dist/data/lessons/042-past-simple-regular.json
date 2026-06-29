@@ -1,0 +1,694 @@
+{
+  "id": "042-past-simple-regular",
+  "title": "Past Simple Regular",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geçmişte tamamlanan eylemleri anlatmak.",
+    "Düzenli fiillere -ed eklemek.",
+    "Temel yazım değişikliklerini fark etmek.",
+    "yesterday, last week, two days ago gibi zaman ifadelerini kullanmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'dan her günün sonunda üç cümlelik \"Dün ne yaptım?\" günlüğü yazmasını isteyebilirsiniz. Bu derste yalnız düzenli fiillerle başlamak daha güvenlidir.",
+    "todayGoal": "Geçmişte tamamlanan eylemleri anlatmak.",
+    "teachingTips": [
+      "Bu derste \"Past Simple Regular\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I played volleyball yesterday.",
+      "She watched a film last night.",
+      "He cleaned his room.",
+      "We visited our grandparents."
+    ],
+    "listeningScripts": [
+      "\"Yesterday, the volleyball team practised after school. They warmed up, passed the ball and served many times. The coach watched the team and corrected small mistakes.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Past Simple Regular Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Yesterday, we _______ volleyball.",
+          "options": [
+            "play",
+            "played",
+            "playing"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She _______ English last night.",
+          "options": [
+            "studied",
+            "studyed",
+            "studies"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "watch →",
+          "options": [
+            "watched",
+            "watchd",
+            "watching"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ my room yesterday. (clean)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "They _______ the stage last week. (prepare)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: watched / we / a match / yesterday",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: She playd volleyball.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What did Beyza clean?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Past Simple Regular yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Past Simple Regular kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "played",
+        "studied",
+        "watched",
+        "cleaned",
+        "prepared",
+        "we watched a match yesterday",
+        "\"playd\" burada hatalıdır; doğru cevap \"played\" olmalıdır.",
+        "Her desk.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "042-past-simple-regular-w1",
+    "042-past-simple-regular-w2",
+    "042-past-simple-regular-w3",
+    "042-past-simple-regular-w4",
+    "042-past-simple-regular-w5",
+    "042-past-simple-regular-w6",
+    "042-past-simple-regular-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Past Simple Regular",
+      "instructionTr": "Geçmişte tamamlanan eylemleri anlatmak.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 42",
+        "heroText": "I played volleyball yesterday."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Geçmişte başlayıp bitmiş bir eylemi Past Simple ile anlatırız. Düzenli fiiller genellikle -ed alır: - play → played - watch → watched - clean → cleaned Sonu e ile biten fiiller yalnız -d alır: - like → liked - live → lived Sonu sessiz harf + y ile biten bazı fiillerde: - study → studied - carry → carried Kural: Özne + fiilin geçmiş hâli - I played volleyball yesterday. - She watched a film last night.",
+      "content": {
+        "examples": [],
+        "noteTr": "Geçmişte başlayıp bitmiş bir eylemi Past Simple ile anlatırız. Düzenli fiiller genellikle -ed alır: - play → played - watch → watched - clean → cleaned Sonu e ile biten fiiller yalnız -d alır: - like → liked - live → lived Sonu sessiz harf + y ile biten bazı fiillerde: - study → studied - carry → carried Kural: Özne + fiilin geçmiş hâli - I played volleyball yesterday. - She watched a film last night."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I played volleyball yesterday.",
+          "She watched a film last night.",
+          "He cleaned his room.",
+          "We visited our grandparents.",
+          "They listened to music.",
+          "Beyza studied English after school.",
+          "The coach talked to the players.",
+          "The students prepared the stage.",
+          "The team practised for two hours.",
+          "We carried the chairs into the hall."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Çoğu fiil",
+            "+ ed",
+            "play → played"
+          ],
+          [
+            "Sonu e",
+            "+ d",
+            "live → lived"
+          ],
+          [
+            "Sessiz + y",
+            "y → ied",
+            "study → studied"
+          ]
+        ]
+      },
+      "explanationTr": "Geçmişte tamamlanan eylemleri anlatmak. Düzenli fiillere -ed eklemek. Temel yazım değişikliklerini fark etmek. yesterday, last week, two days ago gibi zaman ifadelerini kullanmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "playd ❌ → played ✅",
+          "studyed ❌ → studied ✅",
+          "She played volleyball yesterday cümlesinde fiile ayrıca -s gelmez.",
+          "I was played ❌ → I played ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Yesterday, we _______ volleyball.",
+      "content": {
+        "options": [
+          "play",
+          "played",
+          "playing"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"play\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"played\" çünkü played seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. played seçeneği cümledeki hedef kurala uyar.",
+          "\"playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"played\" çünkü played seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "She _______ English last night.",
+      "content": {
+        "options": [
+          "studied",
+          "studyed",
+          "studies"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. studied seçeneği cümledeki hedef kurala uyar.",
+          "\"studyed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studied\" çünkü studied seçeneği cümledeki hedef kurala uyar.",
+          "\"studies\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studied\" çünkü studied seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ my room yesterday. (clean)",
+      "content": {
+        "answer": "cleaned",
+        "accepted": [
+          "cleaned"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"cleaned\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Geçmişte tamamlanan eylemleri anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "watched",
+          "we",
+          "a match",
+          "yesterday"
+        ],
+        "answer": [
+          "we",
+          "watched",
+          "a match",
+          "yesterday"
+        ],
+        "explanationTr": "Doğru sıra: we watched a match yesterday"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "She",
+          "playd",
+          "volleyball."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"playd\" burada hatalıdır; doğru cevap \"played\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "play",
+            "played"
+          ],
+          [
+            "study",
+            "studied"
+          ],
+          [
+            "clean",
+            "cleaned"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Last Sunday, Beyza stayed at home in the morning. She cleaned her desk and studied English. In the afternoon, she visited her cousin. They played a board game and watched a short film.",
+        "questions": [
+          {
+            "prompt": "What did Beyza clean?",
+            "options": [
+              "Her desk.",
+              "Her cousin.",
+              "A short film."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Her desk.\" olmalıdır.",
+              "\"Her cousin.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her desk.\".",
+              "\"A short film.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her desk.\"."
+            ]
+          },
+          {
+            "prompt": "Who did she visit?",
+            "options": [
+              "A short film.",
+              "Her cousin.",
+              "Her desk."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A short film.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her cousin.\".",
+              "Doğru. Bu soruda cevap \"Her cousin.\" olmalıdır.",
+              "\"Her desk.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her cousin.\"."
+            ]
+          },
+          {
+            "prompt": "What did they watch?",
+            "options": [
+              "Her desk.",
+              "Her cousin.",
+              "A short film."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Her desk.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A short film.\".",
+              "\"Her cousin.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A short film.\".",
+              "Doğru. Bu soruda cevap \"A short film.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "When did the team practise?",
+      "content": {
+        "audioText": "\"Yesterday, the volleyball team practised after school. They warmed up, passed the ball and served many times. The coach watched the team and corrected small mistakes.\"",
+        "questions": [
+          {
+            "prompt": "When did the team practise?",
+            "options": [
+              "Yesterday after school.",
+              "They warmed up.",
+              "The coach."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Yesterday after school.\" olmalıdır.",
+              "\"They warmed up.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yesterday after school.\".",
+              "\"The coach.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yesterday after school.\"."
+            ]
+          },
+          {
+            "prompt": "What did they do before playing?",
+            "options": [
+              "The coach.",
+              "They warmed up.",
+              "Yesterday after school."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The coach.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They warmed up.\".",
+              "Doğru. Bu soruda cevap \"They warmed up.\" olmalıdır.",
+              "\"Yesterday after school.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They warmed up.\"."
+            ]
+          },
+          {
+            "prompt": "Who corrected the mistakes?",
+            "options": [
+              "Yesterday after school.",
+              "They warmed up.",
+              "The coach."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Yesterday after school.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The coach.\".",
+              "\"They warmed up.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The coach.\".",
+              "Doğru. Bu soruda cevap \"The coach.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dün yaptığın üç şeyi söyle: - I watched ... - I played ... - I studied ...",
+      "content": {
+        "sentenceStarters": [
+          "I watched ...",
+          "I played ...",
+          "I studied ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "watch →",
+            "options": [
+              "watched",
+              "watchd",
+              "watching"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. watched seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watchd\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "study →",
+            "options": [
+              "studyed",
+              "studied",
+              "study"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. studied seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"studyed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studied\" çünkü studied seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ the room.",
+            "options": [
+              "cleaned",
+              "clean",
+              "cleaning"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. cleaned seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"clean\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cleaned\" çünkü cleaned seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ the guitar yesterday.",
+            "options": [
+              "practised",
+              "practise",
+              "practises"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. practised seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practised\" çünkü practised seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ our grandparents.",
+            "options": [
+              "visited",
+              "visit",
+              "visiting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. visited seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"visit\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"visited\" çünkü visited seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ a film last night.",
+            "options": [
+              "watched",
+              "watch",
+              "watches"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. watched seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watch\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ her homework.",
+            "options": [
+              "finished",
+              "finish",
+              "finishing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. finished seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"finish\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"finished\" çünkü finished seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ English yesterday.",
+            "options": [
+              "studied",
+              "studyed",
+              "study"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. studied seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"studyed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studied\" çünkü studied seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The players _______ for the match.",
+            "options": [
+              "prepared",
+              "prepare",
+              "prepares"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. prepared seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"prepare\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"prepared\" çünkü prepared seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ the chairs.",
+            "options": [
+              "carried",
+              "carryed",
+              "carry"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. carried seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"carryed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"carried\" çünkü carried seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "042-past-simple-regular-w1",
+            "word": "visit",
+            "example": "We visited our grandparents.",
+            "audioText": "visit",
+            "prompt": "\"visit\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ziyaret etmek",
+              "temizlemek",
+              "ders çalışmak",
+              "hazırlamak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "042-past-simple-regular-w2",
+            "word": "clean",
+            "example": "She cleaned her room.",
+            "audioText": "clean",
+            "prompt": "\"clean\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ziyaret etmek",
+              "temizlemek",
+              "ders çalışmak",
+              "hazırlamak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "042-past-simple-regular-w3",
+            "word": "study",
+            "example": "I studied English.",
+            "audioText": "study",
+            "prompt": "\"study\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ziyaret etmek",
+              "temizlemek",
+              "ders çalışmak",
+              "hazırlamak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "042-past-simple-regular-w4",
+            "word": "prepare",
+            "example": "They prepared the stage.",
+            "audioText": "prepare",
+            "prompt": "\"prepare\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ziyaret etmek",
+              "temizlemek",
+              "ders çalışmak",
+              "hazırlamak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "042-past-simple-regular-w5",
+            "word": "practise",
+            "example": "The team practised.",
+            "audioText": "practise",
+            "prompt": "\"practise\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "pratik yapmak",
+              "ziyaret etmek",
+              "temizlemek",
+              "ders çalışmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geçmişte tamamlanan eylemleri anlatmak.",
+          "Düzenli fiillere -ed eklemek.",
+          "Hedef kelimeler: visit, clean, study, prepare, practise, carry, correct"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "id": "019-places-town",
+  "title": "Places in Town",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek.",
+    "Öğrenilen yer adlarıyla \"There is / There are\" kalıplarını kullanarak çevreyi tarif edebilmek.",
+    "Yer edatları (next to, behind, in front of vb.) kullanarak binaların birbirine göre konumlarını belirtebilmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu derste Beyza ile şehirde bulunan yerleri ve bu yerlerin birbirine göre konumlarını öğrendik. \"Hospital, school, sports centre, music shop\" gibi kelime dağarcığını geliştirdik. Yolda arabayla giderken veya yürürken ona binaları göstererek \"What is this?\" (Bu ne?) veya \"Is there a park here?\" (Burada bir park var mı?) gibi sorular sorarak İngilizceyi günlük hayatın içine katabilirsiniz.",
+    "todayGoal": "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek.",
+    "teachingTips": [
+      "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "There is a hospital in my town. (Benim şehrimde bir hastane var.)",
+      "There are three schools in the city. (Şehirde üç okul var.)",
+      "The school is next to the park. (Okul parkın yanındadır.)",
+      "There is a big sports centre. (Büyük bir spor merkezi var.)"
+    ],
+    "listeningScripts": [
+      "We are in a small street. Look at the buildings. There is a hospital on the left. Between the hospital and the school, there is a cinema. Behind the school, there is a big stadium for big matches."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Places in Town Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "There is a big _______ in the town. We play volleyball matches there.",
+          "options": [
+            "hospital",
+            "sports centre",
+            "cinema"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The music shop _______ next to the park.",
+          "options": [
+            "are",
+            "is",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Doctors and nurses work in a _______.",
+          "options": [
+            "stadium",
+            "hospital",
+            "cinema"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I watch films at the ________ (sinema).",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "The ________ (hastane) is behind the park.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / my / town / a / there / in / stadium",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: The parks is in front of the hospital.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "hospital",
+        "are",
+        "stadium",
+        "cinema",
+        "hospital",
+        "There is a stadium in my town",
+        "\"The parks\" çoğul olduğu için \"are\" kullanılmalıdır.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "019-places-town-w1",
+    "019-places-town-w2",
+    "019-places-town-w3",
+    "019-places-town-w4",
+    "019-places-town-w5",
+    "019-places-town-w6",
+    "019-places-town-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Places in Town",
+      "instructionTr": "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 19",
+        "heroText": "There is a hospital in my town. (Benim şehrimde bir hastane var.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bu derste yaşadığımız çevrede sık gördüğümüz yerlerin İngilizce adlarını öğreneceğiz. Ardından bu yerlerin nerede olduğunu kısa cümlelerle anlatacağız.",
+      "content": {
+        "examples": [
+          "Önce şehrimizdeki önemli yerlerin isimlerine bakalım:\nHospital (hastane), school (okul), sports centre (spor merkezi), stadium (stadyum), music shop (müzik dükkânı), park (park) ve cinema (sinema). Bu uygulamada İngiliz İngilizcesi kullanıldığı için centre yazımını tercih ediyoruz.",
+          "Odamızı anlatırken kullandığımız There is kuralını şimdi şehre taşıyoruz:\n* *There is a school.* (Bir okul var.)\n* *There are two parks in my town.* (Benim kasabamda iki park var.)"
+        ],
+        "noteTr": "Bu derste yaşadığımız çevrede sık gördüğümüz yerlerin İngilizce adlarını öğreneceğiz. Ardından bu yerlerin nerede olduğunu kısa cümlelerle anlatacağız."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "There is a hospital in my town. (Benim şehrimde bir hastane var.)",
+          "There are three schools in the city. (Şehirde üç okul var.)",
+          "The school is next to the park. (Okul parkın yanındadır.)",
+          "There is a big sports centre. (Büyük bir spor merkezi var.)",
+          "I play volleyball at the sports centre. (Ben spor merkezinde voleybol oynarım.)",
+          "The music shop is behind the cinema. (Müzik dükkânı sinemanın arkasındadır.)",
+          "We buy guitars from the music shop. (Biz müzik dükkânından gitar alırız.)",
+          "There is a stadium in front of the hospital. (Hastanenin önünde bir stadyum var.)",
+          "The cinema is between the park and the school. (Sinema, park ile okulun arasındadır.)",
+          "Are there two parks in your town? (Senin kasabanda iki park mı var?)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "The sports centre",
+            "is",
+            "next to",
+            "the school."
+          ],
+          [
+            "The music shops",
+            "are",
+            "behind",
+            "the hospital."
+          ],
+          [
+            "The cinema",
+            "is",
+            "between",
+            "the park and the stadium."
+          ]
+        ]
+      },
+      "explanationTr": "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek. Öğrenilen yer adlarıyla \"There is / There are\" kalıplarını kullanarak çevreyi tarif edebilmek. Yer edatları (next to, behind, in front of vb.) kullanarak binaların birbirine göre konumlarını belirtebilmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* The hospital next to the school. ❌\n* *Doğrusu:* The hospital is next to the school. (Bir binanın nerede olduğunu söylerken özneye uygun olarak \"is\" veya \"are\" kullanılmalıdır.)\n* *Proje yazım tercihi:* Amerikan İngilizcesinde center, İngiliz İngilizcesinde centre yazılır. Bu uygulamada İngiliz İngilizcesi kullanıldığı için sports centre yazacağız."
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "There is a big _______ in the town. We play volleyball matches there.",
+      "content": {
+        "options": [
+          "hospital",
+          "sports centre",
+          "cinema"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"sports centre\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"cinema\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "The music shop _______ next to the park.",
+      "content": {
+        "options": [
+          "are",
+          "is",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"is\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"am\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I watch films at the ________ (sinema).",
+      "content": {
+        "answer": "cinema",
+        "accepted": [
+          "cinema"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "Film izlenen yer sinemadır."
+      },
+      "hintTr": "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "my",
+          "town",
+          "a",
+          "there",
+          "in",
+          "stadium"
+        ],
+        "answer": [
+          "There",
+          "is",
+          "a",
+          "stadium",
+          "in",
+          "my",
+          "town"
+        ],
+        "explanationTr": "Doğru sıra: There is a stadium in my town"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "The",
+          "parks",
+          "is",
+          "in",
+          "front",
+          "of",
+          "the",
+          "hospital."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"The parks\" çoğul olduğu için \"are\" kullanılmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "do"
+          ],
+          [
+            "She",
+            "does"
+          ],
+          [
+            "They",
+            "do"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "My town is beautiful. There is a big park in the centre. Next to the park, there is a music shop. I go there to look at new instruments. Behind the music shop, there is a sports centre. We have our volleyball practice there on Sundays.",
+        "questions": [
+          {
+            "prompt": "What is next to the park?",
+            "options": [
+              "There is a music shop next to the park.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: There is a music shop next to the park.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: There is a music shop next to the park.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: There is a music shop next to the park."
+            ]
+          },
+          {
+            "prompt": "Why does the writer go to the music shop?",
+            "options": [
+              "To look at new instruments.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: To look at new instruments.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: To look at new instruments.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: To look at new instruments."
+            ]
+          },
+          {
+            "prompt": "Where do they have volleyball practices?",
+            "options": [
+              "They have practices at the sports centre.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: They have practices at the sports centre.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: They have practices at the sports centre.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: They have practices at the sports centre."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What building is on the left?",
+      "content": {
+        "audioText": "We are in a small street. Look at the buildings. There is a hospital on the left. Between the hospital and the school, there is a cinema. Behind the school, there is a big stadium for big matches.",
+        "options": [
+          "There is a hospital on the left.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. There is a hospital on the left.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "*Soru:* Beyza, oturduğun evin etrafını düşün. Bana \"There is a...\" kullanarak evinizin yakınındaki iki yeri (okul, park, hastane vb.) söyler misin?\n*İpucu Örneği:* \"There is a park next to my house. There is a school in my street.\"",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Doctors and nurses work in a _______.",
+            "options": [
+              "stadium",
+              "hospital",
+              "cinema"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There _______ a new sports centre in our town.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "I want to buy a microphone. Where is the _______?",
+            "options": [
+              "school",
+              "sports centre",
+              "music shop"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The cinema is _______ the music shop and the hospital.",
+            "options": [
+              "next to",
+              "behind",
+              "between"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ three parks in the city.",
+            "options": [
+              "There is",
+              "There are",
+              "Is there"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Students learn English in the _______.",
+            "options": [
+              "hospital",
+              "school",
+              "park"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "We watch a big concert in the _______.",
+            "options": [
+              "stadium",
+              "hospital",
+              "music shop"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The school _______ next to the sports centre.",
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "Is there a park in the town? - Yes, there _______.",
+            "options": [
+              "are",
+              "is",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "There are many guitars in the _______.",
+            "options": [
+              "sports centre",
+              "cinema",
+              "music shop"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "019-places-town-w1",
+            "word": "hospital",
+            "example": "The hospital is big. (Hastane büyüktür.)",
+            "audioText": "hospital",
+            "prompt": "İngilizce-Türkçe eşleştir: hospital",
+            "options": [
+              "Hastane",
+              "Okul",
+              "Spor Merkezi",
+              "Stadyum"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "019-places-town-w2",
+            "word": "school",
+            "example": "My school is nice. (Okulum güzeldir.)",
+            "audioText": "school",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Hastane",
+              "Okul",
+              "Spor Merkezi",
+              "Stadyum"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "019-places-town-w3",
+            "word": "sports centre",
+            "example": "We play at the sports centre. (Spor merkezinde oynarız.)",
+            "audioText": "sports centre",
+            "prompt": "Eksik harfi tamamla: sp_rts centre",
+            "options": [
+              "hospital",
+              "school",
+              "sports centre",
+              "stadium"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "019-places-town-w4",
+            "word": "stadium",
+            "example": "The concert is at the stadium. (Konser stadyumdadır.)",
+            "audioText": "stadium",
+            "prompt": "Karışık harfleri düzelt: muidats",
+            "options": [
+              "hospital",
+              "school",
+              "sports centre",
+              "stadium"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "019-places-town-w5",
+            "word": "music shop",
+            "example": "The music shop is next to the park. (Müzik dükkânı parkın yanındadır.)",
+            "audioText": "music shop",
+            "prompt": "Kelimeyi doğru cümleye koy: The ___ is next to the park. (Müzik dükkânı parkın yanındadır.)",
+            "options": [
+              "hospital",
+              "music shop",
+              "school",
+              "sports centre"
+            ],
+            "correctIndex": 1
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Şehirde sıkça bulunan binaların ve yerlerin (hospital, school, sports centre, music shop, park, cinema, stadium) İngilizce karşılıklarını öğrenmek.",
+          "Öğrenilen yer adlarıyla \"There is / There are\" kalıplarını kullanarak çevreyi tarif edebilmek.",
+          "Hedef kelimeler: hospital, school, sports centre, stadium, music shop, park, cinema"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

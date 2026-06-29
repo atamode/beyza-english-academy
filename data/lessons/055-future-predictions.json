@@ -1,0 +1,708 @@
+{
+  "id": "055-future-predictions",
+  "title": "Future Predictions",
+  "level": "A2.1",
+  "module": "Gelecek",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "will / won't ile gelecek tahminleri kurmak.",
+    "I think, I don't think, probably, maybe ifadelerini kullanmak.",
+    "Teknoloji, okul, spor ve günlük hayat hakkında basit tahminlerde bulunmak.",
+    "Tahmin ile kesin bilgi arasındaki farkı fark etmek.",
+    "Kısa bir \"gelecekte hayat\" paragrafı yazmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Tahminlerin doğru veya yanlış olmasından çok, doğru yapıyla kurulmasına odaklanın. Beyza'nın will sonrasında fiili yalın kullandığını kontrol edin.",
+    "todayGoal": "will / won't ile gelecek tahminleri kurmak.",
+    "teachingTips": [
+      "Bu derste \"Future Predictions\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I think schools will change.",
+      "People will use more technology.",
+      "Robots will help at home.",
+      "Lessons will be more interactive."
+    ],
+    "listeningScripts": [
+      "\"In the future, volleyball players will probably use lighter shoes and smarter balls. Coaches will use more data. Matches will still need teamwork. Robots won't replace players.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Future Predictions Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I think schools _______ change.",
+          "options": [
+            "will",
+            "are",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "People won't _______ reading.",
+          "options": [
+            "stop",
+            "stops",
+            "stopping"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I think robots _______ help people.",
+          "options": [
+            "will",
+            "are",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "Robots will _______ people.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "I don't think books will _______.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: will / technology / change / education",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Robots will helps people.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What will lessons be like?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Future Predictions yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Future Predictions kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "will",
+        "stop",
+        "will",
+        "help",
+        "disappear",
+        "technology will change education",
+        "\"helps\" burada hatalıdır; doğru cevap \"help\" olmalıdır.",
+        "More interactive.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "055-future-predictions-w1",
+    "055-future-predictions-w2",
+    "055-future-predictions-w3",
+    "055-future-predictions-w4",
+    "055-future-predictions-w5",
+    "055-future-predictions-w6",
+    "055-future-predictions-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Future Predictions",
+      "instructionTr": "will / won't ile gelecek tahminleri kurmak.",
+      "content": {
+        "eyebrow": "Gelecek · DERS 55",
+        "heroText": "I think schools will change."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Gelecekle ilgili görüş ve tahminlerde will kullanabiliriz: - I think people will use more technology. - Schools will be different. - Robots will help people. Olumsuz tahmin: - I don't think cars will disappear soon. - People won't stop reading. Belirsizlik ifadeleri: - probably → muhtemelen - maybe → belki - I think → bence - I don't think → sanmıyorum Bu cümleler kesin bilgi değil, tahmindir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Gelecekle ilgili görüş ve tahminlerde will kullanabiliriz: - I think people will use more technology. - Schools will be different. - Robots will help people. Olumsuz tahmin: - I don't think cars will disappear soon. - People won't stop reading. Belirsizlik ifadeleri: - probably → muhtemelen - maybe → belki - I think → bence - I don't think → sanmıyorum Bu cümleler kesin bilgi değil, tahmindir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I think schools will change.",
+          "People will use more technology.",
+          "Robots will help at home.",
+          "Lessons will be more interactive.",
+          "Players will use smarter equipment.",
+          "Maybe people will travel more.",
+          "Cars will probably be cleaner.",
+          "I don't think books will disappear.",
+          "Children won't stop playing outside.",
+          "I think future concerts will use more digital effects."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I think",
+            "olumlu tahmin",
+            "I think it will change."
+          ],
+          [
+            "I don't think",
+            "olumsuz görüş",
+            "I don't think it will disappear."
+          ],
+          [
+            "probably",
+            "güçlü olasılık",
+            "It will probably happen."
+          ],
+          [
+            "maybe",
+            "belki",
+            "Maybe people will travel more."
+          ],
+          [
+            "won't",
+            "olumsuz tahmin",
+            "It won't stop."
+          ]
+        ]
+      },
+      "explanationTr": "will / won't ile gelecek tahminleri kurmak. I think, I don't think, probably, maybe ifadelerini kullanmak. Teknoloji, okul, spor ve günlük hayat hakkında basit tahminlerde bulunmak. Tahmin ile kesin bilgi arasındaki farkı fark etmek. Kısa bir \"gelecekte hayat\" paragrafı yazmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I think people will to travel. ❌ → I think people will travel. ✅",
+          "Maybe will be robots. ❌ → Maybe there will be robots. ✅",
+          "People won't uses books. ❌ → People won't use books. ✅",
+          "Tahmini kesin gerçek gibi sunmamak gerekir."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I think schools _______ change.",
+      "content": {
+        "options": [
+          "will",
+          "are",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "People won't _______ reading.",
+      "content": {
+        "options": [
+          "stop",
+          "stops",
+          "stopping"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. stop seçeneği cümledeki hedef kurala uyar.",
+          "\"stops\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"stop\" çünkü stop seçeneği cümledeki hedef kurala uyar.",
+          "\"stopping\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"stop\" çünkü stop seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Robots will _______ people.",
+      "content": {
+        "answer": "help",
+        "accepted": [
+          "help"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"help\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "will / won't ile gelecek tahminleri kurmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "will",
+          "technology",
+          "change",
+          "education"
+        ],
+        "answer": [
+          "technology",
+          "will",
+          "change",
+          "education"
+        ],
+        "explanationTr": "Doğru sıra: technology will change education"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "Robots",
+          "will",
+          "helps",
+          "people."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"helps\" burada hatalıdır; doğru cevap \"help\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I think",
+            "books will disappear."
+          ],
+          [
+            "Maybe",
+            "technology will change schools."
+          ],
+          [
+            "I don't think",
+            "people will live on other planets."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza imagines school in the future. She thinks lessons will be more interactive. Students will probably use digital books, but paper books won't disappear. Teachers will still help students. Sports lessons will use smarter equipment.",
+        "questions": [
+          {
+            "prompt": "What will lessons be like?",
+            "options": [
+              "More interactive.",
+              "No, they won't.",
+              "Smarter equipment."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"More interactive.\" olmalıdır.",
+              "\"No, they won't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"More interactive.\".",
+              "\"Smarter equipment.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"More interactive.\"."
+            ]
+          },
+          {
+            "prompt": "Will paper books disappear?",
+            "options": [
+              "Smarter equipment.",
+              "No, they won't.",
+              "More interactive."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Smarter equipment.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they won't.\".",
+              "Doğru. Bu soruda cevap \"No, they won't.\" olmalıdır.",
+              "\"More interactive.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they won't.\"."
+            ]
+          },
+          {
+            "prompt": "What will sports lessons use?",
+            "options": [
+              "More interactive.",
+              "No, they won't.",
+              "Smarter equipment."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"More interactive.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Smarter equipment.\".",
+              "\"No, they won't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Smarter equipment.\".",
+              "Doğru. Bu soruda cevap \"Smarter equipment.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What kind of shoes will players use?",
+      "content": {
+        "audioText": "\"In the future, volleyball players will probably use lighter shoes and smarter balls. Coaches will use more data. Matches will still need teamwork. Robots won't replace players.\"",
+        "questions": [
+          {
+            "prompt": "What kind of shoes will players use?",
+            "options": [
+              "Lighter shoes.",
+              "More data.",
+              "No, they won't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Lighter shoes.\" olmalıdır.",
+              "\"More data.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Lighter shoes.\".",
+              "\"No, they won't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Lighter shoes.\"."
+            ]
+          },
+          {
+            "prompt": "What will coaches use?",
+            "options": [
+              "No, they won't.",
+              "More data.",
+              "Lighter shoes."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they won't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"More data.\".",
+              "Doğru. Bu soruda cevap \"More data.\" olmalıdır.",
+              "\"Lighter shoes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"More data.\"."
+            ]
+          },
+          {
+            "prompt": "Will robots replace players?",
+            "options": [
+              "Lighter shoes.",
+              "More data.",
+              "No, they won't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Lighter shoes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they won't.\".",
+              "\"More data.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they won't.\".",
+              "Doğru. Bu soruda cevap \"No, they won't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Gelecekle ilgili beş tahmin yap: - I think ... - Maybe ... - ... will probably ... - I don't think ... - ... won't ...",
+      "content": {
+        "sentenceStarters": [
+          "I think ...",
+          "Maybe ...",
+          "... will probably ...",
+          "I don't think ...",
+          "... won't ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I think robots _______ help people.",
+            "options": [
+              "will",
+              "are",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Books won't _______.",
+            "options": [
+              "disappear",
+              "disappears",
+              "disappearing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. disappear seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"disappears\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"disappear\" çünkü disappear seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Maybe people _______ travel more.",
+            "options": [
+              "will",
+              "were",
+              "do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Technology will _______ schools.",
+            "options": [
+              "change",
+              "changes",
+              "changing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. change seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"changes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"change\" çünkü change seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I don't think sport _______ become boring.",
+            "options": [
+              "will",
+              "is",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I think cities _______ be smarter.",
+            "options": [
+              "will",
+              "are",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "People won't _______ teamwork.",
+            "options": [
+              "forget",
+              "forgets",
+              "forgetting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. forget seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"forgets\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"forget\" çünkü forget seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Lessons will probably _______ more interactive.",
+            "options": [
+              "be",
+              "are",
+              "being"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. be seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"be\" çünkü be seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Maybe there _______ be new kinds of transport.",
+            "options": [
+              "will",
+              "is",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I don't think paper books _______ disappear soon.",
+            "options": [
+              "will",
+              "are",
+              "do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "055-future-predictions-w1",
+            "word": "prediction",
+            "example": "This is my prediction.",
+            "audioText": "prediction",
+            "prompt": "\"prediction\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tahmin",
+              "teknoloji",
+              "robot",
+              "etkileşimli"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "055-future-predictions-w2",
+            "word": "technology",
+            "example": "Technology will change.",
+            "audioText": "technology",
+            "prompt": "\"technology\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tahmin",
+              "teknoloji",
+              "robot",
+              "etkileşimli"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "055-future-predictions-w3",
+            "word": "robot",
+            "example": "Robots will help people.",
+            "audioText": "robot",
+            "prompt": "\"robot\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tahmin",
+              "teknoloji",
+              "robot",
+              "etkileşimli"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "055-future-predictions-w4",
+            "word": "interactive",
+            "example": "Lessons will be interactive.",
+            "audioText": "interactive",
+            "prompt": "\"interactive\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tahmin",
+              "teknoloji",
+              "robot",
+              "etkileşimli"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "055-future-predictions-w5",
+            "word": "digital",
+            "example": "digital books",
+            "audioText": "digital",
+            "prompt": "\"digital\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dijital",
+              "tahmin",
+              "teknoloji",
+              "robot"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "will / won't ile gelecek tahminleri kurmak.",
+          "I think, I don't think, probably, maybe ifadelerini kullanmak.",
+          "Hedef kelimeler: prediction, technology, robot, interactive, digital, disappear, replace"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

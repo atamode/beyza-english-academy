@@ -1,0 +1,707 @@
+{
+  "id": "054-holiday-plans",
+  "title": "Holiday Plans",
+  "level": "A2.1",
+  "module": "Gelecek",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Tatil planlarını going to ile anlatmak.",
+    "Ulaşım, konaklama ve etkinlik kelimelerini kullanmak.",
+    "Günlere göre basit bir plan oluşturmak.",
+    "Where, When, How, What sorularına cevap vermek.",
+    "5–6 cümlelik kısa bir tatil planı yazmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Gerçek veya hayalî bir tatil planı hazırlayın. Beyza her cümlede önce yardımcı fiili, sonra going to, sonra yalın fiili kontrol etsin.",
+    "todayGoal": "Tatil planlarını going to ile anlatmak.",
+    "teachingTips": [
+      "Bu derste \"Holiday Plans\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "We are going to go on holiday.",
+      "We are going to leave on Monday.",
+      "We are going to travel by car.",
+      "We are going to stay in a hotel."
+    ],
+    "listeningScripts": [
+      "\"Next month, a school group is going to visit Ankara. They are going to travel by train. They are going to visit two museums and a large park. The students are going to take notebooks and cameras.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Holiday Plans Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "We are going to travel _______ train.",
+          "options": [
+            "by",
+            "on the",
+            "at"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They are going to stay _______ a hotel.",
+          "options": [
+            "in",
+            "on",
+            "under"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We are going to travel _______ plane.",
+          "options": [
+            "by",
+            "in",
+            "on the"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I am going to _______ my suitcase.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "We are going to _______ a museum.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: going to / we / are / travel / by car",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I am going to packed my bag.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Where are they going to go?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Holiday Plans yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Holiday Plans kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "by",
+        "in",
+        "by",
+        "pack",
+        "visit",
+        "we are going to travel by car",
+        "\"packed\" burada hatalıdır; doğru cevap \"pack\" olmalıdır.",
+        "To Antalya.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "054-holiday-plans-w1",
+    "054-holiday-plans-w2",
+    "054-holiday-plans-w3",
+    "054-holiday-plans-w4",
+    "054-holiday-plans-w5",
+    "054-holiday-plans-w6",
+    "054-holiday-plans-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Holiday Plans",
+      "instructionTr": "Tatil planlarını going to ile anlatmak.",
+      "content": {
+        "eyebrow": "Gelecek · DERS 54",
+        "heroText": "We are going to go on holiday."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Tatil planı anlatırken şu sorulara cevap verebiliriz: - Where are you going to go? - When are you going to leave? - How are you going to travel? - Where are you going to stay? - What are you going to do? Örnek: We are going to go to Antalya. We are going to leave on Monday. We are going to travel by bus. We are going to stay in a hotel. We are going to swim and visit museums.",
+      "content": {
+        "examples": [],
+        "noteTr": "Tatil planı anlatırken şu sorulara cevap verebiliriz: - Where are you going to go? - When are you going to leave? - How are you going to travel? - Where are you going to stay? - What are you going to do? Örnek: We are going to go to Antalya. We are going to leave on Monday. We are going to travel by bus. We are going to stay in a hotel. We are going to swim and visit museums."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "We are going to go on holiday.",
+          "We are going to leave on Monday.",
+          "We are going to travel by car.",
+          "We are going to stay in a hotel.",
+          "I am going to pack my bag.",
+          "We are going to visit a museum.",
+          "Beyza is going to take her camera.",
+          "They are going to swim in the sea.",
+          "We aren't going to stay for two weeks.",
+          "Are you going to buy souvenirs?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Where?",
+            "We are going to go to Antalya."
+          ],
+          [
+            "When?",
+            "We are going to leave on Monday."
+          ],
+          [
+            "How?",
+            "We are going to travel by car."
+          ],
+          [
+            "Where stay?",
+            "We are going to stay in a hotel."
+          ],
+          [
+            "What do?",
+            "We are going to swim."
+          ]
+        ]
+      },
+      "explanationTr": "Tatil planlarını going to ile anlatmak. Ulaşım, konaklama ve etkinlik kelimelerini kullanmak. Günlere göre basit bir plan oluşturmak. Where, When, How, What sorularına cevap vermek. 5–6 cümlelik kısa bir tatil planı yazmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "We are going to Antalya by go. ❌ → We are going to travel to Antalya by car. ✅",
+          "We going to stay hotel. ❌ → We are going to stay in a hotel. ✅",
+          "I am going to packing. ❌ → I am going to pack. ✅",
+          "by the bus başlangıç düzeyinde ulaşım biçimi için → by bus ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "We are going to travel _______ train.",
+      "content": {
+        "options": [
+          "by",
+          "on the",
+          "at"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. by seçeneği cümledeki hedef kurala uyar.",
+          "\"on the\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"by\" çünkü by seçeneği cümledeki hedef kurala uyar.",
+          "\"at\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"by\" çünkü by seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They are going to stay _______ a hotel.",
+      "content": {
+        "options": [
+          "in",
+          "on",
+          "under"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. in seçeneği cümledeki hedef kurala uyar.",
+          "\"on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"in\" çünkü in seçeneği cümledeki hedef kurala uyar.",
+          "\"under\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"in\" çünkü in seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I am going to _______ my suitcase.",
+      "content": {
+        "answer": "pack",
+        "accepted": [
+          "pack"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"pack\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Tatil planlarını going to ile anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "going to",
+          "we",
+          "are",
+          "travel",
+          "by car"
+        ],
+        "answer": [
+          "we",
+          "are",
+          "going to",
+          "travel",
+          "by car"
+        ],
+        "explanationTr": "Doğru sıra: we are going to travel by car"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "am",
+          "going",
+          "to",
+          "packed",
+          "my",
+          "bag."
+        ],
+        "wrongIndex": 4,
+        "explanationTr": "\"packed\" burada hatalıdır; doğru cevap \"pack\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "travel",
+            "by train"
+          ],
+          [
+            "stay",
+            "in a hotel"
+          ],
+          [
+            "pack",
+            "a suitcase"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza and her family are going to have a short holiday in Antalya. They are going to leave on Tuesday morning and travel by car. They are going to stay in a small hotel near the sea. Beyza is going to swim, take photos and visit a museum. They are going to return on Friday.",
+        "questions": [
+          {
+            "prompt": "Where are they going to go?",
+            "options": [
+              "To Antalya.",
+              "By car.",
+              "Swim, take photos and visit a museum."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"To Antalya.\" olmalıdır.",
+              "\"By car.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"To Antalya.\".",
+              "\"Swim, take photos and visit a museum.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"To Antalya.\"."
+            ]
+          },
+          {
+            "prompt": "How are they going to travel?",
+            "options": [
+              "Swim, take photos and visit a museum.",
+              "By car.",
+              "To Antalya."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Swim, take photos and visit a museum.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"By car.\".",
+              "Doğru. Bu soruda cevap \"By car.\" olmalıdır.",
+              "\"To Antalya.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"By car.\"."
+            ]
+          },
+          {
+            "prompt": "What is Beyza going to do?",
+            "options": [
+              "To Antalya.",
+              "By car.",
+              "Swim, take photos and visit a museum."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"To Antalya.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Swim, take photos and visit a museum.\".",
+              "\"By car.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Swim, take photos and visit a museum.\".",
+              "Doğru. Bu soruda cevap \"Swim, take photos and visit a museum.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where is the group going to go?",
+      "content": {
+        "audioText": "\"Next month, a school group is going to visit Ankara. They are going to travel by train. They are going to visit two museums and a large park. The students are going to take notebooks and cameras.\"",
+        "questions": [
+          {
+            "prompt": "Where is the group going to go?",
+            "options": [
+              "Ankara.",
+              "By train.",
+              "Notebooks and cameras."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Ankara.\" olmalıdır.",
+              "\"By train.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Ankara.\".",
+              "\"Notebooks and cameras.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Ankara.\"."
+            ]
+          },
+          {
+            "prompt": "How are they going to travel?",
+            "options": [
+              "Notebooks and cameras.",
+              "By train.",
+              "Ankara."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Notebooks and cameras.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"By train.\".",
+              "Doğru. Bu soruda cevap \"By train.\" olmalıdır.",
+              "\"Ankara.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"By train.\"."
+            ]
+          },
+          {
+            "prompt": "What are the students going to take?",
+            "options": [
+              "Ankara.",
+              "By train.",
+              "Notebooks and cameras."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Ankara.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Notebooks and cameras.\".",
+              "\"By train.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Notebooks and cameras.\".",
+              "Doğru. Bu soruda cevap \"Notebooks and cameras.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Hayalindeki tatil için şu soruları cevapla: - Where are you going to go? - How are you going to travel? - Where are you going to stay? - What are you going to do?",
+      "content": {
+        "sentenceStarters": [
+          "Where are you going to go?",
+          "How are you going to travel?",
+          "Where are you going to stay?",
+          "What are you going to do?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "We are going to travel _______ plane.",
+            "options": [
+              "by",
+              "in",
+              "on the"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. by seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"in\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"by\" çünkü by seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She is going to _______ her suitcase.",
+            "options": [
+              "pack",
+              "packs",
+              "packing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. pack seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"packs\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"pack\" çünkü pack seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They are going to stay _______ a hotel.",
+            "options": [
+              "in",
+              "on",
+              "at the top"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. in seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"in\" çünkü in seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We are going to _______ souvenirs.",
+            "options": [
+              "buy",
+              "bought",
+              "buying"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. buy seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"bought\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Are you going to _______ photos?",
+            "options": [
+              "take",
+              "took",
+              "taking"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. take seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"took\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"take\" çünkü take seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "We are going to _______ on Monday.",
+            "options": [
+              "leave",
+              "left",
+              "leaving"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. leave seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"left\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"leave\" çünkü leave seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They are going to travel _______ bus.",
+            "options": [
+              "by",
+              "in",
+              "at"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. by seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"in\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"by\" çünkü by seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I am going to stay _______ my aunt.",
+            "options": [
+              "with",
+              "on",
+              "under"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. with seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"with\" çünkü with seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She is going to _______ a museum.",
+            "options": [
+              "visit",
+              "visited",
+              "visiting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. visit seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"visited\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"visit\" çünkü visit seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We are going to _______ on Friday.",
+            "options": [
+              "return",
+              "returned",
+              "returning"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. return seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"returned\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"return\" çünkü return seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "054-holiday-plans-w1",
+            "word": "holiday",
+            "example": "We are going on holiday.",
+            "audioText": "holiday",
+            "prompt": "\"holiday\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tatil",
+              "seyahat etmek",
+              "otel",
+              "bavul hazırlamak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "054-holiday-plans-w2",
+            "word": "travel",
+            "example": "We are going to travel by train.",
+            "audioText": "travel",
+            "prompt": "\"travel\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tatil",
+              "seyahat etmek",
+              "otel",
+              "bavul hazırlamak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "054-holiday-plans-w3",
+            "word": "hotel",
+            "example": "We are going to stay in a hotel.",
+            "audioText": "hotel",
+            "prompt": "\"hotel\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tatil",
+              "seyahat etmek",
+              "otel",
+              "bavul hazırlamak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "054-holiday-plans-w4",
+            "word": "pack",
+            "example": "Pack your suitcase.",
+            "audioText": "pack",
+            "prompt": "\"pack\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tatil",
+              "seyahat etmek",
+              "otel",
+              "bavul hazırlamak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "054-holiday-plans-w5",
+            "word": "suitcase",
+            "example": "My suitcase is ready.",
+            "audioText": "suitcase",
+            "prompt": "\"suitcase\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "bavul",
+              "tatil",
+              "seyahat etmek",
+              "otel"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Tatil planlarını going to ile anlatmak.",
+          "Ulaşım, konaklama ve etkinlik kelimelerini kullanmak.",
+          "Hedef kelimeler: holiday, travel, hotel, pack, suitcase, souvenir, return"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

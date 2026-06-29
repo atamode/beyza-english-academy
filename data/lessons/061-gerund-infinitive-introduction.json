@@ -1,0 +1,691 @@
+{
+  "id": "061-gerund-infinitive-introduction",
+  "title": "Gerund / Infinitive Introduction",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "like / love / enjoy + verb-ing kalıplarını kullanmak.",
+    "want / need / hope + to + verb kalıplarını kullanmak.",
+    "Temel fiil kalıplarını ayırt etmek.",
+    "Hobi, plan ve ihtiyaçlardan söz etmek.",
+    "İleri düzey istisnalara girmeden sık kullanılan örnekleri öğrenmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Bu konuyu kural listesi gibi değil, kalıp olarak çalışın. enjoy reading, want to learn gibi parçaları birlikte tekrar etmek daha etkilidir.",
+    "todayGoal": "like / love / enjoy + verb-ing kalıplarını kullanmak.",
+    "teachingTips": [
+      "Bu derste \"Gerund / Infinitive Introduction\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I like reading.",
+      "She loves playing volleyball.",
+      "He enjoys drawing.",
+      "We like watching films."
+    ],
+    "listeningScripts": [
+      "\"The team loves playing volleyball. The players enjoy practising together. They want to improve their serves and need to work on teamwork. They hope to win their next match.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Gerund / Infinitive Introduction Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I enjoy _______ books.",
+          "options": [
+            "read",
+            "reading",
+            "to reading"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She wants _______ English.",
+          "options": [
+            "learn",
+            "learning",
+            "to learn"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I like _______.",
+          "options": [
+            "read",
+            "reading",
+            "to reading"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "We love _______ volleyball. (play)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "He needs _______ his homework. (finish)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: enjoy / I / listening to music",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I enjoy to play volleyball.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What does Beyza enjoy?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Gerund / Infinitive Introduction yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Gerund / Infinitive Introduction kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "reading",
+        "to learn",
+        "reading",
+        "playing",
+        "to finish",
+        "I enjoy listening to music",
+        "\"to play\" burada hatalıdır; doğru cevap \"playing\" olmalıdır.",
+        "Learning with games.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "061-gerund-infinitive-introduction-w1",
+    "061-gerund-infinitive-introduction-w2",
+    "061-gerund-infinitive-introduction-w3",
+    "061-gerund-infinitive-introduction-w4",
+    "061-gerund-infinitive-introduction-w5",
+    "061-gerund-infinitive-introduction-w6",
+    "061-gerund-infinitive-introduction-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Gerund / Infinitive Introduction",
+      "instructionTr": "like / love / enjoy + verb-ing kalıplarını kullanmak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 61",
+        "heroText": "I like reading."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bazı fiillerden sonra -ing kullanılır: - I like reading. - She loves playing volleyball. - They enjoy listening to music. Bazı fiillerden sonra to + fiil kullanılır: - I want to learn English. - She needs to practise. - We hope to win. Bu derste yalnız en sık kullanılan kalıplar öğrenilir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bazı fiillerden sonra -ing kullanılır: - I like reading. - She loves playing volleyball. - They enjoy listening to music. Bazı fiillerden sonra to + fiil kullanılır: - I want to learn English. - She needs to practise. - We hope to win. Bu derste yalnız en sık kullanılan kalıplar öğrenilir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I like reading.",
+          "She loves playing volleyball.",
+          "He enjoys drawing.",
+          "We like watching films.",
+          "They enjoy listening to music.",
+          "I want to learn English.",
+          "She needs to finish her homework.",
+          "We hope to win the match.",
+          "Beyza wants to improve her speaking.",
+          "The team needs to practise more."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "like / love / enjoy",
+            "verb-ing",
+            "I enjoy reading."
+          ],
+          [
+            "want / need / hope",
+            "to + verb",
+            "I want to learn."
+          ]
+        ]
+      },
+      "explanationTr": "like / love / enjoy + verb-ing kalıplarını kullanmak. want / need / hope + to + verb kalıplarını kullanmak. Temel fiil kalıplarını ayırt etmek. Hobi, plan ve ihtiyaçlardan söz etmek. İleri düzey istisnalara girmeden sık kullanılan örnekleri öğrenmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I enjoy to read. hedef yapı → I enjoy reading. ✅",
+          "She wants learning. ❌ → She wants to learn. ✅",
+          "We need practising. hedef yapı → We need to practise. ✅",
+          "He likes play. ❌ → He likes playing. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I enjoy _______ books.",
+      "content": {
+        "options": [
+          "read",
+          "reading",
+          "to reading"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"read\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. reading seçeneği cümledeki hedef kurala uyar.",
+          "\"to reading\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "She wants _______ English.",
+      "content": {
+        "options": [
+          "learn",
+          "learning",
+          "to learn"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"learn\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to learn\" çünkü to learn seçeneği cümledeki hedef kurala uyar.",
+          "\"learning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to learn\" çünkü to learn seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. to learn seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "We love _______ volleyball. (play)",
+      "content": {
+        "answer": "playing",
+        "accepted": [
+          "playing"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"playing\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "like / love / enjoy + verb-ing kalıplarını kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "enjoy",
+          "I",
+          "listening to music"
+        ],
+        "answer": [
+          "I",
+          "enjoy",
+          "listening to music"
+        ],
+        "explanationTr": "Doğru sıra: I enjoy listening to music"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "enjoy",
+          "to",
+          "play",
+          "volleyball."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"to play\" burada hatalıdır; doğru cevap \"playing\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "enjoy",
+            "to practise"
+          ],
+          [
+            "want",
+            "reading"
+          ],
+          [
+            "need",
+            "to learn"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza enjoys learning with games. She likes reading short English texts and loves playing vocabulary games. She wants to speak more confidently. She needs to practise regularly and hopes to finish the course successfully.",
+        "questions": [
+          {
+            "prompt": "What does Beyza enjoy?",
+            "options": [
+              "Learning with games.",
+              "Speak more confidently.",
+              "Practise regularly."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Learning with games.\" olmalıdır.",
+              "\"Speak more confidently.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Learning with games.\".",
+              "\"Practise regularly.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Learning with games.\"."
+            ]
+          },
+          {
+            "prompt": "What does she want to do?",
+            "options": [
+              "Practise regularly.",
+              "Speak more confidently.",
+              "Learning with games."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Practise regularly.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Speak more confidently.\".",
+              "Doğru. Bu soruda cevap \"Speak more confidently.\" olmalıdır.",
+              "\"Learning with games.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Speak more confidently.\"."
+            ]
+          },
+          {
+            "prompt": "What does she need to do?",
+            "options": [
+              "Learning with games.",
+              "Speak more confidently.",
+              "Practise regularly."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Learning with games.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Practise regularly.\".",
+              "\"Speak more confidently.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Practise regularly.\".",
+              "Doğru. Bu soruda cevap \"Practise regularly.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What do the players enjoy?",
+      "content": {
+        "audioText": "\"The team loves playing volleyball. The players enjoy practising together. They want to improve their serves and need to work on teamwork. They hope to win their next match.\"",
+        "questions": [
+          {
+            "prompt": "What do the players enjoy?",
+            "options": [
+              "Practising together.",
+              "Their serves.",
+              "Win their next match."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Practising together.\" olmalıdır.",
+              "\"Their serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Practising together.\".",
+              "\"Win their next match.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Practising together.\"."
+            ]
+          },
+          {
+            "prompt": "What do they want to improve?",
+            "options": [
+              "Win their next match.",
+              "Their serves.",
+              "Practising together."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Win their next match.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their serves.\".",
+              "Doğru. Bu soruda cevap \"Their serves.\" olmalıdır.",
+              "\"Practising together.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their serves.\"."
+            ]
+          },
+          {
+            "prompt": "What do they hope to do?",
+            "options": [
+              "Practising together.",
+              "Their serves.",
+              "Win their next match."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Practising together.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Win their next match.\".",
+              "\"Their serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Win their next match.\".",
+              "Doğru. Bu soruda cevap \"Win their next match.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dört cümle kur: - I like ... - I enjoy ... - I want to ... - I need to ...",
+      "content": {
+        "sentenceStarters": [
+          "I like ...",
+          "I enjoy ...",
+          "I want to ...",
+          "I need to ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I like _______.",
+            "options": [
+              "read",
+              "reading",
+              "to reading"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. reading seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"read\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She wants _______.",
+            "options": [
+              "to learn",
+              "learning",
+              "learn to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. to learn seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"learning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to learn\" çünkü to learn seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We enjoy _______ together.",
+            "options": [
+              "practising",
+              "to practise",
+              "practise"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. practising seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"to practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practising\" çünkü practising seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He needs _______.",
+            "options": [
+              "to study",
+              "studying",
+              "study to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. to study seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"studying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to study\" çünkü to study seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They hope _______ the match.",
+            "options": [
+              "to win",
+              "winning",
+              "win to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. to win seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"winning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to win\" çünkü to win seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I enjoy _______ music.",
+            "options": [
+              "listening to",
+              "to listen to",
+              "listen"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. listening to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"to listen to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"listening to\" çünkü listening to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She needs _______ more.",
+            "options": [
+              "to practise",
+              "practising",
+              "practise to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. to practise seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"practising\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to practise\" çünkü to practise seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We love _______ films.",
+            "options": [
+              "watching",
+              "to watching",
+              "watch"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. watching seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"to watching\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watching\" çünkü watching seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He wants _______ a new skill.",
+            "options": [
+              "to learn",
+              "learning",
+              "learn to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. to learn seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"learning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to learn\" çünkü to learn seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They hope _______ on time.",
+            "options": [
+              "to arrive",
+              "arriving",
+              "arrive to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. to arrive seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"arriving\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to arrive\" çünkü to arrive seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "061-gerund-infinitive-introduction-w1",
+            "word": "enjoy",
+            "example": "I enjoy reading.",
+            "audioText": "enjoy",
+            "prompt": "\"enjoy\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "keyif almak",
+              "umut etmek",
+              "geliştirmek",
+              "özgüvenle"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "061-gerund-infinitive-introduction-w2",
+            "word": "hope",
+            "example": "We hope to win.",
+            "audioText": "hope",
+            "prompt": "\"hope\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "keyif almak",
+              "umut etmek",
+              "geliştirmek",
+              "özgüvenle"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "061-gerund-infinitive-introduction-w3",
+            "word": "improve",
+            "example": "She wants to improve.",
+            "audioText": "improve",
+            "prompt": "\"improve\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "keyif almak",
+              "umut etmek",
+              "geliştirmek",
+              "özgüvenle"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "061-gerund-infinitive-introduction-w4",
+            "word": "confidently",
+            "example": "Speak confidently.",
+            "audioText": "confidently",
+            "prompt": "\"confidently\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "keyif almak",
+              "umut etmek",
+              "geliştirmek",
+              "özgüvenle"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "061-gerund-infinitive-introduction-w5",
+            "word": "regularly",
+            "example": "Practise regularly.",
+            "audioText": "regularly",
+            "prompt": "\"regularly\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "düzenli olarak",
+              "keyif almak",
+              "umut etmek",
+              "geliştirmek"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "like / love / enjoy + verb-ing kalıplarını kullanmak.",
+          "want / need / hope + to + verb kalıplarını kullanmak.",
+          "Hedef kelimeler: enjoy, hope, improve, confidently, regularly, successfully, teamwork"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

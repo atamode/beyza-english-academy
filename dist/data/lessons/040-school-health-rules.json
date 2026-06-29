@@ -1,0 +1,715 @@
+{
+  "id": "040-school-health-rules",
+  "title": "School and Health Rules",
+  "level": "A2.1",
+  "module": "Yetenek, Tavsiye ve Kurallar",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "can/can't, should/shouldn't, must/mustn't ve have to yapılarını gerçek kurallarda kullanmak.",
+    "Tavsiye, yasak ve zorunluluk arasındaki farkı ayırt etmek.",
+    "Okul ve sağlıkla ilgili kısa kurallar oluşturmak.",
+    "Basit bir kural afişi hazırlamak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'ya bir cümle vermeden önce anlamı sınıflandırmasını sorun: tavsiye, yasak, zorunluluk veya izin. Bu yöntem yapıların birbirine karışmasını önler.",
+    "todayGoal": "can/can't, should/shouldn't, must/mustn't ve have to yapılarını gerçek kurallarda kullanmak.",
+    "teachingTips": [
+      "Bu derste \"School and Health Rules\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "Students can use the library.",
+      "You can't use your phone during the test.",
+      "You should drink enough water.",
+      "You shouldn't skip breakfast."
+    ],
+    "listeningScripts": [
+      "\"Before volleyball practice, players have to change their shoes. They should drink water. They mustn't use damaged balls or nets. They can ask the coach for help. They don't have to bring their own ball.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "School and Health Rules Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Running in the corridor is forbidden. You _______ run.",
+          "options": [
+            "shouldn't",
+            "mustn't",
+            "don't have to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Drinking water is good advice. You _______ drink more water.",
+          "options": [
+            "should",
+            "mustn't",
+            "can't"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "You _______ drink water when it is hot.",
+          "options": [
+            "should",
+            "mustn't",
+            "don't have to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "Students _______ bring their notebooks every day.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "You _______ touch broken glass.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: should / drink / you / water",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: You don't have to run in the corridor.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "When do students have to arrive?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "School and Health Rules yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "School and Health Rules kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "mustn't",
+        "should",
+        "should",
+        "have to",
+        "mustn't",
+        "you should drink water",
+        "\"don't have to\" burada hatalıdır; doğru cevap \"mustn't\" olmalıdır.",
+        "On time.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "040-school-health-rules-w1",
+    "040-school-health-rules-w2",
+    "040-school-health-rules-w3",
+    "040-school-health-rules-w4",
+    "040-school-health-rules-w5",
+    "040-school-health-rules-w6",
+    "040-school-health-rules-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "School and Health Rules",
+      "instructionTr": "can/can't, should/shouldn't, must/mustn't ve have to yapılarını gerçek kurallarda kullanmak.",
+      "content": {
+        "eyebrow": "Yetenek, Tavsiye ve Kurallar · DERS 40",
+        "heroText": "Students can use the library."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bu derste önceki yapıları birlikte kullanacağız: ### Yetenek / izin - You can use the library after school. - You can't enter this room now. ### Tavsiye - You should drink water. - You shouldn't skip breakfast. ### Güçlü kural / yasak - You must listen to the teacher. - You mustn't run in the corridor. ### Günlük zorunluluk - You have to bring your notebook. - You don't have to stay after class. Bir kuralı doğru anlatmak için önce anlamını düşün: - Tavsiye mi? - Yasak mı? - Zorunluluk mu? - İzin veya yetenek mi?",
+      "content": {
+        "examples": [],
+        "noteTr": "Bu derste önceki yapıları birlikte kullanacağız: ### Yetenek / izin - You can use the library after school. - You can't enter this room now. ### Tavsiye - You should drink water. - You shouldn't skip breakfast. ### Güçlü kural / yasak - You must listen to the teacher. - You mustn't run in the corridor. ### Günlük zorunluluk - You have to bring your notebook. - You don't have to stay after class. Bir kuralı doğru anlatmak için önce anlamını düşün: - Tavsiye mi? - Yasak mı? - Zorunluluk mu? - İzin veya yetenek mi?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "Students can use the library.",
+          "You can't use your phone during the test.",
+          "You should drink enough water.",
+          "You shouldn't skip breakfast.",
+          "You must listen to the teacher.",
+          "You mustn't run on wet floors.",
+          "Students have to bring their notebooks.",
+          "They don't have to stay after class.",
+          "Players should warm up before practice.",
+          "Everyone must keep emergency exits clear."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Yetenek/izin",
+            "can/can't",
+            "You can enter."
+          ],
+          [
+            "Tavsiye",
+            "should/shouldn't",
+            "You should rest."
+          ],
+          [
+            "Kural/yasak",
+            "must/mustn't",
+            "You mustn't run."
+          ],
+          [
+            "Zorunluluk",
+            "have to",
+            "You have to study."
+          ],
+          [
+            "Zorunluluk yok",
+            "don't have to",
+            "You don't have to stay."
+          ]
+        ]
+      },
+      "explanationTr": "can/can't, should/shouldn't, must/mustn't ve have to yapılarını gerçek kurallarda kullanmak. Tavsiye, yasak ve zorunluluk arasındaki farkı ayırt etmek. Okul ve sağlıkla ilgili kısa kurallar oluşturmak. Basit bir kural afişi hazırlamak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "You mustn't bring lunch. sadece yasak varsa kullanılır.",
+          "You don't have to bring lunch. = getirmen gerekmiyor.",
+          "You should wear a seat belt. bazı bağlamlarda tavsiyeden zayıf kalır; güvenlik kuralında must daha doğrudur.",
+          "Modal fiillerden sonra fiil yalın kalır."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Running in the corridor is forbidden. You _______ run.",
+      "content": {
+        "options": [
+          "shouldn't",
+          "mustn't",
+          "don't have to"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"shouldn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. mustn't seçeneği cümledeki hedef kurala uyar.",
+          "\"don't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Drinking water is good advice. You _______ drink more water.",
+      "content": {
+        "options": [
+          "should",
+          "mustn't",
+          "can't"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+          "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar.",
+          "\"can't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Students _______ bring their notebooks every day.",
+      "content": {
+        "answer": "have to",
+        "accepted": [
+          "have to"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"have to\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "can/can't, should/shouldn't, must/mustn't ve have to yapılarını gerçek kurallarda kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "should",
+          "drink",
+          "you",
+          "water"
+        ],
+        "answer": [
+          "you",
+          "should",
+          "drink",
+          "water"
+        ],
+        "explanationTr": "Doğru sıra: you should drink water"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "You",
+          "don't",
+          "have",
+          "to",
+          "run",
+          "in",
+          "the",
+          "corridor."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"don't have to\" burada hatalıdır; doğru cevap \"mustn't\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Tavsiye",
+            "You should rest."
+          ],
+          [
+            "Yasak",
+            "You mustn't enter."
+          ],
+          [
+            "Zorunluluk",
+            "You have to bring your book."
+          ],
+          [
+            "Zorunluluk yok",
+            "You don't have to stay."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza's school has simple rules. Students have to arrive on time. They must listen during lessons. They mustn't run in the corridors. They can use the library after school. They should bring water on hot days.",
+        "questions": [
+          {
+            "prompt": "When do students have to arrive?",
+            "options": [
+              "On time.",
+              "In the corridors.",
+              "The library."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"On time.\" olmalıdır.",
+              "\"In the corridors.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"On time.\".",
+              "\"The library.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"On time.\"."
+            ]
+          },
+          {
+            "prompt": "Where mustn't they run?",
+            "options": [
+              "The library.",
+              "In the corridors.",
+              "On time."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The library.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In the corridors.\".",
+              "Doğru. Bu soruda cevap \"In the corridors.\" olmalıdır.",
+              "\"On time.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In the corridors.\"."
+            ]
+          },
+          {
+            "prompt": "What can they use after school?",
+            "options": [
+              "On time.",
+              "In the corridors.",
+              "The library."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"On time.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The library.\".",
+              "\"In the corridors.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The library.\".",
+              "Doğru. Bu soruda cevap \"The library.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What do players have to change?",
+      "content": {
+        "audioText": "\"Before volleyball practice, players have to change their shoes. They should drink water. They mustn't use damaged balls or nets. They can ask the coach for help. They don't have to bring their own ball.\"",
+        "questions": [
+          {
+            "prompt": "What do players have to change?",
+            "options": [
+              "Their shoes.",
+              "Damaged balls or nets.",
+              "No, they don't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Their shoes.\" olmalıdır.",
+              "\"Damaged balls or nets.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their shoes.\".",
+              "\"No, they don't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their shoes.\"."
+            ]
+          },
+          {
+            "prompt": "What mustn't they use?",
+            "options": [
+              "No, they don't.",
+              "Damaged balls or nets.",
+              "Their shoes."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they don't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Damaged balls or nets.\".",
+              "Doğru. Bu soruda cevap \"Damaged balls or nets.\" olmalıdır.",
+              "\"Their shoes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Damaged balls or nets.\"."
+            ]
+          },
+          {
+            "prompt": "Do they have to bring their own ball?",
+            "options": [
+              "Their shoes.",
+              "Damaged balls or nets.",
+              "No, they don't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Their shoes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they don't.\".",
+              "\"Damaged balls or nets.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they don't.\".",
+              "Doğru. Bu soruda cevap \"No, they don't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir okul kural afişi hazırla. En az beş cümle kullan: - one can/can't - one should/shouldn't - one must - one mustn't - one have to/don't have to",
+      "content": {
+        "sentenceStarters": [
+          "one can/can't",
+          "one should/shouldn't",
+          "one must",
+          "one mustn't",
+          "one have to/don't have to"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "You _______ drink water when it is hot.",
+            "options": [
+              "should",
+              "mustn't",
+              "don't have to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Students _______ run during the fire drill.",
+            "options": [
+              "must",
+              "mustn't",
+              "should"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. mustn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"must\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ bring our books every day.",
+            "options": [
+              "have to",
+              "has to",
+              "can to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You _______ use the library after school.",
+            "options": [
+              "can",
+              "mustn't",
+              "doesn't have to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You _______ stay after the activity today.",
+            "options": [
+              "don't have to",
+              "mustn't",
+              "has to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. don't have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "A rule says \"No phones.\" You _______ use your phone.",
+            "options": [
+              "should",
+              "mustn't",
+              "don't have to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. mustn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You are tired. You _______ rest.",
+            "options": [
+              "should",
+              "mustn't",
+              "can't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Students _______ arrive before nine.",
+            "options": [
+              "have to",
+              "has to",
+              "don't has to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "You _______ bring lunch; the school provides it.",
+            "options": [
+              "don't have to",
+              "mustn't",
+              "can't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. don't have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Students _______ ask the teacher for help.",
+            "options": [
+              "can",
+              "mustn't",
+              "doesn't have to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "040-school-health-rules-w1",
+            "word": "library",
+            "example": "You can use the library.",
+            "audioText": "library",
+            "prompt": "\"library\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kütüphane",
+              "koridor",
+              "yasak",
+              "acil durum"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "040-school-health-rules-w2",
+            "word": "corridor",
+            "example": "Don't run in the corridor.",
+            "audioText": "corridor",
+            "prompt": "\"corridor\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kütüphane",
+              "koridor",
+              "yasak",
+              "acil durum"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "040-school-health-rules-w3",
+            "word": "forbidden",
+            "example": "Running here is forbidden.",
+            "audioText": "forbidden",
+            "prompt": "\"forbidden\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kütüphane",
+              "koridor",
+              "yasak",
+              "acil durum"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "040-school-health-rules-w4",
+            "word": "emergency",
+            "example": "emergency exit",
+            "audioText": "emergency",
+            "prompt": "\"emergency\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kütüphane",
+              "koridor",
+              "yasak",
+              "acil durum"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "040-school-health-rules-w5",
+            "word": "wet",
+            "example": "The floor is wet.",
+            "audioText": "wet",
+            "prompt": "\"wet\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ıslak",
+              "kütüphane",
+              "koridor",
+              "yasak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "can/can't, should/shouldn't, must/mustn't ve have to yapılarını gerçek kurallarda kullanmak.",
+          "Tavsiye, yasak ve zorunluluk arasındaki farkı ayırt etmek.",
+          "Hedef kelimeler: library, corridor, forbidden, emergency, wet, safe, permission"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

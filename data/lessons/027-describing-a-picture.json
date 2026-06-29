@@ -1,0 +1,698 @@
+{
+  "id": "027-describing-a-picture",
+  "title": "Describing a Picture",
+  "level": "A2.1",
+  "module": "Şu An",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Bir görseldeki kişileri ve eylemleri anlatmak.",
+    "There is / There are ile kişi ve nesneleri tanıtmak.",
+    "Present Continuous ile eylemleri söylemek.",
+    "Yer edatlarıyla konum bildirmek.",
+    "Kısa ve düzenli bir resim anlatımı yapmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Telefonunuzdaki herhangi bir aile fotoğrafını veya güvenli bir görseli kullanabilirsiniz. Beyza'dan önce kişileri saymasını, sonra ne yaptıklarını ve son olarak nerede olduklarını söylemesini isteyin.",
+    "todayGoal": "Bir görseldeki kişileri ve eylemleri anlatmak.",
+    "teachingTips": [
+      "Bu derste \"Describing a Picture\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "This is a park.",
+      "There are four children.",
+      "A boy is riding a bike.",
+      "Two girls are talking."
+    ],
+    "listeningScripts": [
+      "\"Imagine a small stage. Two singers are standing in front of the microphones. A musician is playing the guitar. Two people are moving chairs. A poster is on the wall.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Describing a Picture Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "There _______ three children in the picture.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "A girl is _______ a book.",
+          "options": [
+            "read",
+            "reading",
+            "reads"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "There _______ two girls in the picture.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "The coach is _______ near the net.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "There _______ a volleyball on the floor.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: are / two girls / talking",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: There is two players.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How many students are there?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Describing a Picture yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Describing a Picture kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "are",
+        "reading",
+        "are",
+        "standing",
+        "is",
+        "two girls are talking",
+        "\"is\" burada hatalıdır; doğru cevap \"are\" olmalıdır.",
+        "There are five students.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "027-describing-a-picture-w1",
+    "027-describing-a-picture-w2",
+    "027-describing-a-picture-w3",
+    "027-describing-a-picture-w4",
+    "027-describing-a-picture-w5",
+    "027-describing-a-picture-w6",
+    "027-describing-a-picture-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Describing a Picture",
+      "instructionTr": "Bir görseldeki kişileri ve eylemleri anlatmak.",
+      "content": {
+        "eyebrow": "Şu An · DERS 27",
+        "heroText": "This is a park."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bir resmi anlatırken üç adım kullanabiliriz: 1. Neresi olduğunu söyle - This is a park. - This is a sports hall. 2. Kimlerin veya nelerin olduğunu söyle - There are three children. - There is a ball. 3. Ne yaptıklarını söyle - Two children are playing. - A girl is sitting on a bench. Konum eklemek anlatımı güçlendirir: - A bag is under the bench. - The coach is standing near the net.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bir resmi anlatırken üç adım kullanabiliriz: 1. Neresi olduğunu söyle - This is a park. - This is a sports hall. 2. Kimlerin veya nelerin olduğunu söyle - There are three children. - There is a ball. 3. Ne yaptıklarını söyle - Two children are playing. - A girl is sitting on a bench. Konum eklemek anlatımı güçlendirir: - A bag is under the bench. - The coach is standing near the net."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "This is a park.",
+          "There are four children.",
+          "A boy is riding a bike.",
+          "Two girls are talking.",
+          "A dog is running near the tree.",
+          "There is a bag under the bench.",
+          "A woman is reading on the bench.",
+          "This is a volleyball court.",
+          "The players are standing near the net.",
+          "The coach is holding a ball."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Mekân",
+            "This is...",
+            "This is a park."
+          ],
+          [
+            "Varlık",
+            "There is/are...",
+            "There are two girls."
+          ],
+          [
+            "Eylem",
+            "am/is/are + ing",
+            "They are talking."
+          ],
+          [
+            "Konum",
+            "yer edatı",
+            "The bag is under the bench."
+          ]
+        ]
+      },
+      "explanationTr": "Bir görseldeki kişileri ve eylemleri anlatmak. There is / There are ile kişi ve nesneleri tanıtmak. Present Continuous ile eylemleri söylemek. Yer edatlarıyla konum bildirmek. Kısa ve düzenli bir resim anlatımı yapmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "There are a girl. ❌ → There is a girl. ✅",
+          "The boys playing. ❌ → The boys are playing. ✅",
+          "A bag is in the bench. ❌ → A bag is under the bench. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "There _______ three children in the picture.",
+      "content": {
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "A girl is _______ a book.",
+      "content": {
+        "options": [
+          "read",
+          "reading",
+          "reads"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"read\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. reading seçeneği cümledeki hedef kurala uyar.",
+          "\"reads\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "The coach is _______ near the net.",
+      "content": {
+        "answer": "standing",
+        "accepted": [
+          "standing"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"standing\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Bir görseldeki kişileri ve eylemleri anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "are",
+          "two girls",
+          "talking"
+        ],
+        "answer": [
+          "two girls",
+          "are",
+          "talking"
+        ],
+        "explanationTr": "Doğru sıra: two girls are talking"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "There",
+          "is",
+          "two",
+          "players."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"is\" burada hatalıdır; doğru cevap \"are\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "A boy is",
+            "riding a bike."
+          ],
+          [
+            "Two girls are",
+            "talking."
+          ],
+          [
+            "The coach is",
+            "holding a ball."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "This is a school garden. There are five students. Two students are playing with a ball. One girl is sitting under a tree. A teacher is standing near the door. A school bag is on the ground.",
+        "questions": [
+          {
+            "prompt": "How many students are there?",
+            "options": [
+              "There are five students.",
+              "They are playing with a ball.",
+              "She is standing near the door."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"There are five students.\" olmalıdır.",
+              "\"They are playing with a ball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"There are five students.\".",
+              "\"She is standing near the door.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"There are five students.\"."
+            ]
+          },
+          {
+            "prompt": "What are two students doing?",
+            "options": [
+              "She is standing near the door.",
+              "They are playing with a ball.",
+              "There are five students."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She is standing near the door.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are playing with a ball.\".",
+              "Doğru. Bu soruda cevap \"They are playing with a ball.\" olmalıdır.",
+              "\"There are five students.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are playing with a ball.\"."
+            ]
+          },
+          {
+            "prompt": "Where is the teacher?",
+            "options": [
+              "There are five students.",
+              "They are playing with a ball.",
+              "She is standing near the door."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"There are five students.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is standing near the door.\".",
+              "\"They are playing with a ball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is standing near the door.\".",
+              "Doğru. Bu soruda cevap \"She is standing near the door.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "How many singers are there?",
+      "content": {
+        "audioText": "\"Imagine a small stage. Two singers are standing in front of the microphones. A musician is playing the guitar. Two people are moving chairs. A poster is on the wall.\"",
+        "questions": [
+          {
+            "prompt": "How many singers are there?",
+            "options": [
+              "There are two singers.",
+              "The musician is playing the guitar.",
+              "They are moving chairs."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"There are two singers.\" olmalıdır.",
+              "\"The musician is playing the guitar.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"There are two singers.\".",
+              "\"They are moving chairs.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"There are two singers.\"."
+            ]
+          },
+          {
+            "prompt": "What is the musician doing?",
+            "options": [
+              "They are moving chairs.",
+              "The musician is playing the guitar.",
+              "There are two singers."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"They are moving chairs.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The musician is playing the guitar.\".",
+              "Doğru. Bu soruda cevap \"The musician is playing the guitar.\" olmalıdır.",
+              "\"There are two singers.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The musician is playing the guitar.\"."
+            ]
+          },
+          {
+            "prompt": "What are two people moving?",
+            "options": [
+              "There are two singers.",
+              "The musician is playing the guitar.",
+              "They are moving chairs."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"There are two singers.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are moving chairs.\".",
+              "\"The musician is playing the guitar.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are moving chairs.\".",
+              "Doğru. Bu soruda cevap \"They are moving chairs.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Evde bir fotoğraf seç. Şu sırayla anlat: 1. This is ... 2. There is / There are ... 3. He / She / They is/are ...-ing. 4. Bir konum cümlesi ekle.",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "There _______ two girls in the picture.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The boy is _______ a bike.",
+            "options": [
+              "riding",
+              "ride",
+              "rides"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. riding seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ride\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"riding\" çünkü riding seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "A woman is sitting _______ the bench.",
+            "options": [
+              "on",
+              "in",
+              "between"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. on seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"in\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"on\" çünkü on seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The players _______ standing near the net.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The coach is _______ a ball.",
+            "options": [
+              "hold",
+              "holding",
+              "holds"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. holding seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"hold\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"holding\" çünkü holding seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "This _______ a sports hall.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There are three _______.",
+            "options": [
+              "player",
+              "players",
+              "playing"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. players seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"player\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"players\" çünkü players seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "One girl is _______.",
+            "options": [
+              "jump",
+              "jumping",
+              "jumps"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. jumping seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"jump\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"jumping\" çünkü jumping seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "A bag is _______ the chair.",
+            "options": [
+              "under",
+              "running",
+              "reading"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. under seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"running\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"under\" çünkü under seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The coach _______ watching the team.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "027-describing-a-picture-w1",
+            "word": "picture",
+            "example": "Use \"picture\" in this lesson.",
+            "audioText": "picture",
+            "prompt": "\"picture\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "resim/fotoğraf",
+              "bank",
+              "zemin",
+              "yakınında"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "027-describing-a-picture-w2",
+            "word": "bench",
+            "example": "Use \"bench\" in this lesson.",
+            "audioText": "bench",
+            "prompt": "\"bench\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "resim/fotoğraf",
+              "bank",
+              "zemin",
+              "yakınında"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "027-describing-a-picture-w3",
+            "word": "ground",
+            "example": "Use \"ground\" in this lesson.",
+            "audioText": "ground",
+            "prompt": "\"ground\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "resim/fotoğraf",
+              "bank",
+              "zemin",
+              "yakınında"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "027-describing-a-picture-w4",
+            "word": "near",
+            "example": "Use \"near\" in this lesson.",
+            "audioText": "near",
+            "prompt": "\"near\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "resim/fotoğraf",
+              "bank",
+              "zemin",
+              "yakınında"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "027-describing-a-picture-w5",
+            "word": "ride",
+            "example": "Use \"ride\" in this lesson.",
+            "audioText": "ride",
+            "prompt": "\"ride\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sürmek/binmek",
+              "resim/fotoğraf",
+              "bank",
+              "zemin"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Bir görseldeki kişileri ve eylemleri anlatmak.",
+          "There is / There are ile kişi ve nesneleri tanıtmak.",
+          "Hedef kelimeler: picture, bench, ground, near, ride, move, describe"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

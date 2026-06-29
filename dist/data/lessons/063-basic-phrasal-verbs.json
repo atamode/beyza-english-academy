@@ -1,0 +1,705 @@
+{
+  "id": "063-basic-phrasal-verbs",
+  "title": "Basic Phrasal Verbs",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Günlük hayatta sık kullanılan temel phrasal verb'leri tanımak.",
+    "Fiil ve edat/zarf birleşiminin yeni anlam oluşturduğunu fark etmek.",
+    "get up, turn on, turn off, put on, take off, pick up, look for ifadelerini kullanmak.",
+    "Basit talimat ve günlük rutin cümleleri kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Phrasal verb'leri ayrı kelimeler olarak değil, tek bir anlam birimi olarak çalışın. Gerçek hareketlerle göstermek öğrenmeyi hızlandırır.",
+    "todayGoal": "Günlük hayatta sık kullanılan temel phrasal verb'leri tanımak.",
+    "teachingTips": [
+      "Bu derste \"Basic Phrasal Verbs\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I get up at seven.",
+      "Turn on the light.",
+      "Turn off the computer.",
+      "Put on your coat."
+    ],
+    "listeningScripts": [
+      "\"Before volleyball practice, the players put on their sports shoes. The coach turns on the lights. One player looks for a missing ball. After practice, everyone picks up the equipment and turns off the lights.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Basic Phrasal Verbs Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "\"Işığı aç.\":",
+          "options": [
+            "Turn on the light.",
+            "Turn off the light.",
+            "Take off the light."
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "\"Ayakkabılarını çıkar.\":",
+          "options": [
+            "Put on your shoes.",
+            "Take off your shoes.",
+            "Pick up your shoes."
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ up at seven.",
+          "options": [
+            "Get",
+            "Turn",
+            "Put"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "_______ on your coat.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "I am looking _______ my bag.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: turn off / the computer",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Look my book.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What time does Beyza get up?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Basic Phrasal Verbs yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Basic Phrasal Verbs kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "Turn on the light.",
+        "Take off your shoes.",
+        "Get",
+        "Put",
+        "for",
+        "turn off the computer",
+        "\"my\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır.",
+        "At seven.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "063-basic-phrasal-verbs-w1",
+    "063-basic-phrasal-verbs-w2",
+    "063-basic-phrasal-verbs-w3",
+    "063-basic-phrasal-verbs-w4",
+    "063-basic-phrasal-verbs-w5",
+    "063-basic-phrasal-verbs-w6",
+    "063-basic-phrasal-verbs-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Basic Phrasal Verbs",
+      "instructionTr": "Günlük hayatta sık kullanılan temel phrasal verb'leri tanımak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 63",
+        "heroText": "I get up at seven."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Phrasal verb, bir fiilin başka küçük bir kelimeyle birleşip yeni anlam oluşturmasıdır. Bu derste şu ifadeleri öğreniyoruz: - get up → yataktan kalkmak - turn on → açmak - turn off → kapatmak - put on → giymek/takmak - take off → çıkarmak - pick up → yerden almak - look for → aramak Örnek: - I get up at seven. - Turn on the light. - Put on your shoes. - I am looking for my bag.",
+      "content": {
+        "examples": [],
+        "noteTr": "Phrasal verb, bir fiilin başka küçük bir kelimeyle birleşip yeni anlam oluşturmasıdır. Bu derste şu ifadeleri öğreniyoruz: - get up → yataktan kalkmak - turn on → açmak - turn off → kapatmak - put on → giymek/takmak - take off → çıkarmak - pick up → yerden almak - look for → aramak Örnek: - I get up at seven. - Turn on the light. - Put on your shoes. - I am looking for my bag."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I get up at seven.",
+          "Turn on the light.",
+          "Turn off the computer.",
+          "Put on your coat.",
+          "Take off your shoes.",
+          "Pick up the ball.",
+          "I am looking for my book.",
+          "Beyza puts on her sports shoes.",
+          "The coach picks up the volleyball.",
+          "The students turn off the microphones after the show."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "get up",
+            "kalkmak"
+          ],
+          [
+            "turn on",
+            "açmak"
+          ],
+          [
+            "turn off",
+            "kapatmak"
+          ],
+          [
+            "put on",
+            "giymek/takmak"
+          ],
+          [
+            "take off",
+            "çıkarmak"
+          ],
+          [
+            "pick up",
+            "yerden almak"
+          ],
+          [
+            "look for",
+            "aramak"
+          ]
+        ]
+      },
+      "explanationTr": "Günlük hayatta sık kullanılan temel phrasal verb'leri tanımak. Fiil ve edat/zarf birleşiminin yeni anlam oluşturduğunu fark etmek. get up, turn on, turn off, put on, take off, pick up, look for ifadelerini kullanmak. Basit talimat ve günlük rutin cümleleri kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "open the light ❌ → turn on the light ✅",
+          "close the computer hedef ifade → turn off the computer ✅",
+          "wear on your coat ❌ → put on your coat ✅",
+          "look my bag ❌ → look for my bag ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "\"Işığı aç.\":",
+      "content": {
+        "options": [
+          "Turn on the light.",
+          "Turn off the light.",
+          "Take off the light."
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Turn on the light. seçeneği cümledeki hedef kurala uyar.",
+          "\"Turn off the light.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Turn on the light.\" çünkü Turn on the light. seçeneği cümledeki hedef kurala uyar.",
+          "\"Take off the light.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Turn on the light.\" çünkü Turn on the light. seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "\"Ayakkabılarını çıkar.\":",
+      "content": {
+        "options": [
+          "Put on your shoes.",
+          "Take off your shoes.",
+          "Pick up your shoes."
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"Put on your shoes.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Take off your shoes.\" çünkü Take off your shoes. seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. Take off your shoes. seçeneği cümledeki hedef kurala uyar.",
+          "\"Pick up your shoes.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Take off your shoes.\" çünkü Take off your shoes. seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "_______ on your coat.",
+      "content": {
+        "answer": "Put",
+        "accepted": [
+          "Put"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"Put\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Günlük hayatta sık kullanılan temel phrasal verb'leri tanımak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "turn off",
+          "the computer"
+        ],
+        "answer": [
+          "turn off",
+          "the computer"
+        ],
+        "explanationTr": "Doğru sıra: turn off the computer"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "Look",
+          "my",
+          "book."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"my\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "get up",
+            "kalkmak"
+          ],
+          [
+            "turn off",
+            "kapatmak"
+          ],
+          [
+            "look for",
+            "aramak"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza gets up at seven. She puts on her school clothes and looks for her notebook. Before leaving home, she turns off the light. At school, she picks up a pencil from the floor and gives it to her friend.",
+        "questions": [
+          {
+            "prompt": "What time does Beyza get up?",
+            "options": [
+              "At seven.",
+              "Her notebook.",
+              "A pencil."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"At seven.\" olmalıdır.",
+              "\"Her notebook.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At seven.\".",
+              "\"A pencil.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At seven.\"."
+            ]
+          },
+          {
+            "prompt": "What does she look for?",
+            "options": [
+              "A pencil.",
+              "Her notebook.",
+              "At seven."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A pencil.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her notebook.\".",
+              "Doğru. Bu soruda cevap \"Her notebook.\" olmalıdır.",
+              "\"At seven.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her notebook.\"."
+            ]
+          },
+          {
+            "prompt": "What does she pick up?",
+            "options": [
+              "At seven.",
+              "Her notebook.",
+              "A pencil."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"At seven.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A pencil.\".",
+              "\"Her notebook.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A pencil.\".",
+              "Doğru. Bu soruda cevap \"A pencil.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What do the players put on?",
+      "content": {
+        "audioText": "\"Before volleyball practice, the players put on their sports shoes. The coach turns on the lights. One player looks for a missing ball. After practice, everyone picks up the equipment and turns off the lights.\"",
+        "questions": [
+          {
+            "prompt": "What do the players put on?",
+            "options": [
+              "Their sports shoes.",
+              "A missing ball.",
+              "Pick up the equipment and turn off the lights."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Their sports shoes.\" olmalıdır.",
+              "\"A missing ball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their sports shoes.\".",
+              "\"Pick up the equipment and turn off the lights.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their sports shoes.\"."
+            ]
+          },
+          {
+            "prompt": "What does one player look for?",
+            "options": [
+              "Pick up the equipment and turn off the lights.",
+              "A missing ball.",
+              "Their sports shoes."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Pick up the equipment and turn off the lights.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A missing ball.\".",
+              "Doğru. Bu soruda cevap \"A missing ball.\" olmalıdır.",
+              "\"Their sports shoes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A missing ball.\"."
+            ]
+          },
+          {
+            "prompt": "What do they do after practice?",
+            "options": [
+              "Their sports shoes.",
+              "A missing ball.",
+              "Pick up the equipment and turn off the lights."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Their sports shoes.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Pick up the equipment and turn off the lights.\".",
+              "\"A missing ball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Pick up the equipment and turn off the lights.\".",
+              "Doğru. Bu soruda cevap \"Pick up the equipment and turn off the lights.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Günlük hayatından beş cümle kur: - I get up ... - I put on ... - I turn on ... - I turn off ... - I look for ...",
+      "content": {
+        "sentenceStarters": [
+          "I get up ...",
+          "I put on ...",
+          "I turn on ...",
+          "I turn off ...",
+          "I look for ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ up at seven.",
+            "options": [
+              "Get",
+              "Turn",
+              "Put"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Get seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Turn\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Get\" çünkü Get seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ on the light.",
+            "options": [
+              "Turn",
+              "Take",
+              "Look"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Turn seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Take\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Turn\" çünkü Turn seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ off your shoes.",
+            "options": [
+              "Take",
+              "Put",
+              "Pick"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Take seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Put\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Take\" çünkü Take seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I am looking _______ my phone.",
+            "options": [
+              "for",
+              "on",
+              "off"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ up the ball.",
+            "options": [
+              "Pick",
+              "Turn",
+              "Get"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Pick seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Turn\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Pick\" çünkü Pick seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "\"Bilgisayarı kapat.\":",
+            "options": [
+              "Turn off the computer.",
+              "Turn on the computer.",
+              "Take off the computer."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Turn off the computer. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Turn on the computer.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Turn off the computer.\" çünkü Turn off the computer. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Montunu giy.\":",
+            "options": [
+              "Put on your coat.",
+              "Take off your coat.",
+              "Pick up your coat."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Put on your coat. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Take off your coat.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Put on your coat.\" çünkü Put on your coat. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Topu yerden al.\":",
+            "options": [
+              "Pick up the ball.",
+              "Look for the ball.",
+              "Turn on the ball."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Pick up the ball. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Look for the ball.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Pick up the ball.\" çünkü Pick up the ball. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Kitabımı arıyorum.\":",
+            "options": [
+              "I am looking for my book.",
+              "I am turning on my book.",
+              "I am taking off my book."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. I am looking for my book. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"I am turning on my book.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"I am looking for my book.\" çünkü I am looking for my book. seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Saat yedide kalkarım.\":",
+            "options": [
+              "I get up at seven.",
+              "I turn up at seven.",
+              "I put up at seven."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. I get up at seven. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"I turn up at seven.\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"I get up at seven.\" çünkü I get up at seven. seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "063-basic-phrasal-verbs-w1",
+            "word": "get up",
+            "example": "I get up at seven.",
+            "audioText": "get up",
+            "prompt": "\"get up\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalkmak",
+              "açmak",
+              "kapatmak",
+              "giymek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "063-basic-phrasal-verbs-w2",
+            "word": "turn on",
+            "example": "Turn on the light.",
+            "audioText": "turn on",
+            "prompt": "\"turn on\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalkmak",
+              "açmak",
+              "kapatmak",
+              "giymek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "063-basic-phrasal-verbs-w3",
+            "word": "turn off",
+            "example": "Turn off the computer.",
+            "audioText": "turn off",
+            "prompt": "\"turn off\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalkmak",
+              "açmak",
+              "kapatmak",
+              "giymek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "063-basic-phrasal-verbs-w4",
+            "word": "put on",
+            "example": "Put on your coat.",
+            "audioText": "put on",
+            "prompt": "\"put on\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kalkmak",
+              "açmak",
+              "kapatmak",
+              "giymek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "063-basic-phrasal-verbs-w5",
+            "word": "take off",
+            "example": "Take off your shoes.",
+            "audioText": "take off",
+            "prompt": "\"take off\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "çıkarmak",
+              "kalkmak",
+              "açmak",
+              "kapatmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Günlük hayatta sık kullanılan temel phrasal verb'leri tanımak.",
+          "Fiil ve edat/zarf birleşiminin yeni anlam oluşturduğunu fark etmek.",
+          "Hedef kelimeler: get up, turn on, turn off, put on, take off, pick up, look for"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

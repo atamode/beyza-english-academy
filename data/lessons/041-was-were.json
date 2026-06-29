@@ -1,0 +1,694 @@
+{
+  "id": "041-was-were",
+  "title": "was / were",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geçmişte bir kişinin veya şeyin durumunu anlatmak.",
+    "I / he / she / it ile was kullanmak.",
+    "you / we / they ile were kullanmak.",
+    "wasn't / weren't ile olumsuz cümle kurmak.",
+    "Was...? / Were...? ile basit soru sormak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Önce bugünü, sonra dünü karşılaştırın: She is at home today. She was at school yesterday. Özneye göre was / were seçimini kısa örneklerle pekiştirin.",
+    "todayGoal": "Geçmişte bir kişinin veya şeyin durumunu anlatmak.",
+    "teachingTips": [
+      "Bu derste \"was / were\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I was at home yesterday.",
+      "She was happy after the match.",
+      "He was tired last night.",
+      "It was cold in the morning."
+    ],
+    "listeningScripts": [
+      "\"Last Saturday, the school hall was full. The stage was ready, and the microphones were in front of the singers. The students were excited. The teachers were near the doors.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "was / were Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Beyza _______ at school yesterday.",
+          "options": [
+            "was",
+            "were",
+            "is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The players _______ very excited.",
+          "options": [
+            "was",
+            "were",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ at home yesterday.",
+          "options": [
+            "was",
+            "were",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ tired last night.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "We _______ in the garden yesterday.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: was / she / at home / yesterday",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: They was in the classroom.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Where was Beyza in the morning?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "was / were yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "was / were kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "was",
+        "were",
+        "was",
+        "was",
+        "were",
+        "she was at home yesterday",
+        "\"was\" burada hatalıdır; doğru cevap \"were\" olmalıdır.",
+        "She was at school.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "041-was-were-w1",
+    "041-was-were-w2",
+    "041-was-were-w3",
+    "041-was-were-w4",
+    "041-was-were-w5",
+    "041-was-were-w6",
+    "041-was-were-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "was / were",
+      "instructionTr": "Geçmişte bir kişinin veya şeyin durumunu anlatmak.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 41",
+        "heroText": "I was at home yesterday."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Was ve were, am / is / are yapısının geçmiş hâlidir. - I am tired today. → I was tired yesterday. - She is at school now. → She was at school yesterday. - They are happy now. → They were happy yesterday. Kural: - I / He / She / It → was - You / We / They → were Olumsuz: - was not → wasn't - were not → weren't Soru: - Was she at home? - Were they tired?",
+      "content": {
+        "examples": [],
+        "noteTr": "Was ve were, am / is / are yapısının geçmiş hâlidir. - I am tired today. → I was tired yesterday. - She is at school now. → She was at school yesterday. - They are happy now. → They were happy yesterday. Kural: - I / He / She / It → was - You / We / They → were Olumsuz: - was not → wasn't - were not → weren't Soru: - Was she at home? - Were they tired?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I was at home yesterday.",
+          "She was happy after the match.",
+          "He was tired last night.",
+          "It was cold in the morning.",
+          "We were at school yesterday.",
+          "They were in the sports hall.",
+          "Beyza wasn't late.",
+          "The players weren't tired.",
+          "Was the coach at the match?",
+          "Were the microphones on the stage?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I / He / She / It",
+            "was",
+            "wasn't",
+            "Was ...?"
+          ],
+          [
+            "You / We / They",
+            "were",
+            "weren't",
+            "Were ...?"
+          ]
+        ]
+      },
+      "explanationTr": "Geçmişte bir kişinin veya şeyin durumunu anlatmak. I / he / she / it ile was kullanmak. you / we / they ile were kullanmak. wasn't / weren't ile olumsuz cümle kurmak. Was...? / Were...? ile basit soru sormak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I were tired. ❌ → I was tired. ✅",
+          "They was happy. ❌ → They were happy. ✅",
+          "She didn't was at home. ❌ → She wasn't at home. ✅",
+          "Was they ready? ❌ → Were they ready? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Beyza _______ at school yesterday.",
+      "content": {
+        "options": [
+          "was",
+          "were",
+          "is"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+          "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "The players _______ very excited.",
+      "content": {
+        "options": [
+          "was",
+          "were",
+          "are"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ tired last night.",
+      "content": {
+        "answer": "was",
+        "accepted": [
+          "was"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"was\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Geçmişte bir kişinin veya şeyin durumunu anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "was",
+          "she",
+          "at home",
+          "yesterday"
+        ],
+        "answer": [
+          "she",
+          "was",
+          "at home",
+          "yesterday"
+        ],
+        "explanationTr": "Doğru sıra: she was at home yesterday"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "They",
+          "was",
+          "in",
+          "the",
+          "classroom."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"was\" burada hatalıdır; doğru cevap \"were\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "was tired."
+          ],
+          [
+            "She",
+            "was at school."
+          ],
+          [
+            "They",
+            "were happy."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Yesterday was a busy day. Beyza was at school in the morning. In the afternoon, she was at volleyball practice. Her friends were there too. The coach was happy because everyone was on time.",
+        "questions": [
+          {
+            "prompt": "Where was Beyza in the morning?",
+            "options": [
+              "She was at school.",
+              "She was at volleyball practice.",
+              "Because everyone was on time."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She was at school.\" olmalıdır.",
+              "\"She was at volleyball practice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was at school.\".",
+              "\"Because everyone was on time.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was at school.\"."
+            ]
+          },
+          {
+            "prompt": "Where was she in the afternoon?",
+            "options": [
+              "Because everyone was on time.",
+              "She was at volleyball practice.",
+              "She was at school."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Because everyone was on time.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was at volleyball practice.\".",
+              "Doğru. Bu soruda cevap \"She was at volleyball practice.\" olmalıdır.",
+              "\"She was at school.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She was at volleyball practice.\"."
+            ]
+          },
+          {
+            "prompt": "Why was the coach happy?",
+            "options": [
+              "She was at school.",
+              "She was at volleyball practice.",
+              "Because everyone was on time."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She was at school.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because everyone was on time.\".",
+              "\"She was at volleyball practice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because everyone was on time.\".",
+              "Doğru. Bu soruda cevap \"Because everyone was on time.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "When was the hall full?",
+      "content": {
+        "audioText": "\"Last Saturday, the school hall was full. The stage was ready, and the microphones were in front of the singers. The students were excited. The teachers were near the doors.\"",
+        "questions": [
+          {
+            "prompt": "When was the hall full?",
+            "options": [
+              "Last Saturday.",
+              "In front of the singers.",
+              "Yes, they were."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Last Saturday.\" olmalıdır.",
+              "\"In front of the singers.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Last Saturday.\".",
+              "\"Yes, they were.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Last Saturday.\"."
+            ]
+          },
+          {
+            "prompt": "Where were the microphones?",
+            "options": [
+              "Yes, they were.",
+              "In front of the singers.",
+              "Last Saturday."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Yes, they were.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In front of the singers.\".",
+              "Doğru. Bu soruda cevap \"In front of the singers.\" olmalıdır.",
+              "\"Last Saturday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In front of the singers.\"."
+            ]
+          },
+          {
+            "prompt": "Were the students excited?",
+            "options": [
+              "Last Saturday.",
+              "In front of the singers.",
+              "Yes, they were."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Last Saturday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they were.\".",
+              "\"In front of the singers.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they were.\".",
+              "Doğru. Bu soruda cevap \"Yes, they were.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dün nerede olduğunu ve nasıl hissettiğini söyle: - I was at ... - I was ... - My family were ...",
+      "content": {
+        "sentenceStarters": [
+          "I was at ...",
+          "I was ...",
+          "My family were ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ at home yesterday.",
+            "options": [
+              "was",
+              "were",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ at the concert.",
+            "options": [
+              "was",
+              "were",
+              "is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She _______ tired.",
+            "options": [
+              "weren't",
+              "wasn't",
+              "aren't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. wasn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"weren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"wasn't\" çünkü wasn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ you at school?",
+            "options": [
+              "Was",
+              "Were",
+              "Are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. Were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Were\" çünkü Were seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The chairs _______ near the stage.",
+            "options": [
+              "was",
+              "were",
+              "is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "He _______ ill yesterday.",
+            "options": [
+              "was",
+              "were",
+              "is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ ready for the match.",
+            "options": [
+              "was",
+              "were",
+              "are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The ball _______ under the chair.",
+            "options": [
+              "was",
+              "were",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ the students in the hall?",
+            "options": [
+              "Was",
+              "Were",
+              "Is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. Were seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Were\" çünkü Were seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ late.",
+            "options": [
+              "wasn't",
+              "weren't",
+              "isn't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. weren't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"wasn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"weren't\" çünkü weren't seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "041-was-were-w1",
+            "word": "yesterday",
+            "example": "I was at school yesterday.",
+            "audioText": "yesterday",
+            "prompt": "\"yesterday\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dün",
+              "dün gece",
+              "yoğun",
+              "heyecanlı"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "041-was-were-w2",
+            "word": "last night",
+            "example": "I was tired last night.",
+            "audioText": "last night",
+            "prompt": "\"last night\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dün",
+              "dün gece",
+              "yoğun",
+              "heyecanlı"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "041-was-were-w3",
+            "word": "busy",
+            "example": "It was a busy day.",
+            "audioText": "busy",
+            "prompt": "\"busy\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dün",
+              "dün gece",
+              "yoğun",
+              "heyecanlı"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "041-was-were-w4",
+            "word": "excited",
+            "example": "They were excited.",
+            "audioText": "excited",
+            "prompt": "\"excited\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "dün",
+              "dün gece",
+              "yoğun",
+              "heyecanlı"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "041-was-were-w5",
+            "word": "late",
+            "example": "She wasn't late.",
+            "audioText": "late",
+            "prompt": "\"late\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "geç",
+              "dün",
+              "dün gece",
+              "yoğun"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geçmişte bir kişinin veya şeyin durumunu anlatmak.",
+          "I / he / she / it ile was kullanmak.",
+          "Hedef kelimeler: yesterday, last night, busy, excited, late, ready, full"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

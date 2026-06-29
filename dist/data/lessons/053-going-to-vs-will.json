@@ -1,0 +1,716 @@
+{
+  "id": "053-going-to-vs-will",
+  "title": "going to vs will",
+  "level": "A2.1",
+  "module": "Gelecek",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Önceden yapılmış planlarda going to kullanmak.",
+    "Konuşma anında verilen kararlarda will kullanmak.",
+    "Görünen kanıta dayalı tahminlerde going to kullanmak.",
+    "Kişisel görüşe dayalı basit tahminlerde will kullanmak.",
+    "İki yapıyı temel düzeyde ayırt etmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'ya önce \"Bu önceden plan mı, şimdi verilen karar mı?\" diye sorun. Ardından yapıyı seçsin. Tahminlerde \"Gözle görülür kanıt var mı?\" sorusu da yardımcı olur.",
+    "todayGoal": "Önceden yapılmış planlarda going to kullanmak.",
+    "teachingTips": [
+      "Bu derste \"going to vs will\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I am going to study tonight.",
+      "The phone is ringing. I will answer it.",
+      "We are going to travel next month.",
+      "This box is heavy. I will carry it."
+    ],
+    "listeningScripts": [
+      "\"The school is going to hold a small show next Friday. The students planned it last week. Today, a teacher drops some papers. Beyza says, 'I will pick them up.' Outside, the sky is very dark. It is going to rain.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "going to vs will Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "We bought the tickets yesterday. We _______ travel next week.",
+          "options": [
+            "are going to",
+            "will now",
+            "did"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The doorbell is ringing. I _______ open the door.",
+          "options": [
+            "am going to yesterday",
+            "will",
+            "was"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We planned it yesterday. We _______ visit the museum.",
+          "options": [
+            "are going to",
+            "will suddenly",
+            "were"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "Look at the dark clouds. It _______ rain.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "I think the team _______ win.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: going to / we / are / visit / the museum",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: The phone is ringing. I am going to answer it next week.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "When are they going to leave?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "going to vs will yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "going to vs will kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "are going to",
+        "will",
+        "are going to",
+        "is going to",
+        "will",
+        "we are going to visit the museum",
+        "\"phone\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır.",
+        "Early on Sunday.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "053-going-to-vs-will-w1",
+    "053-going-to-vs-will-w2",
+    "053-going-to-vs-will-w3",
+    "053-going-to-vs-will-w4",
+    "053-going-to-vs-will-w5",
+    "053-going-to-vs-will-w6",
+    "053-going-to-vs-will-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "going to vs will",
+      "instructionTr": "Önceden yapılmış planlarda going to kullanmak.",
+      "content": {
+        "eyebrow": "Gelecek · DERS 53",
+        "heroText": "I am going to study tonight."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "### Going to Önceden karar verilmiş plan: - We are going to visit Ankara next week. - She is going to practise tomorrow. Görünen kanıta dayalı tahmin: - Look at those dark clouds. It is going to rain. - The glass is falling. It is going to break. ### Will Konuşma anında verilen karar: - The bag is heavy. I will help you. - The phone is ringing. I will answer it. Kişisel görüş veya genel tahmin: - I think the team will win. - I think the future will be interesting. Kısaca: - Önceden plan → going to - Şimdi karar → will - Gözle görülür kanıt → going to - \"I think...\" tahmini → will",
+      "content": {
+        "examples": [],
+        "noteTr": "### Going to Önceden karar verilmiş plan: - We are going to visit Ankara next week. - She is going to practise tomorrow. Görünen kanıta dayalı tahmin: - Look at those dark clouds. It is going to rain. - The glass is falling. It is going to break. ### Will Konuşma anında verilen karar: - The bag is heavy. I will help you. - The phone is ringing. I will answer it. Kişisel görüş veya genel tahmin: - I think the team will win. - I think the future will be interesting. Kısaca: - Önceden plan → going to - Şimdi karar → will - Gözle görülür kanıt → going to - \"I think...\" tahmini → will"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I am going to study tonight.",
+          "The phone is ringing. I will answer it.",
+          "We are going to travel next month.",
+          "This box is heavy. I will carry it.",
+          "Look at the clouds. It is going to rain.",
+          "The ball is near the edge. It is going to fall.",
+          "I think the match will be exciting.",
+          "I think Beyza will enjoy the lesson.",
+          "The team is going to practise tomorrow.",
+          "The teacher needs help. We will move the chairs."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Önceden plan",
+            "going to",
+            "We are going to travel."
+          ],
+          [
+            "Anlık karar",
+            "will",
+            "I will help."
+          ],
+          [
+            "Görünen kanıt",
+            "going to",
+            "It is going to fall."
+          ],
+          [
+            "Görüş/tahmin",
+            "will",
+            "I think it will rain."
+          ]
+        ]
+      },
+      "explanationTr": "Önceden yapılmış planlarda going to kullanmak. Konuşma anında verilen kararlarda will kullanmak. Görünen kanıta dayalı tahminlerde going to kullanmak. Kişisel görüşe dayalı basit tahminlerde will kullanmak. İki yapıyı temel düzeyde ayırt etmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "Önceden yapılmış planı her zaman will ile vermek",
+          "Anlık kararı going to ile anlatmak",
+          "I think sonrasında başlangıç düzeyinde will kullanmayı unutmak",
+          "Her iki yapının ardından fiili çekimli kullanmak"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "We bought the tickets yesterday. We _______ travel next week.",
+      "content": {
+        "options": [
+          "are going to",
+          "will now",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. are going to seçeneği cümledeki hedef kurala uyar.",
+          "\"will now\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "The doorbell is ringing. I _______ open the door.",
+      "content": {
+        "options": [
+          "am going to yesterday",
+          "will",
+          "was"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"am going to yesterday\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Look at the dark clouds. It _______ rain.",
+      "content": {
+        "answer": "is going to",
+        "accepted": [
+          "is going to"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"is going to\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Önceden yapılmış planlarda going to kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "going to",
+          "we",
+          "are",
+          "visit",
+          "the museum"
+        ],
+        "answer": [
+          "we",
+          "are",
+          "going to",
+          "visit",
+          "the museum"
+        ],
+        "explanationTr": "Doğru sıra: we are going to visit the museum"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "The",
+          "phone",
+          "is",
+          "ringing.",
+          "I",
+          "am",
+          "going",
+          "to",
+          "answer",
+          "it",
+          "next",
+          "week."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"phone\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Önceden plan",
+            "We are going to travel."
+          ],
+          [
+            "Anlık karar",
+            "I will help you."
+          ],
+          [
+            "Görünen kanıt",
+            "It is going to fall."
+          ],
+          [
+            "Kişisel tahmin",
+            "I think it will be fun."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza and her family planned a day trip. They are going to leave early on Sunday. They are going to take food and water. On Saturday evening, Beyza sees that one bag is too heavy. She says, \"I will carry the smaller bag.\" She thinks the trip will be fun.",
+        "questions": [
+          {
+            "prompt": "When are they going to leave?",
+            "options": [
+              "Early on Sunday.",
+              "The smaller bag.",
+              "She thinks it will be fun."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Early on Sunday.\" olmalıdır.",
+              "\"The smaller bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Early on Sunday.\".",
+              "\"She thinks it will be fun.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Early on Sunday.\"."
+            ]
+          },
+          {
+            "prompt": "What will Beyza carry?",
+            "options": [
+              "She thinks it will be fun.",
+              "The smaller bag.",
+              "Early on Sunday."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She thinks it will be fun.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The smaller bag.\".",
+              "Doğru. Bu soruda cevap \"The smaller bag.\" olmalıdır.",
+              "\"Early on Sunday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The smaller bag.\"."
+            ]
+          },
+          {
+            "prompt": "What does she think about the trip?",
+            "options": [
+              "Early on Sunday.",
+              "The smaller bag.",
+              "She thinks it will be fun."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Early on Sunday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She thinks it will be fun.\".",
+              "\"The smaller bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She thinks it will be fun.\".",
+              "Doğru. Bu soruda cevap \"She thinks it will be fun.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "When is the show?",
+      "content": {
+        "audioText": "\"The school is going to hold a small show next Friday. The students planned it last week. Today, a teacher drops some papers. Beyza says, 'I will pick them up.' Outside, the sky is very dark. It is going to rain.\"",
+        "questions": [
+          {
+            "prompt": "When is the show?",
+            "options": [
+              "Next Friday.",
+              "She will pick up the papers.",
+              "It is going to rain."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Next Friday.\" olmalıdır.",
+              "\"She will pick up the papers.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Next Friday.\".",
+              "\"It is going to rain.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Next Friday.\"."
+            ]
+          },
+          {
+            "prompt": "What will Beyza do?",
+            "options": [
+              "It is going to rain.",
+              "She will pick up the papers.",
+              "Next Friday."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"It is going to rain.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will pick up the papers.\".",
+              "Doğru. Bu soruda cevap \"She will pick up the papers.\" olmalıdır.",
+              "\"Next Friday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She will pick up the papers.\"."
+            ]
+          },
+          {
+            "prompt": "What is going to happen outside?",
+            "options": [
+              "Next Friday.",
+              "She will pick up the papers.",
+              "It is going to rain."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Next Friday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It is going to rain.\".",
+              "\"She will pick up the papers.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It is going to rain.\".",
+              "Doğru. Bu soruda cevap \"It is going to rain.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dört cümle kur: - Bir plan - Bir anlık karar - Kanıta dayalı bir tahmin - I think... ile bir tahmin",
+      "content": {
+        "sentenceStarters": [
+          "Bir plan",
+          "Bir anlık karar",
+          "Kanıta dayalı bir tahmin",
+          "I think... ile bir tahmin"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "We planned it yesterday. We _______ visit the museum.",
+            "options": [
+              "are going to",
+              "will suddenly",
+              "were"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. are going to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will suddenly\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I am cold. I _______ close the window.",
+            "options": [
+              "will",
+              "am going to last week",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am going to last week\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Look at the glass! It _______ fall.",
+            "options": [
+              "is going to",
+              "will think",
+              "was"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is going to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will think\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is going to\" çünkü is going to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I think the match _______ be exciting.",
+            "options": [
+              "will",
+              "is going to evidence",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is going to evidence\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She bought a sports bag. She _______ use it tomorrow.",
+            "options": [
+              "is going to",
+              "will just now",
+              "was"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is going to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will just now\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is going to\" çünkü is going to seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "They booked the hotel. They _______ stay there next week.",
+            "options": [
+              "are going to",
+              "will decide now",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. are going to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will decide now\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The phone is ringing. I _______ answer it.",
+            "options": [
+              "will",
+              "am going to last month",
+              "was"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am going to last month\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Look at those clouds. It _______ rain.",
+            "options": [
+              "is going to",
+              "will because I think",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is going to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will because I think\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is going to\" çünkü is going to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I think technology _______ change a lot.",
+            "options": [
+              "will",
+              "is going to because of visible evidence",
+              "was"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is going to because of visible evidence\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We planned the practice. We _______ meet at four.",
+            "options": [
+              "are going to",
+              "will suddenly",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. are going to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"will suddenly\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are going to\" çünkü are going to seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "053-going-to-vs-will-w1",
+            "word": "decision",
+            "example": "This is a quick decision.",
+            "audioText": "decision",
+            "prompt": "\"decision\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "karar",
+              "kanıt",
+              "bulut",
+              "düşmek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "053-going-to-vs-will-w2",
+            "word": "evidence",
+            "example": "There is clear evidence.",
+            "audioText": "evidence",
+            "prompt": "\"evidence\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "karar",
+              "kanıt",
+              "bulut",
+              "düşmek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "053-going-to-vs-will-w3",
+            "word": "cloud",
+            "example": "The clouds are dark.",
+            "audioText": "cloud",
+            "prompt": "\"cloud\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "karar",
+              "kanıt",
+              "bulut",
+              "düşmek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "053-going-to-vs-will-w4",
+            "word": "fall",
+            "example": "It is going to fall.",
+            "audioText": "fall",
+            "prompt": "\"fall\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "karar",
+              "kanıt",
+              "bulut",
+              "düşmek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "053-going-to-vs-will-w5",
+            "word": "future",
+            "example": "The future will be different.",
+            "audioText": "future",
+            "prompt": "\"future\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "gelecek",
+              "karar",
+              "kanıt",
+              "bulut"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Önceden yapılmış planlarda going to kullanmak.",
+          "Konuşma anında verilen kararlarda will kullanmak.",
+          "Hedef kelimeler: decision, evidence, cloud, fall, future, probably, pick up"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

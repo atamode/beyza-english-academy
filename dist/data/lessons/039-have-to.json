@@ -1,0 +1,688 @@
+{
+  "id": "039-have-to",
+  "title": "have to",
+  "level": "A2.1",
+  "module": "Yetenek, Tavsiye ve Kurallar",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Günlük zorunlulukları have to / has to ile anlatmak.",
+    "Zorunluluk olmadığını don't have to / doesn't have to ile söylemek.",
+    "Özneye göre have to / has to seçmek.",
+    "mustn't ve don't have to farkını anlamak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Bu derste en önemli ayrım mustn't ve don't have to farkıdır. Yasak ile zorunluluk yokluğunu gerçek örneklerle karşılaştırın.",
+    "todayGoal": "Günlük zorunlulukları have to / has to ile anlatmak.",
+    "teachingTips": [
+      "Bu derste \"have to\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I have to do my homework.",
+      "We have to wear school uniforms.",
+      "She has to get up early.",
+      "He has to practise the guitar."
+    ],
+    "listeningScripts": [
+      "\"The students have a school event on Friday. They have to arrive at ten. They have to wear their school T-shirts. They don't have to bring lunch because the school provides food.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "have to Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ get up early.",
+          "options": [
+            "have to",
+            "has to",
+            "having to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We _______ bring food today.",
+          "options": [
+            "don't have to",
+            "doesn't have to",
+            "mustn't to"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She _______ study tonight.",
+          "options": [
+            "have to",
+            "has to",
+            "having"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ finish my homework.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "He _______ wear a uniform today.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: has to / she / practise",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He have to leave early.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What does Beyza have to prepare?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "have to yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "have to kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "has to",
+        "don't have to",
+        "has to",
+        "have to",
+        "doesn't have to",
+        "she has to practise",
+        "\"have to\" burada hatalıdır; doğru cevap \"has to\" olmalıdır.",
+        "Her sports bag.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "039-have-to-w1",
+    "039-have-to-w2",
+    "039-have-to-w3",
+    "039-have-to-w4",
+    "039-have-to-w5",
+    "039-have-to-w6",
+    "039-have-to-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "have to",
+      "instructionTr": "Günlük zorunlulukları have to / has to ile anlatmak.",
+      "content": {
+        "eyebrow": "Yetenek, Tavsiye ve Kurallar · DERS 39",
+        "heroText": "I have to do my homework."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Have to, bir şeyi yapmak zorunda olduğumuzu söyler: - I have to do my homework. - We have to wear uniforms. He / She / It ile has to kullanılır: - She has to get up early. - He has to practise. Zorunluluk yoksa: - I don't have to go today. - She doesn't have to bring a book. Çok önemli fark: - You mustn't enter. = Girmen yasak. - You don't have to enter. = Girmen gerekmiyor; istersen girebilirsin.",
+      "content": {
+        "examples": [],
+        "noteTr": "Have to, bir şeyi yapmak zorunda olduğumuzu söyler: - I have to do my homework. - We have to wear uniforms. He / She / It ile has to kullanılır: - She has to get up early. - He has to practise. Zorunluluk yoksa: - I don't have to go today. - She doesn't have to bring a book. Çok önemli fark: - You mustn't enter. = Girmen yasak. - You don't have to enter. = Girmen gerekmiyor; istersen girebilirsin."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I have to do my homework.",
+          "We have to wear school uniforms.",
+          "She has to get up early.",
+          "He has to practise the guitar.",
+          "They have to arrive before nine.",
+          "I don't have to go today.",
+          "She doesn't have to bring food.",
+          "We don't have to wear sports shoes today.",
+          "The team has to follow the schedule.",
+          "Students don't have to stay after the activity."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I/You/We/They",
+            "have to",
+            "don't have to"
+          ],
+          [
+            "He/She/It",
+            "has to",
+            "doesn't have to"
+          ]
+        ]
+      },
+      "explanationTr": "Günlük zorunlulukları have to / has to ile anlatmak. Zorunluluk olmadığını don't have to / doesn't have to ile söylemek. Özneye göre have to / has to seçmek. mustn't ve don't have to farkını anlamak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She have to study. ❌ → She has to study. ✅",
+          "He doesn't has to come. ❌ → He doesn't have to come. ✅",
+          "I haven't to go. ❌ → I don't have to go. ✅",
+          "Don't have to yasak anlamına gelmez."
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ get up early.",
+      "content": {
+        "options": [
+          "have to",
+          "has to",
+          "having to"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. has to seçeneği cümledeki hedef kurala uyar.",
+          "\"having to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "We _______ bring food today.",
+      "content": {
+        "options": [
+          "don't have to",
+          "doesn't have to",
+          "mustn't to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. don't have to seçeneği cümledeki hedef kurala uyar.",
+          "\"doesn't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar.",
+          "\"mustn't to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ finish my homework.",
+      "content": {
+        "answer": "have to",
+        "accepted": [
+          "have to"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"have to\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Günlük zorunlulukları have to / has to ile anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "has to",
+          "she",
+          "practise"
+        ],
+        "answer": [
+          "she",
+          "has to",
+          "practise"
+        ],
+        "explanationTr": "Doğru sıra: she has to practise"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "have",
+          "to",
+          "leave",
+          "early."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"have to\" burada hatalıdır; doğru cevap \"has to\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I have to study.",
+            "Ders çalışmak zorundayım."
+          ],
+          [
+            "She has to leave.",
+            "O ayrılmak zorunda."
+          ],
+          [
+            "We don't have to wait.",
+            "Beklemek zorunda değiliz."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has a volleyball match tomorrow. She has to prepare her sports bag tonight. She has to bring clean shoes and a bottle of water. She doesn't have to bring a ball because the coach has the equipment.",
+        "questions": [
+          {
+            "prompt": "What does Beyza have to prepare?",
+            "options": [
+              "Her sports bag.",
+              "Clean shoes and a bottle of water.",
+              "No, she doesn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Her sports bag.\" olmalıdır.",
+              "\"Clean shoes and a bottle of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her sports bag.\".",
+              "\"No, she doesn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her sports bag.\"."
+            ]
+          },
+          {
+            "prompt": "What does she have to bring?",
+            "options": [
+              "No, she doesn't.",
+              "Clean shoes and a bottle of water.",
+              "Her sports bag."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, she doesn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Clean shoes and a bottle of water.\".",
+              "Doğru. Bu soruda cevap \"Clean shoes and a bottle of water.\" olmalıdır.",
+              "\"Her sports bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Clean shoes and a bottle of water.\"."
+            ]
+          },
+          {
+            "prompt": "Does she have to bring a ball?",
+            "options": [
+              "Her sports bag.",
+              "Clean shoes and a bottle of water.",
+              "No, she doesn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Her sports bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she doesn't.\".",
+              "\"Clean shoes and a bottle of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she doesn't.\".",
+              "Doğru. Bu soruda cevap \"No, she doesn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "When do they have to arrive?",
+      "content": {
+        "audioText": "\"The students have a school event on Friday. They have to arrive at ten. They have to wear their school T-shirts. They don't have to bring lunch because the school provides food.\"",
+        "questions": [
+          {
+            "prompt": "When do they have to arrive?",
+            "options": [
+              "At ten.",
+              "Their school T-shirts.",
+              "No, they don't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"At ten.\" olmalıdır.",
+              "\"Their school T-shirts.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At ten.\".",
+              "\"No, they don't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At ten.\"."
+            ]
+          },
+          {
+            "prompt": "What do they have to wear?",
+            "options": [
+              "No, they don't.",
+              "Their school T-shirts.",
+              "At ten."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they don't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their school T-shirts.\".",
+              "Doğru. Bu soruda cevap \"Their school T-shirts.\" olmalıdır.",
+              "\"At ten.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Their school T-shirts.\"."
+            ]
+          },
+          {
+            "prompt": "Do they have to bring lunch?",
+            "options": [
+              "At ten.",
+              "Their school T-shirts.",
+              "No, they don't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"At ten.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they don't.\".",
+              "\"Their school T-shirts.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they don't.\".",
+              "Doğru. Bu soruda cevap \"No, they don't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Üç günlük zorunluluğunu ve iki zorunda olmadığın şeyi söyle: - I have to ... - I don't have to ...",
+      "content": {
+        "sentenceStarters": [
+          "I have to ...",
+          "I don't have to ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ study tonight.",
+            "options": [
+              "have to",
+              "has to",
+              "having"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. has to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ bring chairs.",
+            "options": [
+              "don't have to",
+              "doesn't have to",
+              "hasn't to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. don't have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"doesn't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He doesn't _______ wear a uniform today.",
+            "options": [
+              "has to",
+              "have to",
+              "having to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ arrive early.",
+            "options": [
+              "have to",
+              "has to",
+              "is to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ finish this today.",
+            "options": [
+              "have to",
+              "has to",
+              "am have to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Beyza _______ take her sports shoes.",
+            "options": [
+              "have to",
+              "has to",
+              "having to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. has to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ wait after school.",
+            "options": [
+              "don't have to",
+              "doesn't have to",
+              "not have to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. don't have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"doesn't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He _______ get up early tomorrow.",
+            "options": [
+              "has to",
+              "have to",
+              "having"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. has to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She doesn't _______ bring a ball.",
+            "options": [
+              "has to",
+              "have to",
+              "having to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ follow the schedule.",
+            "options": [
+              "have to",
+              "has to",
+              "is to"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "039-have-to-w1",
+            "word": "uniform",
+            "example": "We have to wear a uniform.",
+            "audioText": "uniform",
+            "prompt": "\"uniform\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "üniforma",
+              "program/takvim",
+              "sağlamak",
+              "getirmek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "039-have-to-w2",
+            "word": "schedule",
+            "example": "Follow the schedule.",
+            "audioText": "schedule",
+            "prompt": "\"schedule\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "üniforma",
+              "program/takvim",
+              "sağlamak",
+              "getirmek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "039-have-to-w3",
+            "word": "provide",
+            "example": "The school provides food.",
+            "audioText": "provide",
+            "prompt": "\"provide\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "üniforma",
+              "program/takvim",
+              "sağlamak",
+              "getirmek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "039-have-to-w4",
+            "word": "bring",
+            "example": "Bring your book.",
+            "audioText": "bring",
+            "prompt": "\"bring\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "üniforma",
+              "program/takvim",
+              "sağlamak",
+              "getirmek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "039-have-to-w5",
+            "word": "prepare",
+            "example": "Prepare your bag.",
+            "audioText": "prepare",
+            "prompt": "\"prepare\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hazırlamak",
+              "üniforma",
+              "program/takvim",
+              "sağlamak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Günlük zorunlulukları have to / has to ile anlatmak.",
+          "Zorunluluk olmadığını don't have to / doesn't have to ile söylemek.",
+          "Hedef kelimeler: uniform, schedule, provide, bring, prepare, arrive, activity"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

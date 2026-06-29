@@ -1,0 +1,507 @@
+{
+  "id": "module-8-review",
+  "moduleId": "module-8",
+  "title": "Karşılaştırma Genel Tekrar",
+  "description": "Karşılaştırma derslerini ölçen gerçek kaynak sorularından oluşturuldu.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "module-8-review-01",
+      "type": "multiple-choice",
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives",
+      "title": "Comparative Adjectives tekrar",
+      "instructionTr": "small →",
+      "content": {
+        "options": [
+          "smaller",
+          "more small",
+          "smallest"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. smaller seçeneği cümledeki hedef kurala uyar.",
+          "\"more small\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"smaller\" çünkü smaller seçeneği cümledeki hedef kurala uyar.",
+          "\"smallest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"smaller\" çünkü smaller seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-02",
+      "type": "multiple-choice",
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives",
+      "title": "Comparative Adjectives tekrar",
+      "instructionTr": "happy →",
+      "content": {
+        "options": [
+          "happyer",
+          "happier",
+          "more happy"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"happyer\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"happier\" çünkü happier seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. happier seçeneği cümledeki hedef kurala uyar.",
+          "\"more happy\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"happier\" çünkü happier seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-03",
+      "type": "multiple-choice",
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives",
+      "title": "Comparative Adjectives tekrar",
+      "instructionTr": "beautiful →",
+      "content": {
+        "options": [
+          "beautifuller",
+          "more beautiful",
+          "beautifuler"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"beautifuller\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more beautiful\" çünkü more beautiful seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. more beautiful seçeneği cümledeki hedef kurala uyar.",
+          "\"beautifuler\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more beautiful\" çünkü more beautiful seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-04",
+      "type": "multiple-choice",
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives",
+      "title": "Comparative Adjectives tekrar",
+      "instructionTr": "good →",
+      "content": {
+        "options": [
+          "gooder",
+          "better",
+          "best"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"gooder\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"better\" çünkü better seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. better seçeneği cümledeki hedef kurala uyar.",
+          "\"best\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"better\" çünkü better seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-05",
+      "type": "multiple-choice",
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives",
+      "title": "Superlative Adjectives tekrar",
+      "instructionTr": "tall →",
+      "content": {
+        "options": [
+          "the taller",
+          "the tallest",
+          "the most tall"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"the taller\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the tallest\" çünkü the tallest seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. the tallest seçeneği cümledeki hedef kurala uyar.",
+          "\"the most tall\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the tallest\" çünkü the tallest seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-06",
+      "type": "multiple-choice",
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives",
+      "title": "Superlative Adjectives tekrar",
+      "instructionTr": "happy → (Superlative Adjectives)",
+      "content": {
+        "options": [
+          "the happiest",
+          "the happyest",
+          "the most happy"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. the happiest seçeneği cümledeki hedef kurala uyar.",
+          "\"the happyest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the happiest\" çünkü the happiest seçeneği cümledeki hedef kurala uyar.",
+          "\"the most happy\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the happiest\" çünkü the happiest seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-07",
+      "type": "multiple-choice",
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives",
+      "title": "Superlative Adjectives tekrar",
+      "instructionTr": "interesting →",
+      "content": {
+        "options": [
+          "the interestingest",
+          "the most interesting",
+          "more interesting"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"the interestingest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most interesting\" çünkü the most interesting seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. the most interesting seçeneği cümledeki hedef kurala uyar.",
+          "\"more interesting\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most interesting\" çünkü the most interesting seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-08",
+      "type": "multiple-choice",
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives",
+      "title": "Superlative Adjectives tekrar",
+      "instructionTr": "good → (Superlative Adjectives)",
+      "content": {
+        "options": [
+          "the goodest",
+          "the better",
+          "the best"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"the goodest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the best\" çünkü the best seçeneği cümledeki hedef kurala uyar.",
+          "\"the better\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the best\" çünkü the best seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. the best seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-09",
+      "type": "multiple-choice",
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities",
+      "title": "Comparing People, Animals and Cities tekrar",
+      "instructionTr": "A horse is _______ than a dog.",
+      "content": {
+        "options": [
+          "bigger",
+          "biggest",
+          "the bigger"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. bigger seçeneği cümledeki hedef kurala uyar.",
+          "\"biggest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bigger\" çünkü bigger seçeneği cümledeki hedef kurala uyar.",
+          "\"the bigger\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bigger\" çünkü bigger seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-10",
+      "type": "multiple-choice",
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities",
+      "title": "Comparing People, Animals and Cities tekrar",
+      "instructionTr": "The cheetah is _______ animal here.",
+      "content": {
+        "options": [
+          "faster",
+          "the fastest",
+          "more fast"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"faster\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the fastest\" çünkü the fastest seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. the fastest seçeneği cümledeki hedef kurala uyar.",
+          "\"more fast\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the fastest\" çünkü the fastest seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-11",
+      "type": "multiple-choice",
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities",
+      "title": "Comparing People, Animals and Cities tekrar",
+      "instructionTr": "İstanbul is _______ crowded than Kayseri.",
+      "content": {
+        "options": [
+          "more",
+          "most",
+          "the most"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. more seçeneği cümledeki hedef kurala uyar.",
+          "\"most\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar.",
+          "\"the most\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-12",
+      "type": "multiple-choice",
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities",
+      "title": "Comparing People, Animals and Cities tekrar",
+      "instructionTr": "The elephant is _______ than the horse.",
+      "content": {
+        "options": [
+          "heavier",
+          "heaviest",
+          "the heavier"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. heavier seçeneği cümledeki hedef kurala uyar.",
+          "\"heaviest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heavier\" çünkü heavier seçeneği cümledeki hedef kurala uyar.",
+          "\"the heavier\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heavier\" çünkü heavier seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-8-review-13",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is _______ than a horse. (tall)",
+      "content": {
+        "answer": "taller",
+        "accepted": [
+          "taller"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"taller\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "points": 4,
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives"
+    },
+    {
+      "id": "module-8-review-14",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is the _______ animal here. (tall)",
+      "content": {
+        "answer": "tallest",
+        "accepted": [
+          "tallest"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"tallest\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+      "points": 4,
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives"
+    },
+    {
+      "id": "module-8-review-15",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "İstanbul is _______ than Kayseri. (crowded)",
+      "content": {
+        "answer": "more crowded",
+        "accepted": [
+          "more crowded"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"more crowded\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Comparative ve superlative yapılarını birlikte kullanmak.",
+      "points": 4,
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities"
+    },
+    {
+      "id": "module-8-review-16",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is _______ than a horse. (tall) (Comparative Adjectives tekrar 2)",
+      "content": {
+        "answer": "taller",
+        "accepted": [
+          "taller"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"taller\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "points": 4,
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives"
+    },
+    {
+      "id": "module-8-review-17",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is the _______ animal here. (tall) (Superlative Adjectives tekrar 2)",
+      "content": {
+        "answer": "tallest",
+        "accepted": [
+          "tallest"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"tallest\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+      "points": 4,
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives"
+    },
+    {
+      "id": "module-8-review-18",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "İstanbul is _______ than Kayseri. (crowded) (Comparing People, Animals and Cities tekrar 2)",
+      "content": {
+        "answer": "more crowded",
+        "accepted": [
+          "more crowded"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"more crowded\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Comparative ve superlative yapılarını birlikte kullanmak.",
+      "points": 4,
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities"
+    },
+    {
+      "id": "module-8-review-19",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is _______ than a horse. (tall) (Comparative Adjectives tekrar 3)",
+      "content": {
+        "answer": "taller",
+        "accepted": [
+          "taller"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"taller\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "points": 4,
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives"
+    },
+    {
+      "id": "module-8-review-20",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is the _______ animal here. (tall) (Superlative Adjectives tekrar 3)",
+      "content": {
+        "answer": "tallest",
+        "accepted": [
+          "tallest"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"tallest\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+      "points": 4,
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives"
+    },
+    {
+      "id": "module-8-review-21",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "İstanbul is _______ than Kayseri. (crowded) (Comparing People, Animals and Cities tekrar 3)",
+      "content": {
+        "answer": "more crowded",
+        "accepted": [
+          "more crowded"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"more crowded\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Comparative ve superlative yapılarını birlikte kullanmak.",
+      "points": 4,
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities"
+    },
+    {
+      "id": "module-8-review-22",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is _______ than a horse. (tall) (Comparative Adjectives tekrar 4)",
+      "content": {
+        "answer": "taller",
+        "accepted": [
+          "taller"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"taller\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "points": 4,
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives"
+    },
+    {
+      "id": "module-8-review-23",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is the _______ animal here. (tall) (Superlative Adjectives tekrar 4)",
+      "content": {
+        "answer": "tallest",
+        "accepted": [
+          "tallest"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"tallest\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+      "points": 4,
+      "topicTag": "superlative-adjectives",
+      "topicLabel": "Superlative Adjectives"
+    },
+    {
+      "id": "module-8-review-24",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "İstanbul is _______ than Kayseri. (crowded) (Comparing People, Animals and Cities tekrar 4)",
+      "content": {
+        "answer": "more crowded",
+        "accepted": [
+          "more crowded"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"more crowded\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Comparative ve superlative yapılarını birlikte kullanmak.",
+      "points": 4,
+      "topicTag": "comparing-people-animals-cities",
+      "topicLabel": "Comparing People, Animals and Cities"
+    },
+    {
+      "id": "module-8-review-25",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is _______ than a horse. (tall) (Comparative Adjectives tekrar 5)",
+      "content": {
+        "answer": "taller",
+        "accepted": [
+          "taller"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"taller\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "points": 4,
+      "topicTag": "comparative-adjectives",
+      "topicLabel": "Comparative Adjectives"
+    }
+  ]
+}

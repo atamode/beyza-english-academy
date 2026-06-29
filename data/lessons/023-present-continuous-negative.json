@@ -1,0 +1,692 @@
+{
+  "id": "023-present-continuous-negative",
+  "title": "Present Continuous Negative",
+  "level": "A2.1",
+  "module": "Şu An",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Present Continuous cümlelerini olumsuz yapmak.",
+    "am not / isn't / aren't + verb-ing kalıplarını kullanmak.",
+    "Olumlu ve olumsuz anlamı ayırt etmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'dan bulunduğu ortamı gözlemleyip yapılmayan eylemleri söylemesini isteyin: \"Dad isn't sleeping.\", \"We aren't watching TV.\" gibi.",
+    "todayGoal": "Present Continuous cümlelerini olumsuz yapmak.",
+    "teachingTips": [
+      "Bu derste \"Present Continuous Negative\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I am not sleeping.",
+      "She isn't reading.",
+      "He isn't running.",
+      "We aren't watching TV."
+    ],
+    "listeningScripts": [
+      "\"The volleyball team is in the sports hall. They aren't playing a match. They are practising serves. The coach isn't sitting. She is walking around the court.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Present Continuous Negative Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "He _______ listening to music.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "We aren't _______ the match.",
+          "options": [
+            "watch",
+            "watching",
+            "watches"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She _______ reading now.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ sleeping now.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "The players _______ sitting on the court.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: isn't / she / singing / now",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: They isn't playing.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Is Beyza sleeping?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Present Continuous Negative yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Present Continuous Negative kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "isn't",
+        "watching",
+        "isn't",
+        "am not",
+        "aren't",
+        "she isn't singing now",
+        "\"isn't\" burada hatalıdır; doğru cevap \"aren't\" olmalıdır.",
+        "No, she isn't.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "023-present-continuous-negative-w1",
+    "023-present-continuous-negative-w2",
+    "023-present-continuous-negative-w3",
+    "023-present-continuous-negative-w4",
+    "023-present-continuous-negative-w5",
+    "023-present-continuous-negative-w6",
+    "023-present-continuous-negative-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Present Continuous Negative",
+      "instructionTr": "Present Continuous cümlelerini olumsuz yapmak.",
+      "content": {
+        "eyebrow": "Şu An · DERS 23",
+        "heroText": "I am not sleeping."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bir eylem şu anda yapılmıyorsa, yardımcı fiilden sonra not getiririz. - I am not reading. - She is not playing. - They are not running. Kısaltmalar: - is not → isn't - are not → aren't - am not genellikle ayrı yazılır. Kural: Özne + am not / isn't / aren't + fiil-ing",
+      "content": {
+        "examples": [],
+        "noteTr": "Bir eylem şu anda yapılmıyorsa, yardımcı fiilden sonra not getiririz. - I am not reading. - She is not playing. - They are not running. Kısaltmalar: - is not → isn't - are not → aren't - am not genellikle ayrı yazılır. Kural: Özne + am not / isn't / aren't + fiil-ing"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I am not sleeping.",
+          "She isn't reading.",
+          "He isn't running.",
+          "We aren't watching TV.",
+          "They aren't playing football.",
+          "The coach isn't shouting.",
+          "The players aren't sitting.",
+          "Beyza isn't using her phone.",
+          "The band isn't performing now.",
+          "The students aren't leaving the classroom."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "I",
+            "am not",
+            "I am not sleeping."
+          ],
+          [
+            "He / She / It",
+            "isn't",
+            "She isn't reading."
+          ],
+          [
+            "You / We / They",
+            "aren't",
+            "They aren't playing."
+          ]
+        ]
+      },
+      "explanationTr": "Present Continuous cümlelerini olumsuz yapmak. am not / isn't / aren't + verb-ing kalıplarını kullanmak. Olumlu ve olumsuz anlamı ayırt etmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I isn't sleeping. ❌ → I am not sleeping. ✅",
+          "She not reading. ❌ → She isn't reading. ✅",
+          "They aren't play. ❌ → They aren't playing. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "He _______ listening to music.",
+      "content": {
+        "options": [
+          "isn't",
+          "aren't",
+          "am not"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. isn't seçeneği cümledeki hedef kurala uyar.",
+          "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"isn't\" çünkü isn't seçeneği cümledeki hedef kurala uyar.",
+          "\"am not\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"isn't\" çünkü isn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "We aren't _______ the match.",
+      "content": {
+        "options": [
+          "watch",
+          "watching",
+          "watches"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"watch\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watching\" çünkü watching seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. watching seçeneği cümledeki hedef kurala uyar.",
+          "\"watches\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watching\" çünkü watching seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ sleeping now.",
+      "content": {
+        "answer": "am not",
+        "accepted": [
+          "am not"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"am not\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Present Continuous cümlelerini olumsuz yapmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "isn't",
+          "she",
+          "singing",
+          "now"
+        ],
+        "answer": [
+          "she",
+          "isn't",
+          "singing",
+          "now"
+        ],
+        "explanationTr": "Doğru sıra: she isn't singing now"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "They",
+          "isn't",
+          "playing."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"isn't\" burada hatalıdır; doğru cevap \"aren't\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I am not",
+            "playing volleyball."
+          ],
+          [
+            "He isn't",
+            "sleeping."
+          ],
+          [
+            "They aren't",
+            "listening to music."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "It is evening, but Beyza isn't sleeping. She is finishing her homework. Her sister isn't studying. She is drawing a picture. Their parents aren't watching TV. They are talking in the kitchen.",
+        "questions": [
+          {
+            "prompt": "Is Beyza sleeping?",
+            "options": [
+              "No, she isn't.",
+              "Another detail from the lesson",
+              "A different time or person"
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"No, she isn't.\" olmalıdır.",
+              "\"Another detail from the lesson\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\".",
+              "\"A different time or person\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\"."
+            ]
+          },
+          {
+            "prompt": "Is her sister studying?",
+            "options": [
+              "Another detail from the lesson",
+              "No, she isn't.",
+              "A different time or person"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Another detail from the lesson\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\".",
+              "Doğru. Bu soruda cevap \"No, she isn't.\" olmalıdır.",
+              "\"A different time or person\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\"."
+            ]
+          },
+          {
+            "prompt": "Are their parents watching TV?",
+            "options": [
+              "Another detail from the lesson",
+              "A different time or person",
+              "No, they aren't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Another detail from the lesson\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "\"A different time or person\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "Doğru. Bu soruda cevap \"No, they aren't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Are they playing a match?",
+      "content": {
+        "audioText": "\"The volleyball team is in the sports hall. They aren't playing a match. They are practising serves. The coach isn't sitting. She is walking around the court.\"",
+        "questions": [
+          {
+            "prompt": "Are they playing a match?",
+            "options": [
+              "No, they aren't.",
+              "They are practising serves.",
+              "No, she isn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"No, they aren't.\" olmalıdır.",
+              "\"They are practising serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "\"No, she isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\"."
+            ]
+          },
+          {
+            "prompt": "What are they practising?",
+            "options": [
+              "No, she isn't.",
+              "They are practising serves.",
+              "No, they aren't."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, she isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are practising serves.\".",
+              "Doğru. Bu soruda cevap \"They are practising serves.\" olmalıdır.",
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They are practising serves.\"."
+            ]
+          },
+          {
+            "prompt": "Is the coach sitting?",
+            "options": [
+              "No, they aren't.",
+              "They are practising serves.",
+              "No, she isn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\".",
+              "\"They are practising serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\".",
+              "Doğru. Bu soruda cevap \"No, she isn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Şu anda yapmadığın üç şeyi söyle: - I am not sleeping. - I am not running. - I am not watching TV.",
+      "content": {
+        "sentenceStarters": [
+          "I am not sleeping.",
+          "I am not running.",
+          "I am not watching TV."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ reading now.",
+            "options": [
+              "isn't",
+              "aren't",
+              "am not"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. isn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"isn't\" çünkü isn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ playing a game.",
+            "options": [
+              "isn't",
+              "am not",
+              "aren't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. am not seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"isn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am not\" çünkü am not seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They aren't _______.",
+            "options": [
+              "sing",
+              "singing",
+              "sings"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. singing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"sing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"singing\" çünkü singing seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The players _______ leaving the court.",
+            "options": [
+              "isn't",
+              "aren't",
+              "am not"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. aren't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"isn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"aren't\" çünkü aren't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The singer isn't _______ now.",
+            "options": [
+              "perform",
+              "performing",
+              "performs"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. performing seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"perform\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"performing\" çünkü performing seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "We _______ watching a film.",
+            "options": [
+              "isn't",
+              "aren't",
+              "am not"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. aren't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"isn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"aren't\" çünkü aren't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He isn't _______.",
+            "options": [
+              "run",
+              "running",
+              "runs"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. running seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"run\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"running\" çünkü running seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ using the computer.",
+            "options": [
+              "am not",
+              "isn't",
+              "aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. am not seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"isn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am not\" çünkü am not seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The coach _______ shouting.",
+            "options": [
+              "aren't",
+              "isn't",
+              "am not"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. isn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"isn't\" çünkü isn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The girls aren't _______ music.",
+            "options": [
+              "listen",
+              "listening to",
+              "listens to"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. listening to seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"listen\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"listening to\" çünkü listening to seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "023-present-continuous-negative-w1",
+            "word": "sleep",
+            "example": "I am not sleeping.",
+            "audioText": "sleep",
+            "prompt": "\"sleep\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uyumak",
+              "kullanmak",
+              "ayrılmak",
+              "bağırmak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "023-present-continuous-negative-w2",
+            "word": "use",
+            "example": "She isn't using the phone.",
+            "audioText": "use",
+            "prompt": "\"use\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uyumak",
+              "kullanmak",
+              "ayrılmak",
+              "bağırmak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "023-present-continuous-negative-w3",
+            "word": "leave",
+            "example": "They aren't leaving.",
+            "audioText": "leave",
+            "prompt": "\"leave\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uyumak",
+              "kullanmak",
+              "ayrılmak",
+              "bağırmak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "023-present-continuous-negative-w4",
+            "word": "shout",
+            "example": "The coach isn't shouting.",
+            "audioText": "shout",
+            "prompt": "\"shout\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uyumak",
+              "kullanmak",
+              "ayrılmak",
+              "bağırmak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "023-present-continuous-negative-w5",
+            "word": "perform",
+            "example": "The band isn't performing now.",
+            "audioText": "perform",
+            "prompt": "\"perform\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "sahne almak",
+              "uyumak",
+              "kullanmak",
+              "ayrılmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Present Continuous cümlelerini olumsuz yapmak.",
+          "am not / isn't / aren't + verb-ing kalıplarını kullanmak.",
+          "Hedef kelimeler: sleep, use, leave, shout, perform, finish, draw"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

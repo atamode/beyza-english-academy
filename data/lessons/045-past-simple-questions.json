@@ -1,0 +1,695 @@
+{
+  "id": "045-past-simple-questions",
+  "title": "Past Simple Questions",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Did + özne + fiilin yalın hâli? ile soru kurmak.",
+    "Yes, ... did. / No, ... didn't. ile kısa cevap vermek.",
+    "What / Where / When / Who ile geçmiş zaman soruları oluşturmak.",
+    "Soru cümlesinde fiili yalın kullanmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'dan yalnız soru kurmasını değil, kısa cevap vermesini de isteyin. Did sonrası fiilin yalın kalması bu dersin ana hedefidir.",
+    "todayGoal": "Did + özne + fiilin yalın hâli? ile soru kurmak.",
+    "teachingTips": [
+      "Bu derste \"Past Simple Questions\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "Did you watch TV?",
+      "Did she play volleyball?",
+      "Did they go to school?",
+      "Did he eat breakfast?"
+    ],
+    "listeningScripts": [
+      "\"Yesterday, the team played an important match. They arrived at four and warmed up for twenty minutes. The match started at five. The team won two sets.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Past Simple Questions Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "_______ you watch the match?",
+          "options": [
+            "Did",
+            "Do",
+            "Were"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Did she go? — Yes, she _______.",
+          "options": [
+            "did",
+            "was",
+            "does"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ she study?",
+          "options": [
+            "Did",
+            "Does",
+            "Was"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "Where _______ they go?",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "Did he _______ breakfast?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: What / did / you / eat",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Did they went home?",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "When did Beyza go to the event?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Past Simple Questions yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Past Simple Questions kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "Did",
+        "did",
+        "Did",
+        "did",
+        "eat",
+        "What did you eat",
+        "\"went\" burada hatalıdır; doğru cevap \"go\" olmalıdır.",
+        "Last Friday.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "045-past-simple-questions-w1",
+    "045-past-simple-questions-w2",
+    "045-past-simple-questions-w3",
+    "045-past-simple-questions-w4",
+    "045-past-simple-questions-w5",
+    "045-past-simple-questions-w6",
+    "045-past-simple-questions-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Past Simple Questions",
+      "instructionTr": "Did + özne + fiilin yalın hâli? ile soru kurmak.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 45",
+        "heroText": "Did you watch TV?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Past Simple soru kalıbı: Did + özne + fiilin yalın hâli? - Did you play volleyball? - Did she go to school? Kısa cevap: - Yes, I did. - No, she didn't. Soru kelimeleri: - What did you eat? - Where did they go? - When did she arrive? - Who did you call? Did varsa fiil yine yalın hâlde kalır.",
+      "content": {
+        "examples": [],
+        "noteTr": "Past Simple soru kalıbı: Did + özne + fiilin yalın hâli? - Did you play volleyball? - Did she go to school? Kısa cevap: - Yes, I did. - No, she didn't. Soru kelimeleri: - What did you eat? - Where did they go? - When did she arrive? - Who did you call? Did varsa fiil yine yalın hâlde kalır."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "Did you watch TV?",
+          "Did she play volleyball?",
+          "Did they go to school?",
+          "Did he eat breakfast?",
+          "Where did you go?",
+          "What did Beyza study?",
+          "When did the match start?",
+          "Who did the coach call?",
+          "Did the students prepare the stage?",
+          "What did they buy for the event?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Evet/Hayır",
+            "Did + özne + fiil?",
+            "Did you go?"
+          ],
+          [
+            "Bilgi sorusu",
+            "Soru kelimesi + did + özne + fiil?",
+            "Where did you go?"
+          ],
+          [
+            "Kısa cevap",
+            "Yes, ... did. / No, ... didn't.",
+            "Yes, I did."
+          ]
+        ]
+      },
+      "explanationTr": "Did + özne + fiilin yalın hâli? ile soru kurmak. Yes, ... did. / No, ... didn't. ile kısa cevap vermek. What / Where / When / Who ile geçmiş zaman soruları oluşturmak. Soru cümlesinde fiili yalın kullanmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "Did she went? ❌ → Did she go? ✅",
+          "Where you did go? ❌ → Where did you go? ✅",
+          "Yes, she went. kısa cevap olarak kullanılabilir ama hedef kalıp Yes, she did. olmalıdır.",
+          "No, she doesn't. ❌ → No, she didn't. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "_______ you watch the match?",
+      "content": {
+        "options": [
+          "Did",
+          "Do",
+          "Were"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Did seçeneği cümledeki hedef kurala uyar.",
+          "\"Do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Did\" çünkü Did seçeneği cümledeki hedef kurala uyar.",
+          "\"Were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Did\" çünkü Did seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Did she go? — Yes, she _______.",
+      "content": {
+        "options": [
+          "did",
+          "was",
+          "does"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. did seçeneği cümledeki hedef kurala uyar.",
+          "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"did\" çünkü did seçeneği cümledeki hedef kurala uyar.",
+          "\"does\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"did\" çünkü did seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Where _______ they go?",
+      "content": {
+        "answer": "did",
+        "accepted": [
+          "did"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"did\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Did + özne + fiilin yalın hâli? ile soru kurmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "What",
+          "did",
+          "you",
+          "eat"
+        ],
+        "answer": [
+          "What",
+          "did",
+          "you",
+          "eat"
+        ],
+        "explanationTr": "Doğru sıra: What did you eat"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "Did",
+          "they",
+          "went",
+          "home?"
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"went\" burada hatalıdır; doğru cevap \"go\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Did you study?",
+            "Yes, I did."
+          ],
+          [
+            "Did she go?",
+            "No, she didn't."
+          ],
+          [
+            "Did they win?",
+            "Yes, they did."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza went to a school event last Friday. She helped with the posters and carried some chairs. Her friend Ece took photos. After the event, they ate sandwiches and went home at six.",
+        "questions": [
+          {
+            "prompt": "When did Beyza go to the event?",
+            "options": [
+              "Last Friday.",
+              "Some chairs.",
+              "Ece."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Last Friday.\" olmalıdır.",
+              "\"Some chairs.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Last Friday.\".",
+              "\"Ece.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Last Friday.\"."
+            ]
+          },
+          {
+            "prompt": "What did she carry?",
+            "options": [
+              "Ece.",
+              "Some chairs.",
+              "Last Friday."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Ece.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some chairs.\".",
+              "Doğru. Bu soruda cevap \"Some chairs.\" olmalıdır.",
+              "\"Last Friday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some chairs.\"."
+            ]
+          },
+          {
+            "prompt": "Who took photos?",
+            "options": [
+              "Last Friday.",
+              "Some chairs.",
+              "Ece."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Last Friday.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Ece.\".",
+              "\"Some chairs.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Ece.\".",
+              "Doğru. Bu soruda cevap \"Ece.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What time did they arrive?",
+      "content": {
+        "audioText": "\"Yesterday, the team played an important match. They arrived at four and warmed up for twenty minutes. The match started at five. The team won two sets.\"",
+        "questions": [
+          {
+            "prompt": "What time did they arrive?",
+            "options": [
+              "At four.",
+              "At five.",
+              "Yes, they did."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"At four.\" olmalıdır.",
+              "\"At five.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At four.\".",
+              "\"Yes, they did.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At four.\"."
+            ]
+          },
+          {
+            "prompt": "When did the match start?",
+            "options": [
+              "Yes, they did.",
+              "At five.",
+              "At four."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Yes, they did.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At five.\".",
+              "Doğru. Bu soruda cevap \"At five.\" olmalıdır.",
+              "\"At four.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"At five.\"."
+            ]
+          },
+          {
+            "prompt": "Did the team win?",
+            "options": [
+              "At four.",
+              "At five.",
+              "Yes, they did."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"At four.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they did.\".",
+              "\"At five.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, they did.\".",
+              "Doğru. Bu soruda cevap \"Yes, they did.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir aile üyesine üç geçmiş zaman sorusu sor: - What did you do yesterday? - Where did you go? - Did you watch TV?",
+      "content": {
+        "sentenceStarters": [
+          "What did you do yesterday?",
+          "Where did you go?",
+          "Did you watch TV?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ she study?",
+            "options": [
+              "Did",
+              "Does",
+              "Was"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Did seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Does\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Did\" çünkü Did seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Where did they _______?",
+            "options": [
+              "went",
+              "go",
+              "going"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. go seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Did he eat? — No, he _______.",
+            "options": [
+              "doesn't",
+              "didn't",
+              "wasn't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. didn't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"doesn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"didn't\" çünkü didn't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "What did Beyza _______?",
+            "options": [
+              "bought",
+              "buy",
+              "buying"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. buy seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"bought\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ did the match start?",
+            "options": [
+              "When",
+              "Much",
+              "Any"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. When seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"When\" çünkü When seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Did you _______ the film?",
+            "options": [
+              "watched",
+              "watch",
+              "watching"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. watch seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watched\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watch\" çünkü watch seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Where _______ she go?",
+            "options": [
+              "did",
+              "was",
+              "does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. did seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"did\" çünkü did seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Did they win? — Yes, they _______.",
+            "options": [
+              "did",
+              "were",
+              "do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. did seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"did\" çünkü did seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "What did he _______?",
+            "options": [
+              "ate",
+              "eat",
+              "eating"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. eat seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eat\" çünkü eat seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Who did you _______?",
+            "options": [
+              "called",
+              "call",
+              "calling"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. call seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"called\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"call\" çünkü call seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "045-past-simple-questions-w1",
+            "word": "what",
+            "example": "What did you do?",
+            "audioText": "what",
+            "prompt": "\"what\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ne",
+              "nerede/nereye",
+              "ne zaman",
+              "kim"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "045-past-simple-questions-w2",
+            "word": "where",
+            "example": "Where did she go?",
+            "audioText": "where",
+            "prompt": "\"where\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ne",
+              "nerede/nereye",
+              "ne zaman",
+              "kim"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "045-past-simple-questions-w3",
+            "word": "when",
+            "example": "When did it start?",
+            "audioText": "when",
+            "prompt": "\"when\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ne",
+              "nerede/nereye",
+              "ne zaman",
+              "kim"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "045-past-simple-questions-w4",
+            "word": "who",
+            "example": "Who did you call?",
+            "audioText": "who",
+            "prompt": "\"who\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ne",
+              "nerede/nereye",
+              "ne zaman",
+              "kim"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "045-past-simple-questions-w5",
+            "word": "win",
+            "example": "Did they win?",
+            "audioText": "win",
+            "prompt": "\"win\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kazanmak",
+              "ne",
+              "nerede/nereye",
+              "ne zaman"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Did + özne + fiilin yalın hâli? ile soru kurmak.",
+          "Yes, ... did. / No, ... didn't. ile kısa cevap vermek.",
+          "Hedef kelimeler: what, where, when, who, win, start, photo"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

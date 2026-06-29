@@ -1,0 +1,713 @@
+{
+  "id": "048-comparative-adjectives",
+  "title": "Comparative Adjectives",
+  "level": "A2.1",
+  "module": "Karşılaştırma",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+    "Kısa sıfatlara -er eklemek.",
+    "Uzun sıfatlarla more kullanmak.",
+    "than kelimesini doğru yerde kullanmak.",
+    "good → better ve bad → worse gibi temel düzensiz biçimleri tanımak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evde iki gerçek nesne seçin ve Beyza'dan farklarını söylemesini isteyin. Önce kısa sıfatlarla başlayın; sonra bir veya iki uzun sıfat ekleyin.",
+    "todayGoal": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+    "teachingTips": [
+      "Bu derste \"Comparative Adjectives\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "A giraffe is taller than a horse.",
+      "A car is faster than a bicycle.",
+      "My bag is heavier than your bag.",
+      "This room is bigger than that room."
+    ],
+    "listeningScripts": [
+      "\"Two volleyball teams are playing today. Team A is younger than Team B. Team B is taller, but Team A is faster. The first set is more exciting than the warm-up.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Comparative Adjectives Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "A train is _______ than a bicycle.",
+          "options": [
+            "fast",
+            "faster",
+            "more fast"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "This film is _______ interesting than that film.",
+          "options": [
+            "more",
+            "most",
+            "much"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "small →",
+          "options": [
+            "smaller",
+            "more small",
+            "smallest"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "A giraffe is _______ than a horse. (tall)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "This bag is _______ than mine. (heavy)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: is / taller / than / Beyza / Ece",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: This room is more bigger than that room.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Which bag is bigger?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Comparative Adjectives yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Comparative Adjectives kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "faster",
+        "more",
+        "smaller",
+        "taller",
+        "heavier",
+        "Beyza is taller than Ece",
+        "\"more bigger\" burada hatalıdır; doğru cevap \"bigger\" olmalıdır.",
+        "The blue bag.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "048-comparative-adjectives-w1",
+    "048-comparative-adjectives-w2",
+    "048-comparative-adjectives-w3",
+    "048-comparative-adjectives-w4",
+    "048-comparative-adjectives-w5",
+    "048-comparative-adjectives-w6",
+    "048-comparative-adjectives-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Comparative Adjectives",
+      "instructionTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "content": {
+        "eyebrow": "Karşılaştırma · DERS 48",
+        "heroText": "A giraffe is taller than a horse."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "İki şeyi karşılaştırırken comparative adjectives kullanırız. Kısa sıfatlarda genellikle -er: - tall → taller - fast → faster - small → smaller Karşılaştırılan ikinci şeyden önce than gelir: - Beyza is taller than Ece. - A cheetah is faster than a horse. Sonu y ile biten bazı sıfatlarda: - happy → happier - easy → easier Bazı kısa sıfatlarda son harf çiftlenir: - big → bigger - hot → hotter Uzun sıfatlarda more: - more beautiful - more interesting - more expensive Temel düzensizler: - good → better - bad → worse",
+      "content": {
+        "examples": [],
+        "noteTr": "İki şeyi karşılaştırırken comparative adjectives kullanırız. Kısa sıfatlarda genellikle -er: - tall → taller - fast → faster - small → smaller Karşılaştırılan ikinci şeyden önce than gelir: - Beyza is taller than Ece. - A cheetah is faster than a horse. Sonu y ile biten bazı sıfatlarda: - happy → happier - easy → easier Bazı kısa sıfatlarda son harf çiftlenir: - big → bigger - hot → hotter Uzun sıfatlarda more: - more beautiful - more interesting - more expensive Temel düzensizler: - good → better - bad → worse"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "A giraffe is taller than a horse.",
+          "A car is faster than a bicycle.",
+          "My bag is heavier than your bag.",
+          "This room is bigger than that room.",
+          "Today is hotter than yesterday.",
+          "English is easier than I thought.",
+          "This poster is more colourful than that poster.",
+          "The sports centre is more modern than the old hall.",
+          "This match is better than the last match.",
+          "The weather is worse than yesterday."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Kısa sıfat",
+            "adjective + er",
+            "tall → taller"
+          ],
+          [
+            "Sessiz + y",
+            "y → ier",
+            "happy → happier"
+          ],
+          [
+            "Kısa ünlü + sessiz",
+            "son harf çiftlenir",
+            "big → bigger"
+          ],
+          [
+            "Uzun sıfat",
+            "more + adjective",
+            "more interesting"
+          ],
+          [
+            "Düzensiz",
+            "özel biçim",
+            "good → better"
+          ]
+        ]
+      },
+      "explanationTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak. Kısa sıfatlara -er eklemek. Uzun sıfatlarla more kullanmak. than kelimesini doğru yerde kullanmak. good → better ve bad → worse gibi temel düzensiz biçimleri tanımak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "more taller ❌ → taller ✅",
+          "beautifuller ❌ → more beautiful ✅",
+          "Beyza is taller Ece. ❌ → Beyza is taller than Ece. ✅",
+          "gooder ❌ → better ✅",
+          "badder ❌ → worse ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "A train is _______ than a bicycle.",
+      "content": {
+        "options": [
+          "fast",
+          "faster",
+          "more fast"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"fast\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"faster\" çünkü faster seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. faster seçeneği cümledeki hedef kurala uyar.",
+          "\"more fast\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"faster\" çünkü faster seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "This film is _______ interesting than that film.",
+      "content": {
+        "options": [
+          "more",
+          "most",
+          "much"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. more seçeneği cümledeki hedef kurala uyar.",
+          "\"most\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar.",
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is _______ than a horse. (tall)",
+      "content": {
+        "answer": "taller",
+        "accepted": [
+          "taller"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"taller\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "is",
+          "taller",
+          "than",
+          "Beyza",
+          "Ece"
+        ],
+        "answer": [
+          "Beyza",
+          "is",
+          "taller",
+          "than",
+          "Ece"
+        ],
+        "explanationTr": "Doğru sıra: Beyza is taller than Ece"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "This",
+          "room",
+          "is",
+          "more",
+          "bigger",
+          "than",
+          "that",
+          "room."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"more bigger\" burada hatalıdır; doğru cevap \"bigger\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "tall",
+            "taller"
+          ],
+          [
+            "heavy",
+            "heavier"
+          ],
+          [
+            "interesting",
+            "more interesting"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has two sports bags. The blue bag is bigger than the red bag. The red bag is lighter than the blue bag. The blue bag is more useful because it has more pockets. Beyza uses the blue bag for volleyball practice.",
+        "questions": [
+          {
+            "prompt": "Which bag is bigger?",
+            "options": [
+              "The blue bag.",
+              "The red bag.",
+              "Because it has more pockets."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"The blue bag.\" olmalıdır.",
+              "\"The red bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The blue bag.\".",
+              "\"Because it has more pockets.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The blue bag.\"."
+            ]
+          },
+          {
+            "prompt": "Which bag is lighter?",
+            "options": [
+              "Because it has more pockets.",
+              "The red bag.",
+              "The blue bag."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Because it has more pockets.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The red bag.\".",
+              "Doğru. Bu soruda cevap \"The red bag.\" olmalıdır.",
+              "\"The blue bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The red bag.\"."
+            ]
+          },
+          {
+            "prompt": "Why is the blue bag more useful?",
+            "options": [
+              "The blue bag.",
+              "The red bag.",
+              "Because it has more pockets."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"The blue bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because it has more pockets.\".",
+              "\"The red bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because it has more pockets.\".",
+              "Doğru. Bu soruda cevap \"Because it has more pockets.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Which team is younger?",
+      "content": {
+        "audioText": "\"Two volleyball teams are playing today. Team A is younger than Team B. Team B is taller, but Team A is faster. The first set is more exciting than the warm-up.\"",
+        "questions": [
+          {
+            "prompt": "Which team is younger?",
+            "options": [
+              "Team A.",
+              "Team B.",
+              "The first set."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Team A.\" olmalıdır.",
+              "\"Team B.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Team A.\".",
+              "\"The first set.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Team A.\"."
+            ]
+          },
+          {
+            "prompt": "Which team is taller?",
+            "options": [
+              "The first set.",
+              "Team B.",
+              "Team A."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The first set.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Team B.\".",
+              "Doğru. Bu soruda cevap \"Team B.\" olmalıdır.",
+              "\"Team A.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Team B.\"."
+            ]
+          },
+          {
+            "prompt": "What is more exciting than the warm-up?",
+            "options": [
+              "Team A.",
+              "Team B.",
+              "The first set."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Team A.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The first set.\".",
+              "\"Team B.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The first set.\".",
+              "Doğru. Bu soruda cevap \"The first set.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "İki kişiyi, iki eşyayı veya iki hayvanı karşılaştır: - ... is taller than ... - ... is faster than ... - ... is more interesting than ...",
+      "content": {
+        "sentenceStarters": [
+          "... is taller than ...",
+          "... is faster than ...",
+          "... is more interesting than ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "small →",
+            "options": [
+              "smaller",
+              "more small",
+              "smallest"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. smaller seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"more small\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"smaller\" çünkü smaller seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "happy →",
+            "options": [
+              "happyer",
+              "happier",
+              "more happy"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. happier seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"happyer\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"happier\" çünkü happier seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "beautiful →",
+            "options": [
+              "beautifuller",
+              "more beautiful",
+              "beautifuler"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. more beautiful seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"beautifuller\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more beautiful\" çünkü more beautiful seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "good →",
+            "options": [
+              "gooder",
+              "better",
+              "best"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. better seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"gooder\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"better\" çünkü better seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "big →",
+            "options": [
+              "bigger",
+              "biger",
+              "more big"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. bigger seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"biger\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bigger\" çünkü bigger seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "A cheetah is _______ than a dog.",
+            "options": [
+              "faster",
+              "fastest",
+              "more fast"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. faster seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"fastest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"faster\" çünkü faster seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "This box is _______ than that box.",
+            "options": [
+              "heavyer",
+              "heavier",
+              "more heavy"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. heavier seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"heavyer\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heavier\" çünkü heavier seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The new hall is _______ modern than the old hall.",
+            "options": [
+              "more",
+              "most",
+              "many"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. more seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"most\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"more\" çünkü more seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Today is _______ than yesterday.",
+            "options": [
+              "gooder",
+              "better",
+              "best"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. better seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"gooder\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"better\" çünkü better seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "This street is _______ than the main road.",
+            "options": [
+              "quieter",
+              "quietest",
+              "more quietest"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. quieter seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"quietest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"quieter\" çünkü quieter seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "048-comparative-adjectives-w1",
+            "word": "tall",
+            "example": "taller than",
+            "audioText": "tall",
+            "prompt": "\"tall\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uzun boylu/yüksek",
+              "hızlı",
+              "ağır",
+              "hafif"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "048-comparative-adjectives-w2",
+            "word": "fast",
+            "example": "faster than",
+            "audioText": "fast",
+            "prompt": "\"fast\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uzun boylu/yüksek",
+              "hızlı",
+              "ağır",
+              "hafif"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "048-comparative-adjectives-w3",
+            "word": "heavy",
+            "example": "heavier than",
+            "audioText": "heavy",
+            "prompt": "\"heavy\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uzun boylu/yüksek",
+              "hızlı",
+              "ağır",
+              "hafif"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "048-comparative-adjectives-w4",
+            "word": "light",
+            "example": "lighter than",
+            "audioText": "light",
+            "prompt": "\"light\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "uzun boylu/yüksek",
+              "hızlı",
+              "ağır",
+              "hafif"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "048-comparative-adjectives-w5",
+            "word": "modern",
+            "example": "more modern than",
+            "audioText": "modern",
+            "prompt": "\"modern\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "modern",
+              "uzun boylu/yüksek",
+              "hızlı",
+              "ağır"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "İki kişi, hayvan, nesne veya yeri karşılaştırmak.",
+          "Kısa sıfatlara -er eklemek.",
+          "Hedef kelimeler: tall, fast, heavy, light, modern, useful, better"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

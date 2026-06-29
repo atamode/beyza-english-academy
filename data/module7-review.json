@@ -1,0 +1,559 @@
+{
+  "id": "module-7-review",
+  "moduleId": "module-7",
+  "title": "Geçmiş Genel Tekrar",
+  "description": "Geçmiş derslerini ölçen gerçek kaynak sorularından oluşturuldu.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "module-7-review-01",
+      "type": "multiple-choice",
+      "topicTag": "was-were",
+      "topicLabel": "was / were",
+      "title": "was / were tekrar",
+      "instructionTr": "I _______ at home yesterday.",
+      "content": {
+        "options": [
+          "was",
+          "were",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+          "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-02",
+      "type": "multiple-choice",
+      "topicTag": "was-were",
+      "topicLabel": "was / were",
+      "title": "was / were tekrar",
+      "instructionTr": "They _______ at the concert.",
+      "content": {
+        "options": [
+          "was",
+          "were",
+          "is"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. were seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"were\" çünkü were seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-03",
+      "type": "multiple-choice",
+      "topicTag": "was-were",
+      "topicLabel": "was / were",
+      "title": "was / were tekrar",
+      "instructionTr": "She _______ tired.",
+      "content": {
+        "options": [
+          "weren't",
+          "wasn't",
+          "aren't"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"weren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"wasn't\" çünkü wasn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. wasn't seçeneği cümledeki hedef kurala uyar.",
+          "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"wasn't\" çünkü wasn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-04",
+      "type": "multiple-choice",
+      "topicTag": "was-were",
+      "topicLabel": "was / were",
+      "title": "was / were tekrar",
+      "instructionTr": "_______ you at school?",
+      "content": {
+        "options": [
+          "Was",
+          "Were",
+          "Are"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"Was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Were\" çünkü Were seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. Were seçeneği cümledeki hedef kurala uyar.",
+          "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Were\" çünkü Were seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-05",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-regular",
+      "topicLabel": "Past Simple Regular",
+      "title": "Past Simple Regular tekrar",
+      "instructionTr": "watch →",
+      "content": {
+        "options": [
+          "watched",
+          "watchd",
+          "watching"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. watched seçeneği cümledeki hedef kurala uyar.",
+          "\"watchd\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar.",
+          "\"watching\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-06",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-regular",
+      "topicLabel": "Past Simple Regular",
+      "title": "Past Simple Regular tekrar",
+      "instructionTr": "study →",
+      "content": {
+        "options": [
+          "studyed",
+          "studied",
+          "study"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"studyed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studied\" çünkü studied seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. studied seçeneği cümledeki hedef kurala uyar.",
+          "\"study\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"studied\" çünkü studied seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-07",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-regular",
+      "topicLabel": "Past Simple Regular",
+      "title": "Past Simple Regular tekrar",
+      "instructionTr": "They _______ the room.",
+      "content": {
+        "options": [
+          "cleaned",
+          "clean",
+          "cleaning"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. cleaned seçeneği cümledeki hedef kurala uyar.",
+          "\"clean\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cleaned\" çünkü cleaned seçeneği cümledeki hedef kurala uyar.",
+          "\"cleaning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cleaned\" çünkü cleaned seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-08",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-regular",
+      "topicLabel": "Past Simple Regular",
+      "title": "Past Simple Regular tekrar",
+      "instructionTr": "She _______ the guitar yesterday.",
+      "content": {
+        "options": [
+          "practised",
+          "practise",
+          "practises"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. practised seçeneği cümledeki hedef kurala uyar.",
+          "\"practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practised\" çünkü practised seçeneği cümledeki hedef kurala uyar.",
+          "\"practises\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practised\" çünkü practised seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-09",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-irregular",
+      "topicLabel": "Past Simple Irregular",
+      "title": "Past Simple Irregular tekrar",
+      "instructionTr": "Doğru biçimi seç: go →",
+      "content": {
+        "options": [
+          "goed",
+          "went",
+          "gone"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"goed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+          "\"gone\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-10",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-irregular",
+      "topicLabel": "Past Simple Irregular",
+      "title": "Past Simple Irregular tekrar",
+      "instructionTr": "drink →",
+      "content": {
+        "options": [
+          "drank",
+          "drinked",
+          "drunk"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. drank seçeneği cümledeki hedef kurala uyar.",
+          "\"drinked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drank\" çünkü drank seçeneği cümledeki hedef kurala uyar.",
+          "\"drunk\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drank\" çünkü drank seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-11",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-irregular",
+      "topicLabel": "Past Simple Irregular",
+      "title": "Past Simple Irregular tekrar",
+      "instructionTr": "She _______ a sandwich.",
+      "content": {
+        "options": [
+          "made",
+          "maked",
+          "make"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. made seçeneği cümledeki hedef kurala uyar.",
+          "\"maked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"made\" çünkü made seçeneği cümledeki hedef kurala uyar.",
+          "\"make\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"made\" çünkü made seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-12",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-irregular",
+      "topicLabel": "Past Simple Irregular",
+      "title": "Past Simple Irregular tekrar",
+      "instructionTr": "We _______ a new ball.",
+      "content": {
+        "options": [
+          "got",
+          "getted",
+          "get"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. got seçeneği cümledeki hedef kurala uyar.",
+          "\"getted\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"got\" çünkü got seçeneği cümledeki hedef kurala uyar.",
+          "\"get\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"got\" çünkü got seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-13",
+      "type": "multiple-choice",
+      "topicTag": "did-didnt",
+      "topicLabel": "did / didn't",
+      "title": "did / didn't tekrar",
+      "instructionTr": "She didn't _______ volleyball.",
+      "content": {
+        "options": [
+          "played",
+          "play",
+          "playing"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"played\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. play seçeneği cümledeki hedef kurala uyar.",
+          "\"playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-14",
+      "type": "multiple-choice",
+      "topicTag": "did-didnt",
+      "topicLabel": "did / didn't",
+      "title": "did / didn't tekrar",
+      "instructionTr": "We didn't _______ to the park.",
+      "content": {
+        "options": [
+          "went",
+          "go",
+          "gone"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. go seçeneği cümledeki hedef kurala uyar.",
+          "\"gone\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-15",
+      "type": "multiple-choice",
+      "topicTag": "did-didnt",
+      "topicLabel": "did / didn't",
+      "title": "did / didn't tekrar",
+      "instructionTr": "He didn't _______ breakfast.",
+      "content": {
+        "options": [
+          "ate",
+          "eat",
+          "eating"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eat\" çünkü eat seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. eat seçeneği cümledeki hedef kurala uyar.",
+          "\"eating\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eat\" çünkü eat seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-16",
+      "type": "multiple-choice",
+      "topicTag": "did-didnt",
+      "topicLabel": "did / didn't",
+      "title": "did / didn't tekrar",
+      "instructionTr": "They didn't _______ the room.",
+      "content": {
+        "options": [
+          "cleaned",
+          "clean",
+          "cleaning"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"cleaned\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"clean\" çünkü clean seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. clean seçeneği cümledeki hedef kurala uyar.",
+          "\"cleaning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"clean\" çünkü clean seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-17",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-questions",
+      "topicLabel": "Past Simple Questions",
+      "title": "Past Simple Questions tekrar",
+      "instructionTr": "_______ she study?",
+      "content": {
+        "options": [
+          "Did",
+          "Does",
+          "Was"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Did seçeneği cümledeki hedef kurala uyar.",
+          "\"Does\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Did\" çünkü Did seçeneği cümledeki hedef kurala uyar.",
+          "\"Was\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Did\" çünkü Did seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-18",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-questions",
+      "topicLabel": "Past Simple Questions",
+      "title": "Past Simple Questions tekrar",
+      "instructionTr": "Where did they _______?",
+      "content": {
+        "options": [
+          "went",
+          "go",
+          "going"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. go seçeneği cümledeki hedef kurala uyar.",
+          "\"going\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"go\" çünkü go seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-19",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-questions",
+      "topicLabel": "Past Simple Questions",
+      "title": "Past Simple Questions tekrar",
+      "instructionTr": "Did he eat? — No, he _______.",
+      "content": {
+        "options": [
+          "doesn't",
+          "didn't",
+          "wasn't"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"doesn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"didn't\" çünkü didn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. didn't seçeneği cümledeki hedef kurala uyar.",
+          "\"wasn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"didn't\" çünkü didn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-20",
+      "type": "multiple-choice",
+      "topicTag": "past-simple-questions",
+      "topicLabel": "Past Simple Questions",
+      "title": "Past Simple Questions tekrar",
+      "instructionTr": "What did Beyza _______?",
+      "content": {
+        "options": [
+          "bought",
+          "buy",
+          "buying"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"bought\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. buy seçeneği cümledeki hedef kurala uyar.",
+          "\"buying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"buy\" çünkü buy seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-21",
+      "type": "multiple-choice",
+      "topicTag": "telling-a-past-story",
+      "topicLabel": "Telling a Past Story",
+      "title": "Telling a Past Story tekrar",
+      "instructionTr": "İlk olay için:",
+      "content": {
+        "options": [
+          "First",
+          "Finally",
+          "After that"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. First seçeneği cümledeki hedef kurala uyar.",
+          "\"Finally\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"First\" çünkü First seçeneği cümledeki hedef kurala uyar.",
+          "\"After that\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"First\" çünkü First seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-22",
+      "type": "multiple-choice",
+      "topicTag": "telling-a-past-story",
+      "topicLabel": "Telling a Past Story",
+      "title": "Telling a Past Story tekrar",
+      "instructionTr": "Son olay için:",
+      "content": {
+        "options": [
+          "Next",
+          "Finally",
+          "First"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"Next\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Finally\" çünkü Finally seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. Finally seçeneği cümledeki hedef kurala uyar.",
+          "\"First\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Finally\" çünkü Finally seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-23",
+      "type": "multiple-choice",
+      "topicTag": "telling-a-past-story",
+      "topicLabel": "Telling a Past Story",
+      "title": "Telling a Past Story tekrar",
+      "instructionTr": "Then, we _______ breakfast.",
+      "content": {
+        "options": [
+          "have",
+          "had",
+          "having"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"had\" çünkü had seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. had seçeneği cümledeki hedef kurala uyar.",
+          "\"having\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"had\" çünkü had seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-24",
+      "type": "multiple-choice",
+      "topicTag": "telling-a-past-story",
+      "topicLabel": "Telling a Past Story",
+      "title": "Telling a Past Story tekrar",
+      "instructionTr": "Next, the team _______.",
+      "content": {
+        "options": [
+          "practised",
+          "practise",
+          "practises"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. practised seçeneği cümledeki hedef kurala uyar.",
+          "\"practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practised\" çünkü practised seçeneği cümledeki hedef kurala uyar.",
+          "\"practises\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practised\" çünkü practised seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-7-review-25",
+      "type": "multiple-choice",
+      "topicTag": "past-continuous",
+      "topicLabel": "Past Continuous",
+      "title": "Past Continuous tekrar",
+      "instructionTr": "I _______ reading.",
+      "content": {
+        "options": [
+          "was",
+          "were",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. was seçeneği cümledeki hedef kurala uyar.",
+          "\"were\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"was\" çünkü was seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    }
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "id": "009-third-person-s",
+  "title": "Third Person -s",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek.",
+    "Hangi fiillerin sadece \"-s\", hangilerinin \"-es\" veya \"-ies\" aldığını kurallarıyla ayırt edebilmek.",
+    "Olumlu cümlelerde tekil özneler ile fiil uyumunu doğru kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu derste Beyza ile İngilizcede geniş zamanın en kritik kurallarından biri olan \"üçüncü tekil şahıs -s takısı\" konusunu işledik. \"He, She, It\" öznelerinden sonra gelen fiillerin sonuna \"-s\" koymak bir alışkanlık hâline geldiğinde büyük bir adım atılmış demektir. Evde \"She likes music.\" veya \"He plays volleyball.\" gibi kısa cümleler kurmasını teşvik edebilirsiniz.",
+    "todayGoal": "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek.",
+    "teachingTips": [
+      "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "She plays volleyball. (O voleybol oynar.)",
+      "He sings on stage. (O sahnede şarkı söyler.)",
+      "My friend likes music. (Arkadaşım müziği sever.)",
+      "He goes to school every day. (O her gün okula gider.)"
+    ],
+    "listeningScripts": [
+      "This is Emre. He is a young musician. He plays the guitar in a music band. Every weekend, he practises on stage. He loves his microphone."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Third Person -s Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ the ball very well.",
+          "options": [
+            "catch",
+            "catches",
+            "catchies"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "He _______ music in his room.",
+          "options": [
+            "practises",
+            "practise",
+            "practiseses"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The band _______ every Friday.",
+          "options": [
+            "practise",
+            "practises",
+            "practising"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "My brother ________ (go) to the volleyball match.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "She ________ (sing) beautiful songs.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: volleyball / school / she / at / plays",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: The girl dancees beautifully on the stage.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "catches",
+        "practises",
+        "practises",
+        "goes",
+        "sings",
+        "She plays volleyball at school",
+        "\"Dance\" zaten \"e\" ile bittiği için sadece \"-s\" eklenir; \"dancees\" diye bir yazım yoktur.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "009-third-person-s-w1",
+    "009-third-person-s-w2",
+    "009-third-person-s-w3",
+    "009-third-person-s-w4",
+    "009-third-person-s-w5",
+    "009-third-person-s-w6",
+    "009-third-person-s-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Third Person -s",
+      "instructionTr": "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 09",
+        "heroText": "She plays volleyball. (O voleybol oynar.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "İngilizcede kendimizden (I) veya karşımızdaki kişiden (You) bahsederken fiilleri olduğu gibi kullanıyoruz. Ama iş üçüncü bir kişiye — yani He (o, erkek), She (o, kız) veya It (hayvan ya da cansız nesne) — geldiğinde, fiilin sonuna küçük bir ek takılır. Buna Third Person -s diyoruz.",
+      "content": {
+        "examples": [
+          "* *I play* (Ben oynarım) → *She plays* (O oynar)\n* *We sing* (Biz şarkı söyleriz) → *He sings* (O şarkı söyler)",
+          "Peki bu ek her zaman sadece \"-s\" mı olur? Hayır — kelimenin bitiş harfine göre üç kural var:"
+        ],
+        "noteTr": "İngilizcede kendimizden (I) veya karşımızdaki kişiden (You) bahsederken fiilleri olduğu gibi kullanıyoruz. Ama iş üçüncü bir kişiye — yani He (o, erkek), She (o, kız) veya It (hayvan ya da cansız nesne) — geldiğinde, fiilin sonuna küçük bir ek takılır. Buna Third Person -s diyoruz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "She plays volleyball. (O voleybol oynar.)",
+          "He sings on stage. (O sahnede şarkı söyler.)",
+          "My friend likes music. (Arkadaşım müziği sever.)",
+          "He goes to school every day. (O her gün okula gider.)",
+          "She watches the match. (O maçı izler.)",
+          "My dog runs fast. (Köpeğim hızlı koşar.)",
+          "The dancer practises every afternoon. (Dansçı her öğleden sonra prova yapar.)",
+          "He studies English. (O İngilizce çalışır.)",
+          "She touches the microphone. (O mikrofona dokunur.)",
+          "The volleyball player catches the ball. (Voleybol oyuncusu topu yakalar.)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "I, You, We, They",
+            "Yalın fiil (ek yok)",
+            "I dance. / We watch."
+          ],
+          [
+            "He, She, It — genel",
+            "Fiil + -s",
+            "She dances. / He likes."
+          ],
+          [
+            "He, She, It — (-ch, -sh, -o, -x, -z, -s)",
+            "Fiil + -es",
+            "He watches. / She goes."
+          ],
+          [
+            "He, She, It — (sessiz + y)",
+            "y düşer + -ies",
+            "He studies. / She flies."
+          ]
+        ]
+      },
+      "explanationTr": "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek. Hangi fiillerin sadece \"-s\", hangilerinin \"-es\" veya \"-ies\" aldığını kurallarıyla ayırt edebilmek. Olumlu cümlelerde tekil özneler ile fiil uyumunu doğru kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* She play volleyball. ❌\n* *Doğrusu:* She plays volleyball. (\"She\" öznesiyle fiile \"-s\" takısı gelmesi zorunludur.)",
+          "* *Hata:* He studies English → *yaygın yanlış yazım:* He studyes English. ❌\n* *Doğrusu:* He studies English. (\"Study\" kelimesinde \"y\"den önce \"d\" sessiz harfi gelir, bu yüzden \"y\" düşer ve \"-ies\" eklenir.)",
+          "* *Hata:* I plays music. ❌\n* *Doğrusu:* I play music. (\"-s\" takısı sadece He, She, It öznelerinde kullanılır; \"I\" ile fiil yalın kalır.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ the ball very well.",
+      "content": {
+        "options": [
+          "catch",
+          "catches",
+          "catchies"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"catch\" bu cümlede hedef kurala uymaz. \"She\" öznesiyle \"catch\" fiili \"-ch\" ile bittiği için \"-es\" alarak \"catches\" olur. A seçeneğinde ek hiç eklenmemiştir. C seçeneğinde \"-ies\" yanlış uygulanmıştır; \"catch\" sessiz + y ile bitmediği için \"-ies\" kuralı geçerli değildir.",
+          "Doğru. \"She\" öznesiyle \"catch\" fiili \"-ch\" ile bittiği için \"-es\" alarak \"catches\" olur. A seçeneğinde ek hiç eklenmemiştir. C seçeneğinde \"-ies\" yanlış uygulanmıştır; \"catch\" sessiz + y ile bitmediği için \"-ies\" kuralı geçerli değildir.",
+          "\"catchies\" bu cümlede hedef kurala uymaz. \"She\" öznesiyle \"catch\" fiili \"-ch\" ile bittiği için \"-es\" alarak \"catches\" olur. A seçeneğinde ek hiç eklenmemiştir. C seçeneğinde \"-ies\" yanlış uygulanmıştır; \"catch\" sessiz + y ile bitmediği için \"-ies\" kuralı geçerli değildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "He _______ music in his room.",
+      "content": {
+        "options": [
+          "practises",
+          "practise",
+          "practiseses"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. \"He\" öznesiyle \"practise\" fiili sadece \"-s\" alır: \"practises\". B seçeneğinde ek unutulmuştur. C seçeneğinde gereksiz yere ekstra ek eklenmiştir.",
+          "\"practise\" bu cümlede hedef kurala uymaz. \"He\" öznesiyle \"practise\" fiili sadece \"-s\" alır: \"practises\". B seçeneğinde ek unutulmuştur. C seçeneğinde gereksiz yere ekstra ek eklenmiştir.",
+          "\"practiseses\" bu cümlede hedef kurala uymaz. \"He\" öznesiyle \"practise\" fiili sadece \"-s\" alır: \"practises\". B seçeneğinde ek unutulmuştur. C seçeneğinde gereksiz yere ekstra ek eklenmiştir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "My brother ________ (go) to the volleyball match.",
+      "content": {
+        "answer": "goes",
+        "accepted": [
+          "goes"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"My brother\" = He; \"go\" fiili \"-o\" ile bittiği için \"-es\" eklenir."
+      },
+      "hintTr": "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "volleyball",
+          "school",
+          "she",
+          "at",
+          "plays"
+        ],
+        "answer": [
+          "She",
+          "plays",
+          "volleyball",
+          "at",
+          "school"
+        ],
+        "explanationTr": "Doğru sıra: She plays volleyball at school"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "The",
+          "girl",
+          "dancees",
+          "beautifully",
+          "on",
+          "the",
+          "stage."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"Dance\" zaten \"e\" ile bittiği için sadece \"-s\" eklenir; \"dancees\" diye bir yazım yoktur."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "watch the match."
+          ],
+          [
+            "She",
+            "plays volleyball."
+          ],
+          [
+            "He",
+            "goes to the concert."
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "Melis is a student. She loves sports. Every Tuesday, she plays volleyball with her school friends. She jumps high and hits the ball. Her teacher watches her and smiles.",
+        "questions": [
+          {
+            "prompt": "What sport does Melis play?",
+            "options": [
+              "She plays volleyball.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She plays volleyball.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She plays volleyball.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She plays volleyball."
+            ]
+          },
+          {
+            "prompt": "Who does she play with?",
+            "options": [
+              "She plays with her school friends.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She plays with her school friends.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She plays with her school friends.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She plays with her school friends."
+            ]
+          },
+          {
+            "prompt": "Does her teacher watch her?",
+            "options": [
+              "Yes, her teacher watches her.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: Yes, her teacher watches her.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: Yes, her teacher watches her.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: Yes, her teacher watches her."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What instrument does Emre play?",
+      "content": {
+        "audioText": "This is Emre. He is a young musician. He plays the guitar in a music band. Every weekend, he practises on stage. He loves his microphone.",
+        "options": [
+          "He plays the guitar.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. He plays the guitar.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir arkadaşının ya da aile üyenden birinin yaptığı bir hobiyi \"He\" ya da \"She\" kullanarak İngilizce iki cümleyle anlat. Fiillere \"-s\" takısı getirmeyi unutma!",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "The band _______ every Friday.",
+            "options": [
+              "practise",
+              "practises",
+              "practising"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"The band\" tekil bir topluluktur (It); bu yüzden fiil \"practises\" olur. A seçeneğinde ek eksiktir. C seçeneği şimdiki zaman ekidir, geniş zamanda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"The band\" tekil bir topluluktur (It); bu yüzden fiil \"practises\" olur. A seçeneğinde ek eksiktir. C seçeneği şimdiki zaman ekidir, geniş zamanda kullanılmaz."
+          },
+          {
+            "prompt": "She _______ high in volleyball.",
+            "options": [
+              "jump",
+              "jumps",
+              "jumpes"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"She\" öznesiyle \"jump\" fiiline \"-s\" eklenerek \"jumps\" olur. A seçeneğinde ek yoktur. C seçeneğindeki \"jumpes\" yazımı yanlıştır; \"jump\" \"-e\" ile bitmez, sadece \"-s\" alır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"She\" öznesiyle \"jump\" fiiline \"-s\" eklenerek \"jumps\" olur. A seçeneğinde ek yoktur. C seçeneğindeki \"jumpes\" yazımı yanlıştır; \"jump\" \"-e\" ile bitmez, sadece \"-s\" alır."
+          },
+          {
+            "prompt": "He _______ his homework at night.",
+            "options": [
+              "do",
+              "does",
+              "doies"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"Do\" fiili \"-o\" ile bittiği için \"He\" öznesiyle \"does\" halini alır. A seçeneğinde ek eksiktir. C seçeneği kurallara uymayan uydurma bir yazımdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Do\" fiili \"-o\" ile bittiği için \"He\" öznesiyle \"does\" halini alır. A seçeneğinde ek eksiktir. C seçeneği kurallara uymayan uydurma bir yazımdır."
+          },
+          {
+            "prompt": "My friend _______ the microphone.",
+            "options": [
+              "holds",
+              "hold",
+              "holdes"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"My friend\" (He/She) tekil özne olduğu için \"holds\" doğrudur. B seçeneğinde ek yoktur. C seçeneğindeki \"holdes\" yanlış yazımdır; \"hold\" \"-es\" alan bir fiil değildir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"My friend\" (He/She) tekil özne olduğu için \"holds\" doğrudur. B seçeneğinde ek yoktur. C seçeneğindeki \"holdes\" yanlış yazımdır; \"hold\" \"-es\" alan bir fiil değildir."
+          },
+          {
+            "prompt": "The cat _______ on the sofa.",
+            "options": [
+              "sleep",
+              "sleeps",
+              "sleepes"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"The cat\" (It) tekil öznesiyle \"sleep\" fiili \"sleeps\" olur. A seçeneğinde ek yoktur. C seçeneğindeki \"sleepes\" yanlış yazımdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"The cat\" (It) tekil öznesiyle \"sleep\" fiili \"sleeps\" olur. A seçeneğinde ek yoktur. C seçeneğindeki \"sleepes\" yanlış yazımdır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Gizem _______ beautifully.",
+            "options": [
+              "dances",
+              "dance",
+              "dancees"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Gizem (She) olduğu için \"dance\" fiili \"-s\" alarak \"dances\" olur. B seçeneğinde ek yoktur. C seçeneğindeki \"dancees\" yanlış yazımdır; \"dance\" sonu \"e\" ile bittiği için sadece \"-s\" eklenir.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Gizem (She) olduğu için \"dance\" fiili \"-s\" alarak \"dances\" olur. B seçeneğinde ek yoktur. C seçeneğindeki \"dancees\" yanlış yazımdır; \"dance\" sonu \"e\" ile bittiği için sadece \"-s\" eklenir."
+          },
+          {
+            "prompt": "He _______ to school by bus.",
+            "options": [
+              "go",
+              "goes",
+              "gose"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"He\" öznesiyle \"go\" fiili \"-o\" ile bittiğinden \"-es\" alır: \"goes\". A seçeneğinde ek yoktur. C seçeneğindeki \"gose\" harflerin yanlış sıralanmasıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"He\" öznesiyle \"go\" fiili \"-o\" ile bittiğinden \"-es\" alır: \"goes\". A seçeneğinde ek yoktur. C seçeneğindeki \"gose\" harflerin yanlış sıralanmasıdır."
+          },
+          {
+            "prompt": "She _______ her new song.",
+            "options": [
+              "writes",
+              "write",
+              "writies"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"She\" öznesiyle \"write\" fiiline sadece \"-s\" eklenerek \"writes\" olur. B seçeneğinde ek yoktur. C seçeneğindeki \"writies\", \"write\" sessiz+y ile bitmediği için yanlıştır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"She\" öznesiyle \"write\" fiiline sadece \"-s\" eklenerek \"writes\" olur. B seçeneğinde ek yoktur. C seçeneğindeki \"writies\", \"write\" sessiz+y ile bitmediği için yanlıştır."
+          },
+          {
+            "prompt": "The player _______ the volleyball.",
+            "options": [
+              "pass",
+              "passes",
+              "passies"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"The player\" tekildir; \"pass\" çift \"-s\" ile bittiği için \"-es\" alarak \"passes\" olur. A seçeneğinde ek yoktur. C seçeneğindeki \"passies\", \"pass\" sessiz+y ile bitmediği için yanlıştır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"The player\" tekildir; \"pass\" çift \"-s\" ile bittiği için \"-es\" alarak \"passes\" olur. A seçeneğinde ek yoktur. C seçeneğindeki \"passies\", \"pass\" sessiz+y ile bitmediği için yanlıştır."
+          },
+          {
+            "prompt": "My dad _______ rock music.",
+            "options": [
+              "likes",
+              "like",
+              "likeses"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"My dad\" (He) için \"like\" fiili \"likes\" olur. B seçeneğinde ek yoktur. C seçeneğindeki \"likeses\" kurallara uymayan yanlış bir yazımdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"My dad\" (He) için \"like\" fiili \"likes\" olur. B seçeneğinde ek yoktur. C seçeneğindeki \"likeses\" kurallara uymayan yanlış bir yazımdır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "009-third-person-s-w1",
+            "word": "play",
+            "example": "She plays volleyball.",
+            "audioText": "play",
+            "prompt": "İngilizce-Türkçe eşleştir: play",
+            "options": [
+              "Maç",
+              "Oynamak / Çalmak",
+              "Sahne",
+              "Şarkı söylemek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "009-third-person-s-w2",
+            "word": "sing",
+            "example": "He sings on stage.",
+            "audioText": "sing",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Maç",
+              "Oynamak / Çalmak",
+              "Sahne",
+              "Şarkı söylemek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "009-third-person-s-w3",
+            "word": "stage",
+            "example": "The band is on stage.",
+            "audioText": "stage",
+            "prompt": "Eksik harfi tamamla: st_ge",
+            "options": [
+              "match",
+              "play",
+              "sing",
+              "stage"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "009-third-person-s-w4",
+            "word": "match",
+            "example": "She watches the match.",
+            "audioText": "match",
+            "prompt": "Karışık harfleri düzelt: hctam",
+            "options": [
+              "match",
+              "play",
+              "sing",
+              "stage"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "009-third-person-s-w5",
+            "word": "practise",
+            "example": "He practises every day.",
+            "audioText": "practise",
+            "prompt": "Kelimeyi doğru cümleye koy: He ___s every day.",
+            "options": [
+              "play",
+              "practise",
+              "sing",
+              "stage"
+            ],
+            "correctIndex": 1
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Özne \"He\", \"She\" veya \"It\" olduğunda geniş zamanda (Present Simple) fiilin sonuna \"-s\", \"-es\" veya \"-ies\" takılarından uygun olanını getirebilmek.",
+          "Hangi fiillerin sadece \"-s\", hangilerinin \"-es\" veya \"-ies\" aldığını kurallarıyla ayırt edebilmek.",
+          "Hedef kelimeler: play, sing, stage, match, practise, microphone, jump"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

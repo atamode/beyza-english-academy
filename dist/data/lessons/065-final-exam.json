@@ -1,0 +1,1387 @@
+{
+  "id": "065-final-exam",
+  "title": "Final Exam",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "A1–A2 temel konularındaki genel başarıyı ölçmek.",
+    "Grammar, vocabulary, reading, listening, sentence order ve error correction becerilerini değerlendirmek.",
+    "Güçlü ve zayıf alanları konu bazında raporlamak.",
+    "Tekrar planı oluşturmak.",
+    "Program sonu başarı belgesine veri sağlamak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Final sınavı tek oturumda zorunlu değildir. Gerekirse iki güne bölünebilir. Ama aynı bölüm içindeki sorular mümkünse birlikte tamamlanmalıdır. Sonuçlar karşılaştırma veya baskı için değil, tekrar planı oluşturmak için kullanılmalıdır.",
+    "todayGoal": "A1–A2 temel konularındaki genel başarıyı ölçmek.",
+    "teachingTips": [
+      "Bu derste \"Final Exam\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "Kendini ve rutinini anlat.",
+      "Geçmişte yaptığın bir şeyi anlat.",
+      "Gelecek planını anlat."
+    ],
+    "listeningScripts": [
+      "\"Yesterday, Beyza went to volleyball practice after school. The team warmed up and practised serves. Today, she is reviewing English vocabulary at home. She has already finished ten words, but she hasn't completed the whole list yet. Tomorrow, she is going to study for thirty minutes.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Final Exam Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She _______ volleyball every Friday.",
+          "options": [
+            "plays",
+            "is playing",
+            "played now"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They _______ a match yesterday.",
+          "options": [
+            "watch",
+            "watched",
+            "have watch"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ going to study tonight.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "She _______ volleyball every Friday.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "They _______ a match yesterday.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: has / she / already / finished",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: She can plays volleyball.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How long has Beyza studied English?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Final Exam yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Final Exam kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "plays",
+        "watched",
+        "am",
+        "plays",
+        "watched",
+        "she has already finished",
+        "\"plays\" burada hatalıdır; doğru cevap \"play\" olmalıdır.",
+        "For several months.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "065-final-exam-w1",
+    "065-final-exam-w2",
+    "065-final-exam-w3",
+    "065-final-exam-w4",
+    "065-final-exam-w5",
+    "065-final-exam-w6",
+    "065-final-exam-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Final Exam",
+      "instructionTr": "A1–A2 temel konularındaki genel başarıyı ölçmek.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 65",
+        "heroText": "Kendini ve rutinini anlat."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Final sınavı tek bir puandan ibaret olmamalıdır. Önerilen yapı: - 40–50 soru - 7–8 bölüm - Grammar - Vocabulary - Reading - Listening - Sentence order - Error correction - Short writing - Speaking task Konu bazlı sonuçlar: - Cümle kurma - Present Simple - Present Continuous - Past Simple - Future - Modals - Quantity - Comparatives - Present Perfect - Reading / listening Yanlış sorular otomatik olarak tekrar havuzuna eklenmelidir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Final sınavı tek bir puandan ibaret olmamalıdır. Önerilen yapı: - 40–50 soru - 7–8 bölüm - Grammar - Vocabulary - Reading - Listening - Sentence order - Error correction - Short writing - Speaking task Konu bazlı sonuçlar: - Cümle kurma - Present Simple - Present Continuous - Past Simple - Future - Modals - Quantity - Comparatives - Present Perfect - Reading / listening Yanlış sorular otomatik olarak tekrar havuzuna eklenmelidir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "Kendini ve rutinini anlat.",
+          "Geçmişte yaptığın bir şeyi anlat.",
+          "Gelecek planını anlat."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Grammar",
+            "30"
+          ],
+          [
+            "Vocabulary",
+            "20"
+          ],
+          [
+            "Reading",
+            "15"
+          ],
+          [
+            "Listening",
+            "15"
+          ],
+          [
+            "Sentence order + error correction",
+            "10"
+          ],
+          [
+            "Writing",
+            "5"
+          ],
+          [
+            "Speaking",
+            "5"
+          ],
+          [
+            "Toplam",
+            "100"
+          ]
+        ]
+      },
+      "explanationTr": "A1–A2 temel konularındaki genel başarıyı ölçmek. Grammar, vocabulary, reading, listening, sentence order ve error correction becerilerini değerlendirmek. Güçlü ve zayıf alanları konu bazında raporlamak. Tekrar planı oluşturmak. Program sonu başarı belgesine veri sağlamak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "Aynı konudan 2 veya daha fazla yanlış → ilgili ders tekrar önerisi",
+          "Kelime sorularında yanlış → Kelime Kasası ve aralıklı tekrar",
+          "Past Simple hataları → Ders 41–47",
+          "Future hataları → Ders 51–55",
+          "Present Perfect hataları → Ders 56–59",
+          "Modal hataları → Ders 35–40",
+          "Genel düşük başarı → Ders 64 tekrar"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She _______ volleyball every Friday.",
+      "content": {
+        "options": [
+          "plays",
+          "is playing",
+          "played now"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. plays seçeneği cümledeki hedef kurala uyar.",
+          "\"is playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"plays\" çünkü plays seçeneği cümledeki hedef kurala uyar.",
+          "\"played now\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"plays\" çünkü plays seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They _______ a match yesterday.",
+      "content": {
+        "options": [
+          "watch",
+          "watched",
+          "have watch"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"watch\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. watched seçeneği cümledeki hedef kurala uyar.",
+          "\"have watch\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "She _______ volleyball every Friday.",
+      "content": {
+        "answer": "plays",
+        "accepted": [
+          "plays"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"plays\" final sorusundaki doğru cevaptır."
+      },
+      "hintTr": "A1–A2 temel konularındaki genel başarıyı ölçmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "has",
+          "she",
+          "already",
+          "finished"
+        ],
+        "answer": [
+          "she",
+          "has",
+          "already",
+          "finished"
+        ],
+        "explanationTr": "Doğru sıra: she has already finished"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "She",
+          "can",
+          "plays",
+          "volleyball."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"plays\" burada hatalıdır; doğru cevap \"play\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "Grammar",
+            "12 soru"
+          ],
+          [
+            "Vocabulary",
+            "8 soru"
+          ],
+          [
+            "Reading",
+            "5 soru"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has studied English for several months. At first, she found some grammar topics difficult. She didn't know how to use subject pronouns or am / is / are. Now she can build simple sentences, talk about her routines and describe what people are doing. She has also learned how to talk about the past and make future plans. Last week, she completed a module about the future. Next week, she is going to continue practising. She knows that mistakes are part of learning.",
+        "questions": [
+          {
+            "prompt": "How long has Beyza studied English?",
+            "options": [
+              "For several months.",
+              "Some grammar topics.",
+              "Build simple sentences, talk about routines and describe current actions."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"For several months.\" olmalıdır.",
+              "\"Some grammar topics.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For several months.\".",
+              "\"Build simple sentences, talk about routines and describe current actions.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For several months.\"."
+            ]
+          },
+          {
+            "prompt": "What did she find difficult at first?",
+            "options": [
+              "Build simple sentences, talk about routines and describe current actions.",
+              "Some grammar topics.",
+              "A module about the future."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Build simple sentences, talk about routines and describe current actions.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some grammar topics.\".",
+              "Doğru. Bu soruda cevap \"Some grammar topics.\" olmalıdır.",
+              "\"A module about the future.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some grammar topics.\"."
+            ]
+          },
+          {
+            "prompt": "What can she do now?",
+            "options": [
+              "A module about the future.",
+              "Continue practising.",
+              "Build simple sentences, talk about routines and describe current actions."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"A module about the future.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Build simple sentences, talk about routines and describe current actions.\".",
+              "\"Continue practising.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Build simple sentences, talk about routines and describe current actions.\".",
+              "Doğru. Bu soruda cevap \"Build simple sentences, talk about routines and describe current actions.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where did Beyza go yesterday?",
+      "content": {
+        "audioText": "\"Yesterday, Beyza went to volleyball practice after school. The team warmed up and practised serves. Today, she is reviewing English vocabulary at home. She has already finished ten words, but she hasn't completed the whole list yet. Tomorrow, she is going to study for thirty minutes.\"",
+        "questions": [
+          {
+            "prompt": "Where did Beyza go yesterday?",
+            "options": [
+              "Volleyball practice.",
+              "Serves.",
+              "Reviewing English vocabulary."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Volleyball practice.\" olmalıdır.",
+              "\"Serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Volleyball practice.\".",
+              "\"Reviewing English vocabulary.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Volleyball practice.\"."
+            ]
+          },
+          {
+            "prompt": "What did the team practise?",
+            "options": [
+              "Reviewing English vocabulary.",
+              "Serves.",
+              "Volleyball practice."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Reviewing English vocabulary.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Serves.\".",
+              "Doğru. Bu soruda cevap \"Serves.\" olmalıdır.",
+              "\"Volleyball practice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Serves.\"."
+            ]
+          },
+          {
+            "prompt": "What is she doing today?",
+            "options": [
+              "Volleyball practice.",
+              "Serves.",
+              "Reviewing English vocabulary."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Volleyball practice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Reviewing English vocabulary.\".",
+              "\"Serves.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Reviewing English vocabulary.\".",
+              "Doğru. Bu soruda cevap \"Reviewing English vocabulary.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "1. Kendini, okulunu ve günlük rutinini anlat. 2. Dün yaptığın üç şeyi anlat. 3. Gelecek hafta yapacağın üç şeyi anlat. 4. Bir hayat deneyimi sorusuna cevap ver. 5. Bir resim veya ortamı anlat.",
+      "content": {
+        "sentenceStarters": [
+          "90–100: A2 hedefleri güçlü",
+          "75–89: A2 yeterli, birkaç konu tekrarı gerekli",
+          "60–74: A1 güçlü, A2 konularında tekrar gerekli",
+          "40–59: Temel konulara geri dönülmeli",
+          "0–39: Hızlı ilerleme durdurulmalı, kişisel tekrar planı hazırlanmalı"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14b",
+      "type": "mini-game",
+      "title": "Final sınavı",
+      "instructionTr": "Bütün yılın gerçek final sorularını çöz.",
+      "content": {
+        "rounds": [
+          {
+            "id": "final-01",
+            "prompt": "I _______ finished.",
+            "options": [
+              "have",
+              "has",
+              "am"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-02",
+            "prompt": "She has _______ the film.",
+            "options": [
+              "saw",
+              "seen",
+              "see"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. seen seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-03",
+            "prompt": "They _______ visited the park.",
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-04",
+            "prompt": "He has _______ his homework.",
+            "options": [
+              "done",
+              "did",
+              "do"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. done seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"done\" çünkü done seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-05",
+            "prompt": "We have _______ a song.",
+            "options": [
+              "heard",
+              "hear",
+              "hearing"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. heard seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"hear\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"heard\" çünkü heard seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-06",
+            "prompt": "Beyza? _______ learned new words.",
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. has seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has\" çünkü has seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-07",
+            "prompt": "We have _______ this place before.",
+            "options": [
+              "visit",
+              "visited",
+              "visiting"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. visited seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"visit\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"visited\" çünkü visited seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-08",
+            "prompt": "He has _______ a sandwich.",
+            "options": [
+              "ate",
+              "eaten",
+              "eat"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. eaten seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eaten\" çünkü eaten seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-09",
+            "prompt": "They _______ completed the activity.",
+            "options": [
+              "has",
+              "have",
+              "are"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-10",
+            "prompt": "She has _______ to the library.",
+            "options": [
+              "went",
+              "gone",
+              "go"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. gone seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"went\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"gone\" çünkü gone seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-11",
+            "prompt": "She _______ finished her homework.",
+            "options": [
+              "have",
+              "has",
+              "is"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. has seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has\" çünkü has seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-12",
+            "prompt": "We have _______ this film.",
+            "options": [
+              "saw",
+              "seen",
+              "see"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Grammar",
+            "topicLabel": "Grammar",
+            "explanationTr": "Doğru. seen seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar.",
+            "section": "Grammar"
+          },
+          {
+            "id": "final-13",
+            "prompt": "\"experience\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "deneyim",
+              "takım",
+              "voleybol"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"experience\" = \"deneyim\".",
+            "wrongExplanationTr": "Bu anlam \"experience\" için kullanılmaz; doğru anlam \"deneyim\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-14",
+            "prompt": "\"complete\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "takım",
+              "tamamlamak",
+              "voleybol"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"complete\" = \"tamamlamak\".",
+            "wrongExplanationTr": "Bu anlam \"complete\" için kullanılmaz; doğru anlam \"tamamlamak\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-15",
+            "prompt": "\"progress\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "takım",
+              "voleybol",
+              "ilerleme"
+            ],
+            "correctIndex": 2,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"progress\" = \"ilerleme\".",
+            "wrongExplanationTr": "Bu anlam \"progress\" için kullanılmaz; doğru anlam \"ilerleme\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-16",
+            "prompt": "\"seen\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "görmüş",
+              "takım",
+              "voleybol"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"seen\" = \"görmüş\".",
+            "wrongExplanationTr": "Bu anlam \"seen\" için kullanılmaz; doğru anlam \"görmüş\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-17",
+            "prompt": "\"written\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "takım",
+              "yazmış",
+              "voleybol"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"written\" = \"yazmış\".",
+            "wrongExplanationTr": "Bu anlam \"written\" için kullanılmaz; doğru anlam \"yazmış\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-18",
+            "prompt": "\"eaten\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "takım",
+              "voleybol",
+              "yemiş"
+            ],
+            "correctIndex": 2,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"eaten\" = \"yemiş\".",
+            "wrongExplanationTr": "Bu anlam \"eaten\" için kullanılmaz; doğru anlam \"yemiş\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-19",
+            "prompt": "\"done\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "yapmış",
+              "takım",
+              "voleybol"
+            ],
+            "correctIndex": 0,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"done\" = \"yapmış\".",
+            "wrongExplanationTr": "Bu anlam \"done\" için kullanılmaz; doğru anlam \"yapmış\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-20",
+            "prompt": "\"ever\" kelimesinin Türkçe anlamı nedir?",
+            "options": [
+              "takım",
+              "hiç",
+              "voleybol"
+            ],
+            "correctIndex": 1,
+            "topicTag": "Vocabulary",
+            "topicLabel": "Vocabulary",
+            "explanationTr": "Doğru. \"ever\" = \"hiç\".",
+            "wrongExplanationTr": "Bu anlam \"ever\" için kullanılmaz; doğru anlam \"hiç\".",
+            "section": "Vocabulary"
+          },
+          {
+            "id": "final-21",
+            "prompt": "How long has Beyza? studied English?",
+            "options": [
+              "For several months.",
+              "Some grammar topics.",
+              "Build simple sentences, talk about routines and describe current actions."
+            ],
+            "correctIndex": 0,
+            "topicTag": "Reading",
+            "topicLabel": "Reading",
+            "explanationTr": "Doğru. Okuma metnindeki cevap \"For several months.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıya aittir; doğru cevap \"For several months.\".",
+            "section": "Reading"
+          },
+          {
+            "id": "final-22",
+            "prompt": "What did she find difficult at first?",
+            "options": [
+              "Build simple sentences, talk about routines and describe current actions.",
+              "Some grammar topics.",
+              "A module about the future."
+            ],
+            "correctIndex": 1,
+            "topicTag": "Reading",
+            "topicLabel": "Reading",
+            "explanationTr": "Doğru. Okuma metnindeki cevap \"Some grammar topics.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıya aittir; doğru cevap \"Some grammar topics.\".",
+            "section": "Reading"
+          },
+          {
+            "id": "final-23",
+            "prompt": "What can she do now?",
+            "options": [
+              "A module about the future.",
+              "Continue practising.",
+              "Build simple sentences, talk about routines and describe current actions."
+            ],
+            "correctIndex": 2,
+            "topicTag": "Reading",
+            "topicLabel": "Reading",
+            "explanationTr": "Doğru. Okuma metnindeki cevap \"Build simple sentences, talk about routines and describe current actions.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıya aittir; doğru cevap \"Build simple sentences, talk about routines and describe current actions.\".",
+            "section": "Reading"
+          },
+          {
+            "id": "final-24",
+            "prompt": "What did she complete last week?",
+            "options": [
+              "A module about the future.",
+              "Continue practising.",
+              "For several months."
+            ],
+            "correctIndex": 0,
+            "topicTag": "Reading",
+            "topicLabel": "Reading",
+            "explanationTr": "Doğru. Okuma metnindeki cevap \"A module about the future.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıya aittir; doğru cevap \"A module about the future.\".",
+            "section": "Reading"
+          },
+          {
+            "id": "final-25",
+            "prompt": "What is she going to do next week?",
+            "options": [
+              "For several months.",
+              "Continue practising.",
+              "Some grammar topics."
+            ],
+            "correctIndex": 1,
+            "topicTag": "Reading",
+            "topicLabel": "Reading",
+            "explanationTr": "Doğru. Okuma metnindeki cevap \"Continue practising.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıya aittir; doğru cevap \"Continue practising.\".",
+            "section": "Reading"
+          },
+          {
+            "id": "final-26",
+            "prompt": "Where did Beyza? go yesterday?",
+            "options": [
+              "Volleyball practice.",
+              "Serves.",
+              "Reviewing English vocabulary."
+            ],
+            "correctIndex": 0,
+            "topicTag": "Listening",
+            "topicLabel": "Listening",
+            "explanationTr": "Doğru. Dinleme metnindeki cevap \"Volleyball practice.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıyla karışıyor; doğru cevap \"Volleyball practice.\".",
+            "section": "Listening"
+          },
+          {
+            "id": "final-27",
+            "prompt": "What did the team practise?",
+            "options": [
+              "Reviewing English vocabulary.",
+              "Serves.",
+              "Ten."
+            ],
+            "correctIndex": 1,
+            "topicTag": "Listening",
+            "topicLabel": "Listening",
+            "explanationTr": "Doğru. Dinleme metnindeki cevap \"Serves.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıyla karışıyor; doğru cevap \"Serves.\".",
+            "section": "Listening"
+          },
+          {
+            "id": "final-28",
+            "prompt": "What is she doing today?",
+            "options": [
+              "Ten.",
+              "Study for thirty minutes.",
+              "Reviewing English vocabulary."
+            ],
+            "correctIndex": 2,
+            "topicTag": "Listening",
+            "topicLabel": "Listening",
+            "explanationTr": "Doğru. Dinleme metnindeki cevap \"Reviewing English vocabulary.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıyla karışıyor; doğru cevap \"Reviewing English vocabulary.\".",
+            "section": "Listening"
+          },
+          {
+            "id": "final-29",
+            "prompt": "How many words has she finished?",
+            "options": [
+              "Ten.",
+              "Study for thirty minutes.",
+              "Volleyball practice."
+            ],
+            "correctIndex": 0,
+            "topicTag": "Listening",
+            "topicLabel": "Listening",
+            "explanationTr": "Doğru. Dinleme metnindeki cevap \"Ten.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıyla karışıyor; doğru cevap \"Ten.\".",
+            "section": "Listening"
+          },
+          {
+            "id": "final-30",
+            "prompt": "What is she going to do tomorrow?",
+            "options": [
+              "Volleyball practice.",
+              "Study for thirty minutes.",
+              "Serves."
+            ],
+            "correctIndex": 1,
+            "topicTag": "Listening",
+            "topicLabel": "Listening",
+            "explanationTr": "Doğru. Dinleme metnindeki cevap \"Study for thirty minutes.\".",
+            "wrongExplanationTr": "Bu seçenek başka bir ayrıntıyla karışıyor; doğru cevap \"Study for thirty minutes.\".",
+            "section": "Listening"
+          },
+          {
+            "id": "final-31",
+            "prompt": "Kelimeleri sırala: has / she / finished / her homework",
+            "options": [
+              "she has finished her homework",
+              "has she finished her homework",
+              "has finished her homework she"
+            ],
+            "correctIndex": 0,
+            "topicTag": "sentence-order",
+            "topicLabel": "Sentence order",
+            "explanationTr": "Doğru sıra: she has finished her homework",
+            "wrongExplanationTr": "Cümle sırası hedef yapının özne-fiil-nesne düzenine uymalı.",
+            "section": "Sentence order"
+          },
+          {
+            "id": "final-32",
+            "prompt": "Kelimeleri sırala: Have / you / ever / visited / Ankara?ç",
+            "options": [
+              "Have you ever visited Ankara?",
+              "Have ever you visited Ankara?",
+              "You have ever visited Ankara?"
+            ],
+            "correctIndex": 0,
+            "topicTag": "sentence-order",
+            "topicLabel": "Sentence order",
+            "explanationTr": "Doğru sıra: Have you ever visited Ankara?",
+            "wrongExplanationTr": "Cümle sırası hedef yapının özne-fiil-nesne düzenine uymalı.",
+            "section": "Sentence order"
+          },
+          {
+            "id": "final-33",
+            "prompt": "Kelimeleri sırala: already / has / she / finished",
+            "options": [
+              "she has already finished",
+              "already has she finished",
+              "has already finished she"
+            ],
+            "correctIndex": 0,
+            "topicTag": "sentence-order",
+            "topicLabel": "Sentence order",
+            "explanationTr": "Doğru sıra: she has already finished",
+            "wrongExplanationTr": "Cümle sırası hedef yapının özne-fiil-nesne düzenine uymalı.",
+            "section": "Sentence order"
+          },
+          {
+            "id": "final-34",
+            "prompt": "Kelimeleri sırala: for / I / have lived / here / five years",
+            "options": [
+              "I have lived here for five years",
+              "for I have lived here five years",
+              "have lived here for five years I"
+            ],
+            "correctIndex": 0,
+            "topicTag": "sentence-order",
+            "topicLabel": "Sentence order",
+            "explanationTr": "Doğru sıra: I have lived here for five years",
+            "wrongExplanationTr": "Cümle sırası hedef yapının özne-fiil-nesne düzenine uymalı.",
+            "section": "Sentence order"
+          },
+          {
+            "id": "final-35",
+            "prompt": "Kelimeleri sırala: used to / I / watch / cartoons",
+            "options": [
+              "I used to watch cartoons",
+              "used to I watch cartoons",
+              "used to watch cartoons I"
+            ],
+            "correctIndex": 0,
+            "topicTag": "sentence-order",
+            "topicLabel": "Sentence order",
+            "explanationTr": "Doğru sıra: I used to watch cartoons",
+            "wrongExplanationTr": "Cümle sırası hedef yapının özne-fiil-nesne düzenine uymalı.",
+            "section": "Sentence order"
+          },
+          {
+            "id": "final-36",
+            "prompt": "Hatalı kelimeyi bul: They has visited the museum.",
+            "options": [
+              "has",
+              "They",
+              "museum."
+            ],
+            "correctIndex": 0,
+            "topicTag": "error-correction",
+            "topicLabel": "Error correction",
+            "explanationTr": "\"has\" burada hatalıdır; doğru cevap \"have\" olmalıdır.",
+            "wrongExplanationTr": "Asıl hata \"has\" kelimesindedir.",
+            "section": "Error correction"
+          },
+          {
+            "id": "final-37",
+            "prompt": "Hatalı kelimeyi bul: I have ever been there.",
+            "options": [
+              "have",
+              "ever",
+              "there"
+            ],
+            "correctIndex": 1,
+            "topicTag": "error-correction",
+            "topicLabel": "Error correction",
+            "explanationTr": "Doğru. \"ever\" burada hatalıdır; \"hiç gitmedim\" anlamı için \"never\" gerekir.",
+            "wrongExplanationTr": "Asıl hata \"ever\" kelimesindedir; doğru cümle \"I have never been there.\"",
+            "section": "Error correction"
+          },
+          {
+            "id": "final-38",
+            "prompt": "Hatalı kelimeyi bul: I haven't finished my homework already.",
+            "options": [
+              "haven't",
+              "finished",
+              "already"
+            ],
+            "correctIndex": 2,
+            "topicTag": "error-correction",
+            "topicLabel": "Error correction",
+            "explanationTr": "Doğru. Olumsuz cümlede \"already\" yerine \"yet\" kullanılmalıdır.",
+            "wrongExplanationTr": "As?l hata \"already\" kelimesindedir; do?ru c?mle \"I haven't finished my homework yet.\"",
+            "section": "Error correction"
+          },
+          {
+            "id": "final-39",
+            "prompt": "Hatalı kelimeyi bul: I have known her since three years.",
+            "options": [
+              "since",
+              "I",
+              "years."
+            ],
+            "correctIndex": 0,
+            "topicTag": "error-correction",
+            "topicLabel": "Error correction",
+            "explanationTr": "\"since\" burada hatalıdır; doğru cevap \"for\" olmalıdır.",
+            "wrongExplanationTr": "Asıl hata \"since\" kelimesindedir.",
+            "section": "Error correction"
+          },
+          {
+            "id": "final-40",
+            "prompt": "Hatalı kelimeyi bul: He didn't used to play volleyball.",
+            "options": [
+              "used",
+              "He",
+              "volleyball."
+            ],
+            "correctIndex": 0,
+            "topicTag": "error-correction",
+            "topicLabel": "Error correction",
+            "explanationTr": "\"used\" burada hatalıdır; doğru cevap \"use\" olmalıdır.",
+            "wrongExplanationTr": "Asıl hata \"used\" kelimesindedir.",
+            "section": "Error correction"
+          }
+        ]
+      },
+      "points": 100
+    },
+    {
+      "id": "s14c",
+      "type": "speaking",
+      "title": "Final kısa yazma görevleri",
+      "instructionTr": "Üç kısa yazma görevinden en az birini tamamla; veli rubriğe göre kontrol edebilir.",
+      "content": {
+        "sentenceStarters": [
+          "Geçen hafta yaptığın bir etkinliği 5–7 cümleyle yaz.",
+          "Gelecek hafta planını 5–7 cümleyle yaz.",
+          "Yaptığın ve hiç yapmadığın deneyimleri 5–7 cümleyle yaz."
+        ],
+        "timerSeconds": 90,
+        "selfChecks": [
+          "Zaman seçimini kontrol ettim.",
+          "En az beş cümle yazdım.",
+          "Kelime ve noktalama kontrolü yaptım.",
+          "Cümlelerim anlaşılır."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14d",
+      "type": "speaking",
+      "title": "Final konuşma görevleri",
+      "instructionTr": "İki konuşma görevini sırayla yap: kendini ve rutinini anlat; sonra dün yaptığın ve yakında yapacağın şeyleri söyle.",
+      "content": {
+        "sentenceStarters": [
+          "I usually ...",
+          "Yesterday, I ...",
+          "Next week, I am going to ...",
+          "I have already ..."
+        ],
+        "timerSeconds": 60,
+        "selfChecks": [
+          "İki konuşma görevini de yaptım.",
+          "En az dört cümle söyledim.",
+          "Farklı zamanları doğru seçtim.",
+          "Anlaşılır konuştum."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ volleyball every Friday.",
+            "options": [
+              "plays",
+              "is playing",
+              "played now"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. plays seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"plays\" çünkü plays seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ a match yesterday.",
+            "options": [
+              "watch",
+              "watched",
+              "have watch"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. watched seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watch\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watched\" çünkü watched seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I _______ going to study tonight.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. am seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has _______ her homework.",
+            "options": [
+              "finished",
+              "finish",
+              "finishing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. finished seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"finish\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"finished\" çünkü finished seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "If it rains, we _______ stay home.",
+            "options": [
+              "will",
+              "are",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "helmet:",
+            "options": [
+              "kask",
+              "havlu",
+              "bilet"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. kask seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"havlu\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"kask\" çünkü kask seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "souvenir:",
+            "options": [
+              "hatıra eşyası",
+              "spor salonu",
+              "sağlık kuralı"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. hatıra eşyası seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"spor salonu\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"hatıra eşyası\" çünkü hatıra eşyası seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "audience:",
+            "options": [
+              "seyirci",
+              "oyuncu",
+              "öğretmen"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. seyirci seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"oyuncu\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seyirci\" çünkü seyirci seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "turn off:",
+            "options": [
+              "kapatmak",
+              "açmak",
+              "aramak"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. kapatmak seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"açmak\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"kapatmak\" çünkü kapatmak seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "progress:",
+            "options": [
+              "ilerleme",
+              "hata",
+              "başlangıç"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. ilerleme seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"hata\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ilerleme\" çünkü ilerleme seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "065-final-exam-w1",
+            "word": "final exam",
+            "example": "The final exam is ready.",
+            "audioText": "final exam",
+            "prompt": "\"final exam\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "final sınavı",
+              "puan",
+              "sonuç",
+              "güçlü alan"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "065-final-exam-w2",
+            "word": "score",
+            "example": "Her score is 85.",
+            "audioText": "score",
+            "prompt": "\"score\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "final sınavı",
+              "puan",
+              "sonuç",
+              "güçlü alan"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "065-final-exam-w3",
+            "word": "result",
+            "example": "Check the result.",
+            "audioText": "result",
+            "prompt": "\"result\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "final sınavı",
+              "puan",
+              "sonuç",
+              "güçlü alan"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "065-final-exam-w4",
+            "word": "strong area",
+            "example": "Reading is a strong area.",
+            "audioText": "strong area",
+            "prompt": "\"strong area\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "final sınavı",
+              "puan",
+              "sonuç",
+              "güçlü alan"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "065-final-exam-w5",
+            "word": "weak area",
+            "example": "Grammar is a weak area.",
+            "audioText": "weak area",
+            "prompt": "\"weak area\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "gelişecek alan",
+              "final sınavı",
+              "puan",
+              "sonuç"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "A1–A2 temel konularındaki genel başarıyı ölçmek.",
+          "Grammar, vocabulary, reading, listening, sentence order ve error correction becerilerini değerlendirmek.",
+          "Hedef kelimeler: final exam, score, result, strong area, weak area, certificate, complete"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20,
+    "finalExam": {
+      "questionCount": 45,
+      "autoScored": 40,
+      "rubricTasks": 5,
+      "topics": [
+        "Grammar",
+        "Vocabulary",
+        "Reading",
+        "Listening",
+        "Sentence order",
+        "Error correction",
+        "Writing",
+        "Speaking"
+      ],
+      "sections": {
+        "Grammar": 12,
+        "Vocabulary": 8,
+        "Reading": 5,
+        "Listening": 5,
+        "Sentence order": 5,
+        "Error correction": 5
+      }
+    }
+  }
+}

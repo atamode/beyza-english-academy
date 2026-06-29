@@ -1,0 +1,559 @@
+{
+  "id": "module-10-review",
+  "moduleId": "module-10",
+  "title": "A2 Devam Genel Tekrar",
+  "description": "A2 Devam derslerini ölçen gerçek kaynak sorularından oluşturuldu.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "module-10-review-01",
+      "type": "multiple-choice",
+      "topicTag": "present-perfect-introduction",
+      "topicLabel": "Present Perfect Introduction",
+      "title": "Present Perfect Introduction tekrar",
+      "instructionTr": "I _______ finished.",
+      "content": {
+        "options": [
+          "have",
+          "has",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+          "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-02",
+      "type": "multiple-choice",
+      "topicTag": "present-perfect-introduction",
+      "topicLabel": "Present Perfect Introduction",
+      "title": "Present Perfect Introduction tekrar",
+      "instructionTr": "She has _______ the film.",
+      "content": {
+        "options": [
+          "saw",
+          "seen",
+          "see"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"saw\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. seen seçeneği cümledeki hedef kurala uyar.",
+          "\"see\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"seen\" çünkü seen seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-03",
+      "type": "multiple-choice",
+      "topicTag": "present-perfect-introduction",
+      "topicLabel": "Present Perfect Introduction",
+      "title": "Present Perfect Introduction tekrar",
+      "instructionTr": "They _______ visited the park.",
+      "content": {
+        "options": [
+          "has",
+          "have",
+          "is"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-04",
+      "type": "multiple-choice",
+      "topicTag": "present-perfect-introduction",
+      "topicLabel": "Present Perfect Introduction",
+      "title": "Present Perfect Introduction tekrar",
+      "instructionTr": "He has _______ his homework.",
+      "content": {
+        "options": [
+          "done",
+          "did",
+          "do"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. done seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"done\" çünkü done seçeneği cümledeki hedef kurala uyar.",
+          "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"done\" çünkü done seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-05",
+      "type": "multiple-choice",
+      "topicTag": "ever-never",
+      "topicLabel": "ever / never",
+      "title": "ever / never tekrar",
+      "instructionTr": "Have you _______ been to Antalya?",
+      "content": {
+        "options": [
+          "ever",
+          "never",
+          "last"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. ever seçeneği cümledeki hedef kurala uyar.",
+          "\"never\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ever\" çünkü ever seçeneği cümledeki hedef kurala uyar.",
+          "\"last\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ever\" çünkü ever seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-06",
+      "type": "multiple-choice",
+      "topicTag": "ever-never",
+      "topicLabel": "ever / never",
+      "title": "ever / never tekrar",
+      "instructionTr": "I have _______ tried skiing.",
+      "content": {
+        "options": [
+          "ever",
+          "never",
+          "yesterday"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"ever\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"never\" çünkü never seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. never seçeneği cümledeki hedef kurala uyar.",
+          "\"yesterday\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"never\" çünkü never seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-07",
+      "type": "multiple-choice",
+      "topicTag": "ever-never",
+      "topicLabel": "ever / never",
+      "title": "ever / never tekrar",
+      "instructionTr": "Has she ever _______ sushi?",
+      "content": {
+        "options": [
+          "ate",
+          "eaten",
+          "eat"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"ate\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eaten\" çünkü eaten seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. eaten seçeneği cümledeki hedef kurala uyar.",
+          "\"eat\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"eaten\" çünkü eaten seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-08",
+      "type": "multiple-choice",
+      "topicTag": "ever-never",
+      "topicLabel": "ever / never",
+      "title": "ever / never tekrar",
+      "instructionTr": "We have never _______ abroad.",
+      "content": {
+        "options": [
+          "travelled",
+          "travel",
+          "travelling"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. travelled seçeneği cümledeki hedef kurala uyar.",
+          "\"travel\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"travelled\" çünkü travelled seçeneği cümledeki hedef kurala uyar.",
+          "\"travelling\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"travelled\" çünkü travelled seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-09",
+      "type": "multiple-choice",
+      "topicTag": "already-yet",
+      "topicLabel": "already / yet",
+      "title": "already / yet tekrar",
+      "instructionTr": "She has _______ finished.",
+      "content": {
+        "options": [
+          "already",
+          "yet",
+          "ago"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. already seçeneği cümledeki hedef kurala uyar.",
+          "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar.",
+          "\"ago\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"already\" çünkü already seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-10",
+      "type": "multiple-choice",
+      "topicTag": "already-yet",
+      "topicLabel": "already / yet",
+      "title": "already / yet tekrar",
+      "instructionTr": "I haven't eaten _______.",
+      "content": {
+        "options": [
+          "already",
+          "yet",
+          "ever"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"already\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+          "\"ever\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-11",
+      "type": "multiple-choice",
+      "topicTag": "already-yet",
+      "topicLabel": "already / yet",
+      "title": "already / yet tekrar",
+      "instructionTr": "Have they arrived _______?",
+      "content": {
+        "options": [
+          "yet",
+          "already at the end",
+          "never"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. yet seçeneği cümledeki hedef kurala uyar.",
+          "\"already at the end\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar.",
+          "\"never\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"yet\" çünkü yet seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-12",
+      "type": "multiple-choice",
+      "topicTag": "already-yet",
+      "topicLabel": "already / yet",
+      "title": "already / yet tekrar",
+      "instructionTr": "We have already _______ the room.",
+      "content": {
+        "options": [
+          "cleaned",
+          "clean",
+          "cleaning"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. cleaned seçeneği cümledeki hedef kurala uyar.",
+          "\"clean\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cleaned\" çünkü cleaned seçeneği cümledeki hedef kurala uyar.",
+          "\"cleaning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cleaned\" çünkü cleaned seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-13",
+      "type": "multiple-choice",
+      "topicTag": "for-since",
+      "topicLabel": "for / since",
+      "title": "for / since tekrar",
+      "instructionTr": "_______ two hours",
+      "content": {
+        "options": [
+          "for",
+          "since",
+          "yet"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+          "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar.",
+          "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-14",
+      "type": "multiple-choice",
+      "topicTag": "for-since",
+      "topicLabel": "for / since",
+      "title": "for / since tekrar",
+      "instructionTr": "_______ Monday",
+      "content": {
+        "options": [
+          "for",
+          "since",
+          "already"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+          "\"already\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-15",
+      "type": "multiple-choice",
+      "topicTag": "for-since",
+      "topicLabel": "for / since",
+      "title": "for / since tekrar",
+      "instructionTr": "She has lived here _______ 2022.",
+      "content": {
+        "options": [
+          "for",
+          "since",
+          "yet"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+          "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-16",
+      "type": "multiple-choice",
+      "topicTag": "for-since",
+      "topicLabel": "for / since",
+      "title": "for / since tekrar",
+      "instructionTr": "We have waited _______ a long time.",
+      "content": {
+        "options": [
+          "for",
+          "since",
+          "ever"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+          "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar.",
+          "\"ever\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-17",
+      "type": "multiple-choice",
+      "topicTag": "used-to",
+      "topicLabel": "used to",
+      "title": "used to tekrar",
+      "instructionTr": "I _______ play with toys.",
+      "content": {
+        "options": [
+          "used to",
+          "use to",
+          "using to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. used to seçeneği cümledeki hedef kurala uyar.",
+          "\"use to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"used to\" çünkü used to seçeneği cümledeki hedef kurala uyar.",
+          "\"using to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"used to\" çünkü used to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-18",
+      "type": "multiple-choice",
+      "topicTag": "used-to",
+      "topicLabel": "used to",
+      "title": "used to tekrar",
+      "instructionTr": "She didn't _______ like sport.",
+      "content": {
+        "options": [
+          "used to",
+          "use to",
+          "uses to"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+          "\"uses to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-19",
+      "type": "multiple-choice",
+      "topicTag": "used-to",
+      "topicLabel": "used to",
+      "title": "used to tekrar",
+      "instructionTr": "Did he _______ live here?",
+      "content": {
+        "options": [
+          "used to",
+          "use to",
+          "using to"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"used to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. use to seçeneği cümledeki hedef kurala uyar.",
+          "\"using to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"use to\" çünkü use to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-20",
+      "type": "multiple-choice",
+      "topicTag": "used-to",
+      "topicLabel": "used to",
+      "title": "used to tekrar",
+      "instructionTr": "We used to _______ to school.",
+      "content": {
+        "options": [
+          "walk",
+          "walked",
+          "walking"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. walk seçeneği cümledeki hedef kurala uyar.",
+          "\"walked\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"walk\" çünkü walk seçeneği cümledeki hedef kurala uyar.",
+          "\"walking\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"walk\" çünkü walk seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-21",
+      "type": "multiple-choice",
+      "topicTag": "gerund-infinitive-introduction",
+      "topicLabel": "Gerund / Infinitive Introduction",
+      "title": "Gerund / Infinitive Introduction tekrar",
+      "instructionTr": "I like _______.",
+      "content": {
+        "options": [
+          "read",
+          "reading",
+          "to reading"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"read\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. reading seçeneği cümledeki hedef kurala uyar.",
+          "\"to reading\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"reading\" çünkü reading seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-22",
+      "type": "multiple-choice",
+      "topicTag": "gerund-infinitive-introduction",
+      "topicLabel": "Gerund / Infinitive Introduction",
+      "title": "Gerund / Infinitive Introduction tekrar",
+      "instructionTr": "She wants _______.",
+      "content": {
+        "options": [
+          "to learn",
+          "learning",
+          "learn to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. to learn seçeneği cümledeki hedef kurala uyar.",
+          "\"learning\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to learn\" çünkü to learn seçeneği cümledeki hedef kurala uyar.",
+          "\"learn to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to learn\" çünkü to learn seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-23",
+      "type": "multiple-choice",
+      "topicTag": "gerund-infinitive-introduction",
+      "topicLabel": "Gerund / Infinitive Introduction",
+      "title": "Gerund / Infinitive Introduction tekrar",
+      "instructionTr": "We enjoy _______ together.",
+      "content": {
+        "options": [
+          "practising",
+          "to practise",
+          "practise"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. practising seçeneği cümledeki hedef kurala uyar.",
+          "\"to practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practising\" çünkü practising seçeneği cümledeki hedef kurala uyar.",
+          "\"practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practising\" çünkü practising seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-24",
+      "type": "multiple-choice",
+      "topicTag": "gerund-infinitive-introduction",
+      "topicLabel": "Gerund / Infinitive Introduction",
+      "title": "Gerund / Infinitive Introduction tekrar",
+      "instructionTr": "He needs _______.",
+      "content": {
+        "options": [
+          "to study",
+          "studying",
+          "study to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. to study seçeneği cümledeki hedef kurala uyar.",
+          "\"studying\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to study\" çünkü to study seçeneği cümledeki hedef kurala uyar.",
+          "\"study to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"to study\" çünkü to study seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-10-review-25",
+      "type": "multiple-choice",
+      "topicTag": "first-conditional",
+      "topicLabel": "First Conditional",
+      "title": "First Conditional tekrar",
+      "instructionTr": "If I study, I _______ learn.",
+      "content": {
+        "options": [
+          "will",
+          "am",
+          "did"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"did\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    }
+  ]
+}

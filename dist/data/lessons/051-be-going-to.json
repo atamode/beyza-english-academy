@@ -1,0 +1,705 @@
+{
+  "id": "051-be-going-to",
+  "title": "be going to",
+  "level": "A2.1",
+  "module": "Gelecek",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Önceden karar verilmiş gelecek planlarını anlatmak.",
+    "am / is / are going to + fiilin yalın hâli yapısını kullanmak.",
+    "Olumsuz cümle ve soru kurmak.",
+    "Kısa cevap vermek.",
+    "Günlük hayat, okul, spor ve etkinlik planlarından söz etmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Gerçek hafta sonu planlarını konuşun. Önceden karar verilmiş planlarda going to kullanın. Fiilin to sonrasında yalın kaldığını kontrol edin.",
+    "todayGoal": "Önceden karar verilmiş gelecek planlarını anlatmak.",
+    "teachingTips": [
+      "Bu derste \"be going to\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I am going to study tonight.",
+      "She is going to call her friend.",
+      "He is going to clean his room.",
+      "We are going to visit our grandparents."
+    ],
+    "listeningScripts": [
+      "\"Tomorrow, the school team is going to practise in the sports hall. The coach is going to bring new balls. The players are going to arrive at four. They aren't going to play a full match.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "be going to Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Beyza _______ going to study tonight.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "They are going to _______ volleyball.",
+          "options": [
+            "play",
+            "plays",
+            "playing"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ going to read.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ going to visit my cousin.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "She is going to _______ her bag.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: going to / she / is / study / tonight",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He going to clean his room.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What is Beyza going to do on Saturday morning?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "be going to yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "be going to kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "is",
+        "play",
+        "am",
+        "am",
+        "prepare",
+        "she is going to study tonight",
+        "\"going\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır.",
+        "She is going to finish her homework.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "051-be-going-to-w1",
+    "051-be-going-to-w2",
+    "051-be-going-to-w3",
+    "051-be-going-to-w4",
+    "051-be-going-to-w5",
+    "051-be-going-to-w6",
+    "051-be-going-to-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "be going to",
+      "instructionTr": "Önceden karar verilmiş gelecek planlarını anlatmak.",
+      "content": {
+        "eyebrow": "Gelecek · DERS 51",
+        "heroText": "I am going to study tonight."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Be going to, daha önceden karar verilmiş planları ve niyetleri anlatır. Kural: Özne + am / is / are going to + fiilin yalın hâli - I am going to study tonight. - She is going to play volleyball tomorrow. - They are going to visit the museum. Olumsuz: - I am not going to go out. - She isn't going to buy a new bag. - They aren't going to stay late. Soru: - Are you going to study? - Is she going to play? - Are they going to come? Kısa cevap: - Yes, I am. - No, she isn't. - Yes, they are.",
+      "content": {
+        "examples": [],
+        "noteTr": "Be going to, daha önceden karar verilmiş planları ve niyetleri anlatır. Kural: Özne + am / is / are going to + fiilin yalın hâli - I am going to study tonight. - She is going to play volleyball tomorrow. - They are going to visit the museum. Olumsuz: - I am not going to go out. - She isn't going to buy a new bag. - They aren't going to stay late. Soru: - Are you going to study? - Is she going to play? - Are they going to come? Kısa cevap: - Yes, I am. - No, she isn't. - Yes, they are."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I am going to study tonight.",
+          "She is going to call her friend.",
+          "He is going to clean his room.",
+          "We are going to visit our grandparents.",
+          "They are going to play volleyball tomorrow.",
+          "Beyza is going to prepare her sports bag.",
+          "The team is going to practise after school.",
+          "The students are going to make posters.",
+          "We aren't going to stay late.",
+          "Are you going to watch the match?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu",
+            "am/is/are going to + fiil",
+            "She is going to study."
+          ],
+          [
+            "Olumsuz",
+            "am/isn't/aren't going to + fiil",
+            "She isn't going to study."
+          ],
+          [
+            "Soru",
+            "Am/Is/Are + özne + going to + fiil?",
+            "Is she going to study?"
+          ],
+          [
+            "Kısa cevap",
+            "Yes/No + özne + am/is/are",
+            "Yes, she is."
+          ]
+        ]
+      },
+      "explanationTr": "Önceden karar verilmiş gelecek planlarını anlatmak. am / is / are going to + fiilin yalın hâli yapısını kullanmak. Olumsuz cümle ve soru kurmak. Kısa cevap vermek. Günlük hayat, okul, spor ve etkinlik planlarından söz etmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "I going to study. ❌ → I am going to study. ✅",
+          "She is going to studies. ❌ → She is going to study. ✅",
+          "They are go to play. ❌ → They are going to play. ✅",
+          "Is she going study? ❌ → Is she going to study? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Beyza _______ going to study tonight.",
+      "content": {
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "They are going to _______ volleyball.",
+      "content": {
+        "options": [
+          "play",
+          "plays",
+          "playing"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. play seçeneği cümledeki hedef kurala uyar.",
+          "\"plays\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar.",
+          "\"playing\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"play\" çünkü play seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ going to visit my cousin.",
+      "content": {
+        "answer": "am",
+        "accepted": [
+          "am"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"am\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Önceden karar verilmiş gelecek planlarını anlatmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "going to",
+          "she",
+          "is",
+          "study",
+          "tonight"
+        ],
+        "answer": [
+          "she",
+          "is",
+          "going to",
+          "study",
+          "tonight"
+        ],
+        "explanationTr": "Doğru sıra: she is going to study tonight"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "going",
+          "to",
+          "clean",
+          "his",
+          "room."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"going\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "I am going to",
+            "clean my room."
+          ],
+          [
+            "She is going to",
+            "make a poster."
+          ],
+          [
+            "They are going to",
+            "practise after school."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has a busy weekend. On Saturday morning, she is going to finish her homework. In the afternoon, she is going to play volleyball. On Sunday, she is going to visit her grandparents with her family. She isn't going to stay up late.",
+        "questions": [
+          {
+            "prompt": "What is Beyza going to do on Saturday morning?",
+            "options": [
+              "She is going to finish her homework.",
+              "She is going to play volleyball.",
+              "No, she isn't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"She is going to finish her homework.\" olmalıdır.",
+              "\"She is going to play volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is going to finish her homework.\".",
+              "\"No, she isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is going to finish her homework.\"."
+            ]
+          },
+          {
+            "prompt": "What is she going to do in the afternoon?",
+            "options": [
+              "No, she isn't.",
+              "She is going to play volleyball.",
+              "She is going to finish her homework."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, she isn't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is going to play volleyball.\".",
+              "Doğru. Bu soruda cevap \"She is going to play volleyball.\" olmalıdır.",
+              "\"She is going to finish her homework.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She is going to play volleyball.\"."
+            ]
+          },
+          {
+            "prompt": "Is she going to stay up late?",
+            "options": [
+              "She is going to finish her homework.",
+              "She is going to play volleyball.",
+              "No, she isn't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"She is going to finish her homework.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\".",
+              "\"She is going to play volleyball.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, she isn't.\".",
+              "Doğru. Bu soruda cevap \"No, she isn't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where is the team going to practise?",
+      "content": {
+        "audioText": "\"Tomorrow, the school team is going to practise in the sports hall. The coach is going to bring new balls. The players are going to arrive at four. They aren't going to play a full match.\"",
+        "questions": [
+          {
+            "prompt": "Where is the team going to practise?",
+            "options": [
+              "In the sports hall.",
+              "New balls.",
+              "No, they aren't."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"In the sports hall.\" olmalıdır.",
+              "\"New balls.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In the sports hall.\".",
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"In the sports hall.\"."
+            ]
+          },
+          {
+            "prompt": "What is the coach going to bring?",
+            "options": [
+              "No, they aren't.",
+              "New balls.",
+              "In the sports hall."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"No, they aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"New balls.\".",
+              "Doğru. Bu soruda cevap \"New balls.\" olmalıdır.",
+              "\"In the sports hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"New balls.\"."
+            ]
+          },
+          {
+            "prompt": "Are they going to play a full match?",
+            "options": [
+              "In the sports hall.",
+              "New balls.",
+              "No, they aren't."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"In the sports hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "\"New balls.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, they aren't.\".",
+              "Doğru. Bu soruda cevap \"No, they aren't.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Hafta sonu planlarından üç cümle kur: - I am going to ... - My family are going to ... - I am not going to ...",
+      "content": {
+        "sentenceStarters": [
+          "I am going to ...",
+          "My family are going to ...",
+          "I am not going to ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ going to read.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. am seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She is going to _______ a sandwich.",
+            "options": [
+              "make",
+              "makes",
+              "making"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. make seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"makes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"make\" çünkü make seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ going to visit the park.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ they going to come?",
+            "options": [
+              "Is",
+              "Are",
+              "Do"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. Are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Are\" çünkü Are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He isn't going to _______ late.",
+            "options": [
+              "stay",
+              "stayed",
+              "staying"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. stay seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"stayed\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"stay\" çünkü stay seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "She _______ going to play volleyball.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They are going to _______ the stage.",
+            "options": [
+              "prepare",
+              "prepares",
+              "preparing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. prepare seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"prepares\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"prepare\" çünkü prepare seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I am not going to _______ TV.",
+            "options": [
+              "watched",
+              "watch",
+              "watching"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. watch seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"watched\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"watch\" çünkü watch seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ he going to study?",
+            "options": [
+              "Is",
+              "Are",
+              "Does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Is\" çünkü Is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Are you going to come? — Yes, I _______.",
+            "options": [
+              "do",
+              "am",
+              "is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. am seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"am\" çünkü am seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "051-be-going-to-w1",
+            "word": "tomorrow",
+            "example": "I am going to study tomorrow.",
+            "audioText": "tomorrow",
+            "prompt": "\"tomorrow\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yarın",
+              "gelecek hafta",
+              "plan",
+              "ziyaret etmek"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "051-be-going-to-w2",
+            "word": "next week",
+            "example": "We are going to travel next week.",
+            "audioText": "next week",
+            "prompt": "\"next week\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yarın",
+              "gelecek hafta",
+              "plan",
+              "ziyaret etmek"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "051-be-going-to-w3",
+            "word": "plan",
+            "example": "This is my plan.",
+            "audioText": "plan",
+            "prompt": "\"plan\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yarın",
+              "gelecek hafta",
+              "plan",
+              "ziyaret etmek"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "051-be-going-to-w4",
+            "word": "visit",
+            "example": "We are going to visit them.",
+            "audioText": "visit",
+            "prompt": "\"visit\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yarın",
+              "gelecek hafta",
+              "plan",
+              "ziyaret etmek"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "051-be-going-to-w5",
+            "word": "prepare",
+            "example": "She is going to prepare her bag.",
+            "audioText": "prepare",
+            "prompt": "\"prepare\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "hazırlamak",
+              "yarın",
+              "gelecek hafta",
+              "plan"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Önceden karar verilmiş gelecek planlarını anlatmak.",
+          "am / is / are going to + fiilin yalın hâli yapısını kullanmak.",
+          "Hedef kelimeler: tomorrow, next week, plan, visit, prepare, stay, weekend"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

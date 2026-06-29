@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Beyza English Lesson Schema",
+  "type":"object",
+  "required":["id","title","level","module","objectives","screens","assessment"],
+  "properties":{"id":{"type":"string"},"title":{"type":"string"},"level":{"enum":["A1-bridge","A1","A1+","A2.1","A2.2","A2.3","A2.4"]},"module":{"type":"string"},"estimatedMinutes":{"type":"integer","minimum":15,"maximum":90},"objectives":{"type":"array","minItems":2,"items":{"type":"string"}},"screens":{"type":"array","minItems":15,"items":{"type":"object","required":["id","type","title"],"properties":{"id":{"type":"string"},"type":{"enum":["intro","explanation","example","rule-table","multiple-choice","fill-blank","sentence-order","matching","error-find","listening","speaking","reading","mini-game","summary"]},"title":{"type":"string"},"instructionTr":{"type":"string"},"content":{},"hintTr":{"type":"string"},"explanationTr":{"type":"string"},"points":{"type":"integer","minimum":0}}}},"assessment":{"type":"object"}}
+}

@@ -1,0 +1,703 @@
+{
+  "id": "052-will-wont",
+  "title": "will / won't",
+  "level": "A2.1",
+  "module": "Gelecek",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Anlık kararları will ile ifade etmek.",
+    "Basit teklif ve yardım cümleleri kurmak.",
+    "won't ile olumsuz gelecek cümlesi oluşturmak.",
+    "Will you...? sorularını anlamak ve kısa cevap vermek.",
+    "Temel tahmin cümleleri kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evde küçük anlık durumlar oluşturun: \"The light is on.\" Beyza \"I will turn it off.\" diyerek anlık karar versin. Will sonrasında fiil yalın kalmalıdır.",
+    "todayGoal": "Anlık kararları will ile ifade etmek.",
+    "teachingTips": [
+      "Bu derste \"will / won't\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I will help you.",
+      "She will answer the phone.",
+      "He will open the window.",
+      "We will carry the boxes."
+    ],
+    "listeningScripts": [
+      "\"The team is getting ready for a match. One player says, 'I will check the balls.' Another says, 'I will fill the water bottles.' The coach says, 'I think you will play well today.'\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "will / won't Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "I _______ help you.",
+          "options": [
+            "will",
+            "am",
+            "do"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "She won't _______ late.",
+          "options": [
+            "be",
+            "is",
+            "being"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ answer the phone.",
+          "options": [
+            "will",
+            "am",
+            "do"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "I _______ carry the bag.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "They won't _______ the match.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: will / I / help / you",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: He will opens the door.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What will Beyza bring?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "will / won't yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "will / won't kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "will",
+        "be",
+        "will",
+        "will",
+        "miss",
+        "I will help you",
+        "\"opens\" burada hatalıdır; doğru cevap \"open\" olmalıdır.",
+        "More chairs.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "052-will-wont-w1",
+    "052-will-wont-w2",
+    "052-will-wont-w3",
+    "052-will-wont-w4",
+    "052-will-wont-w5",
+    "052-will-wont-w6",
+    "052-will-wont-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "will / won't",
+      "instructionTr": "Anlık kararları will ile ifade etmek.",
+      "content": {
+        "eyebrow": "Gelecek · DERS 52",
+        "heroText": "I will help you."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Will, konuşma anında verilen kararlar, teklifler ve basit tahminlerde kullanılabilir. ### Anlık karar - The phone is ringing. I will answer it. - I am thirsty. I will get some water. ### Teklif / yardım - I will help you. - We will carry the chairs. ### Tahmin - It will rain tomorrow. - The match will be exciting. Olumsuz: - will not → won't - I won't forget. - She won't be late. Soru: - Will you help me? - Will they come? Kısa cevap: - Yes, I will. - No, they won't.",
+      "content": {
+        "examples": [],
+        "noteTr": "Will, konuşma anında verilen kararlar, teklifler ve basit tahminlerde kullanılabilir. ### Anlık karar - The phone is ringing. I will answer it. - I am thirsty. I will get some water. ### Teklif / yardım - I will help you. - We will carry the chairs. ### Tahmin - It will rain tomorrow. - The match will be exciting. Olumsuz: - will not → won't - I won't forget. - She won't be late. Soru: - Will you help me? - Will they come? Kısa cevap: - Yes, I will. - No, they won't."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I will help you.",
+          "She will answer the phone.",
+          "He will open the window.",
+          "We will carry the boxes.",
+          "They will come tomorrow.",
+          "I won't forget my bag.",
+          "Beyza won't be late.",
+          "Will you pass the ball?",
+          "The match will be exciting.",
+          "I think the team will win."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu",
+            "will + fiil",
+            "I will help."
+          ],
+          [
+            "Olumsuz",
+            "won't + fiil",
+            "I won't go."
+          ],
+          [
+            "Soru",
+            "Will + özne + fiil?",
+            "Will you come?"
+          ],
+          [
+            "Kısa cevap",
+            "Yes/No + özne + will/won't",
+            "Yes, I will."
+          ]
+        ]
+      },
+      "explanationTr": "Anlık kararları will ile ifade etmek. Basit teklif ve yardım cümleleri kurmak. won't ile olumsuz gelecek cümlesi oluşturmak. Will you...? sorularını anlamak ve kısa cevap vermek. Temel tahmin cümleleri kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "She will helps. ❌ → She will help. ✅",
+          "I will to go. ❌ → I will go. ✅",
+          "He won't comes. ❌ → He won't come. ✅",
+          "Will you helping me? ❌ → Will you help me? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "I _______ help you.",
+      "content": {
+        "options": [
+          "will",
+          "am",
+          "do"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar.",
+          "\"do\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "She won't _______ late.",
+      "content": {
+        "options": [
+          "be",
+          "is",
+          "being"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. be seçeneği cümledeki hedef kurala uyar.",
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"be\" çünkü be seçeneği cümledeki hedef kurala uyar.",
+          "\"being\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"be\" çünkü be seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ carry the bag.",
+      "content": {
+        "answer": "will",
+        "accepted": [
+          "will"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"will\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Anlık kararları will ile ifade etmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "will",
+          "I",
+          "help",
+          "you"
+        ],
+        "answer": [
+          "I",
+          "will",
+          "help",
+          "you"
+        ],
+        "explanationTr": "Doğru sıra: I will help you"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "He",
+          "will",
+          "opens",
+          "the",
+          "door."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"opens\" burada hatalıdır; doğru cevap \"open\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "The phone is ringing.",
+            "I will answer it."
+          ],
+          [
+            "This box is heavy.",
+            "I will help you."
+          ],
+          [
+            "I think the match",
+            "will be exciting."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is helping at a school event. A teacher needs more chairs, so Beyza says, \"I will bring them.\" Her friend cannot carry a box, so Beyza says, \"I will help you.\" She thinks the event will be fun.",
+        "questions": [
+          {
+            "prompt": "What will Beyza bring?",
+            "options": [
+              "More chairs.",
+              "Her friend.",
+              "She thinks it will be fun."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"More chairs.\" olmalıdır.",
+              "\"Her friend.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"More chairs.\".",
+              "\"She thinks it will be fun.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"More chairs.\"."
+            ]
+          },
+          {
+            "prompt": "Who will she help?",
+            "options": [
+              "She thinks it will be fun.",
+              "Her friend.",
+              "More chairs."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She thinks it will be fun.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her friend.\".",
+              "Doğru. Bu soruda cevap \"Her friend.\" olmalıdır.",
+              "\"More chairs.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her friend.\"."
+            ]
+          },
+          {
+            "prompt": "What does she think about the event?",
+            "options": [
+              "More chairs.",
+              "Her friend.",
+              "She thinks it will be fun."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"More chairs.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She thinks it will be fun.\".",
+              "\"Her friend.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She thinks it will be fun.\".",
+              "Doğru. Bu soruda cevap \"She thinks it will be fun.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What will one player check?",
+      "content": {
+        "audioText": "\"The team is getting ready for a match. One player says, 'I will check the balls.' Another says, 'I will fill the water bottles.' The coach says, 'I think you will play well today.'\"",
+        "questions": [
+          {
+            "prompt": "What will one player check?",
+            "options": [
+              "The balls.",
+              "The water bottles.",
+              "The team will play well."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"The balls.\" olmalıdır.",
+              "\"The water bottles.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The balls.\".",
+              "\"The team will play well.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The balls.\"."
+            ]
+          },
+          {
+            "prompt": "What will another player fill?",
+            "options": [
+              "The team will play well.",
+              "The water bottles.",
+              "The balls."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The team will play well.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The water bottles.\".",
+              "Doğru. Bu soruda cevap \"The water bottles.\" olmalıdır.",
+              "\"The balls.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The water bottles.\"."
+            ]
+          },
+          {
+            "prompt": "What does the coach think?",
+            "options": [
+              "The balls.",
+              "The water bottles.",
+              "The team will play well."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"The balls.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The team will play well.\".",
+              "\"The water bottles.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The team will play well.\".",
+              "Doğru. Bu soruda cevap \"The team will play well.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki durumlara anlık karar ver: - The door is open. - Your friend needs help. - The phone is ringing. Örnek: - I will close the door.",
+      "content": {
+        "sentenceStarters": [
+          "The door is open.",
+          "Your friend needs help.",
+          "The phone is ringing.",
+          "I will close the door."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ answer the phone.",
+            "options": [
+              "will",
+              "am",
+              "do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She will _______ you.",
+            "options": [
+              "helps",
+              "help",
+              "helping"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. help seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"helps\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"help\" çünkü help seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ forget.",
+            "options": [
+              "won't",
+              "aren't",
+              "don't will"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. won't seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"won't\" çünkü won't seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ you carry this?",
+            "options": [
+              "Will",
+              "Are",
+              "Do"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Will\" çünkü Will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "The match will _______ exciting.",
+            "options": [
+              "be",
+              "is",
+              "being"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. be seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"be\" çünkü be seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ open the window.",
+            "options": [
+              "will",
+              "am",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He won't _______ late.",
+            "options": [
+              "arrive",
+              "arrives",
+              "arriving"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. arrive seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"arrives\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"arrive\" çünkü arrive seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Will she help? — Yes, she _______.",
+            "options": [
+              "will",
+              "is",
+              "does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We _______ carry the chairs.",
+            "options": [
+              "will",
+              "are",
+              "have"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I think it _______ rain.",
+            "options": [
+              "will",
+              "is",
+              "does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. will seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"will\" çünkü will seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "052-will-wont-w1",
+            "word": "will",
+            "example": "I will help.",
+            "audioText": "will",
+            "prompt": "\"will\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "-ecek/-acak",
+              "yapmayacak",
+              "cevaplamak",
+              "taşımak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "052-will-wont-w2",
+            "word": "won't",
+            "example": "I won't forget.",
+            "audioText": "won't",
+            "prompt": "\"won't\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "-ecek/-acak",
+              "yapmayacak",
+              "cevaplamak",
+              "taşımak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "052-will-wont-w3",
+            "word": "answer",
+            "example": "I will answer the phone.",
+            "audioText": "answer",
+            "prompt": "\"answer\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "-ecek/-acak",
+              "yapmayacak",
+              "cevaplamak",
+              "taşımak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "052-will-wont-w4",
+            "word": "carry",
+            "example": "We will carry the chairs.",
+            "audioText": "carry",
+            "prompt": "\"carry\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "-ecek/-acak",
+              "yapmayacak",
+              "cevaplamak",
+              "taşımak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "052-will-wont-w5",
+            "word": "miss",
+            "example": "They won't miss the match.",
+            "audioText": "miss",
+            "prompt": "\"miss\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "kaçırmak",
+              "-ecek/-acak",
+              "yapmayacak",
+              "cevaplamak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Anlık kararları will ile ifade etmek.",
+          "Basit teklif ve yardım cümleleri kurmak.",
+          "Hedef kelimeler: will, won't, answer, carry, miss, think, exciting"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

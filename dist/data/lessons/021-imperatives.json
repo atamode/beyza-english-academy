@@ -1,0 +1,665 @@
+{
+  "id": "021-imperatives",
+  "title": "Imperatives",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek.",
+    "Olumsuz emirler vermek (yapma, etme) için cümlenin başına \"Don't\" kelimesini getirebilmek.",
+    "Günlük yaşamda, sporda (voleybol) ve müzikte sıklıkla kullanılan eylem kelimeleriyle (pass, catch, listen, run, shout) talimat cümleleri kurabilmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu modülün son dersinde Beyza ile İngilizcede emir ve talimat cümlelerini kurmayı öğrendik. Birine bir şey yapmasını söylerken kelimeyi hiç eklemeden başa koyuyoruz (Örn: Open the door - Kapıyı aç). Yapmamasını söylerken ise başa sadece \"Don't\" ekliyoruz (Örn: Don't run - Koşma). Günlük hayatta ev içinde Beyza'ya basit İngilizce komutlar (Catch the ball, Listen to me) vererek eğlenceli bir İngilizce ortamı yaratabilirsiniz.",
+    "todayGoal": "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek.",
+    "teachingTips": [
+      "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "Open the door. (Kapıyı aç.)",
+      "Listen to the teacher. (Öğretmeni dinle.)",
+      "Pass the volleyball to your friend. (Voleybol topunu arkadaşına pas at.)",
+      "Catch the ball! (Topu yakala!)"
+    ],
+    "listeningScripts": [
+      "A music group is in the practice room. The group leader gives instructions: 'Play the drums slowly. Don't touch that guitar. Sing into the microphone. Listen to each other.'"
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Imperatives Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "The coach is angry. He says: \"_______ drop the volleyball!\"",
+          "options": [
+            "Don't",
+            "Doesn't",
+            "Not"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ the guitar, please. I want to listen to music.",
+          "options": [
+            "Playing",
+            "Play",
+            "Plays"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ the ball to the captain!",
+          "options": [
+            "Pass",
+            "Passes",
+            "Passing"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "________ (Yakala) the ball with two hands!",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "________ (Bağırma) in the classroom!",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: to / listen / song / new / the",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: No touch the guitar, it is broken.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "Don't",
+        "Playing",
+        "Pass",
+        "Catch",
+        "Don't shout",
+        "Listen to the new song",
+        "İngilizcede eylemi yapma derken \"No\" değil \"Don't\" kullanılır.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "021-imperatives-w1",
+    "021-imperatives-w2",
+    "021-imperatives-w3",
+    "021-imperatives-w4",
+    "021-imperatives-w5",
+    "021-imperatives-w6",
+    "021-imperatives-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Imperatives",
+      "instructionTr": "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 21",
+        "heroText": "Open the door. (Kapıyı aç.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bir önceki derste yol tarif ederken fiille başlayan cümleler kullandık: *Go straight on* ve *Turn left*. Bunlar imperative, yani emir veya talimat cümleleridir.",
+      "content": {
+        "examples": [
+          "Olumlu talimat verirken cümleye fiilin yalın hâliyle başlarız. Özne kullanmayız:\n* Pass the ball! (Topu pasla!)\n* Listen to the band. (Grubu dinle.)\n* Jump high! (Yükseğe zıpla!)",
+          "Bir eylemin yapılmamasını söylemek için cümlenin başına Don't getiririz. Ardından fiilin yalın hâli gelir:\n* Don't run in the corridor. (Koridorda koşma.)\n* Don't shout. (Bağırma.)"
+        ],
+        "noteTr": "Bir önceki derste yol tarif ederken fiille başlayan cümleler kullandık: *Go straight on* ve *Turn left*. Bunlar imperative, yani emir veya talimat cümleleridir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "Open the door. (Kapıyı aç.)",
+          "Listen to the teacher. (Öğretmeni dinle.)",
+          "Pass the volleyball to your friend. (Voleybol topunu arkadaşına pas at.)",
+          "Catch the ball! (Topu yakala!)",
+          "Play the guitar. (Gitar çal.)",
+          "Don't run in the hospital. (Hastanede koşma.)",
+          "Don't touch the microphone! (Mikrofona dokunma!)",
+          "Don't shout in the practice room. (Prova odasında bağırma.)",
+          "Sing the new song, please. (Lütfen yeni şarkıyı söyle.)",
+          "Don't drop the ball. (Topu düşürme.)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu Talimat",
+            "Fiil + Nesne",
+            "Pass the ball.",
+            "Topu at/pasla."
+          ],
+          [
+            "Olumsuz Talimat",
+            "Don't + Fiil + Nesne",
+            "Don't pass the ball.",
+            "Topu atma."
+          ]
+        ]
+      },
+      "explanationTr": "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek. Olumsuz emirler vermek (yapma, etme) için cümlenin başına \"Don't\" kelimesini getirebilmek. Günlük yaşamda, sporda (voleybol) ve müzikte sıklıkla kullanılan eylem kelimeleriyle (pass, catch, listen, run, shout) talimat cümleleri kurabilmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* You pass the ball. ❌\n* *Doğrusu:* Pass the ball. (Emir cümlelerinde \"You\" gibi şahıs zamirleri kullanılmaz, doğrudan fiille başlanır.)\n* *Hata:* Doesn't run in the corridor. ❌\n* *Doğrusu:* Don't run. (Emir cümleleri her zaman karşımızdaki kişiye/kişilere söylendiği için daima \"Don't\" kullanılır, \"Doesn't\" kullanılmaz.)\n* *Hata:* To listen the band. ❌\n* *Doğrusu:* Listen to the band. (Talimat cümlesi Listen ile başlar. Ayrıca listen fiilinden sonra bir kişi veya şey geliyorsa to kullanılır.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "The coach is angry. He says: \"_______ drop the volleyball!\"",
+      "content": {
+        "options": [
+          "Don't",
+          "Doesn't",
+          "Not"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Doesn't\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Not\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "_______ the guitar, please. I want to listen to music.",
+      "content": {
+        "options": [
+          "Playing",
+          "Play",
+          "Plays"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Play\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur.",
+          "\"Plays\" bu cümlede hedef kurala uymaz. Kaynak cevap anahtarına göre doğru seçenek budur."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "________ (Yakala) the ball with two hands!",
+      "content": {
+        "answer": "Catch",
+        "accepted": [
+          "Catch"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "Topu yakala anlamında yalın fiil kullanılır."
+      },
+      "hintTr": "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "to",
+          "listen",
+          "song",
+          "new",
+          "the"
+        ],
+        "answer": [
+          "Listen",
+          "to",
+          "the",
+          "new",
+          "song"
+        ],
+        "explanationTr": "Doğru sıra: Listen to the new song"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "No",
+          "touch",
+          "the",
+          "guitar,",
+          "it",
+          "is",
+          "broken."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "İngilizcede eylemi yapma derken \"No\" değil \"Don't\" kullanılır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "I",
+            "do"
+          ],
+          [
+            "She",
+            "does"
+          ],
+          [
+            "They",
+            "do"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "It is volleyball practice time. The coach is talking to the team. \"Listen to me, girls! Run fast. Jump high. Pass the ball carefully. Don't drop the ball. Work as a team.\" The team answers: \"Yes, coach!",
+        "questions": [
+          {
+            "prompt": "What is the coach talking about?",
+            "options": [
+              "He is talking about volleyball practice.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: He is talking about volleyball practice.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: He is talking about volleyball practice.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: He is talking about volleyball practice."
+            ]
+          },
+          {
+            "prompt": "What does the coach say about jumping?",
+            "options": [
+              "He says \"Jump high.\"",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: He says \"Jump high.\"",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: He says \"Jump high.\"",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: He says \"Jump high.\""
+            ]
+          },
+          {
+            "prompt": "Does the coach say \"Drop the ball\"?",
+            "options": [
+              "No, he says \"Don't drop the ball.\"",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: No, he says \"Don't drop the ball.\"",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: No, he says \"Don't drop the ball.\"",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: No, he says \"Don't drop the ball.\""
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where is the music group?",
+      "content": {
+        "audioText": "A music group is in the practice room. The group leader gives instructions: 'Play the drums slowly. Don't touch that guitar. Sing into the microphone. Listen to each other.'",
+        "options": [
+          "They are in the practice room.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. They are in the practice room.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "*Soru:* Beyza, şimdi sen bir voleybol antrenörüsün veya bir müzik grubu liderisin! Karşında biz varız. Bize İngilizce olarak yapmamız gereken bir talimat (Örn: Topu yakala) ve yapmamamız gereken bir talimat (Örn: Bağırma) verir misin?\n*İpucu Örneği:* \"Catch the ball! Don't run!\"",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ the ball to the captain!",
+            "options": [
+              "Pass",
+              "Passes",
+              "Passing"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ drop the microphone, it is expensive.",
+            "options": [
+              "Doesn't",
+              "Don't",
+              "No"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ your books and read the text.",
+            "options": [
+              "Open",
+              "Don't open",
+              "Opens"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ to the new song; it is great!",
+            "options": [
+              "Listen",
+              "Listening",
+              "Listens"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "The baby is sleeping. _______ shout.",
+            "options": [
+              "Don't",
+              "Doesn't",
+              "Not"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ run in the hospital!",
+            "options": [
+              "Not",
+              "Don't",
+              "No"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ high and hit the ball!",
+            "options": [
+              "Jumps",
+              "Jumping",
+              "Jump"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ the door, it is very cold outside.",
+            "options": [
+              "Open",
+              "Don't open",
+              "Opens"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "_______ to the teacher carefully.",
+            "options": [
+              "Listen",
+              "Listens",
+              "Listening"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          },
+          {
+            "prompt": "You are in a library (kütüphane). _______ shout!",
+            "options": [
+              "Don't",
+              "Doesn't",
+              "Aren't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Kaynak cevap anahtarına göre doğru seçenek budur.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Kaynak cevap anahtarına göre doğru seçenek budur."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "021-imperatives-w1",
+            "word": "pass",
+            "example": "Pass the ball. (Topu pas at.)",
+            "audioText": "pass",
+            "prompt": "İngilizce-Türkçe eşleştir: pass",
+            "options": [
+              "Dinlemek",
+              "Koşmak",
+              "Pas vermek / Uzatmak",
+              "Yakalamak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "021-imperatives-w2",
+            "word": "catch",
+            "example": "Catch the ball. (Topu yakala.)",
+            "audioText": "catch",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Dinlemek",
+              "Koşmak",
+              "Pas vermek / Uzatmak",
+              "Yakalamak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "021-imperatives-w3",
+            "word": "listen",
+            "example": "Listen to the music. (Müziği dinle.)",
+            "audioText": "listen",
+            "prompt": "Eksik harfi tamamla: l_sten",
+            "options": [
+              "catch",
+              "listen",
+              "pass",
+              "run"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "021-imperatives-w4",
+            "word": "run",
+            "example": "Don't run here. (Burada koşma.)",
+            "audioText": "run",
+            "prompt": "Karışık harfleri düzelt: nur",
+            "options": [
+              "catch",
+              "listen",
+              "pass",
+              "run"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "021-imperatives-w5",
+            "word": "shout",
+            "example": "Don't shout. (Bağırma.)",
+            "audioText": "shout",
+            "prompt": "Kelimeyi doğru cümleye koy: Don't ___. (Bağırma.)",
+            "options": [
+              "catch",
+              "listen",
+              "pass",
+              "shout"
+            ],
+            "correctIndex": 3
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "İngilizcede doğrudan emir veya talimat vermek için fiillerin yalın hallerini cümlenin en başında kullanabilmek.",
+          "Olumsuz emirler vermek (yapma, etme) için cümlenin başına \"Don't\" kelimesini getirebilmek.",
+          "Hedef kelimeler: pass, catch, listen, run, shout, touch, drop"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

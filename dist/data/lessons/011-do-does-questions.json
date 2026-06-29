@@ -1,0 +1,668 @@
+{
+  "id": "011-do-does-questions",
+  "title": "Do / Does Questions",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek.",
+    "Özneler ile \"Do\" veya \"Does\" yardımcı fiillerini doğru eşleştirebilmek.",
+    "\"Does\" ile başlayan soru cümlelerinde fiilin sonundaki \"-s\" takısının düşeceğini (fiilin yalın kalacağını) kavramak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu dersimizde Beyza ile İngilizcede soru sormanın temelini attık. Geniş zamanda soruların başına \"Do\" veya \"Does\" ekliyoruz. Beyza'nın \"He/She/It\" öznelerinde \"Does\" kullanırken fiilin sonuna tekrar \"-s\" koymadığını pekiştirmesi çok önemlidir. Evde ona \"Do you love music?\" gibi basit sorular sorarak İngilizce cevap vermeye teşvik edebilirsiniz.",
+    "todayGoal": "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek.",
+    "teachingTips": [
+      "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "Do you like volleyball?",
+      "Does she play the guitar?",
+      "Do they watch the match?",
+      "Does he sing on stage?"
+    ],
+    "listeningScripts": [
+      "Can is at a concert. He looks at the stage. He wonders: Does the singer feel nervous? Do the musicians play well? Does the band have a new album?"
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Do / Does Questions Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "_______ they practise for the concert?",
+          "options": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ she watch the volleyball match?",
+          "options": [
+            "Does",
+            "Do",
+            "Are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ you want a microphone?",
+          "options": [
+            "Do",
+            "Does",
+            "Are"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "________ he listen to the music band?",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "________ you jump high?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: you / play / do / volleyball / school / at",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Does your brother likes rock music?",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "Do",
+        "Does",
+        "Do",
+        "Does",
+        "Do",
+        "Do you play volleyball at school?",
+        "Başta \"Does\" olduğu için fiilin \"-s\" eki düşer.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "011-do-does-questions-w1",
+    "011-do-does-questions-w2",
+    "011-do-does-questions-w3",
+    "011-do-does-questions-w4",
+    "011-do-does-questions-w5",
+    "011-do-does-questions-w6",
+    "011-do-does-questions-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Do / Does Questions",
+      "instructionTr": "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 11",
+        "heroText": "Do you like volleyball?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "İngilizcede \"Voleybol oynar mısın?\", \"O şarkı söyler mi?\" gibi sorular sormak için olumsuz cümlelerdeki yardımcı fiilleri cümlenin en başına taşıyoruz.",
+      "content": {
+        "examples": [
+          "Bu yardımcılar: Do ve Does!",
+          "Özne I, You, We, They ise soru Do ile başlar:\n* *Do you play volleyball?* (Voleybol oynar mısın?)\n* *Do they practise music?* (Müzik provası yaparlar mı?)"
+        ],
+        "noteTr": "İngilizcede \"Voleybol oynar mısın?\", \"O şarkı söyler mi?\" gibi sorular sormak için olumsuz cümlelerdeki yardımcı fiilleri cümlenin en başına taşıyoruz."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "Do you like volleyball?",
+          "Does she play the guitar?",
+          "Do they watch the match?",
+          "Does he sing on stage?",
+          "Do we have a microphone?",
+          "Does your friend practise every day?",
+          "Do the girls play volleyball at school?",
+          "Does the music band practise on Friday?",
+          "Does it sound beautiful?",
+          "Do you want to go to the concert?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "Do",
+            "I, you, we, they",
+            "Yalın (ek yok)",
+            "Do you dance?"
+          ],
+          [
+            "Does",
+            "he, she, it",
+            "Yalın (-s takısı yok!)",
+            "Does she dance?"
+          ]
+        ]
+      },
+      "explanationTr": "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek. Özneler ile \"Do\" veya \"Does\" yardımcı fiillerini doğru eşleştirebilmek. \"Does\" ile başlayan soru cümlelerinde fiilin sonundaki \"-s\" takısının düşeceğini (fiilin yalın kalacağını) kavramak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* Does she plays volleyball? ❌\n* *Doğrusu:* Does she play volleyball? (Cümlenin başında \"Does\" olduğu için fiilin \"-s\" takısı düşer.)",
+          "* *Hata:* Do he like music? ❌\n* *Doğrusu:* Does he like music? (\"He\" öznesi için soru yardımcısı \"Does\" olmalıdır.)",
+          "* *Hata:* Does you have a ball? ❌\n* *Doğrusu:* Do you have a ball? (\"You\" öznesiyle soru \"Do\" ile başlar.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "_______ they practise for the concert?",
+      "content": {
+        "options": [
+          "Does",
+          "Do",
+          "Is"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"Does\" bu cümlede hedef kurala uymaz. \"They\" çoğul özne olduğu için soru \"Do\" ile başlamalıdır. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği \"Is\" ise bir fiilin yalın hâliyle birlikte bu şekilde kullanılmaz.",
+          "Doğru. \"They\" çoğul özne olduğu için soru \"Do\" ile başlamalıdır. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği \"Is\" ise bir fiilin yalın hâliyle birlikte bu şekilde kullanılmaz.",
+          "\"Is\" bu cümlede hedef kurala uymaz. \"They\" çoğul özne olduğu için soru \"Do\" ile başlamalıdır. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği \"Is\" ise bir fiilin yalın hâliyle birlikte bu şekilde kullanılmaz."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "_______ she watch the volleyball match?",
+      "content": {
+        "options": [
+          "Does",
+          "Do",
+          "Are"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. \"She\" üçüncü tekil şahıs olduğu için soru \"Does\" ile başlamalıdır. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"Are\" geniş zaman soru yapısında yer almaz.",
+          "\"Do\" bu cümlede hedef kurala uymaz. \"She\" üçüncü tekil şahıs olduğu için soru \"Does\" ile başlamalıdır. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"Are\" geniş zaman soru yapısında yer almaz.",
+          "\"Are\" bu cümlede hedef kurala uymaz. \"She\" üçüncü tekil şahıs olduğu için soru \"Does\" ile başlamalıdır. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"Are\" geniş zaman soru yapısında yer almaz."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "________ he listen to the music band?",
+      "content": {
+        "answer": "Does",
+        "accepted": [
+          "Does"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"He\" öznesinin soru yardımcısı \"Does\"tir."
+      },
+      "hintTr": "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "you",
+          "play",
+          "do",
+          "volleyball",
+          "school",
+          "at"
+        ],
+        "answer": [
+          "Do",
+          "you",
+          "play",
+          "volleyball",
+          "at",
+          "school?"
+        ],
+        "explanationTr": "Doğru sıra: Do you play volleyball at school?"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "Does",
+          "your",
+          "brother",
+          "likes",
+          "rock",
+          "music?"
+        ],
+        "wrongIndex": 3,
+        "explanationTr": "Başta \"Does\" olduğu için fiilin \"-s\" eki düşer."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "Do you",
+            "listen to the band?"
+          ],
+          [
+            "Does he",
+            "hit the ball?"
+          ],
+          [
+            "Does the cat",
+            "sleep on the stage?"
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "Selin is a volleyball player. She is in the school team. A journalist asks her questions: \"Do you practise every day? Does your coach help you? Do your parents watch your matches?\" Selin says yes to all of them.",
+        "questions": [
+          {
+            "prompt": "What sport does Selin play?",
+            "options": [
+              "She plays volleyball.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: She plays volleyball.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: She plays volleyball.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: She plays volleyball."
+            ]
+          },
+          {
+            "prompt": "Does the journalist ask \"Do you practise every day?\"",
+            "options": [
+              "Yes, the journalist asks this.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: Yes, the journalist asks this.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: Yes, the journalist asks this.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: Yes, the journalist asks this."
+            ]
+          },
+          {
+            "prompt": "Who helps Selin, according to the questions?",
+            "options": [
+              "Her coach helps her.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: Her coach helps her.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: Her coach helps her.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: Her coach helps her."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Where is Can?",
+      "content": {
+        "audioText": "Can is at a concert. He looks at the stage. He wonders: Does the singer feel nervous? Do the musicians play well? Does the band have a new album?",
+        "options": [
+          "He is at a concert.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. He is at a concert.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir arkadaşına voleybol sevip sevmediğini ve bir müzik grubunda şarkı söyleyip söylemediğini soran iki İngilizce soru yaz veya söyle.",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ you want a microphone?",
+            "options": [
+              "Do",
+              "Does",
+              "Are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"You\" öznesinin soru kalıbı \"Do\" ile başlar. B seçeneği He/She/It içindir. C seçeneği \"Are\" geniş zaman soru yapısında kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"You\" öznesinin soru kalıbı \"Do\" ile başlar. B seçeneği He/She/It içindir. C seçeneği \"Are\" geniş zaman soru yapısında kullanılmaz."
+          },
+          {
+            "prompt": "_______ his sister play volleyball?",
+            "options": [
+              "Do",
+              "Does",
+              "Is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"His sister\" (She) üçüncü tekil şahıs olduğu için soru \"Does\" ile başlar. A seçeneği çoğul ve I/You özneleri içindir. C seçeneği \"Is\" fiil yalın hâliyle bu şekilde kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"His sister\" (She) üçüncü tekil şahıs olduğu için soru \"Does\" ile başlar. A seçeneği çoğul ve I/You özneleri içindir. C seçeneği \"Is\" fiil yalın hâliyle bu şekilde kullanılmaz."
+          },
+          {
+            "prompt": "_______ the children like the music concert?",
+            "options": [
+              "Does",
+              "Do",
+              "Am"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"The children\" (They) çoğul özne olduğu için \"Do\" gelir. A seçeneği He/She/It içindir. C seçeneği \"Am\" yalnızca \"I\" öznesiyle kullanılır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"The children\" (They) çoğul özne olduğu için \"Do\" gelir. A seçeneği He/She/It içindir. C seçeneği \"Am\" yalnızca \"I\" öznesiyle kullanılır."
+          },
+          {
+            "prompt": "_______ he write songs for the band?",
+            "options": [
+              "Does",
+              "Do",
+              "Is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"He\" öznesiyle soru \"Does\" ile başlar. B seçeneği I/You/We/They içindir. C seçeneği \"Is\" bu yapıda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"He\" öznesiyle soru \"Does\" ile başlar. B seçeneği I/You/We/They içindir. C seçeneği \"Is\" bu yapıda kullanılmaz."
+          },
+          {
+            "prompt": "_______ we have practice today?",
+            "options": [
+              "Does",
+              "Do",
+              "Are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"We\" öznesiyle soru \"Do\" ile başlar. A seçeneği He/She/It içindir. C seçeneği \"Are\" geniş zaman soru yapısında yer almaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"We\" öznesiyle soru \"Do\" ile başlar. A seçeneği He/She/It içindir. C seçeneği \"Are\" geniş zaman soru yapısında yer almaz."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ she jump high during the match?",
+            "options": [
+              "Do",
+              "Does",
+              "Is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"She\" öznesiyle soru \"Does\" ile başlar; arkasından gelen \"jump\" fiili yalındır. A seçeneği I/You/We/They içindir. C seçeneği fiil yalın hâliyle bu şekilde kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"She\" öznesiyle soru \"Does\" ile başlar; arkasından gelen \"jump\" fiili yalındır. A seçeneği I/You/We/They içindir. C seçeneği fiil yalın hâliyle bu şekilde kullanılmaz."
+          },
+          {
+            "prompt": "_______ you listen to this music group?",
+            "options": [
+              "Do",
+              "Does",
+              "Are"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"You\" öznesinin soru yardımcısı \"Do\"dur. B seçeneği He/She/It içindir. C seçeneği \"Are\" bu yapıda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"You\" öznesinin soru yardımcısı \"Do\"dur. B seçeneği He/She/It içindir. C seçeneği \"Are\" bu yapıda kullanılmaz."
+          },
+          {
+            "prompt": "_______ your father like the guitar?",
+            "options": [
+              "Do",
+              "Does",
+              "Is"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"Your father\" (He) tekil olduğu için \"Does\" kullanılır. A seçeneği I/You/We/They içindir. C seçeneği \"Is\" bu yapıda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"Your father\" (He) tekil olduğu için \"Does\" kullanılır. A seçeneği I/You/We/They içindir. C seçeneği \"Is\" bu yapıda kullanılmaz."
+          },
+          {
+            "prompt": "_______ they win the volleyball matches?",
+            "options": [
+              "Does",
+              "Do",
+              "Are"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"They\" çoğul özne olduğu için \"Do\" gelir. A seçeneği He/She/It içindir. C seçeneği \"Are\" bu yapıda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"They\" çoğul özne olduğu için \"Do\" gelir. A seçeneği He/She/It içindir. C seçeneği \"Are\" bu yapıda kullanılmaz."
+          },
+          {
+            "prompt": "_______ he practise on stage?",
+            "options": [
+              "Does",
+              "Do",
+              "Is"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"He\" öznesiyle soru \"Does\" ile başlar. B seçeneği I/You/We/They içindir. C seçeneği \"Is\" bu yapıda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"He\" öznesiyle soru \"Does\" ile başlar. B seçeneği I/You/We/They içindir. C seçeneği \"Is\" bu yapıda kullanılmaz."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "011-do-does-questions-w1",
+            "word": "want",
+            "example": "Do you want a ball?",
+            "audioText": "want",
+            "prompt": "İngilizce-Türkçe eşleştir: want",
+            "options": [
+              "Antrenör",
+              "İstemek",
+              "Müzisyen",
+              "Şarkıcı"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "011-do-does-questions-w2",
+            "word": "singer",
+            "example": "Does the singer sing well?",
+            "audioText": "singer",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Antrenör",
+              "İstemek",
+              "Müzisyen",
+              "Şarkıcı"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "011-do-does-questions-w3",
+            "word": "coach",
+            "example": "Does your coach help you?",
+            "audioText": "coach",
+            "prompt": "Eksik harfi tamamla: c_ach",
+            "options": [
+              "coach",
+              "musician",
+              "singer",
+              "want"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "011-do-does-questions-w4",
+            "word": "musician",
+            "example": "The musician plays on stage.",
+            "audioText": "musician",
+            "prompt": "Karışık harfleri düzelt: naicisum",
+            "options": [
+              "coach",
+              "musician",
+              "singer",
+              "want"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "011-do-does-questions-w5",
+            "word": "sound",
+            "example": "Does it sound good?",
+            "audioText": "sound",
+            "prompt": "Kelimeyi doğru cümleye koy: Does it ___ good?",
+            "options": [
+              "coach",
+              "singer",
+              "sound",
+              "want"
+            ],
+            "correctIndex": 2
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geniş zamanda evet/hayır soruları oluştururken \"Do\" ve \"Does\" kelimelerini cümlenin başına getirebilmek.",
+          "Özneler ile \"Do\" veya \"Does\" yardımcı fiillerini doğru eşleştirebilmek.",
+          "Hedef kelimeler: want, singer, coach, musician, sound, win, parent"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

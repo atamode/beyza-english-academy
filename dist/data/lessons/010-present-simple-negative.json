@@ -1,0 +1,669 @@
+{
+  "id": "010-present-simple-negative",
+  "title": "Present Simple Negative",
+  "level": "A1+",
+  "module": "Günlük Hayat",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek.",
+    "\"doesn't\" kullanılan cümlelerde fiilin sonundaki \"-s\" takısının düştüğünü ve fiilin yalın biçimine döndüğünü fark edebilmek.",
+    "Günlük hayat, spor ve müzik bağlamlarında olumsuz cümleler kurabilmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Sayın Velimiz, bu dersimizde Beyza ile geniş zamanda yapmadığımız eylemleri anlatmayı öğrendik. Olumsuzluk yaparken \"don't\" ve \"doesn't\" kelimelerini kullanıyoruz. Beyza'nın en çok dikkat etmesi gereken nokta, \"He/She/It\" öznelerinde \"doesn't\" kullanıldığında fiilin sonundaki \"-s\" takısının düşmesidir. Günlük hayatta \"I don't eat fast food.\" veya \"She doesn't watch TV.\" gibi cümlelerle pratik yapmasını destekleyebilirsiniz.",
+    "todayGoal": "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek.",
+    "teachingTips": [
+      "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek.",
+      "Yanlışta önce özne ve yardımcı fiile baktırın.",
+      "Voleybol, müzik ve günlük hayat örneklerini karışık sorun."
+    ],
+    "questionsToAsk": [
+      "I don't like pop music. (Pop müziği sevmem.)",
+      "She doesn't play the guitar. (O gitar çalmaz.)",
+      "We don't have volleyball practice today. (Bugün voleybol antrenmanımız yok.)",
+      "He doesn't sing in the classroom. (O sınıfta şarkı söylemez.)"
+    ],
+    "listeningScripts": [
+      "Our volleyball team is very good. We train hard. But my friend Eser doesn't come to training on Wednesday. She doesn't like cold weather. We don't play inside."
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Present Simple Negative Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz. Öğrenci sayfasında cevaplar görünmez.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "We _______ have a volleyball match on Sunday.",
+          "options": [
+            "doesn't",
+            "don't",
+            "not"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "The singer _______ sing on stage today.",
+          "options": [
+            "doesn't",
+            "don't",
+            "does"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "I _______ like this microphone.",
+          "options": [
+            "doesn't",
+            "don't",
+            "am not"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "He ________ (not listen) to rock music.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "They ________ (not play) volleyball in winter.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: music / don't / they / practise / every day",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: My dad doesn't goes to work on Sunday.",
+          "spaceLines": 2
+        },
+        {
+          "type": "matching",
+          "prompt": "Ders eşleştirme etkinliğinden üç öğeyi yeniden eşleştir.",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Bu dersin hedef yapısıyla kendin bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Kuralı Türkçe bir cümleyle açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "don't",
+        "doesn't",
+        "don't",
+        "doesn't listen",
+        "don't play",
+        "They don't practise music every day",
+        "\"doesn't\" olan cümlede fiilin \"-es\" eki düşer; fiil yalın hâline döner.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı.",
+        "Öğrencinin kurala uygun özgün cevabı."
+      ]
+    }
+  },
+  "vocabulary": [
+    "010-present-simple-negative-w1",
+    "010-present-simple-negative-w2",
+    "010-present-simple-negative-w3",
+    "010-present-simple-negative-w4",
+    "010-present-simple-negative-w5",
+    "010-present-simple-negative-w6",
+    "010-present-simple-negative-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Present Simple Negative",
+      "instructionTr": "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek.",
+      "content": {
+        "eyebrow": "MODÜL 2 · DERS 10",
+        "heroText": "I don't like pop music. (Pop müziği sevmem.)"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Olumlu cümleleri öğrendik! Peki bir şeyi yapmadığımızı veya bir alışkanlığımız olmadığını nasıl söyleriz? İşte burada iki önemli yardımcı fiil devreye giriyor: don't ve doesn't.",
+      "content": {
+        "examples": [
+          "Eğer cümlemiz I, You, We, They ile başlıyorsa, fiilden hemen önce don't getiriyoruz. Fiil ise hiçbir ek almadan yalın kalıyor.\n* *I don't play volleyball on Sunday.* (Pazar günü voleybol oynamam.)",
+          "Eğer cümlemiz He, She, It ile başlıyorsa, bu sefer doesn't kullanıyoruz. Önemli bir kural: \"doesn't\" olan cümlede fiildeki \"-s\" takısı düşer ve fiil yalın hâline döner!\n* *She plays...* (Olumlu) → *She doesn't play...* (Olumsuz — bakın \"-s\" düştü!)"
+        ],
+        "noteTr": "Olumlu cümleleri öğrendik! Peki bir şeyi yapmadığımızı veya bir alışkanlığımız olmadığını nasıl söyleriz? İşte burada iki önemli yardımcı fiil devreye giriyor: don't ve doesn't."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Kolaydan zora örnekleri incele.",
+      "content": {
+        "examples": [
+          "I don't like pop music. (Pop müziği sevmem.)",
+          "She doesn't play the guitar. (O gitar çalmaz.)",
+          "We don't have volleyball practice today. (Bugün voleybol antrenmanımız yok.)",
+          "He doesn't sing in the classroom. (O sınıfta şarkı söylemez.)",
+          "They don't watch television. (Onlar televizyon izlemezler.)",
+          "My mother doesn't go to concerts. (Annem konserlere gitmez.)",
+          "The school band doesn't practise on Saturdays. (Okul grubu cumartesi günleri prova yapmaz.)",
+          "You don't jump on the bed. (Yatağın üzerinde zıplamazsın.)",
+          "My friend doesn't hit the ball. (Arkadaşım voleybol topuna vurmaz.)",
+          "It doesn't rain in the summer here. (Burada yazın yağmur yağmaz.)"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kaynak dosyadaki kural tablosu.",
+      "content": {
+        "rows": [
+          [
+            "I, You, We, They",
+            "don't",
+            "Yalın (ek yok)",
+            "I don't dance."
+          ],
+          [
+            "He, She, It",
+            "doesn't",
+            "Yalın (-s takısı düşer!)",
+            "She doesn't dance."
+          ]
+        ]
+      },
+      "explanationTr": "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek. \"doesn't\" kullanılan cümlelerde fiilin sonundaki \"-s\" takısının düştüğünü ve fiilin yalın biçimine döndüğünü fark edebilmek. Günlük hayat, spor ve müzik bağlamlarında olumsuz cümleler kurabilmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Kaynak dosyadaki hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "* *Hata:* She doesn't plays volleyball. ❌\n* *Doğrusu:* She doesn't play volleyball. (\"doesn't\" zaten olumsuzluk bildirir; fiile bir kez daha \"-s\" eklenmez.)",
+          "* *Hata:* He don't like music. ❌\n* *Doğrusu:* He doesn't like music. (\"He, She, It\" özneleriyle \"don't\" değil \"doesn't\" kullanılır.)",
+          "* *Hata:* I doesn't sing. ❌\n* *Doğrusu:* I don't sing. (\"I\" öznesiyle \"doesn't\" değil \"don't\" kullanılır.)"
+        ],
+        "noteTr": "Yanlış seçeneklerde özne, yardımcı fiil ve fiil biçimini kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "We _______ have a volleyball match on Sunday.",
+      "content": {
+        "options": [
+          "doesn't",
+          "don't",
+          "not"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"doesn't\" bu cümlede hedef kurala uymaz. \"We\" öznesiyle olumsuzluk yardımcısı \"don't\"tur. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği tek başına olumsuz cümle kuramaz; bir yardımcı fiile ihtiyaç duyar.",
+          "Doğru. \"We\" öznesiyle olumsuzluk yardımcısı \"don't\"tur. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği tek başına olumsuz cümle kuramaz; bir yardımcı fiile ihtiyaç duyar.",
+          "\"not\" bu cümlede hedef kurala uymaz. \"We\" öznesiyle olumsuzluk yardımcısı \"don't\"tur. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği tek başına olumsuz cümle kuramaz; bir yardımcı fiile ihtiyaç duyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "The singer _______ sing on stage today.",
+      "content": {
+        "options": [
+          "doesn't",
+          "don't",
+          "does"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. \"The singer\" (He veya She) olduğu için olumsuz cümlede \"doesn't\" kullanılmalıdır. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"does\" ise cümleyi olumsuz değil olumlu yapar.",
+          "\"don't\" bu cümlede hedef kurala uymaz. \"The singer\" (He veya She) olduğu için olumsuz cümlede \"doesn't\" kullanılmalıdır. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"does\" ise cümleyi olumsuz değil olumlu yapar.",
+          "\"does\" bu cümlede hedef kurala uymaz. \"The singer\" (He veya She) olduğu için olumsuz cümlede \"doesn't\" kullanılmalıdır. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"does\" ise cümleyi olumsuz değil olumlu yapar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "He ________ (not listen) to rock music.",
+      "content": {
+        "answer": "doesn't listen",
+        "accepted": [
+          "doesn't listen"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"He\" öznesiyle olumsuzda \"doesn't\" gelir; \"listen\" yalın kalır."
+      },
+      "hintTr": "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "music",
+          "don't",
+          "they",
+          "practise",
+          "every day"
+        ],
+        "answer": [
+          "They",
+          "don't",
+          "practise",
+          "music",
+          "every",
+          "day"
+        ],
+        "explanationTr": "Doğru sıra: They don't practise music every day"
+      },
+      "hintTr": "Özneyle başla; sonra yardımcı fiil veya ana fiili yerleştir.",
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "My",
+          "dad",
+          "doesn't",
+          "goes",
+          "to",
+          "work",
+          "on",
+          "Sunday."
+        ],
+        "wrongIndex": 3,
+        "explanationTr": "\"doesn't\" olan cümlede fiilin \"-es\" eki düşer; fiil yalın hâline döner."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Kaynak eşleştirme etkinliğini tamamla.",
+      "content": {
+        "pairs": [
+          [
+            "She",
+            "doesn't sing well."
+          ],
+          [
+            "We",
+            "don't play the drums."
+          ],
+          [
+            "The dog",
+            "doesn't bite."
+          ]
+        ],
+        "explanationTr": "Doğru eşleştirme kaynak cevap anahtarına göre yapılır."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve üç soruyu cevapla.",
+      "content": {
+        "text": "Arda is a member of a music band. He plays the drums. He loves his band but he doesn't like rock music. He doesn't play his drums at night. His friends don't practise on Sundays.",
+        "questions": [
+          {
+            "prompt": "What instrument does Arda play?",
+            "options": [
+              "He plays the drums.",
+              "Metinde bu bilgi yok.",
+              "Hayır, bu ayrıntı farklı."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: He plays the drums.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: He plays the drums.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: He plays the drums."
+            ]
+          },
+          {
+            "prompt": "Does Arda like rock music?",
+            "options": [
+              "No, he doesn't like rock music.",
+              "Hayır, bu ayrıntı farklı.",
+              "Başka bir kişi veya zaman anlatılıyor."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: No, he doesn't like rock music.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: No, he doesn't like rock music.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: No, he doesn't like rock music."
+            ]
+          },
+          {
+            "prompt": "When do his friends not practise?",
+            "options": [
+              "They don't practise on Sundays.",
+              "Başka bir kişi veya zaman anlatılıyor.",
+              "Metinde bu bilgi yok."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Kaynak metindeki cevap: They don't practise on Sundays.",
+              "Bu seçenek metindeki doğru cevabı vermez. Doğru cevap: They don't practise on Sundays.",
+              "Bu seçenek sorudaki ayrıntıyla eşleşmez. Doğru cevap: They don't practise on Sundays."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Who doesn't come to training on Wednesday?",
+      "content": {
+        "audioText": "Our volleyball team is very good. We train hard. But my friend Eser doesn't come to training on Wednesday. She doesn't like cold weather. We don't play inside.",
+        "options": [
+          "Eser doesn't come.",
+          "Metinde yok",
+          "Farklı ayrıntı"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Eser doesn't come.",
+          "Bu seçenek dinleme metnindeki doğru ayrıntı değil.",
+          "Bu seçenek başka bir ayrıntıyla karışıyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Sevmediğin veya yapmadığın bir aktiviteyi \"I don't...\" kullanarak, ardından bir arkadaşının yapmadığı bir şeyi \"He doesn't...\" ya da \"She doesn't...\" kullanarak anlat.",
+      "content": {
+        "sentenceStarters": [
+          "I ...",
+          "She ...",
+          "He ...",
+          "We ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Özne-fiil uyumunu kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I _______ like this microphone.",
+            "options": [
+              "doesn't",
+              "don't",
+              "am not"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"I\" öznesiyle olumsuzluk eki \"don't\"tur. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği \"am not\" fiil içermeyen bir yapıyla kullanılamaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"I\" öznesiyle olumsuzluk eki \"don't\"tur. A seçeneği yalnızca He/She/It için kullanılır. C seçeneği \"am not\" fiil içermeyen bir yapıyla kullanılamaz."
+          },
+          {
+            "prompt": "Selim _______ run in the corridor.",
+            "options": [
+              "doesn't",
+              "don't",
+              "isn't"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Selim (He) olduğu için olumsuzluk \"doesn't\" ile kurulur. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"isn't\" geniş zamanda olumsuz anlatım için kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Selim (He) olduğu için olumsuzluk \"doesn't\" ile kurulur. B seçeneği I/You/We/They özneleri içindir. C seçeneği \"isn't\" geniş zamanda olumsuz anlatım için kullanılmaz."
+          },
+          {
+            "prompt": "We _______ watch horror films.",
+            "options": [
+              "doesn't",
+              "don't",
+              "no"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"We\" öznesiyle geniş zamanda olumsuz cümlede \"don't\" gelir. A seçeneği He/She/It içindir. C seçeneği \"no\" tek başına cümle kuramaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"We\" öznesiyle geniş zamanda olumsuz cümlede \"don't\" gelir. A seçeneği He/She/It içindir. C seçeneği \"no\" tek başına cümle kuramaz."
+          },
+          {
+            "prompt": "She _______ play volleyball after school.",
+            "options": [
+              "doesn't",
+              "don't",
+              "not"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"She\" öznesi için \"doesn't\" doğrudur; arkasındaki \"play\" yalın kalır. B seçeneği I/You/We/They içindir. C seçeneği \"not\" tek başına yardımcı fiil görevini üstlenemez.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"She\" öznesi için \"doesn't\" doğrudur; arkasındaki \"play\" yalın kalır. B seçeneği I/You/We/They içindir. C seçeneği \"not\" tek başına yardımcı fiil görevini üstlenemez."
+          },
+          {
+            "prompt": "The guitar _______ sound good.",
+            "options": [
+              "don't",
+              "doesn't",
+              "not do"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"The guitar\" cansız tekil bir varlıktır (It); \"doesn't\" kullanılmalıdır. A seçeneği çoğul ve I/You özneleri içindir. C seçeneği \"not do\" yanlış sıralanmış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"The guitar\" cansız tekil bir varlıktır (It); \"doesn't\" kullanılmalıdır. A seçeneği çoğul ve I/You özneleri içindir. C seçeneği \"not do\" yanlış sıralanmış bir yapıdır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Kaynak dosyadaki beş soruluk uygulama setini çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "They _______ practise for the concert today.",
+            "options": [
+              "doesn't",
+              "don't",
+              "not"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"They\" öznesiyle olumsuz cümlede \"don't\" kullanılır. A seçeneği He/She/It içindir. C seçeneği \"not\" yardımcı fiil olmadan kullanılamaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"They\" öznesiyle olumsuz cümlede \"don't\" kullanılır. A seçeneği He/She/It içindir. C seçeneği \"not\" yardımcı fiil olmadan kullanılamaz."
+          },
+          {
+            "prompt": "Defne _______ hit the ball.",
+            "options": [
+              "doesn't",
+              "don't",
+              "does"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Defne (She) olduğu için \"doesn't\" doğru cevaptır. B seçeneği I/You/We/They içindir. C seçeneği \"does\" cümleyi olumsuz değil soru biçimine sokar.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. Defne (She) olduğu için \"doesn't\" doğru cevaptır. B seçeneği I/You/We/They içindir. C seçeneği \"does\" cümleyi olumsuz değil soru biçimine sokar."
+          },
+          {
+            "prompt": "My friends _______ live in Istanbul.",
+            "options": [
+              "doesn't",
+              "don't",
+              "aren't"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"My friends\" (They) çoğul olduğu için \"don't\" gerekir. A seçeneği tekil özne için kullanılır. C seçeneği \"aren't\" geniş zaman olumsuzluğunda kullanılmaz.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"My friends\" (They) çoğul olduğu için \"don't\" gerekir. A seçeneği tekil özne için kullanılır. C seçeneği \"aren't\" geniş zaman olumsuzluğunda kullanılmaz."
+          },
+          {
+            "prompt": "He _______ write songs.",
+            "options": [
+              "doesn't",
+              "don't",
+              "not writes"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "\"He\" öznesinden sonra \"doesn't\" gelir; fiil yalın kalır. B seçeneği I/You/We/They içindir. C seçeneği \"not writes\" tamamen yanlış bir yapıdır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"He\" öznesinden sonra \"doesn't\" gelir; fiil yalın kalır. B seçeneği I/You/We/They içindir. C seçeneği \"not writes\" tamamen yanlış bir yapıdır."
+          },
+          {
+            "prompt": "You _______ know my school.",
+            "options": [
+              "doesn't",
+              "don't",
+              "am not"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "\"You\" öznesi \"don't\" ile olumsuz yapılır. A seçeneği He/She/It içindir. C seçeneği \"am not\" yalnızca \"to be\" fiiliyle kullanılır.",
+            "wrongExplanationTr": "Seçtiğin yapı bu cümlede doğru değil. \"You\" öznesi \"don't\" ile olumsuz yapılır. A seçeneği He/She/It içindir. C seçeneği \"am not\" yalnızca \"to be\" fiiliyle kullanılır."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "010-present-simple-negative-w1",
+            "word": "guitar",
+            "example": "She doesn't play the guitar.",
+            "audioText": "guitar",
+            "prompt": "İngilizce-Türkçe eşleştir: guitar",
+            "options": [
+              "Antrenman / Prova (isim)",
+              "Gitar",
+              "Konser",
+              "Vurmak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "010-present-simple-negative-w2",
+            "word": "practice",
+            "example": "We have volleyball practice today.",
+            "audioText": "practice",
+            "prompt": "Sesi dinleyip kelimeyi bul: dinle",
+            "options": [
+              "Antrenman / Prova (isim)",
+              "Gitar",
+              "Konser",
+              "Vurmak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "010-present-simple-negative-w3",
+            "word": "concert",
+            "example": "They go to a music concert.",
+            "audioText": "concert",
+            "prompt": "Eksik harfi tamamla: c_ncert",
+            "options": [
+              "concert",
+              "guitar",
+              "hit",
+              "practice"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "010-present-simple-negative-w4",
+            "word": "hit",
+            "example": "He doesn't hit the ball.",
+            "audioText": "hit",
+            "prompt": "Karışık harfleri düzelt: tih",
+            "options": [
+              "concert",
+              "guitar",
+              "hit",
+              "practice"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "010-present-simple-negative-w5",
+            "word": "drums",
+            "example": "My friend plays the drums.",
+            "audioText": "drums",
+            "prompt": "Kelimeyi doğru cümleye koy: My friend plays the ___.",
+            "options": [
+              "concert",
+              "drums",
+              "guitar",
+              "practice"
+            ],
+            "correctIndex": 1
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Kaynak dersteki ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geniş zamanda olumsuz cümle kurarken \"don't\" ve \"doesn't\" yardımcı fiillerini doğru öznelerle eşleştirebilmek.",
+          "\"doesn't\" kullanılan cümlelerde fiilin sonundaki \"-s\" takısının düştüğünü ve fiilin yalın biçimine döndüğünü fark edebilmek.",
+          "Hedef kelimeler: guitar, practice, concert, hit, drums, band, team"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

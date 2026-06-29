@@ -1,0 +1,694 @@
+{
+  "id": "030-some-any",
+  "title": "some / any",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Olumlu cümlelerde some kullanmak.",
+    "Soru ve olumsuz cümlelerde any kullanmak.",
+    "There is / There are ile miktar cümleleri kurmak.",
+    "Alışveriş ve mutfak bağlamında soru sormak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evde buzdolabını açıp gerçek sorular sorun: Is there any milk?, Are there any eggs? Beyza'dan yalnız yes/no değil, tam kısa cevap istemek daha faydalıdır.",
+    "todayGoal": "Olumlu cümlelerde some kullanmak.",
+    "teachingTips": [
+      "Bu derste \"some / any\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "There are some bananas.",
+      "There is some juice.",
+      "There aren't any apples.",
+      "There isn't any bread."
+    ],
+    "listeningScripts": [
+      "\"The volleyball team is preparing for a match. There are some bottles of water in the bag. There aren't any bananas. The coach asks, 'Are there any sandwiches?'\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "some / any Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "There is _______ rice in the bowl.",
+          "options": [
+            "some",
+            "any",
+            "an"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Are there _______ oranges?",
+          "options": [
+            "some",
+            "any",
+            "a"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "There are _______ apples.",
+          "options": [
+            "some",
+            "any",
+            "an"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "We don't have _______ bread.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "There are _______ grapes on the plate.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: Is / there / any / milk",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: There isn't some water.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Is there any milk?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "some / any yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "some / any kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "some",
+        "any",
+        "some",
+        "any",
+        "some",
+        "Is there any milk",
+        "\"some\" burada hatalıdır; doğru cevap \"any\" olmalıdır.",
+        "Yes, there is.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "030-some-any-w1",
+    "030-some-any-w2",
+    "030-some-any-w3",
+    "030-some-any-w4",
+    "030-some-any-w5",
+    "030-some-any-w6",
+    "030-some-any-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "some / any",
+      "instructionTr": "Olumlu cümlelerde some kullanmak.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 30",
+        "heroText": "There are some bananas."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Genel kural: ### Olumlu cümle some - There are some apples. - There is some milk. ### Olumsuz cümle any - There aren't any apples. - There isn't any milk. ### Soru cümlesi any - Are there any apples? - Is there any milk? Bu düzeyde temel kuralı böyle kullanacağız.",
+      "content": {
+        "examples": [],
+        "noteTr": "Genel kural: ### Olumlu cümle some - There are some apples. - There is some milk. ### Olumsuz cümle any - There aren't any apples. - There isn't any milk. ### Soru cümlesi any - Are there any apples? - Is there any milk? Bu düzeyde temel kuralı böyle kullanacağız."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "There are some bananas.",
+          "There is some juice.",
+          "There aren't any apples.",
+          "There isn't any bread.",
+          "Are there any sandwiches?",
+          "Is there any water?",
+          "We have some fruit.",
+          "We don't have any cheese.",
+          "The players need some water.",
+          "Are there any snacks in the bag?"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Olumlu",
+            "some",
+            "There is some milk."
+          ],
+          [
+            "Olumsuz",
+            "any",
+            "There isn't any milk."
+          ],
+          [
+            "Soru",
+            "any",
+            "Is there any milk?"
+          ]
+        ]
+      },
+      "explanationTr": "Olumlu cümlelerde some kullanmak. Soru ve olumsuz cümlelerde any kullanmak. There is / There are ile miktar cümleleri kurmak. Alışveriş ve mutfak bağlamında soru sormak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "There are any apples. ❌ → There are some apples. ✅",
+          "There isn't some milk. ❌ → There isn't any milk. ✅",
+          "Are there some bananas? ❌ → Başlangıç düzeyinde Are there any bananas? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "There is _______ rice in the bowl.",
+      "content": {
+        "options": [
+          "some",
+          "any",
+          "an"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+          "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Are there _______ oranges?",
+      "content": {
+        "options": [
+          "some",
+          "any",
+          "a"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "We don't have _______ bread.",
+      "content": {
+        "answer": "any",
+        "accepted": [
+          "any"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"any\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Olumlu cümlelerde some kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "Is",
+          "there",
+          "any",
+          "milk"
+        ],
+        "answer": [
+          "Is",
+          "there",
+          "any",
+          "milk"
+        ],
+        "explanationTr": "Doğru sıra: Is there any milk"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "There",
+          "isn't",
+          "some",
+          "water."
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"some\" burada hatalıdır; doğru cevap \"any\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "There are",
+            "some apples."
+          ],
+          [
+            "There aren't",
+            "any apples."
+          ],
+          [
+            "Are there",
+            "any apples?"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza opens the fridge. There is some milk and some cheese. There aren't any eggs. There are some tomatoes, but there aren't any oranges.",
+        "questions": [
+          {
+            "prompt": "Is there any milk?",
+            "options": [
+              "Yes, there is.",
+              "No, there aren't.",
+              "Yes, there are."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Yes, there is.\" olmalıdır.",
+              "\"No, there aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there is.\".",
+              "\"Yes, there are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there is.\"."
+            ]
+          },
+          {
+            "prompt": "Are there any eggs?",
+            "options": [
+              "Yes, there are.",
+              "No, there aren't.",
+              "Yes, there is."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Yes, there are.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, there aren't.\".",
+              "Doğru. Bu soruda cevap \"No, there aren't.\" olmalıdır.",
+              "\"Yes, there is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, there aren't.\"."
+            ]
+          },
+          {
+            "prompt": "Are there any tomatoes?",
+            "options": [
+              "Yes, there is.",
+              "No, there aren't.",
+              "Yes, there are."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Yes, there is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there are.\".",
+              "\"No, there aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there are.\".",
+              "Doğru. Bu soruda cevap \"Yes, there are.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What is in the bag?",
+      "content": {
+        "audioText": "\"The volleyball team is preparing for a match. There are some bottles of water in the bag. There aren't any bananas. The coach asks, 'Are there any sandwiches?'\"",
+        "questions": [
+          {
+            "prompt": "What is in the bag?",
+            "options": [
+              "Some bottles of water.",
+              "No, there aren't.",
+              "Sandwiches."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Some bottles of water.\" olmalıdır.",
+              "\"No, there aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some bottles of water.\".",
+              "\"Sandwiches.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Some bottles of water.\"."
+            ]
+          },
+          {
+            "prompt": "Are there any bananas?",
+            "options": [
+              "Sandwiches.",
+              "No, there aren't.",
+              "Some bottles of water."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Sandwiches.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, there aren't.\".",
+              "Doğru. Bu soruda cevap \"No, there aren't.\" olmalıdır.",
+              "\"Some bottles of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, there aren't.\"."
+            ]
+          },
+          {
+            "prompt": "What does the coach ask about?",
+            "options": [
+              "Some bottles of water.",
+              "No, there aren't.",
+              "Sandwiches."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Some bottles of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Sandwiches.\".",
+              "\"No, there aren't.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Sandwiches.\".",
+              "Doğru. Bu soruda cevap \"Sandwiches.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Mutfakla ilgili üç soru sor: - Is there any milk? - Are there any apples? - Is there any bread? Ardından olumlu veya olumsuz kısa cevap ver.",
+      "content": {
+        "sentenceStarters": [
+          "Is there any milk?",
+          "Are there any apples?",
+          "Is there any bread?"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "There are _______ apples.",
+            "options": [
+              "some",
+              "any",
+              "an"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There isn't _______ cheese.",
+            "options": [
+              "some",
+              "any",
+              "a"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Are there _______ bottles?",
+            "options": [
+              "some",
+              "any",
+              "an"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have _______ juice.",
+            "options": [
+              "some",
+              "any",
+              "a"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We don't have _______ rice.",
+            "options": [
+              "some",
+              "any",
+              "an"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "There is _______ water.",
+            "options": [
+              "some",
+              "any",
+              "a"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Is there _______ milk?",
+            "options": [
+              "some",
+              "any",
+              "an"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There aren't _______ sandwiches.",
+            "options": [
+              "some",
+              "any",
+              "a"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We need _______ fruit.",
+            "options": [
+              "some",
+              "any",
+              "an"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Are there _______ bananas?",
+            "options": [
+              "some",
+              "any",
+              "a"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "030-some-any-w1",
+            "word": "fruit",
+            "example": "There is some fruit.",
+            "audioText": "fruit",
+            "prompt": "\"fruit\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "meyve",
+              "meyve suyu",
+              "domates",
+              "buzdolabı"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "030-some-any-w2",
+            "word": "juice",
+            "example": "Is there any juice?",
+            "audioText": "juice",
+            "prompt": "\"juice\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "meyve",
+              "meyve suyu",
+              "domates",
+              "buzdolabı"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "030-some-any-w3",
+            "word": "tomato",
+            "example": "There are some tomatoes.",
+            "audioText": "tomato",
+            "prompt": "\"tomato\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "meyve",
+              "meyve suyu",
+              "domates",
+              "buzdolabı"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "030-some-any-w4",
+            "word": "fridge",
+            "example": "Open the fridge.",
+            "audioText": "fridge",
+            "prompt": "\"fridge\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "meyve",
+              "meyve suyu",
+              "domates",
+              "buzdolabı"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "030-some-any-w5",
+            "word": "plate",
+            "example": "The grapes are on the plate.",
+            "audioText": "plate",
+            "prompt": "\"plate\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "tabak",
+              "meyve",
+              "meyve suyu",
+              "domates"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Olumlu cümlelerde some kullanmak.",
+          "Soru ve olumsuz cümlelerde any kullanmak.",
+          "Hedef kelimeler: fruit, juice, tomato, fridge, plate, basket, enough"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

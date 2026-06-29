@@ -1,0 +1,706 @@
+{
+  "id": "046-telling-a-past-story",
+  "title": "Telling a Past Story",
+  "level": "A2.1",
+  "module": "Geçmiş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Geçmişte yaşanan olayları sıraya koymak.",
+    "first, then, next, after that, finally bağlaçlarını kullanmak.",
+    "Düzenli ve düzensiz geçmiş zaman fiillerini birlikte kullanmak.",
+    "5–6 cümlelik kısa bir geçmiş zaman hikâyesi oluşturmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Beyza'ya günlük bir olayı beş resim veya beş kısa başlıkla sıralatın. Her adımda farklı bir bağlaç kullanmasını isteyin.",
+    "todayGoal": "Geçmişte yaşanan olayları sıraya koymak.",
+    "teachingTips": [
+      "Bu derste \"Telling a Past Story\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "First, I got up.",
+      "Then, I had breakfast.",
+      "Next, I went to school.",
+      "After that, I studied English."
+    ],
+    "listeningScripts": [
+      "\"First, the students entered the hall. Then, they moved the chairs. Next, they checked the microphones. After that, they put the posters on the wall. Finally, the teacher opened the doors.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Telling a Past Story Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Hikâyenin başında en uygun kelime:",
+          "options": [
+            "Finally",
+            "First",
+            "After that"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Hikâyenin sonunda en uygun kelime:",
+          "options": [
+            "Finally",
+            "First",
+            "Next"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "İlk olay için:",
+          "options": [
+            "First",
+            "Finally",
+            "After that"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "_______ , we arrived at school.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "_______ , we went home.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: first / we / arrived",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: Finally, we started the day.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "What did Beyza prepare first?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Telling a Past Story yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Telling a Past Story kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "First",
+        "Finally",
+        "First",
+        "First",
+        "Finally",
+        "first we arrived",
+        "\"we\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır.",
+        "Her sports bag.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "046-telling-a-past-story-w1",
+    "046-telling-a-past-story-w2",
+    "046-telling-a-past-story-w3",
+    "046-telling-a-past-story-w4",
+    "046-telling-a-past-story-w5",
+    "046-telling-a-past-story-w6",
+    "046-telling-a-past-story-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Telling a Past Story",
+      "instructionTr": "Geçmişte yaşanan olayları sıraya koymak.",
+      "content": {
+        "eyebrow": "Geçmiş · DERS 46",
+        "heroText": "First, I got up."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bir geçmiş zaman hikâyesi anlatırken olayları sıraya koymak gerekir. Kullanışlı kelimeler: - First → İlk önce - Then → Sonra - Next → Ardından - After that → Bundan sonra - Finally → Son olarak Örnek: First, we went to the sports hall. Then, we changed our shoes. Next, we warmed up. After that, we played a match. Finally, we went home.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bir geçmiş zaman hikâyesi anlatırken olayları sıraya koymak gerekir. Kullanışlı kelimeler: - First → İlk önce - Then → Sonra - Next → Ardından - After that → Bundan sonra - Finally → Son olarak Örnek: First, we went to the sports hall. Then, we changed our shoes. Next, we warmed up. After that, we played a match. Finally, we went home."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "First, I got up.",
+          "Then, I had breakfast.",
+          "Next, I went to school.",
+          "After that, I studied English.",
+          "Finally, I went home.",
+          "First, the team arrived at the hall.",
+          "Then, the players warmed up.",
+          "Next, they played two sets.",
+          "After that, they drank water.",
+          "Finally, the coach talked to the team."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "1",
+            "First",
+            "First, we arrived."
+          ],
+          [
+            "2",
+            "Then",
+            "Then, we practised."
+          ],
+          [
+            "3",
+            "Next",
+            "Next, we played."
+          ],
+          [
+            "4",
+            "After that",
+            "After that, we rested."
+          ],
+          [
+            "Son",
+            "Finally",
+            "Finally, we went home."
+          ]
+        ]
+      },
+      "explanationTr": "Geçmişte yaşanan olayları sıraya koymak. first, then, next, after that, finally bağlaçlarını kullanmak. Düzenli ve düzensiz geçmiş zaman fiillerini birlikte kullanmak. 5–6 cümlelik kısa bir geçmiş zaman hikâyesi oluşturmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "Olayları zaman sırası olmadan karışık anlatmak",
+          "Her cümlede yalnız then kullanmak",
+          "Geçmiş hikâyede fiilleri Present Simple bırakmak",
+          "Finally kelimesini hikâyenin başında kullanmak"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Hikâyenin başında en uygun kelime:",
+      "content": {
+        "options": [
+          "Finally",
+          "First",
+          "After that"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"Finally\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"First\" çünkü First seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. First seçeneği cümledeki hedef kurala uyar.",
+          "\"After that\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"First\" çünkü First seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Hikâyenin sonunda en uygun kelime:",
+      "content": {
+        "options": [
+          "Finally",
+          "First",
+          "Next"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Finally seçeneği cümledeki hedef kurala uyar.",
+          "\"First\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Finally\" çünkü Finally seçeneği cümledeki hedef kurala uyar.",
+          "\"Next\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Finally\" çünkü Finally seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "_______ , we arrived at school.",
+      "content": {
+        "answer": "First",
+        "accepted": [
+          "First"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"First\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Geçmişte yaşanan olayları sıraya koymak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "first",
+          "we",
+          "arrived"
+        ],
+        "answer": [
+          "first",
+          "we",
+          "arrived"
+        ],
+        "explanationTr": "Doğru sıra: first we arrived"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "Finally,",
+          "we",
+          "started",
+          "the",
+          "day."
+        ],
+        "wrongIndex": 1,
+        "explanationTr": "\"we\" burada hatalıdır; doğru cevap \"doğru cevap\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "First",
+            "İlk önce"
+          ],
+          [
+            "After that",
+            "Bundan sonra"
+          ],
+          [
+            "Finally",
+            "Son olarak"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Last Saturday, Beyza had a volleyball match. First, she prepared her sports bag. Then, she went to the sports hall with her family. Next, the team warmed up. After that, they played the match. Finally, Beyza went home and rested.",
+        "questions": [
+          {
+            "prompt": "What did Beyza prepare first?",
+            "options": [
+              "Her sports bag.",
+              "They warmed up.",
+              "She went home and rested."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Her sports bag.\" olmalıdır.",
+              "\"They warmed up.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her sports bag.\".",
+              "\"She went home and rested.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Her sports bag.\"."
+            ]
+          },
+          {
+            "prompt": "What did the team do before the match?",
+            "options": [
+              "She went home and rested.",
+              "They warmed up.",
+              "Her sports bag."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She went home and rested.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They warmed up.\".",
+              "Doğru. Bu soruda cevap \"They warmed up.\" olmalıdır.",
+              "\"Her sports bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They warmed up.\"."
+            ]
+          },
+          {
+            "prompt": "What did Beyza do finally?",
+            "options": [
+              "Her sports bag.",
+              "They warmed up.",
+              "She went home and rested."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Her sports bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She went home and rested.\".",
+              "\"They warmed up.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She went home and rested.\".",
+              "Doğru. Bu soruda cevap \"She went home and rested.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What did they do first?",
+      "content": {
+        "audioText": "\"First, the students entered the hall. Then, they moved the chairs. Next, they checked the microphones. After that, they put the posters on the wall. Finally, the teacher opened the doors.\"",
+        "questions": [
+          {
+            "prompt": "What did they do first?",
+            "options": [
+              "They entered the hall.",
+              "The microphones.",
+              "The teacher."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"They entered the hall.\" olmalıdır.",
+              "\"The microphones.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They entered the hall.\".",
+              "\"The teacher.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They entered the hall.\"."
+            ]
+          },
+          {
+            "prompt": "What did they check?",
+            "options": [
+              "The teacher.",
+              "The microphones.",
+              "They entered the hall."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"The teacher.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The microphones.\".",
+              "Doğru. Bu soruda cevap \"The microphones.\" olmalıdır.",
+              "\"They entered the hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The microphones.\"."
+            ]
+          },
+          {
+            "prompt": "Who opened the doors?",
+            "options": [
+              "They entered the hall.",
+              "The microphones.",
+              "The teacher."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"They entered the hall.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The teacher.\".",
+              "\"The microphones.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"The teacher.\".",
+              "Doğru. Bu soruda cevap \"The teacher.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Dün yaptıklarını beş adımda anlat: - First, ... - Then, ... - Next, ... - After that, ... - Finally, ...",
+      "content": {
+        "sentenceStarters": [
+          "First, ...",
+          "Then, ...",
+          "Next, ...",
+          "After that, ...",
+          "Finally, ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "İlk olay için:",
+            "options": [
+              "First",
+              "Finally",
+              "After that"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. First seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Finally\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"First\" çünkü First seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Son olay için:",
+            "options": [
+              "Next",
+              "Finally",
+              "First"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. Finally seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Next\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Finally\" çünkü Finally seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Then, we _______ breakfast.",
+            "options": [
+              "have",
+              "had",
+              "having"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. had seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"had\" çünkü had seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Next, the team _______.",
+            "options": [
+              "practised",
+              "practise",
+              "practises"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. practised seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"practise\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practised\" çünkü practised seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Finally, we _______ home.",
+            "options": [
+              "went",
+              "go",
+              "going"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"go\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "\"İlk önce\":",
+            "options": [
+              "First",
+              "Finally",
+              "Yesterday"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. First seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"Finally\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"First\" çünkü First seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Bundan sonra\":",
+            "options": [
+              "After that",
+              "First",
+              "Last"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. After that seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"First\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"After that\" çünkü After that seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "First, she _______ her bag.",
+            "options": [
+              "prepared",
+              "prepare",
+              "prepares"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. prepared seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"prepare\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"prepared\" çünkü prepared seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Then, they _______ to school.",
+            "options": [
+              "went",
+              "go",
+              "going"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. went seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"go\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"went\" çünkü went seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Finally, we _______.",
+            "options": [
+              "rested",
+              "rest",
+              "resting"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. rested seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"rest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rested\" çünkü rested seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "046-telling-a-past-story-w1",
+            "word": "first",
+            "example": "First, we arrived.",
+            "audioText": "first",
+            "prompt": "\"first\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ilk önce",
+              "sonra",
+              "ardından",
+              "bundan sonra"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "046-telling-a-past-story-w2",
+            "word": "then",
+            "example": "Then, we played.",
+            "audioText": "then",
+            "prompt": "\"then\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ilk önce",
+              "sonra",
+              "ardından",
+              "bundan sonra"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "046-telling-a-past-story-w3",
+            "word": "next",
+            "example": "Next, we ate.",
+            "audioText": "next",
+            "prompt": "\"next\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ilk önce",
+              "sonra",
+              "ardından",
+              "bundan sonra"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "046-telling-a-past-story-w4",
+            "word": "after that",
+            "example": "After that, we rested.",
+            "audioText": "after that",
+            "prompt": "\"after that\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "ilk önce",
+              "sonra",
+              "ardından",
+              "bundan sonra"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "046-telling-a-past-story-w5",
+            "word": "finally",
+            "example": "Finally, we went home.",
+            "audioText": "finally",
+            "prompt": "\"finally\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "son olarak",
+              "ilk önce",
+              "sonra",
+              "ardından"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Geçmişte yaşanan olayları sıraya koymak.",
+          "first, then, next, after that, finally bağlaçlarını kullanmak.",
+          "Hedef kelimeler: first, then, next, after that, finally, story, event"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

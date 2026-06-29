@@ -1,0 +1,238 @@
+{
+  "version": "1.1.0",
+  "project": "Poma Academy Football V1",
+  "status": "complete-visual-video-v1",
+  "assets": [
+    {
+      "id": "FOOTBALL_CAST_MASTER",
+      "path": "00-references/football-cast-master.png",
+      "type": "reference",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "4bcfe9f7618ee6f0819630ccadd2ff8d1ea741742e7d9f6276124a122560c7b7"
+    },
+    {
+      "id": "SPORTY_POMA_MASTER",
+      "path": "00-references/sporty-poma-master.png",
+      "type": "reference",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "060c647d0abb5d1160960b1ee3aaec20c27c1de89b9d7ce01b974bbff4832ca6"
+    },
+    {
+      "id": "STADIUM_MASTER",
+      "path": "00-references/stadium-master.png",
+      "type": "reference",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0853331f89514886e49027ef9926b539032a6873afb1701d50f35109b6512bf1"
+    },
+    {
+      "id": "MATCH_INTRO",
+      "path": "01-game-states/match-intro.png",
+      "type": "state",
+      "width": 1672,
+      "height": 941,
+      "sha256": "370f4726d4e10c8a64b6311ecdf02e72d04eed38c94de33a5e871358046f19ad"
+    },
+    {
+      "id": "OPPONENT_ATTACK",
+      "path": "01-game-states/opponent-attack.png",
+      "type": "state",
+      "width": 1672,
+      "height": 941,
+      "sha256": "08a51e6eb7de2f54bd5be3e0c906a12fd8aa099af5d5da8065ebc796e46fbfae"
+    },
+    {
+      "id": "OPPONENT_SHOT_PREPARE",
+      "path": "01-game-states/opponent-shot-prepare.png",
+      "type": "state",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a3990ef0c21c40c95e24afcfc4baa892cbe2e8ec8c17792c4efbc33c1e9a8074"
+    },
+    {
+      "id": "POSSESSION_POMA",
+      "path": "01-game-states/possession-poma.png",
+      "type": "state",
+      "width": 1672,
+      "height": 941,
+      "sha256": "addaa106d09276f5d406c5d37fa97258872b959a6d5fdd9230db3be1af2bd832"
+    },
+    {
+      "id": "SHOT_PREPARE",
+      "path": "01-game-states/shot-prepare.png",
+      "type": "state",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5399f780e85acc6bb0fa73bb56995f4320fa18a513421c769260cc47554ca919"
+    },
+    {
+      "id": "DEFENCE_FAILED",
+      "path": "02-results/defence-failed.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a3990ef0c21c40c95e24afcfc4baa892cbe2e8ec8c17792c4efbc33c1e9a8074"
+    },
+    {
+      "id": "DEFENCE_SUCCESS",
+      "path": "02-results/defence-success.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "eda7dab5e502cfff488869f819d3eaec474915cc67d13f55d96d85d2c4733ed8"
+    },
+    {
+      "id": "GIVE_AND_GO_SUCCESS",
+      "path": "02-results/give-and-go-success.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "00fa55d985851a8d550b8b043f1ff1e3e1cd25e3a556b87c5b68c03398e9c9fc"
+    },
+    {
+      "id": "GOAL_CELEBRATION",
+      "path": "02-results/goal-celebration.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d1958e226bf381d18f944c5f6ffaa8bdde1cd7c6794d15f11c723164e50fa0a7"
+    },
+    {
+      "id": "GOAL_CONCEDED",
+      "path": "02-results/goal-conceded.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5dd0270b0bf827451a4739d34b03401b970f3ab61c17daa3e4bd2d9526d500ae",
+      "video": "03-videos/goal-conceded.mp4",
+      "poster": "02-results/goal-conceded.png"
+    },
+    {
+      "id": "GOAL_SCORED",
+      "path": "02-results/goal-scored.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cf53f73f93e05ca8c57a55ef60a82911a8ea2cd3d0c2e5f4cf4a6967fa8d7c8a",
+      "video": "03-videos/goal-scored.mp4",
+      "poster": "02-results/goal-scored.png"
+    },
+    {
+      "id": "PASS_FAILED",
+      "path": "02-results/pass-failed.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7e35cfe875fac0c4ab9e6a235d427b05ae6098a7d7455e03effde818ee16b2c8"
+    },
+    {
+      "id": "PASS_SUCCESS",
+      "path": "02-results/pass-success.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "16b1d6b8719597ac43bc138be1cf57a6d5e48457726d7af91fc01975c7417f00"
+    },
+    {
+      "id": "SAVE_SUCCESS",
+      "path": "02-results/save-success.png",
+      "type": "result",
+      "width": 1536,
+      "height": 864,
+      "sha256": "bbd304397394cc98fb872fca1f9c189163d32c24cda14b460a2c0527fc49dd9b",
+      "video": "03-videos/save-success.mp4",
+      "poster": "02-results/save-success.png"
+    },
+    {
+      "id": "SHOT_MISSED_POST",
+      "path": "02-results/shot-missed-post.png",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ca74a3b0dbe6376c79302d5a9286af1d848b8fcd2cf0eff2518ced9d0152c4c5",
+      "video": "03-videos/shot-missed-post.mp4",
+      "poster": "02-results/shot-missed-post.png"
+    }
+  ],
+  "aliases": {
+    "DEFENCE_FAILED": "02-results/defence-failed.png",
+    "OPPONENT_SHOT_PREPARE": "01-game-states/opponent-shot-prepare.png"
+  },
+  "videoFallbackRule": "Use the matching PNG poster/fallback when an MP4 is absent, fails to load, or autoplay is unavailable.",
+  "videos": [
+    {
+      "id": "GOAL_SCORED_VIDEO",
+      "path": "03-videos/goal-scored.mp4",
+      "type": "video",
+      "event": "GOAL_SCORED",
+      "poster": "02-results/goal-scored.png",
+      "fallback": "02-results/goal-scored.png",
+      "sha256": "af30b71a4f5e4c724dde9b7306f07def50e29e9ea839e6e8ffa725a7a90a0db1",
+      "codec": "h264",
+      "width": 1280,
+      "height": 720,
+      "fps": 24.0,
+      "durationSeconds": 10.005,
+      "sizeBytes": 2149885
+    },
+    {
+      "id": "SHOT_MISSED_POST_VIDEO",
+      "path": "03-videos/shot-missed-post.mp4",
+      "type": "video",
+      "event": "SHOT_MISSED_POST",
+      "poster": "02-results/shot-missed-post.png",
+      "fallback": "02-results/shot-missed-post.png",
+      "sha256": "04bea46a058117066c2c388f318e7d2649115bd25cb0edf0eb0506d609a443b9",
+      "codec": "h264",
+      "width": 1280,
+      "height": 720,
+      "fps": 24.0,
+      "durationSeconds": 10.005,
+      "sizeBytes": 2563175
+    },
+    {
+      "id": "SAVE_SUCCESS_VIDEO",
+      "path": "03-videos/save-success.mp4",
+      "type": "video",
+      "event": "SAVE_SUCCESS",
+      "poster": "02-results/save-success.png",
+      "fallback": "02-results/save-success.png",
+      "sha256": "37cad71b7eb154481286e8a569ba712e2e32c6c15b58c0c433dcf8493ee67f2d",
+      "codec": "h264",
+      "width": 1280,
+      "height": 720,
+      "fps": 24.0,
+      "durationSeconds": 8.0,
+      "sizeBytes": 1677697
+    },
+    {
+      "id": "GOAL_CONCEDED_VIDEO",
+      "path": "03-videos/goal-conceded.mp4",
+      "type": "video",
+      "event": "GOAL_CONCEDED",
+      "poster": "02-results/goal-conceded.png",
+      "fallback": "02-results/goal-conceded.png",
+      "sha256": "006b8ceced3bb4675cacd90c1787ad1a839a3377b9e82e6170b375afeb6f33c2",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "durationSeconds": 5.1,
+      "sizeBytes": 13406356
+    }
+  ],
+  "videoPlayback": {
+    "autoplay": true,
+    "muted": true,
+    "playsInline": true,
+    "preload": "metadata",
+    "eventsWithVideo": [
+      "GOAL_SCORED",
+      "SHOT_MISSED_POST",
+      "SAVE_SUCCESS",
+      "GOAL_CONCEDED"
+    ]
+  }
+}

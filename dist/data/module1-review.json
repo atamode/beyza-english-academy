@@ -1,0 +1,573 @@
+{
+  "id": "module-1-review",
+  "title": "Modül 1 Genel Tekrar",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "r01",
+      "type": "multiple-choice",
+      "topicTag": "pronouns",
+      "topicLabel": "Subject pronouns",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "The school orchestra practises upstairs. ___ performs on Friday.",
+      "content": {
+        "options": [
+          "It",
+          "They",
+          "We"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Orchestra tek bir topluluk adı olduğu için it ile gösterilebilir.",
+          "They birden fazla ayrı kişi veya şey için kullanılır; orchestra burada tek bir topluluktur.",
+          "We konuşanın dahil olduğu grubu anlatır; konuşanın orkestrada olduğu söylenmiyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r02",
+      "type": "fill-blank",
+      "topicTag": "tobe",
+      "topicLabel": "am / is / are",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "The emergency exits ___ clearly marked.",
+      "content": {
+        "answer": "are",
+        "accepted": [
+          "are"
+        ],
+        "placeholder": "Cevabını yaz",
+        "explanationTr": "Exits çoğuldur; bu yüzden are gerekir."
+      },
+      "points": 10,
+      "hintTr": "Özne, tekil-çoğul ve yakınlık ipuçlarını kontrol et."
+    },
+    {
+      "id": "r03",
+      "type": "multiple-choice",
+      "topicTag": "possessives",
+      "topicLabel": "Possessive adjectives",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Nehir and I compare ___ research notes.",
+      "content": {
+        "options": [
+          "our",
+          "their",
+          "her"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Nehir and I = we; iyelik sıfatı our'dır.",
+          "Their konuşanın dahil olmadığı they grubuna ait şeyler içindir.",
+          "Her tek bir kız veya kadına ait şeyi gösterir; burada iki kişilik we grubu var."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r04",
+      "type": "error-find",
+      "topicTag": "negative",
+      "topicLabel": "To be olumsuz",
+      "title": "Olumsuz cümleyi onar",
+      "instructionTr": "Yanlış kelimeyi seç: The information aren't complete.",
+      "content": {
+        "sentence": [
+          "The",
+          "information",
+          "aren't",
+          "complete"
+        ],
+        "wrongIndex": 2,
+        "correctWord": "isn't",
+        "explanationTr": "Information sayılamayan tekil bir kavramdır; aren't yerine isn't gerekir."
+      },
+      "points": 10
+    },
+    {
+      "id": "r05",
+      "type": "matching",
+      "topicTag": "demonstratives",
+      "topicLabel": "this / that / these / those",
+      "title": "Yakınlık haritası",
+      "instructionTr": "Durumu doğru gösterme ifadesiyle eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "elimdeki tek bilet",
+            "this ticket"
+          ],
+          [
+            "uzaktaki iki kule",
+            "those towers"
+          ],
+          [
+            "masadaki kalemler",
+            "these pens"
+          ]
+        ],
+        "explanationTr": "Tekil-çoğul ve yakın-uzak kararları birlikte verilmelidir."
+      },
+      "points": 20
+    },
+    {
+      "id": "r06",
+      "type": "listening",
+      "topicTag": "havegot",
+      "topicLabel": "have got / has got",
+      "title": "Bisiklet atölyesi",
+      "instructionTr": "Dinle: What has the workshop got near the door?",
+      "content": {
+        "audioText": "The bicycle workshop has got a repair stand near the door. It has got many tools, but it hasn't got an air pump yet.",
+        "options": [
+          "A repair stand",
+          "An air pump",
+          "Two bicycles"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Metin kapının yanında bir repair stand olduğunu söylüyor.",
+          "Atölyenin henüz air pump sahibi olmadığı söyleniyor.",
+          "İki bisikletten söz edilmiyor; kapı yanındaki nesne repair stand."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r07",
+      "type": "sentence-order",
+      "topicTag": "questions",
+      "topicLabel": "To be soruları",
+      "title": "Soruyu sırala",
+      "instructionTr": "Kelimeleri doğru soru sırasına koy.",
+      "content": {
+        "tokens": [
+          "your",
+          "Are",
+          "online",
+          "classmates"
+        ],
+        "answer": [
+          "Are",
+          "your",
+          "classmates",
+          "online"
+        ],
+        "explanationTr": "To be sorusunda Are başa, çoğul özne your classmates hemen sonrasına gelir."
+      },
+      "points": 10,
+      "hintTr": "Yardımcı fiili başa taşı."
+    },
+    {
+      "id": "r08",
+      "type": "reading",
+      "topicTag": "pronouns",
+      "topicLabel": "Subject pronouns",
+      "title": "Dağ ekibi",
+      "instructionTr": "Metni oku ve zamirin gönderimini bul.",
+      "content": {
+        "text": "Selma checks the route. Her teammates wait beside the minibus. They carry the safety equipment together.",
+        "questions": [
+          {
+            "prompt": "Who does ‘They’ describe?",
+            "options": [
+              "Selma alone",
+              "Her teammates",
+              "The minibus"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Selma tek kişidir; she ile gösterilirdi.",
+              "Doğru. They çoğul her teammates grubuna gönderme yapar.",
+              "Minibus tek bir nesnedir; it ile gösterilirdi."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r09",
+      "type": "multiple-choice",
+      "topicTag": "tobe",
+      "topicLabel": "am / is / are",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Every seat in the small theatre ___ numbered.",
+      "content": {
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Every seat dil bilgisi bakımından tekildir ve is alır.",
+          "Are çoğul özneler içindir; every seat tekildir.",
+          "Am yalnız I öznesiyle kullanılır."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r10",
+      "type": "fill-blank",
+      "topicTag": "negative",
+      "topicLabel": "To be olumsuz",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "I ___ responsible for the red bag; it belongs to Arda.",
+      "content": {
+        "answer": "am not",
+        "accepted": [
+          "am not"
+        ],
+        "placeholder": "Cevabını yaz",
+        "explanationTr": "I öznesinin olumsuz to be biçimi am not olur."
+      },
+      "points": 10,
+      "hintTr": "Özne, tekil-çoğul ve yakınlık ipuçlarını kontrol et."
+    },
+    {
+      "id": "r11",
+      "type": "multiple-choice",
+      "topicTag": "questions",
+      "topicLabel": "To be soruları",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "___ the headphones in the equipment box?",
+      "content": {
+        "options": [
+          "Are",
+          "Is",
+          "Am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Headphones çoğuldur; soru Are ile başlar.",
+          "Is tekil bir headphone için kullanılabilirdi; burada çoğul var.",
+          "Am yalnız I ile soru kurar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r12",
+      "type": "sentence-order",
+      "topicTag": "possessives",
+      "topicLabel": "Possessive adjectives",
+      "title": "İyelik cümlesini kur",
+      "instructionTr": "Kelimeleri anlamlı sıraya koy.",
+      "content": {
+        "tokens": [
+          "protects",
+          "its",
+          "The",
+          "nest",
+          "eagle"
+        ],
+        "answer": [
+          "The",
+          "eagle",
+          "protects",
+          "its",
+          "nest"
+        ],
+        "explanationTr": "Its, eagle'a ait nest isminden hemen önce gelir."
+      },
+      "points": 10,
+      "hintTr": "Özneyle başla; iyelik sıfatını ismin önüne koy."
+    },
+    {
+      "id": "r13",
+      "type": "multiple-choice",
+      "topicTag": "havegot",
+      "topicLabel": "have got / has got",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Which sentence asks about possession correctly?",
+      "content": {
+        "options": [
+          "Has the tablet got a case?",
+          "Is the tablet got a case?",
+          "Have the tablet got a case?"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Tekil tablet ile soru Has ... got biçimindedir.",
+          "Is got sahiplik sorusu kurmaz.",
+          "Have çoğul tablets ile kullanılabilirdi; tablet tekildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r14",
+      "type": "error-find",
+      "topicTag": "demonstratives",
+      "topicLabel": "this / that / these / those",
+      "title": "Gösterme hatasını bul",
+      "instructionTr": "Yanlış kelimeyi seç: That gloves over there are waterproof.",
+      "content": {
+        "sentence": [
+          "That",
+          "gloves",
+          "over",
+          "there",
+          "are",
+          "waterproof"
+        ],
+        "wrongIndex": 0,
+        "correctWord": "Those",
+        "explanationTr": "Gloves çoğul ve uzakta; That yerine Those gerekir."
+      },
+      "points": 10
+    },
+    {
+      "id": "r15",
+      "type": "listening",
+      "topicTag": "tobe",
+      "topicLabel": "am / is / are",
+      "title": "Hava gözlem istasyonu",
+      "instructionTr": "Dinle: Which instruments are outside?",
+      "content": {
+        "audioText": "The weather station is on the roof. The main computer is inside, but the wind sensors are outside. I am in the control room.",
+        "options": [
+          "The wind sensors",
+          "The main computer",
+          "The control room"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Wind sensors are outside deniyor.",
+          "Main computer için inside bilgisi veriliyor.",
+          "Control room dışarıdaki cihaz olarak belirtilmiyor."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r16",
+      "type": "multiple-choice",
+      "topicTag": "negative",
+      "topicLabel": "To be olumsuz",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Choose the sentence that means ‘Bu yollar güvenli değil.’",
+      "content": {
+        "options": [
+          "These roads aren't safe.",
+          "This roads isn't safe.",
+          "These roads isn't safe."
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Roads çoğuldur; these ve aren't birlikte kullanılır.",
+          "This tekil isimle kullanılır; roads çoğuldur.",
+          "These roads çoğuldur ama isn't tekildir; aren't gerekir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r17",
+      "type": "matching",
+      "topicTag": "possessives",
+      "topicLabel": "Possessive adjectives",
+      "title": "Sahipleri bul",
+      "instructionTr": "Kişiyi doğru iyelik grubuyla eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "the actress",
+            "her script"
+          ],
+          [
+            "my team and I",
+            "our strategy"
+          ],
+          [
+            "two photographers",
+            "their cameras"
+          ]
+        ],
+        "explanationTr": "Sahibin kişi ve sayı özelliği iyelik sıfatını belirler."
+      },
+      "points": 20
+    },
+    {
+      "id": "r18",
+      "type": "fill-blank",
+      "topicTag": "havegot",
+      "topicLabel": "have got / has got",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "The research team ___ enough samples for the experiment.",
+      "content": {
+        "answer": "has got",
+        "accepted": [
+          "has got"
+        ],
+        "placeholder": "Cevabını yaz",
+        "explanationTr": "Team tek bir topluluk adı olarak kullanıldığı için has got gerekir."
+      },
+      "points": 10,
+      "hintTr": "Özne, tekil-çoğul ve yakınlık ipuçlarını kontrol et."
+    },
+    {
+      "id": "r19",
+      "type": "reading",
+      "topicTag": "demonstratives",
+      "topicLabel": "this / that / these / those",
+      "title": "Pazar standı",
+      "instructionTr": "Metni oku ve mesafe ipucunu kullan.",
+      "content": {
+        "text": "Mert holds up a blue scarf. ‘This is handmade,’ he says. He points across the market. ‘Those bags beside the fountain are handmade too.’",
+        "questions": [
+          {
+            "prompt": "Which items are far from Mert?",
+            "options": [
+              "The blue scarf",
+              "The bags",
+              "His hands"
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "Scarf Mert'in elindedir ve this ile gösterilir; yakındır.",
+              "Doğru. Bags uzaktaki çeşmenin yanındadır ve those ile gösterilir.",
+              "Hands bir ürün değildir; metin uzaktaki bags grubunu soruyor."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r20",
+      "type": "multiple-choice",
+      "topicTag": "pronouns",
+      "topicLabel": "Subject pronouns",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Bora, Eylül and the guide enter the cave. ___ wear helmets.",
+      "content": {
+        "options": [
+          "They",
+          "We",
+          "He"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Üç kişilik ve konuşanı içermeyen grup they ile gösterilir.",
+          "We konuşanın dahil olduğu gruptur; konuşan listede yok.",
+          "He tek bir erkek içindir; burada üç kişi var."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r21",
+      "type": "error-find",
+      "topicTag": "questions",
+      "topicLabel": "To be soruları",
+      "title": "Kısa cevabı düzelt",
+      "instructionTr": "Yanlış kelimeyi seç: Is the parcel heavy? Yes, it are.",
+      "content": {
+        "sentence": [
+          "Is",
+          "the",
+          "parcel",
+          "heavy",
+          "Yes",
+          "it",
+          "are"
+        ],
+        "wrongIndex": 6,
+        "correctWord": "is",
+        "explanationTr": "Parcel yerine it gelir; kısa cevap Yes, it is olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "r22",
+      "type": "fill-blank",
+      "topicTag": "possessives",
+      "topicLabel": "Possessive adjectives",
+      "title": "Boşluğu tamamla",
+      "instructionTr": "The owl opens ___ wings before landing.",
+      "content": {
+        "answer": "its",
+        "accepted": [
+          "its"
+        ],
+        "placeholder": "Cevabını yaz",
+        "explanationTr": "Owl tek bir hayvandır; ona ait wings için apostrofsuz its kullanılır."
+      },
+      "points": 10,
+      "hintTr": "Özne, tekil-çoğul ve yakınlık ipuçlarını kontrol et."
+    },
+    {
+      "id": "r23",
+      "type": "multiple-choice",
+      "topicTag": "havegot",
+      "topicLabel": "have got / has got",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Which negative sentence matches a singular subject?",
+      "content": {
+        "options": [
+          "The cabin hasn't got electricity.",
+          "The cabin haven't got electricity.",
+          "The cabin isn't got electricity."
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. Cabin tekildir; hasn't got kullanılır.",
+          "Haven't got çoğul veya I/you/we/they özneleri içindir.",
+          "Isn't got sahiplik olumsuzu değildir."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "r24",
+      "type": "sentence-order",
+      "topicTag": "demonstratives",
+      "topicLabel": "this / that / these / those",
+      "title": "Uzak nesneleri sor",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "those",
+          "Are",
+          "satellites",
+          "moving"
+        ],
+        "answer": [
+          "Are",
+          "those",
+          "satellites",
+          "moving"
+        ],
+        "explanationTr": "Çoğul soru Are ile başlar; those satellites birlikte özneyi oluşturur."
+      },
+      "points": 10,
+      "hintTr": "Are ile başla; those sözcüğünü satellites önünde tut."
+    },
+    {
+      "id": "r25",
+      "type": "multiple-choice",
+      "topicTag": "questions",
+      "topicLabel": "To be soruları",
+      "title": "Doğru seçimi yap",
+      "instructionTr": "Choose the correct short answer: Are Ece and Duru partners?",
+      "content": {
+        "options": [
+          "Yes, they are.",
+          "Yes, she is.",
+          "Yes, they is."
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. İki kişi they olur ve are ile cevaplanır.",
+          "She tek bir kız içindir; Ece and Duru iki kişidir.",
+          "They ile is kullanılamaz; are korunur."
+        ]
+      },
+      "points": 10
+    }
+  ]
+}

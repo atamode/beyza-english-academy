@@ -1,0 +1,693 @@
+{
+  "id": "032-a-few-a-little",
+  "title": "a few / a little",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Sayılabilen çoğul isimlerle a few kullanmak.",
+    "Sayılamayan isimlerle a little kullanmak.",
+    "Küçük ama yeterli miktarları ifade etmek.",
+    "Yiyecek, içecek ve alışveriş cümleleri kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "A few ve a little için nesneleri gerçek hayatta göstermek çok etkilidir. Örneğin üç elmayı gösterip a few apples, yarım bardak suyu gösterip a little water diyebilirsiniz.",
+    "todayGoal": "Sayılabilen çoğul isimlerle a few kullanmak.",
+    "teachingTips": [
+      "Bu derste \"a few / a little\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I have a few apples.",
+      "There is a little milk.",
+      "We need a few tomatoes.",
+      "Add a little water."
+    ],
+    "listeningScripts": [
+      "\"Before the match, the team has a light snack. There are a few bananas and a few sandwiches. Each player drinks a little water before going onto the court.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "a few / a little Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "We need _______ tomatoes.",
+          "options": [
+            "a few",
+            "a little",
+            "much"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "There is _______ milk.",
+          "options": [
+            "a few",
+            "a little",
+            "many"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ apples",
+          "options": [
+            "a few",
+            "a little",
+            "much"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "Add _______ sugar.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "There are _______ bottles on the table.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: a few / have / we / apples",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: There is a few rice.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How much cheese does she use?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "a few / a little yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "a few / a little kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "a few",
+        "a little",
+        "a few",
+        "a little",
+        "a few",
+        "we have a few apples",
+        "\"a few\" burada hatalıdır; doğru cevap \"a little\" olmalıdır.",
+        "A little cheese.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "032-a-few-a-little-w1",
+    "032-a-few-a-little-w2",
+    "032-a-few-a-little-w3",
+    "032-a-few-a-little-w4",
+    "032-a-few-a-little-w5",
+    "032-a-few-a-little-w6",
+    "032-a-few-a-little-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "a few / a little",
+      "instructionTr": "Sayılabilen çoğul isimlerle a few kullanmak.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 32",
+        "heroText": "I have a few apples."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "A few, sayılabilen çoğul isimlerle kullanılır: - a few apples - a few sandwiches - a few bottles A little, sayılamayan isimlerle kullanılır: - a little milk - a little rice - a little water Kısaca: - birkaç tane → a few - biraz → a little",
+      "content": {
+        "examples": [],
+        "noteTr": "A few, sayılabilen çoğul isimlerle kullanılır: - a few apples - a few sandwiches - a few bottles A little, sayılamayan isimlerle kullanılır: - a little milk - a little rice - a little water Kısaca: - birkaç tane → a few - biraz → a little"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I have a few apples.",
+          "There is a little milk.",
+          "We need a few tomatoes.",
+          "Add a little water.",
+          "She has a few sandwiches.",
+          "There is a little rice in the bowl.",
+          "The players drink a little water.",
+          "We have a few chairs near the stage.",
+          "Add a little cheese to the sandwich.",
+          "There are a few snacks in the bag."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Sayılabilen çoğul",
+            "a few",
+            "a few apples"
+          ],
+          [
+            "Sayılamayan",
+            "a little",
+            "a little milk"
+          ]
+        ]
+      },
+      "explanationTr": "Sayılabilen çoğul isimlerle a few kullanmak. Sayılamayan isimlerle a little kullanmak. Küçük ama yeterli miktarları ifade etmek. Yiyecek, içecek ve alışveriş cümleleri kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "a little apples ❌ → a few apples ✅",
+          "a few water ❌ → a little water ✅",
+          "few milk ❌ → a little milk ✅",
+          "a little sandwiches ❌ → a few sandwiches ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "We need _______ tomatoes.",
+      "content": {
+        "options": [
+          "a few",
+          "a little",
+          "much"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+          "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar.",
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "There is _______ milk.",
+      "content": {
+        "options": [
+          "a few",
+          "a little",
+          "many"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+          "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "Add _______ sugar.",
+      "content": {
+        "answer": "a little",
+        "accepted": [
+          "a little"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"a little\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Sayılabilen çoğul isimlerle a few kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "a few",
+          "have",
+          "we",
+          "apples"
+        ],
+        "answer": [
+          "we",
+          "have",
+          "a few",
+          "apples"
+        ],
+        "explanationTr": "Doğru sıra: we have a few apples"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "There",
+          "is",
+          "a",
+          "few",
+          "rice."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"a few\" burada hatalıdır; doğru cevap \"a little\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "apples",
+            "a few"
+          ],
+          [
+            "water",
+            "a little"
+          ],
+          [
+            "sandwiches",
+            "a few"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is making a sandwich. She uses a little cheese and a few tomato slices. She adds a little sauce. There are also a few olives on the plate.",
+        "questions": [
+          {
+            "prompt": "How much cheese does she use?",
+            "options": [
+              "A little cheese.",
+              "A few tomato slices.",
+              "A few olives."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"A little cheese.\" olmalıdır.",
+              "\"A few tomato slices.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A little cheese.\".",
+              "\"A few olives.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A little cheese.\"."
+            ]
+          },
+          {
+            "prompt": "How many tomato slices does she use?",
+            "options": [
+              "A few olives.",
+              "A few tomato slices.",
+              "A little cheese."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A few olives.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A few tomato slices.\".",
+              "Doğru. Bu soruda cevap \"A few tomato slices.\" olmalıdır.",
+              "\"A little cheese.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A few tomato slices.\"."
+            ]
+          },
+          {
+            "prompt": "What is on the plate?",
+            "options": [
+              "A little cheese.",
+              "A few tomato slices.",
+              "A few olives."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"A little cheese.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A few olives.\".",
+              "\"A few tomato slices.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A few olives.\".",
+              "Doğru. Bu soruda cevap \"A few olives.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Are there many bananas?",
+      "content": {
+        "audioText": "\"Before the match, the team has a light snack. There are a few bananas and a few sandwiches. Each player drinks a little water before going onto the court.\"",
+        "questions": [
+          {
+            "prompt": "Are there many bananas?",
+            "options": [
+              "No, there are only a few.",
+              "A few sandwiches.",
+              "A little water."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"No, there are only a few.\" olmalıdır.",
+              "\"A few sandwiches.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, there are only a few.\".",
+              "\"A little water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"No, there are only a few.\"."
+            ]
+          },
+          {
+            "prompt": "What else is there?",
+            "options": [
+              "A little water.",
+              "A few sandwiches.",
+              "No, there are only a few."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A little water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A few sandwiches.\".",
+              "Doğru. Bu soruda cevap \"A few sandwiches.\" olmalıdır.",
+              "\"No, there are only a few.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A few sandwiches.\"."
+            ]
+          },
+          {
+            "prompt": "What do the players drink?",
+            "options": [
+              "No, there are only a few.",
+              "A few sandwiches.",
+              "A little water."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"No, there are only a few.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A little water.\".",
+              "\"A few sandwiches.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A little water.\".",
+              "Doğru. Bu soruda cevap \"A little water.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Aşağıdaki kelimelerle a few veya a little kullan: - apples - milk - rice - bottles - sandwiches",
+      "content": {
+        "sentenceStarters": [
+          "apples",
+          "milk",
+          "rice",
+          "bottles",
+          "sandwiches"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ apples",
+            "options": [
+              "a few",
+              "a little",
+              "much"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ milk",
+            "options": [
+              "a few",
+              "a little",
+              "many"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ sandwiches",
+            "options": [
+              "a few",
+              "a little",
+              "much"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ rice",
+            "options": [
+              "a few",
+              "a little",
+              "many"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ bottles",
+            "options": [
+              "a few",
+              "a little",
+              "much"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "There are _______ oranges.",
+            "options": [
+              "a few",
+              "a little",
+              "much"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There is _______ juice.",
+            "options": [
+              "a few",
+              "a little",
+              "many"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We need _______ tomatoes.",
+            "options": [
+              "a few",
+              "a little",
+              "much"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Add _______ cheese.",
+            "options": [
+              "a few",
+              "a little",
+              "many"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has _______ snacks.",
+            "options": [
+              "a few",
+              "a little",
+              "much"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "032-a-few-a-little-w1",
+            "word": "a few",
+            "example": "a few apples",
+            "audioText": "a few",
+            "prompt": "\"a few\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "birkaç",
+              "biraz",
+              "şeker",
+              "sos"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "032-a-few-a-little-w2",
+            "word": "a little",
+            "example": "a little milk",
+            "audioText": "a little",
+            "prompt": "\"a little\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "birkaç",
+              "biraz",
+              "şeker",
+              "sos"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "032-a-few-a-little-w3",
+            "word": "sugar",
+            "example": "a little sugar",
+            "audioText": "sugar",
+            "prompt": "\"sugar\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "birkaç",
+              "biraz",
+              "şeker",
+              "sos"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "032-a-few-a-little-w4",
+            "word": "sauce",
+            "example": "a little sauce",
+            "audioText": "sauce",
+            "prompt": "\"sauce\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "birkaç",
+              "biraz",
+              "şeker",
+              "sos"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "032-a-few-a-little-w5",
+            "word": "olive",
+            "example": "a few olives",
+            "audioText": "olive",
+            "prompt": "\"olive\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "zeytin",
+              "birkaç",
+              "biraz",
+              "şeker"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Sayılabilen çoğul isimlerle a few kullanmak.",
+          "Sayılamayan isimlerle a little kullanmak.",
+          "Hedef kelimeler: a few, a little, sugar, sauce, olive, light, add"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "id": "059-for-since",
+  "title": "for / since",
+  "level": "A2.1",
+  "module": "A2 Devam",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Süre bildiren ifadelerle for kullanmak.",
+    "Başlangıç noktası bildiren ifadelerle since kullanmak.",
+    "How long...? sorusunu anlamak.",
+    "Present Perfect ile devam eden durumları anlatmak.",
+    "Kısa ve gerçekçi süre cümleleri kurmak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Önce ifadenin \"süre\" mi \"başlangıç noktası\" mı olduğunu sorun. Bu ayrım for / since seçimini kolaylaştırır.",
+    "todayGoal": "Süre bildiren ifadelerle for kullanmak.",
+    "teachingTips": [
+      "Bu derste \"for / since\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "I have lived here for five years.",
+      "She has studied English for six months.",
+      "We have waited for twenty minutes.",
+      "They have known each other for a long time."
+    ],
+    "listeningScripts": [
+      "\"The coach has worked at the sports centre for five years. She has trained this team since January. The players have practised together for six months. They have used the new court since March.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "for / since Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "She has studied English _______ two years.",
+          "options": [
+            "for",
+            "since",
+            "yet"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "He has lived here _______ 2023.",
+          "options": [
+            "for",
+            "since",
+            "already"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "_______ two hours",
+          "options": [
+            "for",
+            "since",
+            "yet"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "We have waited _______ thirty minutes.",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "She has played volleyball _______ September.",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: for / I / have lived / here / five years",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: I have known her since three years.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How long has Beyza studied English?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "for / since yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "for / since kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "for",
+        "since",
+        "for",
+        "for",
+        "since",
+        "I have lived here for five years",
+        "\"since\" burada hatalıdır; doğru cevap \"for\" olmalıdır.",
+        "For several months.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "059-for-since-w1",
+    "059-for-since-w2",
+    "059-for-since-w3",
+    "059-for-since-w4",
+    "059-for-since-w5",
+    "059-for-since-w6",
+    "059-for-since-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "for / since",
+      "instructionTr": "Süre bildiren ifadelerle for kullanmak.",
+      "content": {
+        "eyebrow": "A2 Devam · DERS 59",
+        "heroText": "I have lived here for five years."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "For, bir sürenin ne kadar olduğunu söyler: - for two hours - for three days - for a year - for a long time Since, başlangıç noktasını söyler: - since Monday - since 2025 - since this morning - since I was six Örnek: - I have lived here for five years. - She has played volleyball since 2024. Soru: - How long have you lived here? - How long has she played volleyball?",
+      "content": {
+        "examples": [],
+        "noteTr": "For, bir sürenin ne kadar olduğunu söyler: - for two hours - for three days - for a year - for a long time Since, başlangıç noktasını söyler: - since Monday - since 2025 - since this morning - since I was six Örnek: - I have lived here for five years. - She has played volleyball since 2024. Soru: - How long have you lived here? - How long has she played volleyball?"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "I have lived here for five years.",
+          "She has studied English for six months.",
+          "We have waited for twenty minutes.",
+          "They have known each other for a long time.",
+          "Beyza has played volleyball since 2024.",
+          "He has been here since Monday.",
+          "The team has practised here since September.",
+          "I have had this bag for two years.",
+          "She has liked music since she was little.",
+          "We have used this classroom since last week."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Süre",
+            "for",
+            "for two years"
+          ],
+          [
+            "Başlangıç noktası",
+            "since",
+            "since 2024"
+          ],
+          [
+            "Soru",
+            "How long...?",
+            "How long have you...?"
+          ]
+        ]
+      },
+      "explanationTr": "Süre bildiren ifadelerle for kullanmak. Başlangıç noktası bildiren ifadelerle since kullanmak. How long...? sorusunu anlamak. Present Perfect ile devam eden durumları anlatmak. Kısa ve gerçekçi süre cümleleri kurmak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "since three years ❌ → for three years ✅",
+          "for Monday ❌ → since Monday ✅",
+          "I live here since 2024. hedef yapı → I have lived here since 2024. ✅",
+          "How long you have lived here? ❌ → How long have you lived here? ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "She has studied English _______ two years.",
+      "content": {
+        "options": [
+          "for",
+          "since",
+          "yet"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+          "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar.",
+          "\"yet\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "He has lived here _______ 2023.",
+      "content": {
+        "options": [
+          "for",
+          "since",
+          "already"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+          "\"already\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "We have waited _______ thirty minutes.",
+      "content": {
+        "answer": "for",
+        "accepted": [
+          "for"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"for\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Süre bildiren ifadelerle for kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "for",
+          "I",
+          "have lived",
+          "here",
+          "five years"
+        ],
+        "answer": [
+          "I",
+          "have lived",
+          "here",
+          "for",
+          "five years"
+        ],
+        "explanationTr": "Doğru sıra: I have lived here for five years"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "I",
+          "have",
+          "known",
+          "her",
+          "since",
+          "three",
+          "years."
+        ],
+        "wrongIndex": 4,
+        "explanationTr": "\"since\" burada hatalıdır; doğru cevap \"for\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "two years",
+            "for"
+          ],
+          [
+            "Monday",
+            "since"
+          ],
+          [
+            "a long time",
+            "for"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza has studied English for several months. She has used the English Academy since the beginning of summer. She has played volleyball since last year. She has known her best friend for many years.",
+        "questions": [
+          {
+            "prompt": "How long has Beyza studied English?",
+            "options": [
+              "For several months.",
+              "Since the beginning of summer.",
+              "For many years."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"For several months.\" olmalıdır.",
+              "\"Since the beginning of summer.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For several months.\".",
+              "\"For many years.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For several months.\"."
+            ]
+          },
+          {
+            "prompt": "Since when has she used the Academy?",
+            "options": [
+              "For many years.",
+              "Since the beginning of summer.",
+              "For several months."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"For many years.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Since the beginning of summer.\".",
+              "Doğru. Bu soruda cevap \"Since the beginning of summer.\" olmalıdır.",
+              "\"For several months.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Since the beginning of summer.\"."
+            ]
+          },
+          {
+            "prompt": "How long has she known her best friend?",
+            "options": [
+              "For several months.",
+              "Since the beginning of summer.",
+              "For many years."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"For several months.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For many years.\".",
+              "\"Since the beginning of summer.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For many years.\".",
+              "Doğru. Bu soruda cevap \"For many years.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "How long has the coach worked there?",
+      "content": {
+        "audioText": "\"The coach has worked at the sports centre for five years. She has trained this team since January. The players have practised together for six months. They have used the new court since March.\"",
+        "questions": [
+          {
+            "prompt": "How long has the coach worked there?",
+            "options": [
+              "For five years.",
+              "Since January.",
+              "For six months."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"For five years.\" olmalıdır.",
+              "\"Since January.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For five years.\".",
+              "\"For six months.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For five years.\"."
+            ]
+          },
+          {
+            "prompt": "Since when has she trained the team?",
+            "options": [
+              "For six months.",
+              "Since January.",
+              "For five years."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"For six months.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Since January.\".",
+              "Doğru. Bu soruda cevap \"Since January.\" olmalıdır.",
+              "\"For five years.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Since January.\"."
+            ]
+          },
+          {
+            "prompt": "How long have the players practised together?",
+            "options": [
+              "For five years.",
+              "Since January.",
+              "For six months."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"For five years.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For six months.\".",
+              "\"Since January.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"For six months.\".",
+              "Doğru. Bu soruda cevap \"For six months.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Üç cümle kur: - I have lived ... for ... - I have studied ... since ... - I have known ... for ...",
+      "content": {
+        "sentenceStarters": [
+          "I have lived ... for ...",
+          "I have studied ... since ...",
+          "I have known ... for ..."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "_______ two hours",
+            "options": [
+              "for",
+              "since",
+              "yet"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "_______ Monday",
+            "options": [
+              "for",
+              "since",
+              "already"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has lived here _______ 2022.",
+            "options": [
+              "for",
+              "since",
+              "yet"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We have waited _______ a long time.",
+            "options": [
+              "for",
+              "since",
+              "ever"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How long _______ you studied English?",
+            "options": [
+              "have",
+              "has",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. have seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"has\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have\" çünkü have seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "I have had this book _______ three months.",
+            "options": [
+              "for",
+              "since",
+              "yet"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She has been here _______ Tuesday.",
+            "options": [
+              "for",
+              "since",
+              "already"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They have played together _______ a year.",
+            "options": [
+              "for",
+              "since",
+              "ever"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. for seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"since\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"for\" çünkü for seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "He has studied here _______ September.",
+            "options": [
+              "for",
+              "since",
+              "yet"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. since seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"for\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"since\" çünkü since seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How long _______ she lived here?",
+            "options": [
+              "has",
+              "have",
+              "did"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. has seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"have\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has\" çünkü has seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "059-for-since-w1",
+            "word": "for",
+            "example": "for two years",
+            "audioText": "for",
+            "prompt": "\"for\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "boyunca",
+              "-den beri",
+              "ne kadar süredir",
+              "ay"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "059-for-since-w2",
+            "word": "since",
+            "example": "since Monday",
+            "audioText": "since",
+            "prompt": "\"since\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "boyunca",
+              "-den beri",
+              "ne kadar süredir",
+              "ay"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "059-for-since-w3",
+            "word": "how long",
+            "example": "How long have you lived here?",
+            "audioText": "how long",
+            "prompt": "\"how long\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "boyunca",
+              "-den beri",
+              "ne kadar süredir",
+              "ay"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "059-for-since-w4",
+            "word": "month",
+            "example": "for six months",
+            "audioText": "month",
+            "prompt": "\"month\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "boyunca",
+              "-den beri",
+              "ne kadar süredir",
+              "ay"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "059-for-since-w5",
+            "word": "year",
+            "example": "for two years",
+            "audioText": "year",
+            "prompt": "\"year\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "yıl",
+              "boyunca",
+              "-den beri",
+              "ne kadar süredir"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Süre bildiren ifadelerle for kullanmak.",
+          "Başlangıç noktası bildiren ifadelerle since kullanmak.",
+          "Hedef kelimeler: for, since, how long, month, year, beginning, known"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

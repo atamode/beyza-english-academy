@@ -1,0 +1,5 @@
+import test from "node:test";import assert from "node:assert/strict";import {pointsForAttempt,starsForPercent,diagnosticBand,analyzeDiagnostic} from "../js/scoring.js";
+test("attempt scoring follows sprint rules",()=>{assert.equal(pointsForAttempt(1),10);assert.equal(pointsForAttempt(2),6);assert.equal(pointsForAttempt(3),3);assert.equal(pointsForAttempt(1,true),5)});
+test("star thresholds are exact",()=>{assert.equal(starsForPercent(59),0);assert.equal(starsForPercent(60),1);assert.equal(starsForPercent(75),2);assert.equal(starsForPercent(90),3)});
+test("diagnostic bands cover all scores",()=>{assert.equal(diagnosticBand(7).label,"A1 temel köprü");assert.equal(diagnosticBand(8).label,"A1 orta");assert.equal(diagnosticBand(14).label,"A1 sonu");assert.equal(diagnosticBand(19).label,"A2 başlangıç");assert.equal(diagnosticBand(23).label,"A2 orta başlangıç")});
+test("topic analysis counts correct answers",()=>{const q=[{correctIndex:0,topicTag:"a",topicLabel:"A"},{correctIndex:1,topicTag:"a",topicLabel:"A"}];const r=analyzeDiagnostic(q,[0,0]);assert.equal(r.score,1);assert.equal(r.topics[0].percent,50);assert.equal(r.needsWork.length,1)});

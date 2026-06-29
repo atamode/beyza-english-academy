@@ -1,0 +1,555 @@
+{
+  "id": "module-6-review",
+  "moduleId": "module-6",
+  "title": "Yetenek, Tavsiye ve Kurallar Genel Tekrar",
+  "description": "Yetenek, Tavsiye ve Kurallar derslerini ölçen gerçek kaynak sorularından oluşturuldu.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "module-6-review-01",
+      "type": "multiple-choice",
+      "topicTag": "can-cant",
+      "topicLabel": "can / can't",
+      "title": "can / can't tekrar",
+      "instructionTr": "I can _______ fast.",
+      "content": {
+        "options": [
+          "run",
+          "runs",
+          "running"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. run seçeneği cümledeki hedef kurala uyar.",
+          "\"runs\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"run\" çünkü run seçeneği cümledeki hedef kurala uyar.",
+          "\"running\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"run\" çünkü run seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-02",
+      "type": "multiple-choice",
+      "topicTag": "can-cant",
+      "topicLabel": "can / can't",
+      "title": "can / can't tekrar",
+      "instructionTr": "She _______ play the drums.",
+      "content": {
+        "options": [
+          "can",
+          "cans",
+          "is can"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+          "\"cans\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar.",
+          "\"is can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-03",
+      "type": "multiple-choice",
+      "topicTag": "can-cant",
+      "topicLabel": "can / can't",
+      "title": "can / can't tekrar",
+      "instructionTr": "Can they swim? — No, they _______.",
+      "content": {
+        "options": [
+          "don't",
+          "can't",
+          "aren't"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"don't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can't\" çünkü can't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. can't seçeneği cümledeki hedef kurala uyar.",
+          "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can't\" çünkü can't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-04",
+      "type": "multiple-choice",
+      "topicTag": "can-cant",
+      "topicLabel": "can / can't",
+      "title": "can / can't tekrar",
+      "instructionTr": "He can't _______ a car.",
+      "content": {
+        "options": [
+          "drives",
+          "drive",
+          "driving"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"drives\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drive\" çünkü drive seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. drive seçeneği cümledeki hedef kurala uyar.",
+          "\"driving\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"drive\" çünkü drive seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-05",
+      "type": "multiple-choice",
+      "topicTag": "could",
+      "topicLabel": "could",
+      "title": "could tekrar",
+      "instructionTr": "I _______ swim when I was seven.",
+      "content": {
+        "options": [
+          "could",
+          "can",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. could seçeneği cümledeki hedef kurala uyar.",
+          "\"can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"could\" çünkü could seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"could\" çünkü could seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-06",
+      "type": "multiple-choice",
+      "topicTag": "could",
+      "topicLabel": "could",
+      "title": "could tekrar",
+      "instructionTr": "She couldn't _______ a bike.",
+      "content": {
+        "options": [
+          "rode",
+          "ride",
+          "riding"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"rode\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ride\" çünkü ride seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. ride seçeneği cümledeki hedef kurala uyar.",
+          "\"riding\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"ride\" çünkü ride seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-07",
+      "type": "multiple-choice",
+      "topicTag": "could",
+      "topicLabel": "could",
+      "title": "could tekrar",
+      "instructionTr": "Could you _______ the light?",
+      "content": {
+        "options": [
+          "turn on",
+          "turned on",
+          "turning on"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. turn on seçeneği cümledeki hedef kurala uyar.",
+          "\"turned on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"turn on\" çünkü turn on seçeneği cümledeki hedef kurala uyar.",
+          "\"turning on\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"turn on\" çünkü turn on seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-08",
+      "type": "multiple-choice",
+      "topicTag": "could",
+      "topicLabel": "could",
+      "title": "could tekrar",
+      "instructionTr": "We _______ speak English last year.",
+      "content": {
+        "options": [
+          "couldn't",
+          "don't can",
+          "aren't"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. couldn't seçeneği cümledeki hedef kurala uyar.",
+          "\"don't can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"couldn't\" çünkü couldn't seçeneği cümledeki hedef kurala uyar.",
+          "\"aren't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"couldn't\" çünkü couldn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-09",
+      "type": "multiple-choice",
+      "topicTag": "should-shouldnt",
+      "topicLabel": "should / shouldn't",
+      "title": "should / shouldn't tekrar",
+      "instructionTr": "You _______ sleep early.",
+      "content": {
+        "options": [
+          "should",
+          "shouldn't",
+          "are"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+          "\"shouldn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-10",
+      "type": "multiple-choice",
+      "topicTag": "should-shouldnt",
+      "topicLabel": "should / shouldn't",
+      "title": "should / shouldn't tekrar",
+      "instructionTr": "You _______ eat too many sweets.",
+      "content": {
+        "options": [
+          "should",
+          "shouldn't",
+          "can"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"shouldn't\" çünkü shouldn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. shouldn't seçeneği cümledeki hedef kurala uyar.",
+          "\"can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"shouldn't\" çünkü shouldn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-11",
+      "type": "multiple-choice",
+      "topicTag": "should-shouldnt",
+      "topicLabel": "should / shouldn't",
+      "title": "should / shouldn't tekrar",
+      "instructionTr": "The team should _______ together.",
+      "content": {
+        "options": [
+          "practises",
+          "practise",
+          "practising"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"practises\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practise\" çünkü practise seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. practise seçeneği cümledeki hedef kurala uyar.",
+          "\"practising\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"practise\" çünkü practise seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-12",
+      "type": "multiple-choice",
+      "topicTag": "should-shouldnt",
+      "topicLabel": "should / shouldn't",
+      "title": "should / shouldn't tekrar",
+      "instructionTr": "Should I _______?",
+      "content": {
+        "options": [
+          "rest",
+          "rested",
+          "resting"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. rest seçeneği cümledeki hedef kurala uyar.",
+          "\"rested\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rest\" çünkü rest seçeneği cümledeki hedef kurala uyar.",
+          "\"resting\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rest\" çünkü rest seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-13",
+      "type": "multiple-choice",
+      "topicTag": "must-mustnt",
+      "topicLabel": "must / mustn't",
+      "title": "must / mustn't tekrar",
+      "instructionTr": "You _______ stop at a red light.",
+      "content": {
+        "options": [
+          "must",
+          "mustn't",
+          "can"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. must seçeneği cümledeki hedef kurala uyar.",
+          "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"must\" çünkü must seçeneği cümledeki hedef kurala uyar.",
+          "\"can\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"must\" çünkü must seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-14",
+      "type": "multiple-choice",
+      "topicTag": "must-mustnt",
+      "topicLabel": "must / mustn't",
+      "title": "must / mustn't tekrar",
+      "instructionTr": "You _______ touch a hot pan.",
+      "content": {
+        "options": [
+          "must",
+          "mustn't",
+          "should"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"must\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. mustn't seçeneği cümledeki hedef kurala uyar.",
+          "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-15",
+      "type": "multiple-choice",
+      "topicTag": "must-mustnt",
+      "topicLabel": "must / mustn't",
+      "title": "must / mustn't tekrar",
+      "instructionTr": "Students must _______ on time.",
+      "content": {
+        "options": [
+          "arrive",
+          "arrives",
+          "arriving"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. arrive seçeneği cümledeki hedef kurala uyar.",
+          "\"arrives\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"arrive\" çünkü arrive seçeneği cümledeki hedef kurala uyar.",
+          "\"arriving\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"arrive\" çünkü arrive seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-16",
+      "type": "multiple-choice",
+      "topicTag": "must-mustnt",
+      "topicLabel": "must / mustn't",
+      "title": "must / mustn't tekrar",
+      "instructionTr": "You mustn't _______ in the corridor.",
+      "content": {
+        "options": [
+          "runs",
+          "run",
+          "running"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"runs\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"run\" çünkü run seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. run seçeneği cümledeki hedef kurala uyar.",
+          "\"running\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"run\" çünkü run seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-17",
+      "type": "multiple-choice",
+      "topicTag": "have-to",
+      "topicLabel": "have to",
+      "title": "have to tekrar",
+      "instructionTr": "She _______ study tonight.",
+      "content": {
+        "options": [
+          "have to",
+          "has to",
+          "having"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. has to seçeneği cümledeki hedef kurala uyar.",
+          "\"having\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"has to\" çünkü has to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-18",
+      "type": "multiple-choice",
+      "topicTag": "have-to",
+      "topicLabel": "have to",
+      "title": "have to tekrar",
+      "instructionTr": "We _______ bring chairs.",
+      "content": {
+        "options": [
+          "don't have to",
+          "doesn't have to",
+          "hasn't to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. don't have to seçeneği cümledeki hedef kurala uyar.",
+          "\"doesn't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar.",
+          "\"hasn't to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"don't have to\" çünkü don't have to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-19",
+      "type": "multiple-choice",
+      "topicTag": "have-to",
+      "topicLabel": "have to",
+      "title": "have to tekrar",
+      "instructionTr": "He doesn't _______ wear a uniform today.",
+      "content": {
+        "options": [
+          "has to",
+          "have to",
+          "having to"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+          "\"having to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-20",
+      "type": "multiple-choice",
+      "topicTag": "have-to",
+      "topicLabel": "have to",
+      "title": "have to tekrar",
+      "instructionTr": "They _______ arrive early.",
+      "content": {
+        "options": [
+          "have to",
+          "has to",
+          "is to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+          "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar.",
+          "\"is to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-21",
+      "type": "multiple-choice",
+      "topicTag": "school-health-rules",
+      "topicLabel": "School and Health Rules",
+      "title": "School and Health Rules tekrar",
+      "instructionTr": "You _______ drink water when it is hot.",
+      "content": {
+        "options": [
+          "should",
+          "mustn't",
+          "don't have to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. should seçeneği cümledeki hedef kurala uyar.",
+          "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar.",
+          "\"don't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"should\" çünkü should seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-22",
+      "type": "multiple-choice",
+      "topicTag": "school-health-rules",
+      "topicLabel": "School and Health Rules",
+      "title": "School and Health Rules tekrar",
+      "instructionTr": "Students _______ run during the fire drill.",
+      "content": {
+        "options": [
+          "must",
+          "mustn't",
+          "should"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"must\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. mustn't seçeneği cümledeki hedef kurala uyar.",
+          "\"should\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"mustn't\" çünkü mustn't seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-23",
+      "type": "multiple-choice",
+      "topicTag": "school-health-rules",
+      "topicLabel": "School and Health Rules",
+      "title": "School and Health Rules tekrar",
+      "instructionTr": "We _______ bring our books every day.",
+      "content": {
+        "options": [
+          "have to",
+          "has to",
+          "can to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. have to seçeneği cümledeki hedef kurala uyar.",
+          "\"has to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar.",
+          "\"can to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"have to\" çünkü have to seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-24",
+      "type": "multiple-choice",
+      "topicTag": "school-health-rules",
+      "topicLabel": "School and Health Rules",
+      "title": "School and Health Rules tekrar",
+      "instructionTr": "You _______ use the library after school.",
+      "content": {
+        "options": [
+          "can",
+          "mustn't",
+          "doesn't have to"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. can seçeneği cümledeki hedef kurala uyar.",
+          "\"mustn't\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar.",
+          "\"doesn't have to\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"can\" çünkü can seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-6-review-25",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "I _______ swim, but I can't dive.",
+      "content": {
+        "answer": "can",
+        "accepted": [
+          "can"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"can\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Bir şeyi yapabildiğini veya yapamadığını söylemek.",
+      "points": 4,
+      "topicTag": "can-cant",
+      "topicLabel": "can / can't"
+    }
+  ]
+}

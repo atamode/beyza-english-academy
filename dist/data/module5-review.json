@@ -1,0 +1,559 @@
+{
+  "id": "module-5-review",
+  "moduleId": "module-5",
+  "title": "Yiyecek ve Alışveriş Genel Tekrar",
+  "description": "Yiyecek ve Alışveriş derslerini ölçen gerçek kaynak sorularından oluşturuldu.",
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "module-5-review-01",
+      "type": "multiple-choice",
+      "topicTag": "countable-uncountable",
+      "topicLabel": "Countable / Uncountable",
+      "title": "Countable / Uncountable tekrar",
+      "instructionTr": "Which is countable?",
+      "content": {
+        "options": [
+          "water",
+          "banana",
+          "rice"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"water\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"banana\" çünkü banana seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. banana seçeneği cümledeki hedef kurala uyar.",
+          "\"rice\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"banana\" çünkü banana seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-02",
+      "type": "multiple-choice",
+      "topicTag": "countable-uncountable",
+      "topicLabel": "Countable / Uncountable",
+      "title": "Countable / Uncountable tekrar",
+      "instructionTr": "Which is uncountable?",
+      "content": {
+        "options": [
+          "bread",
+          "tomato",
+          "sandwich"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. bread seçeneği cümledeki hedef kurala uyar.",
+          "\"tomato\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bread\" çünkü bread seçeneği cümledeki hedef kurala uyar.",
+          "\"sandwich\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bread\" çünkü bread seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-03",
+      "type": "multiple-choice",
+      "topicTag": "countable-uncountable",
+      "topicLabel": "Countable / Uncountable",
+      "title": "Countable / Uncountable tekrar",
+      "instructionTr": "Which phrase is correct?",
+      "content": {
+        "options": [
+          "two breads",
+          "two slices of bread",
+          "a breads"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"two breads\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"two slices of bread\" çünkü two slices of bread seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. two slices of bread seçeneği cümledeki hedef kurala uyar.",
+          "\"a breads\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"two slices of bread\" çünkü two slices of bread seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-04",
+      "type": "multiple-choice",
+      "topicTag": "countable-uncountable",
+      "topicLabel": "Countable / Uncountable",
+      "title": "Countable / Uncountable tekrar",
+      "instructionTr": "There are three _______.",
+      "content": {
+        "options": [
+          "apple",
+          "apples",
+          "water"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"apple\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"apples\" çünkü apples seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. apples seçeneği cümledeki hedef kurala uyar.",
+          "\"water\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"apples\" çünkü apples seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-05",
+      "type": "multiple-choice",
+      "topicTag": "a-an-some",
+      "topicLabel": "a / an / some",
+      "title": "a / an / some tekrar",
+      "instructionTr": "_______ apple",
+      "content": {
+        "options": [
+          "a",
+          "an",
+          "some"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. an seçeneği cümledeki hedef kurala uyar.",
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"an\" çünkü an seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-06",
+      "type": "multiple-choice",
+      "topicTag": "a-an-some",
+      "topicLabel": "a / an / some",
+      "title": "a / an / some tekrar",
+      "instructionTr": "_______ sandwich",
+      "content": {
+        "options": [
+          "a",
+          "an",
+          "some"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. a seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a\" çünkü a seçeneği cümledeki hedef kurala uyar.",
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a\" çünkü a seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-07",
+      "type": "multiple-choice",
+      "topicTag": "a-an-some",
+      "topicLabel": "a / an / some",
+      "title": "a / an / some tekrar",
+      "instructionTr": "_______ rice",
+      "content": {
+        "options": [
+          "a",
+          "an",
+          "some"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. some seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-08",
+      "type": "multiple-choice",
+      "topicTag": "a-an-some",
+      "topicLabel": "a / an / some",
+      "title": "a / an / some tekrar",
+      "instructionTr": "_______ grapes",
+      "content": {
+        "options": [
+          "a",
+          "an",
+          "some"
+        ],
+        "correctIndex": 2,
+        "optionExplanationsTr": [
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. some seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-09",
+      "type": "multiple-choice",
+      "topicTag": "some-any",
+      "topicLabel": "some / any",
+      "title": "some / any tekrar",
+      "instructionTr": "There are _______ apples.",
+      "content": {
+        "options": [
+          "some",
+          "any",
+          "an"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+          "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-10",
+      "type": "multiple-choice",
+      "topicTag": "some-any",
+      "topicLabel": "some / any",
+      "title": "some / any tekrar",
+      "instructionTr": "There isn't _______ cheese.",
+      "content": {
+        "options": [
+          "some",
+          "any",
+          "a"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-11",
+      "type": "multiple-choice",
+      "topicTag": "some-any",
+      "topicLabel": "some / any",
+      "title": "some / any tekrar",
+      "instructionTr": "Are there _______ bottles?",
+      "content": {
+        "options": [
+          "some",
+          "any",
+          "an"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. any seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"any\" çünkü any seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-12",
+      "type": "multiple-choice",
+      "topicTag": "some-any",
+      "topicLabel": "some / any",
+      "title": "some / any tekrar",
+      "instructionTr": "We have _______ juice.",
+      "content": {
+        "options": [
+          "some",
+          "any",
+          "a"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. some seçeneği cümledeki hedef kurala uyar.",
+          "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar.",
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"some\" çünkü some seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-13",
+      "type": "multiple-choice",
+      "topicTag": "much-many",
+      "topicLabel": "much / many",
+      "title": "much / many tekrar",
+      "instructionTr": "How _______ eggs are there?",
+      "content": {
+        "options": [
+          "much",
+          "many",
+          "some"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+          "\"some\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-14",
+      "type": "multiple-choice",
+      "topicTag": "much-many",
+      "topicLabel": "much / many",
+      "title": "much / many tekrar",
+      "instructionTr": "How _______ juice is there?",
+      "content": {
+        "options": [
+          "much",
+          "many",
+          "any"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+          "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar.",
+          "\"any\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-15",
+      "type": "multiple-choice",
+      "topicTag": "much-many",
+      "topicLabel": "much / many",
+      "title": "much / many tekrar",
+      "instructionTr": "There aren't _______ sandwiches.",
+      "content": {
+        "options": [
+          "much",
+          "many",
+          "a"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. many seçeneği cümledeki hedef kurala uyar.",
+          "\"a\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"many\" çünkü many seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-16",
+      "type": "multiple-choice",
+      "topicTag": "much-many",
+      "topicLabel": "much / many",
+      "title": "much / many tekrar",
+      "instructionTr": "We don't need _______ rice.",
+      "content": {
+        "options": [
+          "much",
+          "many",
+          "an"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. much seçeneği cümledeki hedef kurala uyar.",
+          "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar.",
+          "\"an\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"much\" çünkü much seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-17",
+      "type": "multiple-choice",
+      "topicTag": "a-few-a-little",
+      "topicLabel": "a few / a little",
+      "title": "a few / a little tekrar",
+      "instructionTr": "_______ apples",
+      "content": {
+        "options": [
+          "a few",
+          "a little",
+          "much"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+          "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar.",
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-18",
+      "type": "multiple-choice",
+      "topicTag": "a-few-a-little",
+      "topicLabel": "a few / a little",
+      "title": "a few / a little tekrar",
+      "instructionTr": "_______ milk",
+      "content": {
+        "options": [
+          "a few",
+          "a little",
+          "many"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+          "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-19",
+      "type": "multiple-choice",
+      "topicTag": "a-few-a-little",
+      "topicLabel": "a few / a little",
+      "title": "a few / a little tekrar",
+      "instructionTr": "_______ sandwiches",
+      "content": {
+        "options": [
+          "a few",
+          "a little",
+          "much"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. a few seçeneği cümledeki hedef kurala uyar.",
+          "\"a little\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar.",
+          "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a few\" çünkü a few seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-20",
+      "type": "multiple-choice",
+      "topicTag": "a-few-a-little",
+      "topicLabel": "a few / a little",
+      "title": "a few / a little tekrar",
+      "instructionTr": "_______ rice (a few / a little)",
+      "content": {
+        "options": [
+          "a few",
+          "a little",
+          "many"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"a few\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. a little seçeneği cümledeki hedef kurala uyar.",
+          "\"many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"a little\" çünkü a little seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-21",
+      "type": "multiple-choice",
+      "topicTag": "prices-shopping",
+      "topicLabel": "Prices and Shopping",
+      "title": "Prices and Shopping tekrar",
+      "instructionTr": "How much _______ this juice?",
+      "content": {
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-22",
+      "type": "multiple-choice",
+      "topicTag": "prices-shopping",
+      "topicLabel": "Prices and Shopping",
+      "title": "Prices and Shopping tekrar",
+      "instructionTr": "How much _______ these sandwiches?",
+      "content": {
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-23",
+      "type": "multiple-choice",
+      "topicTag": "prices-shopping",
+      "topicLabel": "Prices and Shopping",
+      "title": "Prices and Shopping tekrar",
+      "instructionTr": "It _______ 25 lira.",
+      "content": {
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+          "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-24",
+      "type": "multiple-choice",
+      "topicTag": "prices-shopping",
+      "topicLabel": "Prices and Shopping",
+      "title": "Prices and Shopping tekrar",
+      "instructionTr": "They _______ 60 lira.",
+      "content": {
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+          "\"am\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    },
+    {
+      "id": "module-5-review-25",
+      "type": "multiple-choice",
+      "topicTag": "at-a-restaurant",
+      "topicLabel": "At a Restaurant",
+      "title": "At a Restaurant tekrar",
+      "instructionTr": "I'd _______ a sandwich, please.",
+      "content": {
+        "options": [
+          "like",
+          "likes",
+          "liking"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. like seçeneği cümledeki hedef kurala uyar.",
+          "\"likes\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"like\" çünkü like seçeneği cümledeki hedef kurala uyar.",
+          "\"liking\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"like\" çünkü like seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 4
+    }
+  ]
+}

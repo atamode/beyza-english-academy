@@ -1,0 +1,691 @@
+{
+  "id": "033-prices-shopping",
+  "title": "Prices and Shopping",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "How much is...? ve How much are...? sorularını kullanmak.",
+    "Tekil ve çoğul ürünlerin fiyatını sormak.",
+    "Basit alışveriş ifadelerini anlamak ve kullanmak.",
+    "Türk lirası ve temel fiyat ifadelerini söylemek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evde oyuncak para ve gerçek ambalajlarla mini market kurabilirsiniz. Fiyatları küçük kâğıtlara yazın. Beyza tekil ve çoğul ürünlere göre is / are seçsin.",
+    "todayGoal": "How much is...? ve How much are...? sorularını kullanmak.",
+    "teachingTips": [
+      "Bu derste \"Prices and Shopping\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "How much is this apple?",
+      "It is 10 lira.",
+      "How much is the sandwich?",
+      "It is 45 lira."
+    ],
+    "listeningScripts": [
+      "\"At the sports centre café, a banana is 12 lira, a sandwich is 45 lira and a bottle of water is 15 lira. The coach buys six bottles of water for the team.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Prices and Shopping Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "_______ is this bottle of water?",
+          "options": [
+            "How many",
+            "How much",
+            "How old"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "How much are these apples? — _______ are 40 lira.",
+          "options": [
+            "It",
+            "They",
+            "He"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "How much _______ this juice?",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "How much _______ this sandwich?",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "How much _______ these bananas?",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: How / much / is / this",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: How much are this apple?",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How much is the sandwich?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Prices and Shopping yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Prices and Shopping kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "How much",
+        "They",
+        "is",
+        "is",
+        "are",
+        "How much is this",
+        "\"are\" burada hatalıdır; doğru cevap \"is\" olmalıdır.",
+        "It is 50 lira.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "033-prices-shopping-w1",
+    "033-prices-shopping-w2",
+    "033-prices-shopping-w3",
+    "033-prices-shopping-w4",
+    "033-prices-shopping-w5",
+    "033-prices-shopping-w6",
+    "033-prices-shopping-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Prices and Shopping",
+      "instructionTr": "How much is...? ve How much are...? sorularını kullanmak.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 33",
+        "heroText": "How much is this apple?"
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bir ürünün fiyatını sormak için: - How much is this sandwich? - How much is the juice? Birden fazla ürün için: - How much are these apples? - How much are the sandwiches? Cevaplar: - It is 50 lira. - They are 80 lira. Kullanışlı alışveriş ifadeleri: - Can I help you? - I'd like this one, please. - Here you are. - Thank you. Bu derste bu ifadeler iletişim kalıbı olarak öğrenilir.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bir ürünün fiyatını sormak için: - How much is this sandwich? - How much is the juice? Birden fazla ürün için: - How much are these apples? - How much are the sandwiches? Cevaplar: - It is 50 lira. - They are 80 lira. Kullanışlı alışveriş ifadeleri: - Can I help you? - I'd like this one, please. - Here you are. - Thank you. Bu derste bu ifadeler iletişim kalıbı olarak öğrenilir."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "How much is this apple?",
+          "It is 10 lira.",
+          "How much is the sandwich?",
+          "It is 45 lira.",
+          "How much are these bananas?",
+          "They are 30 lira.",
+          "I'd like a bottle of water, please.",
+          "Here you are.",
+          "How much are the team snacks?",
+          "The fruit juice is 25 lira."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Tekil",
+            "How much is...?",
+            "It is ... lira."
+          ],
+          [
+            "Çoğul",
+            "How much are...?",
+            "They are ... lira."
+          ]
+        ]
+      },
+      "explanationTr": "How much is...? ve How much are...? sorularını kullanmak. Tekil ve çoğul ürünlerin fiyatını sormak. Basit alışveriş ifadelerini anlamak ve kullanmak. Türk lirası ve temel fiyat ifadelerini söylemek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "How many is this? ❌ → How much is this? ✅",
+          "How much are this sandwich? ❌ → How much is this sandwich? ✅",
+          "They is 50 lira. ❌ → They are 50 lira. ✅",
+          "It are 20 lira. ❌ → It is 20 lira. ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "_______ is this bottle of water?",
+      "content": {
+        "options": [
+          "How many",
+          "How much",
+          "How old"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"How many\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"How much\" çünkü How much seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. How much seçeneği cümledeki hedef kurala uyar.",
+          "\"How old\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"How much\" çünkü How much seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "How much are these apples? — _______ are 40 lira.",
+      "content": {
+        "options": [
+          "It",
+          "They",
+          "He"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"It\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They\" çünkü They seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. They seçeneği cümledeki hedef kurala uyar.",
+          "\"He\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They\" çünkü They seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "How much _______ this sandwich?",
+      "content": {
+        "answer": "is",
+        "accepted": [
+          "is"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"is\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "How much is...? ve How much are...? sorularını kullanmak.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "How",
+          "much",
+          "is",
+          "this"
+        ],
+        "answer": [
+          "How",
+          "much",
+          "is",
+          "this"
+        ],
+        "explanationTr": "Doğru sıra: How much is this"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "How",
+          "much",
+          "are",
+          "this",
+          "apple?"
+        ],
+        "wrongIndex": 2,
+        "explanationTr": "\"are\" burada hatalıdır; doğru cevap \"is\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "How much is this sandwich?",
+            "It is 45 lira."
+          ],
+          [
+            "How much are these apples?",
+            "They are 35 lira."
+          ],
+          [
+            "I'd like a bottle of water.",
+            "Here you are."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is at a small shop. A sandwich is 50 lira. A bottle of water is 15 lira. Two apples are 20 lira. Beyza buys a sandwich and a bottle of water.",
+        "questions": [
+          {
+            "prompt": "How much is the sandwich?",
+            "options": [
+              "It is 50 lira.",
+              "It is 15 lira.",
+              "A sandwich and a bottle of water."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"It is 50 lira.\" olmalıdır.",
+              "\"It is 15 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It is 50 lira.\".",
+              "\"A sandwich and a bottle of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It is 50 lira.\"."
+            ]
+          },
+          {
+            "prompt": "How much is the water?",
+            "options": [
+              "A sandwich and a bottle of water.",
+              "It is 15 lira.",
+              "It is 50 lira."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"A sandwich and a bottle of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It is 15 lira.\".",
+              "Doğru. Bu soruda cevap \"It is 15 lira.\" olmalıdır.",
+              "\"It is 50 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It is 15 lira.\"."
+            ]
+          },
+          {
+            "prompt": "What does Beyza buy?",
+            "options": [
+              "It is 50 lira.",
+              "It is 15 lira.",
+              "A sandwich and a bottle of water."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"It is 50 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A sandwich and a bottle of water.\".",
+              "\"It is 15 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"A sandwich and a bottle of water.\".",
+              "Doğru. Bu soruda cevap \"A sandwich and a bottle of water.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "How much is a banana?",
+      "content": {
+        "audioText": "\"At the sports centre café, a banana is 12 lira, a sandwich is 45 lira and a bottle of water is 15 lira. The coach buys six bottles of water for the team.\"",
+        "questions": [
+          {
+            "prompt": "How much is a banana?",
+            "options": [
+              "12 lira.",
+              "45 lira.",
+              "Six bottles of water."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"12 lira.\" olmalıdır.",
+              "\"45 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"12 lira.\".",
+              "\"Six bottles of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"12 lira.\"."
+            ]
+          },
+          {
+            "prompt": "How much is a sandwich?",
+            "options": [
+              "Six bottles of water.",
+              "45 lira.",
+              "12 lira."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Six bottles of water.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"45 lira.\".",
+              "Doğru. Bu soruda cevap \"45 lira.\" olmalıdır.",
+              "\"12 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"45 lira.\"."
+            ]
+          },
+          {
+            "prompt": "What does the coach buy?",
+            "options": [
+              "12 lira.",
+              "45 lira.",
+              "Six bottles of water."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"12 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Six bottles of water.\".",
+              "\"45 lira.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Six bottles of water.\".",
+              "Doğru. Bu soruda cevap \"Six bottles of water.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Evde küçük bir alışveriş oyunu yapın. Bir kişi satıcı, bir kişi müşteri olsun. Örnek: - How much is this apple? - It is 10 lira. - I'd like two, please.",
+      "content": {
+        "sentenceStarters": [
+          "How much is this apple?",
+          "It is 10 lira.",
+          "I'd like two, please."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "How much _______ this juice?",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How much _______ these sandwiches?",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "It _______ 25 lira.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "They _______ 60 lira.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "I'd like this one, _______.",
+            "options": [
+              "please",
+              "much",
+              "any"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. please seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"much\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"please\" çünkü please seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "How much is this apple? — _______ is 8 lira.",
+            "options": [
+              "It",
+              "They",
+              "We"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. It seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"They\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"It\" çünkü It seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How much are these bottles? — _______ are 50 lira.",
+            "options": [
+              "It",
+              "They",
+              "She"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. They seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"It\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"They\" çünkü They seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How much _______ the sandwich?",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. is seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"are\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"is\" çünkü is seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "How much _______ the apples?",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. are seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"is\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"are\" çünkü are seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "\"Buyurunuz.\" ifadesine en yakın İngilizce kalıp:",
+            "options": [
+              "Here you are.",
+              "How many?",
+              "There isn't."
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. Here you are. seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"How many?\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Here you are.\" çünkü Here you are. seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "033-prices-shopping-w1",
+            "word": "price",
+            "example": "What is the price?",
+            "audioText": "price",
+            "prompt": "\"price\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "fiyat",
+              "satın almak",
+              "satmak",
+              "dükkân/alışveriş yapmak"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "033-prices-shopping-w2",
+            "word": "buy",
+            "example": "I want to buy an apple.",
+            "audioText": "buy",
+            "prompt": "\"buy\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "fiyat",
+              "satın almak",
+              "satmak",
+              "dükkân/alışveriş yapmak"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "033-prices-shopping-w3",
+            "word": "sell",
+            "example": "They sell sandwiches.",
+            "audioText": "sell",
+            "prompt": "\"sell\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "fiyat",
+              "satın almak",
+              "satmak",
+              "dükkân/alışveriş yapmak"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "033-prices-shopping-w4",
+            "word": "shop",
+            "example": "We are at the shop.",
+            "audioText": "shop",
+            "prompt": "\"shop\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "fiyat",
+              "satın almak",
+              "satmak",
+              "dükkân/alışveriş yapmak"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "033-prices-shopping-w5",
+            "word": "lira",
+            "example": "It is 20 lira.",
+            "audioText": "lira",
+            "prompt": "\"lira\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "lira",
+              "fiyat",
+              "satın almak",
+              "satmak"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "How much is...? ve How much are...? sorularını kullanmak.",
+          "Tekil ve çoğul ürünlerin fiyatını sormak.",
+          "Hedef kelimeler: price, buy, sell, shop, lira, customer, cashier"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

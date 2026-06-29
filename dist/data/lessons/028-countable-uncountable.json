@@ -1,0 +1,697 @@
+{
+  "id": "028-countable-uncountable",
+  "title": "Countable / Uncountable",
+  "level": "A2.1",
+  "module": "Yiyecek ve Alışveriş",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Sayılabilen ve sayılamayan isimleri ayırt etmek.",
+    "Sayılabilen isimlerin tekil ve çoğul biçimlerini kullanmak.",
+    "Sayılamayan isimlerle doğrudan sayı kullanılmadığını fark etmek.",
+    "Yiyecek ve içecek kelimelerini doğru gruba yerleştirmek."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evdeki yiyecekleri iki gruba ayırabilirsiniz: tek tek sayılabilenler ve doğrudan sayılamayanlar. Sayılamayan isimlerde ölçü sözcükleri kullanmaya dikkat edin: a glass of water, a slice of bread.",
+    "todayGoal": "Sayılabilen ve sayılamayan isimleri ayırt etmek.",
+    "teachingTips": [
+      "Bu derste \"Countable / Uncountable\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "An apple is countable.",
+      "Two bananas are countable.",
+      "Water is uncountable.",
+      "Milk is uncountable."
+    ],
+    "listeningScripts": [
+      "\"After volleyball practice, the players have a small snack. There are bananas and sandwiches on the table. There is water in a large bottle. There is also some fruit juice.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Countable / Uncountable Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Which word is uncountable?",
+          "options": [
+            "apple",
+            "rice",
+            "sandwich"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Which phrase is correct?",
+          "options": [
+            "two milks",
+            "two bottles of milk",
+            "a milk"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "Which is countable?",
+          "options": [
+            "water",
+            "banana",
+            "rice"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "There are three _______ on the table. (apple)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "There is some _______ in the glass. (water)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: two / there / are / bananas",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: There are three rice in the bowl.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "How many apples are there?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Countable / Uncountable yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Countable / Uncountable kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "rice",
+        "two bottles of milk",
+        "banana",
+        "apples",
+        "water",
+        "there are two bananas",
+        "\"three rice\" burada hatalıdır; doğru cevap \"some rice\" olmalıdır.",
+        "There are two apples.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "028-countable-uncountable-w1",
+    "028-countable-uncountable-w2",
+    "028-countable-uncountable-w3",
+    "028-countable-uncountable-w4",
+    "028-countable-uncountable-w5",
+    "028-countable-uncountable-w6",
+    "028-countable-uncountable-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Countable / Uncountable",
+      "instructionTr": "Sayılabilen ve sayılamayan isimleri ayırt etmek.",
+      "content": {
+        "eyebrow": "Yiyecek ve Alışveriş · DERS 28",
+        "heroText": "An apple is countable."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "İngilizcede bazı isimleri tek tek sayabiliriz: - one apple, two apples - one sandwich, three sandwiches - one bottle, four bottles Bunlara countable nouns yani sayılabilen isimler denir. Bazı isimleri ise doğrudan \"bir, iki, üç\" diye saymayız: - water - milk - rice - bread Bunlara uncountable nouns yani sayılamayan isimler denir. Sayılamayan isimleri ölçmek için kap veya miktar sözcükleri kullanabiliriz: - a glass of water - a bottle of milk - a bowl of rice - a slice of bread",
+      "content": {
+        "examples": [],
+        "noteTr": "İngilizcede bazı isimleri tek tek sayabiliriz: - one apple, two apples - one sandwich, three sandwiches - one bottle, four bottles Bunlara countable nouns yani sayılabilen isimler denir. Bazı isimleri ise doğrudan \"bir, iki, üç\" diye saymayız: - water - milk - rice - bread Bunlara uncountable nouns yani sayılamayan isimler denir. Sayılamayan isimleri ölçmek için kap veya miktar sözcükleri kullanabiliriz: - a glass of water - a bottle of milk - a bowl of rice - a slice of bread"
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "An apple is countable.",
+          "Two bananas are countable.",
+          "Water is uncountable.",
+          "Milk is uncountable.",
+          "There are three sandwiches.",
+          "There is some rice in the bowl.",
+          "I have two bottles of water.",
+          "She is eating a slice of bread.",
+          "We need four tomatoes for the salad.",
+          "The players are drinking water after practice."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Countable",
+            "Tekil ve çoğul olabilir",
+            "an apple / two apples"
+          ],
+          [
+            "Uncountable",
+            "Doğrudan sayı almaz",
+            "water / rice"
+          ],
+          [
+            "Ölçü ifadesi",
+            "Sayılamayan ismi ölçer",
+            "a glass of water"
+          ]
+        ]
+      },
+      "explanationTr": "Sayılabilen ve sayılamayan isimleri ayırt etmek. Sayılabilen isimlerin tekil ve çoğul biçimlerini kullanmak. Sayılamayan isimlerle doğrudan sayı kullanılmadığını fark etmek. Yiyecek ve içecek kelimelerini doğru gruba yerleştirmek."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "two waters ❌ → two bottles of water ✅",
+          "an rice ❌ → some rice ✅",
+          "three bread ❌ → three slices of bread ✅",
+          "one apples ❌ → one apple ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "Which word is uncountable?",
+      "content": {
+        "options": [
+          "apple",
+          "rice",
+          "sandwich"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"apple\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rice\" çünkü rice seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. rice seçeneği cümledeki hedef kurala uyar.",
+          "\"sandwich\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"rice\" çünkü rice seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "Which phrase is correct?",
+      "content": {
+        "options": [
+          "two milks",
+          "two bottles of milk",
+          "a milk"
+        ],
+        "correctIndex": 1,
+        "optionExplanationsTr": [
+          "\"two milks\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"two bottles of milk\" çünkü two bottles of milk seçeneği cümledeki hedef kurala uyar.",
+          "Doğru. two bottles of milk seçeneği cümledeki hedef kurala uyar.",
+          "\"a milk\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"two bottles of milk\" çünkü two bottles of milk seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "There are three _______ on the table. (apple)",
+      "content": {
+        "answer": "apples",
+        "accepted": [
+          "apples"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"apples\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Sayılabilen ve sayılamayan isimleri ayırt etmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "two",
+          "there",
+          "are",
+          "bananas"
+        ],
+        "answer": [
+          "there",
+          "are",
+          "two",
+          "bananas"
+        ],
+        "explanationTr": "Doğru sıra: there are two bananas"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "There",
+          "are",
+          "three",
+          "rice",
+          "in",
+          "the",
+          "bowl."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"three rice\" burada hatalıdır; doğru cevap \"some rice\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "apple",
+            "two ...s"
+          ],
+          [
+            "water",
+            "a glass of ..."
+          ],
+          [
+            "bread",
+            "a slice of ..."
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "Beyza is preparing a snack. There are two apples and three sandwiches on the table. There is some milk in the fridge. There is also some bread and cheese. She puts the food into a bag.",
+        "questions": [
+          {
+            "prompt": "How many apples are there?",
+            "options": [
+              "There are two apples.",
+              "Yes, there is.",
+              "She puts the food into the bag."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"There are two apples.\" olmalıdır.",
+              "\"Yes, there is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"There are two apples.\".",
+              "\"She puts the food into the bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"There are two apples.\"."
+            ]
+          },
+          {
+            "prompt": "Is there any milk?",
+            "options": [
+              "She puts the food into the bag.",
+              "Yes, there is.",
+              "There are two apples."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"She puts the food into the bag.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there is.\".",
+              "Doğru. Bu soruda cevap \"Yes, there is.\" olmalıdır.",
+              "\"There are two apples.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there is.\"."
+            ]
+          },
+          {
+            "prompt": "What does Beyza put into the bag?",
+            "options": [
+              "There are two apples.",
+              "Yes, there is.",
+              "She puts the food into the bag."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"There are two apples.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She puts the food into the bag.\".",
+              "\"Yes, there is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"She puts the food into the bag.\".",
+              "Doğru. Bu soruda cevap \"She puts the food into the bag.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "What fruit is on the table?",
+      "content": {
+        "audioText": "\"After volleyball practice, the players have a small snack. There are bananas and sandwiches on the table. There is water in a large bottle. There is also some fruit juice.\"",
+        "questions": [
+          {
+            "prompt": "What fruit is on the table?",
+            "options": [
+              "Bananas.",
+              "Yes, there is.",
+              "Fruit juice."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Bananas.\" olmalıdır.",
+              "\"Yes, there is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Bananas.\".",
+              "\"Fruit juice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Bananas.\"."
+            ]
+          },
+          {
+            "prompt": "Is there any water?",
+            "options": [
+              "Fruit juice.",
+              "Yes, there is.",
+              "Bananas."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Fruit juice.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there is.\".",
+              "Doğru. Bu soruda cevap \"Yes, there is.\" olmalıdır.",
+              "\"Bananas.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Yes, there is.\"."
+            ]
+          },
+          {
+            "prompt": "What other drink is there?",
+            "options": [
+              "Bananas.",
+              "Yes, there is.",
+              "Fruit juice."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Bananas.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Fruit juice.\".",
+              "\"Yes, there is.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Fruit juice.\".",
+              "Doğru. Bu soruda cevap \"Fruit juice.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Evdeki mutfağı düşün. Üç sayılabilen ve üç sayılamayan yiyecek veya içecek söyle. Örnek: - Apples are countable. - Milk is uncountable.",
+      "content": {
+        "sentenceStarters": [
+          "Apples are countable.",
+          "Milk is uncountable."
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Which is countable?",
+            "options": [
+              "water",
+              "banana",
+              "rice"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. banana seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"water\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"banana\" çünkü banana seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Which is uncountable?",
+            "options": [
+              "bread",
+              "tomato",
+              "sandwich"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. bread seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"tomato\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bread\" çünkü bread seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "Which phrase is correct?",
+            "options": [
+              "two breads",
+              "two slices of bread",
+              "a breads"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. two slices of bread seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"two breads\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"two slices of bread\" çünkü two slices of bread seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There are three _______.",
+            "options": [
+              "apple",
+              "apples",
+              "water"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. apples seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"apple\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"apples\" çünkü apples seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There is some _______.",
+            "options": [
+              "milk",
+              "bottles",
+              "bananas"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. milk seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"bottles\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"milk\" çünkü milk seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "Rice is _______.",
+            "options": [
+              "countable",
+              "uncountable",
+              "plural"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. uncountable seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"countable\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"uncountable\" çünkü uncountable seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "An orange is _______.",
+            "options": [
+              "countable",
+              "uncountable",
+              "a drink"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. countable seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"uncountable\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"countable\" çünkü countable seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "We need two _______ of water.",
+            "options": [
+              "bottles",
+              "water",
+              "rice"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. bottles seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"water\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"bottles\" çünkü bottles seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There is some _______ on the plate.",
+            "options": [
+              "sandwich",
+              "cheese",
+              "apples"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. cheese seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"sandwich\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"cheese\" çünkü cheese seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "There are four _______ in the basket.",
+            "options": [
+              "tomato",
+              "tomatoes",
+              "milk"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. tomatoes seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"tomato\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"tomatoes\" çünkü tomatoes seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "028-countable-uncountable-w1",
+            "word": "apple",
+            "example": "There are two apples.",
+            "audioText": "apple",
+            "prompt": "\"apple\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "elma",
+              "pirinç/pilav",
+              "ekmek",
+              "süt"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "028-countable-uncountable-w2",
+            "word": "rice",
+            "example": "There is some rice.",
+            "audioText": "rice",
+            "prompt": "\"rice\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "elma",
+              "pirinç/pilav",
+              "ekmek",
+              "süt"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "028-countable-uncountable-w3",
+            "word": "bread",
+            "example": "I need a slice of bread.",
+            "audioText": "bread",
+            "prompt": "\"bread\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "elma",
+              "pirinç/pilav",
+              "ekmek",
+              "süt"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "028-countable-uncountable-w4",
+            "word": "milk",
+            "example": "There is some milk.",
+            "audioText": "milk",
+            "prompt": "\"milk\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "elma",
+              "pirinç/pilav",
+              "ekmek",
+              "süt"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "028-countable-uncountable-w5",
+            "word": "bottle",
+            "example": "A bottle of water.",
+            "audioText": "bottle",
+            "prompt": "\"bottle\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "şişe",
+              "elma",
+              "pirinç/pilav",
+              "ekmek"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Sayılabilen ve sayılamayan isimleri ayırt etmek.",
+          "Sayılabilen isimlerin tekil ve çoğul biçimlerini kullanmak.",
+          "Hedef kelimeler: apple, rice, bread, milk, bottle, slice, bowl"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}

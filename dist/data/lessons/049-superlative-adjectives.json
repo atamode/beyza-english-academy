@@ -1,0 +1,710 @@
+{
+  "id": "049-superlative-adjectives",
+  "title": "Superlative Adjectives",
+  "level": "A2.1",
+  "module": "Karşılaştırma",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+    "Kısa sıfatlara -est eklemek.",
+    "Uzun sıfatlarla the most kullanmak.",
+    "the kelimesini uygun cevapde kullanmak.",
+    "good → the best ve bad → the worst biçimlerini tanımak."
+  ],
+  "prerequisites": [],
+  "parentGuide": {
+    "summaryTr": "Evde üç nesne seçin ve \"en büyük, en küçük, en hafif\" gibi karşılaştırmalar yaptırın. the kullanımını özellikle kontrol edin.",
+    "todayGoal": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+    "teachingTips": [
+      "Bu derste \"Superlative Adjectives\" hedefini kısa örneklerle tekrar edin.",
+      "Yanlış cevaplarda cümledeki ipucu kelimeyi buldurun.",
+      "Voleybol, müzik ve günlük hayat örnekleriyle özgün cümle kurdurun."
+    ],
+    "questionsToAsk": [
+      "A giraffe is the tallest animal in the group.",
+      "The cheetah is the fastest land animal.",
+      "This is the smallest bag.",
+      "July is the hottest month here."
+    ],
+    "listeningScripts": [
+      "\"Three players are practising serves. Elif is the youngest. Zeynep is the tallest. Beyza is the fastest. The coach says today is the best practice of the week.\""
+    ],
+    "speakingRubric": [
+      "10 puan: Dört öz değerlendirme maddesi tamam",
+      "5 puan: Destekle iki cümle",
+      "0 puan: Örnekleri tekrar dinleyip yeniden deneme"
+    ],
+    "worksheet": {
+      "title": "Superlative Adjectives Çalışma Sayfası",
+      "instructionTr": "Soruları kaynak dersteki kurala göre çöz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "This is _______ bag in the shop.",
+          "options": [
+            "the smallest",
+            "smaller",
+            "the more small"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "It is _______ interesting book here.",
+          "options": [
+            "the most",
+            "more",
+            "the more"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "choice",
+          "prompt": "tall →",
+          "options": [
+            "the taller",
+            "the tallest",
+            "the most tall"
+          ],
+          "spaceLines": 1
+        },
+        {
+          "type": "fill",
+          "prompt": "A giraffe is the _______ animal here. (tall)",
+          "spaceLines": 2
+        },
+        {
+          "type": "fill",
+          "prompt": "This is the _______ question. (easy)",
+          "spaceLines": 2
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Sırala: the tallest / she / is / in the team",
+          "spaceLines": 2
+        },
+        {
+          "type": "error-find",
+          "prompt": "Hatayı düzelt: This is the most fastest car.",
+          "spaceLines": 2
+        },
+        {
+          "type": "reading",
+          "prompt": "Which park is the smallest?",
+          "spaceLines": 3
+        },
+        {
+          "type": "writing",
+          "prompt": "Superlative Adjectives yapısını kullanarak özgün bir cümle yaz.",
+          "spaceLines": 3
+        },
+        {
+          "type": "rule",
+          "prompt": "Superlative Adjectives kuralını Türkçe açıkla.",
+          "spaceLines": 3
+        }
+      ],
+      "answerKey": [
+        "the smallest",
+        "the most",
+        "the tallest",
+        "tallest",
+        "easiest",
+        "she is the tallest in the team",
+        "\"the most fastest\" burada hatalıdır; doğru cevap \"the fastest\" olmalıdır.",
+        "Green Park.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir.",
+        "Öğrencinin hedef kurala uygun özgün cevabı kontrol edilir."
+      ]
+    }
+  },
+  "vocabulary": [
+    "049-superlative-adjectives-w1",
+    "049-superlative-adjectives-w2",
+    "049-superlative-adjectives-w3",
+    "049-superlative-adjectives-w4",
+    "049-superlative-adjectives-w5",
+    "049-superlative-adjectives-w6",
+    "049-superlative-adjectives-w7"
+  ],
+  "screens": [
+    {
+      "id": "s01",
+      "type": "intro",
+      "title": "Superlative Adjectives",
+      "instructionTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+      "content": {
+        "eyebrow": "Karşılaştırma · DERS 49",
+        "heroText": "A giraffe is the tallest animal in the group."
+      }
+    },
+    {
+      "id": "s02",
+      "type": "explanation",
+      "title": "Türkçe konu anlatımı",
+      "instructionTr": "Bir grubun içindeki \"en\" olan kişi veya şeyi anlatırken superlative kullanırız. Kısa sıfatlarda: - tall → the tallest - fast → the fastest - small → the smallest Sonu y ile biten bazı sıfatlarda: - happy → the happiest - easy → the easiest Bazı kısa sıfatlarda son harf çiftlenir: - big → the biggest - hot → the hottest Uzun sıfatlarda: - the most beautiful - the most interesting - the most expensive Düzensiz biçimler: - good → the best - bad → the worst Superlative öncesinde genellikle the kullanılır.",
+      "content": {
+        "examples": [],
+        "noteTr": "Bir grubun içindeki \"en\" olan kişi veya şeyi anlatırken superlative kullanırız. Kısa sıfatlarda: - tall → the tallest - fast → the fastest - small → the smallest Sonu y ile biten bazı sıfatlarda: - happy → the happiest - easy → the easiest Bazı kısa sıfatlarda son harf çiftlenir: - big → the biggest - hot → the hottest Uzun sıfatlarda: - the most beautiful - the most interesting - the most expensive Düzensiz biçimler: - good → the best - bad → the worst Superlative öncesinde genellikle the kullanılır."
+      }
+    },
+    {
+      "id": "s03",
+      "type": "example",
+      "title": "Kaynak örnekleri",
+      "instructionTr": "Örnekleri incele.",
+      "content": {
+        "examples": [
+          "A giraffe is the tallest animal in the group.",
+          "The cheetah is the fastest land animal.",
+          "This is the smallest bag.",
+          "July is the hottest month here.",
+          "Ece is the happiest person in the photo.",
+          "This is the easiest question.",
+          "The new hall is the most modern building.",
+          "This poster is the most colourful one.",
+          "That was the best match of the week.",
+          "It was the worst weather of the month."
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "type": "rule-table",
+      "title": "Kural tablosu",
+      "instructionTr": "Kuralı tabloyla gör.",
+      "content": {
+        "rows": [
+          [
+            "Kısa sıfat",
+            "the + adjective-est",
+            "tall → the tallest"
+          ],
+          [
+            "Sessiz + y",
+            "y → iest",
+            "happy → the happiest"
+          ],
+          [
+            "Kısa ünlü + sessiz",
+            "harf çiftlenir",
+            "big → the biggest"
+          ],
+          [
+            "Uzun sıfat",
+            "the most + adjective",
+            "the most interesting"
+          ],
+          [
+            "Düzensiz",
+            "özel biçim",
+            "good → the best"
+          ]
+        ]
+      },
+      "explanationTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek. Kısa sıfatlara -est eklemek. Uzun sıfatlarla the most kullanmak. the kelimesini uygun cevapde kullanmak. good → the best ve bad → the worst biçimlerini tanımak."
+    },
+    {
+      "id": "s05",
+      "type": "explanation",
+      "title": "Sık yapılan hatalar",
+      "instructionTr": "Hata örneklerini oku.",
+      "content": {
+        "examples": [
+          "the most tallest ❌ → the tallest ✅",
+          "the beautifullest ❌ → the most beautiful ✅",
+          "She is tallest in the class. ❌ → She is the tallest in the class. ✅",
+          "the goodest ❌ → the best ✅",
+          "the baddest ❌ → the worst ✅"
+        ],
+        "noteTr": "Yanlışta özne, yardımcı fiil, zaman ipucu ve anlamı birlikte kontrol et."
+      }
+    },
+    {
+      "id": "s06",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 1",
+      "instructionTr": "This is _______ bag in the shop.",
+      "content": {
+        "options": [
+          "the smallest",
+          "smaller",
+          "the more small"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. the smallest seçeneği cümledeki hedef kurala uyar.",
+          "\"smaller\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the smallest\" çünkü the smallest seçeneği cümledeki hedef kurala uyar.",
+          "\"the more small\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the smallest\" çünkü the smallest seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s07",
+      "type": "multiple-choice",
+      "title": "Çoktan seçmeli 2",
+      "instructionTr": "It is _______ interesting book here.",
+      "content": {
+        "options": [
+          "the most",
+          "more",
+          "the more"
+        ],
+        "correctIndex": 0,
+        "optionExplanationsTr": [
+          "Doğru. the most seçeneği cümledeki hedef kurala uyar.",
+          "\"more\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most\" çünkü the most seçeneği cümledeki hedef kurala uyar.",
+          "\"the more\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most\" çünkü the most seçeneği cümledeki hedef kurala uyar."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s08",
+      "type": "fill-blank",
+      "title": "Boşluk doldurma",
+      "instructionTr": "A giraffe is the _______ animal here. (tall)",
+      "content": {
+        "answer": "tallest",
+        "accepted": [
+          "tallest"
+        ],
+        "placeholder": "Cevabı yaz",
+        "explanationTr": "\"tallest\" boşluğu cümlenin hedef kuralına göre tamamlar."
+      },
+      "hintTr": "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+      "points": 10
+    },
+    {
+      "id": "s09",
+      "type": "sentence-order",
+      "title": "Cümle sıralama",
+      "instructionTr": "Kelimeleri doğru sıraya koy.",
+      "content": {
+        "tokens": [
+          "the tallest",
+          "she",
+          "is",
+          "in the team"
+        ],
+        "answer": [
+          "she",
+          "is",
+          "the tallest",
+          "in the team"
+        ],
+        "explanationTr": "Doğru sıra: she is the tallest in the team"
+      },
+      "points": 10
+    },
+    {
+      "id": "s10",
+      "type": "error-find",
+      "title": "Hata bulma",
+      "instructionTr": "Hatalı kelimeyi seç.",
+      "content": {
+        "sentence": [
+          "This",
+          "is",
+          "the",
+          "most",
+          "fastest",
+          "car."
+        ],
+        "wrongIndex": 0,
+        "explanationTr": "\"the most fastest\" burada hatalıdır; doğru cevap \"the fastest\" olmalıdır."
+      },
+      "points": 10
+    },
+    {
+      "id": "s11",
+      "type": "matching",
+      "title": "Eşleştirme",
+      "instructionTr": "Uygun parçaları eşleştir.",
+      "content": {
+        "pairs": [
+          [
+            "tall",
+            "the tallest"
+          ],
+          [
+            "happy",
+            "the happiest"
+          ],
+          [
+            "beautiful",
+            "the most beautiful"
+          ]
+        ],
+        "explanationTr": "Eşleşen parçalar birlikte doğru ve anlamlı cümle oluşturur."
+      },
+      "points": 20
+    },
+    {
+      "id": "s12",
+      "type": "reading",
+      "title": "Kısa okuma",
+      "instructionTr": "Metni oku ve soruları cevapla.",
+      "content": {
+        "text": "There are three parks in the town. Green Park is the smallest. River Park is the quietest. Central Park is the biggest and the most popular. Beyza likes River Park because it is calm.",
+        "questions": [
+          {
+            "prompt": "Which park is the smallest?",
+            "options": [
+              "Green Park.",
+              "Central Park.",
+              "Because it is calm."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Green Park.\" olmalıdır.",
+              "\"Central Park.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Green Park.\".",
+              "\"Because it is calm.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Green Park.\"."
+            ]
+          },
+          {
+            "prompt": "Which park is the biggest?",
+            "options": [
+              "Because it is calm.",
+              "Central Park.",
+              "Green Park."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Because it is calm.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Central Park.\".",
+              "Doğru. Bu soruda cevap \"Central Park.\" olmalıdır.",
+              "\"Green Park.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Central Park.\"."
+            ]
+          },
+          {
+            "prompt": "Why does Beyza like River Park?",
+            "options": [
+              "Green Park.",
+              "Central Park.",
+              "Because it is calm."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Green Park.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because it is calm.\".",
+              "\"Central Park.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Because it is calm.\".",
+              "Doğru. Bu soruda cevap \"Because it is calm.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 30
+    },
+    {
+      "id": "s13",
+      "type": "listening",
+      "title": "Dinleme metni",
+      "instructionTr": "Who is the youngest?",
+      "content": {
+        "audioText": "\"Three players are practising serves. Elif is the youngest. Zeynep is the tallest. Beyza is the fastest. The coach says today is the best practice of the week.\"",
+        "questions": [
+          {
+            "prompt": "Who is the youngest?",
+            "options": [
+              "Elif.",
+              "Zeynep.",
+              "Today is the best practice of the week."
+            ],
+            "correctIndex": 0,
+            "explanationsTr": [
+              "Doğru. Bu soruda cevap \"Elif.\" olmalıdır.",
+              "\"Zeynep.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Elif.\".",
+              "\"Today is the best practice of the week.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Elif.\"."
+            ]
+          },
+          {
+            "prompt": "Who is the tallest?",
+            "options": [
+              "Today is the best practice of the week.",
+              "Zeynep.",
+              "Elif."
+            ],
+            "correctIndex": 1,
+            "explanationsTr": [
+              "\"Today is the best practice of the week.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Zeynep.\".",
+              "Doğru. Bu soruda cevap \"Zeynep.\" olmalıdır.",
+              "\"Elif.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Zeynep.\"."
+            ]
+          },
+          {
+            "prompt": "What does the coach say?",
+            "options": [
+              "Elif.",
+              "Zeynep.",
+              "Today is the best practice of the week."
+            ],
+            "correctIndex": 2,
+            "explanationsTr": [
+              "\"Elif.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Today is the best practice of the week.\".",
+              "\"Zeynep.\" bu sorudaki kişi, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"Today is the best practice of the week.\".",
+              "Doğru. Bu soruda cevap \"Today is the best practice of the week.\" olmalıdır."
+            ]
+          }
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s14",
+      "type": "speaking",
+      "title": "Konuşma görevi",
+      "instructionTr": "Bir grup seç ve üç superlative cümlesi kur: - the tallest - the fastest - the most interesting - the best",
+      "content": {
+        "sentenceStarters": [
+          "the tallest",
+          "the fastest",
+          "the most interesting",
+          "the best"
+        ],
+        "timerSeconds": 45,
+        "selfChecks": [
+          "Hedef yapıyı kullandım.",
+          "En az iki cümle söyledim.",
+          "Kuralı kontrol ettim.",
+          "Cümlelerim anlaşılırdı."
+        ]
+      },
+      "points": 10
+    },
+    {
+      "id": "s15",
+      "type": "mini-game",
+      "title": "Beş soruluk uygulama oyunu",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "tall →",
+            "options": [
+              "the taller",
+              "the tallest",
+              "the most tall"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. the tallest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"the taller\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the tallest\" çünkü the tallest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "happy →",
+            "options": [
+              "the happiest",
+              "the happyest",
+              "the most happy"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the happiest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"the happyest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the happiest\" çünkü the happiest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "interesting →",
+            "options": [
+              "the interestingest",
+              "the most interesting",
+              "more interesting"
+            ],
+            "correctIndex": 1,
+            "explanationTr": "Doğru. the most interesting seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"the interestingest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most interesting\" çünkü the most interesting seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "good →",
+            "options": [
+              "the goodest",
+              "the better",
+              "the best"
+            ],
+            "correctIndex": 2,
+            "explanationTr": "Doğru. the best seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"the goodest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the best\" çünkü the best seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "big →",
+            "options": [
+              "the biggest",
+              "the bigest",
+              "the most big"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the biggest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"the bigest\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the biggest\" çünkü the biggest seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s16",
+      "type": "mini-game",
+      "title": "Ders sonu testi",
+      "instructionTr": "Beş soruluk seti çöz.",
+      "content": {
+        "rounds": [
+          {
+            "prompt": "The blue whale is _______ animal in the world.",
+            "options": [
+              "the biggest",
+              "bigger",
+              "the more big"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the biggest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"bigger\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the biggest\" çünkü the biggest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "This is _______ expensive bag in the shop.",
+            "options": [
+              "the most",
+              "more",
+              "the more"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the most seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"more\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the most\" çünkü the most seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "She is _______ player in the team.",
+            "options": [
+              "the fastest",
+              "faster",
+              "the most fast"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the fastest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"faster\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the fastest\" çünkü the fastest seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "That was _______ day of the holiday.",
+            "options": [
+              "the best",
+              "better",
+              "the goodest"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the best seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"better\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the best\" çünkü the best seçeneği cümledeki hedef kurala uyar."
+          },
+          {
+            "prompt": "This is _______ street in the town.",
+            "options": [
+              "the quietest",
+              "quieter",
+              "the most quietest"
+            ],
+            "correctIndex": 0,
+            "explanationTr": "Doğru. the quietest seçeneği cümledeki hedef kurala uyar.",
+            "wrongExplanationTr": "\"quieter\" seçeneği bu cümledeki özne, zaman veya anlam ipucuyla uyuşmuyor; doğru cevap \"the quietest\" çünkü the quietest seçeneği cümledeki hedef kurala uyar."
+          }
+        ]
+      },
+      "points": 50
+    },
+    {
+      "id": "s17",
+      "type": "vocabulary-hunt",
+      "title": "Kelime Avı",
+      "instructionTr": "Bu dersin hedef kelimeleriyle kısa tekrar oyunu oyna.",
+      "content": {
+        "rounds": [
+          {
+            "wordId": "049-superlative-adjectives-w1",
+            "word": "smallest",
+            "example": "the smallest bag",
+            "audioText": "smallest",
+            "prompt": "\"smallest\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "en küçük",
+              "en hızlı",
+              "en sessiz",
+              "popüler"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "wordId": "049-superlative-adjectives-w2",
+            "word": "fastest",
+            "example": "the fastest player",
+            "audioText": "fastest",
+            "prompt": "\"fastest\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "en küçük",
+              "en hızlı",
+              "en sessiz",
+              "popüler"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "wordId": "049-superlative-adjectives-w3",
+            "word": "quietest",
+            "example": "the quietest park",
+            "audioText": "quietest",
+            "prompt": "\"quietest\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "en küçük",
+              "en hızlı",
+              "en sessiz",
+              "popüler"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "wordId": "049-superlative-adjectives-w4",
+            "word": "popular",
+            "example": "the most popular place",
+            "audioText": "popular",
+            "prompt": "\"popular\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "en küçük",
+              "en hızlı",
+              "en sessiz",
+              "popüler"
+            ],
+            "correctIndex": 3
+          },
+          {
+            "wordId": "049-superlative-adjectives-w5",
+            "word": "best",
+            "example": "the best match",
+            "audioText": "best",
+            "prompt": "\"best\" kelimesinin Türkçe anlamını seç.",
+            "options": [
+              "en iyi",
+              "en küçük",
+              "en hızlı",
+              "en sessiz"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      },
+      "points": 25
+    },
+    {
+      "id": "s18",
+      "type": "summary",
+      "title": "Ders özeti",
+      "instructionTr": "Ana noktaları kapat.",
+      "content": {
+        "points": [
+          "Üç veya daha fazla kişi, hayvan, nesne veya yer arasında en üstün olanı belirtmek.",
+          "Kısa sıfatlara -est eklemek.",
+          "Hedef kelimeler: smallest, fastest, quietest, popular, best, worst, youngest"
+        ]
+      }
+    }
+  ],
+  "assessment": {
+    "passScore": 60,
+    "starThresholds": {
+      "one": 60,
+      "two": 75,
+      "three": 90
+    },
+    "completionBonus": 20
+  }
+}
