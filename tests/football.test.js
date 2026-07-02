@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {createPomaManifestResolver, requiredPomaAssetPaths, pomaVideoEvents} from "../js/poma-assets.js";
-import {createFootballSession, advanceFootball, answerFootballQuestion, availableFootballWords, selectWordQuestion, safeRead, defaultFootballStats, defaultAchievements, unlockTrophies, summarizeFootball, shouldUseVideo, FOOTBALL_KEYS, validateFootballQuestion} from "../js/football-engine.js";
+import {createFootballSession, advanceFootball, answerFootballQuestion, availableFootballWords, selectWordQuestion, safeRead, defaultFootballStats, defaultAchievements, unlockTrophies, summarizeFootball, shouldUseVideo, FOOTBALL_KEYS, validateFootballQuestion, createFootballMatchQuestions, defaultFootballLeagueProgress, migrateFootballLeagueProgress, recordFootballLeagueAnswer, readFootballLeagueProgress, finalizeFootballLeagueMatch, FOOTBALL_LEAGUES} from "../js/football-engine.js";
 import {renderFootballMedia, makeOnce} from "../js/football-game.js";
 import {createFootballAudio} from "../js/football-audio.js";
 
@@ -18,6 +18,17 @@ const words=[
   {id:"w4",word:"music",meaningTr:"müzik",example:"I like music.",lessonId:"l2",theme:"music",audioText:"music"},
   {id:"w5",word:"practice",meaningTr:"antrenman",example:"Practice starts now.",lessonId:"l2",theme:"general",audioText:"practice"}
 ];
+const leagueWords=Array.from({length:36},(_,i)=>({
+  id:`lw${i+1}`,
+  word:`word${i+1}`,
+  meaningTr:`anlam${i+1}`,
+  example:`This is word ${i+1}.`,
+  lessonId:String(i<24?String((i%12)+1).padStart(3,"0"):String(13+(i%12)).padStart(3,"0"))+"-lesson",
+  theme:i%3===0?"school":i%3===1?"city":"routine"
+}));
+function storageOf(value=null){
+  return {value:value?JSON.stringify(value):null,getItem(key){return key===FOOTBALL_KEYS.league?this.value:null},setItem(key,v){if(key===FOOTBALL_KEYS.league)this.value=v}};
+}
 
 function answerAndAdvance(session, correct=true, state={vocabularyProgress:{}}) {
   const index=correct?session.currentQuestion.correctIndex:(session.currentQuestion.correctIndex+1)%session.currentQuestion.options.length;
@@ -105,8 +116,87 @@ test("word selection avoids immediate repeats and caps difficult weighting",()=>
   assert.notEqual(q.wordId,"w1");
   const repeated=Array.from({length:20},()=>selectWordQuestion(words,state,[],()=>0).wordId);
   assert.ok(repeated.filter(x=>x==="w1").length<=20);
-  assert.equal(availableFootballWords(words,{vocabularyProgress:{w3:{lastSeen:"2026-06-29T00:00:00.000Z"}}}).length,1);
+  assert.equal(availableFootballWords(words,{vocabularyProgress:{w3:{lastSeen:"2026-06-29T00:00:00.000Z"}}}).length,5);
   assert.equal(availableFootballWords([],{}).length,0);
+});
+
+test("football league order moves from easy to hard",()=>{
+  assert.deepEqual(FOOTBALL_LEAGUES.map(x=>x.id),["starter","bronze","silver","gold","champion"]);
+  assert.equal(FOOTBALL_LEAGUES[0].label,"Başlangıç Ligi");
+  assert.equal(FOOTBALL_LEAGUES.at(-1).label,"Şampiyonlar Ligi");
+});
+
+test("league match has no duplicate normal words and valid answer options",()=>{
+  const questions=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},defaultFootballLeagueProgress(),()=>0.41);
+  assert.equal(questions.length,10);
+  assert.equal(new Set(questions.map(q=>q.wordId)).size,questions.length);
+  for(const q of questions){
+    assert.equal(validateFootballQuestion(q),true);
+    assert.equal(q.options.filter(x=>x===q.correctAnswer).length,1);
+    assert.equal(new Set(q.options).size,4);
+  }
+});
+
+test("two consecutive matches cannot use the exact same word set",()=>{
+  const first=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},defaultFootballLeagueProgress(),()=>0.2);
+  const progress={...defaultFootballLeagueProgress(),lastMatchSignature:first.map(q=>q.wordId).join("|")};
+  const second=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},progress,()=>0.2);
+  assert.notDeepEqual(second.map(q=>q.wordId),first.map(q=>q.wordId));
+});
+
+test("last two match words are blocked from normal new selection",()=>{
+  const progress={...defaultFootballLeagueProgress(),recentMatchWordIds:[leagueWords.slice(0,10).map(w=>w.id),leagueWords.slice(10,20).map(w=>w.id)]};
+  const questions=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},progress,()=>0.1);
+  assert.equal(questions.some(q=>progress.recentMatchWordIds.flat().includes(q.wordId)),false);
+});
+
+test("correct words from previous match do not return as learned repeats immediately",()=>{
+  const recent=leagueWords.slice(0,10).map(w=>w.id);
+  const progress={...defaultFootballLeagueProgress(),seenWordIds:recent,recentMatchWordIds:[recent],words:Object.fromEntries(recent.map(id=>[id,{correct:1,wrong:0,league:"starter",nextReviewAt:"2099-01-01T00:00:00Z"}]))};
+  const questions=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},progress,()=>0.23);
+  assert.equal(questions.some(q=>recent.includes(q.wordId)),false);
+});
+
+test("wrong word enters league review pool",()=>{
+  const storage=storageOf();
+  const q=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},defaultFootballLeagueProgress(),()=>0.3)[0];
+  recordFootballLeagueAnswer(q,false,"m1",storage,new Date("2026-07-02T10:00:00Z"));
+  const progress=readFootballLeagueProgress(storage);
+  assert.equal(progress.words[q.wordId].wrong,1);
+  assert.equal(progress.words[q.wordId].mastered,false);
+  assert.ok(progress.words[q.wordId].nextReviewAt);
+});
+
+test("mastered word remains but is selected less often than fresh words",()=>{
+  const mastered=leagueWords[0].id;
+  const progress={...defaultFootballLeagueProgress(),seenWordIds:[mastered],words:{[mastered]:{correct:3,wrong:0,correctMatchIds:["a","b","c"],mastered:true,league:"starter",nextReviewAt:"2099-01-01T00:00:00Z"}}};
+  const ids=createFootballMatchQuestions(leagueWords,{vocabularyProgress:{}},progress,()=>0.5).map(q=>q.wordId);
+  assert.equal(ids.includes(mastered),false);
+});
+
+test("old football localStorage safely migrates to word league v2",()=>{
+  const migrated=migrateFootballLeagueProgress({version:1,currentLeague:"unknown",words:{w1:{correct:1}}});
+  assert.equal(migrated.version,2);
+  assert.equal(migrated.currentLeague,"starter");
+  assert.ok(migrated.seenWordIds.includes("w1"));
+});
+
+test("narrow pool produces a controlled shorter valid match",()=>{
+  const questions=createFootballMatchQuestions(words,{vocabularyProgress:{}},defaultFootballLeagueProgress(),()=>0);
+  assert.ok(questions.length>0 && questions.length<=10);
+  assert.equal(new Set(questions.map(q=>q.wordId)).size,questions.length);
+  assert.equal(questions.every(validateFootballQuestion),true);
+});
+
+test("league finalization stores recent matches and can promote",()=>{
+  const progress=defaultFootballLeagueProgress();
+  progress.seenWordIds=leagueWords.slice(0,22).map(w=>w.id);
+  progress.words=Object.fromEntries(leagueWords.slice(0,8).map(w=>[w.id,{league:"starter",mastered:true,correct:3,correctMatchIds:["a","b","c"]}]));
+  const storage=storageOf(progress);
+  const session={matchWordIds:leagueWords.slice(0,10).map(w=>w.id),recentWordIds:leagueWords.slice(0,10).map(w=>w.id),correct:9,questionsAsked:10,maxQuestions:10};
+  const next=finalizeFootballLeagueMatch(session,storage);
+  assert.equal(next.recentMatchWordIds.length,1);
+  assert.equal(next.currentLeague,"bronze");
 });
 
 test("football questions are immutable and answer/options stay coherent",()=>{

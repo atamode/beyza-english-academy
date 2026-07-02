@@ -1,6 +1,6 @@
-import {loadPomaManifest} from "./poma-assets.js";
-import {availableFootballWords, createFootballSession, answerFootballQuestion, advanceFootball, summarizeFootball, safeRead, safeWrite, defaultFootballStats, defaultAchievements, FOOTBALL_KEYS, FOOTBALL_CONFIG, mergeMatchStats, unlockTrophies, recordFootballAnswer, shouldUseVideo, validateFootballQuestion} from "./football-engine.js";
-import {createFootballAudio} from "./football-audio.js";
+import { loadPomaManifest } from "./poma-assets.js";
+import { availableFootballWords, createFootballSession, answerFootballQuestion, advanceFootball, summarizeFootball, safeRead, safeWrite, defaultFootballStats, defaultAchievements, FOOTBALL_KEYS, FOOTBALL_CONFIG, mergeMatchStats, unlockTrophies, recordFootballAnswer, recordFootballLeagueAnswer, finalizeFootballLeagueMatch, readFootballLeagueProgress, leagueProgressPercent, shouldUseVideo, validateFootballQuestion } from "./football-engine.js";
+import { createFootballAudio } from "./football-audio.js";
 
 const esc = v => String(v ?? "").replace(/[&<>\"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let resolverPromise = null, session = null, cleanup = () => {}, audio = null, mediaToken = 0, lastSoundVisual = null, soundListenerBound = false;
@@ -28,7 +28,7 @@ function unavailable(app) {
 }
 
 function empty(app) {
-  app.innerHTML = `<section class="card"><p class="eyebrow">FUTBOL</p><h1>Maç için kelime gerekiyor.</h1><p class="lead">Önce bir dersin Kelime Avı bölümünü çöz veya Kelime Kasası'ndan birkaç kelime çalış.</p><div class="button-row"><button class="button primary" data-route="vocabulary">Kelime Kasası'na git</button><button class="button secondary" data-route="home">Ana ekran</button></div></section>`;
+  app.innerHTML = `<section class="card"><p class="eyebrow">FUTBOL</p><h1>Maç için kelime gerekiyor.</h1><p class="lead">Kelime listesi yüklenemedi. Kelime Kasası açılıyorsa oyunu tekrar deneyebilirsin.</p><div class="button-row"><button class="button primary" data-route="vocabulary">Kelime Kasası'na git</button><button class="button secondary" data-route="games">Oyun Merkezi</button></div></section>`;
   bindRoutes(app);
 }
 
@@ -40,9 +40,9 @@ function render(app, context, resolver, words) {
   const q = session.currentQuestion;
   const isQuestion = session.phase.endsWith("_QUESTION");
   const isSummary = session.phase === "MATCH_SUMMARY";
-  app.innerHTML = `<section class="football-shell"><div class="lesson-head"><button class="button secondary" data-action="football-exit">← Oyun Merkezi</button><div class="progress"><span style="width:${Math.min(100, session.questionsAsked / session.maxQuestions * 100)}%"></span></div><span>${session.questionsAsked}/${session.maxQuestions}</span></div><article class="card football-card"><div class="football-score"><strong>Beyza ${session.goalsFor} - ${session.goalsAgainst} Rakip</strong><span>Doğru ${session.correct} · Yanlış ${session.wrong} · Kurtarış ${session.saves}</span></div><div class="football-media" aria-live="polite">${renderFootballMedia(media, resolver, session.visual)}</div>${isSummary ? summaryHtml(session, stats, achievements) : isQuestion ? questionHtml(q, session) : resultHtml(session)}</article></section>`;
+  app.innerHTML = `<section class="football-shell"><div class="lesson-head"><button class="button secondary" data-action="football-exit">← Oyun Merkezi</button><div class="progress"><span style="width:${Math.min(100, session.questionsAsked / Math.max(1, session.maxQuestions) * 100)}%"></span></div><span>${session.questionsAsked}/${session.maxQuestions}</span></div><article class="card football-card"><div class="football-score"><strong>Beyza ${session.goalsFor} - ${session.goalsAgainst} Rakip</strong><span>${esc(session.leagueLabel || "Başlangıç Ligi")} · Doğru ${session.correct} · Yanlış ${session.wrong} · Kurtarış ${session.saves}</span></div><div class="football-media" aria-live="polite">${renderFootballMedia(media, resolver, session.visual)}</div>${isSummary ? summaryHtml(session, stats, achievements) : isQuestion ? questionHtml(q, session) : resultHtml(session)}</article></section>`;
   bindRoutes(app);
-  app.querySelector("[data-action='football-exit']")?.addEventListener("click", () => { cleanup(); session = null; const back=sessionStorage.getItem("beyzaFootballReturnRoute")||"home"; sessionStorage.removeItem("beyzaFootballReturnRoute"); location.hash = `#/${back}`; });
+  app.querySelector("[data-action='football-exit']")?.addEventListener("click", () => { cleanup(); session = null; const back = sessionStorage.getItem("beyzaFootballReturnRoute") || "home"; sessionStorage.removeItem("beyzaFootballReturnRoute"); location.hash = `#/${back}`; });
   app.querySelector("[data-action='football-start']")?.addEventListener("click", () => { audio.unlock(); audio.startAmbient(); audio.playForVisual("MATCH_INTRO"); session = advanceFootball(session); render(app, context, resolver, words); });
   app.querySelector("[data-action='football-continue']")?.addEventListener("click", () => { session = advanceFootball(session); render(app, context, resolver, words); });
   app.querySelector("[data-action='football-again']")?.addEventListener("click", () => { session = createFootballSession(words, context.state); lastSoundVisual = null; render(app, context, resolver, words); });
@@ -54,6 +54,8 @@ function render(app, context, resolver, words) {
     const selected = Number(button.dataset.footballAnswer);
     const correct = selected === before.correctIndex;
     context.updateState(x => recordFootballAnswer(x, before, correct));
+    const leagueRecord = recordFootballLeagueAnswer(before, correct, session.matchId);
+    if (leagueRecord.mastered && correct) session.masteredThisMatch = [...new Set([...(session.masteredThisMatch || []), before.wordId])];
     if (!correct) session.difficultWords[before.wordId] = (session.difficultWords[before.wordId] || 0) + 1;
     session = answerFootballQuestion(session, selected, words, context.state);
     lastSoundVisual = null;
@@ -72,19 +74,20 @@ export function renderFootballMedia(media, resolver, event, reducedMotion = type
 }
 
 function questionHtml(q, s) {
-  if (!validateFootballQuestion(q)) return `<div class="football-panel"><h1>Soru hazırlanamadı</h1><p class="lead">Kelime Kasası'ndan yeni soru bekleniyor.</p></div>`;
-  return `<div class="football-panel"><p class="eyebrow">${phaseTitle(s.phase)}</p><h1>${esc(q.prompt)}</h1><p class="lead">Doğru cevabı bul, atağa devam et!</p><div class="game-board">${q.options.map((x, i) => `<button class="game-door" data-football-answer="${i}">${esc(x)}</button>`).join("")}</div></div>`;
+  if (!validateFootballQuestion(q)) return `<div class="football-panel"><h1>Soru hazırlanamadı</h1><p class="lead">Kelime Ligi yeni soru hazırlıyor.</p></div>`;
+  return `<div class="football-panel"><p class="eyebrow">${phaseTitle(s.phase)} · ${esc(s.leagueLabel)}</p><h1>${esc(q.prompt)}</h1><p class="lead">Doğru cevabı bul, atağa devam et!</p><div class="game-board">${q.options.map((x, i) => `<button class="game-door" data-football-answer="${i}">${esc(x)}</button>`).join("")}</div></div>`;
 }
 
 function resultHtml(s) {
-  if (s.phase === "MATCH_INTRO") return `<div class="football-panel"><p class="eyebrow">FUTBOL V1</p><h1>Poma sahaya çıkıyor.</h1><p class="lead">10 Kelime Kasası sorusu ile mini maç oynanır.</p><button class="button primary" data-action="football-start">Maça başla →</button></div>`;
+  if (s.phase === "MATCH_INTRO") return `<div class="football-panel"><p class="eyebrow">FUTBOL V1 · ${esc(s.leagueLabel || "Başlangıç Ligi")}</p><h1>Poma sahaya çıkıyor.</h1><p class="lead">Kelime Ligi bu maç için ${s.maxQuestions} soru hazırladı. Kolay kelimelerden başlayıp lig lig ilerlersin.</p><button class="button primary" data-action="football-start">Maça başla →</button></div>`;
   return `<div class="football-panel"><p class="eyebrow">${s.lastResult?.correct ? "✓ Doğru hamle" : "↻ Geliştirilecek hamle"}</p><h1>${visualTitle(s.visual)}</h1><p class="lead">${esc(s.lastResult?.explanation || "Oyun akışı devam ediyor.")}</p><button class="button primary" data-action="football-continue" hidden>Devam →</button></div>`;
 }
 
 function summaryHtml(s, stats, achievements) {
   const summary = s.summary || summarizeFootball(s).summary;
+  const progress = leagueProgressPercent(readFootballLeagueProgress());
   const trophies = Object.values(achievements.unlocked || {});
-  return `<div class="football-panel"><p class="eyebrow">MAÇ ÖZETİ</p><h1>Skor: ${summary.score}</h1><div class="stats-grid grid"><article class="card stat"><span>Doğru / yanlış</span><strong>${summary.correct}/${summary.wrong}</strong></article><article class="card stat"><span>Başarı</span><strong>%${summary.percent}</strong></article><article class="card stat"><span>Atılan gol</span><strong>${summary.goalsFor}</strong></article><article class="card stat"><span>Kurtarış</span><strong>${summary.saves}</strong></article></div><p>Çalışılan kelime: ${summary.studiedWords}. En çok zorlanılan: ${summary.difficult.length ? summary.difficult.map(esc).join(", ") : "yok"}.</p><h2>Kupa Vitrini V1</h2><ul class="tag-list">${trophies.map(t => `<li class="tag">🏆 ${esc(t.title)}</li>`).join("") || "<li class='tag'>Kupalar maçlarla açılır.</li>"}<li class="tag">🔒 Zor Rakibi Yendin</li></ul><div class="button-row"><button class="button primary" data-action="football-again">Tekrar oyna</button><button class="button secondary" data-route="home">Oyun Merkezi'ne dön</button></div></div>`;
+  return `<div class="football-panel"><p class="eyebrow">MAÇ ÖZETİ · ${esc(summary.leagueLabel || s.leagueLabel || "Başlangıç Ligi")}</p><h1>Skor: ${summary.score}</h1><div class="stats-grid grid"><article class="card stat"><span>Doğru / yanlış</span><strong>${summary.correct}/${summary.wrong}</strong></article><article class="card stat"><span>Başarı</span><strong>%${summary.percent}</strong></article><article class="card stat"><span>Yeni kelime</span><strong>${summary.newWords}</strong></article><article class="card stat"><span>Öğrenilen</span><strong>${summary.learnedWords}</strong></article></div><p>Tekrar edilmesi gereken kelime: ${summary.reviewWords}. Sonraki lige ilerleme: %${progress}. En çok zorlanılan: ${summary.difficult.length ? summary.difficult.map(esc).join(", ") : "yok"}.</p><h2>Kupa Vitrini V1</h2><ul class="tag-list">${trophies.map(t => `<li class="tag">🏆 ${esc(t.title)}</li>`).join("") || "<li class='tag'>Kupalar maçlarla açılır.</li>"}<li class="tag">🔒 Zor Rakibi Yendin</li></ul><div class="button-row"><button class="button primary" data-action="football-again">Tekrar oyna</button><button class="button secondary" data-route="games">Oyun Merkezi'ne dön</button></div></div>`;
 }
 
 export function makeOnce(fn) {
@@ -152,10 +155,11 @@ function setupResultAdvance(app, context, resolver, words) {
 
 function persistSummary(context) {
   const oldStats = safeRead(FOOTBALL_KEYS.stats, defaultFootballStats());
-  if (oldStats.lastMatch?.completedAt === session.summary?.completedAt) return;
+  if (oldStats.lastMatch?.completedAt && oldStats.lastMatch.completedAt === session.summary?.completedAt) return;
   session.summary ||= summarizeFootball(session).summary;
   session.summary.completedAt ||= new Date().toISOString();
   const stats = mergeMatchStats(oldStats, session, context.state.streak?.count || 0);
+  finalizeFootballLeagueMatch(session);
   const result = unlockTrophies(stats, safeRead(FOOTBALL_KEYS.achievements, defaultAchievements()));
   if (result.newlyUnlocked.length) audio.playForVisual("TROPHY");
   safeWrite(FOOTBALL_KEYS.stats, stats);
