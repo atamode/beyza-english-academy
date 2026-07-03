@@ -30,7 +30,7 @@ export const VOLLEYBALL_PHASES = {
   POSSESSION_QUESTION: { visual: "possession", question: "Servis kimde?", correct: "PASS_RESULT", wrong: "RECEIVE_QUESTION" },
   PASS_RESULT: { correctVisual: "passSuccess", wrongVisual: "shotMissed", correctNext: "SPIKE_QUESTION", wrongNext: "RECEIVE_QUESTION" },
   SPIKE_QUESTION: { visual: "shot", question: "Smaç", correct: "SPIKE_RESULT", wrong: "SPIKE_RESULT" },
-  SPIKE_RESULT: { correctVisual: "shotSuccess", wrongVisual: "shotMissed", correctNext: "ROUND_RESET", wrongNext: "ROUND_RESET", correctPoint: 1, wrongBlock: 1 },
+  SPIKE_RESULT: { correctVisual: "shotSuccess", wrongVisual: "shotMissed", correctNext: "ROUND_RESET", wrongNext: "ROUND_RESET", correctPoint: 1 },
   RECEIVE_QUESTION: { visual: "pass", question: "Karşılama", correct: "RECEIVE_RESULT", wrong: "OPPONENT_SPIKE_QUESTION" },
   RECEIVE_RESULT: { correctVisual: "saveSuccess", wrongVisual: "conceded", correctNext: "POSSESSION_QUESTION", wrongNext: "OPPONENT_SPIKE_QUESTION", correctSave: 1 },
   OPPONENT_SPIKE_QUESTION: { visual: "defence", question: "Blok / kurtarış", correct: "OPPONENT_SPIKE_RESULT", wrong: "OPPONENT_SPIKE_RESULT" },
@@ -109,6 +109,7 @@ export function answerVolleyballQuestion(session, selectedIndex, words, academyS
   }
   result.currentQuestion = result.matchQuestions[result.questionsAsked] || null;
   result.lastResult = { correct, wordId: word.id, word: word.word, meaningTr: word.meaningTr, explanation: session.currentQuestion.TurkishExplanation };
+  if (!result.currentQuestion && result.questionsAsked >= result.maxQuestions && result.phase.endsWith("_QUESTION")) return summarizeVolleyball(result);
   return result;
 }
 
@@ -124,13 +125,13 @@ export function applyVolleyballResult(session, resultPhase, correct) {
   if (cfg.correctPoint && correct) session.pointsFor += 1;
   if (cfg.correctBlock && correct) session.blocks += 1;
   if (cfg.correctSave && correct) session.saves += 1;
-  if (cfg.wrongBlock && !correct) session.blocks += 1;
   if (cfg.wrongConcede && !correct) session.pointsAgainst += 1;
   return session;
 }
 
 export function advanceVolleyball(session) {
   if (session.phase === "MATCH_INTRO") return { ...session, phase: "POSSESSION_QUESTION", visual: "possession" };
+  if (session.phase === "FINAL_VIDEO") return { ...session, phase: "MATCH_SUMMARY", visual: "MATCH_INTRO", pendingNext: null };
   if (session.questionsAsked >= session.maxQuestions) return summarizeVolleyball(session);
   const next = session.pendingNext || VOLLEYBALL_PHASES[session.phase]?.next || "POSSESSION_QUESTION";
   if (next === "ROUND_RESET") {
@@ -141,6 +142,7 @@ export function advanceVolleyball(session) {
 }
 
 export function summarizeVolleyball(session) {
+  const resultType = volleyballResultType(session);
   const base = summarizeFootball({ ...session, goalsFor: session.pointsFor, goalsAgainst: session.pointsAgainst, saves: session.saves });
   const summary = {
     ...base.summary,
@@ -149,9 +151,17 @@ export function summarizeVolleyball(session) {
     pointsAgainst: session.pointsAgainst,
     blocks: session.blocks,
     saves: session.saves,
+    resultType,
     difficult: Object.entries(session.difficultWords || {}).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id]) => id)
   };
-  return { ...session, phase: "MATCH_SUMMARY", visual: session.pointsFor >= session.pointsAgainst ? "win" : "lose", summary };
+  if (resultType === "draw") return { ...session, phase: "MATCH_SUMMARY", visual: "MATCH_INTRO", summary };
+  return { ...session, phase: "FINAL_VIDEO", visual: resultType, pendingNext: "MATCH_SUMMARY", summary };
+}
+
+export function volleyballResultType(session) {
+  if ((session.pointsFor || 0) > (session.pointsAgainst || 0)) return "win";
+  if ((session.pointsFor || 0) < (session.pointsAgainst || 0)) return "lose";
+  return "draw";
 }
 
 export function mergeVolleyballStats(stats, session, studyStreak = 0) {

@@ -6,7 +6,8 @@ import {fileURLToPath} from "node:url";
 import {createVolleyballManifestResolver, requiredVolleyballAssetPaths, volleyballVideoEvents} from "../js/volleyball-assets.js";
 import {renderVolleyballMedia} from "../js/volleyball-game.js";
 import {FOOTBALL_KEYS, recordFootballLeagueAnswer, readFootballLeagueProgress, finalizeFootballLeagueMatch} from "../js/football-engine.js";
-import {VOLLEYBALL_KEYS, createVolleyballSession, advanceVolleyball, answerVolleyballQuestion, validateVolleyballQuestion, summarizeVolleyball, mergeVolleyballStats, defaultVolleyballStats} from "../js/volleyball-engine.js";
+import {VOLLEYBALL_KEYS, createVolleyballSession, advanceVolleyball, answerVolleyballQuestion, validateVolleyballQuestion, summarizeVolleyball, mergeVolleyballStats, defaultVolleyballStats, volleyballResultType} from "../js/volleyball-engine.js";
+import {createSportAudioManager, SPORT_MUSIC_URL} from "../js/football-audio.js";
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const manifest=JSON.parse(fs.readFileSync(path.join(root,"assets/games/poma-volleyball-v1/asset-manifest.json"),"utf8"));
@@ -23,6 +24,13 @@ function storageOf(value=null){
   const data={};
   if(value)data[FOOTBALL_KEYS.league]=JSON.stringify(value);
   return {getItem(key){return data[key]||null},setItem(key,v){data[key]=v},raw(){return data}};
+}
+
+class MockAudio {
+  static instances=[];
+  constructor(src){this.src=src;this.loop=false;this.volume=1;this.preload="";this.muted=false;this.paused=true;this.playCount=0;MockAudio.instances.push(this);}
+  play(){this.paused=false;this.playCount++;return Promise.resolve();}
+  pause(){this.paused=true;}
 }
 
 test("volleyball manifest resolves all result videos and asset paths",()=>{
@@ -54,6 +62,13 @@ test("volleyball state flow branches to point, block, save and conceded visuals"
   s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.3);
   assert.equal(s.visual,"shotSuccess");
   assert.equal(s.pointsFor,1);
+  let missed=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.22,storageOf());
+  missed=advanceVolleyball(missed);
+  missed=answerVolleyballQuestion(missed,missed.currentQuestion.correctIndex,words,{},()=>0.2);
+  missed=advanceVolleyball(missed);
+  missed=answerVolleyballQuestion(missed,(missed.currentQuestion.correctIndex+1)%4,words,{},()=>0.3);
+  assert.equal(missed.visual,"shotMissed");
+  assert.equal(missed.blocks,0);
 
   let d=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.41,storageOf());
   d=advanceVolleyball(d);
@@ -67,6 +82,87 @@ test("volleyball state flow branches to point, block, save and conceded visuals"
   d=answerVolleyballQuestion(d,(d.currentQuestion.correctIndex+1)%4,words,{},()=>0.8);
   assert.equal(d.visual,"conceded");
   assert.equal(d.pointsAgainst,1);
+  let block=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.45,storageOf());
+  block=advanceVolleyball(block);
+  block=answerVolleyballQuestion(block,(block.currentQuestion.correctIndex+1)%4,words,{},()=>0.4);
+  block=answerVolleyballQuestion(block,(block.currentQuestion.correctIndex+1)%4,words,{},()=>0.5);
+  block=answerVolleyballQuestion(block,block.currentQuestion.correctIndex,words,{},()=>0.6);
+  assert.equal(block.visual,"defenceSuccess");
+  assert.equal(block.blocks,1);
+});
+
+test("volleyball final result uses win lose draw consistently",()=>{
+  const base=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.1,storageOf());
+  const win=summarizeVolleyball({...base,questionsAsked:base.maxQuestions,pointsFor:3,pointsAgainst:1,correct:8,wrong:2});
+  assert.equal(volleyballResultType(win),"win");
+  assert.equal(win.phase,"FINAL_VIDEO");
+  assert.equal(win.visual,"win");
+  assert.equal(advanceVolleyball(win).phase,"MATCH_SUMMARY");
+  const lose=summarizeVolleyball({...base,questionsAsked:base.maxQuestions,pointsFor:1,pointsAgainst:3,correct:3,wrong:7});
+  assert.equal(lose.phase,"FINAL_VIDEO");
+  assert.equal(lose.visual,"lose");
+  const draw=summarizeVolleyball({...base,questionsAsked:base.maxQuestions,pointsFor:2,pointsAgainst:2,correct:5,wrong:5});
+  assert.equal(draw.summary.resultType,"draw");
+  assert.equal(draw.phase,"MATCH_SUMMARY");
+  assert.equal(draw.visual,"MATCH_INTRO");
+  const stats=mergeVolleyballStats(defaultVolleyballStats(),draw);
+  assert.equal(stats.wins,0);
+});
+
+test("volleyball summarizes safely when the last answer would otherwise enter a new question phase",()=>{
+  let s=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.3,storageOf());
+  s={...s,maxQuestions:1,matchQuestions:s.matchQuestions.slice(0,1),matchWordIds:s.matchWordIds.slice(0,1)};
+  s=advanceVolleyball(s);
+  s=answerVolleyballQuestion(s,(s.currentQuestion.correctIndex+1)%4,words,{},()=>0.4);
+  assert.notEqual(s.phase,"RECEIVE_QUESTION");
+  assert.equal(["FINAL_VIDEO","MATCH_SUMMARY"].includes(s.phase),true);
+  assert.equal(s.currentQuestion,null);
+});
+
+test("shared sport audio uses the real MP3 loop after user interaction",()=>{
+  MockAudio.instances=[];
+  const audio=createSportAudioManager({muted:false,AudioClass:MockAudio,storage:storageOf()});
+  assert.equal(audio.state.musicUrl,SPORT_MUSIC_URL);
+  assert.equal(audio.state.musicStarted,false);
+  assert.equal(MockAudio.instances.length,0);
+  audio.startAmbient();
+  assert.equal(MockAudio.instances.length,1);
+  assert.equal(MockAudio.instances[0].src,SPORT_MUSIC_URL);
+  assert.equal(MockAudio.instances[0].loop,true);
+  assert.equal(MockAudio.instances[0].volume,0.22);
+  assert.equal(MockAudio.instances[0].playCount,1);
+});
+
+test("sport audio ducks for video, restores, and global mute updates the active video immediately",()=>{
+  MockAudio.instances=[];
+  const audio=createSportAudioManager({muted:false,AudioClass:MockAudio,storage:storageOf()});
+  audio.startAmbient();
+  const video={muted:false};
+  audio.duckForVideo(video,{resume:true});
+  assert.equal(MockAudio.instances[0].volume,0.06);
+  assert.equal(video.muted,false);
+  audio.setMuted(true);
+  assert.equal(video.muted,true);
+  assert.equal(MockAudio.instances[0].paused,true);
+  audio.setMuted(false);
+  assert.equal(video.muted,false);
+  audio.restoreAfterVideo({resume:true});
+  assert.equal(MockAudio.instances[0].volume,0.22);
+  assert.equal(MockAudio.instances[0].paused,false);
+  audio.duckForVideo(video,{resume:false});
+  assert.equal(MockAudio.instances[0].paused,true);
+  audio.restoreAfterVideo({resume:false});
+  assert.equal(MockAudio.instances[0].paused,true);
+});
+
+test("football and volleyball presenters listen for live sound changes on active videos",()=>{
+  const football=fs.readFileSync(path.join(root,"js/football-game.js"),"utf8");
+  const volleyball=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  for(const source of [football,volleyball]){
+    assert.match(source,/beyza-sound-change/);
+    assert.match(source,/video\.muted = Boolean\(e\.detail\?\.muted\)/);
+    assert.match(source,/removeEventListener\("beyza-sound-change", syncVideoMute\)/);
+  }
 });
 
 test("volleyball questions are valid and have no duplicate words in one match",()=>{

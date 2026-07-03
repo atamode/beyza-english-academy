@@ -124,18 +124,23 @@ function setupResultAdvance(app, context, resolver, words) {
   const go = makeOnce(() => {
     if (token !== mediaToken) return;
     clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);
+    audio.restoreAfterVideo?.({ resume: session.phase !== "FINAL_VIDEO" });
     session = advanceVolleyball(session);
     render(app, context, resolver, words);
   });
-  if (!session.phase.endsWith("_QUESTION") && session.phase !== "MATCH_INTRO" && lastSoundVisual !== session.visual) {
-    audio.playForVisual(session.visual);
-    lastSoundVisual = session.visual;
-  }
   const video = app.querySelector(".football-media-video"), poster = app.querySelector(".football-media-poster");
   if (!video) {
+    if (!session.phase.endsWith("_QUESTION") && session.phase !== "MATCH_INTRO" && session.phase !== "FINAL_VIDEO" && lastSoundVisual !== session.visual) {
+      audio.playForVisual(session.visual);
+      lastSoundVisual = session.visual;
+    }
     if (!session.phase.endsWith("_QUESTION") && session.phase !== "MATCH_INTRO") timer = setTimeout(go, VOLLEYBALL_CONFIG.resultDelayMs);
     return;
   }
+  const finalVideo = session.phase === "FINAL_VIDEO";
+  const detachVideo = audio.attachVideo?.(video) || (() => {});
+  const syncVideoMute = e => { video.muted = Boolean(e.detail?.muted); };
+  window.addEventListener("beyza-sound-change", syncVideoMute);
   const showPoster = () => {
     if (token !== mediaToken) return;
     poster?.classList.add("is-visible");
@@ -146,12 +151,17 @@ function setupResultAdvance(app, context, resolver, words) {
     if (token !== mediaToken || !posterReady || !videoReady) return;
     poster?.classList.remove("is-visible");
     video.classList.add("is-visible");
-    video.muted = Boolean(context.state.settings?.muted);
+    audio.duckForVideo?.(video, { resume: !finalVideo });
     const play = video.play?.();
-    if (play?.catch) play.catch(showPoster);
+    if (play?.catch) play.catch(fail);
   };
   const ready = () => { videoReady = true; showVideo(); };
-  const fail = () => { videoReady = false; showPoster(); };
+  const fail = () => {
+    videoReady = false;
+    showPoster();
+    audio.restoreAfterVideo?.({ resume: !finalVideo });
+    if (!timer) timer = setTimeout(go, VOLLEYBALL_CONFIG.resultDelayMs);
+  };
   minPosterTimer = setTimeout(() => { posterReady = true; showVideo(); }, VOLLEYBALL_CONFIG.posterMinMs);
   readyTimer = setTimeout(fail, VOLLEYBALL_CONFIG.videoReadyTimeoutMs);
   video.addEventListener("loadeddata", ready, { once: true });
@@ -165,6 +175,9 @@ function setupResultAdvance(app, context, resolver, words) {
   cleanup = () => {
     mediaToken++;
     clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);
+    audio.restoreAfterVideo?.({ resume: !finalVideo });
+    window.removeEventListener("beyza-sound-change", syncVideoMute);
+    detachVideo();
     try { video.pause?.(); video.currentTime = 0; } catch {}
     video.removeAttribute("src");
     video.load?.();

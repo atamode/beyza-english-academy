@@ -1,3 +1,5 @@
+export const SPORT_MUSIC_URL = "assets/audio/sports/poma-sports-loop.mp3";
+
 export const FOOTBALL_SOUND_EVENTS = {
   MATCH_INTRO: ["whistle"],
   PASS_SUCCESS: ["kick", "positive"],
@@ -19,18 +21,44 @@ export const FOOTBALL_SOUND_EVENTS = {
   TROPHY: ["trophy"]
 };
 
-export function createFootballAudio({ muted = false, storage = localStorage } = {}) {
-  let ctx = null, ambient = null, unlocked = false;
+let sharedManager = null;
+
+export function getSportAudioManager(options = {}) {
+  if (!sharedManager) sharedManager = createSportAudioManager(options);
+  if ("muted" in options) sharedManager.setMuted(Boolean(options.muted));
+  return sharedManager;
+}
+
+export function createSportAudioManager({ muted = false, storage = globalThis.localStorage, musicUrl = SPORT_MUSIC_URL, AudioClass = globalThis.Audio } = {}) {
+  let ctx = null, music = null, unlocked = false, ducked = false;
+  const attachedVideos = new Set();
   const state = {
     muted: Boolean(muted),
+    musicUrl,
     played: [],
     failures: 0,
-    get unlocked() { return unlocked; }
+    musicStarted: false,
+    get unlocked() { return unlocked; },
+    get ducked() { return ducked; },
+    get attachedVideoCount() { return attachedVideos.size; }
   };
   const save = () => {
-    try { storage.setItem("beyzaAcademy.games.football.v1.audio", JSON.stringify({ muted: state.muted })); } catch {}
+    try { storage?.setItem?.("beyzaAcademy.games.sport.audio", JSON.stringify({ muted: state.muted })); } catch {}
   };
-  const ensure = () => {
+  const ensureMusic = () => {
+    if (music || !AudioClass) return music;
+    try {
+      music = new AudioClass(musicUrl);
+      music.loop = true;
+      music.volume = 0.22;
+      music.preload = "auto";
+    } catch {
+      state.failures++;
+      music = null;
+    }
+    return music;
+  };
+  const ensureCtx = () => {
     if (state.muted) return null;
     if (!ctx) {
       const Ctor = globalThis.AudioContext || globalThis.webkitAudioContext;
@@ -38,12 +66,11 @@ export function createFootballAudio({ muted = false, storage = localStorage } = 
       try { ctx = new Ctor(); }
       catch { state.failures++; return null; }
     }
-    unlocked = true;
     ctx.resume?.().catch?.(() => {});
     return ctx;
   };
   const tone = (freq, dur = 0.12, gain = 0.035, type = "sine") => {
-    const audio = ensure();
+    const audio = ensureCtx();
     if (!audio) return false;
     try {
       const osc = audio.createOscillator(), g = audio.createGain();
@@ -61,26 +88,72 @@ export function createFootballAudio({ muted = false, storage = localStorage } = 
       return false;
     }
   };
+  const setVideoMute = () => {
+    for (const video of attachedVideos) {
+      try { video.muted = state.muted; } catch {}
+    }
+  };
+  const playMusic = (volume = 0.22) => {
+    if (state.muted || !unlocked) return false;
+    const player = ensureMusic();
+    if (!player) return false;
+    try {
+      player.loop = true;
+      player.volume = volume;
+      const result = player.play?.();
+      state.musicStarted = true;
+      if (result?.catch) result.catch(() => { state.failures++; });
+      return true;
+    } catch {
+      state.failures++;
+      return false;
+    }
+  };
   return {
     state,
-    setMuted(value) { state.muted = Boolean(value); if (state.muted) this.stopAmbient(); save(); },
-    unlock() { ensure(); },
+    setMuted(value) {
+      state.muted = Boolean(value);
+      setVideoMute();
+      if (state.muted) this.stopAmbient();
+      else if (unlocked && state.musicStarted) playMusic(ducked ? 0.06 : 0.22);
+      save();
+    },
+    unlock() {
+      unlocked = true;
+      ensureMusic();
+      ensureCtx();
+      setVideoMute();
+    },
     startAmbient() {
-      const audio = ensure();
-      if (!audio || ambient) return;
-      try {
-        const osc = audio.createOscillator(), g = audio.createGain();
-        osc.type = "sine";
-        osc.frequency.value = 95;
-        g.gain.value = 0.006;
-        osc.connect(g).connect(audio.destination);
-        osc.start();
-        ambient = { osc, g };
-      } catch { state.failures++; }
+      this.unlock();
+      ducked = false;
+      return playMusic(0.22);
     },
     stopAmbient() {
-      try { ambient?.osc?.stop?.(); } catch {}
-      ambient = null;
+      try { music?.pause?.(); } catch {}
+      state.musicStarted = false;
+      ducked = false;
+    },
+    duckForVideo(video, { resume = true } = {}) {
+      this.attachVideo(video);
+      ducked = true;
+      if (music) {
+        try {
+          if (resume) music.volume = 0.06;
+          else music.pause?.();
+        } catch { state.failures++; }
+      }
+    },
+    restoreAfterVideo({ resume = true } = {}) {
+      ducked = false;
+      if (!resume) return;
+      if (unlocked && !state.muted) playMusic(0.22);
+    },
+    attachVideo(video) {
+      if (!video) return () => {};
+      attachedVideos.add(video);
+      try { video.muted = state.muted; } catch {}
+      return () => { attachedVideos.delete(video); };
     },
     play(name) {
       if (state.muted) return false;
@@ -104,4 +177,8 @@ export function createFootballAudio({ muted = false, storage = localStorage } = 
       return list.map(name => this.play(name));
     }
   };
+}
+
+export function createFootballAudio(options = {}) {
+  return getSportAudioManager(options);
 }
