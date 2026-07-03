@@ -8,6 +8,14 @@ export const FOOTBALL_SOUND_EVENTS = {
   GOAL_SCORED: ["crowd"],
   SAVE_SUCCESS: ["catch"],
   GOAL_CONCEDED: ["shock"],
+  passSuccess: ["kick", "positive"],
+  shotSuccess: ["kick", "crowd"],
+  shotMissed: ["negative"],
+  defenceSuccess: ["catch", "positive"],
+  saveSuccess: ["catch", "positive"],
+  conceded: ["shock"],
+  win: ["trophy"],
+  lose: ["negative"],
   TROPHY: ["trophy"]
 };
 

@@ -1,0 +1,56 @@
+{
+  "id": "poma-volleyball-v1",
+  "title": "Poma Voleybol V1",
+  "version": "1.0.0",
+  "sharedMusic": "../../audio/sports/poma-sports-loop.mp3",
+  "references": {
+    "idlePoster": "00-references/volleyball-idle-poster.webp",
+    "gameplayMaster": "00-references/volleyball-gameplay-master.webp"
+  },
+  "events": {
+    "passSuccess": {
+      "video": "03-videos/volleyball-receive-success.mp4",
+      "poster": "01-game-states/volleyball-receive-success-poster.webp"
+    },
+    "shotSuccess": {
+      "video": "03-videos/volleyball-spike-success.mp4",
+      "poster": "01-game-states/volleyball-spike-success-poster.webp"
+    },
+    "shotMissed": {
+      "video": "03-videos/volleyball-spike-missed.mp4",
+      "poster": "01-game-states/volleyball-spike-missed-poster.webp"
+    },
+    "defenceSuccess": {
+      "video": "03-videos/volleyball-block-success.mp4",
+      "poster": "01-game-states/volleyball-block-success-poster.webp"
+    },
+    "saveSuccess": {
+      "video": "03-videos/volleyball-receive-success.mp4",
+      "poster": "01-game-states/volleyball-receive-success-poster.webp"
+    },
+    "conceded": {
+      "video": "03-videos/volleyball-point-conceded.mp4",
+      "poster": "01-game-states/volleyball-point-conceded-poster.webp"
+    },
+    "win": {
+      "video": "02-results/volleyball-set-win.mp4",
+      "poster": "02-results/volleyball-set-win-poster.webp"
+    },
+    "lose": {
+      "video": "02-results/volleyball-set-lose.mp4",
+      "poster": "02-results/volleyball-set-lose-poster.webp"
+    }
+  },
+  "labels": {
+    "possession": "Servis Kimde?",
+    "pass": "Manşet",
+    "shot": "Smaç",
+    "score": "Sayı",
+    "defence": "Blok",
+    "save": "Savunma",
+    "missed": "Smaç Dışarıda",
+    "conceded": "Sayı Kaybettik",
+    "win": "Seti Kazandın!",
+    "lose": "Bu Set Olmadı"
+  }
+}

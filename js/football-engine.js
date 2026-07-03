@@ -154,7 +154,7 @@ function shuffleOptions(options, rng = Math.random, salt = 0) {
   return unique;
 }
 
-function makeQuestionForWord(word, allWords, index, rng = Math.random) {
+export function makeQuestionForWord(word, allWords, index, rng = Math.random) {
   const distractors = footballDistractors(word, allWords);
   const options = shuffleOptions([word.meaningTr, ...distractors], rng, index);
   const question = {

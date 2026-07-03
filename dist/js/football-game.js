@@ -1,6 +1,7 @@
 import { loadPomaManifest } from "./poma-assets.js";
 import { availableFootballWords, createFootballSession, answerFootballQuestion, advanceFootball, summarizeFootball, safeRead, safeWrite, defaultFootballStats, defaultAchievements, FOOTBALL_KEYS, FOOTBALL_CONFIG, mergeMatchStats, unlockTrophies, recordFootballAnswer, recordFootballLeagueAnswer, finalizeFootballLeagueMatch, readFootballLeagueProgress, leagueProgressPercent, shouldUseVideo, validateFootballQuestion } from "./football-engine.js";
 import { createFootballAudio } from "./football-audio.js";
+import { renderSportMedia } from "./sport-media.js";
 
 const esc = v => String(v ?? "").replace(/[&<>\"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let resolverPromise = null, session = null, cleanup = () => {}, audio = null, mediaToken = 0, lastSoundVisual = null, soundListenerBound = false;
@@ -66,11 +67,7 @@ function render(app, context, resolver, words) {
 }
 
 export function renderFootballMedia(media, resolver, event, reducedMotion = typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)")?.matches) {
-  if (!media) return "";
-  const video = shouldUseVideo(event, reducedMotion) ? resolver.video(event) : null;
-  const poster = video?.posterUrl || media.posterUrl || media.fallbackUrl || media.url;
-  const alt = esc(media.alt || "Futbol oyunu görseli");
-  return `<div class="football-media-stage" data-video-event="${esc(event)}"><img class="football-media-poster is-visible" src="${esc(poster)}" alt="${alt}" loading="eager">${video ? `<video class="football-media-video" src="${esc(video.url)}" muted playsinline preload="metadata" aria-label="${alt}"></video>` : ""}</div>`;
+  return renderSportMedia(media, resolver, event, { useVideo: shouldUseVideo(event, reducedMotion), alt: "Futbol oyunu görseli" });
 }
 
 function questionHtml(q, s) {
