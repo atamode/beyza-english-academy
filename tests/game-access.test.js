@@ -20,14 +20,35 @@ test("game center is reachable before onboarding and from top navigation", () =>
   assert.match(index, /class="icon-button games-button" data-route="games"/);
 });
 
-test("home renders game center before curriculum", () => {
+test("home renders student dashboard before curriculum", () => {
   const app = read("js/app.js");
-  const gameIndex = app.indexOf("${gameCenterCard({compact:true})}<div class=\"stats-grid grid\">");
+  const heroIndex = app.indexOf("POMA ACADEMY");
+  const lessonIndex = app.indexOf("data-home-block=\"today-lesson\"");
+  const vocabIndex = app.indexOf("data-home-block=\"vocabulary\"");
+  const reinforceIndex = app.indexOf("data-home-block=\"reinforce-games\"");
+  const progressIndex = app.indexOf("data-home-block=\"progress\"");
   const curriculumIndex = app.indexOf("<section class=\"module-list\"><h2>Müfredat</h2>");
-  assert.ok(gameIndex > -1, "home should inject game center near top");
+  assert.ok(heroIndex > -1, "Poma Academy brand should be visible on home");
+  assert.ok(lessonIndex > -1, "today lesson block exists");
+  assert.ok(vocabIndex > -1, "vocabulary block exists");
+  assert.ok(reinforceIndex > -1, "reinforcement games block exists");
   assert.ok(curriculumIndex > -1, "curriculum exists");
-  assert.ok(gameIndex < curriculumIndex, "game center must appear before curriculum");
+  assert.ok(heroIndex < lessonIndex && lessonIndex < vocabIndex && vocabIndex < reinforceIndex && reinforceIndex < progressIndex, "home order should be brand, lesson, vocabulary, games, progress");
+  assert.ok(reinforceIndex < curriculumIndex, "reinforcement games should sit above curriculum");
   assert.equal(app.includes("football-actions"), false, "old bottom football card should not be appended after curriculum");
+});
+
+test("home presents games as vocabulary reinforcement, not a single football banner", () => {
+  const app = read("js/app.js");
+  const home = app.match(/function home\(\)\{([\s\S]*?)`;bindRoutes\(\)\}/);
+  assert.ok(home, "home renderer must exist");
+  assert.match(home[1], /Poma Academy|POMA ACADEMY/);
+  assert.match(home[1], /Bugün öğrenmeye devam edelim/);
+  assert.match(home[1], /data-home-block="reinforce-games"/);
+  assert.match(home[1], /\$\{gameCenterCard\(\{home:true\}\)\}/);
+  assert.match(home[1], /\$\{volleyballGameCard\(\{home:true\}\)\}/);
+  assert.match(home[1], /data-route="games"/);
+  assert.doesNotMatch(home[1], /gameCenterCard\(\{compact:true\}\)/);
 });
 
 test("games route renders football and volleyball game center cards, not the home curriculum", () => {
@@ -45,9 +66,9 @@ test("games route renders football and volleyball game center cards, not the hom
   assert.match(html, /\$\{gameCenterCard\(\)\}/);
   assert.match(html, /\$\{volleyballGameCard\(\)\}/);
   assert.match(footballCard[1], /Sporty Poma Futbol V1/);
-  assert.match(footballCard[1], /data-route="game\/football">Futbol Oyna/);
+  assert.match(footballCard[1], /data-route="game\/football">/);
   assert.match(volleyballCard[1], /Poma Voleybol V1/);
-  assert.match(volleyballCard[1], /data-route="game\/volleyball">Voleybol Oyna/);
+  assert.match(volleyballCard[1], /data-route="game\/volleyball">/);
   assert.doesNotMatch(html, /BUGÜNÜN PLANI/);
   assert.doesNotMatch(html, /Müfredat/);
   assert.doesNotMatch(app, /Voleybol mini oyunu hazır olduğunda burada açılacak/);
@@ -62,18 +83,22 @@ test("football return route preserves the previous screen", () => {
   assert.match(football, /location\.hash = `#\/\$\{back\}`/);
 });
 
-test("tablet navigation and game card keep touch targets visible", () => {
+test("tablet navigation and dashboard cards keep touch targets visible", () => {
   const css = read("css/app.css");
   const index = read("index.html");
   const app = read("js/app.js");
   assert.match(index, /icon-button games-button/);
+  assert.match(index, /<strong>Poma<\/strong><small>Academy<\/small>/);
   assert.match(app, /setActiveRoute\(r\)/);
   assert.match(app, /r==="games"\|\|r\.startsWith\("game\/"\)/);
   assert.match(css, /\.games-button\{[^}]*min-height:48px/);
   assert.match(css, /\.games-button\.active/);
   assert.match(css, /\.game-center-card \.button\.primary\{[^}]*min-height:56px/);
   assert.match(css, /\.game-card-layout/);
+  assert.match(css, /\.dashboard-priority-grid/);
+  assert.match(css, /\.home-games-grid/);
   assert.match(css, /@media\(max-width:850px\)[\s\S]*\.game-center-card/);
+  assert.match(css, /@media\(max-width:920px\)[\s\S]*\.home-games-grid/);
   assert.match(css, /@media\(max-width:520px\)[\s\S]*\.top-actions/);
 });
 

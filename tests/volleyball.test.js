@@ -131,6 +131,12 @@ test("shared sport audio uses the real MP3 loop after user interaction",()=>{
   assert.equal(MockAudio.instances[0].loop,true);
   assert.equal(MockAudio.instances[0].volume,0.22);
   assert.equal(MockAudio.instances[0].playCount,1);
+  assert.equal(audio.state.ambientWanted,true);
+  audio.setMuted(true);
+  assert.equal(MockAudio.instances[0].paused,true);
+  audio.setMuted(false);
+  assert.equal(MockAudio.instances[0].paused,false);
+  assert.equal(MockAudio.instances[0].playCount,2);
 });
 
 test("sport audio ducks for video, restores, and global mute updates the active video immediately",()=>{
@@ -161,6 +167,8 @@ test("football and volleyball presenters listen for live sound changes on active
   for(const source of [football,volleyball]){
     assert.match(source,/beyza-sound-change/);
     assert.match(source,/video\.muted = Boolean\(e\.detail\?\.muted\)/);
+    assert.match(source,/video\.muted = true/);
+    assert.match(source,/retry\.catch\(fail\)/);
     assert.match(source,/removeEventListener\("beyza-sound-change", syncVideoMute\)/);
   }
 });
@@ -198,11 +206,14 @@ test("football word league progress is shared with volleyball while sport stats 
 });
 
 test("volleyball media uses a single 16:9 poster-video stage with fallback poster",()=>{
-  const html=renderVolleyballMedia(resolver.result("shotSuccess"),resolver,"shotSuccess",false);
-  assert.equal((html.match(/football-media-stage/g)||[]).length,1);
-  assert.equal((html.match(/football-media-poster/g)||[]).length,1);
-  assert.equal((html.match(/football-media-video/g)||[]).length,1);
-  assert.equal(/<img[\s\S]*<\/div>[\s\S]*<video/.test(html),false);
+  for(const event of ["shotSuccess","shotMissed","conceded","win","lose"]){
+    const html=renderVolleyballMedia(resolver.result(event),resolver,event,false);
+    assert.equal((html.match(/football-media-stage/g)||[]).length,1,event);
+    assert.equal((html.match(/football-media-poster/g)||[]).length,1,event);
+    assert.equal((html.match(/football-media-video/g)||[]).length,1,event);
+    assert.equal(/<img[\s\S]*<\/div>[\s\S]*<video/.test(html),false,event);
+    assert.match(html,new RegExp(resolver.video(event).url.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")),event);
+  }
   const png=renderVolleyballMedia(resolver.state("possession"),resolver,"possession",false);
   assert.equal((png.match(/football-media-video/g)||[]).length,0);
 });

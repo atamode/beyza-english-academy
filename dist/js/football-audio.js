@@ -30,7 +30,7 @@ export function getSportAudioManager(options = {}) {
 }
 
 export function createSportAudioManager({ muted = false, storage = globalThis.localStorage, musicUrl = SPORT_MUSIC_URL, AudioClass = globalThis.Audio } = {}) {
-  let ctx = null, music = null, unlocked = false, ducked = false;
+  let ctx = null, music = null, unlocked = false, ducked = false, ambientWanted = false;
   const attachedVideos = new Set();
   const state = {
     muted: Boolean(muted),
@@ -38,6 +38,7 @@ export function createSportAudioManager({ muted = false, storage = globalThis.lo
     played: [],
     failures: 0,
     musicStarted: false,
+    get ambientWanted() { return ambientWanted; },
     get unlocked() { return unlocked; },
     get ducked() { return ducked; },
     get attachedVideoCount() { return attachedVideos.size; }
@@ -48,10 +49,14 @@ export function createSportAudioManager({ muted = false, storage = globalThis.lo
   const ensureMusic = () => {
     if (music || !AudioClass) return music;
     try {
-      music = new AudioClass(musicUrl);
+      const src = typeof document !== "undefined" ? new URL(musicUrl, document.baseURI).href : musicUrl;
+      music = new AudioClass(src);
       music.loop = true;
       music.volume = 0.22;
       music.preload = "auto";
+      music.setAttribute?.("data-sport-audio", "poma-sports-loop");
+      music.hidden = true;
+      if (typeof document !== "undefined" && typeof HTMLElement !== "undefined" && music instanceof HTMLElement && !music.isConnected) document.body?.appendChild(music);
     } catch {
       state.failures++;
       music = null;
@@ -100,6 +105,7 @@ export function createSportAudioManager({ muted = false, storage = globalThis.lo
     try {
       player.loop = true;
       player.volume = volume;
+      player.load?.();
       const result = player.play?.();
       state.musicStarted = true;
       if (result?.catch) result.catch(() => { state.failures++; });
@@ -114,8 +120,10 @@ export function createSportAudioManager({ muted = false, storage = globalThis.lo
     setMuted(value) {
       state.muted = Boolean(value);
       setVideoMute();
-      if (state.muted) this.stopAmbient();
-      else if (unlocked && state.musicStarted) playMusic(ducked ? 0.06 : 0.22);
+      if (state.muted) {
+        try { music?.pause?.(); } catch {}
+        state.musicStarted = false;
+      } else if (unlocked && ambientWanted) playMusic(ducked ? 0.06 : 0.22);
       save();
     },
     unlock() {
@@ -126,12 +134,14 @@ export function createSportAudioManager({ muted = false, storage = globalThis.lo
     },
     startAmbient() {
       this.unlock();
+      ambientWanted = true;
       ducked = false;
       return playMusic(0.22);
     },
-    stopAmbient() {
+    stopAmbient({ keepWanted = false } = {}) {
       try { music?.pause?.(); } catch {}
       state.musicStarted = false;
+      ambientWanted = Boolean(keepWanted);
       ducked = false;
     },
     duckForVideo(video, { resume = true } = {}) {
@@ -141,13 +151,14 @@ export function createSportAudioManager({ muted = false, storage = globalThis.lo
         try {
           if (resume) music.volume = 0.06;
           else music.pause?.();
+          state.musicStarted = resume && !state.muted;
         } catch { state.failures++; }
       }
     },
     restoreAfterVideo({ resume = true } = {}) {
       ducked = false;
       if (!resume) return;
-      if (unlocked && !state.muted) playMusic(0.22);
+      if (unlocked && !state.muted && ambientWanted) playMusic(0.22);
     },
     attachVideo(video) {
       if (!video) return () => {};
