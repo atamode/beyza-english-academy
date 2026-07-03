@@ -1,4 +1,4 @@
-const CACHE="beyza-english-f0fc2907c95d";
+const CACHE="beyza-english-708be90596ed";
 const ASSETS=[
   "./",
   "index.html",
@@ -100,6 +100,9 @@ const ASSETS=[
   "assets/games/poma-volleyball-v1/README.md",
   "assets/games/poma-volleyball-v1/STATUS.md",
   "assets/audio/sports/poma-sports-loop.mp3",
+  "assets/brand/poma-academy/poma-character-lineup.png",
+  "assets/brand/poma-academy/poma-main-wave.png",
+  "assets/brand/poma-academy/pomante-kingdom-wide.jpg",
   "data/lessons/000-quick-start.json",
   "data/lessons/001-subject-pronouns.json",
   "data/lessons/002-am-is-are.json",

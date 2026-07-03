@@ -44,6 +44,9 @@ test("home presents games as vocabulary reinforcement, not a single football ban
   assert.ok(home, "home renderer must exist");
   assert.match(home[1], /Poma Academy|POMA ACADEMY/);
   assert.match(home[1], /Bugün öğrenmeye devam edelim/);
+  assert.match(home[1], /assets\/brand\/poma-academy\/poma-main-wave\.png/);
+  assert.match(home[1], /assets\/brand\/poma-academy\/pomante-kingdom-wide\.jpg/);
+  assert.match(home[1], /assets\/brand\/poma-academy\/poma-character-lineup\.png/);
   assert.match(home[1], /data-home-block="reinforce-games"/);
   assert.match(home[1], /\$\{gameCenterCard\(\{home:true\}\)\}/);
   assert.match(home[1], /\$\{volleyballGameCard\(\{home:true\}\)\}/);
@@ -97,6 +100,9 @@ test("tablet navigation and dashboard cards keep touch targets visible", () => {
   assert.match(css, /\.game-card-layout/);
   assert.match(css, /\.dashboard-priority-grid/);
   assert.match(css, /\.home-games-grid/);
+  assert.match(css, /\.poma-hero-art img/);
+  assert.match(css, /\.poma-world-strip img/);
+  assert.match(css, /\.poma-lineup/);
   assert.match(css, /@media\(max-width:850px\)[\s\S]*\.game-center-card/);
   assert.match(css, /@media\(max-width:920px\)[\s\S]*\.home-games-grid/);
   assert.match(css, /@media\(max-width:520px\)[\s\S]*\.top-actions/);
@@ -108,6 +114,8 @@ test("service worker update flow supports new cache activation", () => {
   assert.match(build, /SKIP_WAITING/);
   assert.match(build, /caches\.delete/);
   assert.match(build, /clients\.claim/);
+  assert.match(build, /brandAssets=walk\("assets\/brand"\)/);
+  assert.doesNotMatch(build, /assets\/video/);
   if (sw) {
     assert.match(sw, /const CACHE="beyza-english-/);
     assert.match(sw, /caches\.delete/);
