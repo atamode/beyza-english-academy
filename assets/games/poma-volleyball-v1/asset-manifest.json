@@ -1,21 +1,20 @@
 {
   "id": "poma-volleyball-v1",
   "title": "Poma Voleybol V1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sharedMusic": "../../audio/sports/poma-sports-loop.mp3",
-  "documentedAliases": {
-    "03-videos/volleyball-receive-success.mp4": {
-      "events": ["passSuccess", "saveSuccess"],
-      "reason": "Paket içinde ayrı pas ve savunma videosu yok; manşet/karşılama başarısı aynı final receive videosunu bilinçli olarak paylaşır."
-    }
-  },
   "references": {
     "idlePoster": "00-references/volleyball-idle-poster.webp",
     "gameplayMaster": "00-references/volleyball-gameplay-master.webp"
   },
   "events": {
+    "serveSuccess": {
+      "poster": "00-references/volleyball-gameplay-master.webp"
+    },
     "passSuccess": {
-      "video": "03-videos/volleyball-receive-success.mp4",
+      "poster": "01-game-states/volleyball-receive-success-poster.webp"
+    },
+    "passFailed": {
       "poster": "01-game-states/volleyball-receive-success-poster.webp"
     },
     "shotSuccess": {
@@ -54,6 +53,9 @@
     "score": "Sayı",
     "defence": "Blok",
     "save": "Savunma",
+    "serveSuccess": "Servis başarılı",
+    "passSuccess": "Pas / manşet başarılı",
+    "passFailed": "Top rakibe geçti",
     "missed": "Smaç Dışarıda",
     "conceded": "Sayı Kaybettik",
     "win": "Seti Kazandın!",

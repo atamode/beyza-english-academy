@@ -46,7 +46,7 @@ class MockAudio {
 
 test("volleyball manifest resolves all result videos and asset paths",()=>{
   assert.equal(manifest.id,"poma-volleyball-v1");
-  assert.deepEqual(volleyballVideoEvents(manifest).sort(),["conceded","defenceSuccess","lose","passSuccess","saveSuccess","shotMissed","shotSuccess","win"].sort());
+  assert.deepEqual(volleyballVideoEvents(manifest).sort(),["conceded","defenceSuccess","lose","saveSuccess","shotMissed","shotSuccess","win"].sort());
   for(const rel of requiredVolleyballAssetPaths(manifest)){
     assert.equal(fs.existsSync(path.join(root,"assets/games/poma-volleyball-v1",rel)),true,rel);
   }
@@ -56,7 +56,6 @@ test("volleyball manifest resolves all result videos and asset paths",()=>{
 
 test("volleyball events use semantic videos and only documented aliases share files",()=>{
   const expected={
-    passSuccess:"03-videos/volleyball-receive-success.mp4",
     saveSuccess:"03-videos/volleyball-receive-success.mp4",
     shotSuccess:"03-videos/volleyball-spike-success.mp4",
     shotMissed:"03-videos/volleyball-spike-missed.mp4",
@@ -66,8 +65,14 @@ test("volleyball events use semantic videos and only documented aliases share fi
     lose:"02-results/volleyball-set-lose.mp4"
   };
   for(const [event,file] of Object.entries(expected)) assert.equal(manifest.events[event].video,file,event);
+  assert.equal(manifest.events.passSuccess.video,undefined);
+  assert.equal(manifest.events.serveSuccess.video,undefined);
+  assert.equal(manifest.events.passFailed.video,undefined);
   const byVideo={};
-  for(const [event,row] of Object.entries(manifest.events)) (byVideo[row.video]||=[]).push(event);
+  for(const [event,row] of Object.entries(manifest.events)){
+    if(!row.video) continue;
+    (byVideo[row.video]||=[]).push(event);
+  }
   for(const [video,events] of Object.entries(byVideo)){
     if(events.length<2) continue;
     assert.deepEqual(manifest.documentedAliases?.[video]?.events?.sort(),events.sort(),`${video} alias must be documented`);
@@ -96,19 +101,25 @@ test("app exposes real volleyball route and active games card",()=>{
 test("volleyball state flow branches to point, block, save and conceded visuals",()=>{
   let s=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.11,storageOf());
   s=advanceVolleyball(s);
-  assert.equal(s.phase,"POSSESSION_QUESTION");
+  assert.equal(s.phase,"SERVE_QUESTION");
   s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.2);
+  assert.equal(s.visual,"serveSuccess");
+  s=advanceVolleyball(s);
+  assert.equal(s.phase,"PASS_QUESTION");
+  s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.3);
   assert.equal(s.visual,"passSuccess");
   s=advanceVolleyball(s);
   assert.equal(s.phase,"SPIKE_QUESTION");
-  s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.3);
+  s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.4);
   assert.equal(s.visual,"shotSuccess");
   assert.equal(s.pointsFor,1);
   let missed=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.22,storageOf());
   missed=advanceVolleyball(missed);
   missed=answerVolleyballQuestion(missed,missed.currentQuestion.correctIndex,words,{},()=>0.2);
   missed=advanceVolleyball(missed);
-  missed=answerVolleyballQuestion(missed,(missed.currentQuestion.correctIndex+1)%4,words,{},()=>0.3);
+  missed=answerVolleyballQuestion(missed,missed.currentQuestion.correctIndex,words,{},()=>0.3);
+  missed=advanceVolleyball(missed);
+  missed=answerVolleyballQuestion(missed,(missed.currentQuestion.correctIndex+1)%4,words,{},()=>0.4);
   assert.equal(missed.visual,"shotMissed");
   assert.equal(missed.blocks,0);
 
@@ -119,7 +130,10 @@ test("volleyball state flow branches to point, block, save and conceded visuals"
   d=answerVolleyballQuestion(d,d.currentQuestion.correctIndex,words,{},()=>0.5);
   assert.equal(d.visual,"saveSuccess");
   d=advanceVolleyball(d);
+  assert.equal(d.phase,"PASS_QUESTION");
   d=answerVolleyballQuestion(d,(d.currentQuestion.correctIndex+1)%4,words,{},()=>0.6);
+  assert.equal(d.visual,"passFailed");
+  d=advanceVolleyball(d);
   d=answerVolleyballQuestion(d,(d.currentQuestion.correctIndex+1)%4,words,{},()=>0.7);
   d=answerVolleyballQuestion(d,(d.currentQuestion.correctIndex+1)%4,words,{},()=>0.8);
   assert.equal(d.visual,"conceded");
@@ -149,6 +163,51 @@ test("volleyball final result uses win lose draw consistently",()=>{
   assert.equal(draw.visual,"MATCH_INTRO");
   const stats=mergeVolleyballStats(defaultVolleyballStats(),draw);
   assert.equal(stats.wins,0);
+});
+
+test("volleyball attack chain requires serve, pass and spike questions",()=>{
+  let s=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.2,storageOf());
+  s=advanceVolleyball(s);
+  assert.equal(s.phase,"SERVE_QUESTION");
+  s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.21);
+  assert.equal(s.visual,"serveSuccess");
+  s=advanceVolleyball(s);
+  assert.equal(s.phase,"PASS_QUESTION","serve success must not jump directly to spike");
+  s=answerVolleyballQuestion(s,s.currentQuestion.correctIndex,words,{},()=>0.22);
+  assert.equal(s.visual,"passSuccess");
+  s=advanceVolleyball(s);
+  assert.equal(s.phase,"SPIKE_QUESTION");
+});
+
+test("volleyball pass and receive branches return to the intended flow",()=>{
+  let passWrong=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.31,storageOf());
+  passWrong=advanceVolleyball(passWrong);
+  passWrong=answerVolleyballQuestion(passWrong,passWrong.currentQuestion.correctIndex,words,{},()=>0.32);
+  passWrong=advanceVolleyball(passWrong);
+  passWrong=answerVolleyballQuestion(passWrong,(passWrong.currentQuestion.correctIndex+1)%4,words,{},()=>0.33);
+  assert.equal(passWrong.visual,"passFailed");
+  passWrong=advanceVolleyball(passWrong);
+  assert.equal(passWrong.phase,"RECEIVE_QUESTION");
+
+  let receiveCorrect=createVolleyballSession(words,{vocabularyProgress:{}},()=>0.41,storageOf());
+  receiveCorrect=advanceVolleyball(receiveCorrect);
+  receiveCorrect=answerVolleyballQuestion(receiveCorrect,(receiveCorrect.currentQuestion.correctIndex+1)%4,words,{},()=>0.42);
+  assert.equal(receiveCorrect.phase,"RECEIVE_QUESTION");
+  receiveCorrect=answerVolleyballQuestion(receiveCorrect,receiveCorrect.currentQuestion.correctIndex,words,{},()=>0.43);
+  assert.equal(receiveCorrect.visual,"saveSuccess");
+  receiveCorrect=advanceVolleyball(receiveCorrect);
+  assert.equal(receiveCorrect.phase,"PASS_QUESTION");
+});
+
+test("volleyball poster-only and video-only media policy is enforced",()=>{
+  assert.equal(resolver.video("serveSuccess"),null);
+  assert.equal(resolver.video("passSuccess"),null);
+  assert.equal(resolver.video("passFailed"),null);
+  assert.match(resolver.video("saveSuccess").url,/volleyball-receive-success\.mp4$/);
+  assert.match(resolver.video("shotSuccess").url,/volleyball-spike-success\.mp4$/);
+  assert.match(resolver.video("shotMissed").url,/volleyball-spike-missed\.mp4$/);
+  assert.match(resolver.video("defenceSuccess").url,/volleyball-block-success\.mp4$/);
+  assert.match(resolver.video("conceded").url,/volleyball-point-conceded\.mp4$/);
 });
 
 test("volleyball summarizes safely when the last answer would otherwise enter a new question phase",()=>{

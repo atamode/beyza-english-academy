@@ -26,16 +26,19 @@ export const VOLLEYBALL_KEYS = {
 export const VOLLEYBALL_CONFIG = { ...FOOTBALL_CONFIG };
 
 export const VOLLEYBALL_PHASES = {
-  MATCH_INTRO: { visual: "MATCH_INTRO", next: "POSSESSION_QUESTION" },
-  POSSESSION_QUESTION: { visual: "possession", question: "Servis kimde?", correct: "PASS_RESULT", wrong: "RECEIVE_QUESTION" },
-  PASS_RESULT: { correctVisual: "passSuccess", wrongVisual: "shotMissed", correctNext: "SPIKE_QUESTION", wrongNext: "RECEIVE_QUESTION" },
+  MATCH_INTRO: { visual: "MATCH_INTRO", next: "SERVE_QUESTION" },
+  SERVE_QUESTION: { visual: "possession", question: "Servis kimde?", correct: "SERVE_RESULT", wrong: "RECEIVE_QUESTION" },
+  POSSESSION_QUESTION: { visual: "possession", question: "Servis kimde?", correct: "SERVE_RESULT", wrong: "RECEIVE_QUESTION" },
+  SERVE_RESULT: { correctVisual: "serveSuccess", wrongVisual: "conceded", correctNext: "PASS_QUESTION", wrongNext: "RECEIVE_QUESTION" },
+  PASS_QUESTION: { visual: "pass", question: "Pas / Manset", correct: "PASS_RESULT", wrong: "PASS_RESULT" },
+  PASS_RESULT: { correctVisual: "passSuccess", wrongVisual: "passFailed", correctNext: "SPIKE_QUESTION", wrongNext: "RECEIVE_QUESTION" },
   SPIKE_QUESTION: { visual: "shot", question: "Smaç", correct: "SPIKE_RESULT", wrong: "SPIKE_RESULT" },
   SPIKE_RESULT: { correctVisual: "shotSuccess", wrongVisual: "shotMissed", correctNext: "ROUND_RESET", wrongNext: "ROUND_RESET", correctPoint: 1 },
   RECEIVE_QUESTION: { visual: "pass", question: "Karşılama", correct: "RECEIVE_RESULT", wrong: "OPPONENT_SPIKE_QUESTION" },
-  RECEIVE_RESULT: { correctVisual: "saveSuccess", wrongVisual: "conceded", correctNext: "POSSESSION_QUESTION", wrongNext: "OPPONENT_SPIKE_QUESTION", correctSave: 1 },
+  RECEIVE_RESULT: { correctVisual: "saveSuccess", wrongVisual: "conceded", correctNext: "PASS_QUESTION", wrongNext: "OPPONENT_SPIKE_QUESTION", correctSave: 1 },
   OPPONENT_SPIKE_QUESTION: { visual: "defence", question: "Blok / kurtarış", correct: "OPPONENT_SPIKE_RESULT", wrong: "OPPONENT_SPIKE_RESULT" },
-  OPPONENT_SPIKE_RESULT: { correctVisual: "defenceSuccess", wrongVisual: "conceded", correctNext: "POSSESSION_QUESTION", wrongNext: "ROUND_RESET", correctBlock: 1, wrongConcede: 1 },
-  ROUND_RESET: { visual: "MATCH_INTRO", next: "POSSESSION_QUESTION" },
+  OPPONENT_SPIKE_RESULT: { correctVisual: "defenceSuccess", wrongVisual: "conceded", correctNext: "SERVE_QUESTION", wrongNext: "ROUND_RESET", correctBlock: 1, wrongConcede: 1 },
+  ROUND_RESET: { visual: "MATCH_INTRO", next: "SERVE_QUESTION" },
   MATCH_SUMMARY: { visual: "MATCH_INTRO" }
 };
 
@@ -130,13 +133,13 @@ export function applyVolleyballResult(session, resultPhase, correct) {
 }
 
 export function advanceVolleyball(session) {
-  if (session.phase === "MATCH_INTRO") return { ...session, phase: "POSSESSION_QUESTION", visual: "possession" };
+  if (session.phase === "MATCH_INTRO") return { ...session, phase: "SERVE_QUESTION", visual: "possession" };
   if (session.phase === "FINAL_VIDEO") return { ...session, phase: "MATCH_SUMMARY", visual: "MATCH_INTRO", pendingNext: null };
   if (session.questionsAsked >= session.maxQuestions) return summarizeVolleyball(session);
-  const next = session.pendingNext || VOLLEYBALL_PHASES[session.phase]?.next || "POSSESSION_QUESTION";
+  const next = session.pendingNext || VOLLEYBALL_PHASES[session.phase]?.next || "SERVE_QUESTION";
   if (next === "ROUND_RESET") {
     if (session.questionsAsked >= session.maxQuestions) return summarizeVolleyball(session);
-    return { ...session, phase: "POSSESSION_QUESTION", visual: "possession", pendingNext: null };
+    return { ...session, phase: "SERVE_QUESTION", visual: "possession", pendingNext: null };
   }
   return { ...session, phase: next, visual: VOLLEYBALL_PHASES[next]?.visual || "possession", pendingNext: null };
 }
@@ -196,5 +199,5 @@ export function unlockVolleyballTrophies(stats, achievements = defaultVolleyball
 export { recordFootballAnswer as recordVolleyballAnswer, recordFootballLeagueAnswer, finalizeFootballLeagueMatch, safeRead, safeWrite };
 
 export function shouldUseVolleyballVideo(event, reducedMotion = false) {
-  return !reducedMotion && ["passSuccess", "shotSuccess", "shotMissed", "defenceSuccess", "saveSuccess", "conceded", "win", "lose"].includes(event);
+  return !reducedMotion && ["shotSuccess", "shotMissed", "defenceSuccess", "saveSuccess", "conceded", "win", "lose"].includes(event);
 }

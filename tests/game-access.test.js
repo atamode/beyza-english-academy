@@ -116,6 +116,10 @@ test("service worker update flow supports new cache activation", () => {
   assert.match(build, /clients\.claim/);
   assert.match(build, /brandAssets=walk\("assets\/brand"\)/);
   assert.doesNotMatch(build, /assets\/video/);
+  const app = read("js/app.js");
+  assert.match(app, /controllerchange/);
+  assert.match(app, /let refreshing=false/);
+  assert.match(app, /if\(refreshing\)return/);
   if (sw) {
     assert.match(sw, /const CACHE="beyza-english-/);
     assert.match(sw, /caches\.delete/);
