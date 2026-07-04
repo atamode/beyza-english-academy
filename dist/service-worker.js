@@ -1,4 +1,4 @@
-const CACHE="beyza-english-4dd548b8e771";
+const CACHE="beyza-english-3d204f55aa4d";
 const ASSETS=[
   "./",
   "index.html",
@@ -14,6 +14,14 @@ const ASSETS=[
   "js/app.js",
   "js/router.js",
   "js/storage.js",
+  "js/account-config.js",
+  "js/account-storage.js",
+  "js/supabase-client.js",
+  "js/student-repository.js",
+  "js/teacher-repository.js",
+  "js/sync-engine.js",
+  "js/account-session.js",
+  "js/account-views.js",
   "js/scoring.js",
   "js/catalog.js",
   "js/audio.js",
@@ -173,4 +181,4 @@ const ASSETS=[
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));
 self.addEventListener("message",e=>{if(e.data?.type==="SKIP_WAITING")self.skipWaiting()});
-self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;e.respondWith(caches.match(e.request).then(x=>x||fetch(e.request).then(r=>{const q=r.clone();caches.open(CACHE).then(c=>c.put(e.request,q));return r}).catch(()=>caches.match("index.html"))))});
+self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;const u=new URL(e.request.url);if(u.origin!==self.location.origin){e.respondWith(fetch(e.request));return}e.respondWith(caches.match(e.request).then(x=>x||fetch(e.request).then(r=>{const q=r.clone();caches.open(CACHE).then(c=>c.put(e.request,q));return r}).catch(()=>caches.match("index.html"))))});

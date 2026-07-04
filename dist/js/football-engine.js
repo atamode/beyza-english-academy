@@ -1,4 +1,5 @@
 import { recordWordAnswer } from "./vocabulary-engine.js";
+import { activeStudentStorage } from "./account-storage.js";
 
 export const FOOTBALL_KEYS = {
   stats: "beyzaAcademy.games.football.v1.stats",
@@ -53,8 +54,7 @@ export const TROPHIES = [
   { id: "streak-three", title: "Günlük Seri: 3 Gün", test: s => (s.studyStreak || 0) >= 3 }
 ];
 
-const memoryStorage = { data: {}, getItem(k) { return this.data[k] || null; }, setItem(k, v) { this.data[k] = String(v); } };
-const defaultStorage = () => globalThis.localStorage || memoryStorage;
+const defaultStorage = () => activeStudentStorage();
 
 export function safeRead(key, fallback, storage = defaultStorage()) {
   try {

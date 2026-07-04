@@ -1,3 +1,5 @@
+import { activeStudentStorage } from "./account-storage.js";
+
 const STORAGE_KEY = "beyzaEnglish.progress.v1";
 const VERSION = 2;
 
@@ -21,7 +23,7 @@ export const defaultState = () => ({
 
 export function loadState() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = activeStudentStorage().getItem(STORAGE_KEY);
     if (!raw) return defaultState();
     const parsed = JSON.parse(raw);
     if (parsed.version !== VERSION) return migrate(parsed);
@@ -32,7 +34,11 @@ export function loadState() {
 }
 
 export function saveState(state) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...state, version: VERSION }));
+  const next = { ...state, version: VERSION };
+  activeStudentStorage().setItem(STORAGE_KEY, JSON.stringify(next));
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new CustomEvent("poma-state-saved", { detail: { state: next } }));
+  }
   return state;
 }
 
@@ -42,7 +48,7 @@ export function updateState(updater) {
   return saveState(next);
 }
 
-export function resetState() { localStorage.removeItem(STORAGE_KEY); }
+export function resetState() { activeStudentStorage().removeItem(STORAGE_KEY); }
 
 export function markStudyDay(state) {
   const today = localDateKey(new Date());
