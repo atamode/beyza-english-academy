@@ -25,6 +25,11 @@ import {
 
 const esc = v => String(v ?? "").replace(/[&<>\"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let resolverPromise = null, session = null, cleanup = () => {}, audio = null, mediaToken = 0, lastSoundVisual = null, soundListenerBound = false;
+export const VOLLEYBALL_AUTO_ADVANCE = {
+  correctPosterMs: 1300,
+  wrongPosterMs: 2800,
+  videoSkipButtonMs: 1500
+};
 
 export async function volleyballGameView(app, context) {
   cleanup();
@@ -54,6 +59,8 @@ function empty(app) {
 }
 
 function render(app, context, resolver, words) {
+  cleanup();
+  cleanup = () => {};
   safeWrite(VOLLEYBALL_KEYS.session, { phase: session.phase, questionsAsked: session.questionsAsked, updatedAt: new Date().toISOString() });
   const media = resolver.result(session.visual) || resolver.state(session.visual);
   const stats = safeRead(VOLLEYBALL_KEYS.stats, defaultVolleyballStats());
@@ -65,7 +72,6 @@ function render(app, context, resolver, words) {
   bindRoutes(app);
   app.querySelector("[data-action='volleyball-exit']")?.addEventListener("click", () => { cleanup(); audio.stopAmbient?.(); session = null; location.hash = "#/games"; });
   app.querySelector("[data-action='volleyball-start']")?.addEventListener("click", () => { audio.unlock(); audio.startAmbient(); audio.playForVisual("MATCH_INTRO"); session = advanceVolleyball(session); render(app, context, resolver, words); });
-  app.querySelector("[data-action='volleyball-continue']")?.addEventListener("click", () => { session = advanceVolleyball(session); render(app, context, resolver, words); });
   app.querySelector("[data-action='volleyball-again']")?.addEventListener("click", () => { session = createVolleyballSession(words, context.state); lastSoundVisual = null; render(app, context, resolver, words); });
   app.querySelectorAll("[data-volleyball-answer]").forEach(button => button.addEventListener("click", () => {
     const before = session.currentQuestion;
@@ -97,7 +103,7 @@ function questionHtml(q, s) {
 
 function resultHtml(s) {
   if (s.phase === "MATCH_INTRO") return `<div class="football-panel"><p class="eyebrow">VOLEYBOL V1 · ${esc(s.leagueLabel || "Başlangıç Ligi")}</p><h1>Poma sete çıkıyor.</h1><p class="lead">Kelime Ligi bu set için ${s.maxQuestions} soru hazırladı. Futbolda öğrendiğin kelime ilerlemesi burada da devam eder.</p><button class="button primary" data-action="volleyball-start">Sete başla →</button></div>`;
-  return `<div class="football-panel"><p class="eyebrow">${s.lastResult?.correct ? "✓ Doğru hamle" : "↻ Geliştirilecek hamle"}</p><h1>${visualTitle(s.visual)}</h1><p class="lead">${esc(s.lastResult?.explanation || "Oyun akışı devam ediyor.")}</p><button class="button primary" data-action="volleyball-continue" hidden>Devam →</button></div>`;
+  return `<div class="football-panel"><p class="eyebrow">${s.lastResult?.correct ? "✓ Doğru hamle" : "↻ Geliştirilecek hamle"}</p><h1>${visualTitle(s.visual)}</h1><p class="lead">${esc(s.lastResult?.explanation || "Oyun akışı devam ediyor.")}</p><button class="button primary" data-action="volleyball-continue" hidden>Hemen Devam Et →</button></div>`;
 }
 
 function summaryHtml(s, stats, achievements) {
@@ -118,23 +124,38 @@ function makeOnce(fn) {
   };
 }
 
+export function volleyballResultDelayMs(s) {
+  if (s?.visual === "lose" || s?.lastResult?.correct === false) return VOLLEYBALL_AUTO_ADVANCE.wrongPosterMs;
+  return VOLLEYBALL_AUTO_ADVANCE.correctPosterMs;
+}
+
 function setupResultAdvance(app, context, resolver, words) {
   const token = ++mediaToken;
-  let timer = null, hardStop = null, readyTimer = null, minPosterTimer = null, posterReady = false, videoReady = false, videoStarted = false, metadataSeen = false;
+  let timer = null, hardStop = null, readyTimer = null, minPosterTimer = null, skipButtonTimer = null, posterReady = false, videoReady = false, videoStarted = false, metadataSeen = false;
+  const autoDelay = volleyballResultDelayMs(session);
+  const continueButton = app.querySelector("[data-action='volleyball-continue']");
   const go = makeOnce(() => {
     if (token !== mediaToken) return;
-    clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);
+    clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer); clearTimeout(skipButtonTimer);
     audio.restoreAfterVideo?.({ resume: session.phase !== "FINAL_VIDEO" });
     session = advanceVolleyball(session);
     render(app, context, resolver, words);
   });
+  continueButton?.addEventListener("click", go);
   const video = app.querySelector(".football-media-video"), poster = app.querySelector(".football-media-poster");
   if (!video) {
     if (!session.phase.endsWith("_QUESTION") && session.phase !== "MATCH_INTRO" && session.phase !== "FINAL_VIDEO" && lastSoundVisual !== session.visual) {
       audio.playForVisual(session.visual);
       lastSoundVisual = session.visual;
     }
-    if (!session.phase.endsWith("_QUESTION") && session.phase !== "MATCH_INTRO") timer = setTimeout(go, VOLLEYBALL_CONFIG.resultDelayMs);
+    if (!session.phase.endsWith("_QUESTION") && session.phase !== "MATCH_INTRO") {
+      continueButton?.removeAttribute("hidden");
+      timer = setTimeout(go, autoDelay);
+    }
+    cleanup = () => {
+      mediaToken++;
+      clearTimeout(timer);
+    };
     return;
   }
   const finalVideo = session.phase === "FINAL_VIDEO";
@@ -151,12 +172,12 @@ function setupResultAdvance(app, context, resolver, words) {
   };
   const showVideo = () => {
     if (token !== mediaToken || !posterReady || !videoReady) return;
+    clearTimeout(readyTimer);
     poster?.classList.remove("is-visible");
     video.classList.add("is-visible");
     audio.duckForVideo?.(video, { resume: !finalVideo });
     const play = video.play?.();
-    videoStarted = true;
-    if (finalVideo && !timer) timer = setTimeout(() => app.querySelector("[data-action='volleyball-continue']")?.removeAttribute("hidden"), VOLLEYBALL_CONFIG.continueDelayMs);
+    if (!finalVideo && !skipButtonTimer) skipButtonTimer = setTimeout(() => continueButton?.removeAttribute("hidden"), VOLLEYBALL_AUTO_ADVANCE.videoSkipButtonMs);
     if (play?.catch) play.catch(() => {
       try {
         video.muted = true;
@@ -166,6 +187,7 @@ function setupResultAdvance(app, context, resolver, words) {
     });
   };
   const ready = () => { videoReady = true; showVideo(); };
+  const playing = () => { videoStarted = true; clearTimeout(readyTimer); };
   const metadata = () => {
     if (!finalVideo || token !== mediaToken) return;
     metadataSeen = true;
@@ -177,26 +199,34 @@ function setupResultAdvance(app, context, resolver, words) {
     videoReady = false;
     showPoster();
     audio.restoreAfterVideo?.({ resume: !finalVideo });
-    if (!timer) timer = setTimeout(go, VOLLEYBALL_CONFIG.resultDelayMs);
+    clearTimeout(readyTimer); clearTimeout(hardStop); clearTimeout(skipButtonTimer);
+    continueButton?.removeAttribute("hidden");
+    if (!timer) timer = setTimeout(go, autoDelay);
   };
   minPosterTimer = setTimeout(() => { posterReady = true; showVideo(); }, VOLLEYBALL_CONFIG.posterMinMs);
   readyTimer = setTimeout(fail, readyTimeoutMs);
   video.addEventListener("loadedmetadata", metadata, { once: true });
   video.addEventListener("loadeddata", ready, { once: true });
   video.addEventListener("canplay", ready, { once: true });
+  video.addEventListener("playing", playing, { once: true });
   video.addEventListener("ended", go, { once: true });
   video.addEventListener("error", fail, { once: true });
   video.load?.();
-  if (!finalVideo) timer = setTimeout(() => app.querySelector("[data-action='volleyball-continue']")?.removeAttribute("hidden"), VOLLEYBALL_CONFIG.continueDelayMs);
   hardStop = setTimeout(() => {
-    if (finalVideo && videoStarted && metadataSeen && !video.ended && !video.error) return;
+    if (videoStarted && !video.ended && !video.error) return;
     go();
   }, hardStopMs);
   cleanup = () => {
     mediaToken++;
-    clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);
+    clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer); clearTimeout(skipButtonTimer);
     audio.restoreAfterVideo?.({ resume: !finalVideo });
     window.removeEventListener("beyza-sound-change", syncVideoMute);
+    video.removeEventListener("loadedmetadata", metadata);
+    video.removeEventListener("loadeddata", ready);
+    video.removeEventListener("canplay", ready);
+    video.removeEventListener("playing", playing);
+    video.removeEventListener("ended", go);
+    video.removeEventListener("error", fail);
     detachVideo();
     try { video.pause?.(); video.currentTime = 0; } catch {}
     video.removeAttribute("src");

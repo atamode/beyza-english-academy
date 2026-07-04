@@ -5,7 +5,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import {fileURLToPath} from "node:url";
 import {createVolleyballManifestResolver, requiredVolleyballAssetPaths, volleyballVideoEvents} from "../js/volleyball-assets.js";
-import {renderVolleyballMedia} from "../js/volleyball-game.js";
+import {renderVolleyballMedia, VOLLEYBALL_AUTO_ADVANCE, volleyballResultDelayMs} from "../js/volleyball-game.js";
 import {FOOTBALL_KEYS, recordFootballLeagueAnswer, readFootballLeagueProgress, finalizeFootballLeagueMatch} from "../js/football-engine.js";
 import {VOLLEYBALL_KEYS, createVolleyballSession, advanceVolleyball, answerVolleyballQuestion, validateVolleyballQuestion, summarizeVolleyball, mergeVolleyballStats, defaultVolleyballStats, volleyballResultType} from "../js/volleyball-engine.js";
 import {createSportAudioManager, SPORT_MUSIC_URL} from "../js/football-audio.js";
@@ -279,9 +279,65 @@ test("volleyball final videos are not skipped by short ready timeout or stalled 
   assert.match(source,/const readyTimeoutMs = finalVideo \? 15000 : VOLLEYBALL_CONFIG\.videoReadyTimeoutMs/);
   assert.match(source,/video\.addEventListener\("loadedmetadata", metadata/);
   assert.doesNotMatch(source,/addEventListener\("stalled", fail/);
-  assert.match(source,/if \(!finalVideo\) timer = setTimeout/);
-  assert.match(source,/if \(finalVideo && !timer\) timer = setTimeout/);
+  assert.match(source,/if \(!finalVideo && !skipButtonTimer\) skipButtonTimer = setTimeout/);
+  assert.doesNotMatch(source,/if \(finalVideo && !timer\) timer = setTimeout/);
   assert.match(source,/hardStop = setTimeout\(go, Math\.max\(15000, duration\)\)/);
+});
+
+test("volleyball poster results auto-advance with correct and wrong durations",()=>{
+  assert.equal(VOLLEYBALL_AUTO_ADVANCE.correctPosterMs,1300);
+  assert.equal(VOLLEYBALL_AUTO_ADVANCE.wrongPosterMs,2800);
+  assert.equal(volleyballResultDelayMs({visual:"serveSuccess",lastResult:{correct:true}}),1300);
+  assert.equal(volleyballResultDelayMs({visual:"passFailed",lastResult:{correct:false}}),2800);
+  assert.equal(volleyballResultDelayMs({visual:"lose"}),2800);
+});
+
+test("volleyball continue button can advance early and shares the single transition lock",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/const go = makeOnce/);
+  assert.match(source,/continueButton\?\.addEventListener\("click", go\)/);
+  assert.match(source,/continueButton\?\.removeAttribute\("hidden"\)/);
+  assert.match(source,/clearTimeout\(timer\); clearTimeout\(hardStop\); clearTimeout\(readyTimer\); clearTimeout\(minPosterTimer\); clearTimeout\(skipButtonTimer\)/);
+  assert.match(source,/Hemen Devam Et/);
+});
+
+test("volleyball poster timer uses longer wrong delay and does not require the button",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/const autoDelay = volleyballResultDelayMs\(session\)/);
+  assert.match(source,/timer = setTimeout\(go, autoDelay\)/);
+  assert.doesNotMatch(source,/VOLLEYBALL_CONFIG\.resultDelayMs/);
+});
+
+test("volleyball video ended is the automatic transition while video playback suppresses poster timer",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/video\.addEventListener\("ended", go, \{ once: true \}\)/);
+  assert.match(source,/const playing = \(\) => \{ videoStarted = true; clearTimeout\(readyTimer\); \}/);
+  assert.match(source,/if \(videoStarted && !video\.ended && !video\.error\) return/);
+  assert.doesNotMatch(source,/video\.addEventListener\("stalled", fail/);
+});
+
+test("volleyball video error falls back to poster and auto-advances by result type",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/video\.addEventListener\("error", fail, \{ once: true \}\)/);
+  assert.match(source,/showPoster\(\)/);
+  assert.match(source,/if \(!timer\) timer = setTimeout\(go, autoDelay\)/);
+});
+
+test("volleyball win and lose videos wait for ended before summary",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/const finalVideo = session\.phase === "FINAL_VIDEO"/);
+  assert.doesNotMatch(source,/finalVideo && !timer/);
+  assert.match(source,/video\.addEventListener\("ended", go/);
+  assert.match(source,/if \(videoStarted && !video\.ended && !video\.error\) return/);
+});
+
+test("volleyball state changes clean old timers and delayed video listeners",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/cleanup\(\);\s+cleanup = \(\) => \{\}/);
+  assert.match(source,/mediaToken\+\+/);
+  assert.match(source,/video\.removeEventListener\("ended", go\)/);
+  assert.match(source,/video\.removeEventListener\("error", fail\)/);
+  assert.match(source,/video\.removeEventListener\("playing", playing\)/);
 });
 
 test("volleyball questions are valid and have no duplicate words in one match",()=>{
