@@ -3,6 +3,12 @@
   "title": "Poma Voleybol V1",
   "version": "1.0.0",
   "sharedMusic": "../../audio/sports/poma-sports-loop.mp3",
+  "documentedAliases": {
+    "03-videos/volleyball-receive-success.mp4": {
+      "events": ["passSuccess", "saveSuccess"],
+      "reason": "Paket içinde ayrı pas ve savunma videosu yok; manşet/karşılama başarısı aynı final receive videosunu bilinçli olarak paylaşır."
+    }
+  },
   "references": {
     "idlePoster": "00-references/volleyball-idle-poster.webp",
     "gameplayMaster": "00-references/volleyball-gameplay-master.webp"

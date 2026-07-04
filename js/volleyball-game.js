@@ -120,7 +120,7 @@ function makeOnce(fn) {
 
 function setupResultAdvance(app, context, resolver, words) {
   const token = ++mediaToken;
-  let timer = null, hardStop = null, readyTimer = null, minPosterTimer = null, posterReady = false, videoReady = false;
+  let timer = null, hardStop = null, readyTimer = null, minPosterTimer = null, posterReady = false, videoReady = false, videoStarted = false, metadataSeen = false;
   const go = makeOnce(() => {
     if (token !== mediaToken) return;
     clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);
@@ -138,6 +138,8 @@ function setupResultAdvance(app, context, resolver, words) {
     return;
   }
   const finalVideo = session.phase === "FINAL_VIDEO";
+  const readyTimeoutMs = finalVideo ? 15000 : VOLLEYBALL_CONFIG.videoReadyTimeoutMs;
+  const hardStopMs = finalVideo ? 15000 : VOLLEYBALL_CONFIG.videoTimeoutMs;
   const detachVideo = audio.attachVideo?.(video) || (() => {});
   const syncVideoMute = e => { video.muted = Boolean(e.detail?.muted); };
   window.addEventListener("beyza-sound-change", syncVideoMute);
@@ -153,6 +155,8 @@ function setupResultAdvance(app, context, resolver, words) {
     video.classList.add("is-visible");
     audio.duckForVideo?.(video, { resume: !finalVideo });
     const play = video.play?.();
+    videoStarted = true;
+    if (finalVideo && !timer) timer = setTimeout(() => app.querySelector("[data-action='volleyball-continue']")?.removeAttribute("hidden"), VOLLEYBALL_CONFIG.continueDelayMs);
     if (play?.catch) play.catch(() => {
       try {
         video.muted = true;
@@ -162,6 +166,13 @@ function setupResultAdvance(app, context, resolver, words) {
     });
   };
   const ready = () => { videoReady = true; showVideo(); };
+  const metadata = () => {
+    if (!finalVideo || token !== mediaToken) return;
+    metadataSeen = true;
+    const duration = Number.isFinite(video.duration) && video.duration > 0 ? video.duration * 1000 + 3000 : 15000;
+    clearTimeout(hardStop);
+    hardStop = setTimeout(go, Math.max(15000, duration));
+  };
   const fail = () => {
     videoReady = false;
     showPoster();
@@ -169,15 +180,18 @@ function setupResultAdvance(app, context, resolver, words) {
     if (!timer) timer = setTimeout(go, VOLLEYBALL_CONFIG.resultDelayMs);
   };
   minPosterTimer = setTimeout(() => { posterReady = true; showVideo(); }, VOLLEYBALL_CONFIG.posterMinMs);
-  readyTimer = setTimeout(fail, VOLLEYBALL_CONFIG.videoReadyTimeoutMs);
+  readyTimer = setTimeout(fail, readyTimeoutMs);
+  video.addEventListener("loadedmetadata", metadata, { once: true });
   video.addEventListener("loadeddata", ready, { once: true });
   video.addEventListener("canplay", ready, { once: true });
   video.addEventListener("ended", go, { once: true });
   video.addEventListener("error", fail, { once: true });
-  video.addEventListener("stalled", fail, { once: true });
   video.load?.();
-  timer = setTimeout(() => app.querySelector("[data-action='volleyball-continue']")?.removeAttribute("hidden"), VOLLEYBALL_CONFIG.continueDelayMs);
-  hardStop = setTimeout(go, VOLLEYBALL_CONFIG.videoTimeoutMs);
+  if (!finalVideo) timer = setTimeout(() => app.querySelector("[data-action='volleyball-continue']")?.removeAttribute("hidden"), VOLLEYBALL_CONFIG.continueDelayMs);
+  hardStop = setTimeout(() => {
+    if (finalVideo && videoStarted && metadataSeen && !video.ended && !video.error) return;
+    go();
+  }, hardStopMs);
   cleanup = () => {
     mediaToken++;
     clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);

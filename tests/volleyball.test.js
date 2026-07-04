@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import {fileURLToPath} from "node:url";
 import {createVolleyballManifestResolver, requiredVolleyballAssetPaths, volleyballVideoEvents} from "../js/volleyball-assets.js";
 import {renderVolleyballMedia} from "../js/volleyball-game.js";
@@ -25,6 +26,16 @@ function storageOf(value=null){
   if(value)data[FOOTBALL_KEYS.league]=JSON.stringify(value);
   return {getItem(key){return data[key]||null},setItem(key,v){data[key]=v},raw(){return data}};
 }
+function sha(file){return crypto.createHash("sha256").update(fs.readFileSync(path.join(root,file))).digest("hex");}
+function mp4DurationSeconds(file){
+  const buf=fs.readFileSync(path.join(root,file));
+  const idx=buf.indexOf(Buffer.from("mvhd"));
+  assert.ok(idx>4, `${file} should contain mvhd metadata`);
+  const version=buf[idx+4];
+  const timescale=version===1?buf.readUInt32BE(idx+28):buf.readUInt32BE(idx+16);
+  const duration=version===1?Number(buf.readBigUInt64BE(idx+32)):buf.readUInt32BE(idx+20);
+  return duration/timescale;
+}
 
 class MockAudio {
   static instances=[];
@@ -41,6 +52,37 @@ test("volleyball manifest resolves all result videos and asset paths",()=>{
   }
   assert.match(resolver.result("shotSuccess").posterUrl,/volleyball-spike-success-poster\.webp$/);
   assert.match(resolver.video("conceded").url,/volleyball-point-conceded\.mp4$/);
+});
+
+test("volleyball events use semantic videos and only documented aliases share files",()=>{
+  const expected={
+    passSuccess:"03-videos/volleyball-receive-success.mp4",
+    saveSuccess:"03-videos/volleyball-receive-success.mp4",
+    shotSuccess:"03-videos/volleyball-spike-success.mp4",
+    shotMissed:"03-videos/volleyball-spike-missed.mp4",
+    defenceSuccess:"03-videos/volleyball-block-success.mp4",
+    conceded:"03-videos/volleyball-point-conceded.mp4",
+    win:"02-results/volleyball-set-win.mp4",
+    lose:"02-results/volleyball-set-lose.mp4"
+  };
+  for(const [event,file] of Object.entries(expected)) assert.equal(manifest.events[event].video,file,event);
+  const byVideo={};
+  for(const [event,row] of Object.entries(manifest.events)) (byVideo[row.video]||=[]).push(event);
+  for(const [video,events] of Object.entries(byVideo)){
+    if(events.length<2) continue;
+    assert.deepEqual(manifest.documentedAliases?.[video]?.events?.sort(),events.sort(),`${video} alias must be documented`);
+  }
+});
+
+test("volleyball deploy MP4 files match dist hashes and final videos keep real duration",()=>{
+  for(const event of volleyballVideoEvents(manifest)){
+    const rel=`assets/games/poma-volleyball-v1/${manifest.events[event].video}`;
+    const dist=`dist/${rel}`;
+    assert.equal(fs.existsSync(path.join(root,dist)),true,dist);
+    assert.equal(sha(rel),sha(dist),`${event} source and dist hash`);
+  }
+  assert.ok(mp4DurationSeconds("assets/games/poma-volleyball-v1/02-results/volleyball-set-win.mp4")>=9.5);
+  assert.ok(mp4DurationSeconds("assets/games/poma-volleyball-v1/02-results/volleyball-set-lose.mp4")>=9.5);
 });
 
 test("app exposes real volleyball route and active games card",()=>{
@@ -171,6 +213,16 @@ test("football and volleyball presenters listen for live sound changes on active
     assert.match(source,/retry\.catch\(fail\)/);
     assert.match(source,/removeEventListener\("beyza-sound-change", syncVideoMute\)/);
   }
+});
+
+test("volleyball final videos are not skipped by short ready timeout or stalled events",()=>{
+  const source=fs.readFileSync(path.join(root,"js/volleyball-game.js"),"utf8");
+  assert.match(source,/const readyTimeoutMs = finalVideo \? 15000 : VOLLEYBALL_CONFIG\.videoReadyTimeoutMs/);
+  assert.match(source,/video\.addEventListener\("loadedmetadata", metadata/);
+  assert.doesNotMatch(source,/addEventListener\("stalled", fail/);
+  assert.match(source,/if \(!finalVideo\) timer = setTimeout/);
+  assert.match(source,/if \(finalVideo && !timer\) timer = setTimeout/);
+  assert.match(source,/hardStop = setTimeout\(go, Math\.max\(15000, duration\)\)/);
 });
 
 test("volleyball questions are valid and have no duplicate words in one match",()=>{
