@@ -20,6 +20,33 @@ test("game center is reachable before onboarding and from top navigation", () =>
   assert.match(index, /class="icon-button games-button" data-route="games"/);
 });
 
+test("welcome Poma ile Vakit Gecir opens the same games hub as the header", () => {
+  const app = read("js/app.js");
+  const index = read("index.html");
+  const welcome = app.match(/function welcome\(\)\{([\s\S]*?)\nfunction home\(\)/);
+  assert.ok(welcome, "welcome renderer must exist");
+  assert.match(welcome[1], /Poma ile Vakit Ge(?:Ã§|ç)ir/);
+  assert.match(welcome[1], /data-action="quick-games"/);
+  assert.match(welcome[1], /querySelector\("\[data-action='quick-games'\]"\)\?\.addEventListener\("click",\(\)=>navigate\("games"\)\)/);
+  assert.doesNotMatch(welcome[1], /navigate\("game\/football"\)/);
+  assert.doesNotMatch(welcome[1], /beyzaFootballReturnRoute/);
+  assert.match(index, /class="icon-button games-button" data-route="games"/);
+  assert.doesNotMatch(app, /data-action="quick-football"/);
+});
+
+test("games hub keeps football volleyball and stories cards with direct routes unchanged", () => {
+  const app = read("js/app.js");
+  const gamesHub = app.match(/function gamesHub\(\)\{([\s\S]*?)`;bindRoutes\(\)\}/);
+  assert.ok(gamesHub, "gamesHub renderer must exist");
+  assert.match(gamesHub[1], /\$\{storyCenterCard\(\)\}/);
+  assert.match(gamesHub[1], /\$\{gameCenterCard\(\)\}/);
+  assert.match(gamesHub[1], /\$\{volleyballGameCard\(\)\}/);
+  assert.match(app, /r==="game\/football"\)return footballGameView/);
+  assert.match(app, /r==="game\/volleyball"\)return volleyballGameView/);
+  assert.match(app, /r==="stories"\|\|r\.startsWith\("story\/"\)\)return storyRoute\(r\)/);
+  assert.match(read("js/story-view.js"), /data-route="stories"/);
+});
+
 test("home renders student dashboard before curriculum", () => {
   const app = read("js/app.js");
   const heroIndex = app.indexOf("POMA ACADEMY");

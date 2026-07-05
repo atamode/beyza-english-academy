@@ -1,4 +1,4 @@
-const CACHE="beyza-english-8eec82217938";
+const CACHE="beyza-english-015f49a31cd4";
 const ASSETS=[
   "./",
   "index.html",
