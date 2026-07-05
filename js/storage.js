@@ -5,7 +5,7 @@ const VERSION = 2;
 
 export const defaultState = () => ({
   version: VERSION,
-  profile: { name: "Beyza", age: 11, createdAt: null },
+  profile: { name: "", age: 11, createdAt: null },
   onboardingComplete: false,
   diagnostic: null,
   diagnosticDraft: null,
