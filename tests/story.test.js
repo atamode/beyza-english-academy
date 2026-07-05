@@ -110,14 +110,26 @@ test("shared speech helper reads story text, respects mute and recovers from fai
   assert.equal(broken.state.failures, 1);
 });
 
+test("story card speech maps each character once and cancels the prior utterance", () => {
+  const spoken = [];
+  let cancelCount = 0;
+  const helper = createSpeechHelper({ synthesis: { cancel() { cancelCount++; }, speak(u) { spoken.push(u.text); } }, Utterance: class { constructor(text) { this.text = text; } } });
+  for (const sentence of ["He is Poma Dahi.", "She is Influencer Poma.", "It is a little wolf."]) {
+    assert.equal(helper.speak(sentence), true);
+  }
+  assert.deepEqual(spoken, ["He is Poma Dahi.", "She is Influencer Poma.", "It is a little wolf."]);
+  assert.equal(cancelCount, 3);
+});
+
 test("scene 9 character cards speak the mapped sentence and use buttons", () => {
   const view = read("js/story-view.js");
-  assert.match(view, /<button class="story-character-card"/);
+  assert.match(view, /<button class="story-character-card" type="button"/);
   assert.match(view, /data-story-card-speech/);
   assert.match(view, /He is Poma Dahi\./);
   assert.match(view, /She is Influencer Poma\./);
   assert.match(view, /It is a little wolf\./);
   assert.match(view, /aria-label="\$\{esc\(`\$\{sentence\} Dinle`\)\}"/);
+  assert.doesNotMatch(view, /keydown|keypress|keyup/);
 });
 
 test("little wolf card uses the single wolf asset without Bozkurt Poma", () => {
