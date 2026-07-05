@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "storyId": "story-001",
+  "basePathSuggestion": "assets/stories/story-001/",
+  "assets": {
+    "kingdom-empty": {
+      "type": "image",
+      "file": "story-001-kingdom-empty.png"
+    },
+    "poma-welcome-poster": {
+      "type": "image",
+      "file": "story-001-poma-welcome-poster.png"
+    },
+    "poma-welcome-video": {
+      "type": "video",
+      "file": "story-001-poma-welcome.mp4",
+      "poster": "story-001-poma-welcome-poster.png",
+      "muted": true,
+      "playsinline": true,
+      "preload": "metadata"
+    },
+    "poma-dahi-castle": {
+      "type": "image",
+      "file": "story-001-poma-dahi-castle.png"
+    },
+    "influencer-castle": {
+      "type": "image",
+      "file": "story-001-influencer-castle.png"
+    },
+    "bozkurt-wolf-castle": {
+      "type": "image",
+      "file": "story-001-bozkurt-wolf-castle.png"
+    },
+    "poma-group-lineup": {
+      "type": "image",
+      "file": "story-001-poma-group-lineup.png"
+    }
+  }
+}

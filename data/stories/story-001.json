@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "storyId": "story-001",
+  "lessonNo": 1,
+  "moduleNo": 1,
+  "title": "Who Is at the Castle?",
+  "displayTitleTr": "Kalede Kim Var?",
+  "level": "A1-bridge",
+  "grammarTarget": {
+    "primary": "subject-pronouns",
+    "items": [
+      "I",
+      "you",
+      "he",
+      "she",
+      "it",
+      "we",
+      "they"
+    ],
+    "assessmentRule": "Do not assess am/is/are in this lesson. They appear only inside fixed model sentences and are taught explicitly in Lesson 2."
+  },
+  "targetWords": [
+    {
+      "word": "castle",
+      "meaningTr": "kale"
+    },
+    {
+      "word": "gate",
+      "meaningTr": "kapı"
+    },
+    {
+      "word": "friend",
+      "meaningTr": "arkadaş"
+    },
+    {
+      "word": "boy",
+      "meaningTr": "erkek çocuk"
+    },
+    {
+      "word": "girl",
+      "meaningTr": "kız çocuk"
+    },
+    {
+      "word": "wolf",
+      "meaningTr": "kurt"
+    },
+    {
+      "word": "team",
+      "meaningTr": "takım"
+    },
+    {
+      "word": "welcome",
+      "meaningTr": "hoş geldin"
+    }
+  ],
+  "slides": [
+    {
+      "id": "scene-01",
+      "type": "image",
+      "mediaId": "kingdom-empty",
+      "text": [
+        "Welcome to Poma Kingdom.",
+        "The castle gate is open."
+      ],
+      "narration": "Welcome to Poma Kingdom. The castle gate is open.",
+      "focusTokens": [
+        "welcome",
+        "castle",
+        "gate"
+      ],
+      "interaction": {
+        "type": "tap-word-listen"
+      }
+    },
+    {
+      "id": "scene-02",
+      "type": "video",
+      "mediaId": "poma-welcome-video",
+      "posterId": "poma-welcome-poster",
+      "muted": true,
+      "text": [
+        "Hello! I am Poma."
+      ],
+      "narration": "Hello! I am Poma.",
+      "focusTokens": [
+        "I"
+      ],
+      "interaction": {
+        "type": "tap-character-listen",
+        "answer": "I"
+      }
+    },
+    {
+      "id": "scene-03",
+      "type": "image",
+      "mediaId": "poma-welcome-poster",
+      "text": [
+        "You are my new friend."
+      ],
+      "narration": "You are my new friend.",
+      "focusTokens": [
+        "you"
+      ],
+      "interaction": {
+        "type": "tap-pronoun",
+        "answer": "you",
+        "uiOverlay": "learner-badge"
+      }
+    },
+    {
+      "id": "scene-04",
+      "type": "image",
+      "mediaId": "poma-dahi-castle",
+      "text": [
+        "Look! He is Poma Dahi.",
+        "He is smart."
+      ],
+      "narration": "Look! He is Poma Dahi. He is smart.",
+      "focusTokens": [
+        "he"
+      ],
+      "interaction": {
+        "type": "choose-pronoun",
+        "answer": "he"
+      }
+    },
+    {
+      "id": "scene-05",
+      "type": "image",
+      "mediaId": "influencer-castle",
+      "text": [
+        "She is Influencer Poma.",
+        "She is happy."
+      ],
+      "narration": "She is Influencer Poma. She is happy.",
+      "focusTokens": [
+        "she"
+      ],
+      "interaction": {
+        "type": "choose-pronoun",
+        "answer": "she"
+      }
+    },
+    {
+      "id": "scene-06",
+      "type": "image",
+      "mediaId": "bozkurt-wolf-castle",
+      "text": [
+        "It is a little wolf.",
+        "It is cute."
+      ],
+      "narration": "It is a little wolf. It is cute.",
+      "focusTokens": [
+        "it",
+        "wolf"
+      ],
+      "interaction": {
+        "type": "choose-pronoun",
+        "answer": "it"
+      }
+    },
+    {
+      "id": "scene-07",
+      "type": "image",
+      "mediaId": "poma-welcome-poster",
+      "text": [
+        "We are friends.",
+        "We are a team."
+      ],
+      "narration": "We are friends. We are a team.",
+      "focusTokens": [
+        "we"
+      ],
+      "interaction": {
+        "type": "choose-pronoun",
+        "answer": "we",
+        "uiOverlay": "poma-plus-learner"
+      }
+    },
+    {
+      "id": "scene-08",
+      "type": "image",
+      "mediaId": "poma-group-lineup",
+      "text": [
+        "They are the Pomas.",
+        "They are ready."
+      ],
+      "narration": "They are the Pomas. They are ready.",
+      "focusTokens": [
+        "they"
+      ],
+      "interaction": {
+        "type": "choose-pronoun",
+        "answer": "they"
+      }
+    },
+    {
+      "id": "scene-09",
+      "type": "interactive",
+      "mediaIds": [
+        "poma-dahi-castle",
+        "influencer-castle",
+        "bozkurt-wolf-castle"
+      ],
+      "text": [
+        "He, she or it?"
+      ],
+      "narration": "He, she or it?",
+      "interaction": {
+        "type": "match-pronoun-to-character",
+        "pairs": [
+          {
+            "pronoun": "he",
+            "mediaId": "poma-dahi-castle"
+          },
+          {
+            "pronoun": "she",
+            "mediaId": "influencer-castle"
+          },
+          {
+            "pronoun": "it",
+            "mediaId": "bozkurt-wolf-castle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-10",
+      "type": "image",
+      "mediaId": "poma-welcome-poster",
+      "text": [
+        "I am Poma.",
+        "You are my friend.",
+        "We are a team.",
+        "Welcome!"
+      ],
+      "narration": "I am Poma. You are my friend. We are a team. Welcome!",
+      "focusTokens": [
+        "I",
+        "you",
+        "we"
+      ],
+      "interaction": {
+        "type": "listen-and-repeat"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "Poma speaks about himself. Choose the pronoun.",
+      "mediaId": "poma-welcome-poster",
+      "options": [
+        "I",
+        "he",
+        "she",
+        "they"
+      ],
+      "answer": "I",
+      "feedbackTr": "Poma kendisi hakkında konuştuğu için “I” kullanılır."
+    },
+    {
+      "id": "q2",
+      "prompt": "Choose the pronoun for Poma Dahi.",
+      "mediaId": "poma-dahi-castle",
+      "options": [
+        "she",
+        "he",
+        "it",
+        "we"
+      ],
+      "answer": "he",
+      "feedbackTr": "Poma Dahi erkek bir karakterdir. Bu yüzden “he” kullanılır."
+    },
+    {
+      "id": "q3",
+      "prompt": "Choose the pronoun for Influencer Poma.",
+      "mediaId": "influencer-castle",
+      "options": [
+        "he",
+        "it",
+        "she",
+        "they"
+      ],
+      "answer": "she",
+      "feedbackTr": "Influencer Poma kadın bir karakterdir. Bu yüzden “she” kullanılır."
+    },
+    {
+      "id": "q4",
+      "prompt": "Choose the pronoun for the little wolf.",
+      "mediaId": "bozkurt-wolf-castle",
+      "options": [
+        "it",
+        "he",
+        "she",
+        "we"
+      ],
+      "answer": "it",
+      "feedbackTr": "İnsan olmayan tek bir hayvan için başlangıç düzeyinde “it” kullanılır."
+    },
+    {
+      "id": "q5",
+      "prompt": "Poma stands with you. Choose the pronoun.",
+      "mediaId": "poma-welcome-poster",
+      "uiOverlay": "poma-plus-learner",
+      "options": [
+        "they",
+        "we",
+        "he",
+        "it"
+      ],
+      "answer": "we",
+      "feedbackTr": "Konuşan kişi grubun içindeyse “we” kullanılır."
+    },
+    {
+      "id": "q6",
+      "prompt": "Look at the Poma group. Choose the pronoun.",
+      "mediaId": "poma-group-lineup",
+      "options": [
+        "you",
+        "I",
+        "they",
+        "she"
+      ],
+      "answer": "they",
+      "feedbackTr": "Konuşanın dışında kalan bir grup için “they” kullanılır."
+    }
+  ],
+  "completion": {
+    "passScore": 4,
+    "maxScore": 6,
+    "reward": {
+      "type": "story-star",
+      "id": "story-001-first-friends"
+    },
+    "retryMode": "wrong-items-first"
+  }
+}
