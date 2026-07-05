@@ -200,7 +200,7 @@
       "mediaIds": [
         "poma-dahi-castle",
         "influencer-castle",
-        "bozkurt-wolf-castle"
+        "little-wolf"
       ],
       "text": [
         "He, she or it?"
@@ -219,7 +219,7 @@
           },
           {
             "pronoun": "it",
-            "mediaId": "bozkurt-wolf-castle"
+            "mediaId": "little-wolf"
           }
         ]
       }
@@ -288,7 +288,7 @@
     {
       "id": "q4",
       "prompt": "Choose the pronoun for the little wolf.",
-      "mediaId": "bozkurt-wolf-castle",
+      "mediaId": "little-wolf",
       "options": [
         "it",
         "he",

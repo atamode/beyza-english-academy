@@ -97,14 +97,64 @@ test("quiz answers are immutable, unique and Turkish feedback appears on wrong a
 
 test("shared speech helper reads story text, respects mute and recovers from failures", () => {
   const spoken = [];
-  const helper = createSpeechHelper({ synthesis: { cancel() {}, speak(u) { spoken.push(u.text); } }, Utterance: class { constructor(text) { this.text = text; } } });
+  let cancelCount = 0;
+  const helper = createSpeechHelper({ synthesis: { cancel() { cancelCount++; }, speak(u) { spoken.push(u.text); } }, Utterance: class { constructor(text) { this.text = text; } } });
   assert.equal(helper.speak("Hello! I am Poma."), true);
   assert.deepEqual(spoken, ["Hello! I am Poma."]);
+  assert.equal(helper.speak("He is Poma Dahi."), true);
+  assert.equal(cancelCount, 2);
   helper.setMuted(true);
   assert.equal(helper.speak("Muted"), false);
   const broken = createSpeechHelper({ synthesis: { cancel() { throw new Error("no voice"); } }, Utterance: class {} });
   assert.equal(broken.speak("Still works"), false);
   assert.equal(broken.state.failures, 1);
+});
+
+test("scene 9 character cards speak the mapped sentence and use buttons", () => {
+  const view = read("js/story-view.js");
+  assert.match(view, /<button class="story-character-card"/);
+  assert.match(view, /data-story-card-speech/);
+  assert.match(view, /He is Poma Dahi\./);
+  assert.match(view, /She is Influencer Poma\./);
+  assert.match(view, /It is a little wolf\./);
+  assert.match(view, /aria-label="\$\{esc\(`\$\{sentence\} Dinle`\)\}"/);
+});
+
+test("little wolf card uses the single wolf asset without Bozkurt Poma", () => {
+  const manifest = story.assetManifest.assets;
+  const scene9 = story.slides.find(s => s.id === "scene-09");
+  const itPair = scene9.interaction.pairs.find(pair => pair.pronoun === "it");
+  assert.equal(itPair.mediaId, "little-wolf");
+  assert.equal(story.quiz.find(q => q.id === "q4").mediaId, "little-wolf");
+  assert.equal(manifest["little-wolf"].file, "story-001-little-wolf.png");
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-little-wolf.png")), true);
+  assert.notEqual(itPair.mediaId, "bozkurt-wolf-castle");
+});
+
+test("scene 7 and quiz 5 reuse the Poma plus learner visual", () => {
+  const view = read("js/story-view.js");
+  const scene7 = story.slides.find(s => s.id === "scene-07");
+  const quiz5 = story.quiz.find(q => q.id === "q5");
+  assert.equal(scene7.interaction.uiOverlay, "poma-plus-learner");
+  assert.equal(quiz5.uiOverlay, "poma-plus-learner");
+  assert.equal(quiz5.answer, "we");
+  assert.match(view, /function renderPomaPlusLearner/);
+  assert.match(view, /Poma \+ You/);
+  assert.match(view, /class="learner-badge"/);
+});
+
+test("quiz 6 keeps the group visual and they answer", () => {
+  const quiz6 = story.quiz.find(q => q.id === "q6");
+  assert.equal(quiz6.mediaId, "poma-group-lineup");
+  assert.equal(quiz6.answer, "they");
+  assert.equal(quiz6.prompt, "Look at the Poma group. Choose the pronoun.");
+});
+
+test("story card speech respects global mute", () => {
+  const spoken = [];
+  const helper = createSpeechHelper({ muted: true, synthesis: { cancel() {}, speak(u) { spoken.push(u.text); } }, Utterance: class { constructor(text) { this.text = text; } } });
+  assert.equal(helper.speak("It is a little wolf."), false);
+  assert.deepEqual(spoken, []);
 });
 
 test("no story MP3 or external TTS dependency is introduced", () => {

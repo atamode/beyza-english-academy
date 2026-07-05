@@ -44,7 +44,8 @@ function studentStoryView(app, context, story) {
     const slide = story.slides[storyRuntime.slideIndex];
     updateStoryScene(storage, story, storyRuntime.slideIndex);
     const progress = Math.round((storyRuntime.slideIndex + 1) / story.slides.length * 100);
-    app.innerHTML = `<section class="story-shell" data-story-id="${esc(story.storyId)}"><div class="lesson-head"><button class="button secondary" data-route="stories">← Hikâyeler</button><div class="progress"><span style="width:${progress}%"></span></div><span>${storyRuntime.slideIndex + 1}/${story.slides.length}</span></div><article class="card story-player"><div class="story-media-wrap">${renderStoryMedia(story, slide)}</div><div class="story-copy"><p class="eyebrow">Ders ${story.lessonNo} · Subject Pronouns</p><h1>${esc(story.title)}</h1><div class="story-lines">${slide.text.map(line => `<p>${highlightTokens(line, slide.focusTokens || [])}</p>`).join("")}</div>${renderInteraction(slide)}<div class="button-row story-speech-controls"><button class="button secondary" data-action="story-listen">Dinle</button><button class="button secondary" data-action="story-repeat">Tekrar Dinle</button><button class="button secondary" data-action="story-stop">Durdur</button></div></div></article><div class="button-row story-nav"><button class="button secondary" data-action="story-prev" ${storyRuntime.slideIndex === 0 ? "disabled" : ""}>Önceki</button><button class="button primary" data-action="story-next">${storyRuntime.slideIndex === story.slides.length - 1 ? "Quize Geç" : "Sonraki"}</button></div></section>`;
+    speech.setMuted(context.state.settings?.muted);
+    app.innerHTML = `<section class="story-shell" data-story-id="${esc(story.storyId)}"><div class="lesson-head"><button class="button secondary" data-route="stories">← Hikâyeler</button><div class="progress"><span style="width:${progress}%"></span></div><span>${storyRuntime.slideIndex + 1}/${story.slides.length}</span></div><article class="card story-player"><div class="story-media-wrap">${renderStoryMedia(story, slide, context)}</div><div class="story-copy"><p class="eyebrow">Ders ${story.lessonNo} · Subject Pronouns</p><h1>${esc(story.title)}</h1><div class="story-lines">${slide.text.map(line => `<p>${highlightTokens(line, slide.focusTokens || [])}</p>`).join("")}</div>${renderInteraction(slide)}<div class="button-row story-speech-controls"><button class="button secondary" data-action="story-listen">Dinle</button><button class="button secondary" data-action="story-repeat">Tekrar Dinle</button><button class="button secondary" data-action="story-stop">Durdur</button></div></div></article><div class="button-row story-nav"><button class="button secondary" data-action="story-prev" ${storyRuntime.slideIndex === 0 ? "disabled" : ""}>Önceki</button><button class="button primary" data-action="story-next">${storyRuntime.slideIndex === story.slides.length - 1 ? "Quize Geç" : "Sonraki"}</button></div></section>`;
     bindStoryRoutes(app);
     bindMedia(app);
     app.querySelector("[data-action='story-listen']")?.addEventListener("click", () => speech.speak(slide.narration || slide.text.join(" ")));
@@ -60,15 +61,25 @@ function studentStoryView(app, context, story) {
       const ok = button.dataset.storyAnswer === button.dataset.storyCorrect;
       app.querySelector("[data-story-feedback]").innerHTML = `<p class="feedback ${ok ? "correct" : "incorrect"}">${ok ? "Doğru seçim." : "Kısa ipucu: karaktere göre doğru özne zamirini seç."}</p>`;
     }));
+    app.querySelectorAll("[data-story-card-speech]").forEach(button => button.addEventListener("click", () => {
+      speech.setMuted(context.state.settings?.muted);
+      speech.speak(button.dataset.storyCardSpeech);
+      const ok = button.dataset.storyCardAnswer === button.dataset.storyCardCorrect;
+      const feedback = app.querySelector("[data-story-feedback]");
+      if (feedback) feedback.innerHTML = `<p class="feedback ${ok ? "correct" : "incorrect"}">${ok ? "Doğru kart." : "Bu kartı tekrar dinle ve zamiri düşün."}</p>`;
+    }));
   };
   render();
 }
 
-function renderStoryMedia(story, slide) {
+function renderStoryMedia(story, slide, context = {}) {
+  if (slide.interaction?.uiOverlay === "poma-plus-learner") return renderPomaPlusLearner(story, context);
   if (slide.type === "interactive") {
-    return `<div class="story-media-stage story-media-grid" role="group" aria-label="Karakter eşleştirme görselleri">${slide.mediaIds.map(id => {
-      const asset = resolveStoryAsset(story, id);
-      return `<img src="${esc(asset?.url || "")}" alt="${esc(mediaAlt(id))}" loading="eager">`;
+    const pairs = slide.interaction?.pairs || [];
+    return `<div class="story-media-stage story-media-grid story-card-grid" role="group" aria-label="Karakter eşleştirme görselleri">${pairs.map(pair => {
+      const asset = resolveStoryAsset(story, pair.mediaId);
+      const sentence = cardSpeech(pair.pronoun);
+      return `<button class="story-character-card" type="button" data-story-card-answer="${esc(pair.pronoun)}" data-story-card-correct="${esc(pair.pronoun)}" data-story-card-speech="${esc(sentence)}" aria-label="${esc(`${sentence} Dinle`)}"><img src="${esc(asset?.url || "")}" alt="${esc(mediaAlt(pair.mediaId))}" loading="eager"><span>${esc(pair.pronoun)}</span></button>`;
     }).join("")}</div>`;
   }
   const asset = resolveStoryAsset(story, slide.mediaId);
@@ -77,6 +88,14 @@ function renderStoryMedia(story, slide) {
     return `<div class="story-media-stage" data-story-video-stage><img class="story-media-poster is-visible" src="${esc(poster?.url || asset?.posterUrl || "")}" alt="${esc(mediaAlt(slide.posterId || slide.mediaId))}" loading="eager"><video class="story-media-video" src="${esc(asset?.url || "")}" poster="${esc(poster?.url || asset?.posterUrl || "")}" muted playsinline preload="metadata" aria-label="${esc(mediaAlt(slide.mediaId))}"></video></div>`;
   }
   return `<div class="story-media-stage"><img class="story-media-image is-visible" src="${esc(asset?.url || "")}" alt="${esc(mediaAlt(slide.mediaId))}" loading="eager"></div>`;
+}
+
+function renderPomaPlusLearner(story, context = {}) {
+  const asset = resolveStoryAsset(story, "poma-welcome-poster");
+  const profile = context.state?.profile || {};
+  const rawName = String(profile.name || "").trim();
+  const label = rawName ? rawName.slice(0, 1).toUpperCase() : "YOU";
+  return `<div class="story-media-stage story-we-stage" aria-label="Poma + You: Poma ve öğrenci birlikte"><img class="story-media-image is-visible" src="${esc(asset?.url || "")}" alt="Poma öğrenciyle birlikte" loading="eager"><div class="learner-badge" aria-label="You öğrenci rozeti"><span>${esc(label)}</span><strong>YOU</strong></div></div>`;
 }
 
 function bindMedia(app) {
@@ -120,7 +139,8 @@ function renderQuiz(app, context, story, renderStory) {
   const answered = Object.keys(storyRuntime.quizAnswers).length;
   const current = story.quiz[answered] || story.quiz[0];
   const media = resolveStoryAsset(story, current.mediaId);
-  app.innerHTML = `<section class="story-shell story-quiz"><div class="lesson-head"><button class="button secondary" data-action="story-back-to-scenes">← Hikâyeye dön</button><div class="progress"><span style="width:${answered / story.quiz.length * 100}%"></span></div><span>${Math.min(answered + 1, story.quiz.length)}/${story.quiz.length}</span></div><article class="card story-player"><div class="story-media-wrap"><div class="story-media-stage"><img class="story-media-image is-visible" src="${esc(media?.url || "")}" alt="${esc(mediaAlt(current.mediaId))}"></div></div><div class="story-copy"><p class="eyebrow">Mini Quiz</p><h1>${esc(current.prompt)}</h1><div class="story-pronoun-options">${current.options.map(option => `<button class="option" data-quiz-answer="${esc(option)}">${esc(option)}</button>`).join("")}</div><div data-quiz-feedback aria-live="polite"></div><div class="button-row"><button class="button secondary" data-action="quiz-listen">Dinle</button></div></div></article></section>`;
+  const quizMedia = current.uiOverlay === "poma-plus-learner" ? renderPomaPlusLearner(story, context) : `<div class="story-media-stage"><img class="story-media-image is-visible" src="${esc(media?.url || "")}" alt="${esc(mediaAlt(current.mediaId))}"></div>`;
+  app.innerHTML = `<section class="story-shell story-quiz"><div class="lesson-head"><button class="button secondary" data-action="story-back-to-scenes">← Hikâyeye dön</button><div class="progress"><span style="width:${answered / story.quiz.length * 100}%"></span></div><span>${Math.min(answered + 1, story.quiz.length)}/${story.quiz.length}</span></div><article class="card story-player"><div class="story-media-wrap">${quizMedia}</div><div class="story-copy"><p class="eyebrow">Mini Quiz</p><h1>${esc(current.prompt)}</h1><div class="story-pronoun-options">${current.options.map(option => `<button class="option" data-quiz-answer="${esc(option)}">${esc(option)}</button>`).join("")}</div><div data-quiz-feedback aria-live="polite"></div><div class="button-row"><button class="button secondary" data-action="quiz-listen">Dinle</button></div></div></article></section>`;
   app.querySelector("[data-action='story-back-to-scenes']").onclick = () => { storyRuntime.quizMode = false; renderStory(); };
   app.querySelector("[data-action='quiz-listen']").onclick = () => speak(current.prompt, context.state.settings?.muted);
   app.querySelectorAll("[data-quiz-answer]").forEach(button => button.addEventListener("click", () => {
@@ -168,8 +188,13 @@ function mediaAlt(id) {
     "poma-dahi-castle": "Poma Dahi kale önünde",
     "influencer-castle": "Influencer Poma kale önünde",
     "bozkurt-wolf-castle": "Bozkurt Poma ve yavru kurt kale önünde",
+    "little-wolf": "Yavru kurt",
     "poma-group-lineup": "Poma karakterleri grup halinde"
   })[id] || "Poma hikaye sahnesi";
+}
+
+function cardSpeech(pronoun) {
+  return ({ he: "He is Poma Dahi.", she: "She is Influencer Poma.", it: "It is a little wolf." })[String(pronoun).toLowerCase()] || "";
 }
 
 export function resetStoryRuntime() {

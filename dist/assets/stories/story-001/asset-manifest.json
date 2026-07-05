@@ -31,6 +31,10 @@
       "type": "image",
       "file": "story-001-bozkurt-wolf-castle.png"
     },
+    "little-wolf": {
+      "type": "image",
+      "file": "story-001-little-wolf.png"
+    },
     "poma-group-lineup": {
       "type": "image",
       "file": "story-001-poma-group-lineup.png"
