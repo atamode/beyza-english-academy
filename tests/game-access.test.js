@@ -16,7 +16,7 @@ test("game center is reachable before onboarding and from top navigation", () =>
   assert.doesNotMatch(app, /!state\.onboardingComplete&&r==="games"/);
   assert.doesNotMatch(app, /!state\.onboardingComplete&&r==="game\/football"/);
   assert.doesNotMatch(app, /!state\.onboardingComplete&&r==="game\/volleyball"/);
-  assert.match(app, /Şimdilik Futbol Oyna/);
+  assert.match(app, /Poma ile Vakit Geçir/);
   assert.match(index, /class="icon-button games-button" data-route="games"/);
 });
 
@@ -64,8 +64,8 @@ test("games route renders football and volleyball game center cards, not the hom
   assert.ok(volleyballCard, "volleyball game card renderer must exist");
   const html = match[1];
   assert.match(html, /data-route-page="games"/);
-  assert.match(html, /<h1>Oyun Merkezi<\/h1>/);
-  assert.match(html, /Kelime Kasası ile oynarken İngilizce öğren/);
+  assert.match(html, /<h1>Poma ile Vakit Geçir<\/h1>/);
+  assert.match(html, /Oyna, oku, dinle ve Poma ile İngilizce öğren\./);
   assert.match(html, /\$\{gameCenterCard\(\)\}/);
   assert.match(html, /\$\{volleyballGameCard\(\)\}/);
   assert.match(footballCard[1], /Sporty Poma Futbol V1/);
