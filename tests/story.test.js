@@ -34,6 +34,18 @@ test("stories route and game hub expose Poma Hikayeleri", () => {
   assert.match(app, /Poma Hikâyeleri|storyCenterCard/);
 });
 
+test("free stories open before the signed-in account guard", () => {
+  const app = read("js/app.js");
+  const route = app.match(/function route\(\)\{([\s\S]*?)\nasync function storyRoute/);
+  const storyRoute = app.match(/async function storyRoute\(r\)\{([\s\S]*?)\nfunction loadingAccount/);
+  assert.ok(route, "route function must exist");
+  assert.ok(storyRoute, "storyRoute function must exist");
+  assert.ok(route[1].indexOf('if(r==="stories"||r.startsWith("story/"))return storyRoute(r)') < route[1].indexOf('if(account.status!=="signed-in")return authLanding()'), "stories must route before auth landing");
+  assert.match(storyRoute[1], /const signedIn=account\.status==="signed-in"/);
+  assert.match(storyRoute[1], /signedIn&&\["student","parent","both"\]\.includes\(acctType\)/);
+  assert.match(storyRoute[1], /signedIn&&acctType==="teacher"/);
+});
+
 test("story 001 schema contains required data-driven fields", () => {
   const result = validateStory(story);
   assert.equal(result.ok, true, result.reason);
