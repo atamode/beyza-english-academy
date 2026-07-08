@@ -1,4 +1,4 @@
-const CACHE="beyza-english-015f49a31cd4";
+const CACHE="beyza-english-68ac21fe4b7b";
 const ASSETS=[
   "./",
   "index.html",
@@ -112,6 +112,12 @@ const ASSETS=[
   "assets/games/poma-volleyball-v1/README.md",
   "assets/games/poma-volleyball-v1/STATUS.md",
   "assets/stories/story-001/asset-manifest.json",
+  "assets/stories/story-001/story-001-01-village-empty-master-1280x720.png",
+  "assets/stories/story-001/story-001-02-03-poma-wave-i-you.mp4",
+  "assets/stories/story-001/story-001-04-he-poma-dahi-visual-1280x720.png",
+  "assets/stories/story-001/story-001-05-she-influencer-poma-visual-1280x720.png",
+  "assets/stories/story-001/story-001-06-it-little-wolf-visual-1280x720.png",
+  "assets/stories/story-001/story-001-08-they-pomas-visual-1280x720.png",
   "assets/stories/story-001/story-001-bozkurt-wolf-castle.png",
   "assets/stories/story-001/story-001-influencer-castle.png",
   "assets/stories/story-001/story-001-kingdom-empty.png",

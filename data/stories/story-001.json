@@ -92,8 +92,10 @@
     },
     {
       "id": "scene-03",
-      "type": "image",
-      "mediaId": "poma-welcome-poster",
+      "type": "video",
+      "mediaId": "poma-welcome-video",
+      "posterId": "poma-welcome-poster",
+      "muted": true,
       "text": [
         "You are my new friend."
       ],
@@ -161,8 +163,10 @@
     },
     {
       "id": "scene-07",
-      "type": "image",
-      "mediaId": "poma-welcome-poster",
+      "type": "video",
+      "mediaId": "poma-welcome-video",
+      "posterId": "poma-welcome-poster",
+      "muted": true,
       "text": [
         "We are friends.",
         "We are a team."
@@ -173,8 +177,7 @@
       ],
       "interaction": {
         "type": "choose-pronoun",
-        "answer": "we",
-        "uiOverlay": "poma-plus-learner"
+        "answer": "we"
       }
     },
     {
@@ -183,9 +186,9 @@
       "mediaId": "poma-group-lineup",
       "text": [
         "They are the Pomas.",
-        "They are ready."
+        "They are friends."
       ],
-      "narration": "They are the Pomas. They are ready.",
+      "narration": "They are the Pomas. They are friends.",
       "focusTokens": [
         "they"
       ],
@@ -226,8 +229,10 @@
     },
     {
       "id": "scene-10",
-      "type": "image",
-      "mediaId": "poma-welcome-poster",
+      "type": "video",
+      "mediaId": "poma-welcome-video",
+      "posterId": "poma-welcome-poster",
+      "muted": true,
       "text": [
         "I am Poma.",
         "You are my friend.",

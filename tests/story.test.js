@@ -138,16 +138,18 @@ test("little wolf card uses the single wolf asset without Bozkurt Poma", () => {
   const itPair = scene9.interaction.pairs.find(pair => pair.pronoun === "it");
   assert.equal(itPair.mediaId, "little-wolf");
   assert.equal(story.quiz.find(q => q.id === "q4").mediaId, "little-wolf");
-  assert.equal(manifest["little-wolf"].file, "story-001-little-wolf.png");
-  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-little-wolf.png")), true);
+  assert.equal(manifest["little-wolf"].file, "story-001-06-it-little-wolf-visual-1280x720.png");
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-06-it-little-wolf-visual-1280x720.png")), true);
   assert.notEqual(itPair.mediaId, "bozkurt-wolf-castle");
 });
 
-test("scene 7 and quiz 5 reuse the Poma plus learner visual", () => {
+test("scene 7 uses the clean wave video and quiz 5 keeps the Poma plus learner visual", () => {
   const view = read("js/story-view.js");
   const scene7 = story.slides.find(s => s.id === "scene-07");
   const quiz5 = story.quiz.find(q => q.id === "q5");
-  assert.equal(scene7.interaction.uiOverlay, "poma-plus-learner");
+  assert.equal(scene7.type, "video");
+  assert.equal(scene7.mediaId, "poma-welcome-video");
+  assert.equal(scene7.interaction.uiOverlay, undefined);
   assert.equal(quiz5.uiOverlay, "poma-plus-learner");
   assert.equal(quiz5.answer, "we");
   assert.match(view, /function renderPomaPlusLearner/);
