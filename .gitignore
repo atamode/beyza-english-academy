@@ -2,3 +2,33 @@
 zip-verify-*/
 Beyza-English-Academy-POMA-Football-V1-Hotfix.zip
 Beyza-English-Academy-Football-Merge-FINAL-20260629.zip
+
+# Package staging and verification output
+.zip-stage-*/
+.zip-verify-*/
+zip-verify-*/
+_poma_package/
+
+# Browser verification profiles/output
+.browser-verify-*/
+
+# Timestamped package/extracted release folders
+Poma-Academy-Story-001-*/
+Poma-Academy-Story001-Games-*/
+Poma-Academy-Games-Hub-Redirect-*/
+Poma-Academy-Account-System-*/
+
+# Package archives
+*.zip
+
+# Local run/verification markers
+.last_*.txt
+server-start.*.log
+CHECKSUMS.sha256
+
+# Dependencies and caches
+node_modules/
+build/cache/
+.cache/
+tmp/
+temp/
