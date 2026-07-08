@@ -45,6 +45,7 @@ function studentStoryView(app, context, story) {
     storyRuntime.introCompleted = false;
     storyRuntime.introStage = "room";
   }
+  setupStoryMusic(context, story);
   const render = () => {
     storyRuntime.cleanup?.();
     storyRuntime.cleanup = null;
@@ -57,7 +58,6 @@ function studentStoryView(app, context, story) {
     app.innerHTML = `<section class="story-shell" data-story-id="${esc(story.storyId)}"><div class="lesson-head"><button class="button secondary" data-route="stories">← Hikâyeler</button><div class="progress"><span style="width:${progress}%"></span></div><span>${storyRuntime.slideIndex + 1}/${story.slides.length}</span></div><article class="card story-player"><div class="story-media-wrap">${renderStoryMedia(story, slide, context)}</div><div class="story-copy"><p class="eyebrow">Ders ${story.lessonNo} · Subject Pronouns</p><h1>${esc(story.title)}</h1><div class="story-lines">${slide.text.map(line => `<p>${highlightTokens(line, slide.focusTokens || [])}</p>`).join("")}</div>${renderInteraction(slide)}<div class="button-row story-speech-controls"><button class="button secondary" data-action="story-listen">Dinle</button><button class="button secondary" data-action="story-repeat">Tekrar Dinle</button><button class="button secondary" data-action="story-stop">Durdur</button></div></div></article><div class="button-row story-nav"><button class="button secondary" data-action="story-prev" ${storyRuntime.slideIndex === 0 ? "disabled" : ""}>Önceki</button><button class="button primary" data-action="story-next">${storyRuntime.slideIndex === story.slides.length - 1 ? "Quize Geç" : "Sonraki"}</button></div></section>`;
     bindStoryRoutes(app);
     bindMedia(app);
-    setupStoryMusic(context, story);
     app.querySelector("[data-action='story-listen']")?.addEventListener("click", () => {
       duckStoryMusicForSpeech(slide.narration || slide.text.join(" "), context);
       speech.speak(slide.narration || slide.text.join(" "));
@@ -164,7 +164,7 @@ function setupStoryMusic(context, story) {
     stopStoryMusic();
     return;
   }
-  if (storyRuntime.quizMode || storyRuntime.introActive) {
+  if (storyRuntime.quizMode) {
     stopStoryMusic();
     return;
   }
@@ -176,21 +176,22 @@ function setupStoryMusic(context, story) {
     document.addEventListener("keydown", startOnInteraction, { once: true });
     window.addEventListener("beyza-sound-change", () => {
       if (context.state.settings?.muted) stopStoryMusic();
-      else if (storyRuntime.musicStarted && !storyRuntime.quizMode && !storyRuntime.introActive) startStoryMusic(context);
+      else if (storyRuntime.musicStarted && !storyRuntime.quizMode) startStoryMusic(context);
     });
     storyRuntime.soundBound = true;
   }
+  startStoryMusic(context);
 }
 
 function startStoryMusic(context) {
-  if (storyRuntime.quizMode || storyRuntime.introActive || context.state.settings?.muted || storyRuntime.musicStarted) return;
-  const audio = new Audio("assets/audio/stories/poma-story-ambient-loop.mp3");
+  if (storyRuntime.quizMode || context.state.settings?.muted || storyRuntime.musicStarted) return;
+  const audio = storyRuntime.musicAudio || new Audio("assets/audio/stories/poma-story-ambient-loop.mp3");
   audio.loop = true;
   audio.volume = 0.12;
   audio.preload = "auto";
   storyRuntime.musicAudio = audio;
-  audio.play?.().catch(() => {});
   storyRuntime.musicStarted = true;
+  audio.play?.().catch(() => { storyRuntime.musicStarted = false; });
 }
 
 function stopStoryMusic() {

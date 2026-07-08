@@ -227,10 +227,8 @@
     },
     {
       "id": "scene-10",
-      "type": "video",
-      "mediaId": "poma-welcome-video",
-      "posterId": "poma-welcome-poster",
-      "muted": true,
+      "type": "image",
+      "mediaId": "they-poma-points-to-group",
       "text": [
         "I am Poma.",
         "You are my friend.",
@@ -303,9 +301,8 @@
     },
     {
       "id": "q5",
-      "prompt": "Poma stands with you. Choose the pronoun.",
-      "mediaId": "poma-welcome-poster",
-      "uiOverlay": "poma-plus-learner",
+      "prompt": "Poma is with his friends. Choose the pronoun.",
+      "mediaId": "we-friends-group",
       "options": [
         "they",
         "we",
@@ -318,7 +315,7 @@
     {
       "id": "q6",
       "prompt": "Look at the Poma group. Choose the pronoun.",
-      "mediaId": "poma-group-lineup",
+      "mediaId": "they-poma-points-to-group",
       "options": [
         "you",
         "I",
@@ -326,7 +323,7 @@
         "she"
       ],
       "answer": "they",
-      "feedbackTr": "Konuşanın dışında kalan bir grup için “they” kullanılır."
+      "feedbackTr": "Bir grubu dışarıdan anlatırken “they” kullanılır."
     }
   ],
   "completion": {

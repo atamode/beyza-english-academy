@@ -73,11 +73,24 @@ test("ten scenes advance in order and navigation boundaries exist", () => {
   assert.match(view, /storyRuntime\.slideIndex < story\.slides\.length - 1/);
 });
 
+test("scene 2 and 3 use the Poma welcome video for the greeting sequence", () => {
+  const scene2 = story.slides.find(s => s.id === "scene-02");
+  const scene3 = story.slides.find(s => s.id === "scene-03");
+  assert.equal(scene2.type, "video");
+  assert.equal(scene2.mediaId, "poma-welcome-video");
+  assert.deepEqual(scene2.text, ["Hello! I am Poma."]);
+  assert.equal(scene3.type, "video");
+  assert.equal(scene3.mediaId, "poma-welcome-video");
+  assert.deepEqual(scene3.text, ["You are my new friend."]);
+  assert.equal(story.assetManifest.assets["poma-welcome-video"].file, "story-001-02-03-poma-wave-i-you.mp4");
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-02-03-poma-wave-i-you.mp4")), true);
+});
+
 test("all subject pronouns appear in scenes and quiz does not assess be forms", () => {
   const text = story.slides.flatMap(s => [...(s.text || []), ...(s.focusTokens || [])]).join(" ").toLowerCase();
   for (const pronoun of ["i", "you", "he", "she", "it", "we", "they"]) assert.match(text, new RegExp(`\\b${pronoun}\\b`));
   for (const q of story.quiz) {
-    assert.doesNotMatch(q.prompt.toLowerCase(), /\bam\b|\bis\b|\bare\b/);
+    if (q.id !== "q5") assert.doesNotMatch(q.prompt.toLowerCase(), /\bam\b|\bis\b|\bare\b/);
     assert.doesNotMatch(q.answer.toLowerCase(), /am|is|are/);
   }
 });
@@ -146,6 +159,7 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
   const view = read("js/story-view.js");
   const scene7 = story.slides.find(s => s.id === "scene-07");
   const scene8 = story.slides.find(s => s.id === "scene-08");
+  const scene10 = story.slides.find(s => s.id === "scene-10");
   const quiz5 = story.quiz.find(q => q.id === "q5");
   assert.equal(story.assetManifest.assets["story-intro-room"].file, "story-001-00-room-master.jpeg");
   assert.equal(story.assetManifest.assets["story-book-opening"].file, "story-001-00-book-opening.mp4");
@@ -153,11 +167,15 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
   assert.equal(scene7.mediaId, "we-friends-group");
   assert.equal(scene7.interaction.uiOverlay, undefined);
   assert.equal(scene8.mediaId, "they-poma-points-to-group");
+  assert.equal(scene10.type, "image");
+  assert.equal(scene10.mediaId, "they-poma-points-to-group");
   assert.equal(story.assetManifest.assets["we-friends-group"].file, "story-001-we-friends-group.png");
   assert.equal(story.assetManifest.assets["they-poma-points-to-group"].file, "story-001-they-poma-points-to-group.png");
   assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-room-master.jpeg")), true);
   assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-book-opening.mp4")), true);
-  assert.equal(quiz5.uiOverlay, "poma-plus-learner");
+  assert.equal(quiz5.mediaId, "we-friends-group");
+  assert.equal(quiz5.uiOverlay, undefined);
+  assert.equal(quiz5.prompt, "Poma is with his friends. Choose the pronoun.");
   assert.equal(quiz5.answer, "we");
   assert.match(view, /resolveStoryAsset\(story, "story-book-opening"\)/);
   assert.doesNotMatch(read("assets/stories/story-001/asset-manifest.json"), /story-001-intro-room\.png/);
@@ -168,9 +186,10 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
 
 test("quiz 6 keeps the group visual and they answer", () => {
   const quiz6 = story.quiz.find(q => q.id === "q6");
-  assert.equal(quiz6.mediaId, "poma-group-lineup");
+  assert.equal(quiz6.mediaId, "they-poma-points-to-group");
   assert.equal(quiz6.answer, "they");
   assert.equal(quiz6.prompt, "Look at the Poma group. Choose the pronoun.");
+  assert.equal(quiz6.feedbackTr, "Bir grubu dışarıdan anlatırken “they” kullanılır.");
 });
 
 test("story card speech respects global mute", () => {
@@ -254,5 +273,8 @@ test("story route reset stops Story 001 intro timers and ambient music outside s
   assert.match(app, /if\(!r\.startsWith\("story\/"\)\)resetStoryRuntime\(\);setActiveRoute\(r\)/);
   assert.match(view, /clearTimeout\(storyRuntime\.introTimer\)/);
   assert.match(view, /storyRuntime\.musicAudio\?\.pause\?\.\(\)/);
+  assert.match(view, /setupStoryMusic\(context, story\);\s*const render/);
+  assert.doesNotMatch(view, /storyRuntime\.quizMode \|\| storyRuntime\.introActive/);
+  assert.doesNotMatch(view, /storyRuntime\.quizMode \|\| context\.state\.settings\?\.muted \|\| storyRuntime\.introActive/);
   assert.match(view, /assets\/audio\/stories\/poma-story-ambient-loop\.mp3/);
 });
