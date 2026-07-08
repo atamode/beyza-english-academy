@@ -63,7 +63,7 @@ test("video poster fallback uses one fixed media stage", () => {
   assert.match(view, /catch\(showPoster\)/);
   assert.match(view, /removeAttribute\("src"\)/);
   assert.equal((view.match(/story-media-poster/g) || []).length >= 1, true);
-  assert.doesNotMatch(view, /<video[\s\S]*<\/video>[\s\S]*<img class="story-media-poster/);
+  assert.match(view, /if \(slide\.type === "video"\) \{\s*return `<div class="story-media-stage" data-story-video-stage><img class="story-media-poster is-visible"[\s\S]*<video class="story-media-video"/);
 });
 
 test("ten scenes advance in order and navigation boundaries exist", () => {
@@ -129,7 +129,6 @@ test("scene 9 character cards speak the mapped sentence and use buttons", () => 
   assert.match(view, /She is Influencer Poma\./);
   assert.match(view, /It is a little wolf\./);
   assert.match(view, /aria-label="\$\{esc\(`\$\{sentence\} Dinle`\)\}"/);
-  assert.doesNotMatch(view, /keydown|keypress|keyup/);
 });
 
 test("little wolf card uses the single wolf asset without Bozkurt Poma", () => {
@@ -143,15 +142,25 @@ test("little wolf card uses the single wolf asset without Bozkurt Poma", () => {
   assert.notEqual(itPair.mediaId, "bozkurt-wolf-castle");
 });
 
-test("scene 7 uses the clean wave video and quiz 5 keeps the Poma plus learner visual", () => {
+test("intro and Story 001 We/They scenes use the dedicated clean assets", () => {
   const view = read("js/story-view.js");
   const scene7 = story.slides.find(s => s.id === "scene-07");
+  const scene8 = story.slides.find(s => s.id === "scene-08");
   const quiz5 = story.quiz.find(q => q.id === "q5");
-  assert.equal(scene7.type, "video");
-  assert.equal(scene7.mediaId, "poma-welcome-video");
+  assert.equal(story.assetManifest.assets["story-intro-room"].file, "story-001-00-room-master.jpeg");
+  assert.equal(story.assetManifest.assets["story-book-opening"].file, "story-001-00-book-opening.mp4");
+  assert.equal(scene7.type, "image");
+  assert.equal(scene7.mediaId, "we-friends-group");
   assert.equal(scene7.interaction.uiOverlay, undefined);
+  assert.equal(scene8.mediaId, "they-poma-points-to-group");
+  assert.equal(story.assetManifest.assets["we-friends-group"].file, "story-001-we-friends-group.png");
+  assert.equal(story.assetManifest.assets["they-poma-points-to-group"].file, "story-001-they-poma-points-to-group.png");
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-room-master.jpeg")), true);
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-book-opening.mp4")), true);
   assert.equal(quiz5.uiOverlay, "poma-plus-learner");
   assert.equal(quiz5.answer, "we");
+  assert.match(view, /resolveStoryAsset\(story, "story-book-opening"\)/);
+  assert.doesNotMatch(read("assets/stories/story-001/asset-manifest.json"), /story-001-intro-room\.png/);
   assert.match(view, /function renderPomaPlusLearner/);
   assert.match(view, /Poma \+ You/);
   assert.match(view, /class="learner-badge"/);
@@ -236,4 +245,14 @@ test("build and service worker include story data and assets", () => {
   assert.match(build, /"js\/story-engine\.js"/);
   assert.match(build, /"js\/story-view\.js"/);
   assert.match(build, /"data\/stories\/story-001\.json"/);
+});
+
+test("story route reset stops Story 001 intro timers and ambient music outside story detail", () => {
+  const app = read("js/app.js");
+  const view = read("js/story-view.js");
+  assert.match(app, /storyCenterCard,resetStoryRuntime/);
+  assert.match(app, /if\(!r\.startsWith\("story\/"\)\)resetStoryRuntime\(\);setActiveRoute\(r\)/);
+  assert.match(view, /clearTimeout\(storyRuntime\.introTimer\)/);
+  assert.match(view, /storyRuntime\.musicAudio\?\.pause\?\.\(\)/);
+  assert.match(view, /assets\/audio\/stories\/poma-story-ambient-loop\.mp3/);
 });

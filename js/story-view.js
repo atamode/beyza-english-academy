@@ -3,7 +3,7 @@ import { activeStudentStorage } from "./account-storage.js";
 import { completeStoryQuiz, gradeStoryQuiz, loadStoryBundle, markStoryOpened, readStoryProgress, resolveStoryAsset, updateStoryScene } from "./story-engine.js";
 
 const esc = value => String(value ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-let storyRuntime = { bundle: null, slideIndex: 0, quizMode: false, quizAnswers: {}, quizResult: null, cleanup: null };
+let storyRuntime = { bundle: null, slideIndex: 0, quizMode: false, quizAnswers: {}, quizResult: null, cleanup: null, introActive: false, introCompleted: false, introStage: "room", introTimer: null, musicAudio: null, musicStarted: false, musicRestoreTimer: null, soundBound: false };
 let speech = null;
 
 export async function storiesListView(app, context) {
@@ -37,10 +37,19 @@ function studentStoryView(app, context, story) {
   const saved = readStoryProgress(storage, story.storyId);
   if (!storyRuntime.quizMode && !storyRuntime.quizResult) storyRuntime.slideIndex = Math.min(saved.lastScene || 0, story.slides.length - 1);
   speech ||= createSpeechHelper({ muted: context.state.settings?.muted });
+  if (story.storyId === "story-001" && !storyRuntime.quizMode && !storyRuntime.quizResult) {
+    storyRuntime.introActive = !storyRuntime.introCompleted;
+    storyRuntime.introStage = storyRuntime.introCompleted ? "room" : storyRuntime.introStage || "room";
+  } else {
+    storyRuntime.introActive = false;
+    storyRuntime.introCompleted = false;
+    storyRuntime.introStage = "room";
+  }
   const render = () => {
     storyRuntime.cleanup?.();
     storyRuntime.cleanup = null;
     if (storyRuntime.quizMode) return renderQuiz(app, context, story, render);
+    if (story.storyId === "story-001" && storyRuntime.introActive && !storyRuntime.introCompleted) return renderStoryIntro(app, context, story, render);
     const slide = story.slides[storyRuntime.slideIndex];
     updateStoryScene(storage, story, storyRuntime.slideIndex);
     const progress = Math.round((storyRuntime.slideIndex + 1) / story.slides.length * 100);
@@ -48,9 +57,19 @@ function studentStoryView(app, context, story) {
     app.innerHTML = `<section class="story-shell" data-story-id="${esc(story.storyId)}"><div class="lesson-head"><button class="button secondary" data-route="stories">← Hikâyeler</button><div class="progress"><span style="width:${progress}%"></span></div><span>${storyRuntime.slideIndex + 1}/${story.slides.length}</span></div><article class="card story-player"><div class="story-media-wrap">${renderStoryMedia(story, slide, context)}</div><div class="story-copy"><p class="eyebrow">Ders ${story.lessonNo} · Subject Pronouns</p><h1>${esc(story.title)}</h1><div class="story-lines">${slide.text.map(line => `<p>${highlightTokens(line, slide.focusTokens || [])}</p>`).join("")}</div>${renderInteraction(slide)}<div class="button-row story-speech-controls"><button class="button secondary" data-action="story-listen">Dinle</button><button class="button secondary" data-action="story-repeat">Tekrar Dinle</button><button class="button secondary" data-action="story-stop">Durdur</button></div></div></article><div class="button-row story-nav"><button class="button secondary" data-action="story-prev" ${storyRuntime.slideIndex === 0 ? "disabled" : ""}>Önceki</button><button class="button primary" data-action="story-next">${storyRuntime.slideIndex === story.slides.length - 1 ? "Quize Geç" : "Sonraki"}</button></div></section>`;
     bindStoryRoutes(app);
     bindMedia(app);
-    app.querySelector("[data-action='story-listen']")?.addEventListener("click", () => speech.speak(slide.narration || slide.text.join(" ")));
-    app.querySelector("[data-action='story-repeat']")?.addEventListener("click", () => speech.speak(slide.narration || slide.text.join(" ")));
-    app.querySelector("[data-action='story-stop']")?.addEventListener("click", () => speech.stop());
+    setupStoryMusic(context, story);
+    app.querySelector("[data-action='story-listen']")?.addEventListener("click", () => {
+      duckStoryMusicForSpeech(slide.narration || slide.text.join(" "), context);
+      speech.speak(slide.narration || slide.text.join(" "));
+    });
+    app.querySelector("[data-action='story-repeat']")?.addEventListener("click", () => {
+      duckStoryMusicForSpeech(slide.narration || slide.text.join(" "), context);
+      speech.speak(slide.narration || slide.text.join(" "));
+    });
+    app.querySelector("[data-action='story-stop']")?.addEventListener("click", () => {
+      speech.stop();
+      restoreStoryMusicVolume(context);
+    });
     app.querySelector("[data-action='story-prev']")?.addEventListener("click", () => { storyRuntime.slideIndex = Math.max(0, storyRuntime.slideIndex - 1); render(); });
     app.querySelector("[data-action='story-next']")?.addEventListener("click", () => {
       if (storyRuntime.slideIndex < story.slides.length - 1) storyRuntime.slideIndex++;
@@ -63,6 +82,7 @@ function studentStoryView(app, context, story) {
     }));
     app.querySelectorAll("[data-story-card-speech]").forEach(button => button.addEventListener("click", () => {
       speech.setMuted(context.state.settings?.muted);
+      duckStoryMusicForSpeech(button.dataset.storyCardSpeech, context);
       speech.speak(button.dataset.storyCardSpeech);
       const ok = button.dataset.storyCardAnswer === button.dataset.storyCardCorrect;
       const feedback = app.querySelector("[data-story-feedback]");
@@ -70,6 +90,128 @@ function studentStoryView(app, context, story) {
     }));
   };
   render();
+}
+
+function renderStoryIntro(app, context, story, renderStory) {
+  if (storyRuntime.introStage === "video") {
+    const opening = resolveStoryAsset(story, "story-book-opening");
+    const room = resolveStoryAsset(story, "story-intro-room");
+    app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage"><video class="story-media-video is-visible" autoplay muted playsinline preload="metadata" poster="${esc(room?.url || opening?.posterUrl || "")}" src="${esc(opening?.url || "")}" aria-label="Poma kitap açılış videosu"></video></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir kitap açılıyor...</h1><p class="lead">Dede Poma’nın hikâye odasında yeni bir macera başlıyor.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
+    bindStoryRoutes(app);
+    const video = app.querySelector("video");
+    if (video) {
+      const goNext = () => {
+        clearTimeout(storyRuntime.introTimer);
+        storyRuntime.introStage = "transition";
+        renderStory();
+      };
+      video.addEventListener("ended", goNext, { once: true });
+      video.addEventListener("error", () => { clearTimeout(storyRuntime.introTimer); storyRuntime.introTimer = setTimeout(goNext, 900); }, { once: true });
+      storyRuntime.cleanup = () => {
+        video.pause?.();
+        video.removeAttribute("src");
+        video.load?.();
+      };
+      video.play?.().catch(() => {
+        clearTimeout(storyRuntime.introTimer);
+        storyRuntime.introTimer = setTimeout(goNext, 900);
+      });
+    }
+    app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
+      clearTimeout(storyRuntime.introTimer);
+      storyRuntime.introCompleted = true;
+      storyRuntime.introActive = false;
+      storyRuntime.slideIndex = 0;
+      renderStory();
+    });
+    return;
+  }
+  if (storyRuntime.introStage === "transition") {
+    app.innerHTML = `<section class="story-shell story-intro-shell story-intro-transition"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage story-intro-transition-stage"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>1/10</h1><p class="lead">Altın bir ışıkla yeni sayfa açılıyor.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
+    app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
+      clearTimeout(storyRuntime.introTimer);
+      storyRuntime.introCompleted = true;
+      storyRuntime.introActive = false;
+      storyRuntime.slideIndex = 0;
+      renderStory();
+    });
+    clearTimeout(storyRuntime.introTimer);
+    storyRuntime.introTimer = setTimeout(() => {
+      storyRuntime.introCompleted = true;
+      storyRuntime.introActive = false;
+      storyRuntime.slideIndex = 0;
+      renderStory();
+    }, 900);
+    return;
+  }
+  app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage"><img class="story-media-image is-visible" src="${esc(resolveStoryAsset(story, "story-intro-room")?.url || "")}" alt="Dede Poma’nın hikâye odası" loading="eager"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir hikâye odasına giriyorsun.</h1><p class="lead">Dede Poma kitabı açıyor; ardından ilk sayfa kendini gösterecek.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
+  app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
+    clearTimeout(storyRuntime.introTimer);
+    storyRuntime.introCompleted = true;
+    storyRuntime.introActive = false;
+    storyRuntime.slideIndex = 0;
+    renderStory();
+  });
+  clearTimeout(storyRuntime.introTimer);
+  storyRuntime.introTimer = setTimeout(() => {
+    storyRuntime.introStage = "video";
+    renderStory();
+  }, 1400);
+}
+
+function setupStoryMusic(context, story) {
+  if (story.storyId !== "story-001") {
+    stopStoryMusic();
+    return;
+  }
+  if (storyRuntime.quizMode || storyRuntime.introActive) {
+    stopStoryMusic();
+    return;
+  }
+  if (!storyRuntime.soundBound) {
+    const startOnInteraction = () => {
+      if (!context.state.settings?.muted) startStoryMusic(context);
+    };
+    document.addEventListener("pointerdown", startOnInteraction, { once: true, passive: true });
+    document.addEventListener("keydown", startOnInteraction, { once: true });
+    window.addEventListener("beyza-sound-change", () => {
+      if (context.state.settings?.muted) stopStoryMusic();
+      else if (storyRuntime.musicStarted && !storyRuntime.quizMode && !storyRuntime.introActive) startStoryMusic(context);
+    });
+    storyRuntime.soundBound = true;
+  }
+}
+
+function startStoryMusic(context) {
+  if (storyRuntime.quizMode || storyRuntime.introActive || context.state.settings?.muted || storyRuntime.musicStarted) return;
+  const audio = new Audio("assets/audio/stories/poma-story-ambient-loop.mp3");
+  audio.loop = true;
+  audio.volume = 0.12;
+  audio.preload = "auto";
+  storyRuntime.musicAudio = audio;
+  audio.play?.().catch(() => {});
+  storyRuntime.musicStarted = true;
+}
+
+function stopStoryMusic() {
+  clearTimeout(storyRuntime.musicRestoreTimer);
+  storyRuntime.musicAudio?.pause?.();
+  storyRuntime.musicAudio = null;
+  storyRuntime.musicStarted = false;
+}
+
+function duckStoryMusicForSpeech(text, context) {
+  if (!storyRuntime.musicAudio || context.state.settings?.muted) return;
+  storyRuntime.musicAudio.volume = 0.03;
+  clearTimeout(storyRuntime.musicRestoreTimer);
+  storyRuntime.musicRestoreTimer = setTimeout(() => {
+    if (storyRuntime.musicAudio && !context.state.settings?.muted) storyRuntime.musicAudio.volume = 0.12;
+  }, Math.max(1400, Math.ceil(String(text).length / 12) * 1000));
+}
+
+function restoreStoryMusicVolume(context) {
+  clearTimeout(storyRuntime.musicRestoreTimer);
+  if (storyRuntime.musicAudio && !context.state.settings?.muted) storyRuntime.musicAudio.volume = 0.12;
 }
 
 function renderStoryMedia(story, slide, context = {}) {
@@ -189,7 +331,11 @@ function mediaAlt(id) {
     "influencer-castle": "Influencer Poma kale önünde",
     "bozkurt-wolf-castle": "Bozkurt Poma ve yavru kurt kale önünde",
     "little-wolf": "Yavru kurt",
-    "poma-group-lineup": "Poma karakterleri grup halinde"
+    "poma-group-lineup": "Poma karakterleri grup halinde",
+    "we-friends-group": "Arkadaşlar ve takım halinde Poma grubu",
+    "they-poma-points-to-group": "Poma grubunu gösteren sahne",
+    "story-intro-room": "Dede Poma’nın hikâye odası",
+    "story-book-opening": "Poma kitap açılış videosu"
   })[id] || "Poma hikaye sahnesi";
 }
 
@@ -200,5 +346,8 @@ function cardSpeech(pronoun) {
 export function resetStoryRuntime() {
   storyRuntime.cleanup?.();
   stopAudio();
-  storyRuntime = { ...storyRuntime, slideIndex: 0, quizMode: false, quizAnswers: {}, quizResult: null, cleanup: null };
+  clearTimeout(storyRuntime.introTimer);
+  clearTimeout(storyRuntime.musicRestoreTimer);
+  storyRuntime.musicAudio?.pause?.();
+  storyRuntime = { bundle: null, slideIndex: 0, quizMode: false, quizAnswers: {}, quizResult: null, cleanup: null, introActive: false, introCompleted: false, introStage: "room", introTimer: null, musicAudio: null, musicStarted: false, musicRestoreTimer: null, soundBound: false };
 }

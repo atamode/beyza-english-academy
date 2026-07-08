@@ -38,6 +38,26 @@
     "poma-group-lineup": {
       "type": "image",
       "file": "story-001-08-they-pomas-visual-1280x720.png"
+    },
+    "we-friends-group": {
+      "type": "image",
+      "file": "story-001-we-friends-group.png"
+    },
+    "they-poma-points-to-group": {
+      "type": "image",
+      "file": "story-001-they-poma-points-to-group.png"
+    },
+    "story-intro-room": {
+      "type": "image",
+      "file": "story-001-00-room-master.jpeg"
+    },
+    "story-book-opening": {
+      "type": "video",
+      "file": "story-001-00-book-opening.mp4",
+      "poster": "story-001-00-room-master.jpeg",
+      "muted": true,
+      "playsinline": true,
+      "preload": "metadata"
     }
   }
 }

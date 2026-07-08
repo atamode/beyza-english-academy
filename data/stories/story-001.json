@@ -163,10 +163,8 @@
     },
     {
       "id": "scene-07",
-      "type": "video",
-      "mediaId": "poma-welcome-video",
-      "posterId": "poma-welcome-poster",
-      "muted": true,
+      "type": "image",
+      "mediaId": "we-friends-group",
       "text": [
         "We are friends.",
         "We are a team."
@@ -183,7 +181,7 @@
     {
       "id": "scene-08",
       "type": "image",
-      "mediaId": "poma-group-lineup",
+      "mediaId": "they-poma-points-to-group",
       "text": [
         "They are the Pomas.",
         "They are friends."

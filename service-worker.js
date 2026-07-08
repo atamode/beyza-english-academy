@@ -1,4 +1,4 @@
-const CACHE="beyza-english-68ac21fe4b7b";
+const CACHE="beyza-english-6f9475dc645b";
 const ASSETS=[
   "./",
   "index.html",
@@ -112,6 +112,8 @@ const ASSETS=[
   "assets/games/poma-volleyball-v1/README.md",
   "assets/games/poma-volleyball-v1/STATUS.md",
   "assets/stories/story-001/asset-manifest.json",
+  "assets/stories/story-001/story-001-00-book-opening.mp4",
+  "assets/stories/story-001/story-001-00-room-master.jpeg",
   "assets/stories/story-001/story-001-01-village-empty-master-1280x720.png",
   "assets/stories/story-001/story-001-02-03-poma-wave-i-you.mp4",
   "assets/stories/story-001/story-001-04-he-poma-dahi-visual-1280x720.png",
@@ -126,7 +128,10 @@ const ASSETS=[
   "assets/stories/story-001/story-001-poma-group-lineup.png",
   "assets/stories/story-001/story-001-poma-welcome-poster.png",
   "assets/stories/story-001/story-001-poma-welcome.mp4",
+  "assets/stories/story-001/story-001-they-poma-points-to-group.png",
+  "assets/stories/story-001/story-001-we-friends-group.png",
   "assets/audio/sports/poma-sports-loop.mp3",
+  "assets/audio/stories/poma-story-ambient-loop.mp3",
   "assets/brand/poma-academy/poma-character-lineup.png",
   "assets/brand/poma-academy/poma-main-wave.png",
   "assets/brand/poma-academy/pomante-kingdom-wide.jpg",
