@@ -184,6 +184,14 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
   assert.match(view, /class="learner-badge"/);
 });
 
+test("Story 001 intro uses a flash transition instead of a numbered story card", () => {
+  const view = read("js/story-view.js");
+  assert.match(view, /storyRuntime\.introStage === "transition"[\s\S]*story-intro-flash/);
+  assert.match(view, /@keyframes storyGoldenFlash/);
+  assert.match(view, /}, 750\)/);
+  assert.match(view, /if \(storyRuntime\.introStage === "transition" && false\)/);
+});
+
 test("quiz 6 keeps the group visual and they answer", () => {
   const quiz6 = story.quiz.find(q => q.id === "q6");
   assert.equal(quiz6.mediaId, "they-poma-points-to-group");
@@ -274,6 +282,10 @@ test("story route reset stops Story 001 intro timers and ambient music outside s
   assert.match(view, /clearTimeout\(storyRuntime\.introTimer\)/);
   assert.match(view, /storyRuntime\.musicAudio\?\.pause\?\.\(\)/);
   assert.match(view, /setupStoryMusic\(context, story\);\s*const render/);
+  assert.match(view, /startStoryMusic\(context, true\)/);
+  assert.match(view, /window\.addEventListener\("beyza-sound-change", e =>/);
+  assert.match(view, /Boolean\(e\.detail\?\.muted\)/);
+  assert.match(view, /function startStoryMusic\(context, ignoreMuted = false\)/);
   assert.doesNotMatch(view, /storyRuntime\.quizMode \|\| storyRuntime\.introActive/);
   assert.doesNotMatch(view, /storyRuntime\.quizMode \|\| context\.state\.settings\?\.muted \|\| storyRuntime\.introActive/);
   assert.match(view, /assets\/audio\/stories\/poma-story-ambient-loop\.mp3/);

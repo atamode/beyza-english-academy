@@ -149,6 +149,15 @@ test("tablet navigation and dashboard cards keep touch targets visible", () => {
   assert.match(css, /@media\(max-width:520px\)[\s\S]*\.top-actions/);
 });
 
+test("global sound toggle syncs visible state and dispatches live mute changes", () => {
+  const app = read("js/app.js");
+  assert.match(app, /const soundButton=document\.querySelector\("#sound-toggle"\),syncSoundButton=/);
+  assert.match(app, /soundButton\.setAttribute\("aria-pressed",String\(Boolean\(state\.settings\.muted\)\)\)/);
+  assert.match(app, /soundButton\.childNodes\[0\]\.nodeValue=state\.settings\.muted\?"🔇":"🔊"/);
+  assert.match(app, /window\.dispatchEvent\(new CustomEvent\("beyza-sound-change",\{detail:\{muted:state\.settings\.muted\}\}\)\)/);
+  assert.match(app, /if\(state\.settings\.muted\)stopAudio\(\)/);
+});
+
 test("service worker update flow supports new cache activation", () => {
   const build = read("scripts/build.js");
   const sw = fs.existsSync(path.join(root, "service-worker.js")) ? read("service-worker.js") : "";

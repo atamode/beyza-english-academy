@@ -59,10 +59,12 @@ function studentStoryView(app, context, story) {
     bindStoryRoutes(app);
     bindMedia(app);
     app.querySelector("[data-action='story-listen']")?.addEventListener("click", () => {
+      startStoryMusic(context, true);
       duckStoryMusicForSpeech(slide.narration || slide.text.join(" "), context);
       speech.speak(slide.narration || slide.text.join(" "));
     });
     app.querySelector("[data-action='story-repeat']")?.addEventListener("click", () => {
+      startStoryMusic(context, true);
       duckStoryMusicForSpeech(slide.narration || slide.text.join(" "), context);
       speech.speak(slide.narration || slide.text.join(" "));
     });
@@ -72,6 +74,7 @@ function studentStoryView(app, context, story) {
     });
     app.querySelector("[data-action='story-prev']")?.addEventListener("click", () => { storyRuntime.slideIndex = Math.max(0, storyRuntime.slideIndex - 1); render(); });
     app.querySelector("[data-action='story-next']")?.addEventListener("click", () => {
+      startStoryMusic(context, true);
       if (storyRuntime.slideIndex < story.slides.length - 1) storyRuntime.slideIndex++;
       else storyRuntime.quizMode = true;
       render();
@@ -118,6 +121,7 @@ function renderStoryIntro(app, context, story, renderStory) {
       });
     }
     app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
+      startStoryMusic(context, true);
       clearTimeout(storyRuntime.introTimer);
       storyRuntime.introCompleted = true;
       storyRuntime.introActive = false;
@@ -127,6 +131,17 @@ function renderStoryIntro(app, context, story, renderStory) {
     return;
   }
   if (storyRuntime.introStage === "transition") {
+    app.innerHTML = `<style>.story-intro-flash{display:grid;place-items:center;min-height:70vh;overflow:hidden}.story-intro-flash .story-intro-transition-stage{width:min(100%,1180px);aspect-ratio:16/9;border-radius:8px;background:radial-gradient(circle at center,#fff8c7 0%,#ffd35a 34%,#f4a51c 58%,rgba(244,165,28,0) 78%);animation:storyGoldenFlash .75s ease both}@keyframes storyGoldenFlash{0%{opacity:0;transform:scale(.96)}35%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.04)}}</style><section class="story-intro-flash" aria-hidden="true"><div class="story-intro-transition-stage"></div></section>`;
+    clearTimeout(storyRuntime.introTimer);
+    storyRuntime.introTimer = setTimeout(() => {
+      storyRuntime.introCompleted = true;
+      storyRuntime.introActive = false;
+      storyRuntime.slideIndex = 0;
+      renderStory();
+    }, 750);
+    return;
+  }
+  if (storyRuntime.introStage === "transition" && false) {
     app.innerHTML = `<section class="story-shell story-intro-shell story-intro-transition"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage story-intro-transition-stage"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>1/10</h1><p class="lead">Altın bir ışıkla yeni sayfa açılıyor.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
     app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
       clearTimeout(storyRuntime.introTimer);
@@ -146,6 +161,7 @@ function renderStoryIntro(app, context, story, renderStory) {
   }
   app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage"><img class="story-media-image is-visible" src="${esc(resolveStoryAsset(story, "story-intro-room")?.url || "")}" alt="Dede Poma’nın hikâye odası" loading="eager"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir hikâye odasına giriyorsun.</h1><p class="lead">Dede Poma kitabı açıyor; ardından ilk sayfa kendini gösterecek.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
   app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
+    startStoryMusic(context, true);
     clearTimeout(storyRuntime.introTimer);
     storyRuntime.introCompleted = true;
     storyRuntime.introActive = false;
@@ -174,17 +190,17 @@ function setupStoryMusic(context, story) {
     };
     document.addEventListener("pointerdown", startOnInteraction, { once: true, passive: true });
     document.addEventListener("keydown", startOnInteraction, { once: true });
-    window.addEventListener("beyza-sound-change", () => {
-      if (context.state.settings?.muted) stopStoryMusic();
-      else if (storyRuntime.musicStarted && !storyRuntime.quizMode) startStoryMusic(context);
+    window.addEventListener("beyza-sound-change", e => {
+      if (Boolean(e.detail?.muted)) stopStoryMusic();
+      else if (!storyRuntime.quizMode) startStoryMusic(context, true);
     });
     storyRuntime.soundBound = true;
   }
   startStoryMusic(context);
 }
 
-function startStoryMusic(context) {
-  if (storyRuntime.quizMode || context.state.settings?.muted || storyRuntime.musicStarted) return;
+function startStoryMusic(context, ignoreMuted = false) {
+  if (storyRuntime.quizMode || (!ignoreMuted && context.state.settings?.muted) || storyRuntime.musicStarted) return;
   const audio = storyRuntime.musicAudio || new Audio("assets/audio/stories/poma-story-ambient-loop.mp3");
   audio.loop = true;
   audio.volume = 0.12;
