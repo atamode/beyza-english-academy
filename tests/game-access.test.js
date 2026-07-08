@@ -20,6 +20,20 @@ test("game center is reachable before onboarding and from top navigation", () =>
   assert.match(index, /class="icon-button games-button" data-route="games"/);
 });
 
+test("signed-out home keeps auth controls first and shows public entertainment", () => {
+  const app = read("js/app.js");
+  const authLanding = app.match(/function authLanding\(\)\{([\s\S]*?)\nfunction loginPage/);
+  assert.ok(authLanding, "auth landing renderer must exist");
+  assert.match(authLanding[1], /authLandingView\(\)/);
+  assert.match(authLanding[1], /gamesHubContent\(\{embedded:true\}\)/);
+  assert.ok(authLanding[1].indexOf("authLandingView()") < authLanding[1].indexOf("gamesHubContent({embedded:true})"), "auth controls should render above entertainment");
+  assert.match(app, /function gamesHubContent\(\{embedded=false\}=\{\}\)/);
+  assert.match(app, /data-route-page="\$\{embedded\?"public-home-games":"games"\}"/);
+  assert.match(app, /data-route="\$\{embedded\?"games":"home"\}"/);
+  assert.match(app, /r==="games"\)return gamesHub\(\)/);
+  assert.match(app, /if\(account\.status!=="signed-in"\)return authLanding\(\)/);
+});
+
 test("welcome Poma ile Vakit Gecir opens the same games hub as the header", () => {
   const app = read("js/app.js");
   const index = read("index.html");
@@ -36,7 +50,7 @@ test("welcome Poma ile Vakit Gecir opens the same games hub as the header", () =
 
 test("games hub keeps football volleyball and stories cards with direct routes unchanged", () => {
   const app = read("js/app.js");
-  const gamesHub = app.match(/function gamesHub\(\)\{([\s\S]*?)`;bindRoutes\(\)\}/);
+  const gamesHub = app.match(/function gamesHubContent\(\{embedded=false\}=\{\}\)\{([\s\S]*?)`\}/);
   assert.ok(gamesHub, "gamesHub renderer must exist");
   assert.match(gamesHub[1], /\$\{storyCenterCard\(\)\}/);
   assert.match(gamesHub[1], /\$\{gameCenterCard\(\)\}/);
@@ -83,14 +97,14 @@ test("home presents games as vocabulary reinforcement, not a single football ban
 
 test("games route renders football and volleyball game center cards, not the home curriculum", () => {
   const app = read("js/app.js");
-  const match = app.match(/function gamesHub\(\)\{([\s\S]*?)`;bindRoutes\(\)\}/);
+  const match = app.match(/function gamesHubContent\(\{embedded=false\}=\{\}\)\{([\s\S]*?)`\}/);
   const footballCard = app.match(/function gameCenterCard[\s\S]*?\{([\s\S]*?)`\}/);
   const volleyballCard = app.match(/function volleyballGameCard[\s\S]*?\{([\s\S]*?)`\}/);
   assert.ok(match, "gamesHub renderer must exist");
   assert.ok(footballCard, "football game card renderer must exist");
   assert.ok(volleyballCard, "volleyball game card renderer must exist");
   const html = match[1];
-  assert.match(html, /data-route-page="games"/);
+  assert.match(html, /data-route-page="\$\{embedded\?"public-home-games":"games"\}"/);
   assert.match(html, /<h1>Poma ile Vakit Geçir<\/h1>/);
   assert.match(html, /Oyna, oku, dinle ve Poma ile İngilizce öğren\./);
   assert.match(html, /\$\{gameCenterCard\(\)\}/);
