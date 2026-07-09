@@ -198,10 +198,23 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
 
 test("Story 001 intro uses a flash transition instead of a numbered story card", () => {
   const view = read("js/story-view.js");
-  assert.match(view, /storyRuntime\.introStage === "transition"[\s\S]*story-intro-flash/);
-  assert.match(view, /@keyframes storyGoldenFlash/);
-  assert.match(view, /}, 750\)/);
-  assert.match(view, /if \(storyRuntime\.introStage === "transition" && false\)/);
+  const css = read("css/story.css");
+  assert.match(view, /storyRuntime\.introStage === "transition"[\s\S]*story-intro-cinematic/);
+  assert.match(view, /story-intro-golden-flash/);
+  assert.match(css, /@keyframes storyGoldenFlash/);
+  assert.doesNotMatch(view, /Altın bir ışıkla yeni sayfa/);
+});
+
+test("Story 001 intro poster and video share a stable cinematic frame", () => {
+  const view = read("js/story-view.js");
+  const css = read("css/story.css");
+  assert.match(view, /preloadVillage\.src = village\.url/);
+  assert.match(css, /\.story-intro-media-wrap\{[^}]*aspect-ratio:16\/9/);
+  assert.match(css, /\.story-intro-stage img,.story-intro-stage video\{[^}]*width:100%;height:100%;display:block;object-fit:cover/);
+  assert.match(view, /video\.duration - video\.currentTime <= 0\.9/);
+  assert.match(view, /if \(transitionStarted\) return/);
+  assert.match(css, /storyIntroFrameZoom/);
+  assert.match(css, /storyVillageReveal/);
 });
 
 test("quiz 6 keeps the group visual and they answer", () => {

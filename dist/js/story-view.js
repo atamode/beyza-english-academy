@@ -99,17 +99,31 @@ function renderStoryIntro(app, context, story, renderStory) {
   if (storyRuntime.introStage === "video") {
     const opening = resolveStoryAsset(story, "story-book-opening");
     const room = resolveStoryAsset(story, "story-intro-room");
-    app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage"><video class="story-media-video is-visible" autoplay muted playsinline preload="metadata" poster="${esc(room?.url || opening?.posterUrl || "")}" src="${esc(opening?.url || "")}" aria-label="Poma kitap açılış videosu"></video></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir kitap açılıyor...</h1><p class="lead">Dede Poma’nın hikâye odasında yeni bir macera başlıyor.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
+    const village = resolveStoryAsset(story, story.slides[0]?.mediaId);
+    if (village?.url) {
+      const preloadVillage = new Image();
+      preloadVillage.src = village.url;
+    }
+    app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap story-intro-media-wrap"><div class="story-media-stage story-intro-stage"><video class="story-media-video is-visible" autoplay muted playsinline preload="metadata" poster="${esc(room?.url || opening?.posterUrl || "")}" src="${esc(opening?.url || "")}" aria-label="Poma kitap açılış videosu"></video></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir kitap açılıyor...</h1><p class="lead">Dede Poma’nın hikâye odasında yeni bir macera başlıyor.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
     bindStoryRoutes(app);
     const video = app.querySelector("video");
     if (video) {
-      const goNext = () => {
+      let transitionStarted = false;
+      const beginTransition = () => {
+        if (transitionStarted) return;
+        transitionStarted = true;
         clearTimeout(storyRuntime.introTimer);
-        storyRuntime.introStage = "transition";
-        renderStory();
+        app.querySelector(".story-intro-media-wrap")?.classList.add("is-entering-story");
+        storyRuntime.introTimer = setTimeout(() => {
+          storyRuntime.introStage = "transition";
+          renderStory();
+        }, 850);
       };
-      video.addEventListener("ended", goNext, { once: true });
-      video.addEventListener("error", () => { clearTimeout(storyRuntime.introTimer); storyRuntime.introTimer = setTimeout(goNext, 900); }, { once: true });
+      video.addEventListener("timeupdate", () => {
+        if (Number.isFinite(video.duration) && video.duration - video.currentTime <= 0.9) beginTransition();
+      });
+      video.addEventListener("ended", beginTransition, { once: true });
+      video.addEventListener("error", () => { clearTimeout(storyRuntime.introTimer); storyRuntime.introTimer = setTimeout(beginTransition, 900); }, { once: true });
       storyRuntime.cleanup = () => {
         video.pause?.();
         video.removeAttribute("src");
@@ -117,7 +131,7 @@ function renderStoryIntro(app, context, story, renderStory) {
       };
       video.play?.().catch(() => {
         clearTimeout(storyRuntime.introTimer);
-        storyRuntime.introTimer = setTimeout(goNext, 900);
+        storyRuntime.introTimer = setTimeout(beginTransition, 900);
       });
     }
     app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
@@ -131,35 +145,18 @@ function renderStoryIntro(app, context, story, renderStory) {
     return;
   }
   if (storyRuntime.introStage === "transition") {
-    app.innerHTML = `<style>.story-intro-flash{display:grid;place-items:center;min-height:70vh;overflow:hidden}.story-intro-flash .story-intro-transition-stage{width:min(100%,1180px);aspect-ratio:16/9;border-radius:8px;background:radial-gradient(circle at center,#fff8c7 0%,#ffd35a 34%,#f4a51c 58%,rgba(244,165,28,0) 78%);animation:storyGoldenFlash .75s ease both}@keyframes storyGoldenFlash{0%{opacity:0;transform:scale(.96)}35%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.04)}}</style><section class="story-intro-flash" aria-hidden="true"><div class="story-intro-transition-stage"></div></section>`;
+    const village = resolveStoryAsset(story, story.slides[0]?.mediaId);
+    app.innerHTML = `<section class="story-intro-cinematic" aria-hidden="true"><img class="story-intro-village" src="${esc(village?.url || "")}" alt=""><div class="story-intro-golden-flash"></div></section>`;
     clearTimeout(storyRuntime.introTimer);
     storyRuntime.introTimer = setTimeout(() => {
       storyRuntime.introCompleted = true;
       storyRuntime.introActive = false;
       storyRuntime.slideIndex = 0;
       renderStory();
-    }, 750);
+    }, 1100);
     return;
   }
-  if (storyRuntime.introStage === "transition" && false) {
-    app.innerHTML = `<section class="story-shell story-intro-shell story-intro-transition"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage story-intro-transition-stage"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>1/10</h1><p class="lead">Altın bir ışıkla yeni sayfa açılıyor.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
-    app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
-      clearTimeout(storyRuntime.introTimer);
-      storyRuntime.introCompleted = true;
-      storyRuntime.introActive = false;
-      storyRuntime.slideIndex = 0;
-      renderStory();
-    });
-    clearTimeout(storyRuntime.introTimer);
-    storyRuntime.introTimer = setTimeout(() => {
-      storyRuntime.introCompleted = true;
-      storyRuntime.introActive = false;
-      storyRuntime.slideIndex = 0;
-      renderStory();
-    }, 900);
-    return;
-  }
-  app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap"><div class="story-media-stage story-intro-stage"><img class="story-media-image is-visible" src="${esc(resolveStoryAsset(story, "story-intro-room")?.url || "")}" alt="Dede Poma’nın hikâye odası" loading="eager"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir hikâye odasına giriyorsun.</h1><p class="lead">Dede Poma kitabı açıyor; ardından ilk sayfa kendini gösterecek.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
+  app.innerHTML = `<section class="story-shell story-intro-shell"><article class="card story-intro-card"><div class="story-media-wrap story-intro-media-wrap"><div class="story-media-stage story-intro-stage"><img class="story-media-image is-visible" src="${esc(resolveStoryAsset(story, "story-intro-room")?.url || "")}" alt="Dede Poma’nın hikâye odası" loading="eager"></div></div><div class="story-copy story-intro-copy"><p class="eyebrow">STORY 001</p><h1>Bir hikâye odasına giriyorsun.</h1><p class="lead">Dede Poma kitabı açıyor; ardından ilk sayfa kendini gösterecek.</p><div class="button-row story-intro-actions"><button class="button secondary" data-action="story-intro-skip">Geç</button></div></div></article></section>`;
   app.querySelector("[data-action='story-intro-skip']")?.addEventListener("click", () => {
     startStoryMusic(context, true);
     clearTimeout(storyRuntime.introTimer);
