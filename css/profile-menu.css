@@ -1,0 +1,84 @@
+.profile-menu {
+  position: relative;
+}
+
+.profile-menu[hidden],
+.profile-menu-dropdown[hidden] {
+  display: none;
+}
+
+.profile-menu-button {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  max-width: 190px;
+  min-height: 48px;
+  padding: .6rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  font-weight: 800;
+}
+
+.profile-menu-button [data-profile-name] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-menu-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + .45rem);
+  z-index: 60;
+  display: grid;
+  width: min(230px, calc(100vw - 1.5rem));
+  padding: .4rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.profile-menu-dropdown button {
+  min-height: 44px;
+  padding: .6rem .7rem;
+  border-radius: 6px;
+  background: transparent;
+  text-align: left;
+  font-weight: 750;
+}
+
+.profile-menu-dropdown button:hover,
+.profile-menu-dropdown button:focus-visible {
+  background: var(--surface-2);
+}
+
+@media (max-width: 850px) {
+  .profile-menu-button {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 520px) {
+  .parent-button {
+    display: none !important;
+  }
+
+  .profile-menu-button {
+    max-width: 116px;
+    min-height: 44px;
+    padding: .5rem .55rem;
+    font-size: .8rem;
+  }
+
+  .profile-menu-dropdown {
+    position: fixed;
+    top: 76px;
+    right: .6rem;
+  }
+
+  .top-actions > .icon-button:not(.games-button) {
+    display: none;
+  }
+}

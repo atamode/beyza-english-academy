@@ -37,6 +37,12 @@ export function clearActiveStudentId(userId) {
   browserStorage().removeItem(activeStudentKey(userId));
 }
 
+export function clearAccountSelection(userId, { forgetLast = false } = {}) {
+  const storage = browserStorage();
+  storage.removeItem(activeStudentKey(userId));
+  if (forgetLast) storage.removeItem(lastStudentKey(userId));
+}
+
 export function currentAccountUserId() {
   try {
     const s = JSON.parse(browserStorage().getItem(ACCOUNT_KEYS.session) || "null");

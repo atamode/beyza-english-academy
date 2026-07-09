@@ -2,7 +2,7 @@
 import { getSupabaseClient, translateSupabaseError } from "./supabase-client.js";
 import { createStudentRepository } from "./student-repository.js";
 import { createTeacherRepository } from "./teacher-repository.js";
-import { setActiveStudentId, getActiveStudentId, clearActiveStudentId, copyLegacyProgressToStudent, hasLegacyProgress, browserStorage } from "./account-storage.js";
+import { setActiveStudentId, getActiveStudentId, clearAccountSelection, currentAccountUserId, copyLegacyProgressToStudent, hasLegacyProgress, browserStorage } from "./account-storage.js";
 import { loadState, saveState, defaultState } from "./storage.js";
 
 export async function restoreAccountSession(client = getSupabaseClient()) {
@@ -43,10 +43,17 @@ export async function signUp({ email, password, displayName, accountType, avatar
 }
 
 export async function signOut(client = getSupabaseClient()) {
-  const current = await restoreAccountSession(client).catch(() => null);
-  if (current?.user?.id) clearActiveStudentId(current.user.id);
-  await client.auth.signOut();
-  browserStorage().removeItem(ACCOUNT_KEYS.session);
+  let userId = currentAccountUserId();
+  if (!userId) {
+    const current = await client.auth.getSession().catch(() => null);
+    userId = current?.data?.session?.user?.id || null;
+  }
+  try {
+    await client.auth.signOut();
+  } finally {
+    if (userId) clearAccountSelection(userId, { forgetLast: true });
+    browserStorage().removeItem(ACCOUNT_KEYS.session);
+  }
 }
 
 export async function loadChildrenForSession(account, repo = createStudentRepository()) {

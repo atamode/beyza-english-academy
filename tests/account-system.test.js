@@ -6,7 +6,8 @@ import { fileURLToPath } from "node:url";
 
 import { SUPABASE_CONFIG, assertPublicSupabaseConfig, ACCOUNT_KEYS } from "../js/account-config.js";
 import { createPomaSupabaseClient } from "../js/supabase-client.js";
-import { browserStorage, activeStudentStorage, scopedKey, setActiveStudentId, getActiveStudentId, lastStudentKey, copyLegacyProgressToStudent, enqueueOfflineMutation, readOfflineQueue } from "../js/account-storage.js";
+import { browserStorage, activeStudentStorage, scopedKey, setActiveStudentId, getActiveStudentId, clearAccountSelection, activeStudentKey, lastStudentKey, copyLegacyProgressToStudent, enqueueOfflineMutation, readOfflineQueue } from "../js/account-storage.js";
+import { signOut } from "../js/account-session.js";
 import { createStudentRepository } from "../js/student-repository.js";
 import { canUseTeacherTools, createTeacherRepository } from "../js/teacher-repository.js";
 import { mergeStudentState, createSyncEngine } from "../js/sync-engine.js";
@@ -56,11 +57,66 @@ test("profile selector is explicit: no PIN and active child must be selected", (
   assert.match(views, /data-child-id/);
 });
 
+test("home continues directly when the signed-in account has an active profile", () => {
+  setActiveStudentId("family-home", "child-home");
+  assert.equal(getActiveStudentId("family-home"), "child-home");
+  const app = read("js/app.js");
+  assert.match(app, /if\(isStudentRoute&&!getActiveStudentId\(account\.user\.id\)\)/);
+  assert.match(app, /if\(!state\.onboardingComplete&&r==="home"\)return welcome\(\)/);
+  assert.match(app, /home\(\)\}/);
+});
+
 test("last selected child is remembered without auto-opening another profile", () => {
   setActiveStudentId("parent-1", "child-1");
   assert.equal(getActiveStudentId("parent-1"), "child-1");
   assert.equal(browserStorage().getItem(lastStudentKey("parent-1")), "child-1");
   assert.equal(getActiveStudentId("parent-2"), null);
+});
+
+test("profile switch clears only the active child and keeps learning progress", () => {
+  const storage = browserStorage();
+  setActiveStudentId("family-switch", "beyza");
+  activeStudentStorage("beyza").setItem(ACCOUNT_KEYS.legacyProgress, JSON.stringify({ totals: { stars: 9 } }));
+  clearAccountSelection("family-switch");
+  assert.equal(getActiveStudentId("family-switch"), null);
+  assert.equal(storage.getItem(lastStudentKey("family-switch")), "beyza");
+  assert.equal(JSON.parse(activeStudentStorage("beyza").getItem(ACCOUNT_KEYS.legacyProgress)).totals.stars, 9);
+});
+
+test("Beyza and Kemal progress and notes stay isolated by child id", () => {
+  const beyza = activeStudentStorage("beyza-child");
+  const kemal = activeStudentStorage("kemal-child");
+  beyza.setItem(ACCOUNT_KEYS.legacyProgress, JSON.stringify({ lesson: "001", score: 80 }));
+  kemal.setItem("teacherNotes", JSON.stringify([{ text: "Kemal notu" }]));
+  assert.equal(kemal.getItem(ACCOUNT_KEYS.legacyProgress), null);
+  assert.equal(beyza.getItem("teacherNotes"), null);
+  setActiveStudentId("family-isolation", "kemal-child");
+  assert.match(activeStudentStorage(getActiveStudentId("family-isolation")).getItem("teacherNotes"), /Kemal notu/);
+  setActiveStudentId("family-isolation", "beyza-child");
+  assert.match(activeStudentStorage(getActiveStudentId("family-isolation")).getItem(ACCOUNT_KEYS.legacyProgress), /001/);
+});
+
+test("sign out removes session selections without deleting child learning data", async () => {
+  const storage = browserStorage();
+  storage.setItem(ACCOUNT_KEYS.session, JSON.stringify({ user: { id: "family-logout" } }));
+  setActiveStudentId("family-logout", "kemal-logout");
+  activeStudentStorage("kemal-logout").setItem(ACCOUNT_KEYS.legacyProgress, JSON.stringify({ stars: 12 }));
+  await signOut({ auth: { signOut: async () => ({ error: null }), getSession: async () => ({ data: { session: null } }) } });
+  assert.equal(storage.getItem(ACCOUNT_KEYS.session), null);
+  assert.equal(storage.getItem(activeStudentKey("family-logout")), null);
+  assert.equal(storage.getItem(lastStudentKey("family-logout")), null);
+  assert.match(activeStudentStorage("kemal-logout").getItem(ACCOUNT_KEYS.legacyProgress), /12/);
+});
+
+test("profile menu is guarded and student role cannot open parent mode directly", () => {
+  const appSource = read("js/app.js");
+  const html = read("index.html");
+  assert.match(html, /data-action="profile-switch"/);
+  assert.match(html, /data-action="profile-parent"/);
+  assert.match(html, /data-action="profile-logout"/);
+  assert.match(appSource, /if\(\["parent","both"\]\.includes\(type\)\)/);
+  assert.match(appSource, /Veli modu için veli yetkili hesaba geçmelisin/);
+  assert.match(appSource, /navigate\("account"\)/);
 });
 
 test("legacy local progress migrates only when explicit consent is passed", () => {

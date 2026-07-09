@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/sprint2.css">
   <link rel="stylesheet" href="css/quality.css">
+  <link rel="stylesheet" href="css/profile-menu.css">
   <link rel="stylesheet" href="css/football.css">
   <link rel="stylesheet" href="css/story.css">
   <link rel="stylesheet" href="css/print.css" media="print">
@@ -31,6 +32,16 @@
       <button id="fullscreen-toggle" class="icon-button" title="Tam ekran">⛶<span>Tam ekran</span></button>
       <button class="icon-button games-button" data-route="games" title="Eğlence">⚽<span>Eğlence</span></button>
       <button class="parent-button" data-route="parent">Veli Modu</button>
+      <div class="profile-menu" data-profile-menu hidden>
+        <button class="profile-menu-button" data-action="profile-menu-toggle" aria-haspopup="menu" aria-expanded="false">
+          <span aria-hidden="true">👤</span><span data-profile-name>Profil</span><span aria-hidden="true">▾</span>
+        </button>
+        <div class="profile-menu-dropdown" data-profile-dropdown role="menu" hidden>
+          <button role="menuitem" data-action="profile-switch">Profil değiştir</button>
+          <button role="menuitem" data-action="profile-parent">Veli moduna geç</button>
+          <button role="menuitem" data-action="profile-logout">Çıkış yap</button>
+        </div>
+      </div>
     </nav>
   </header>
   <main id="app" tabindex="-1" aria-live="polite"></main>
