@@ -60,6 +60,33 @@
   }
 }
 
+.parent-proof-card {
+  margin-bottom: 1.2rem;
+  border-color: color-mix(in srgb, var(--success) 45%, var(--border));
+}
+
+.parent-proof-card .stats-grid {
+  margin-bottom: .8rem;
+}
+
+.parent-report-insights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+}
+
+.parent-report-insights p {
+  padding: .8rem;
+  border-left: 4px solid var(--secondary);
+  background: var(--surface-2);
+}
+
+@media (max-width: 760px) {
+  .parent-report-insights {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 520px) {
   .parent-button {
     display: none !important;

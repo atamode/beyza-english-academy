@@ -2,7 +2,7 @@
 import { getSupabaseClient, translateSupabaseError } from "./supabase-client.js";
 import { createStudentRepository } from "./student-repository.js";
 import { createTeacherRepository } from "./teacher-repository.js";
-import { setActiveStudentId, getActiveStudentId, clearAccountSelection, currentAccountUserId, copyLegacyProgressToStudent, hasLegacyProgress, browserStorage } from "./account-storage.js";
+import { setActiveStudentId, getActiveStudentId, clearAccountSelection, currentAccountUserId, readLinkedChildren, copyLegacyProgressToStudent, hasLegacyProgress, browserStorage } from "./account-storage.js";
 import { loadState, saveState, defaultState } from "./storage.js";
 
 export async function restoreAccountSession(client = getSupabaseClient()) {
@@ -58,7 +58,10 @@ export async function signOut(client = getSupabaseClient()) {
 
 export async function loadChildrenForSession(account, repo = createStudentRepository()) {
   if (!account?.user) return [];
-  return repo.listChildrenForAccount(account.user.id, account.profile?.account_type || "parent");
+  const remote = await repo.listChildrenForAccount(account.user.id, account.profile?.account_type || "parent");
+  const cached = readLinkedChildren(account.user.id);
+  const merged = new Map([...cached, ...remote].filter(child => child?.id).map(child => [String(child.id), child]));
+  return [...merged.values()].filter(child => child.is_active !== false);
 }
 
 export async function activateStudent(account, child, { migrateLegacy = false } = {}, repo = createStudentRepository()) {

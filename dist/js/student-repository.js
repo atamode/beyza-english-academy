@@ -11,7 +11,11 @@ export function createStudentRepository(client = getSupabaseClient()) {
       const { data: links, error: linkError } = await client.from("guardian_students").select("child_id").eq("guardian_id", userId);
       if (linkError) throw linkError;
       const ids = (links || []).map(x => x.child_id).filter(Boolean);
-      if (!ids.length) return [];
+      if (!ids.length) {
+        const { data: visibleChildren, error: visibleError } = await client.from("children").select("*");
+        if (visibleError) return [];
+        return (visibleChildren || []).filter(child => child?.is_active !== false);
+      }
       const rows = [];
       for (const id of ids) {
         const { data, error } = await client.from("children").select("*").eq("id", id).maybeSingle();
@@ -26,6 +30,11 @@ export function createStudentRepository(client = getSupabaseClient()) {
     },
     async linkGuardianByStudentCode({ studentCode, relationship = "guardian" }) {
       const { data, error } = await client.rpc("link_guardian_by_student_code", { p_student_code: studentCode, p_relationship: relationship });
+      if (error) throw error;
+      return data;
+    },
+    async findChildByStudentCode(studentCode) {
+      const { data, error } = await client.from("children").select("*").eq("student_code", studentCode).maybeSingle();
       if (error) throw error;
       return data;
     },
@@ -45,6 +54,11 @@ export function createStudentRepository(client = getSupabaseClient()) {
       if (result.error) throw result.error;
       if (!Array.isArray(result.data) || !result.data.length) {
         const latest = await this.getStudentState(childId);
+        if (!latest) {
+          const created = await client.from("student_state").insert(row);
+          if (created.error) throw created.error;
+          return { conflict: false, row: Array.isArray(created.data) ? created.data[0] : created.data };
+        }
         return { conflict: true, remote: latest };
       }
       return { conflict: false, row: result.data[0] };

@@ -7,6 +7,7 @@ export const ACCOUNT_KEYS = Object.freeze({
   session: "pomaAcademy.account.session.v1",
   activeStudentPrefix: "pomaAcademy.account.activeStudent.v1",
   lastStudentPrefix: "pomaAcademy.account.lastStudent.v1",
+  linkedChildrenPrefix: "pomaAcademy.account.linkedChildren.v1",
   migrationPrefix: "pomaAcademy.account.migration.v1",
   offlineQueuePrefix: "pomaAcademy.account.offlineQueue.v1",
   remoteMetaPrefix: "pomaAcademy.account.remoteMeta.v1",

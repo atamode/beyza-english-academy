@@ -6,8 +6,9 @@ import { fileURLToPath } from "node:url";
 
 import { SUPABASE_CONFIG, assertPublicSupabaseConfig, ACCOUNT_KEYS } from "../js/account-config.js";
 import { createPomaSupabaseClient } from "../js/supabase-client.js";
-import { browserStorage, activeStudentStorage, scopedKey, setActiveStudentId, getActiveStudentId, clearAccountSelection, activeStudentKey, lastStudentKey, copyLegacyProgressToStudent, enqueueOfflineMutation, readOfflineQueue } from "../js/account-storage.js";
-import { signOut } from "../js/account-session.js";
+import { browserStorage, activeStudentStorage, scopedKey, setActiveStudentId, getActiveStudentId, clearAccountSelection, rememberLinkedChild, activeStudentKey, lastStudentKey, copyLegacyProgressToStudent, enqueueOfflineMutation, readOfflineQueue } from "../js/account-storage.js";
+import { signOut, loadChildrenForSession } from "../js/account-session.js";
+import { buildParentReport, parentReportShareText } from "../js/parent-mode.js";
 import { createStudentRepository } from "../js/student-repository.js";
 import { canUseTeacherTools, createTeacherRepository } from "../js/teacher-repository.js";
 import { mergeStudentState, createSyncEngine } from "../js/sync-engine.js";
@@ -37,6 +38,23 @@ test("central Supabase client persists session without caching schema changes", 
   const res = await client.auth.signInWithPassword({ email: "a@b.com", password: "12345678" });
   assert.equal(res.data.user.id, "u1");
   assert.ok(calls[0].url.includes("/auth/v1/token"));
+});
+
+test("Supabase select chains execute when awaited", async () => {
+  const calls = [];
+  const client = createPomaSupabaseClient(SUPABASE_CONFIG, async (url, init = {}) => {
+    calls.push({ url: String(url), init });
+    return {
+      ok: true,
+      headers: { get: () => "application/json" },
+      text: async () => JSON.stringify([{ child_id: "child-1" }])
+    };
+  });
+  const result = await client.from("guardian_students").select("child_id").eq("guardian_id", "parent-1");
+  assert.equal(result.error, null);
+  assert.deepEqual(result.data, [{ child_id: "child-1" }]);
+  assert.match(calls[0].url, /guardian_students/);
+  assert.match(calls[0].url, /guardian_id=eq\.parent-1/);
 });
 
 test("active student storage isolates lesson and sport keys per child", () => {
@@ -153,15 +171,75 @@ test("student account lookup is bound to auth_user_id, guardian lookup to guardi
   assert.ok(queries.includes("guardian_students"));
 });
 
+test("a successfully linked child remains visible when the guardian link table is hidden by RLS", async () => {
+  rememberLinkedChild("guardian-cache", { id: "child-cache", name: "Beyza", student_code: "POMA123" });
+  const children = await loadChildrenForSession(
+    { user: { id: "guardian-cache" }, profile: { account_type: "parent" } },
+    { listChildrenForAccount: async () => [] }
+  );
+  assert.deepEqual(children.map(child => child.id), ["child-cache"]);
+  assert.equal(children[0].student_code, "POMA123");
+});
+
+test("parent report exposes measurable child progress without invented time data", () => {
+  const state = {
+    profile: { name: "Beyza" },
+    lessonProgress: { a: { completed: true }, b: { completed: false } },
+    vocabularyProgress: {
+      w1: { status: "learned" },
+      w2: { status: "difficult" },
+      w3: { status: "learning" }
+    },
+    diagnostic: { skillGroups: [
+      { label: "Subject Pronouns", percent: 75 },
+      { label: "am / is / are", percent: 40 }
+    ] },
+    moduleReviews: {}
+  };
+  const report = buildParentReport(state, [{ id: "w1" }, { id: "w2" }, { id: "w3" }]);
+  assert.equal(report.seenWords, 3);
+  assert.equal(report.learnedWords, 1);
+  assert.equal(report.difficultWords, 1);
+  assert.equal(report.completedLessons, 1);
+  assert.equal(report.strongestTopic.label, "Subject Pronouns");
+  assert.equal(report.weakestTopic.label, "am / is / are");
+  const share = parentReportShareText(report);
+  assert.match(share, /Görülen kelime: 3/);
+  assert.match(share, /En güçlü konu: Subject Pronouns/);
+  assert.doesNotMatch(share, /saat|dakika|→/);
+});
+
 test("optimistic revision conflict returns a controlled conflict result", async () => {
   const repo = createStudentRepository({
     from() {
-      const chain = { update: () => chain, eq: () => chain, select: () => chain, maybeSingle: async () => ({ data: null, error: null }) };
+      const chain = { update: () => chain, eq: () => chain, select: () => chain, maybeSingle: async () => ({ data: { child_id: "child-1", revision: 3, state: {} }, error: null }) };
       return chain;
     }
   });
   const res = await repo.upsertStudentState("child-1", { totals: { stars: 1 } }, 2);
   assert.equal(res.conflict, true);
+});
+
+test("first student sync inserts a child-scoped state row when none exists", async () => {
+  const calls = [];
+  const client = {
+    from(table) {
+      const chain = {
+        update(payload) { calls.push({ method: "update", table, payload }); return chain; },
+        insert(payload) { calls.push({ method: "insert", table, payload }); return Promise.resolve({ data: [{ ...payload, revision: 1 }], error: null }); },
+        eq() { return chain; },
+        select() { return chain; },
+        maybeSingle: async () => ({ data: null, error: null }),
+        then(resolve) { resolve({ data: [], error: null }); }
+      };
+      return chain;
+    }
+  };
+  const repo = createStudentRepository(client);
+  const result = await repo.upsertStudentState("child-first-sync", { totals: { stars: 4 } }, 0);
+  assert.equal(result.conflict, false);
+  assert.equal(result.row.child_id, "child-first-sync");
+  assert.deepEqual(calls.map(call => call.method), ["update", "insert"]);
 });
 
 test("sync engine queues safely while offline and merges conflict snapshots", async () => {

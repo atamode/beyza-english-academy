@@ -19,6 +19,10 @@ export function lastStudentKey(userId) {
   return `${ACCOUNT_KEYS.lastStudentPrefix}.${userId || "anonymous"}`;
 }
 
+export function linkedChildrenKey(userId) {
+  return `${ACCOUNT_KEYS.linkedChildrenPrefix}.${userId || "anonymous"}`;
+}
+
 export function scopedKey(childId, key) {
   return childId ? `pomaAcademy.student.${childId}.${key}` : key;
 }
@@ -41,6 +45,23 @@ export function clearAccountSelection(userId, { forgetLast = false } = {}) {
   const storage = browserStorage();
   storage.removeItem(activeStudentKey(userId));
   if (forgetLast) storage.removeItem(lastStudentKey(userId));
+}
+
+export function readLinkedChildren(userId) {
+  try {
+    const rows = JSON.parse(browserStorage().getItem(linkedChildrenKey(userId)) || "[]");
+    return Array.isArray(rows) ? rows.filter(row => row?.id) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function rememberLinkedChild(userId, child) {
+  if (!userId || !child?.id) return readLinkedChildren(userId);
+  const rows = readLinkedChildren(userId);
+  const next = [...rows.filter(row => String(row.id) !== String(child.id)), child];
+  browserStorage().setItem(linkedChildrenKey(userId), JSON.stringify(next));
+  return next;
 }
 
 export function currentAccountUserId() {

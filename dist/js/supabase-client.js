@@ -92,6 +92,7 @@ export function createPomaSupabaseClient(config = SUPABASE_CONFIG, fetchImpl = g
       insert(payload) { return api._run("POST", false, payload); },
       update(payload) { return api._run("PATCH", false, payload); },
       delete() { return api._run("DELETE"); },
+      then(resolve, reject) { return api._run("GET").then(resolve, reject); },
       async _run(method, maybe = false, payload) {
         const params = [`select=${encodeURIComponent(query.select)}`, ...query.filters];
         if (query.orderBy) params.push(`order=${encodeURIComponent(query.orderBy)}`);
