@@ -1,4 +1,4 @@
-const CACHE="beyza-english-5a74e8ff9804";
+const CACHE="beyza-english-44a73b61820b";
 const ASSETS=[
   "./",
   "index.html",
@@ -123,6 +123,7 @@ const ASSETS=[
   "assets/stories/story-001/story-001-08-they-pomas-visual-1280x720.png",
   "assets/stories/story-001/story-001-bozkurt-wolf-castle.png",
   "assets/stories/story-001/story-001-influencer-castle.png",
+  "assets/stories/story-001/story-001-intro-room.png",
   "assets/stories/story-001/story-001-kingdom-empty.png",
   "assets/stories/story-001/story-001-little-wolf.png",
   "assets/stories/story-001/story-001-poma-dahi-castle.png",
