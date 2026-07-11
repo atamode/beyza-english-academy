@@ -40,7 +40,155 @@ function loadingAccount(){app.innerHTML=`<section class="card"><p class="eyebrow
 async function reloadAccount(){account=await restoreAccountSession().catch(()=>({status:"signed-out"}));accountChildren=account.status==="signed-in"?await loadChildrenForSession(account).catch(()=>[]):[];return account}
 
 // BEGIN POMA SEO LANDING
-function publicLandingView(){return "\n<section class=\"seo-landing\" data-route-page=\"public-landing\">\n  <section class=\"landing-hero card\">\n    <div class=\"landing-hero-copy\">\n      <p class=\"eyebrow\">POMA ACADEMY</p>\n      <h1>Çocuklar İçin Oyunlarla İngilizce Öğrenme</h1>\n      <p class=\"lead\">Poma Academy; İngilizce derslerini, kelime oyunlarını, hikâyeleri, futbol ve voleybol mini oyunlarını çocuk dostu bir öğrenme dünyasında birleştirir.</p>\n      <div class=\"button-row landing-cta-row\">\n        <button class=\"button primary landing-primary-cta\" data-route=\"signup\" data-event=\"start_free_trial\">Ücretsiz Dene</button>\n        <button class=\"button secondary\" type=\"button\" data-action=\"watch-intro-video\" data-event=\"watch_intro_video\">Tanıtım Videosunu İzle</button>\n      </div>\n      <p class=\"landing-trust-note\">Dersler, oyunlar, hikâyeler ve veli takibi tek öğrenme akışında birleşir.</p>\n      <div class=\"landing-auth-shortcuts\" aria-label=\"Hesap işlemleri\">\n        <button class=\"button secondary\" data-route=\"login\">Giriş Yap</button>\n        <button class=\"button secondary\" data-route=\"signup\" data-event=\"signup_click\">Kayıt Ol</button>\n      </div>\n    </div>\n    <figure class=\"landing-hero-visual\">\n      <img src=\"assets/brand/poma-academy/poma-main-wave.png\" alt=\"Poma Academy çocuklar için İngilizce öğrenme karakteri\">\n    </figure>\n  </section>\n\n  <section class=\"landing-section landing-video-section card\" id=\"intro-video\">\n    <div>\n      <p class=\"eyebrow\">TANITIM VİDEOSU</p>\n      <h2>Poma dünyasını izleyin</h2>\n      <p class=\"lead\">Çocuğunuzun ders, hikâye ve oyunlarla nasıl ilerlediğini kısa tanıtım videosuyla görün.</p>\n    </div>\n    <video id=\"poma-intro-video\" class=\"landing-video\" controls preload=\"metadata\" poster=\"assets/brand/poma-academy/pomante-kingdom-wide.jpg\">\n      <source src=\"assets/video/poma-academy/poma-world-intro.web.mp4\" type=\"video/mp4\">\n      Tarayıcınız video etiketini desteklemiyor.\n    </video>\n  </section>\n\n  <section class=\"landing-grid\">\n    <article class=\"card landing-info-card\">\n      <p class=\"eyebrow\">POMA ACADEMY NEDİR?</p>\n      <h2>Poma Academy nedir?</h2>\n      <p>Poma Academy, çocukların İngilizceyi klasik ezber yerine oyun, hikâye, kelime tekrarı ve mini görevlerle öğrenmesini sağlayan çocuk dostu bir öğrenme platformudur.</p>\n    </article>\n    <article class=\"card landing-info-card\">\n      <p class=\"eyebrow\">KAZANIMLAR</p>\n      <h2>Çocuğunuz ne kazanır?</h2>\n      <ul class=\"landing-check-list\">\n        <li>Temel İngilizce kelimeleri öğrenir.</li>\n        <li>Cümle yapılarını oyun içinde tekrar eder.</li>\n        <li>Hikâyelerle merak duygusu artar.</li>\n        <li>Futbol ve voleybol oyunlarıyla öğrendiklerini pekiştirir.</li>\n        <li>Düzenli tekrarlarla unutmayı azaltır.</li>\n        <li>Veli takibi sayesinde gelişimi görünür olur.</li>\n      </ul>\n    </article>\n  </section>\n\n  <section class=\"landing-section card\">\n    <p class=\"eyebrow\">OYUNLA ÖĞRENME</p>\n    <h2>Oyunlarla öğrenme nasıl çalışır?</h2>\n    <p>Derslerde öğrenilen kelimeler ve cümleler oyunların içine yerleşir. Çocuk doğru cevaplarla ilerler, yanlışlarda tekrar yapar, böylece öğrenme baskı hissi olmadan pekişir.</p>\n  </section>\n\n  <section class=\"landing-grid\">\n    <article class=\"card landing-info-card\">\n      <p class=\"eyebrow\">VELİ TAKİBİ</p>\n      <h2>Veli için takip ve güven</h2>\n      <p>Veli tarafında çocuğun ilerlemesi, öğrendiği kelimeler, tamamladığı dersler, hikâyeler ve oyun durumları takip edilebilir. Satış ve açıklama dili veli tarafında kalır; öğrenci ekranı sade öğrenme deneyimine odaklanır.</p>\n    </article>\n    <article class=\"card landing-info-card\">\n      <p class=\"eyebrow\">SPOR MİNİ OYUNLARI</p>\n      <h2>Futbol ve voleybol mini oyunları</h2>\n      <p>İngilizce kelime ve cümle tekrarları futbol ve voleybol oyunlarıyla birleşir. Çocuk yalnızca izleyici değil, doğru cevaplarla oyunu ilerleten aktif oyuncu olur.</p>\n    </article>\n    <article class=\"card landing-info-card\">\n      <p class=\"eyebrow\">HİKÂYELER</p>\n      <h2>Hikâyeler ve kelime tekrarları</h2>\n      <p>Hikâyeler çocuğun merakını canlı tutar. Kelime tekrarları derslerden sonra pekiştirme sağlar ve İngilizce öğrenimini karakterler, olaylar ve görevlerle destekler.</p>\n    </article>\n  </section>\n\n  <section class=\"landing-section card\">\n    <p class=\"eyebrow\">SIK SORULAN SORULAR</p>\n    <h2>Sık sorulan sorular</h2>\n    <div class=\"landing-faq-list\">\n      <details>\n        <summary>Poma Academy hangi yaş grubu için uygundur?</summary>\n        <p>Poma Academy özellikle ilkokul sonu ve ortaokul başlangıç seviyesindeki çocukların temel İngilizce becerilerini geliştirmesi için tasarlanmıştır.</p>\n      </details>\n      <details>\n        <summary>Çocuğum İngilizceye sıfırdan başlayabilir mi?</summary>\n        <p>Evet. Dersler temel kelimeler, basit cümleler ve tekrar oyunlarıyla adım adım ilerleyecek şekilde kurgulanır.</p>\n      </details>\n      <details>\n        <summary>Oyunlar gerçekten öğrenmeye yardımcı olur mu?</summary>\n        <p>Evet. Oyunlar derslerde öğrenilen kelime ve cümleleri tekrar ettirmek için kullanılır. Amaç sadece eğlendirmek değil, öğrenilen bilgiyi pekiştirmektir.</p>\n      </details>\n      <details>\n        <summary>Veli çocuğun gelişimini görebilir mi?</summary>\n        <p>Evet. Veli tarafında çocuğun ilerlemesi, öğrendiği kelimeler ve tamamladığı içerikler takip edilebilir.</p>\n      </details>\n      <details>\n        <summary>Ücretsiz deneme var mı?</summary>\n        <p>Evet. Ücretsiz deneme ile Poma Academy’nin çocuklara uygun öğrenme yapısını deneyebilirsiniz.</p>\n      </details>\n    </div>\n  </section>\n\n  <section class=\"landing-final-cta card\">\n    <p class=\"eyebrow\">ÜCRETSİZ DENE</p>\n    <h2>Çocuğunuz İngilizceyi Oyunlarla Keşfetmeye Başlasın</h2>\n    <p class=\"lead\">Poma Academy’yi deneyin; ders, hikâye ve oyun akışının çocuğunuz için nasıl çalıştığını görün.</p>\n    <button class=\"button primary landing-primary-cta\" data-route=\"signup\" data-event=\"start_free_trial\">Ücretsiz Başla</button>\n  </section>\n</section>\n"}
+function publicLandingView(){return `
+<section class="seo-landing" data-route-page="public-landing">
+  <section class="landing-hero card">
+    <div class="landing-hero-copy">
+      <p class="eyebrow">POMA ACADEMY</p>
+      <h1>Çocuklar İçin Oyunlarla İngilizce Öğrenme</h1>
+      <p class="lead">Poma Academy; İngilizce derslerini, kelime oyunlarını, hikâyeleri, futbol ve voleybol mini oyunlarını çocuk dostu bir öğrenme dünyasında birleştirir.</p>
+      <div class="button-row landing-cta-row">
+        <button class="button primary landing-primary-cta" data-route="signup" data-event="start_free_trial">Ücretsiz Dene</button>
+        <button class="button secondary" type="button" data-action="watch-intro-video" data-event="watch_intro_video">Tanıtım Videosunu İzle</button>
+      </div>
+      <p class="landing-trust-note">Dersler, oyunlar, hikâyeler ve veli takibi tek öğrenme akışında birleşir.</p>
+      <div class="landing-auth-shortcuts" aria-label="Hesap işlemleri">
+        <button class="button secondary" data-route="login">Giriş Yap</button>
+        <button class="button secondary" data-route="signup" data-event="signup_click">Kayıt Ol</button>
+      </div>
+    </div>
+    <figure class="landing-hero-visual">
+      <img src="assets/brand/poma-academy/poma-main-wave.png" alt="Poma Academy çocuklar için İngilizce öğrenme karakteri">
+    </figure>
+  </section>
+
+  <section class="landing-section landing-video-section card" id="intro-video">
+    <div>
+      <p class="eyebrow">TANITIM VİDEOSU</p>
+      <h2>Poma dünyasını izleyin</h2>
+      <p class="lead">Çocuğunuzun ders, hikâye ve oyunlarla nasıl ilerlediğini kısa tanıtım videosuyla görün.</p>
+    </div>
+    <video id="poma-intro-video" class="landing-video" controls preload="metadata" poster="assets/brand/poma-academy/pomante-kingdom-wide.jpg">
+      <source src="assets/video/poma-academy/poma-world-intro.web.mp4" type="video/mp4">
+      Tarayıcınız video etiketini desteklemiyor.
+    </video>
+  </section>
+
+  <section class="landing-grid">
+    <article class="card landing-info-card">
+      <p class="eyebrow">POMA ACADEMY NEDİR?</p>
+      <h2>Poma Academy nedir?</h2>
+      <p>Poma Academy, çocukların İngilizceyi klasik ezber yerine oyun, hikâye, kelime tekrarı ve mini görevlerle öğrenmesini sağlayan çocuk dostu bir öğrenme platformudur.</p>
+    </article>
+    <article class="card landing-info-card">
+      <p class="eyebrow">KAZANIMLAR</p>
+      <h2>Çocuğunuz ne kazanır?</h2>
+      <ul class="landing-check-list">
+        <li>Temel İngilizce kelimeleri öğrenir.</li>
+        <li>Cümle yapılarını oyun içinde tekrar eder.</li>
+        <li>Hikâyelerle merak duygusu artar.</li>
+        <li>Futbol ve voleybol oyunlarıyla öğrendiklerini pekiştirir.</li>
+        <li>Düzenli tekrarlarla unutmayı azaltır.</li>
+        <li>Veli takibi sayesinde gelişimi görünür olur.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="landing-section card">
+    <p class="eyebrow">OYUNLA ÖĞRENME</p>
+    <h2>Oyunlarla öğrenme nasıl çalışır?</h2>
+    <p>Derslerde öğrenilen kelimeler ve cümleler oyunların içine yerleşir. Çocuk doğru cevaplarla ilerler, yanlışlarda tekrar yapar, böylece öğrenme baskı hissi olmadan pekişir.</p>
+  </section>
+
+  <section class="landing-grid">
+    <article class="card landing-info-card">
+      <p class="eyebrow">VELİ TAKİBİ</p>
+      <h2>Veli için takip ve güven</h2>
+      <p>Veli tarafında çocuğun ilerlemesi, öğrendiği kelimeler, tamamladığı dersler, hikâyeler ve oyun durumları takip edilebilir. Satış, ödeme ve açıklama dili veli tarafında kalır; öğrenci ekranı sade öğrenme deneyimine odaklanır.</p>
+    </article>
+    <article class="card landing-info-card">
+      <p class="eyebrow">SPOR MİNİ OYUNLARI</p>
+      <h2>Futbol ve voleybol mini oyunları</h2>
+      <p>İngilizce kelime ve cümle tekrarları futbol ve voleybol oyunlarıyla birleşir. Çocuk yalnızca izleyici değil, doğru cevaplarla oyunu ilerleten aktif oyuncu olur.</p>
+    </article>
+    <article class="card landing-info-card">
+      <p class="eyebrow">HİKÂYELER</p>
+      <h2>Hikâyeler ve kelime tekrarları</h2>
+      <p>Hikâyeler çocuğun merakını canlı tutar. Kelime tekrarları derslerden sonra pekiştirme sağlar ve İngilizce öğrenimini karakterler, olaylar ve görevlerle destekler.</p>
+    </article>
+  </section>
+
+  <section class="landing-grid landing-social-coupon-grid">
+    <article class="card landing-info-card landing-social-card">
+      <p class="eyebrow">POMA ACADEMY'Yİ TAKİP EDİN</p>
+      <h2>Sosyalde Poma</h2>
+      <p>Instagram'da duyuruları, YouTube'da hikâye ve tanıtım videolarını takip edin.</p>
+      <div class="button-row landing-social-links">
+        <a class="button secondary" href="https://www.instagram.com/pomantekingdom/" target="_blank" rel="noopener noreferrer" data-event="instagram_click">Instagram</a>
+        <a class="button secondary" href="https://www.youtube.com/channel/UCPSDoBJfR0AKxi3AQsV6KmA" target="_blank" rel="noopener noreferrer" data-event="youtube_click">YouTube</a>
+      </div>
+    </article>
+    <article class="card landing-info-card landing-coupon-card">
+      <p class="eyebrow">KUPON KODU</p>
+      <h2>Kupon Kodunuz Var mı?</h2>
+      <p>YouTube, Instagram veya tanıtım kampanyasından gelen kodunuzu kayıt sırasında kullanabilirsiniz.</p>
+      <div class="landing-coupon-box"><strong>POMA10</strong><span>Başlangıç kampanyası</span></div>
+      <button class="button primary" data-route="signup" data-action="coupon-signup" data-coupon="POMA10" data-event="coupon_signup_click">Kuponla Kayıt Ol</button>
+    </article>
+  </section>
+
+  <section class="landing-section card landing-payment-section">
+    <p class="eyebrow">ÜYELİK VE ÖDEME</p>
+    <h2>Havale/EFT ile üyelik aktivasyonu</h2>
+    <p>Önce ücretsiz kayıt olun. Devam etmek istediğinizde aşağıdaki IBAN'a havale/EFT yapın; açıklama kısmına kayıt olduğunuz e-posta adresini yazın. Ödeme kontrolünden sonra hesabınız manuel olarak aktifleştirilir.</p>
+    <div class="landing-payment-details">
+      <div><span>Alıcı adı</span><strong>Nurettin Ata Çetinkayalı</strong></div>
+      <div><span>Banka</span><strong>Garanti BBVA</strong></div>
+      <div class="landing-payment-iban"><span>IBAN</span><strong>TR81 0006 2001 1470 0006 6804 17</strong><button class="button secondary" type="button" data-action="copy-iban" data-copy-value="TR810006200114700006680417" data-event="copy_iban_click">IBAN'ı Kopyala</button></div>
+      <div><span>Ödeme açıklaması</span><strong>Poma Academy - kayıt e-postanız</strong></div>
+    </div>
+    <p class="landing-trust-note">Dekontu Instagram DM üzerinden @pomantekingdom hesabına gönderebilirsiniz.</p>
+    <div class="button-row landing-payment-actions">
+      <a class="button secondary" href="https://www.instagram.com/pomantekingdom/" target="_blank" rel="noopener noreferrer" data-event="payment_instagram_click">Dekontu Instagram'dan Gönder</a>
+      <button class="button primary" data-route="signup" data-event="payment_signup_click">Kayıt Ol</button>
+    </div>
+  </section>
+
+  <section class="landing-section card">
+    <p class="eyebrow">SIK SORULAN SORULAR</p>
+    <h2>Sık sorulan sorular</h2>
+    <div class="landing-faq-list">
+      <details>
+        <summary>Poma Academy hangi yaş grubu için uygundur?</summary>
+        <p>Poma Academy özellikle ilkokul sonu ve ortaokul başlangıç seviyesindeki çocukların temel İngilizce becerilerini geliştirmesi için tasarlanmıştır.</p>
+      </details>
+      <details>
+        <summary>Çocuğum İngilizceye sıfırdan başlayabilir mi?</summary>
+        <p>Evet. Dersler temel kelimeler, basit cümleler ve tekrar oyunlarıyla adım adım ilerleyecek şekilde kurgulanır.</p>
+      </details>
+      <details>
+        <summary>Oyunlar gerçekten öğrenmeye yardımcı olur mu?</summary>
+        <p>Evet. Oyunlar derslerde öğrenilen kelime ve cümleleri tekrar ettirmek için kullanılır. Amaç sadece eğlendirmek değil, öğrenilen bilgiyi pekiştirmektir.</p>
+      </details>
+      <details>
+        <summary>Veli çocuğun gelişimini görebilir mi?</summary>
+        <p>Evet. Veli tarafında çocuğun ilerlemesi, öğrendiği kelimeler ve tamamladığı içerikler takip edilebilir.</p>
+      </details>
+      <details>
+        <summary>Ücretsiz deneme var mı?</summary>
+        <p>Evet. Ücretsiz deneme ile Poma Academy’nin çocuklara uygun öğrenme yapısını deneyebilirsiniz.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="landing-final-cta card">
+    <p class="eyebrow">ÜCRETSİZ DENE</p>
+    <h2>Çocuğunuz İngilizceyi Oyunlarla Keşfetmeye Başlasın</h2>
+    <p class="lead">Poma Academy’yi deneyin; ders, hikâye ve oyun akışının çocuğunuz için nasıl çalıştığını görün.</p>
+    <button class="button primary landing-primary-cta" data-route="signup" data-event="start_free_trial">Ücretsiz Başla</button>
+  </section>
+</section>
+`}
 function bindLandingEvents(){
   app.querySelectorAll(".seo-landing [data-route='signup']").forEach(button=>{
     if(!button.dataset.event)button.dataset.event="signup_click";
@@ -51,8 +199,15 @@ function bindLandingEvents(){
     const video=app.querySelector("#poma-intro-video");
     try{video?.focus({preventScroll:true})}catch{}
   });
+  app.querySelector("[data-action='coupon-signup']")?.addEventListener("click",()=>{
+    try{sessionStorage.setItem("pomaAcademy.signup.coupon","POMA10")}catch{}
+  });
+  app.querySelectorAll("[data-copy-value]").forEach(button=>button.addEventListener("click",async()=>{
+    const value=button.dataset.copyValue||"";
+    try{await navigator.clipboard?.writeText(value);showToast("IBAN kopyalandı.")}catch{showToast(value||"Kopyalanacak bilgi bulunamadı.")}
+  }));
   app.querySelectorAll("[data-event]").forEach(el=>el.addEventListener("click",()=>{
-    const detail={event:el.dataset.event,route:getRoute(),label:(el.textContent||"").trim()};
+    const detail={event:el.dataset.event,route:getRoute(),label:(el.textContent||"").trim(),href:el.getAttribute("href")||"",coupon:el.dataset.coupon||""};
     window.dispatchEvent(new CustomEvent("poma-analytics-event",{detail}));
     if(["localhost","127.0.0.1"].includes(location.hostname))console.debug("[poma-event]",detail);
   }));
@@ -61,7 +216,7 @@ function bindLandingEvents(){
 
 function authLanding(){app.innerHTML=`${publicLandingView()}<section class="landing-account-panel">${authLandingView()}</section>${gamesHubContent({embedded:true})}`;bindRoutes();bindLandingEvents()}
 function loginPage(){app.innerHTML=loginView();bindRoutes();app.querySelector("form")?.addEventListener("submit",async e=>{e.preventDefault();const f=new FormData(e.currentTarget);try{account=await signIn({email:f.get("email"),password:f.get("password")});accountChildren=await loadChildrenForSession(account).catch(()=>[]);showToast("Giriş yapıldı.");navigate("profiles")}catch(err){showToast(err.message||"Giriş yapılamadı.")}})}
-function signupPage(){app.innerHTML=signupView();bindRoutes();app.querySelector("form")?.addEventListener("submit",async e=>{e.preventDefault();const f=new FormData(e.currentTarget);try{account=await signUp({email:f.get("email"),password:f.get("password"),displayName:f.get("displayName"),accountType:f.get("accountType")});accountChildren=await loadChildrenForSession(account).catch(()=>[]);showToast("Hesap oluşturuldu.");navigate((account.profile?.account_type||"parent")==="teacher"?"teacher":"profiles")}catch(err){showToast(err.message||"Hesap oluşturulamadı.")}})}
+function signupPage(){app.innerHTML=signupView();bindRoutes();app.querySelector("form")?.addEventListener("submit",async e=>{e.preventDefault();const f=new FormData(e.currentTarget),couponCode=String(f.get("couponCode")||"").trim().toUpperCase();try{account=await signUp({email:f.get("email"),password:f.get("password"),displayName:f.get("displayName"),accountType:f.get("accountType"),couponCode});if(couponCode){try{sessionStorage.setItem("pomaAcademy.signup.lastCoupon",couponCode);sessionStorage.removeItem("pomaAcademy.signup.coupon")}catch{}}accountChildren=await loadChildrenForSession(account).catch(()=>[]);showToast("Hesap oluşturuldu.");navigate((account.profile?.account_type||"parent")==="teacher"?"teacher":"profiles")}catch(err){showToast(err.message||"Hesap oluşturulamadı.")}})}
 function accountHome(){app.innerHTML=accountHomeView(account,accountChildren,{activeStudentId:getActiveStudentId(account.user.id)});bindRoutes()}
 function profileSelector(){if(pendingMigrationChild){app.innerHTML=migrationConfirmView(pendingMigrationChild);bindRoutes();app.querySelector("[data-action='migrate-yes']")?.addEventListener("click",()=>selectChild(pendingMigrationChild,true,"home"));app.querySelector("[data-action='migrate-no']")?.addEventListener("click",()=>selectChild(pendingMigrationChild,false,"home"));return}app.innerHTML=profileSelectorView(account,accountChildren,{lastId:browserStorage().getItem(lastStudentKey(account.user.id)),needsMigration:hasLegacyProgress()});bindRoutes();app.querySelectorAll("[data-child-id]").forEach(card=>card.addEventListener("click",()=>{const child=accountChildren.find(c=>String(c.id)===String(card.dataset.childId));if(!child)return;if(hasLegacyProgress()&&!browserStorage().getItem(`pomaAcademy.account.migrated.${child.id}`)){pendingMigrationChild=child;profileSelector();return}selectChild(child,false,"home")}));app.querySelector("[data-account-form='create-child']")?.addEventListener("submit",async e=>{e.preventDefault();const f=new FormData(e.currentTarget);try{await studentRepo.createFamilyChild({name:f.get("name"),avatarKey:f.get("avatarKey")||"poma",birthYear:f.get("birthYear")});await reloadAccount();showToast("Öğrenci profili eklendi.");profileSelector()}catch(err){showToast(err.message||"Profil eklenemedi.")}});app.querySelector("[data-account-form='link-code']")?.addEventListener("submit",async e=>{e.preventDefault();const f=new FormData(e.currentTarget),studentCode=String(f.get("studentCode")||"").trim().toUpperCase();try{const linked=await studentRepo.linkGuardianByStudentCode({studentCode,relationship:f.get("relationship")||"guardian"});const result=Array.isArray(linked)?linked[0]:linked,child=result?.child||result?.student||(result?.id||result?.child_id?{...result,id:result.id||result.child_id}:null)||await studentRepo.findChildByStudentCode(studentCode).catch(()=>null);if(child?.id)rememberLinkedChild(account.user.id,{...child,student_code:child.student_code||studentCode});await reloadAccount();const linkedVisible=accountChildren.some(row=>String(row.id)===String(child?.id)||String(row.student_code||"").toUpperCase()===studentCode);if(!linkedVisible)throw new Error("Bağlantı onaylandı ancak öğrenci profili okunamadı. Lütfen tekrar giriş yapın.");showToast("Öğrenci bağlandı. Profil kartı hazır.");profileSelector()}catch(err){showToast(err.message||"Kod bağlanamadı.")}})}
 async function selectChild(child,migrateLegacy=false,routeAfter="home"){try{await activateStudent(account,child,{migrateLegacy},studentRepo);if(migrateLegacy)browserStorage().setItem(`pomaAcademy.account.migrated.${child.id}`,"1");pendingMigrationChild=null;state=loadState();navigate(routeAfter||"home")}catch(err){showToast(err.message||"Profil açılamadı.")}}

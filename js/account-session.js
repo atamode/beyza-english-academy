@@ -10,7 +10,7 @@ export async function restoreAccountSession(client = getSupabaseClient()) {
   if (!data.session) return { status: "signed-out", session: null };
   const user = data.session.user || (await client.auth.getUser()).data.user;
   const profileRes = await client.from("parent_profiles").select("*").eq("id", user.id).maybeSingle();
-  const profile = profileRes.data || { id: user.id, display_name: user.email?.split("@")[0] || "KullanÄ±cÄ±", account_type: user.user_metadata?.account_type || "parent" };
+  const profile = profileRes.data || { id: user.id, display_name: user.email?.split("@")[0] || "Kullanıcı", account_type: user.user_metadata?.account_type || "parent" };
   browserStorage().setItem(ACCOUNT_KEYS.session, JSON.stringify({ ...data.session, user }));
   return { status: "signed-in", session: data.session, user, profile };
 }
@@ -27,13 +27,21 @@ export async function signIn(credentials, passwordArg, client = getSupabaseClien
   }
 }
 
-export async function signUp({ email, password, displayName, accountType, avatarKey }, client = getSupabaseClient()) {
+export async function signUp({ email, password, displayName, accountType, avatarKey, couponCode }, client = getSupabaseClient()) {
   try {
-    if (String(password || "").length < 8) throw new Error("Åifre en az 8 karakter olmalÄ±.");
+    if (String(password || "").length < 8) throw new Error("Şifre en az 8 karakter olmalı.");
+    const normalizedCouponCode = String(couponCode || "").trim().toUpperCase();
     const { error } = await client.auth.signUp({
       email,
       password,
-      options: { data: { display_name: displayName, account_type: accountType, avatar_key: avatarKey || "sporty-poma" } }
+      options: {
+        data: {
+          display_name: displayName,
+          account_type: accountType,
+          avatar_key: avatarKey || "sporty-poma",
+          coupon_code: normalizedCouponCode || null
+        }
+      }
     });
     if (error) throw error;
     return restoreAccountSession(client);
@@ -65,7 +73,7 @@ export async function loadChildrenForSession(account, repo = createStudentReposi
 }
 
 export async function activateStudent(account, child, { migrateLegacy = false } = {}, repo = createStudentRepository()) {
-  if (!account?.user?.id || !child?.id) throw new Error("Ã–ÄŸrenci profili seÃ§ilemedi.");
+  if (!account?.user?.id || !child?.id) throw new Error("Öğrenci profili seçilemedi.");
   setActiveStudentId(account.user.id, child.id);
   let remote = null;
   try { remote = await repo.getStudentState(child.id); } catch {}
@@ -87,4 +95,3 @@ export async function resolveTeacherStatus(account, teacherRepo = createTeacherR
   if (!["teacher", "both"].includes(account?.profile?.account_type)) return null;
   return teacherRepo.getTeacherProfile(account.user.id);
 }
-

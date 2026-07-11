@@ -132,6 +132,70 @@ body{min-height:100vh;background:radial-gradient(circle at 80% 0,rgba(91,77,245,
   margin-left:auto;
   margin-right:auto;
 }
+.landing-social-coupon-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:stretch;
+}
+.landing-social-links .button{
+  min-width:9rem;
+}
+.landing-coupon-box{
+  display:inline-flex;
+  align-items:center;
+  gap:.65rem;
+  margin:1rem 0;
+  padding:.75rem 1rem;
+  border:1px dashed rgba(22,33,62,.28);
+  border-radius:1rem;
+  background:rgba(255,255,255,.68);
+  font-weight:800;
+}
+.landing-coupon-box strong{
+  color:var(--primary);
+  font-size:1.2rem;
+  letter-spacing:.04em;
+}
+.landing-coupon-box span{
+  color:var(--muted);
+  font-size:.92rem;
+}
+.landing-payment-section{
+  display:grid;
+  gap:1rem;
+}
+.landing-payment-details{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.85rem;
+}
+.landing-payment-details div{
+  display:grid;
+  gap:.25rem;
+  padding:.9rem 1rem;
+  border:1px solid rgba(22,33,62,.12);
+  border-radius:1rem;
+  background:rgba(255,255,255,.64);
+}
+.landing-payment-details span{
+  color:var(--muted);
+  font-size:.82rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.landing-payment-details strong{
+  overflow-wrap:anywhere;
+}
+.landing-payment-iban{
+  grid-column:1/-1;
+}
+.landing-payment-iban .button{
+  justify-self:start;
+  margin-top:.45rem;
+}
+.landing-payment-actions{
+  margin-top:.25rem;
+}
 .landing-account-panel{
   max-width:1180px;
   margin:0 auto;
@@ -154,8 +218,16 @@ body{min-height:100vh;background:radial-gradient(circle at 80% 0,rgba(91,77,245,
     order:-1;
   }
   .landing-cta-row .button,
-  .landing-final-cta .button{
+  .landing-final-cta .button,
+  .landing-social-links .button,
+  .landing-payment-actions .button{
     width:100%;
+  }
+  .landing-payment-details{
+    grid-template-columns:1fr;
+  }
+  .landing-payment-iban .button{
+    justify-self:stretch;
   }
   .landing-info-card:nth-child(3){
     grid-column:auto;
