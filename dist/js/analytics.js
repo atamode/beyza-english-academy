@@ -2,6 +2,7 @@ const EVENTS = new Set([
   "pricing_section_view", "pricing_plan_selected", "signup_started_from_pricing",
   "membership_page_opened", "payment_request_created", "receipt_upload_completed",
   "parent_report_opened", "parent_report_period_changed", "parent_report_printed"
+  ,"teacher_partner_panel_opened", "teacher_partner_code_copied", "teacher_partner_payment_started", "partner_code_validated"
 ]);
 const PARAMS = new Set(["plan_code", "source", "status", "period_type", "has_data"]);
 

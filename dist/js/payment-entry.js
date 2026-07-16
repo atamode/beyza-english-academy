@@ -125,9 +125,14 @@ document.addEventListener("click",async event=>{
     button.disabled=true; try{const quote=await payments.validateCoupon(form.planCode.value,code);result.className="feedback correct";result.textContent=`Kupon geçerli. İndirim sunucu tarafından uygulandı; ödenecek tutar ${new Intl.NumberFormat("tr-TR",{style:"currency",currency:"TRY"}).format(Number(quote.payable_amount||0))}.`;}
     catch(error){result.className="feedback incorrect";result.textContent=friendlyError(error,"Kupon doğrulanamadı.");}finally{button.disabled=false;} return;
   }
+  if(action==="validate-partner-code"){
+    const form=button.closest("form"),result=form.querySelector("[data-partner-result]"),code=form.partnerCode.value.trim();if(!code){result.textContent="Öğretmen kodu gir.";return;}
+    button.disabled=true;try{const match=await payments.validatePartnerCode(code);if(!match?.valid)throw new Error("invalid");result.className="feedback correct";result.textContent=`Kod doğrulandı${match.display_name?` · ${match.display_name}`:""}. Fiyat değişmedi.`;trackEvent("partner_code_validated",{source:"membership",status:"valid"});}
+    catch(error){result.className="feedback incorrect";result.textContent="Öğretmen kodu geçersiz veya aktif değil.";}finally{button.disabled=false;}return;
+  }
   if(action==="create-payment"){
     const form=button.closest("form"),key=`create:${form.planCode.value}`; if(screen.busy.has(key))return; screen.busy.add(key);button.disabled=true;
-    try{const row=await payments.createPaymentRequest({planCode:form.planCode.value,paymentMethod:form.paymentMethod.value,couponCode:form.couponCode.value.trim()||null});trackEvent("payment_request_created",{plan_code:row.plans?.code||form.planCode.value,source:"membership",status:row.status||"pending"});await renderMembership();const panel=app.querySelector("[data-payment-request]");panel.hidden=false;panel.querySelector("[name=planCode]").value=row.plans?.code||form.planCode.value;panel.querySelector("[data-payment-result]").innerHTML=paymentResult(row);panel.scrollIntoView({behavior:"smooth",block:"center"});}
+    try{const row=await payments.createPaymentRequest({planCode:form.planCode.value,paymentMethod:form.paymentMethod.value,couponCode:form.couponCode.value.trim()||null,partnerCode:form.partnerCode.value.trim()||null});trackEvent("payment_request_created",{plan_code:row.plans?.code||form.planCode.value,source:"membership",status:row.status||"pending"});await renderMembership();const panel=app.querySelector("[data-payment-request]");panel.hidden=false;panel.querySelector("[name=planCode]").value=row.plans?.code||form.planCode.value;panel.querySelector("[data-payment-result]").innerHTML=paymentResult(row);panel.scrollIntoView({behavior:"smooth",block:"center"});}
     catch(error){form.closest("[data-payment-request]").querySelector("[data-payment-result]").innerHTML=`<p class="feedback incorrect">${friendlyError(error)}</p>`;}finally{screen.busy.delete(key);button.disabled=false;} return;
   }
   if(action==="upload-receipt"){

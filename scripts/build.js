@@ -14,9 +14,11 @@ base.splice(base.indexOf("js/student-repository.js"), 0, "js/payment-service.js"
 base.splice(base.indexOf("css/print.css"), 0, "css/payment.css");
 base.splice(base.indexOf("css/print.css"), 0, "css/pricing.css");
 base.splice(base.indexOf("css/print.css"), 0, "css/learning-reports.css");
+base.splice(base.indexOf("css/print.css"), 0, "css/teacher-partner.css");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/payment-config.js", "js/payment-views.js", "js/payment-entry.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/analytics.js", "js/pricing-state.js", "js/pricing-views.js", "js/pricing-entry.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/report-periods.js", "js/learning-report-service.js", "js/learning-report-views.js", "js/learning-report-entry.js");
+base.splice(base.indexOf("js/student-repository.js"), 0, "js/teacher-partner-service.js", "js/teacher-partner-views.js", "js/teacher-partner-entry.js");
 for(const f of base)if(!fs.existsSync(path.join(root,f)))throw new Error(`Build dosyası eksik: ${f}`);
 const version=crypto.createHash("sha256").update(base.map(f=>fs.readFileSync(path.join(root,f))).join("|")).digest("hex").slice(0,12);
 const heavyMediaPrefixes=["assets/games/","assets/stories/","assets/audio/","assets/brand/"];

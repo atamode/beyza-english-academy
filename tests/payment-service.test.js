@@ -12,7 +12,8 @@ test("payment request sends no client-controlled price, owner or status", async 
   const service = createPaymentService(rpcClient(async (name, args) => (call = { name, args }, { data: [{ id: "p1" }], error: null })));
   await service.createPaymentRequest({ planCode: "FAMILY_MONTHLY", paymentMethod: "bank_transfer", listPrice: 1, status: "approved", userId: "other" });
   assert.equal(call.name, "create_payment_request");
-  assert.deepEqual(Object.keys(call.args).sort(), ["p_coupon_code","p_instagram_username","p_payment_method","p_plan_code","p_sender_name","p_transfer_date"].sort());
+  assert.deepEqual(Object.keys(call.args).sort(), ["p_coupon_code","p_instagram_username","p_partner_code","p_payment_method","p_plan_code","p_sender_name","p_transfer_date"].sort());
+  assert.equal(call.args.p_partner_code, null);
 });
 
 test("receipt upload validates type and size before storage", async () => {

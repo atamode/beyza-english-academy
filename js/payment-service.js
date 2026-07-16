@@ -20,7 +20,8 @@ export function createPaymentService(client = getSupabaseClient()) {
       return one(unwrap(await client.rpc("create_payment_request", {
         p_plan_code: input.planCode, p_payment_method: input.paymentMethod,
         p_coupon_code: input.couponCode || null, p_instagram_username: input.instagramUsername || null,
-        p_sender_name: input.senderName || null, p_transfer_date: input.transferDate || null
+        p_sender_name: input.senderName || null, p_transfer_date: input.transferDate || null,
+        p_partner_code: input.partnerCode || null
       }), "Ödeme talebi oluşturulamadı."));
     },
     async uploadPaymentReceipt({ paymentRequestId, userId, file }) {
@@ -49,6 +50,9 @@ export function createPaymentService(client = getSupabaseClient()) {
     },
     async validateCoupon(planCode, couponCode) {
       return one(unwrap(await client.rpc("validate_coupon", { p_plan_code: planCode, p_coupon_code: couponCode }), "Kupon doğrulanamadı."));
+    },
+    async validatePartnerCode(partnerCode) {
+      return one(unwrap(await client.rpc("validate_partner_code", { p_partner_code: partnerCode }), "Öğretmen kodu doğrulanamadı."));
     },
     async approvePayment(paymentRequestId, adminNote = null) {
       return one(unwrap(await client.rpc("approve_payment", { p_payment_request_id: paymentRequestId, p_admin_note: adminNote }), "Ödeme onaylanamadı."));

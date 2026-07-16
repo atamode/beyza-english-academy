@@ -1,6 +1,6 @@
 const KEY = "pomaAcademy.pricing.selection.v1";
 const TTL_MS = 30 * 60 * 1000;
-const PAID_PLAN_CODES = new Set(["FAMILY_MONTHLY", "FAMILY_YEARLY"]);
+const PAID_PLAN_CODES = new Set(["FAMILY_MONTHLY", "FAMILY_YEARLY", "TEACHER_MONTHLY"]);
 
 export function savePricingSelection(planCode, storage = globalThis.sessionStorage, now = Date.now()) {
   if (!PAID_PLAN_CODES.has(planCode)) return false;
