@@ -42,7 +42,7 @@ export function createPaymentService(client = getSupabaseClient()) {
       }), "Instagram bildirimi kaydedilemedi."));
     },
     async listMyPayments(userId) {
-      return unwrap(await client.from("payment_requests").select("*,plans(code,name)").eq("user_id", userId).order("created_at", { ascending: false }), "Ödemeler alınamadı.") || [];
+      return unwrap(await client.from("payment_requests").select("*,plans(code,name,duration_days),payment_receipts(id,original_filename,mime_type,size_bytes,created_at),subscriptions(id,starts_at,ends_at,status)").eq("user_id", userId).order("created_at", { ascending: false }), "Ödemeler alınamadı.") || [];
     },
     async getMySubscription(userId) {
       return one(unwrap(await client.from("subscriptions").select("*,plans(code,name,child_limit)").eq("user_id", userId).eq("status", "active").order("ends_at", { ascending: false }).limit(1).maybeSingle(), "Üyelik alınamadı."));
@@ -58,7 +58,7 @@ export function createPaymentService(client = getSupabaseClient()) {
       return one(unwrap(await client.rpc("reject_payment", { p_payment_request_id: paymentRequestId, p_admin_note: adminNote }), "Ödeme reddedilemedi."));
     },
     async listAdminPayments() {
-      return unwrap(await client.from("payment_requests").select("*,plans(code,name),payment_receipts(*)").order("created_at", { ascending: false }), "Yönetici ödemeleri alınamadı.") || [];
+      return unwrap(await client.rpc("list_admin_payments"), "Yönetici ödemeleri alınamadı.") || [];
     },
     async getReceiptSignedUrl(storagePath, expiresIn = 300) {
       return unwrap(await client.storage.from(RECEIPT_BUCKET).createSignedUrl(storagePath, expiresIn), "Dekont bağlantısı oluşturulamadı.")?.signedUrl;
