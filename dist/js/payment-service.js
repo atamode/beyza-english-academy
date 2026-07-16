@@ -14,7 +14,7 @@ function one(data) { return Array.isArray(data) ? data[0] : data; }
 export function createPaymentService(client = getSupabaseClient()) {
   return {
     async listPlans() {
-      return unwrap(await client.from("plans").select("id,code,name,price,duration_days,child_limit,version").eq("active", true).order("price"), "Planlar alınamadı.") || [];
+      return unwrap(await client.from("plans").select("id,code,name,price,duration_days,child_limit,active,version").eq("active", true).order("price"), "Planlar alınamadı.") || [];
     },
     async createPaymentRequest(input) {
       return one(unwrap(await client.rpc("create_payment_request", {

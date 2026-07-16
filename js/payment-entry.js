@@ -2,6 +2,8 @@ import { getRoute, navigate } from "./router.js";
 import { getSupabaseClient } from "./supabase-client.js";
 import { createPaymentService } from "./payment-service.js";
 import { adminPaymentsView, formatBytes, isAdminUser, paymentCenterView, paymentResult, validateReceiptFile } from "./payment-views.js";
+import { trackEvent } from "./analytics.js";
+import { consumePricingSelection } from "./pricing-state.js";
 
 const app = document.querySelector("#app");
 const client = getSupabaseClient();
@@ -48,6 +50,7 @@ async function renderMembership() {
       payments.listPlans(), payments.listMyPayments(user.id), payments.getMySubscription(user.id)
     ]);
     app.innerHTML = paymentCenterView({ plans:screen.plans, payments:screen.paymentRows, subscription:screen.subscription });
+    const selectedPlan=consumePricingSelection();trackEvent("membership_page_opened",{plan_code:selectedPlan||undefined,source:selectedPlan?"pricing":"account"});if(selectedPlan)openPlanSelection(selectedPlan);
     app.focus();
   } catch (error) { app.innerHTML=`<section class="card"><h1>Üyelik bilgileri yüklenemedi</h1><p>${friendlyError(error)}</p><button class="button secondary" data-action="reload-membership">Yeniden dene</button></section>`; }
 }
@@ -63,6 +66,13 @@ async function renderAdmin() {
 }
 
 function renderAdminRows(){app.innerHTML=adminPaymentsView(screen.adminRows,screen.adminFilter);app.focus();}
+
+function openPlanSelection(planCode) {
+  const plan=screen.plans.find(x=>x.code===planCode);if(!plan||plan.code==="FREE_STARTER")return false;
+  const panel=app.querySelector("[data-payment-request]");if(!panel)return false;panel.hidden=false;panel.querySelector("[name=planCode]").value=plan.code;panel.querySelector("[data-request-title]").textContent=`${plan.name} ödeme talebi`;
+  let note=panel.querySelector("[data-membership-extension-note]");if(screen.subscription&&!note){note=document.createElement("p");note.dataset.membershipExtensionNote="";note.className="feedback correct";note.textContent="Mevcut üyeliğinize süre eklenecektir.";panel.querySelector("[data-request-title]").after(note);}
+  panel.scrollIntoView({behavior:"smooth",block:"center"});return true;
+}
 
 async function routePaymentPage() {
   const route=getRoute();
@@ -108,8 +118,7 @@ document.addEventListener("click",async event=>{
     if(status){status.className=`copy-status feedback ${copied?"correct":"incorrect"}`;status.textContent=copied?(action==="copy-iban"?"IBAN kopyalandı.":"Ödeme kodu kopyalandı."):"Kopyalanamadı. Bilgiyi seçip elle kopyalayabilirsiniz.";} return;
   }
   if(action==="select-payment-plan"){
-    const plan=screen.plans.find(x=>x.code===button.dataset.planCode); if(!plan || plan.code==="FREE_STARTER")return;
-    const panel=app.querySelector("[data-payment-request]"); panel.hidden=false; panel.querySelector("[name=planCode]").value=plan.code; panel.querySelector("[data-request-title]").textContent=`${plan.name} ödeme talebi`; panel.scrollIntoView({behavior:"smooth",block:"center"}); return;
+    openPlanSelection(button.dataset.planCode);return;
   }
   if(action==="validate-coupon"){
     const form=button.closest("form"),result=form.querySelector("[data-coupon-result]"),code=form.couponCode.value.trim(); if(!code){result.textContent="Kupon kodu gir.";return;}
@@ -118,13 +127,13 @@ document.addEventListener("click",async event=>{
   }
   if(action==="create-payment"){
     const form=button.closest("form"),key=`create:${form.planCode.value}`; if(screen.busy.has(key))return; screen.busy.add(key);button.disabled=true;
-    try{const row=await payments.createPaymentRequest({planCode:form.planCode.value,paymentMethod:form.paymentMethod.value,couponCode:form.couponCode.value.trim()||null});await renderMembership();const panel=app.querySelector("[data-payment-request]");panel.hidden=false;panel.querySelector("[name=planCode]").value=row.plans?.code||form.planCode.value;panel.querySelector("[data-payment-result]").innerHTML=paymentResult(row);panel.scrollIntoView({behavior:"smooth",block:"center"});}
+    try{const row=await payments.createPaymentRequest({planCode:form.planCode.value,paymentMethod:form.paymentMethod.value,couponCode:form.couponCode.value.trim()||null});trackEvent("payment_request_created",{plan_code:row.plans?.code||form.planCode.value,source:"membership",status:row.status||"pending"});await renderMembership();const panel=app.querySelector("[data-payment-request]");panel.hidden=false;panel.querySelector("[name=planCode]").value=row.plans?.code||form.planCode.value;panel.querySelector("[data-payment-result]").innerHTML=paymentResult(row);panel.scrollIntoView({behavior:"smooth",block:"center"});}
     catch(error){form.closest("[data-payment-request]").querySelector("[data-payment-result]").innerHTML=`<p class="feedback incorrect">${friendlyError(error)}</p>`;}finally{screen.busy.delete(key);button.disabled=false;} return;
   }
   if(action==="upload-receipt"){
     const panel=button.closest(".receipt-panel"),file=panel.querySelector("[data-receipt-file]").files?.[0],status=panel.querySelector("[data-receipt-status]"),progress=panel.querySelector("[data-upload-progress]"),key=`upload:${button.dataset.paymentId}`;
     try{validateReceiptFile(file);}catch(error){status.className="feedback incorrect";status.textContent=error.message;return;} if(screen.busy.has(key))return;screen.busy.add(key);button.disabled=true;progress.value=10;
-    try{await payments.uploadPaymentReceipt({paymentRequestId:button.dataset.paymentId,userId:screen.userId,file});progress.value=100;status.className="feedback correct";status.textContent="Dekont güvenli biçimde yüklendi. İnceleme bekleniyor.";setTimeout(renderMembership,500);}
+    try{await payments.uploadPaymentReceipt({paymentRequestId:button.dataset.paymentId,userId:screen.userId,file});const payment=screen.paymentRows.find(row=>String(row.id)===String(button.dataset.paymentId));trackEvent("receipt_upload_completed",{plan_code:payment?.plans?.code,source:"membership",status:"receipt_sent"});progress.value=100;status.className="feedback correct";status.textContent="Dekont güvenli biçimde yüklendi. İnceleme bekleniyor.";setTimeout(renderMembership,500);}
     catch(error){progress.value=0;status.className="feedback incorrect";status.textContent=friendlyError(error,"Dekont yüklenemedi.");}finally{screen.busy.delete(key);button.disabled=false;}return;
   }
   if(action==="instagram-sent"){
