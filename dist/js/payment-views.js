@@ -50,8 +50,8 @@ export function paymentCenterView({ plans, subscription, payments }) {
 }
 
 export function paymentResult(row, instructions = PAYMENT_INSTRUCTIONS) {
-  const bank = hasPaymentInstructions(instructions) ? `<dl><div><dt>Banka</dt><dd>${e(instructions.bankName)}</dd></div><div><dt>Hesap sahibi</dt><dd>${e(instructions.accountHolder)}</dd></div><div><dt>IBAN</dt><dd>${e(instructions.iban)}</dd></div></dl>` : `<p class="feedback incorrect">Banka bilgileri henüz tanımlanmadı.</p>`;
-  return `<article class="payment-created"><p class="feedback correct">✅ Ödeme talebin oluşturuldu.</p><h3>Ödeme kodun: <span class="payment-code">${e(row.payment_code)}</span></h3><p>Ödenecek nihai tutar: <strong>${money(row.payable_amount)}</strong></p><p>Havale açıklamasına mutlaka <strong>${e(row.payment_code)}</strong> yaz.</p>${Number(row.payable_amount) === 0 ? `<p>Bu talep ödeme gerektirmiyor; üyelik incelemesi bekleniyor.</p>` : bank}</article>`;
+  const bank = hasPaymentInstructions(instructions) ? `<section class="bank-transfer-card" aria-labelledby="bank-transfer-title"><p class="eyebrow">GÜVENLİ MANUEL ÖDEME</p><h3 id="bank-transfer-title">Banka Havale Bilgileri</h3><dl><div><dt>Banka adı</dt><dd>${e(instructions.bankName)}</dd></div><div><dt>Hesap sahibi</dt><dd>${e(instructions.accountHolder)}</dd></div><div><dt>IBAN</dt><dd class="bank-copy-row"><span data-copy-iban-value>${e(formatIban(instructions.iban))}</span><button type="button" class="button secondary" data-action="copy-iban">IBAN’ı Kopyala</button></dd></div><div><dt>Ödenecek tutar</dt><dd>${money(row.payable_amount)}</dd></div><div><dt>Ödeme kodu</dt><dd class="bank-copy-row"><span class="payment-code" data-copy-payment-code>${e(row.payment_code)}</span><button type="button" class="button secondary" data-action="copy-payment-code">Ödeme Kodunu Kopyala</button></dd></div></dl><p class="bank-transfer-warning">Havale/EFT açıklama alanına bu ödeme kodunu yazın: <strong>${e(row.payment_code)}</strong></p><p class="meta">Ödeme yaptıktan sonra dekontu site üzerinden yüklemenizi öneririz. Dekont göndermek ödeme onayı anlamına gelmez; üyeliğiniz yönetici ödemeyi onayladıktan sonra açılır.</p><p class="copy-status" data-copy-status aria-live="polite"></p></section>` : `<p class="feedback incorrect">Banka bilgileri henüz tanımlanmadı.</p>`;
+  return `<article class="payment-created"><p class="feedback correct">✅ Ödeme talebin oluşturuldu.</p>${Number(row.payable_amount) === 0 ? `<p>Bu talep ödeme gerektirmiyor; üyelik incelemesi bekleniyor.</p>` : bank}</article>`;
 }
 
 export function adminPaymentsView(rows, { status="pending", search="" } = {}) {
@@ -65,6 +65,7 @@ function adminRow(row) {
 }
 
 export function formatBytes(bytes) { const n=Number(bytes||0); return n<1024?`${n} B`:n<1048576?`${(n/1024).toFixed(1)} KB`:`${(n/1048576).toFixed(1)} MB`; }
+export function formatIban(value) { return String(value || "").replace(/\s+/g, "").replace(/(.{4})(?=.)/g, "$1 "); }
 export function validateReceiptFile(file) {
   if (!file || !["application/pdf","image/jpeg","image/png"].includes(file.type)) throw new Error("PDF, JPG veya PNG dosyası seç.");
   if (!file.size || file.size > 10*1024*1024) throw new Error("Dosya en fazla 10 MB olabilir.");

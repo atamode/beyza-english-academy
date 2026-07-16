@@ -27,6 +27,16 @@ function friendlyError(error, fallback="İşlem tamamlanamadı. Lütfen tekrar d
   return fallback;
 }
 
+async function copyText(value) {
+  try {
+    if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(value); return true; }
+  } catch {}
+  let field;
+  try {
+    field=document.createElement("textarea");field.value=value;field.readOnly=true;field.setAttribute("aria-hidden","true");field.style.position="fixed";field.style.opacity="0";document.body.append(field);field.select();return document.execCommand("copy");
+  } catch { return false; } finally { field?.remove(); }
+}
+
 async function renderMembership() {
   const user = await currentUser();
   if (!user) return navigate("login");
@@ -92,6 +102,11 @@ document.addEventListener("click",async event=>{
   const button=event.target.closest("[data-action]"); if(!button) return;
   const action=button.dataset.action;
   if(action==="reload-membership") return renderMembership(); if(action==="reload-admin") return renderAdmin();
+  if(action==="copy-iban"||action==="copy-payment-code"){
+    const card=button.closest(".bank-transfer-card"),status=card?.querySelector("[data-copy-status]"),source=card?.querySelector(action==="copy-iban"?"[data-copy-iban-value]":"[data-copy-payment-code]");
+    const value=action==="copy-iban"?(source?.textContent || "").replace(/\s+/g,""):(source?.textContent || "").trim();const copied=value?await copyText(value):false;
+    if(status){status.className=`copy-status feedback ${copied?"correct":"incorrect"}`;status.textContent=copied?(action==="copy-iban"?"IBAN kopyalandı.":"Ödeme kodu kopyalandı."):"Kopyalanamadı. Bilgiyi seçip elle kopyalayabilirsiniz.";} return;
+  }
   if(action==="select-payment-plan"){
     const plan=screen.plans.find(x=>x.code===button.dataset.planCode); if(!plan || plan.code==="FREE_STARTER")return;
     const panel=app.querySelector("[data-payment-request]"); panel.hidden=false; panel.querySelector("[name=planCode]").value=plan.code; panel.querySelector("[data-request-title]").textContent=`${plan.name} ödeme talebi`; panel.scrollIntoView({behavior:"smooth",block:"center"}); return;
