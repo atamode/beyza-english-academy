@@ -1,4 +1,4 @@
-const CACHE="beyza-english-457f4929aefd";
+const CACHE="beyza-english-794e02fb674d";
 const ASSETS=[
   "./",
   "index.html",
@@ -19,6 +19,7 @@ const ASSETS=[
   "js/account-config.js",
   "js/account-storage.js",
   "js/supabase-client.js",
+  "js/payment-service.js",
   "js/student-repository.js",
   "js/teacher-repository.js",
   "js/sync-engine.js",

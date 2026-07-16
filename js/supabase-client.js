@@ -123,12 +123,38 @@ export function createPomaSupabaseClient(config = SUPABASE_CONFIG, fetchImpl = g
     }
   }
 
+  const storageApi = {
+    from(bucket) {
+      return {
+        async upload(path, file, options = {}) {
+          try {
+            const data = await request(`/storage/v1/object/${encodeURIComponent(bucket)}/${path.split("/").map(encodeURIComponent).join("/")}`, {
+              method: "POST",
+              headers: { "Content-Type": options.contentType || file?.type || "application/octet-stream", "x-upsert": "false" },
+              body: file
+            });
+            return { data, error: null };
+          } catch (error) { return { data: null, error }; }
+        },
+        async createSignedUrl(path, expiresIn = 300) {
+          try {
+            const data = await request(`/storage/v1/object/sign/${encodeURIComponent(bucket)}/${path.split("/").map(encodeURIComponent).join("/")}`, {
+              method: "POST", body: JSON.stringify({ expiresIn })
+            });
+            return { data: { signedUrl: data?.signedURL || data?.signedUrl }, error: null };
+          } catch (error) { return { data: null, error }; }
+        }
+      };
+    }
+  };
+
   return {
     config,
     options: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
     auth,
     from,
-    rpc
+    rpc,
+    storage: storageApi
   };
 }
 
