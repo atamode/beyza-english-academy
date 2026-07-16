@@ -137,23 +137,6 @@ function publicLandingView(){return `
     </article>
   </section>
 
-  <section class="landing-section card landing-payment-section">
-    <p class="eyebrow">ÜYELİK VE ÖDEME</p>
-    <h2>Havale/EFT ile üyelik aktivasyonu</h2>
-    <p>Önce ücretsiz kayıt olun. Devam etmek istediğinizde aşağıdaki IBAN'a havale/EFT yapın; açıklama kısmına kayıt olduğunuz e-posta adresini yazın. Ödeme kontrolünden sonra hesabınız manuel olarak aktifleştirilir.</p>
-    <div class="landing-payment-details">
-      <div><span>Alıcı adı</span><strong>Nurettin Ata Çetinkayalı</strong></div>
-      <div><span>Banka</span><strong>Garanti BBVA</strong></div>
-      <div class="landing-payment-iban"><span>IBAN</span><strong>TR81 0006 2001 1470 0006 6804 17</strong><button class="button secondary" type="button" data-action="copy-iban" data-copy-value="TR810006200114700006680417" data-event="copy_iban_click">IBAN'ı Kopyala</button></div>
-      <div><span>Ödeme açıklaması</span><strong>Poma Academy - kayıt e-postanız</strong></div>
-    </div>
-    <p class="landing-trust-note">Dekontu Instagram DM üzerinden @pomantekingdom hesabına gönderebilirsiniz.</p>
-    <div class="button-row landing-payment-actions">
-      <a class="button secondary" href="https://www.instagram.com/pomantekingdom/" target="_blank" rel="noopener noreferrer" data-event="payment_instagram_click">Dekontu Instagram'dan Gönder</a>
-      <button class="button primary" data-route="signup" data-event="payment_signup_click">Kayıt Ol</button>
-    </div>
-  </section>
-
   <section class="landing-section card">
     <p class="eyebrow">SIK SORULAN SORULAR</p>
     <h2>Sık sorulan sorular</h2>
@@ -202,10 +185,6 @@ function bindLandingEvents(){
   app.querySelector("[data-action='coupon-signup']")?.addEventListener("click",()=>{
     try{sessionStorage.setItem("pomaAcademy.signup.coupon","POMA10")}catch{}
   });
-  app.querySelectorAll("[data-copy-value]").forEach(button=>button.addEventListener("click",async()=>{
-    const value=button.dataset.copyValue||"";
-    try{await navigator.clipboard?.writeText(value);showToast("IBAN kopyalandı.")}catch{showToast(value||"Kopyalanacak bilgi bulunamadı.")}
-  }));
   app.querySelectorAll("[data-event]").forEach(el=>el.addEventListener("click",()=>{
     const detail={event:el.dataset.event,route:getRoute(),label:(el.textContent||"").trim(),href:el.getAttribute("href")||"",coupon:el.dataset.coupon||""};
     window.dispatchEvent(new CustomEvent("poma-analytics-event",{detail}));

@@ -17,9 +17,10 @@ async function loadPricing() {
 }
 
 function injectPricing() {
-  if(getRoute()!=="home"||!app.querySelector(".account-auth")||app.querySelector("[data-pricing-section]"))return;
+  if(getRoute()!=="home"||app.querySelector("[data-pricing-section]"))return;
+  const anchor=app.querySelector(".seo-landing .landing-hero");if(!anchor)return;
   const host=document.createElement("div");host.innerHTML=pricingSectionShell();const section=host.firstElementChild;
-  app.querySelector(".account-auth").insertAdjacentElement("afterend",section);loadPricing();
+  anchor.insertAdjacentElement("afterend",section);loadPricing();
   if(!viewTracked){viewTracked=true;trackEvent("pricing_section_view",{source:"landing"});}
 }
 

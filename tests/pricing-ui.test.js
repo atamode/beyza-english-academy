@@ -11,12 +11,18 @@ const plans=[
   {code:"FAMILY_YEARLY",name:"Aile Yıllık",price:3000,duration_days:365,child_limit:2,active:true}
 ];
 const entry=fs.readFileSync(new URL("../js/pricing-entry.js",import.meta.url),"utf8");
+const distEntry=fs.readFileSync(new URL("../dist/js/pricing-entry.js",import.meta.url),"utf8");
+const appSource=fs.readFileSync(new URL("../js/app.js",import.meta.url),"utf8");
+const distAppSource=fs.readFileSync(new URL("../dist/js/app.js",import.meta.url),"utf8");
 const paymentEntry=fs.readFileSync(new URL("../js/payment-entry.js",import.meta.url),"utf8");
 const pricingSource=fs.readFileSync(new URL("../js/pricing-views.js",import.meta.url),"utf8");
 const analyticsSource=fs.readFileSync(new URL("../js/analytics.js",import.meta.url),"utf8");
 const memory=()=>{const map=new Map();return{setItem:(k,v)=>map.set(k,v),getItem:k=>map.get(k)||null,removeItem:k=>map.delete(k)}};
 
 test("landing pricing loads live plan fields through listPlans without hard-coded prices",()=>{const service=fs.readFileSync(new URL("../js/payment-service.js",import.meta.url),"utf8");assert.match(entry,/payments\.listPlans\(\)/);assert.match(service,/name,price,duration_days,child_limit,active/);assert.doesNotMatch(entry,/299|1990|1\.990/);assert.doesNotMatch(pricingSource,/299|1990|1\.990/);});
+test("legacy landing payment block is absent from source and dist",()=>{for(const source of [appSource,distAppSource]){assert.doesNotMatch(source,/landing-payment-section|payment_instagram_click|payment_signup_click|copy_iban_click|data-copy-value/);assert.doesNotMatch(source,/TR81\s*0006\s*2001\s*1470\s*0006\s*6804\s*17/);}});
+test("pricing is inserted directly after the landing hero",()=>{for(const source of [entry,distEntry]){assert.match(source,/getRoute\(\)!=="home"\|\|app\.querySelector\("\[data-pricing-section\]"\)/);assert.match(source,/app\.querySelector\("\.seo-landing \.landing-hero"\)/);assert.match(source,/anchor\.insertAdjacentElement\("afterend",section\)/);assert.doesNotMatch(source,/account-auth/);}});
+test("changed source and dist runtime files are identical",()=>{assert.equal(entry,distEntry);assert.equal(appSource,distAppSource);});
 test("three plans render with correct Turkish names and accessible CTAs",()=>{const html=pricingPlansView(plans);for(const label of ["Ücretsiz Başlangıç","Aile Aylık","Aile Yıllık","Ücretsiz Başla","Aylık Üyeliği Seç","Yıllık Üyeliği Seç"])assert.match(html,new RegExp(label));assert.equal((html.match(/data-pricing-plan=/g)||[]).length,3);});
 test("FREE_STARTER never enters paid selection state",()=>{const storage=memory();assert.equal(savePricingSelection("FREE_STARTER",storage,100),false);assert.equal(readPricingSelection(storage,100),null);assert.match(entry,/if\(planCode==="FREE_STARTER"\)[\s\S]{0,180}navigate\("signup"\)/);});
 test("monthly and yearly CTA selections survive briefly and are consumed once",()=>{for(const code of ["FAMILY_MONTHLY","FAMILY_YEARLY"]){const storage=memory();assert.equal(savePricingSelection(code,storage,100),true);assert.equal(readPricingSelection(storage,101),code);assert.equal(consumePricingSelection(storage,101),code);assert.equal(readPricingSelection(storage,101),null);}});
