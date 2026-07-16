@@ -2,12 +2,16 @@ import { hasPaymentInstructions, PAYMENT_INSTRUCTIONS } from "./payment-config.j
 
 const e = value => String(value ?? "").replace(/[&<>\"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 const money = value => new Intl.NumberFormat("tr-TR", { style:"currency", currency:"TRY" }).format(Number(value || 0));
-const date = value => value ? new Intl.DateTimeFormat("tr-TR", { dateStyle:"medium", timeStyle:"short" }).format(new Date(value)) : "—";
+const date = value => value ? new Intl.DateTimeFormat("tr-TR", { dateStyle:"long" }).format(new Date(value)) : "—";
 const daysLeft = value => value ? Math.max(0, Math.ceil((new Date(value) - Date.now()) / 86400000)) : 0;
 const STATUS = {
-  pending:["⏳","Ödeme bekleniyor"], receipt_sent:["🔎","Dekont gönderildi · inceleme bekleniyor"],
+  active:["✅","Aktif"], pending:["⏳","Ödeme bekleniyor"], receipt_sent:["🔎","İnceleme bekleniyor"],
   approved:["✅","Onaylandı"], rejected:["❌","Reddedildi"]
 };
+const PLAN_NAMES = {
+  FREE_STARTER:"Ücretsiz Başlangıç", FAMILY_MONTHLY:"Aile Aylık", FAMILY_YEARLY:"Aile Yıllık"
+};
+const planName = plan => PLAN_NAMES[plan?.code] || plan?.name || "Plan";
 
 export function isAdminUser(user) {
   return user?.app_metadata?.role === "admin" && user?.app_metadata?.is_admin === true;
@@ -19,20 +23,21 @@ export function planCards(plans) {
     const free = plan.code === "FREE_STARTER";
     const yearlySaving = plan.code === "FAMILY_YEARLY" && monthly ? Math.max(0, Number(monthly.price) * 12 - Number(plan.price)) : 0;
     const duration = plan.duration_days ? (plan.code === "FAMILY_YEARLY" ? "12 ay" : `${plan.duration_days} gün`) : "Ücretsiz erişim";
-    return `<article class="card payment-plan" data-plan-code="${e(plan.code)}"><p class="eyebrow">${e(plan.code)}</p><h3>${e(plan.name)}</h3><strong class="payment-price">${money(plan.price)}</strong><p>${duration}${free ? "" : " · mevcut sürenin üzerine eklenir"}</p>${yearlySaving ? `<p class="feedback correct">Aylık plana göre ${money(yearlySaving)} avantaj</p>` : ""}${free ? `<p class="meta">Manuel ödeme gerekmez.</p>` : `<button class="button primary" data-action="select-payment-plan" data-plan-code="${e(plan.code)}">Bu planı seç</button>`}</article>`;
+    return `<article class="card payment-plan" data-plan-code="${e(plan.code)}"><p class="eyebrow">ÜYELİK PLANI</p><h3>${e(planName(plan))}</h3><strong class="payment-price">${money(plan.price)}</strong><p>${duration}${free ? "" : " · mevcut sürenin üzerine eklenir"}</p>${yearlySaving ? `<p class="feedback correct">Aylık plana göre ${money(yearlySaving)} avantaj</p>` : ""}${free ? `<p class="meta">Manuel ödeme gerekmez.</p>` : `<button class="button primary" data-action="select-payment-plan" data-plan-code="${e(plan.code)}">Bu planı seç</button>`}</article>`;
   }).join("");
 }
 
 export function subscriptionCard(subscription) {
   if (!subscription) return `<article class="card membership-summary"><p class="eyebrow">AKTİF ÜYELİK</p><h2>Ücretli üyelik bulunmuyor</h2><p>Ücretsiz içeriklerden yararlanabilir veya aile planı seçebilirsin.</p></article>`;
-  return `<article class="card membership-summary"><p class="eyebrow">AKTİF ÜYELİK</p><h2>${e(subscription.plans?.name || "Üyelik")}</h2><div class="payment-facts"><span>Durum <strong>✅ ${e(subscription.status)}</strong></span><span>Başlangıç <strong>${date(subscription.starts_at)}</strong></span><span>Bitiş <strong>${date(subscription.ends_at)}</strong></span><span>Kalan <strong>${daysLeft(subscription.ends_at)} gün</strong></span></div></article>`;
+  const status = STATUS[subscription.status] || ["ℹ️","Bilinmiyor"];
+  return `<article class="card membership-summary"><p class="eyebrow">AKTİF ÜYELİK</p><h2>Aktif Aile Üyeliği</h2><div class="payment-facts"><span>Durum <strong>${status[0]} ${e(status[1])}</strong></span><span>Başlangıç <strong>${date(subscription.starts_at)}</strong></span><span>Bitiş <strong>${date(subscription.ends_at)}</strong></span><span>Kalan <strong>${daysLeft(subscription.ends_at)} gün</strong></span></div></article>`;
 }
 
 export function paymentHistory(payments) {
   if (!payments.length) return `<article class="card"><h2>Ödeme geçmişi</h2><p>Henüz ödeme talebi yok.</p></article>`;
   return `<section class="payment-history"><h2>Ödeme geçmişi</h2>${payments.map(row => {
     const status = STATUS[row.status] || ["ℹ️",row.status]; const receipt = row.payment_receipts?.[0]; const sub = row.subscriptions?.[0];
-    return `<article class="card payment-history-row" data-payment-id="${e(row.id)}"><div><span class="status-badge status-${e(row.status)}">${status[0]} ${e(status[1])}</span><h3>${e(row.payment_code)}</h3><p>${e(row.plans?.name || "Plan")} · ${money(row.payable_amount)}</p></div><dl><div><dt>Oluşturuldu</dt><dd>${date(row.created_at)}</dd></div><div><dt>Sonuçlandı</dt><dd>${date(row.reviewed_at)}</dd></div><div><dt>Yöntem</dt><dd>${row.payment_method === "instagram" ? "Instagram" : "Site içi dekont / Havale"}</dd></div><div><dt>Dekont</dt><dd>${receipt ? `${e(receipt.original_filename)} · ${formatBytes(receipt.size_bytes)}` : "Henüz yok"}</dd></div><div><dt>Üyelik süresi</dt><dd>${sub ? `${date(sub.starts_at)} – ${date(sub.ends_at)}` : "—"}</dd></div></dl>${row.admin_note ? `<p class="feedback incorrect"><strong>Yönetici notu:</strong> ${e(row.admin_note)}</p>` : ""}${["pending","receipt_sent"].includes(row.status) ? receiptUpload(row) : ""}</article>`;
+    return `<article class="card payment-history-row" data-payment-id="${e(row.id)}"><div><span class="status-badge status-${e(row.status)}">${status[0]} ${e(status[1])}</span><h3>${e(row.payment_code)}</h3><p>${e(planName(row.plans))} · ${money(row.payable_amount)}</p></div><dl><div><dt>Oluşturuldu</dt><dd>${date(row.created_at)}</dd></div><div><dt>Sonuçlandı</dt><dd>${date(row.reviewed_at)}</dd></div><div><dt>Yöntem</dt><dd>${row.payment_method === "instagram" ? "Instagram" : "Site içi dekont / Havale"}</dd></div><div><dt>Dekont</dt><dd>${receipt ? `${e(receipt.original_filename)} · ${formatBytes(receipt.size_bytes)}` : "Henüz yok"}</dd></div><div><dt>Üyelik süresi</dt><dd>${sub ? `${date(sub.starts_at)} – ${date(sub.ends_at)}` : "—"}</dd></div></dl>${row.admin_note ? `<p class="feedback incorrect"><strong>Yönetici notu:</strong> ${e(row.admin_note)}</p>` : ""}${["pending","receipt_sent"].includes(row.status) ? receiptUpload(row) : ""}</article>`;
   }).join("")}</section>`;
 }
 
