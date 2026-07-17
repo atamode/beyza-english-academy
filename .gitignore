@@ -32,3 +32,6 @@ build/cache/
 .cache/
 tmp/
 temp/
+
+# Local guarded live E2E credentials
+.env.e2e.local
