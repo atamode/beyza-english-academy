@@ -4,11 +4,28 @@ import { createPaymentService } from "./payment-service.js";
 import { adminPaymentsView, formatBytes, isAdminUser, paymentCenterView, paymentResult, validateReceiptFile } from "./payment-views.js";
 import { trackEvent } from "./analytics.js";
 import { consumePricingSelection } from "./pricing-state.js";
+import { capturePartnerAttribution, clearPartnerAttribution, readPartnerAttribution } from "./partner-attribution.js";
 
 const app = document.querySelector("#app");
 const client = getSupabaseClient();
 const payments = createPaymentService(client);
 let screen = { userId:null, plans:[], paymentRows:[], subscription:null, adminRows:[], adminFilter:{ status:"pending", search:"" }, busy:new Set() };
+let capturedInvite = readPartnerAttribution();
+
+function showInviteCaptured(invite=capturedInvite) {
+  if (!invite || !["signup","login"].includes(getRoute())) return;
+  const card=app.querySelector(".account-auth .card");if(!card||card.querySelector("[data-partner-invite]"))return;
+  const notice=document.createElement("p");notice.className="feedback correct";notice.dataset.partnerInvite="";
+  notice.textContent=`Öğretmen davet kodu kaydedildi${invite.displayName?` · ${invite.displayName}`:""}. Üyelik işleminizde otomatik kullanılacaktır.`;
+  card.querySelector("h1")?.after(notice);
+}
+async function hydratePartnerCode() {
+  const invite=readPartnerAttribution(),form=app.querySelector("[data-payment-form]");if(!invite||!form)return;
+  const input=form.partnerCode,result=form.querySelector("[data-partner-result]");input.value=invite.code;result.textContent="Öğretmen davet kodu doğrulanıyor…";
+  try{const match=await payments.validatePartnerCode(invite.code);if(!match?.valid)throw new Error("invalid");result.className="feedback correct";result.textContent=`Kod doğrulandı${match.display_name?` · ${match.display_name}`:""}. Fiyat değişmedi.`;}
+  catch{clearPartnerAttribution(invite.code);input.value="";result.className="feedback incorrect";result.textContent="Öğretmen kodu geçersiz veya aktif değil.";}
+}
+capturePartnerAttribution(code=>payments.validatePartnerCode(code)).then(invite=>{capturedInvite=invite;showInviteCaptured(invite)}).catch(()=>{});
 
 function clearSensitiveState() {
   screen = { userId:null, plans:[], paymentRows:[], subscription:null, adminRows:[], adminFilter:{ status:"pending", search:"" }, busy:new Set() };
@@ -50,6 +67,7 @@ async function renderMembership() {
       payments.listPlans(), payments.listMyPayments(user.id), payments.getMySubscription(user.id)
     ]);
     app.innerHTML = paymentCenterView({ plans:screen.plans, payments:screen.paymentRows, subscription:screen.subscription });
+    await hydratePartnerCode();
     const selectedPlan=consumePricingSelection();trackEvent("membership_page_opened",{plan_code:selectedPlan||undefined,source:selectedPlan?"pricing":"account"});if(selectedPlan)openPlanSelection(selectedPlan);
     app.focus();
   } catch (error) { app.innerHTML=`<section class="card"><h1>Üyelik bilgileri yüklenemedi</h1><p>${friendlyError(error)}</p><button class="button secondary" data-action="reload-membership">Yeniden dene</button></section>`; }
@@ -92,7 +110,7 @@ async function injectAccountLinks() {
 
 window.addEventListener("hashchange",()=>queueMicrotask(routePaymentPage));
 setTimeout(routePaymentPage,0);
-new MutationObserver(()=>{if(getRoute()==="account")injectAccountLinks();}).observe(app,{childList:true});
+new MutationObserver(()=>{if(getRoute()==="account")injectAccountLinks();showInviteCaptured();}).observe(app,{childList:true});
 
 document.addEventListener("change",event=>{
   if(event.target.matches("[data-receipt-file]")){

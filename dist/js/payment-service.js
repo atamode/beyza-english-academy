@@ -1,4 +1,5 @@
 import { getSupabaseClient } from "./supabase-client.js";
+import { clearPartnerAttribution, normalizePartnerCode } from "./partner-attribution.js";
 
 const RECEIPT_BUCKET = "payment-receipts";
 const MIME_TYPES = new Set(["application/pdf", "image/jpeg", "image/png"]);
@@ -17,12 +18,15 @@ export function createPaymentService(client = getSupabaseClient()) {
       return unwrap(await client.from("plans").select("id,code,name,price,duration_days,child_limit,active,version").eq("active", true).order("price"), "Planlar alınamadı.") || [];
     },
     async createPaymentRequest(input) {
-      return one(unwrap(await client.rpc("create_payment_request", {
+      const partnerCode = ["FAMILY_MONTHLY", "FAMILY_YEARLY"].includes(input.planCode) ? normalizePartnerCode(input.partnerCode) : "";
+      const row = one(unwrap(await client.rpc("create_payment_request", {
         p_plan_code: input.planCode, p_payment_method: input.paymentMethod,
         p_coupon_code: input.couponCode || null, p_instagram_username: input.instagramUsername || null,
         p_sender_name: input.senderName || null, p_transfer_date: input.transferDate || null,
-        p_partner_code: input.partnerCode || null
+        p_partner_code: partnerCode || null
       }), "Ödeme talebi oluşturulamadı."));
+      if (partnerCode) clearPartnerAttribution(partnerCode);
+      return row;
     },
     async uploadPaymentReceipt({ paymentRequestId, userId, file }) {
       if (!paymentRequestId || !userId || !file) throw new Error("Dekont bilgileri eksik.");
