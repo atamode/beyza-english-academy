@@ -6,14 +6,14 @@ Bu kayıt, `gzsrcjovhhlfpvvpucri` projesinin canlı `public` şemasında 18 Temm
 
 | Ölçüm | Sonuç |
 |---|---:|
-| SECURITY DEFINER toplamı | 51 |
+| SECURITY DEFINER toplamı | 52 |
 | PUBLIC execute | 0 |
 | anon execute | 0 |
-| authenticated execute | 38 |
+| authenticated execute | 39 |
 | service_role execute | 1 |
 | Internal-only | 12 |
 | search_path eksik | 0 |
-| search_path boş (`''`) | 24 |
+| search_path boş (`''`) | 25 |
 | search_path `public` | 26 |
 | search_path `pg_catalog` | 1 |
 
@@ -33,6 +33,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | `approve_payment` | `p_payment_request_id uuid, p_admin_note text` | Ödemeyi onaylama giriş noktası | authenticated | Dolaylı: `review_payment` → `is_poma_admin()` | public | Tek ödeme; abonelik/referral/kredi/komisyon yan etkileri | Yüksek | Koru; dolaylı kontrol doğrulandı |
 | `reject_payment` | `p_payment_request_id uuid, p_admin_note text` | Ödemeyi reddetme giriş noktası | authenticated | Dolaylı: `review_payment` → `is_poma_admin()` | public | Tek ödeme | Yüksek | Koru; dolaylı kontrol doğrulandı |
 | `list_admin_commission_payouts` | `p_status text` | Yönetici payout listesini döndürür | authenticated | Doğrudan `is_poma_admin()` | boş | Filtreli payout ve bağlı kazanç sayısı | Orta | Koru |
+| `list_admin_audit_log` | `p_action text, p_entity_type text, p_limit integer` | Kritik yönetici mutasyonlarının ortak audit geçmişini listeler | authenticated | Oturum + doğrudan `is_poma_admin()`; tablo doğrudan erişime kapalı | boş | En yeni 1–200 minimize edilmiş audit kaydı | Yüksek | Koru; salt-okunur yönetici RPC'si |
 | `list_admin_payments` | boş | Yönetici ödeme listesini döndürür | authenticated | Doğrudan `is_poma_admin()` | public | Ödeme, plan, kullanıcı ve makbuz özeti | Yüksek | Koru; ileride boş search_path adayı |
 | `list_admin_teacher_partners` | boş | Partner öğretmenleri listeler | authenticated | Doğrudan `is_poma_admin()` | public | Partner, referral ve komisyon özeti | Orta | Koru; ileride boş search_path adayı |
 | `list_admin_teacher_profiles` | `p_status text` | Öğretmen başvurularını listeler | authenticated | Oturum + doğrudan `is_poma_admin()` | boş | Filtreli öğretmen profilleri | Orta | Koru |
@@ -73,7 +74,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | `list_my_partner_referrals` | boş | Öğretmenin referral geçmişini döndürür | authenticated | `auth.uid()` ile teacher_id | public | Çağıranın referral kayıtları | Orta | Koru; ileride boş search_path adayı |
 | `quote_coupon` | `p_plan_code text, p_coupon_code text` | Kupon uygunluğu ve indirimi hesaplar | Internal | `auth.uid()` + plan, tarih ve kullanım limitleri; dış ACL kapalı | public | Çağıranın kupon kullanımı | Orta | Internal koru; `validate_coupon`/ödeme akışından çağrılır |
 | `register_my_teacher_partner` | boş | Öğretmenin kendi partner profilini oluşturur | authenticated | `auth.uid()` + teacher_profiles varlığı | public | Çağıranın partner profili | Orta | Koru; ileride boş search_path adayı |
-| `review_payment` | `p_payment_request_id uuid, p_decision text, p_admin_note text` | Ödeme kararının merkezi iş mantığı | Internal | Doğrudan `is_poma_admin()`; dış ACL kapalı | public | Ödeme, abonelik, referral, kredi ve komisyon | Yüksek | Internal koru; wrapper'lar üzerinden çağrılır |
+| `review_payment` | `p_payment_request_id uuid, p_decision text, p_admin_note text` | Ödeme kararının merkezi iş mantığı ve minimize ortak audit kaydı | Internal | Doğrudan `is_poma_admin()`; dış ACL kapalı | public | Ödeme, abonelik, referral, kredi ve komisyon | Yüksek | Internal koru; wrapper'lar üzerinden çağrılır |
 | `validate_coupon` | `p_plan_code text, p_coupon_code text` | Kupon sonucunu ve ödenecek tutarı döndürür | authenticated | Dolaylı: `quote_coupon` → `auth.uid()` ve kupon limitleri | public | Plan ve çağıranın kupon hakkı | Orta | Koru; dolaylı kontrol doğrulandı |
 | `validate_partner_code` | `p_partner_code text` | Aktif/onaylı partner kodunu doğrular | authenticated | authenticated ACL + aktif partner/onaylı öğretmen filtresi | public | Kod için sınırlı ad/geçerlilik sonucu | Düşük | Koru; ileride boş search_path adayı |
 
@@ -105,7 +106,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 
 | Fonksiyon | Argümanlar | Amaç | Çalıştırabilen rol | Yetkilendirme yöntemi | search_path | Veri kapsamı | Risk seviyesi | Karar |
 |---|---|---|---|---|---|---|---|---|
-| `service_cleanup_partner_e2e_run` | `p_run_id text` | Dar kapsamlı canlı partner E2E public verisini temizler | service_role | `auth.jwt()->>'role' = 'service_role'`; sıkı run ID/domain/kullanıcı sınırı | boş | Yalnız metadata'sı tam run ID ile eşleşen en fazla üç test kullanıcısının bağlı public verisi | Yüksek | Koru; tek service_role RPC |
+| `service_cleanup_partner_e2e_run` | `p_run_id text` | Dar kapsamlı canlı partner E2E public ve ortak audit verisini temizler | service_role | `auth.jwt()->>'role' = 'service_role'`; sıkı run ID/domain/kullanıcı sınırı | boş | Yalnız metadata'sı tam run ID ile eşleşen en fazla üç test kullanıcısının kesin varlık kimlikleri | Yüksek | Koru; tek service_role RPC; audit kalan sayısını doğrular |
 
 ## Dolaylı yetkilendirme zincirleri
 
@@ -128,3 +129,5 @@ Bu wrapper ve bileşik yardımcılar, kendi tanımlarında doğrudan `auth.uid`,
 - Security Advisor’ın authenticated SECURITY DEFINER uyarıları fonksiyon bazında bu yetkilendirme matrisiyle değerlendirilmelidir; authenticated ACL tek başına kontrolsüz erişim anlamına gelmez.
 
 Tekrar denetim için [`scripts/security-definer-audit.sql`](../../scripts/security-definer-audit.sql) kullanılmalıdır.
+
+Bu fazda eklenen `record_admin_audit` ve kimlik koruma trigger fonksiyonu `SECURITY INVOKER` olarak, boş `search_path` ve tüm API rollerine kapalı ACL ile çalışır; bu nedenle SECURITY DEFINER toplamına dahil değildir. Ortak audit payload'ları yalnız durum geçişi, kısa iş bağlamı ve yönetici notu gibi gerekli alanlarla sınırlandırılır.

@@ -112,6 +112,7 @@ async function expectRpcFailure(name, token, body) {
 async function cleanup() {
   const result = await rpcMust("service_cleanup_partner_e2e_run", env.SUPABASE_SERVICE_ROLE_KEY, { p_run_id: runId });
   assert.equal(result.matched_auth_users, userIds.length);
+  assert.equal(result.admin_audit_log_remaining, 0);
   assert.equal(result.remaining_total, 0);
   for (const userId of [...userIds].reverse()) {
     const deletion = await service(`/auth/v1/admin/users/${userId}`, { method: "DELETE" });
@@ -124,7 +125,7 @@ async function cleanup() {
     else assert.equal(verification.status, 404);
   }
   assert.equal(authRemaining, 0);
-  logStep(`cleanup doğrulandı; public kalan=${result.remaining_total}, auth kalan=${authRemaining}`);
+  logStep(`cleanup doğrulandı; audit kalan=${result.admin_audit_log_remaining}, public kalan=${result.remaining_total}, auth kalan=${authRemaining}`);
 }
 
 console.log(`Poma partner E2E run: ${runId}`);
@@ -216,10 +217,24 @@ try {
   await expectRpcFailure("admin_mark_commission_payout_paid", adminToken, { p_payout_id: payout2.id, p_admin_note: marker });
   logStep("payout create, çift payout reddi, cancel, tekrar create ve paid doğrulandı");
 
+  const auditRows = await rpcListMust("list_admin_audit_log", adminToken, { p_action: null, p_entity_type: null, p_limit: 100 });
+  const auditCount = (action, entityId) => auditRows.filter(row => row.action === action && row.entity_id === entityId).length;
+  assert.equal(auditCount("teacher_approval_changed", teacher.id), 1);
+  assert.equal(auditCount("teacher_partner_upserted", teacher.id), 1);
+  assert.equal(auditCount("payment_approved", first.id), 1);
+  assert.equal(auditCount("payment_approved", second.id), 1);
+  assert.equal(auditCount("commission_payout_created", payout1.id), 1);
+  assert.equal(auditCount("commission_payout_cancelled", payout1.id), 1);
+  assert.equal(auditCount("commission_payout_created", payout2.id), 1);
+  assert.equal(auditCount("commission_payout_paid", payout2.id), 1);
+  assert.equal(auditRows.filter(row => [teacher.id, first.id, second.id, payout1.id, payout2.id].includes(row.entity_id)).length, 8);
+  logStep("ortak admin audit kayıtları ve yinelenmeyen kritik aksiyonlar doğrulandı");
+
   await rpcMust("admin_upsert_teacher_partner", adminToken, {
     p_teacher_id: teacher.id, p_partner_code: partnerCode, p_status: "active", p_commission_rate: 0.10,
     p_access_ends_at: new Date(Date.now() - DAY).toISOString(), p_admin_note: marker
   });
+  assert.equal((await rpcListMust("list_admin_audit_log", adminToken, { p_action: "teacher_partner_upserted", p_entity_type: "teacher_partner_profile", p_limit: 100 })).filter(row => row.entity_id === teacher.id).length, 2);
   const deniedClass = await actor(`/rest/v1/classes`, teacherToken, {
     method: "POST", body: { teacher_id: teacher.id, name: `Expired ${runId.slice(-8)}` }, headers: { Prefer: "return=representation" }
   });

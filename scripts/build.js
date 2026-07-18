@@ -19,7 +19,7 @@ base.splice(base.indexOf("css/print.css"), 0, "css/teacher-partner.css");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/payment-config.js", "js/payment-service.js", "js/payment-views.js", "js/partner-attribution.js", "js/payment-entry.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/analytics.js", "js/pricing-state.js", "js/pricing-views.js", "js/pricing-entry.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/report-periods.js", "js/learning-report-service.js", "js/learning-report-views.js", "js/learning-report-entry.js");
-base.splice(base.indexOf("js/student-repository.js"), 0, "js/teacher-partner-service.js", "js/teacher-partner-views.js", "js/teacher-partner-entry.js");
+base.splice(base.indexOf("js/student-repository.js"), 0, "js/teacher-partner-service.js", "js/teacher-partner-views.js", "js/admin-audit-view.js", "js/teacher-partner-entry.js");
 const duplicateFiles=[...new Set(base.filter((file,index)=>base.indexOf(file)!==index))];
 if(duplicateFiles.length)throw new Error(`Build listesinde yinelenen dosyalar: ${duplicateFiles.join(", ")}`);
 for(const f of base)if(!fs.existsSync(path.join(root,f)))throw new Error(`Build dosyası eksik: ${f}`);

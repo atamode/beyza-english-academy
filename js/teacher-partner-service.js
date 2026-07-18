@@ -11,6 +11,7 @@ export function createTeacherPartnerService(client=getSupabaseClient()){return{
  getAdminPartnerList:async()=>unwrap(await client.rpc("list_admin_teacher_partners"),"Partner listesi alınamadı.")||[],
  getAdminTeacherProfiles:async(status=null)=>unwrap(await client.rpc("list_admin_teacher_profiles",{p_status:status}),"Öğretmen başvuruları alınamadı.")||[],
  getAdminCommissionPayouts:async(status="pending")=>unwrap(await client.rpc("list_admin_commission_payouts",{p_status:status}),"Payout listesi alınamadı.")||[],
+ getAdminAuditLog:async({action=null,entityType=null,limit=100}={})=>unwrap(await client.rpc("list_admin_audit_log",{p_action:action,p_entity_type:entityType,p_limit:limit}),"Yönetici işlem geçmişi alınamadı.")||[],
  upsertAdminPartner:async input=>one(unwrap(await client.rpc("admin_upsert_teacher_partner",{p_teacher_id:input.teacherId,p_partner_code:input.partnerCode,p_status:input.status,p_commission_rate:Number(input.commissionRate||.10),p_access_ends_at:input.accessEndsAt||null,p_admin_note:input.adminNote||null}),"Partner güncellenemedi.")),
  setTeacherApproval:async input=>one(unwrap(await client.rpc("admin_set_teacher_approval",{p_teacher_id:input.teacherId,p_status:input.status,p_admin_note:input.adminNote||null}),"Öğretmen durumu güncellenemedi.")),
  createCommissionPayout:async input=>one(unwrap(await client.rpc("admin_create_commission_payout",{p_teacher_id:input.teacherId,p_period_start:input.periodStart,p_period_end:input.periodEnd,p_admin_note:input.adminNote||null}),"Payout oluşturulamadı.")),
