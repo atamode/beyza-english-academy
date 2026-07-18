@@ -1,6 +1,8 @@
 import { getSupabaseClient } from "./supabase-client.js";
 
 export function createStudentRepository(client = getSupabaseClient()) {
+  const pendingCodeActions = new Set();
+
   return {
     async listChildrenForAccount(userId, accountType) {
       if (accountType === "student") {
@@ -29,9 +31,16 @@ export function createStudentRepository(client = getSupabaseClient()) {
       return data;
     },
     async linkGuardianByStudentCode({ studentCode, relationship = "guardian" }) {
-      const { data, error } = await client.rpc("link_guardian_by_student_code", { p_student_code: studentCode, p_relationship: relationship });
-      if (error) throw error;
-      return data;
+      if (pendingCodeActions.has("student_link")) throw new Error("İşlem devam ediyor.");
+      pendingCodeActions.add("student_link");
+      try {
+        const { data, error } = await client.rpc("link_guardian_by_student_code", { p_student_code: studentCode, p_relationship: relationship });
+        if (error) throw error;
+        if (data == null) throw new Error("Öğrenci bağlantı kodu geçersiz.");
+        return data;
+      } finally {
+        pendingCodeActions.delete("student_link");
+      }
     },
     async findChildByStudentCode(studentCode) {
       const { data, error } = await client.from("children").select("*").eq("student_code", studentCode).maybeSingle();
@@ -39,9 +48,16 @@ export function createStudentRepository(client = getSupabaseClient()) {
       return data;
     },
     async joinClassByCode({ childId, joinCode }) {
-      const { data, error } = await client.rpc("join_class_by_code", { p_child_id: childId, p_join_code: joinCode });
-      if (error) throw error;
-      return data;
+      if (pendingCodeActions.has("class_join")) throw new Error("İşlem devam ediyor.");
+      pendingCodeActions.add("class_join");
+      try {
+        const { data, error } = await client.rpc("join_class_by_code", { p_child_id: childId, p_join_code: joinCode });
+        if (error) throw error;
+        if (data == null) throw new Error("Sınıf kodu geçersiz veya kullanılamıyor.");
+        return data;
+      } finally {
+        pendingCodeActions.delete("class_join");
+      }
     },
     async getStudentState(childId) {
       const { data, error } = await client.from("student_state").select("*").eq("child_id", childId).maybeSingle();

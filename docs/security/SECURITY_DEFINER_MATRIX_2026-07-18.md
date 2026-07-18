@@ -42,8 +42,8 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | Fonksiyon | Argümanlar | Amaç | Çalıştırabilen rol | Yetkilendirme yöntemi | search_path | Veri kapsamı | Risk seviyesi | Karar |
 |---|---|---|---|---|---|---|---|---|
 | `create_family_child` | `p_name text, p_avatar_key text, p_birth_year smallint` | Veli için çocuk profili oluşturur | authenticated | `auth.uid()` ve parent/both hesap kontrolü | boş | Çağıranın aile profili | Orta | Koru |
-| `join_class_by_code` | `p_child_id uuid, p_join_code text` | Yönetilen çocuğu sınıfa ekler | authenticated | Dolaylı: `can_manage_child` → `is_self_student` / `is_guardian_of_child` | boş | Tek çocuk ve tek sınıf | Orta | Koru; dolaylı kontrol doğrulandı |
-| `link_guardian_by_student_code` | `p_student_code text, p_relationship text` | Veli-öğrenci bağlantısı kurar | authenticated | `auth.uid()`; çağıranı guardian yapar | boş | Tek öğrenci kodu ve çağıran guardian | Orta | Koru |
+| `join_class_by_code` | `p_child_id uuid, p_join_code text` | Yönetilen çocuğu sınıfa ekler | authenticated | Dolaylı: `can_manage_child` → `is_self_student` / `is_guardian_of_child`; hesap/action bazlı 5/15 dk rate limit | boş | Tek çocuk ve tek sınıf | Orta | Koru; dolaylı kontrol ve rate limit doğrulandı |
+| `link_guardian_by_student_code` | `p_student_code text, p_relationship text` | Veli-öğrenci bağlantısı kurar | authenticated | `auth.uid()`; parent/both kontrolü; hesap/action bazlı 5/15 dk rate limit | boş | Tek öğrenci kodu ve çağıran guardian | Orta | Koru; rate limit doğrulandı |
 | `mark_instagram_receipt_sent` | `p_payment_request_id uuid, p_instagram_username text` | Kullanıcının ödeme bildirimini işaretler | authenticated | `auth.uid()` ile ödeme sahipliği | public | Çağıranın tek ödeme talebi | Orta | Koru; ileride boş search_path adayı |
 | `register_payment_receipt` | `p_payment_request_id uuid, p_storage_path text, p_original_filename text, p_mime_type text, p_size_bytes bigint` | Makbuz metadata kaydı oluşturur | authenticated | `auth.uid()` ile ödeme ve storage yolu sahipliği | public | Çağıranın tek ödeme/makbuz kaydı | Orta | Koru; ileride boş search_path adayı |
 

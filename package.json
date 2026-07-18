@@ -9,6 +9,7 @@
     "build": "node scripts/build.js",
     "test": "node --test tests/*.test.js",
     "test:e2e:partner-live": "node scripts/live-partner-payment-e2e.mjs",
+    "test:e2e:code-rate-limit": "node scripts/live-code-rate-limit-e2e.mjs",
     "serve": "node server.js"
   }
 }
