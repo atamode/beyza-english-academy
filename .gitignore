@@ -28,6 +28,8 @@ CHECKSUMS.sha256
 
 # Dependencies and caches
 node_modules/
+playwright-report/
+test-results/
 build/cache/
 .cache/
 tmp/
