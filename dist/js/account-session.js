@@ -1,4 +1,4 @@
-import { ACCOUNT_KEYS } from "./account-config.js";
+﻿import { ACCOUNT_KEYS } from "./account-config.js";
 import { getSupabaseClient, translateSupabaseError } from "./supabase-client.js";
 import { createStudentRepository } from "./student-repository.js";
 import { createTeacherRepository } from "./teacher-repository.js";
