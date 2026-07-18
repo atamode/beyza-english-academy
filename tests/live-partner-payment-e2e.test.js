@@ -16,7 +16,8 @@ test("live partner E2E is explicitly invoked and production guarded", () => {
 
 test("service role stays in the Node-only harness and secrets are redacted", () => {
   assert.match(script, /SUPABASE_SERVICE_ROLE_KEY/);
-  assert.match(script, /replaceAll\(env\.SUPABASE_SERVICE_ROLE_KEY, "\[SECRET\]"\)/);
+  assert.match(script, /env\.SUPABASE_SERVICE_ROLE_KEY, env\.SUPABASE_ANON_KEY, password/);
+  assert.match(script, /message\.replaceAll\(secret, "\[REDACTED\]"\)/);
   assert.doesNotMatch(read("scripts/build.js"), /live-partner-payment-e2e/);
   for (const file of ["js/account-config.js", "js/supabase-client.js", "index.html"]) assert.doesNotMatch(read(file), /SUPABASE_SERVICE_ROLE_KEY/);
 });
@@ -29,11 +30,24 @@ test("actors use unique IDs, real JWT sessions and role RPCs", () => {
   for (const rpc of ["create_payment_request", "approve_payment", "admin_create_commission_payout", "admin_cancel_commission_payout", "admin_mark_commission_payout_paid", "get_my_partner_summary"]) assert.match(script, new RegExp(`rpc(?:Must|Failure)\\(\\"${rpc}`));
 });
 
-test("cleanup is mandatory, ID-scoped and verifies no remnants", () => {
+test("cleanup is mandatory, run-scoped and verifies public plus auth remnants", () => {
   assert.match(script, /finally\s*\{[\s\S]*await cleanup\(\)/);
-  assert.match(script, /in\.\(\$\{values\.join\(\",\"\)\}\)/);
+  assert.match(script, /rpcMust\("service_cleanup_partner_e2e_run"/);
+  assert.match(script, /remaining_total, 0/);
+  assert.match(script, /authRemaining, 0/);
   assert.doesNotMatch(script, /created_at=(?:lt|lte)|email=(?:like|ilike)|\/auth\/v1\/admin\/users\?page/);
-  for (const table of ["payment_requests", "subscriptions", "teacher_referrals", "teacher_access_credits", "teacher_commission_earnings", "teacher_commission_payouts", "classes", "children"]) assert.match(script, new RegExp(`\\[\\"${table}\\", \\"id\\"`));
+  assert.doesNotMatch(script, /function (?:select|insert|patch)\(/);
+  assert.doesNotMatch(script, /service\(`?\/rest\/v1\//);
+});
+
+test("teacher onboarding and business assertions use actor JWTs and RPCs",()=>{
+  assert.match(script,/account_type: accountType/);
+  assert.match(script,/actorSelect\("teacher_profiles", teacherToken/);
+  assert.match(script,/rpcMust\("admin_set_teacher_approval", adminToken/);
+  assert.match(script,/rpcMust\("admin_upsert_teacher_partner", adminToken/);
+  assert.match(script,/actorSelect\("payment_requests", parentToken/);
+  assert.match(script,/actorSelect\("subscriptions", parentToken/);
+  assert.match(script,/rpcListMust\("list_admin_commission_payouts", adminToken/);
 });
 
 test("local E2E secret file is ignored and example is non-permissive", () => {
