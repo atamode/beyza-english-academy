@@ -48,18 +48,24 @@ function redactedError(error) { return String(error?.message || error).replaceAl
 function query(filters = {}) { return Object.entries(filters).map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join("&"); }
 
 async function request(path, { key = env.SUPABASE_ANON_KEY, token = key, method = "GET", body, headers = {} } = {}) {
-  const response = await fetch(`${base.origin}${path}`, {
-    method,
-    headers: { apikey: key, Authorization: `Bearer ${token}`, ...(body === undefined ? {} : { "Content-Type": "application/json" }), ...headers },
-    body: body === undefined ? undefined : JSON.stringify(body)
-  });
+  let response;
+  try {
+    response = await fetch(`${base.origin}${path}`, {
+      method,
+      headers: { apikey: key, Authorization: `Bearer ${token}`, ...(body === undefined ? {} : { "Content-Type": "application/json" }), ...headers },
+      body: body === undefined ? undefined : JSON.stringify(body)
+    });
+  } catch {
+    return { ok: false, status: 0, data: { code: "FETCH_ERROR" } };
+  }
   const text = await response.text();
   let data = null;
   if (text) { try { data = JSON.parse(text); } catch { data = text; } }
   return { ok: response.ok, status: response.status, data };
 }
 
-async function must(result, label) {
+async function must(resultOrPromise, label) {
+  const result = await resultOrPromise;
   if (!result.ok) throw new Error(`${label} başarısız (HTTP ${result.status}, kod ${result.data?.code || "yok"})`);
   return Array.isArray(result.data) && result.data.length === 1 ? result.data[0] : result.data;
 }
