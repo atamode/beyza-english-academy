@@ -1,10 +1,9 @@
 import { strict as assert } from 'assert';
 import fs from 'fs';
-import path from 'path';
 import { describe, it } from 'node:test';
 
-const APP_JS = path.resolve('C:/Users/USER/Documents/english time/js/app.js');
-const STORAGE_JS = path.resolve('C:/Users/USER/Documents/english time/js/storage.js');
+const APP_JS = new URL("../js/app.js", import.meta.url);
+const STORAGE_JS = new URL("../js/storage.js", import.meta.url);
 const src = fs.readFileSync(APP_JS, 'utf8');
 const storageSrc = fs.readFileSync(STORAGE_JS, 'utf8');
 
