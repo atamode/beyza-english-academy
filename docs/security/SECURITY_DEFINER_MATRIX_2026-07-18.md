@@ -6,14 +6,14 @@ Bu kayıt, `gzsrcjovhhlfpvvpucri` projesinin canlı `public` şemasında 18 Temm
 
 | Ölçüm | Sonuç |
 |---|---:|
-| SECURITY DEFINER toplamı | 52 |
+| SECURITY DEFINER toplamı | 53 |
 | PUBLIC execute | 0 |
 | anon execute | 0 |
 | authenticated execute | 39 |
-| service_role execute | 1 |
+| service_role execute | 2 |
 | Internal-only | 12 |
 | search_path eksik | 0 |
-| search_path boş (`''`) | 25 |
+| search_path boş (`''`) | 26 |
 | search_path `public` | 26 |
 | search_path `pg_catalog` | 1 |
 
@@ -107,6 +107,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | Fonksiyon | Argümanlar | Amaç | Çalıştırabilen rol | Yetkilendirme yöntemi | search_path | Veri kapsamı | Risk seviyesi | Karar |
 |---|---|---|---|---|---|---|---|---|
 | `service_cleanup_partner_e2e_run` | `p_run_id text` | Dar kapsamlı canlı partner E2E public, ortak audit ve payment delivery verisini temizler | service_role | `auth.jwt()->>'role' = 'service_role'`; sıkı run ID/domain/kullanıcı sınırı | boş | Yalnız metadata'sı tam run ID ile eşleşen en fazla üç test kullanıcısının kesin varlık kimlikleri | Yüksek | Koru; tek service_role RPC; audit ve delivery kalan sayılarını doğrular |
+| `service_claim_membership_reminder_job` | `p_job_token uuid, p_limit integer` | Cron tarafından kuyruğa alınan üyelik bitiş hatırlatmalarını claim eder | service_role | `auth.jwt()->>'role' = 'service_role'`; 15 dakikalık tek kullanımlık token; entitlement yeniden doğrulaması | boş | En fazla 100 uygun delivery snapshot'ı; e-posta adresi dönmez | Yüksek | Koru; yüksek riskli fakat dar kapsamlı worker RPC'si |
 
 ## Dolaylı yetkilendirme zincirleri
 
@@ -135,3 +136,5 @@ Bu fazda eklenen `record_admin_audit` ve kimlik koruma trigger fonksiyonu `SECUR
 Ödeme süresi fazında eklenen `expire_stale_payment_requests(uuid)` da `SECURITY INVOKER`, boş `search_path`, owner `postgres` ve tüm API rollerine kapalı internal helper'dır. Yalnız mevcut güvenli SECURITY DEFINER ödeme RPC'lerinden çağrılır; bu nedenle SECURITY DEFINER toplamı 52 olarak kalır. Yalnız süresi geçmiş `pending` talepleri `expired` yapar ve yalnız bu taleplerin kupon rezervasyonlarını serbest bırakır; `receipt_sent`, `approved` ve `rejected` kayıtları korunur.
 
 Ödeme karar e-postası fazı yeni bir SECURITY DEFINER fonksiyon eklemez. Mevcut `review_payment`, başarılı approve/reject kararıyla aynı transaction içinde yalnız teslimat snapshot'ı oluşturur; gönderim ayrı, JWT ve `is_poma_admin()` ile korunan Edge Function üzerinden yapılır. SECURITY DEFINER toplamı 52 olarak kalır.
+
+Üyelik bitiş hatırlatma fazı `service_claim_membership_reminder_job` fonksiyonunu ekler ve SECURITY DEFINER toplamını 53'e çıkarır. Cron runner ve enqueue fonksiyonu SECURITY INVOKER'dır. Cron, service-role anahtarını Vault'a kopyalamaz ve statik cron secret kullanmaz; bunun yerine en fazla 15 dakika geçerli, tek kullanımlık UUID job token üretir. Edge Function `verify_jwt=false` olsa da browser endpoint'i değildir: Origin reddedilir ve iş başlamadan önce token atomik olarak tüketilir. Claim sırasında aile üyeliği veya öğretmen erişimi tekrar doğrulanır; değişen veya geçersiz entitlement gönderilmeden skipped yapılır.

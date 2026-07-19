@@ -1,2 +1,5 @@
 [functions.send-payment-decision-email]
 verify_jwt = true
+
+[functions.send-membership-expiry-reminders]
+verify_jwt = false

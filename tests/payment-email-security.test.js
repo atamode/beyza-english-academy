@@ -33,5 +33,5 @@ test("Edge Function keeps JWT, admin, CORS, claim and Resend secrets safe",()=>{
 
 test("admin retry states and SECURITY DEFINER count remain constrained",()=>{
   assert.match(service,/functions\.invoke\("send-payment-decision-email"/);assert.match(entry,/payments\.sendPaymentDecisionEmail/);assert.match(views,/\["pending","failed"\]\.includes\(row\.email_delivery_status\)/);assert.doesNotMatch(views,/processing[^\n]*retry-payment-email/);
-  assert.match(matrix,/SECURITY DEFINER toplamı \| 52/);assert.match(matrix,/transactional e-posta outbox/);assert.match(matrix,/yeni bir SECURITY DEFINER fonksiyon eklemez/);
+  assert.match(matrix,/SECURITY DEFINER toplamı \| 53/);assert.match(matrix,/transactional e-posta outbox/);assert.match(matrix,/yeni bir SECURITY DEFINER fonksiyon eklemez/);
 });

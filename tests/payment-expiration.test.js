@@ -46,9 +46,9 @@ test("user and admin payment UI present expiry without expired mutations",()=>{
   assert.match(views,/\["pending","receipt_sent"\]\.includes\(row\.status\)/);
 });
 
-test("E2E and security matrix retain the 52-function baseline",()=>{
+test("E2E and security matrix retain the 53-function baseline",()=>{
   assert.match(e2e,/first\.created_at && first\.expires_at/);
   assert.match(e2e,/72 \* 60 \* 60 \* 1000/);
-  assert.match(matrix,/SECURITY DEFINER toplamı \| 52/);
+  assert.match(matrix,/SECURITY DEFINER toplamı \| 53/);
   assert.match(matrix,/`expire_stale_payment_requests\(uuid\)`[\s\S]*SECURITY INVOKER/);
 });
