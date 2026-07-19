@@ -1,0 +1,2 @@
+[functions.send-payment-decision-email]
+verify_jwt = true

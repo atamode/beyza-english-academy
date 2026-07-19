@@ -37,7 +37,8 @@ test("cleanup is mandatory, run-scoped and verifies public plus auth remnants", 
   assert.match(script, /authRemaining, 0/);
   assert.doesNotMatch(script, /created_at=(?:lt|lte)|email=(?:like|ilike)|\/auth\/v1\/admin\/users\?page/);
   assert.doesNotMatch(script, /function (?:select|insert|patch)\(/);
-  assert.doesNotMatch(script, /service\(`?\/rest\/v1\//);
+  const serviceRestTables=[...script.matchAll(/service\(`?\/rest\/v1\/([^?`]+)/g)].map(match=>match[1]);
+  assert.deepEqual(serviceRestTables,["payment_email_deliveries"]);
 });
 
 test("teacher onboarding and business assertions use actor JWTs and RPCs",()=>{

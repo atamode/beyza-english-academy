@@ -113,6 +113,8 @@ async function cleanup() {
   const result = await rpcMust("service_cleanup_partner_e2e_run", env.SUPABASE_SERVICE_ROLE_KEY, { p_run_id: runId });
   assert.equal(result.matched_auth_users, userIds.length);
   assert.equal(result.admin_audit_log_remaining, 0);
+  assert.equal(result.payment_email_deliveries_deleted, 3);
+  assert.equal(result.payment_email_deliveries_remaining, 0);
   assert.equal(result.remaining_total, 0);
   for (const userId of [...userIds].reverse()) {
     const deletion = await service(`/auth/v1/admin/users/${userId}`, { method: "DELETE" });
@@ -125,7 +127,7 @@ async function cleanup() {
     else assert.equal(verification.status, 404);
   }
   assert.equal(authRemaining, 0);
-  logStep(`cleanup doğrulandı; audit kalan=${result.admin_audit_log_remaining}, public kalan=${result.remaining_total}, auth kalan=${authRemaining}`);
+  logStep(`cleanup doğrulandı; delivery silinen=${result.payment_email_deliveries_deleted}, delivery kalan=${result.payment_email_deliveries_remaining}, audit kalan=${result.admin_audit_log_remaining}, public kalan=${result.remaining_total}, auth kalan=${authRemaining}`);
 }
 
 console.log(`Poma partner E2E run: ${runId}`);
@@ -202,6 +204,20 @@ try {
   assert.equal((await rpcListMust("list_my_commission_history", teacherToken)).length, 2);
   logStep("yenileme ikinci kredi oluşturmadan ikinci komisyonu ve süre uzatımını oluşturdu");
 
+  const rejected = await makePayment(null);
+  await rpcMust("reject_payment", adminToken, { p_payment_request_id: rejected.id, p_admin_note: marker });
+  const rejectedPayment = await actorSelect("payment_requests", parentToken, { id: `eq.${rejected.id}` }, "id,status");
+  assert.equal(rejectedPayment[0].status, "rejected");
+  const deliveries = await must(service(`/rest/v1/payment_email_deliveries?select=${encodeURIComponent("id,payment_request_id,recipient_user_id,decision,status,membership_ends_at,attempt_count")}&${query({ payment_request_id: `in.(${first.id},${second.id},${rejected.id})` })}`), "delivery doğrulama");
+  assert.equal(deliveries.length, 3);
+  assert.equal(new Set(deliveries.map(row => `${row.payment_request_id}:${row.decision}`)).size, 3);
+  for (const row of deliveries) { assert.equal(row.recipient_user_id, parent.id); assert.equal(row.status, "pending"); assert.equal(row.attempt_count, 0); }
+  const firstDelivery=deliveries.find(row=>row.payment_request_id===first.id),renewalDelivery=deliveries.find(row=>row.payment_request_id===second.id),rejectedDelivery=deliveries.find(row=>row.payment_request_id===rejected.id);
+  assert.equal(firstDelivery.decision,"approved");assert.ok(Math.abs(new Date(firstDelivery.membership_ends_at)-new Date(firstSubscription[0].ends_at))<1000);
+  assert.equal(renewalDelivery.decision,"approved");assert.ok(Math.abs(new Date(renewalDelivery.membership_ends_at)-new Date(renewalSubscription[0].ends_at))<1000);
+  assert.equal(rejectedDelivery.decision,"rejected");assert.equal(rejectedDelivery.membership_ends_at,null);
+  logStep("iki approved ve bir rejected delivery pending durumda, tekil ve doğru üyelik bitişleriyle doğrulandı; e-posta gönderilmedi");
+
   const dates = earnings.map(row => row.earned_at.slice(0, 10)).sort();
   const payout1 = await rpcMust("admin_create_commission_payout", adminToken, {
     p_teacher_id: teacher.id, p_period_start: dates[0], p_period_end: dates.at(-1), p_admin_note: marker
@@ -225,11 +241,12 @@ try {
   assert.equal(auditCount("teacher_partner_upserted", teacher.id), 1);
   assert.equal(auditCount("payment_approved", first.id), 1);
   assert.equal(auditCount("payment_approved", second.id), 1);
+  assert.equal(auditCount("payment_rejected", rejected.id), 1);
   assert.equal(auditCount("commission_payout_created", payout1.id), 1);
   assert.equal(auditCount("commission_payout_cancelled", payout1.id), 1);
   assert.equal(auditCount("commission_payout_created", payout2.id), 1);
   assert.equal(auditCount("commission_payout_paid", payout2.id), 1);
-  assert.equal(auditRows.filter(row => [teacher.id, first.id, second.id, payout1.id, payout2.id].includes(row.entity_id)).length, 8);
+  assert.equal(auditRows.filter(row => [teacher.id, first.id, second.id, rejected.id, payout1.id, payout2.id].includes(row.entity_id)).length, 9);
   logStep("ortak admin audit kayıtları ve yinelenmeyen kritik aksiyonlar doğrulandı");
 
   await rpcMust("admin_upsert_teacher_partner", adminToken, {

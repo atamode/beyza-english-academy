@@ -74,7 +74,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | `list_my_partner_referrals` | boş | Öğretmenin referral geçmişini döndürür | authenticated | `auth.uid()` ile teacher_id | public | Çağıranın referral kayıtları | Orta | Koru; ileride boş search_path adayı |
 | `quote_coupon` | `p_plan_code text, p_coupon_code text` | Kupon uygunluğu ve indirimi hesaplar | Internal | `auth.uid()` + plan, tarih ve kullanım limitleri; dış ACL kapalı | public | Çağıranın kupon kullanımı | Orta | Internal koru; `validate_coupon`/ödeme akışından çağrılır |
 | `register_my_teacher_partner` | boş | Öğretmenin kendi partner profilini oluşturur | authenticated | `auth.uid()` + teacher_profiles varlığı | public | Çağıranın partner profili | Orta | Koru; ileride boş search_path adayı |
-| `review_payment` | `p_payment_request_id uuid, p_decision text, p_admin_note text` | Stale pending talepleri sona erdiren ödeme kararı merkezi ve minimize ortak audit kaydı | Internal | Doğrudan `is_poma_admin()`; dış ACL kapalı; expired talep reddi | public | Ödeme, abonelik, referral, kredi ve komisyon | Yüksek | Internal koru; receipt_sent incelenebilir, wrapper'lar üzerinden çağrılır |
+| `review_payment` | `p_payment_request_id uuid, p_decision text, p_admin_note text` | Stale pending talepleri sona erdiren ödeme kararı merkezi; ortak audit ve transactional e-posta outbox kaydı | Internal | Doğrudan `is_poma_admin()`; dış ACL kapalı; expired talep reddi | public | Ödeme, abonelik, referral, kredi, komisyon ve karar teslimat snapshot'ı | Yüksek | Internal koru; receipt_sent incelenebilir, wrapper'lar üzerinden çağrılır; outbox aynı transaction'da oluşur |
 | `validate_coupon` | `p_plan_code text, p_coupon_code text` | Kupon sonucunu ve ödenecek tutarı döndürür | authenticated | Dolaylı: `quote_coupon` → `auth.uid()` ve kupon limitleri | public | Plan ve çağıranın kupon hakkı | Orta | Koru; dolaylı kontrol doğrulandı |
 | `validate_partner_code` | `p_partner_code text` | Aktif/onaylı partner kodunu doğrular | authenticated | authenticated ACL + aktif partner/onaylı öğretmen filtresi | public | Kod için sınırlı ad/geçerlilik sonucu | Düşük | Koru; ileride boş search_path adayı |
 
@@ -106,7 +106,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 
 | Fonksiyon | Argümanlar | Amaç | Çalıştırabilen rol | Yetkilendirme yöntemi | search_path | Veri kapsamı | Risk seviyesi | Karar |
 |---|---|---|---|---|---|---|---|---|
-| `service_cleanup_partner_e2e_run` | `p_run_id text` | Dar kapsamlı canlı partner E2E public ve ortak audit verisini temizler | service_role | `auth.jwt()->>'role' = 'service_role'`; sıkı run ID/domain/kullanıcı sınırı | boş | Yalnız metadata'sı tam run ID ile eşleşen en fazla üç test kullanıcısının kesin varlık kimlikleri | Yüksek | Koru; tek service_role RPC; audit kalan sayısını doğrular |
+| `service_cleanup_partner_e2e_run` | `p_run_id text` | Dar kapsamlı canlı partner E2E public, ortak audit ve payment delivery verisini temizler | service_role | `auth.jwt()->>'role' = 'service_role'`; sıkı run ID/domain/kullanıcı sınırı | boş | Yalnız metadata'sı tam run ID ile eşleşen en fazla üç test kullanıcısının kesin varlık kimlikleri | Yüksek | Koru; tek service_role RPC; audit ve delivery kalan sayılarını doğrular |
 
 ## Dolaylı yetkilendirme zincirleri
 
@@ -133,3 +133,5 @@ Tekrar denetim için [`scripts/security-definer-audit.sql`](../../scripts/securi
 Bu fazda eklenen `record_admin_audit` ve kimlik koruma trigger fonksiyonu `SECURITY INVOKER` olarak, boş `search_path` ve tüm API rollerine kapalı ACL ile çalışır; bu nedenle SECURITY DEFINER toplamına dahil değildir. Ortak audit payload'ları yalnız durum geçişi, kısa iş bağlamı ve yönetici notu gibi gerekli alanlarla sınırlandırılır.
 
 Ödeme süresi fazında eklenen `expire_stale_payment_requests(uuid)` da `SECURITY INVOKER`, boş `search_path`, owner `postgres` ve tüm API rollerine kapalı internal helper'dır. Yalnız mevcut güvenli SECURITY DEFINER ödeme RPC'lerinden çağrılır; bu nedenle SECURITY DEFINER toplamı 52 olarak kalır. Yalnız süresi geçmiş `pending` talepleri `expired` yapar ve yalnız bu taleplerin kupon rezervasyonlarını serbest bırakır; `receipt_sent`, `approved` ve `rejected` kayıtları korunur.
+
+Ödeme karar e-postası fazı yeni bir SECURITY DEFINER fonksiyon eklemez. Mevcut `review_payment`, başarılı approve/reject kararıyla aynı transaction içinde yalnız teslimat snapshot'ı oluşturur; gönderim ayrı, JWT ve `is_poma_admin()` ile korunan Edge Function üzerinden yapılır. SECURITY DEFINER toplamı 52 olarak kalır.

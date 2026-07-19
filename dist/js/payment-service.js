@@ -65,6 +65,11 @@ export function createPaymentService(client = getSupabaseClient()) {
       if (!String(adminNote || "").trim()) throw new Error("Red notu zorunlu.");
       return one(unwrap(await client.rpc("reject_payment", { p_payment_request_id: paymentRequestId, p_admin_note: adminNote }), "Ödeme reddedilemedi."));
     },
+    async sendPaymentDecisionEmail(paymentRequestId) {
+      return unwrap(await client.functions.invoke("send-payment-decision-email", {
+        body: { payment_request_id: paymentRequestId }
+      }), "Ödeme sonucu e-postası gönderilemedi.");
+    },
     async listAdminPayments() {
       return unwrap(await client.rpc("list_admin_payments"), "Yönetici ödemeleri alınamadı.") || [];
     },

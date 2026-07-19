@@ -165,6 +165,12 @@ document.addEventListener("click",async event=>{
     try{await payments.markInstagramReceiptSent(button.dataset.paymentId,"");alert("Bildirim alındı. Ödeme onaylanmadı; inceleme bekleniyor.");await renderMembership();}catch(error){alert(friendlyError(error));}finally{screen.busy.delete(key);button.disabled=false;}return;
   }
   const reviewCard=button.closest(".admin-payment-row"),paymentId=reviewCard?.dataset.paymentId,key=`review:${paymentId}`;
+  if(action==="retry-payment-email"){
+    const emailKey=`email:${paymentId}`;if(screen.busy.has(emailKey))return;screen.busy.add(emailKey);button.disabled=true;
+    try{await payments.sendPaymentDecisionEmail(paymentId);await renderAdmin();const result=app.querySelector(`[data-payment-id="${paymentId}"] [data-email-action-status]`);if(result){result.className="feedback correct";result.textContent="E-posta gönderildi.";}}
+    catch(error){const result=reviewCard.querySelector("[data-email-action-status]");result.className="feedback incorrect";result.textContent=friendlyError(error,"E-posta gönderilemedi. Ödeme kararı değişmedi; yeniden deneyebilirsin.");}
+    finally{screen.busy.delete(emailKey);button.disabled=false;}return;
+  }
   if(action==="open-admin-receipt"){
     const row=screen.adminRows.find(x=>x.id===paymentId),path=row?.receipts?.[0]?.storage_path;if(!path)return;button.disabled=true;
     try{const url=await payments.getReceiptSignedUrl(path,60);window.open(url,"_blank","noopener,noreferrer");}catch(error){alert(friendlyError(error,"Dekont açılamadı."));}finally{button.disabled=false;}return;
@@ -174,7 +180,12 @@ document.addEventListener("click",async event=>{
     if(action==="reject-payment"&&!note){status.className="feedback incorrect";status.textContent="Reddetmek için yönetici notu zorunlu.";return;}
     if(!confirm(action==="approve-payment"?"Bu ödemeyi onaylayıp üyeliği açmak istiyor musun?":"Bu ödemeyi notla reddetmek istiyor musun?"))return;
     screen.busy.add(key);reviewCard.querySelectorAll("[data-action='approve-payment'],[data-action='reject-payment']").forEach(x=>x.disabled=true);
-    try{if(action==="approve-payment")await payments.approvePayment(paymentId,note||null);else await payments.rejectPayment(paymentId,note);await renderAdmin();}
+    try{
+      if(action==="approve-payment")await payments.approvePayment(paymentId,note||null);else await payments.rejectPayment(paymentId,note);
+      let message=action==="approve-payment"?"Ödeme onaylandı ve kullanıcıya e-posta gönderildi.":"Ödeme reddedildi ve kullanıcıya e-posta gönderildi.",ok=true;
+      try{await payments.sendPaymentDecisionEmail(paymentId);}catch{message="Ödeme kararı kaydedildi ancak e-posta gönderilemedi. Aşağıdaki yeniden gönder düğmesini kullanabilirsiniz.";ok=false;}
+      await renderAdmin();const result=app.querySelector(`[data-payment-id="${paymentId}"] [data-email-action-status]`);if(result){result.className=`feedback ${ok?"correct":"incorrect"}`;result.textContent=message;}
+    }
     catch(error){status.className="feedback incorrect";status.textContent=friendlyError(error);await renderAdmin();}finally{screen.busy.delete(key);}return;
   }
 });
