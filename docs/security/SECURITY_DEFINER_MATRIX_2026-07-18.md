@@ -6,14 +6,14 @@ Bu kayıt, `gzsrcjovhhlfpvvpucri` projesinin canlı `public` şemasında 18 Temm
 
 | Ölçüm | Sonuç |
 |---|---:|
-| SECURITY DEFINER toplamı | 58 |
+| SECURITY DEFINER toplamı | 67 |
 | PUBLIC execute | 0 |
 | anon execute | 0 |
-| authenticated execute | 44 |
-| service_role execute | 2 |
-| Internal-only | 12 |
+| authenticated execute | 51 |
+| service_role execute | 3 |
+| Internal-only | 13 |
 | search_path eksik | 0 |
-| search_path boş (`''`) | 31 |
+| search_path boş (`''`) | 40 |
 | search_path `public` | 26 |
 | search_path `pg_catalog` | 1 |
 
@@ -145,3 +145,19 @@ Bu fazda eklenen `record_admin_audit` ve kimlik koruma trigger fonksiyonu `SECUR
 Üyelik bitiş hatırlatma fazı `service_claim_membership_reminder_job` fonksiyonunu ekler ve SECURITY DEFINER toplamını 53'e çıkarır. Cron runner ve enqueue fonksiyonu SECURITY INVOKER'dır. Cron, service-role anahtarını Vault'a kopyalamaz ve statik cron secret kullanmaz; bunun yerine en fazla 15 dakika geçerli, tek kullanımlık UUID job token üretir. Edge Function `verify_jwt=false` olsa da browser endpoint'i değildir: Origin reddedilir ve iş başlamadan önce token atomik olarak tüketilir. Claim sırasında aile üyeliği veya öğretmen erişimi tekrar doğrulanır; değişen veya geçersiz entitlement gönderilmeden skipped yapılır.
 
 Tam iade fazı `request_refund`, `admin_review_refund`, `admin_complete_refund`, `admin_resolve_refund_accounting_alert` ve `list_admin_refunds` fonksiyonlarını ekler; SECURITY DEFINER toplamı 58 olur. Beşinin de PUBLIC/anon erişimi kapalı, yalnız authenticated ACL'si açık, `search_path` değeri boştur. Kullanıcı RPC'si `auth.uid()` sahipliğiyle; dört yönetici RPC'si doğrudan `is_poma_admin()` ile korunur.
+
+## FAZ 2.1 eki — Haftalık veli raporları
+
+| Fonksiyon | Argümanlar | Amaç | Çalıştırabilen rol | Yetkilendirme yöntemi | search_path | Veri kapsamı | Risk seviyesi | Karar |
+|---|---|---|---|---|---|---|---|---|
+| `record_student_learning_event` | `uuid,text,text,text,text,text,text,boolean` | Doğrulanmış öğrenme olayını append-only kaydeder | authenticated | `auth.uid()` veli/both ve güncel guardian ilişkisi; puan sunucuda hesaplanır, süre kabul edilmez | boş | Tek çocuk ve idempotency anahtarı | Yüksek | Koru |
+| `generate_weekly_parent_report_for` | `uuid,uuid,date` | Olaylardan değişmez çocuk/hafta snapshot'ı üretir | Internal | Dış ACL kapalı; yalnız yetkili wrapper ve veritabanı runner'ı çağırır, guardian ilişkisini yeniden doğrular | boş | Tek çocuk ve tamamlanmış hafta | Yüksek | Internal koru |
+| `generate_weekly_parent_report` | `uuid,date` | Veli veya admin için manuel haftalık rapor üretir | authenticated | `auth.uid()` guardian veya `is_poma_admin()`; dolaylı üretim helper'ı | boş | Tek çocuk ve hafta | Yüksek | Koru |
+| `list_my_weekly_parent_reports` | `uuid` | Velinin kendi haftalık raporlarını listeler | authenticated | `auth.uid()` snapshot sahibi ve güncel guardian | boş | Veliye ait raporlar | Orta | Koru |
+| `update_weekly_progress_email_preference` | `boolean` | Velinin ayrı haftalık e-posta tercihini değiştirir | authenticated | `auth.uid()` parent/both; hedef kullanıcı parametresi yok | boş | Yalnız çağıran veli | Orta | Koru |
+| `admin_set_weekly_parent_reports_enabled` | `boolean` | Otomatik toplu gönderim anahtarını değiştirir | authenticated | Doğrudan `is_poma_admin()` | boş | Tek feature flag | Yüksek | Koru; varsayılan kapalı |
+| `list_admin_weekly_report_deliveries` | `integer` | Teslimat durumlarını yöneticiye listeler | authenticated | Doğrudan `is_poma_admin()` | boş | En fazla 200 teslimat | Yüksek | Koru |
+| `admin_retry_weekly_report_delivery` | `uuid` | Başarısız ve limiti dolmamış teslimatı yeniden kuyruğa alır | authenticated | Doğrudan `is_poma_admin()` | boş | Tek teslimat | Yüksek | Koru |
+| `service_claim_weekly_parent_report_job` | `uuid,integer` | Worker için atomik ve sınırlı claim yapar | service_role | `auth.jwt()->>'role'='service_role'`, tek kullanımlık kısa ömürlü token ve sunucu feature flag kontrolü | boş | En fazla 100 uygun teslimat | Yüksek | Koru |
+
+FAZ 2.1 ile toplam 67 olur: authenticated 51, service_role 3 ve internal-only 13. Dokuz yeni fonksiyonun tamamı boş `search_path` kullanır; PUBLIC/anon açık fonksiyon eklenmez. `generate_weekly_parent_report` → `generate_weekly_parent_report_for` zinciri kontrolsüz değildir: wrapper çağıranı doğrular, helper da snapshot sahipliğini güncel guardian ilişkisi üzerinden yeniden doğrular. Cron runner ve enqueue fonksiyonu `SECURITY INVOKER` olarak kalır. Otomatik gönderim anahtarı migration sonunda kapalıdır.

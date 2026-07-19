@@ -82,5 +82,5 @@ test("live harness is explicit, guarded, narrow and cleanup verified", () => {
 test("security matrix documents both rate-limited RPCs and the current function total", () => {
   assert.match(matrix, /`join_class_by_code`[^\n]+rate limit/);
   assert.match(matrix, /`link_guardian_by_student_code`[^\n]+rate limit/);
-  assert.match(matrix, /SECURITY DEFINER toplamı \| 58/);
+  assert.match(matrix, /SECURITY DEFINER toplamı \| 67/);
 });

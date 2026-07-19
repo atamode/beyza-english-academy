@@ -64,6 +64,20 @@ export function createStudentRepository(client = getSupabaseClient()) {
       if (error) throw error;
       return data;
     },
+    async recordLearningEvent(childId,event) {
+      const { data, error } = await client.rpc("record_student_learning_event", {
+        p_child_id: childId,
+        p_event_type: event.eventType,
+        p_idempotency_key: event.idempotencyKey,
+        p_content_type: event.contentType || null,
+        p_content_id: event.contentId || null,
+        p_lesson_id: event.lessonId || null,
+        p_topic_key: event.topicKey || null,
+        p_is_correct: event.isCorrect ?? null
+      });
+      if (error) throw error;
+      return data;
+    },
     async upsertStudentState(childId, state, expectedRevision) {
       const row = { child_id: childId, schema_version: 1, state };
       let result = await client.from("student_state").update(row).eq("child_id", childId).eq("revision", expectedRevision).select("*");

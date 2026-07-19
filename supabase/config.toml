@@ -3,3 +3,6 @@ verify_jwt = true
 
 [functions.send-membership-expiry-reminders]
 verify_jwt = false
+
+[functions.send-weekly-parent-reports]
+verify_jwt = false

@@ -15,6 +15,19 @@ export function mergeStudentState(localState, remoteState) {
   };
 }
 
+export function learningEventsFromStateChange(previous={},next={}) {
+  const events=[];
+  for(const [lessonId,lesson] of Object.entries(next.lessonProgress||{})){
+    const old=(previous.lessonProgress||{})[lessonId]||{};
+    if(lesson.completed&&!old.completed&&lesson.completedAt){
+      events.push({eventType:"lesson_completed",contentType:"lesson",contentId:lessonId,lessonId,idempotencyKey:`lesson:${lessonId}:${lesson.completedAt}`});
+      for(const [screenId,answer] of Object.entries(lesson.answers||{}))if(answer?.completed){events.push({eventType:"question_answered",contentType:"question",contentId:screenId,lessonId,topicKey:answer.topicKey||lessonId,isCorrect:!(Number(answer.wrongCount||0)+Number(answer.wrongAttempts||0)>0),idempotencyKey:`answer:${lessonId}:${screenId}:${lesson.completedAt}`});}
+    }
+  }
+  for(const [wordId,word] of Object.entries(next.vocabularyProgress||{})){const old=(previous.vocabularyProgress||{})[wordId]||{};if(word.lastSeen&&word.lastSeen!==old.lastSeen)events.push({eventType:"word_practiced",contentType:"word",contentId:wordId,idempotencyKey:`word:${wordId}:${word.lastSeen}`});}
+  return events;
+}
+
 export function createSyncEngine(repo = createStudentRepository()) {
   return {
     async syncNow(childId = getActiveStudentId(), state = loadState(), expectedRevision = Number(sessionStorage.getItem(`poma.revision.${childId}`) || 0)) {
@@ -24,6 +37,7 @@ export function createSyncEngine(repo = createStudentRepository()) {
         return { offline: true };
       }
       try {
+        const previous=(await repo.getStudentState(childId))?.state||{};
         const result = await repo.upsertStudentState(childId, state, expectedRevision);
         if (result.conflict) {
           const merged = mergeStudentState(state, result.remote?.state || {});
@@ -31,6 +45,7 @@ export function createSyncEngine(repo = createStudentRepository()) {
           enqueueOfflineMutation(childId, { kind: "conflict_snapshot", state, remote: result.remote });
           return { conflict: true, merged };
         }
+        for(const event of learningEventsFromStateChange(previous,state))await repo.recordLearningEvent(childId,event);
         sessionStorage.setItem(`poma.revision.${childId}`, String(result.row?.revision || expectedRevision + 1));
         return { ok: true, revision: result.row?.revision };
       } catch (error) {
