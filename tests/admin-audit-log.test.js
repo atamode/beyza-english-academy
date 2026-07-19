@@ -36,7 +36,7 @@ test("admin audit UI is read-only, filtered, and limited to recent records",()=>
 test("live E2E and security matrix cover audit counts and cleanup",()=>{
   assert.match(e2e,/admin_audit_log_remaining, 0/);
   assert.match(e2e,/auditRows[\s\S]*teacher_approval_changed[\s\S]*commission_payout_paid/);
-  assert.match(matrix,/SECURITY DEFINER toplamı \| 53/);
-  assert.match(matrix,/authenticated execute \| 39/);
+  assert.match(matrix,/SECURITY DEFINER toplamı \| 58/);
+  assert.match(matrix,/authenticated execute \| 44/);
   assert.match(matrix,/`list_admin_audit_log`/);
 });

@@ -1,7 +1,7 @@
 import { getRoute, navigate } from "./router.js";
 import { getSupabaseClient } from "./supabase-client.js";
 import { createPaymentService } from "./payment-service.js";
-import { adminPaymentsView, formatBytes, isAdminUser, paymentCenterView, paymentResult, validateReceiptFile } from "./payment-views.js";
+import { adminPaymentsView, adminRefundsView, formatBytes, isAdminUser, paymentCenterView, paymentResult, validateReceiptFile } from "./payment-views.js";
 import { trackEvent } from "./analytics.js";
 import { consumePricingSelection } from "./pricing-state.js";
 import { capturePartnerAttribution, clearPartnerAttribution, readPartnerAttribution } from "./partner-attribution.js";
@@ -9,7 +9,7 @@ import { capturePartnerAttribution, clearPartnerAttribution, readPartnerAttribut
 const app = document.querySelector("#app");
 const client = getSupabaseClient();
 const payments = createPaymentService(client);
-let screen = { userId:null, plans:[], paymentRows:[], subscription:null, adminRows:[], adminFilter:{ status:"pending", search:"" }, busy:new Set() };
+let screen = { userId:null, plans:[], paymentRows:[], subscription:null, adminRows:[], adminRefunds:[], adminFilter:{ status:"pending", search:"" }, busy:new Set() };
 let capturedInvite = readPartnerAttribution();
 
 function showInviteCaptured(invite=capturedInvite) {
@@ -28,7 +28,7 @@ async function hydratePartnerCode() {
 capturePartnerAttribution(code=>payments.validatePartnerCode(code)).then(invite=>{capturedInvite=invite;showInviteCaptured(invite)}).catch(()=>{});
 
 function clearSensitiveState() {
-  screen = { userId:null, plans:[], paymentRows:[], subscription:null, adminRows:[], adminFilter:{ status:"pending", search:"" }, busy:new Set() };
+  screen = { userId:null, plans:[], paymentRows:[], subscription:null, adminRows:[], adminRefunds:[], adminFilter:{ status:"pending", search:"" }, busy:new Set() };
 }
 
 async function currentUser() {
@@ -79,11 +79,11 @@ async function renderAdmin() {
   if (!isAdminUser(user)) { clearSensitiveState(); app.innerHTML=`<section class="card"><h1>Bu sayfaya erişim yetkin yok.</h1><button class="button secondary" data-route="account">Hesaba dön</button></section>`; return; }
   screen.userId=user.id;
   app.innerHTML=`<section class="card"><p>Bekleyen ödemeler yükleniyor…</p></section>`;
-  try { screen.adminRows=await payments.listAdminPayments(); renderAdminRows(); }
+  try { [screen.adminRows,screen.adminRefunds]=await Promise.all([payments.listAdminPayments(),payments.listAdminRefunds()]); renderAdminRows(); }
   catch(error){app.innerHTML=`<section class="card"><h1>Ödemeler yüklenemedi</h1><p>${friendlyError(error)}</p><button class="button secondary" data-action="reload-admin">Yeniden dene</button></section>`;}
 }
 
-function renderAdminRows(){app.innerHTML=adminPaymentsView(screen.adminRows,screen.adminFilter);app.focus();}
+function renderAdminRows(){app.innerHTML=adminPaymentsView(screen.adminRows,screen.adminFilter)+adminRefundsView(screen.adminRefunds);app.focus();}
 
 function openPlanSelection(planCode) {
   const plan=screen.plans.find(x=>x.code===planCode);if(!plan||plan.code==="FREE_STARTER")return false;
@@ -163,6 +163,33 @@ document.addEventListener("click",async event=>{
   if(action==="instagram-sent"){
     const key=`instagram:${button.dataset.paymentId}`;if(screen.busy.has(key))return;screen.busy.add(key);button.disabled=true;
     try{await payments.markInstagramReceiptSent(button.dataset.paymentId,"");alert("Bildirim alındı. Ödeme onaylanmadı; inceleme bekleniyor.");await renderMembership();}catch(error){alert(friendlyError(error));}finally{screen.busy.delete(key);button.disabled=false;}return;
+  }
+  if(action==="request-refund"){
+    const card=button.closest(".payment-history-row"),paymentId=card?.dataset.paymentId,status=card?.querySelector("[data-refund-status]"),reason=card?.querySelector("[data-refund-reason]")?.value.trim(),key=`refund-request:${paymentId}`;
+    if(!reason||reason.length<10){status.className="feedback incorrect";status.textContent="İade nedeni en az 10 karakter olmalı.";return;}
+    if(screen.busy.has(key)||!confirm("Bu ödeme için tam iade talebi oluşturmak istiyor musun?"))return;
+    screen.busy.add(key);button.disabled=true;
+    try{await payments.requestRefund(paymentId,reason);await renderMembership();}
+    catch(error){status.className="feedback incorrect";status.textContent=friendlyError(error,"İade talebi oluşturulamadı. Listeyi yenileyip durumu kontrol edin.");}
+    finally{screen.busy.delete(key);button.disabled=false;}return;
+  }
+  const refundCard=button.closest(".admin-refund-row");
+  if(refundCard&&["approve-refund","reject-refund","cancel-refund","complete-refund","resolve-refund-alert"].includes(action)){
+    const refundId=refundCard.dataset.refundId,status=refundCard.querySelector("[data-refund-admin-status]"),note=refundCard.querySelector("[data-refund-admin-note]")?.value.trim()||"",key=`refund-admin:${action}:${refundId}`;
+    if(["reject-refund","cancel-refund","resolve-refund-alert"].includes(action)&&note.length<3){status.className="feedback incorrect";status.textContent="Bu işlem için açıklayıcı yönetici notu zorunlu.";return;}
+    const method=refundCard.querySelector("[data-refund-method]")?.value,reference=refundCard.querySelector("[data-refund-reference]")?.value.trim();
+    if(action==="complete-refund"&&(!reference||reference.length<3)){status.className="feedback incorrect";status.textContent="Gerçek para gönderiminin iade referansı zorunlu.";return;}
+    const confirmation=action==="complete-refund"?"Tam iade gerçekten gönderildi mi? Onay, kalan erişimi sonlandırır ve geri alınamaz muhasebe kayıtları oluşturur.":"Bu iade kararını kaydetmek istiyor musun?";
+    if(screen.busy.has(key)||!confirm(confirmation))return;screen.busy.add(key);refundCard.querySelectorAll("button").forEach(x=>x.disabled=true);
+    try{
+      if(action==="approve-refund")await payments.adminReviewRefund(refundId,"approved",note||null);
+      else if(action==="reject-refund")await payments.adminReviewRefund(refundId,"rejected",note);
+      else if(action==="cancel-refund")await payments.adminReviewRefund(refundId,"cancelled",note);
+      else if(action==="complete-refund")await payments.adminCompleteRefund(refundId,method,reference,note||null);
+      else await payments.resolveRefundAccountingAlert(refundCard.dataset.alertId,note);
+      await renderAdmin();
+    }catch(error){status.className="feedback incorrect";status.textContent=friendlyError(error,"İade işlemi tamamlanamadı. Listeyi yenileyip güncel durumu kontrol edin.");}
+    finally{screen.busy.delete(key);refundCard.querySelectorAll("button").forEach(x=>x.disabled=false);}return;
   }
   const reviewCard=button.closest(".admin-payment-row"),paymentId=reviewCard?.dataset.paymentId,key=`review:${paymentId}`;
   if(action==="retry-payment-email"){

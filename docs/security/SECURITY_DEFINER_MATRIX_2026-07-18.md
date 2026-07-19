@@ -6,14 +6,14 @@ Bu kayıt, `gzsrcjovhhlfpvvpucri` projesinin canlı `public` şemasında 18 Temm
 
 | Ölçüm | Sonuç |
 |---|---:|
-| SECURITY DEFINER toplamı | 53 |
+| SECURITY DEFINER toplamı | 58 |
 | PUBLIC execute | 0 |
 | anon execute | 0 |
-| authenticated execute | 39 |
+| authenticated execute | 44 |
 | service_role execute | 2 |
 | Internal-only | 12 |
 | search_path eksik | 0 |
-| search_path boş (`''`) | 26 |
+| search_path boş (`''`) | 31 |
 | search_path `public` | 26 |
 | search_path `pg_catalog` | 1 |
 
@@ -26,8 +26,11 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | Fonksiyon | Argümanlar | Amaç | Çalıştırabilen rol | Yetkilendirme yöntemi | search_path | Veri kapsamı | Risk seviyesi | Karar |
 |---|---|---|---|---|---|---|---|---|
 | `admin_cancel_commission_payout` | `p_payout_id uuid, p_admin_note text` | Bekleyen payout'ı iptal eder | authenticated | Doğrudan `is_poma_admin()`; `auth.uid()` audit aktörü | boş | Tek payout ve bağlı kazançlar | Yüksek | Koru |
+| `admin_complete_refund` | `p_refund_request_id uuid, p_refund_method text, p_refund_reference text, p_admin_note text` | Gerçek para gönderimi sonrası iadeyi tamamlayıp erişim ve komisyon etkilerini uygular | authenticated | Doğrudan `is_poma_admin()`; ödeme tutarı sunucudan ve talep durumundan doğrulanır | boş | Tek iade, bağlı erişim, reminder, komisyon ve audit | Yüksek | Koru; tamamlanmış çağrı idempotent |
 | `admin_create_commission_payout` | `p_teacher_id uuid, p_period_start date, p_period_end date, p_admin_note text` | Komisyonları kilitleyip payout oluşturur | authenticated | Doğrudan `is_poma_admin()`; `auth.uid()` audit aktörü | boş | Bir öğretmen ve tarih dönemi | Yüksek | Koru |
 | `admin_mark_commission_payout_paid` | `p_payout_id uuid, p_admin_note text` | Payout ve bağlı kazançları paid yapar | authenticated | Doğrudan `is_poma_admin()`; `auth.uid()` audit aktörü | boş | Tek payout ve bağlı kazançlar | Yüksek | Koru |
+| `admin_resolve_refund_accounting_alert` | `p_alert_id uuid, p_resolution_note text` | Ödenmiş veya payout'a ayrılmış komisyon iade uyarısını çözer | authenticated | Doğrudan `is_poma_admin()`; zorunlu çözüm notu ve ortak audit | boş | Tek muhasebe uyarısı | Yüksek | Koru |
+| `admin_review_refund` | `p_refund_request_id uuid, p_decision text, p_admin_note text` | İade talebini kabul, ret veya iptal eder | authenticated | Doğrudan `is_poma_admin()`; geçiş ve uygunluk yeniden doğrulaması | boş | Tek iade talebi ve olay/audit kaydı | Yüksek | Koru |
 | `admin_set_teacher_approval` | `p_teacher_id uuid, p_status text, p_admin_note text` | Öğretmen onay durumunu değiştirir | authenticated | Oturum + doğrudan `is_poma_admin()` | boş | Tek öğretmen profili ve audit | Yüksek | Koru |
 | `admin_upsert_teacher_partner` | `p_teacher_id uuid, p_partner_code text, p_status text, p_commission_rate numeric, p_access_ends_at timestamptz, p_admin_note text` | Partner durumunu ve erişimini yönetir | authenticated | Doğrudan `is_poma_admin()` | public | Tek öğretmen partner profili ve audit | Yüksek | Koru; ileride boş search_path adayı |
 | `approve_payment` | `p_payment_request_id uuid, p_admin_note text` | Ödemeyi onaylama giriş noktası | authenticated | Dolaylı: `review_payment` → `is_poma_admin()` | public | Tek ödeme; abonelik/referral/kredi/komisyon yan etkileri | Yüksek | Koru; dolaylı kontrol doğrulandı |
@@ -35,6 +38,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | `list_admin_commission_payouts` | `p_status text` | Yönetici payout listesini döndürür | authenticated | Doğrudan `is_poma_admin()` | boş | Filtreli payout ve bağlı kazanç sayısı | Orta | Koru |
 | `list_admin_audit_log` | `p_action text, p_entity_type text, p_limit integer` | Kritik yönetici mutasyonlarının ortak audit geçmişini listeler | authenticated | Oturum + doğrudan `is_poma_admin()`; tablo doğrudan erişime kapalı | boş | En yeni 1–200 minimize edilmiş audit kaydı | Yüksek | Koru; salt-okunur yönetici RPC'si |
 | `list_admin_payments` | boş | Stale pending talepleri sona erdirip yönetici ödeme listesini döndürür | authenticated | Doğrudan `is_poma_admin()`; internal expiration helper | public | Ödeme, süre, plan, kullanıcı ve makbuz özeti | Yüksek | Koru; ileride boş search_path adayı |
+| `list_admin_refunds` | boş | İade taleplerini, erişim etkisini, komisyonu ve açık muhasebe uyarısını listeler | authenticated | Doğrudan `is_poma_admin()` | boş | Tüm iade yönetim özeti | Yüksek | Koru; salt-okunur yönetici RPC'si |
 | `list_admin_teacher_partners` | boş | Partner öğretmenleri listeler | authenticated | Doğrudan `is_poma_admin()` | public | Partner, referral ve komisyon özeti | Orta | Koru; ileride boş search_path adayı |
 | `list_admin_teacher_profiles` | `p_status text` | Öğretmen başvurularını listeler | authenticated | Oturum + doğrudan `is_poma_admin()` | boş | Filtreli öğretmen profilleri | Orta | Koru |
 
@@ -47,6 +51,7 @@ Risk seviyesi veri hassasiyeti ve mutasyon etkisini anlatır; tek başına açı
 | `link_guardian_by_student_code` | `p_student_code text, p_relationship text` | Veli-öğrenci bağlantısı kurar | authenticated | `auth.uid()`; parent/both kontrolü; hesap/action bazlı 5/15 dk rate limit | boş | Tek öğrenci kodu ve çağıran guardian | Orta | Koru; rate limit doğrulandı |
 | `mark_instagram_receipt_sent` | `p_payment_request_id uuid, p_instagram_username text` | Süresi geçmemiş pending ödeme bildirimini işaretler | authenticated | `auth.uid()` ile ödeme sahipliği; pending expiry kontrolü | public | Çağıranın tek ödeme talebi | Orta | Koru; receipt_sent korunur, expired işlem reddedilir |
 | `register_payment_receipt` | `p_payment_request_id uuid, p_storage_path text, p_original_filename text, p_mime_type text, p_size_bytes bigint` | Süresi geçmemiş pending veya receipt_sent talebe makbuz metadata kaydı oluşturur | authenticated | `auth.uid()` ile ödeme ve storage yolu sahipliği; pending expiry kontrolü | public | Çağıranın tek ödeme/makbuz kaydı | Orta | Koru; receipt_sent ek dekont davranışı korunur |
+| `request_refund` | `p_payment_request_id uuid, p_reason text` | Uygun onaylı ödeme için tam iade talebi oluşturur | authenticated | `auth.uid()` ile ödeme sahipliği; tutar sunucudan, aktif en son erişim dönemi ve tek açık/tamamlanmış talep kontrolü | boş | Çağıranın tek ödemesi ve bağlı erişim dönemi | Yüksek | Koru |
 
 ## Öğretmen/veli/sınıf yetki yardımcısı
 
@@ -138,3 +143,5 @@ Bu fazda eklenen `record_admin_audit` ve kimlik koruma trigger fonksiyonu `SECUR
 Ödeme karar e-postası fazı yeni bir SECURITY DEFINER fonksiyon eklemez. Mevcut `review_payment`, başarılı approve/reject kararıyla aynı transaction içinde yalnız teslimat snapshot'ı oluşturur; gönderim ayrı, JWT ve `is_poma_admin()` ile korunan Edge Function üzerinden yapılır. SECURITY DEFINER toplamı 52 olarak kalır.
 
 Üyelik bitiş hatırlatma fazı `service_claim_membership_reminder_job` fonksiyonunu ekler ve SECURITY DEFINER toplamını 53'e çıkarır. Cron runner ve enqueue fonksiyonu SECURITY INVOKER'dır. Cron, service-role anahtarını Vault'a kopyalamaz ve statik cron secret kullanmaz; bunun yerine en fazla 15 dakika geçerli, tek kullanımlık UUID job token üretir. Edge Function `verify_jwt=false` olsa da browser endpoint'i değildir: Origin reddedilir ve iş başlamadan önce token atomik olarak tüketilir. Claim sırasında aile üyeliği veya öğretmen erişimi tekrar doğrulanır; değişen veya geçersiz entitlement gönderilmeden skipped yapılır.
+
+Tam iade fazı `request_refund`, `admin_review_refund`, `admin_complete_refund`, `admin_resolve_refund_accounting_alert` ve `list_admin_refunds` fonksiyonlarını ekler; SECURITY DEFINER toplamı 58 olur. Beşinin de PUBLIC/anon erişimi kapalı, yalnız authenticated ACL'si açık, `search_path` değeri boştur. Kullanıcı RPC'si `auth.uid()` sahipliğiyle; dört yönetici RPC'si doğrudan `is_poma_admin()` ile korunur.

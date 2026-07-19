@@ -47,7 +47,7 @@ test("claim uses one-time token locking retries and entitlement revalidation",()
   assert.match(sql,/processing_started_at<now\(\)-interval '15 minutes'/);
   for(const reason of ["entitlement_changed","entitlement_inactive","reminder_window_expired","teacher_not_approved"])assert.match(sql,new RegExp(reason));
   assert.match(sql,/grant execute on function public\.service_claim_membership_reminder_job\(uuid,integer\) to service_role/);
-  assert.match(matrix,/SECURITY DEFINER toplamı \| 53/);
+  assert.match(matrix,/SECURITY DEFINER toplamı \| 58/);
 });
 
 test("second enqueue and sent delivery remain idempotent",()=>{
