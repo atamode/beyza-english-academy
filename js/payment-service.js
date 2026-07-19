@@ -53,7 +53,7 @@ export function createPaymentService(client = getSupabaseClient()) {
       }), "Instagram bildirimi kaydedilemedi."));
     },
     async listMyPayments(userId) {
-      return unwrap(await client.from("payment_requests").select("*,plans(code,name,duration_days),payment_receipts(id,original_filename,mime_type,size_bytes,created_at),subscriptions(id,starts_at,ends_at,status),refund_requests(id,status,refund_amount,requested_reason,admin_note,requested_at,completed_at,refund_method,refund_reference)").eq("user_id", userId).order("created_at", { ascending: false }), "Ödemeler alınamadı.") || [];
+      return unwrap(await client.from("payment_requests").select("*,plans(code,name,duration_days),payment_receipts(id,original_filename,mime_type,size_bytes,created_at),subscriptions(id,starts_at,ends_at,status),teacher_access_credits(id,status,starts_at,ends_at),refund_requests(id,status,refund_amount,requested_reason,admin_note,requested_at,completed_at,refund_method,refund_reference)").eq("user_id", userId).order("created_at", { ascending: false }), "Ödemeler alınamadı.") || [];
     },
     async getMySubscription(userId) {
       return one(unwrap(await client.from("subscriptions").select("*,plans(code,name,child_limit)").eq("user_id", userId).eq("status", "active").gt("ends_at", new Date().toISOString()).order("ends_at", { ascending: false }).limit(1).maybeSingle(), "Üyelik alınamadı."));
@@ -80,7 +80,14 @@ export function createPaymentService(client = getSupabaseClient()) {
       return unwrap(await client.rpc("list_admin_payments"), "Yönetici ödemeleri alınamadı.") || [];
     },
     async listAdminRefunds() {
-      return unwrap(await client.rpc("list_admin_refunds"), "İade talepleri alınamadı.") || [];
+      const rows=unwrap(await client.rpc("list_admin_refunds"), "İade talepleri alınamadı.") || [],ids=rows.map(row=>row.refund_request_id).filter(Boolean);
+      if(!ids.length)return rows;
+      const [refunds,alerts]=await Promise.all([
+        client.from("refund_requests").select("id,reviewed_at").in("id",ids),
+        client.from("refund_accounting_alerts").select("id,refund_request_id,payment_request_id,commission_earning_id,payout_id,commission_amount,alert_type,status,resolution_note,resolved_at").in("refund_request_id",ids)
+      ]);
+      const refundRows=unwrap(refunds,"İade inceleme zamanları alınamadı.")||[],alertRows=unwrap(alerts,"Muhasebe uyarıları alınamadı.")||[];
+      return rows.map(row=>({...row,refund_reviewed_at:refundRows.find(item=>item.id===row.refund_request_id)?.reviewed_at||null,accounting_alerts:alertRows.filter(item=>item.refund_request_id===row.refund_request_id)}));
     },
     async requestRefund(paymentRequestId, reason) {
       return locked(`request:${paymentRequestId}`, async () => one(unwrap(await client.rpc("request_refund", {
