@@ -130,6 +130,7 @@ document.addEventListener("click",async event=>{
   const button=event.target.closest("[data-action]"); if(!button) return;
   const action=button.dataset.action;
   if(action==="reload-membership") return renderMembership(); if(action==="reload-admin") return renderAdmin();
+  if(action==="new-payment-request"){app.querySelector(".payment-plan-grid")?.scrollIntoView({behavior:"smooth",block:"start"});return;}
   if(action==="copy-iban"||action==="copy-payment-code"){
     const card=button.closest(".bank-transfer-card"),status=card?.querySelector("[data-copy-status]"),source=card?.querySelector(action==="copy-iban"?"[data-copy-iban-value]":"[data-copy-payment-code]");
     const value=action==="copy-iban"?(source?.textContent || "").replace(/\s+/g,""):(source?.textContent || "").trim();const copied=value?await copyText(value):false;

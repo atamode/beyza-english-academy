@@ -166,6 +166,8 @@ try {
     p_instagram_username: null, p_sender_name: marker, p_transfer_date: new Date().toISOString().slice(0, 10), p_partner_code: code
   });
   const first = await makePayment(partnerCode);
+  assert.ok(first.created_at && first.expires_at);
+  assert.ok(Math.abs(new Date(first.expires_at) - new Date(first.created_at) - 72 * 60 * 60 * 1000) < 5000);
   await rpcMust("approve_payment", adminToken, { p_payment_request_id: first.id, p_admin_note: marker });
   const firstPayment = await actorSelect("payment_requests", parentToken, { id: `eq.${first.id}` }, "id,status,payable_amount");
   const firstSubscription = await actorSelect("subscriptions", parentToken, { source_payment_request_id: `eq.${first.id}` }, "id,starts_at,ends_at,status,source_payment_request_id");
