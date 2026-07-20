@@ -45,7 +45,9 @@ test("özellik anahtarı kapalıyken toplu enqueue ve worker gönderimi yapmaz",
 });
 
 test("sent teslimat ikinci kez claim edilmez ve veli-hafta teslimatı tektir",()=>{
-  const claim=/where \(x\.status='pending' or \(x\.status='failed'[\s\S]*?\) and x\.scheduled_at/.exec(sql)?.[0]||"";assert.doesNotMatch(claim,/status='sent'/);assert.match(sql,/unique\(parent_user_id,period_start\)/);assert.match(edgeFunction,/weekly-parent-report\/\$\{delivery\.id\}/);
+  const claim=/where \(x\.status='pending' or \(x\.status='failed'[\s\S]*?\) and x\.scheduled_at/.exec(sql)?.[0]||"";assert.doesNotMatch(claim,/status='sent'/);assert.match(sql,/unique\(parent_user_id,period_start\)/);assert.match(edgeFunction,/weekly-parent-report\/\$\{delivery\.id\}/);assert.match(edgeFunction,/delivery\.status==="sent"[\s\S]*idempotent:true/);
+  assert.match(edgeFunction,/delivery_id[\s\S]*is_poma_admin[\s\S]*metadata\.is_test!==true[\s\S]*weekly_parent_report_acceptance/);
+  assert.match(edgeFunction,/const acceptanceEmail="delivered\+poma-weekly@resend\.dev"/);
 });
 
 test("veli sorgusu yalnız kendi güncel çocuk raporlarını döndürür",()=>{
