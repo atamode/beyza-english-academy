@@ -1,5 +1,6 @@
 import {createClient} from "@supabase/supabase-js";
 import {renderWeeklyParentReport} from "../_shared/weekly-parent-report.mjs";
+import {renderMonthlyParentReport} from "../_shared/monthly-parent-report.mjs";
 
 const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=utf-8"}});
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -9,16 +10,17 @@ Deno.serve(async req=>{
   if(req.headers.has("Origin"))return json({error:"Browser origin reddedildi."},403);
   if(req.method!=="POST")return json({error:"Yalnız POST desteklenir."},405);
   let body;try{body=await req.json()}catch{return json({error:"Geçersiz JSON."},400)}
-  const keys=Object.keys(body||{}),jobMode=keys.length===1&&uuid.test(String(body?.job_token||"")),manualMode=keys.length===1&&uuid.test(String(body?.delivery_id||""));
-  if(!jobMode&&!manualMode)return json({error:"Geçersiz istek."},400);
+  const keys=Object.keys(body||{}),jobMode=keys.length===1&&uuid.test(String(body?.job_token||"")),monthlyMode=keys.length===1&&uuid.test(String(body?.monthly_job_token||"")),manualMode=keys.length===1&&uuid.test(String(body?.delivery_id||""));
+  if(!jobMode&&!monthlyMode&&!manualMode)return json({error:"Geçersiz istek."},400);
 
   const supabaseUrl=Deno.env.get("SUPABASE_URL")||"",serviceKey=Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")||"";
   const server=createClient(supabaseUrl,serviceKey,{auth:{persistSession:false,autoRefreshToken:false}});
   let deliveries=[];
-  if(jobMode){
-    const {data,error}=await server.rpc("service_claim_weekly_parent_report_job",{p_job_token:body.job_token,p_limit:50});
+  if(jobMode||monthlyMode){
+    const rpcName=monthlyMode?"service_claim_monthly_parent_report_job":"service_claim_weekly_parent_report_job",args=monthlyMode?{p_job_token:body.monthly_job_token,p_limit:50}:{p_job_token:body.job_token,p_limit:50};
+    const {data,error}=await server.rpc(rpcName,args);
     if(error)return json({error:"Geçersiz veya kullanılmış iş tokenı."},401);
-    deliveries=Array.isArray(data)?data:[];
+    deliveries=(Array.isArray(data)?data:[]).map(row=>({...row,_report_type:monthlyMode?"monthly":"weekly"}));
   }else{
     const authorization=req.headers.get("Authorization");
     if(!authorization?.startsWith("Bearer "))return json({error:"Yetkilendirme gerekli."},401);
@@ -44,11 +46,11 @@ Deno.serve(async req=>{
 
   let sent=0,failed=0;
   for(const delivery of deliveries){
-    const now=new Date().toISOString(),update=values=>server.from("weekly_parent_report_deliveries").update({...values,updated_at:now}).eq("id",delivery.id).eq("status","processing").eq("attempt_count",delivery.attempt_count);
+    const now=new Date().toISOString(),table=delivery._report_type==="monthly"?"monthly_parent_report_deliveries":"weekly_parent_report_deliveries",update=values=>server.from(table).update({...values,updated_at:now}).eq("id",delivery.id).eq("status","processing").eq("attempt_count",delivery.attempt_count);
     const key=Deno.env.get("RESEND_API_KEY"),from=Deno.env.get("EMAIL_FROM"),replyTo=Deno.env.get("EMAIL_REPLY_TO");
     if(!key||!from||!replyTo){await update({status:"failed",processing_started_at:null,last_error_code:"email_configuration_missing",last_error_at:now});failed++;continue}
-    const message=renderWeeklyParentReport(delivery);let response;
-    try{response=await fetch("https://api.resend.com/emails",{method:"POST",headers:{Authorization:`Bearer ${key}`,"Content-Type":"application/json; charset=utf-8","Idempotency-Key":`weekly-parent-report/${delivery.id}`},body:JSON.stringify({from,to:[delivery.recipient_email],reply_to:replyTo,subject:message.subject,text:message.text,html:message.html})})}catch{response=null}
+    const monthly=delivery._report_type==="monthly",message=monthly?renderMonthlyParentReport(delivery):renderWeeklyParentReport(delivery);let response;
+    try{response=await fetch("https://api.resend.com/emails",{method:"POST",headers:{Authorization:`Bearer ${key}`,"Content-Type":"application/json; charset=utf-8","Idempotency-Key":`${monthly?"monthly":"weekly"}-parent-report/${delivery.id}`},body:JSON.stringify({from,to:[delivery.recipient_email],reply_to:replyTo,subject:message.subject,text:message.text,html:message.html})})}catch{response=null}
     if(!response?.ok){await update({status:"failed",processing_started_at:null,last_error_code:response?`provider_http_${response.status}`:"provider_unreachable",last_error_at:now});failed++;continue}
     let providerId="";try{providerId=String((await response.json())?.id||"")}catch{}
     if(!providerId){await update({status:"failed",processing_started_at:null,last_error_code:"provider_id_missing",last_error_at:now});failed++;continue}

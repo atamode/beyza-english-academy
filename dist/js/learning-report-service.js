@@ -10,5 +10,8 @@ export function createLearningReportService(client=getSupabaseClient()) {
     listWeekly(childId=null){return client.rpc("list_my_weekly_parent_reports",{p_child_id:childId}).then(result=>unwrap(result,"Haftalık raporlar alınamadı."))||[];},
     getWeeklyPreference(){return client.from("weekly_parent_report_preferences").select("weekly_progress_email_enabled").maybeSingle().then(({data,error})=>{if(error)throw new Error("E-posta tercihi alınamadı.");return data?.weekly_progress_email_enabled!==false;});},
     setWeeklyPreference(enabled){return client.rpc("update_weekly_progress_email_preference",{p_enabled:Boolean(enabled)}).then(result=>unwrap(result,"E-posta tercihi kaydedilemedi."));}
+    ,listMonthly(childId=null){return client.rpc("list_my_monthly_parent_reports",{p_child_id:childId}).then(result=>unwrap(result,"Aylık raporlar alınamadı."))||[];}
+    ,getMonthlyPreference(){return client.from("weekly_parent_report_preferences").select("monthly_progress_email_enabled").maybeSingle().then(({data,error})=>{if(error)throw new Error("Aylık e-posta tercihi alınamadı.");return data?.monthly_progress_email_enabled!==false;});}
+    ,setMonthlyPreference(enabled){return client.rpc("update_monthly_progress_email_preference",{p_enabled:Boolean(enabled)}).then(result=>unwrap(result,"Aylık e-posta tercihi kaydedilemedi."));}
   };
 }

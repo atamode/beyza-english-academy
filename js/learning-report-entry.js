@@ -6,14 +6,14 @@ import { reportPeriod, previousReportPeriod } from "./report-periods.js";
 import { getRoute, navigate } from "./router.js";
 
 const app=document.querySelector("#app"),reports=createLearningReportService();
-const initial=()=>({children:[],childId:null,periodType:"weekly",period:null,payload:null,history:[],weeklyReports:[],weeklyEmailEnabled:true,loading:false,error:""});
+const initial=()=>({children:[],childId:null,periodType:"weekly",period:null,payload:null,history:[],weeklyReports:[],monthlyReports:[],weeklyEmailEnabled:true,monthlyEmailEnabled:true,loading:false,error:""});
 let state=initial(),renderToken=0;
 const reset=()=>{state=initial();renderToken++;};
 function render(){app.innerHTML=learningReportView({selectedChildId:state.childId,...state});app.focus();}
 
 async function loadSelectedReport(){
   const token=++renderToken;state.loading=true;state.error="";state.payload=null;state.history=[];state.period=reportPeriod(state.periodType);render();
-  try{const [payload,history,weeklyReports,weeklyEmailEnabled]=await Promise.all([reports.preview(state.childId,state.periodType,state.period.startDate),reports.list(state.childId),reports.listWeekly(state.childId),reports.getWeeklyPreference()]);if(token!==renderToken)return;Object.assign(state,{payload,history,weeklyReports,weeklyEmailEnabled});trackEvent("parent_report_opened",{period_type:state.periodType,source:"parent",has_data:Boolean(payload?.has_data)});}
+  try{const [payload,history,weeklyReports,monthlyReports,weeklyEmailEnabled,monthlyEmailEnabled]=await Promise.all([reports.preview(state.childId,state.periodType,state.period.startDate),reports.list(state.childId),reports.listWeekly(state.childId),reports.listMonthly(state.childId),reports.getWeeklyPreference(),reports.getMonthlyPreference()]);if(token!==renderToken)return;Object.assign(state,{payload,history,weeklyReports,monthlyReports,weeklyEmailEnabled,monthlyEmailEnabled});trackEvent("parent_report_opened",{period_type:state.periodType,source:"parent",has_data:Boolean(payload?.has_data)});}
   catch(error){if(token!==renderToken)return;state.error=error.message||"Rapor yüklenemedi.";}
   finally{if(token===renderToken){state.loading=false;render();}}
 }
@@ -32,6 +32,6 @@ document.addEventListener("click",async event=>{
   if(event.target.closest("[data-action='generate-previous-report']")){const period=previousReportPeriod(state.periodType);try{await reports.generate(state.childId,state.periodType,period.startDate);await loadSelectedReport();}catch(error){state.error=error.message;render();}return;}
   const historyButton=event.target.closest("[data-report-id]");if(historyButton){try{const row=await reports.get(historyButton.dataset.reportId);state.payload=row.payload;state.period={type:row.period_type,start:row.period_start,end:row.period_end};render();}catch(error){state.error=error.message;render();}}
 });
-document.addEventListener("change",async event=>{if(getRoute()!=="parent/reports")return;if(event.target.matches("[data-report-child]")){state.childId=event.target.value;await loadSelectedReport();return;}if(event.target.matches("[data-weekly-email-preference]")){try{state.weeklyEmailEnabled=await reports.setWeeklyPreference(event.target.checked);render();}catch(error){state.error=error.message;render();}}});
+document.addEventListener("change",async event=>{if(getRoute()!=="parent/reports")return;if(event.target.matches("[data-report-child]")){state.childId=event.target.value;await loadSelectedReport();return;}if(event.target.matches("[data-weekly-email-preference]")){try{state.weeklyEmailEnabled=await reports.setWeeklyPreference(event.target.checked);render();}catch(error){state.error=error.message;render();}}if(event.target.matches("[data-monthly-email-preference]")){try{state.monthlyEmailEnabled=await reports.setMonthlyPreference(event.target.checked);render();}catch(error){state.error=error.message;render();}}});
 window.addEventListener("hashchange",()=>queueMicrotask(()=>{if(getRoute()==="parent/reports")openReportCenter();else{reset();injectReportsLink();}}));
 new MutationObserver(()=>injectReportsLink()).observe(app,{childList:true});setTimeout(()=>{if(getRoute()==="parent/reports")openReportCenter();else injectReportsLink();},0);
