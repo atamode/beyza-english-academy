@@ -10,6 +10,7 @@ export function mergeStudentState(localState, remoteState) {
     lessonProgress: { ...(remoteState.lessonProgress || {}), ...(localState.lessonProgress || {}) },
     moduleReviews: { ...(remoteState.moduleReviews || {}), ...(localState.moduleReviews || {}) },
     vocabularyProgress: { ...(remoteState.vocabularyProgress || {}), ...(localState.vocabularyProgress || {}) },
+    sportLearningEvents: { ...(remoteState.sportLearningEvents || {}), ...(localState.sportLearningEvents || {}) },
     totals: { ...(remoteState.totals || {}), ...(localState.totals || {}) },
     settings: { ...(remoteState.settings || {}), ...(localState.settings || {}) }
   };
@@ -25,6 +26,7 @@ export function learningEventsFromStateChange(previous={},next={}) {
     }
   }
   for(const [wordId,word] of Object.entries(next.vocabularyProgress||{})){const old=(previous.vocabularyProgress||{})[wordId]||{};if(word.lastSeen&&word.lastSeen!==old.lastSeen)events.push({eventType:"word_practiced",contentType:"word",contentId:wordId,idempotencyKey:`word:${wordId}:${word.lastSeen}`});}
+  for(const [key,event] of Object.entries(next.sportLearningEvents||{}))if(!(previous.sportLearningEvents||{})[key])events.push(event);
   return events;
 }
 

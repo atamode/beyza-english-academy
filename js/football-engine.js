@@ -1,5 +1,6 @@
 import { recordWordAnswer } from "./vocabulary-engine.js";
-import { activeStudentStorage } from "./account-storage.js";
+import { activeStudentStorage, getActiveStudentId } from "./account-storage.js";
+import { selectAdaptiveSportWords } from "./sport-question-engine.js";
 
 export const FOOTBALL_KEYS = {
   stats: "beyzaAcademy.games.football.v1.stats",
@@ -54,7 +55,7 @@ export const TROPHIES = [
   { id: "streak-three", title: "Günlük Seri: 3 Gün", test: s => (s.studyStreak || 0) >= 3 }
 ];
 
-const defaultStorage = () => activeStudentStorage();
+const defaultStorage = () => {if(getActiveStudentId()||typeof sessionStorage==="undefined")return activeStudentStorage();return {getItem:key=>sessionStorage.getItem(`poma.guest.sport.${key}`),setItem:(key,value)=>sessionStorage.setItem(`poma.guest.sport.${key}`,String(value)),removeItem:key=>sessionStorage.removeItem(`poma.guest.sport.${key}`)};};
 
 export function safeRead(key, fallback, storage = defaultStorage()) {
   try {
@@ -72,7 +73,7 @@ export function safeWrite(key, value, storage = defaultStorage()) {
 
 export const defaultFootballStats = () => ({ version: 1, matches: 0, wins: 0, goalsFor: 0, goalsAgainst: 0, saves: 0, bestStreak: 0, studiedWords: {}, recoveredDifficult: 0, lastMatch: null, studyStreak: 0 });
 export const defaultAchievements = () => ({ version: 1, unlocked: {}, locked: { "hard-opponent": true } });
-export const defaultFootballLeagueProgress = () => ({ version: 2, currentLeague: "starter", seenWordIds: [], recentMatchWordIds: [], words: {}, matchesPlayed: 0, lastMatchSignature: "" });
+export const defaultFootballLeagueProgress = () => ({ version: 2, currentLeague: "starter", seenWordIds: [], recentMatchWordIds: [], recentQuestionIds: [], words: {}, matchesPlayed: 0, lastMatchSignature: "" });
 
 export function footballLeagueLabel(id) {
   return FOOTBALL_LEAGUES.find(l => l.id === id)?.label || FOOTBALL_LEAGUES[0].label;
@@ -107,6 +108,7 @@ export function migrateFootballLeagueProgress(raw = null) {
   if (!FOOTBALL_LEAGUES.some(l => l.id === next.currentLeague)) next.currentLeague = "starter";
   next.seenWordIds = [...new Set([...(raw.seenWordIds || []), ...Object.keys(next.words)])];
   next.recentMatchWordIds = Array.isArray(raw.recentMatchWordIds) ? raw.recentMatchWordIds.slice(-2).map(x => Array.isArray(x) ? x : []) : [];
+  next.recentQuestionIds = Array.isArray(raw.recentQuestionIds) ? raw.recentQuestionIds.slice(-5) : [];
   return next;
 }
 
@@ -175,37 +177,7 @@ export function makeQuestionForWord(word, allWords, index, rng = Math.random) {
 
 export function createFootballMatchQuestions(words, academyState = {}, progress = defaultFootballLeagueProgress(), rng = Math.random) {
   const allWords = enrichFootballWords(words);
-  const currentIdx = leagueIndex(progress.currentLeague);
-  const recentBlocked = new Set((progress.recentMatchWordIds || []).slice(-2).flat());
-  const selected = [];
-  const selectedIds = new Set();
-  const now = Date.now();
-  const addFrom = (pool, count) => {
-    let guard = 0;
-    while (selected.length < FOOTBALL_CONFIG.maxQuestions && count > 0 && guard++ < 300) {
-      const candidates = pool.filter(w => !selectedIds.has(w.id));
-      if (!candidates.length) break;
-      const word = weightedPick(candidates.map(w => ({ word: w, weight: 1 + academyBoost(w, academyState) + (progress.words[w.id]?.wrong || 0) })), rng);
-      if (!word) break;
-      selected.push(word);
-      selectedIds.add(word.id);
-      count--;
-    }
-  };
-  const currentNew = allWords.filter(w => leagueIndex(w.footballLeague) === currentIdx && !progress.seenWordIds.includes(w.id) && !recentBlocked.has(w.id));
-  const review = allWords.filter(w => dueForReview(progress.words[w.id], now) || academyBoost(w, academyState) > 1);
-  const oldLearned = allWords.filter(w => {
-    const p = progress.words[w.id] || {};
-    if (recentBlocked.has(w.id) && !dueForReview(p, now)) return false;
-    if (p.mastered && !dueForReview(p, now)) return false;
-    return leagueIndex(w.footballLeague) < currentIdx || p.mastered || (p.correct || 0) > 0;
-  });
-  addFrom(currentNew, 6);
-  addFrom(review, 2);
-  addFrom(oldLearned, 2);
-  addFrom(allWords.filter(w => leagueIndex(w.footballLeague) <= currentIdx && !recentBlocked.has(w.id)), FOOTBALL_CONFIG.maxQuestions - selected.length);
-  addFrom(allWords.filter(w => !recentBlocked.has(w.id)), FOOTBALL_CONFIG.maxQuestions - selected.length);
-  addFrom(allWords, FOOTBALL_CONFIG.maxQuestions - selected.length);
+  const selected = selectAdaptiveSportWords(allWords,academyState,progress,rng,FOOTBALL_CONFIG.maxQuestions);
   if (selected.map(w => w.id).join("|") === progress.lastMatchSignature && selected.length > 1) selected.push(selected.shift());
   return selected.slice(0, FOOTBALL_CONFIG.maxQuestions).map((word, i) => makeQuestionForWord(word, allWords, i, rng)).filter(Boolean);
 }
@@ -359,6 +331,10 @@ export function recordFootballAnswer(academyState, question, correct) {
   return academyState;
 }
 
+function appendSportEvent(state,event){const rows={...(state.sportLearningEvents||{})};rows[event.idempotencyKey]=event;state.sportLearningEvents=Object.fromEntries(Object.entries(rows).slice(-60));return state;}
+export function recordSportAnswer(state,question,correct,{sport,matchId,index}){recordFootballAnswer(state,question,correct);return appendSportEvent(state,{eventType:"question_answered",contentType:"game_question",contentId:question.wordId,lessonId:question.lessonId||null,topicKey:question.category||question.lessonId||"sport",isCorrect:Boolean(correct),idempotencyKey:`sport:${sport}:${matchId}:answer:${index}`});}
+export function recordSportGameCompletion(state,session,sport){return appendSportEvent(state,{eventType:"game_completed",contentType:"game",contentId:`${sport}:${session.matchId}`,topicKey:sport,idempotencyKey:`sport:${sport}:${session.matchId}:completed`});}
+
 export function recordFootballLeagueAnswer(question, correct, matchId, storage = defaultStorage(), now = new Date()) {
   const progress = readFootballLeagueProgress(storage);
   const id = question.wordId;
@@ -377,6 +353,7 @@ export function recordFootballLeagueAnswer(question, correct, matchId, storage =
   };
   progress.words[id] = next;
   progress.seenWordIds = [...new Set([...(progress.seenWordIds || []), id])];
+  progress.recentQuestionIds = [...(progress.recentQuestionIds||[]).filter(wordId=>wordId!==id),id].slice(-5);
   writeFootballLeagueProgress(progress, storage);
   return next;
 }

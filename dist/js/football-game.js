@@ -1,5 +1,6 @@
 import { loadPomaManifest } from "./poma-assets.js";
-import { availableFootballWords, createFootballSession, answerFootballQuestion, advanceFootball, summarizeFootball, safeRead, safeWrite, defaultFootballStats, defaultAchievements, FOOTBALL_KEYS, FOOTBALL_CONFIG, mergeMatchStats, unlockTrophies, recordFootballAnswer, recordFootballLeagueAnswer, finalizeFootballLeagueMatch, readFootballLeagueProgress, leagueProgressPercent, shouldUseVideo, validateFootballQuestion } from "./football-engine.js";
+import { availableFootballWords, createFootballSession, answerFootballQuestion, advanceFootball, summarizeFootball, safeRead, safeWrite, defaultFootballStats, defaultAchievements, FOOTBALL_KEYS, FOOTBALL_CONFIG, mergeMatchStats, unlockTrophies, recordSportAnswer, recordSportGameCompletion, recordFootballLeagueAnswer, finalizeFootballLeagueMatch, readFootballLeagueProgress, leagueProgressPercent, shouldUseVideo, validateFootballQuestion } from "./football-engine.js";
+import {getActiveStudentId} from "./account-storage.js";
 import { createFootballAudio } from "./football-audio.js";
 import { renderSportMedia } from "./sport-media.js";
 
@@ -54,7 +55,7 @@ function render(app, context, resolver, words) {
     audio.startAmbient();
     const selected = Number(button.dataset.footballAnswer);
     const correct = selected === before.correctIndex;
-    context.updateState(x => recordFootballAnswer(x, before, correct));
+    if(getActiveStudentId())context.updateState(x => recordSportAnswer(x,before,correct,{sport:"football",matchId:session.matchId,index:session.questionsAsked}));
     const leagueRecord = recordFootballLeagueAnswer(before, correct, session.matchId);
     if (leagueRecord.mastered && correct) session.masteredThisMatch = [...new Set([...(session.masteredThisMatch || []), before.wordId])];
     if (!correct) session.difficultWords[before.wordId] = (session.difficultWords[before.wordId] || 0) + 1;
@@ -173,6 +174,7 @@ function persistSummary(context) {
   if (oldStats.lastMatch?.completedAt && oldStats.lastMatch.completedAt === session.summary?.completedAt) return;
   session.summary ||= summarizeFootball(session).summary;
   session.summary.completedAt ||= new Date().toISOString();
+  if(getActiveStudentId())context.updateState(state=>recordSportGameCompletion(state,session,"football"));
   const stats = mergeMatchStats(oldStats, session, context.state.streak?.count || 0);
   finalizeFootballLeagueMatch(session);
   const result = unlockTrophies(stats, safeRead(FOOTBALL_KEYS.achievements, defaultAchievements()));

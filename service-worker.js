@@ -1,4 +1,4 @@
-const CACHE="beyza-english-5a1eccda58ac";
+const CACHE="beyza-english-b64c9130fcf3";
 const ASSETS=[
   "./",
   "index.html",
@@ -61,6 +61,7 @@ const ASSETS=[
   "js/poma-assets.js",
   "js/volleyball-assets.js",
   "js/sport-media.js",
+  "js/sport-question-engine.js",
   "js/football-engine.js",
   "js/football-audio.js",
   "js/football-game.js",

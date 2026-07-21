@@ -2,6 +2,8 @@ import { loadVolleyballManifest } from "./volleyball-assets.js";
 import { renderSportMedia } from "./sport-media.js";
 import { createFootballAudio } from "./football-audio.js";
 import { leagueProgressPercent, readFootballLeagueProgress } from "./football-engine.js";
+import {recordSportAnswer,recordSportGameCompletion} from "./football-engine.js";
+import {getActiveStudentId} from "./account-storage.js";
 import {
   availableVolleyballWords,
   createVolleyballSession,
@@ -16,7 +18,6 @@ import {
   VOLLEYBALL_CONFIG,
   mergeVolleyballStats,
   unlockVolleyballTrophies,
-  recordVolleyballAnswer,
   recordFootballLeagueAnswer,
   finalizeFootballLeagueMatch,
   shouldUseVolleyballVideo,
@@ -80,7 +81,7 @@ function render(app, context, resolver, words) {
     audio.startAmbient();
     const selected = Number(button.dataset.volleyballAnswer);
     const correct = selected === before.correctIndex;
-    context.updateState(x => recordVolleyballAnswer(x, before, correct));
+    if(getActiveStudentId())context.updateState(x => recordSportAnswer(x,before,correct,{sport:"volleyball",matchId:session.matchId,index:session.questionsAsked}));
     const leagueRecord = recordFootballLeagueAnswer(before, correct, session.matchId);
     if (leagueRecord.mastered && correct) session.masteredThisMatch = [...new Set([...(session.masteredThisMatch || []), before.wordId])];
     if (!correct) session.difficultWords[before.wordId] = (session.difficultWords[before.wordId] || 0) + 1;
@@ -239,6 +240,7 @@ function persistSummary(context) {
   if (oldStats.lastMatch?.completedAt && oldStats.lastMatch.completedAt === session.summary?.completedAt) return;
   session.summary ||= summarizeVolleyball(session).summary;
   session.summary.completedAt ||= new Date().toISOString();
+  if(getActiveStudentId())context.updateState(state=>recordSportGameCompletion(state,session,"volleyball"));
   const stats = mergeVolleyballStats(oldStats, session, context.state.streak?.count || 0);
   finalizeFootballLeagueMatch(session);
   const result = unlockVolleyballTrophies(stats, safeRead(VOLLEYBALL_KEYS.achievements, defaultVolleyballAchievements()));
