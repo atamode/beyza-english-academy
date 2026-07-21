@@ -1,4 +1,4 @@
-const CACHE="beyza-english-8b38c589ca3a";
+const CACHE="beyza-english-5a1eccda58ac";
 const ASSETS=[
   "./",
   "index.html",
@@ -13,6 +13,7 @@ const ASSETS=[
   "css/payment.css",
   "css/pricing.css",
   "css/learning-reports.css",
+  "css/parent-dashboard.css",
   "css/teacher-partner.css",
   "css/print.css",
   "css/football.css",
@@ -35,6 +36,8 @@ const ASSETS=[
   "js/report-periods.js",
   "js/learning-report-service.js",
   "js/learning-report-views.js",
+  "js/parent-dashboard-service.js",
+  "js/parent-dashboard-views.js",
   "js/learning-report-entry.js",
   "js/teacher-partner-service.js",
   "js/teacher-partner-views.js",
