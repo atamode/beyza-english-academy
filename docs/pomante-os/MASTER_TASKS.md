@@ -9,10 +9,11 @@
 |---|---|---|---|---|
 | MT-001 | Establish canonical Pomante OS | Done | P0 | [Done](DONE.md) |
 | MT-002 | Complete public route and SEO inventory | Done | P0 | [Landing Page Library](LANDING_PAGE_LIBRARY.md) |
-| MT-003 | Verify analytics implementation and funnel baseline | Ready | P0 | [Analytics](ANALYTICS.md) |
+| MT-003 | Verify analytics implementation and funnel baseline | Blocked | P0 | Implementation audited; GA property/data access required |
 | MT-004 | Validate first keyword/audience opportunity set | Backlog | P1 | [Keyword Map](KEYWORD_MAP.md) |
 | MT-005 | Approve first Knowledge Center cluster and briefs | Backlog | P1 | [Content Clusters](CONTENT_CLUSTERS.md) |
 | MT-006 | Implement approved acquisition surfaces | Backlog | P2 | Requires MT-002–005 |
 | MT-007 | Correct confirmed public brand/schema consistency risks | Backlog | P1 | [Schema Matrix](SCHEMA_MATRIX.md) |
+| MT-008 | Repair privacy-safe funnel instrumentation and validate receipt | Ready | P0 | [Analytics](ANALYTICS.md); consent decision required |
 
 Task IDs remain stable. Detailed ideas that are not accepted work belong in [Backlog](BACKLOG.md) or [Idea Bank](IDEA_BANK.md).
