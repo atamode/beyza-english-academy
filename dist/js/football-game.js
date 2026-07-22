@@ -3,6 +3,7 @@ import { availableFootballWords, createFootballSession, answerFootballQuestion, 
 import {getActiveStudentId} from "./account-storage.js";
 import { createFootballAudio } from "./football-audio.js";
 import { renderSportMedia } from "./sport-media.js";
+import { trackEvent } from "./analytics.js";
 
 const esc = v => String(v ?? "").replace(/[&<>\"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let resolverPromise = null, session = null, cleanup = () => {}, audio = null, mediaToken = 0, lastSoundVisual = null, soundListenerBound = false;
@@ -181,6 +182,7 @@ function persistSummary(context) {
   if (result.newlyUnlocked.length) audio.playForVisual("TROPHY");
   safeWrite(FOOTBALL_KEYS.stats, stats);
   safeWrite(FOOTBALL_KEYS.achievements, result.achievements);
+  trackEvent("learning_completed", { content_type: "football", content_id: "football-v1", status: "completed" });
 }
 
 function bindRoutes(app) { app.querySelectorAll("[data-route]").forEach(b => b.onclick = () => { location.hash = `#/${b.dataset.route}`; }); }

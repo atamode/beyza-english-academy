@@ -7,6 +7,7 @@
 
 ## 2026-07-22
 
+- Recorded Decision D-005 and MT-008: explicit analytics opt-in, child-data minimization boundary, repaired funnel events, and the remaining deployment/GA receipt blocker.
 - Recorded the verified analytics implementation inventory, funnel coverage gaps, consent/data-access boundary, and measurement repair task.
 - Recorded the first verified public route and SEO inventory, including live metadata, sitemap, structured-data, and hash-routing constraints.
 - Established Pomante OS as canonical project memory.

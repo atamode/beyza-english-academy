@@ -10,9 +10,9 @@
 | Stage | Core measures | Current measurability (2026-07-22) |
 |---|---|---|
 | Discover | Indexed pages, non-brand impressions/clicks, qualified referrals | Search Console/data baseline unavailable; initial GA page view possible |
-| Understand | Engaged landing sessions, key content depth, product-view action | Pricing section/selection measurable; main landing CTAs not connected to GA |
-| Start | Registration/account start, diagnostic/lesson/game/story start | Pricing-origin signup start only; completion and learning starts absent |
-| Learn | Meaningful completion, return practice, progression signal | Not instrumented |
+| Understand | Engaged landing sessions, key content depth, product-view action | Landing CTAs and pricing events implemented locally; receipt pending |
+| Start | Registration/account start, diagnostic/lesson/game/story start | Signup and sanitized learning route starts implemented locally; receipt pending |
+| Learn | Meaningful completion, return practice, progression signal | Core lesson/diagnostic/sport/story completions implemented locally; retention absent |
 | Parent trust | Parent report viewed, useful report interaction, linked child activity | Report open instrumented; period-change/print declared but unused |
 | Convert/retain | Payment intent, approved payment/membership, renewal/expiry outcomes | Request/receipt instrumented; approval, activation, renewal, expiry and refund outcomes absent |
 

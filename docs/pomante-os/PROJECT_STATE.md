@@ -18,7 +18,7 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 - Parent dashboard, weekly/monthly reports, payment review, refunds, membership expiry reminders, audit logging, CI, and live smoke coverage exist in repository history.
 - Public positioning and acquisition architecture are now governed by this Pomante OS.
 - Live organic search surface currently consists of one crawlable canonical document, `https://pomante.com.tr/`; public games, stories, login, and signup experiences use client-side hash routes and are not distinct crawlable pages.
-- Live GA4 tagging exists, but the measurable funnel is incomplete and numeric baseline data has not been verified. The main landing CTA event dispatcher is not connected to GA, while selected pricing, payment, report, and teacher-partner events have explicit call sites.
+- Privacy-safe analytics repair is implemented locally: GA is opt-in, refusal preserves full use, the preference is changeable, and safe route/landing/signup/core-learning events are connected. It is not live because repository push credentials are unavailable; GA receipt and numeric baseline remain unverified.
 
 ## Fixed boundaries
 
@@ -28,4 +28,4 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 
 ## Immediate operating focus
 
-Resolve the analytics consent/privacy model, repair the minimum funnel instrumentation, verify GA event receipt, and then validate the first acquisition opportunity before designing crawlable product or Knowledge Center routes.
+Deploy the analytics repair and verify GA event receipt when access is available; independently, validate the first acquisition opportunity before designing crawlable product or Knowledge Center routes.

@@ -1,6 +1,7 @@
 import { speak, stopAudio, createSpeechHelper } from "./audio.js";
 import { activeStudentStorage } from "./account-storage.js";
 import { completeStoryQuiz, gradeStoryQuiz, loadStoryBundle, markStoryOpened, readStoryProgress, resolveStoryAsset, updateStoryScene } from "./story-engine.js";
+import { trackEvent } from "./analytics.js";
 
 const esc = value => String(value ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let storyRuntime = { bundle: null, slideIndex: 0, quizMode: false, quizAnswers: {}, quizResult: null, cleanup: null, introActive: false, introCompleted: false, introStage: "room", introTimer: null, musicAudio: null, musicStarted: false, musicRestoreTimer: null, soundBound: false };
@@ -309,6 +310,7 @@ function renderQuiz(app, context, story, renderStory) {
       if (Object.keys(storyRuntime.quizAnswers).length >= story.quiz.length) {
         completeStoryQuiz(storage, story, storyRuntime.quizAnswers);
         storyRuntime.quizResult = gradeStoryQuiz(story, storyRuntime.quizAnswers);
+        trackEvent("learning_completed", { content_type: "story", content_id: story.storyId, status: storyRuntime.quizResult.score >= story.completion.passScore ? "passed" : "needs_review" });
       }
       renderStory();
     };

@@ -14,7 +14,7 @@ Separate observation from interpretation and recommendation. Record source, date
 | ID | Question | Evidence | Finding | Confidence | Decision/task | Status |
 |---|---|---|---|---|---|---|
 | R-001 | What is the current public SEO surface? | Repository route/meta/schema inspection plus live root, robots and sitemap responses; 2026-07-22 | One crawlable canonical root; public product experiences are hash states sharing root metadata; no standalone product, audience, or Knowledge Center pages | High | MT-002 / MT-007 | Complete |
-| R-002 | What is the verified analytics baseline? | Repository and live analytics asset audit; 2026-07-22 | GA4 tag and 11 called custom events exist, but the funnel is incomplete; landing CTA bridge, route views, signup completion, learning events, conversion outcomes and consent controls are absent or unverified. Numeric baseline requires GA property data. | High for implementation; none for received data | MT-003 / MT-008 / OD-004 | Implementation complete; data blocked |
+| R-002 | What is the verified analytics baseline? | Repository/live audit plus local MT-008 implementation; 2026-07-22 | Previous live funnel was incomplete. Opt-in consent and minimum funnel repair now pass local targeted tests, but deployment and GA receipt/numeric baseline require MT-009. | High for implementation; none for received data | MT-003 / MT-008 / MT-009 / D-005 | Repair complete; data blocked |
 | R-003 | Which acquisition cluster should launch first? | Query/SERP/user evidence pending | No conclusion yet | None | OD-001 / MT-004 | Planned |
 
 ## R-001 evidence and limits

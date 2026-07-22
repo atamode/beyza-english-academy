@@ -4,6 +4,7 @@ import { createFootballAudio } from "./football-audio.js";
 import { leagueProgressPercent, readFootballLeagueProgress } from "./football-engine.js";
 import {recordSportAnswer,recordSportGameCompletion} from "./football-engine.js";
 import {getActiveStudentId} from "./account-storage.js";
+import {trackEvent} from "./analytics.js";
 import {
   availableVolleyballWords,
   createVolleyballSession,
@@ -247,6 +248,7 @@ function persistSummary(context) {
   if (result.newlyUnlocked.length) audio.playForVisual("TROPHY");
   safeWrite(VOLLEYBALL_KEYS.stats, stats);
   safeWrite(VOLLEYBALL_KEYS.achievements, result.achievements);
+  trackEvent("learning_completed", { content_type: "volleyball", content_id: "volleyball-v1", status: "completed" });
 }
 
 function bindRoutes(app) { app.querySelectorAll("[data-route]").forEach(b => b.onclick = () => { location.hash = `#/${b.dataset.route}`; }); }

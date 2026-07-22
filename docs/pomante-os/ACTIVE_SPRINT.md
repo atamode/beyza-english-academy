@@ -11,16 +11,17 @@ Create a trustworthy operating baseline before implementing new acquisition page
 
 ## In progress
 
-- **MT-003:** Implementation audit complete; numeric funnel baseline blocked pending GA4 property/report access.
+- **MT-003 / MT-009:** Numeric funnel baseline blocked pending push/deploy and authenticated GA4 property/report access.
 
 ## Ready
 
-- **MT-008:** Define and implement the minimum privacy-safe event repair after resolving the consent/privacy decision.
+- None until MT-009 access/deployment is available; MT-004 remains the next independent research task.
 
 ## Completed this sprint
 
 - **MT-002:** Public route and SEO inventory completed against repository source and the live site on 2026-07-22.
 - **MT-003 implementation audit:** Live tag, event allowlist, call sites, funnel gaps, and data-access boundary documented on 2026-07-22; task remains blocked for received-data verification.
+- **MT-008:** Opt-in analytics loading, equal accept/reject controls, changeable preference, safe SPA route views, landing CTAs, signup, and core learning completion events implemented and tested locally.
 
 ## Exit criteria
 

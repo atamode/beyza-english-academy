@@ -235,3 +235,41 @@ body{min-height:100vh;background:radial-gradient(circle at 80% 0,rgba(91,77,245,
 }
 /* END POMA SEO LANDING */
 
+.analytics-consent{
+  position:fixed;
+  z-index:1000;
+  left:1rem;
+  right:1rem;
+  bottom:1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  max-width:72rem;
+  margin:auto;
+  padding:1rem;
+  border:1px solid rgba(22,33,62,.2);
+  border-radius:1rem;
+  background:var(--surface,#fff);
+  box-shadow:0 1rem 3rem rgba(22,33,62,.24);
+}
+.analytics-consent p{margin:.35rem 0 0;max-width:54rem;color:var(--muted)}
+.analytics-consent-actions{display:flex;gap:.6rem;flex:0 0 auto}
+.analytics-consent-actions .button{min-width:7.5rem}
+.analytics-settings-button{
+  position:fixed;
+  z-index:900;
+  right:.75rem;
+  bottom:.5rem;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  font:inherit;
+  font-size:.78rem;
+  text-decoration:underline;
+  cursor:pointer;
+}
+@media (max-width:720px){
+  .analytics-consent{align-items:stretch;flex-direction:column}
+  .analytics-consent-actions{display:grid;grid-template-columns:1fr 1fr}
+}

@@ -18,7 +18,7 @@ base.splice(base.indexOf("css/print.css"), 0, "css/learning-reports.css");
 base.splice(base.indexOf("css/print.css"), 0, "css/parent-dashboard.css");
 base.splice(base.indexOf("css/print.css"), 0, "css/teacher-partner.css");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/payment-config.js", "js/payment-service.js", "js/payment-views.js", "js/partner-attribution.js", "js/payment-entry.js");
-base.splice(base.indexOf("js/student-repository.js"), 0, "js/analytics.js", "js/pricing-state.js", "js/pricing-views.js", "js/pricing-entry.js");
+base.splice(base.indexOf("js/student-repository.js"), 0, "js/analytics.js", "js/analytics-consent.js", "js/pricing-state.js", "js/pricing-views.js", "js/pricing-entry.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/report-periods.js", "js/learning-report-service.js", "js/learning-report-views.js", "js/learning-report-entry.js");
 base.splice(base.indexOf("js/football-engine.js"), 0, "js/sport-question-engine.js");
 base.splice(base.indexOf("js/learning-report-entry.js"), 0, "js/parent-dashboard-service.js", "js/parent-dashboard-views.js");

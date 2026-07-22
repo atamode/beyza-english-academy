@@ -34,3 +34,10 @@ Do not edit old entries to hide history. Add a new entry that names the supersed
 - **Status:** Active
 - **Decision:** `AGENTS.md` plus `docs/pomante-os/` form the canonical operational memory for human and AI contributors.
 - **Reason:** Reduce repeated decisions, lost context, and documentation drift.
+
+## D-005 — Analytics consent and child-data boundary
+
+- **Date:** 2026-07-22
+- **Status:** Active
+- **Decision:** Google Analytics is opt-in. The tag must not load before an explicit “Kabul Et” action; refusal must leave the application fully usable, and the choice must remain changeable. Analytics may receive only coarse route/content, source, plan, status, period, and availability fields. Names, emails, user/child identifiers, free text, payment details, receipts, and exact learning answers are prohibited.
+- **Reason:** Poma Academy serves children and families; measurement must be subordinate to privacy, explicit choice, and data minimization.

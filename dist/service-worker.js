@@ -1,4 +1,4 @@
-const CACHE="beyza-english-be43c39f38d9";
+const CACHE="beyza-english-57fec6a93384";
 const ASSETS=[
   "./",
   "index.html",
@@ -30,6 +30,7 @@ const ASSETS=[
   "js/partner-attribution.js",
   "js/payment-entry.js",
   "js/analytics.js",
+  "js/analytics-consent.js",
   "js/pricing-state.js",
   "js/pricing-views.js",
   "js/pricing-entry.js",
