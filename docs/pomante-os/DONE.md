@@ -3,10 +3,12 @@
 > **Purpose:** Concise index of completed operating and product milestones.
 > **Update trigger:** Accepted work is completed and verified.
 > **Related files:** [Master Tasks](MASTER_TASKS.md), [Project State](PROJECT_STATE.md), [Changelog](CHANGELOG.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
 ## 2026-07
 
+- **MT-012 — First acquisition network deployed and validated:** Hub and two sport pages return production 200 responses with correct canonicals and sitemap coverage; all three were submitted through Search Console and GA4 received the live page paths.
+- **Sport/story media performance repair:** Heavy football PNGs moved to runtime WebP, sport/story videos were recompressed, Story 001 runtime assets were moved to WebP, and the missing football win video now plays only before the summary of a won match.
 - **MT-006 — First acquisition surfaces implemented:** LP-002, PP-001, and PP-002 now exist as direct-load crawlable documents with honest product copy, unique metadata, internal links, sitemap coverage, breadcrumbs, and consent-safe CTA measurement; production validation remains MT-012.
 - **MT-007 — Public brand/schema risks corrected:** Dynamic sport player naming, approved Pomante Kingdom/Krallığı usage, and root JSON-LD parity repairs implemented with build and full-suite verification.
 - **D-007 / MT-007 partial — Dynamic sport player label:** Removed the hardcoded football/volleyball score name; both games now show the entered student name with escaped output and a neutral “Poma” fallback.

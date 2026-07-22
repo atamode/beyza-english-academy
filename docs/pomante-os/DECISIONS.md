@@ -3,7 +3,7 @@
 > **Purpose:** Append-only record of settled product and operating decisions.
 > **Update trigger:** A decision is accepted, rejected, or superseded.
 > **Related files:** [Open Decisions](OPEN_DECISIONS.md), [Vision](VISION.md), [Project State](PROJECT_STATE.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
 Do not edit old entries to hide history. Add a new entry that names the superseded decision.
 
@@ -55,3 +55,12 @@ Do not edit old entries to hide history. Add a new entry that names the supersed
 - **Status:** Active
 - **Decision:** Football and volleyball scoreboards show the entered student profile name. When no student name exists, they show the neutral fallback “Poma”. The name is display-only and must not be sent to analytics.
 - **Reason:** Remove the legacy hardcoded “Beyza” label while making the game respond consistently to the active learner profile without weakening the child-data boundary in D-005.
+
+## D-008 — Domain and commercial-site separation
+
+- **Date:** 2026-07-23 (recorded from the settled 2026-07-19 direction)
+- **Status:** Active
+- **Decision:** Poma Academy will move from `pomante.com.tr` to `academy.pomante.com.tr`; no separate Academy domain purchase is required. The existing Academy repository remains independent. `pomante.com.tr` becomes a separate Pomante commercial/product site with a clear “Poma ile Eğitim” path back to the Academy. Mediablu/sanatsal organizasyon services do not enter this commercial site.
+- **Reason:** Preserve Pomante as the umbrella/commercial brand, keep the Academy product technically and semantically distinct, and allow the root domain to prioritize physical-product and B2B revenue without mixing application routes or repositories.
+- **Migration guard:** Do not switch either hostname until canonical URLs, sitemap/robots/social metadata, PWA scope, Supabase auth return URLs, cross-site navigation, old-path redirects, Search Console, Analytics, HTTPS, and rollback checks have an approved migration contract.
+- **Execution contract:** The approved contract is [Academy Domain Migration](DOMAIN_MIGRATION.md). Because the root becomes a commercial 200 page, its home is an intentional non-redirect exception; the three existing acquisition paths require one-hop, path-preserving HTTP 301 redirects before cutover. GitHub Pages alone is not assumed to supply those arbitrary path rules.

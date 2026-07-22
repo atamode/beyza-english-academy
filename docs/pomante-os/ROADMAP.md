@@ -3,19 +3,20 @@
 > **Purpose:** Outcome-based direction beyond the current sprint.
 > **Update trigger:** Priority, dependency, or target outcome changes.
 > **Related files:** [Vision](VISION.md), [Master Tasks](MASTER_TASKS.md), [Active Sprint](ACTIVE_SPRINT.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
-## Now — Operating baseline
+## Now — Safe domain separation
 
-- Make Pomante OS the required project-memory workflow.
-- Inventory public routes, analytics events, and Search Console state.
-- Establish measurable acquisition and learning funnels.
+- Preserve the verified Academy release while defining the complete `academy.pomante.com.tr` migration contract.
+- Keep Academy and the future Pomante commercial site in separate repositories and deployments.
+- Prepare redirects, Supabase return URLs, analytics/Search Console continuity, DNS/Pages sequencing, HTTPS, and rollback before changing live hostnames.
+- Resolve the current cutover blocker: prove a commercial-root host or edge layer can return real one-hop 301 redirects for former Academy acquisition paths.
 
-## Next — Discoverability foundation
+## Next — Pomante commercial root and Academy discoverability
 
-- Define and validate audience, class, product, and evergreen guide page opportunities.
-- Implement technical SEO only after route and intent mapping is approved.
-- Launch a small, high-quality Knowledge Center cluster with intentional internal links.
+- Launch the Pomante root around products, toplu sipariş, AVM/festival collaboration, and a clear “Poma ile Eğitim” entry; keep Mediablu separate.
+- Monitor the deployed Academy acquisition pages and retain their path-level search equity through the hostname move.
+- Draft KC-001, but publish only after its qualified education review and final canonical hostname are resolved.
 
 ## Later — Evidence-led growth
 

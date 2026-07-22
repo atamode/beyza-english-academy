@@ -3,7 +3,14 @@
 > **Purpose:** Record material changes to the operating system itself.
 > **Update trigger:** Canonical structure, governance, or major document scope changes.
 > **Related files:** [Project State](PROJECT_STATE.md), [Done](DONE.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
+
+## 2026-07-23
+
+- Completed MT-012: verified the deployed acquisition pages, sitemap/canonicals, Search Console submissions, and GA4 real-time page receipt.
+- Recorded the sport/story media performance repair and restored football win-only victory-video flow, verified on production at commit `c442525` with 475/475 tests.
+- Opened MT-013/MT-014 for the settled brand-domain split: Academy on `academy.pomante.com.tr`, then a separate Pomante commercial root site.
+- Added the MT-013 domain migration contract with verified repository dependencies, a canonical/redirect map, ordered cutover, acceptance checks, and rollback. Recorded real HTTP 301 capability for the commercial root as a cutover blocker.
 
 ## 2026-07-22
 

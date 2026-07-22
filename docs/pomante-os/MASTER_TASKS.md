@@ -3,7 +3,7 @@
 > **Purpose:** High-level execution ledger for accepted work.
 > **Update trigger:** A task is accepted, reprioritized, blocked, completed, or cancelled.
 > **Related files:** [Roadmap](ROADMAP.md), [Active Sprint](ACTIVE_SPRINT.md), [Backlog](BACKLOG.md), [Done](DONE.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
 | ID | Outcome | Status | Priority | Evidence / destination |
 |---|---|---|---|---|
@@ -18,6 +18,8 @@
 | MT-009 | Deploy and validate GA4 receipt, configuration, and numeric baseline | Blocked | P0 | Push/deploy plus authenticated GA4 access required |
 | MT-010 | Produce game-hub and sport product-page briefs | Done | P1 | R-005 / [Acquisition Page Briefs](PAGE_BRIEFS.md) |
 | MT-011 | Draft, review, and publish KC-001 | Blocked | P1 | Content owner and qualified education reviewer required; route implementation under MT-006 |
-| MT-012 | Deploy and validate acquisition network | Blocked | P1 | Repository push/deploy access, production crawl checks, Search Console, and analytics receipt required |
+| MT-012 | Deploy and validate acquisition network | Done | P1 | Production 200/canonical/sitemap checks, Search Console submissions, and GA4 page receipt verified |
+| MT-013 | Move Poma Academy to `academy.pomante.com.tr` without breaking live access or search equity | In progress | P0 | [Migration contract](DOMAIN_MIGRATION.md) complete; cutover blocked on proven root-host 301 capability and operational access |
+| MT-014 | Launch Pomante commercial root site in a separate repository | Blocked | P0 | MT-013 migration contract and dedicated `pomante-restaurant` repository required |
 
 Task IDs remain stable. Detailed ideas that are not accepted work belong in [Backlog](BACKLOG.md) or [Idea Bank](IDEA_BANK.md).

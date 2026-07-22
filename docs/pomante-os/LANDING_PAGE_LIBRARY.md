@@ -3,7 +3,7 @@
 > **Purpose:** Registry and brief standard for audience, class, campaign, and intent-led landing pages.
 > **Update trigger:** A landing page is proposed, approved, launched, changed, or retired.
 > **Related files:** [Keyword Map](KEYWORD_MAP.md), [Product Page Library](PRODUCT_PAGE_LIBRARY.md), [Acquisition Page Briefs](PAGE_BRIEFS.md), [Internal Linking](INTERNAL_LINKING.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
 ## Verified live registry
 
@@ -11,7 +11,7 @@ Audited 2026-07-22 against repository source and the live GitHub Pages response.
 
 | ID | URL / runtime surface | Audience and role | Search status | Primary action |
 |---|---|---|---|---|
-| LP-001 | `https://pomante.com.tr/` | Parents evaluating Poma Academy; product overview | Live, crawlable, indexable canonical document; only sitemap URL | Free signup; watch video; login; social links; coupon signup |
+| LP-001 | `https://pomante.com.tr/` | Parents evaluating Poma Academy; product overview | Live, crawlable, indexable canonical document | Free signup; watch video; login; social links; coupon signup |
 | UT-001 | `/#/login` | Returning users; authentication utility | Public runtime state, not a distinct crawlable document | Sign in / go to signup |
 | UT-002 | `/#/signup` | New parent, teacher, or student account | Public runtime state, not a distinct crawlable document | Create free account / go to login |
 
@@ -23,7 +23,7 @@ No dedicated audience, age, grade/class, campaign, or Knowledge Center landing p
 
 | ID | Proposed URL | Audience and role | Intent status | Build status |
 |---|---|---|---|---|
-| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | [Implemented locally](PAGE_BRIEFS.md); production validation pending MT-012 |
+| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | [Live and validated](PAGE_BRIEFS.md) |
 
 LP-002 must honestly present the current football and volleyball inventory, explain lesson-progress adaptation only as implemented, and avoid implying a large game catalogue. It owns game discovery; the home page retains broad platform evaluation.
 
@@ -34,7 +34,7 @@ LP-002 must honestly present the current football and volleyball inventory, expl
 - Canonical: `https://pomante.com.tr/`
 - Robots meta: `index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1`
 - `robots.txt`: permits all crawling and declares the sitemap.
-- Live `sitemap.xml` contained only the canonical root URL at audit time; the local build now declares the root plus LP-002, PP-001, and PP-002 pending deployment.
+- Live `sitemap.xml` declares the root plus LP-002, PP-001, and PP-002. MT-013 will move these canonicals to the Academy hostname.
 - Social metadata: root-specific Open Graph and Twitter card fields with one shared wide image.
 
 ## Approval rules

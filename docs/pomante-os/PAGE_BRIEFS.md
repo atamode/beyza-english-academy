@@ -3,15 +3,15 @@
 > **Purpose:** Production-ready briefs for approved crawlable landing and product pages.
 > **Update trigger:** A brief is approved, revised, implemented, measured, or retired.
 > **Related files:** [Landing Page Library](LANDING_PAGE_LIBRARY.md), [Product Page Library](PRODUCT_PAGE_LIBRARY.md), [Keyword Map](KEYWORD_MAP.md), [Internal Linking](INTERNAL_LINKING.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
 ## Registry
 
 | ID | Page | Canonical URL | Brief status | Build status |
 |---|---|---|---|---|
-| LP-002 | English game hub | `/ingilizce-oyunlari/` | Approved | Implemented locally; production validation pending |
-| PP-001 | Football English word game | `/ingilizce-oyunlari/futbol/` | Approved | Implemented locally; production validation pending |
-| PP-002 | Volleyball English word game | `/ingilizce-oyunlari/voleybol/` | Approved | Implemented locally; production validation pending |
+| LP-002 | English game hub | `/ingilizce-oyunlari/` | Approved | Live and production-validated |
+| PP-001 | Football English word game | `/ingilizce-oyunlari/futbol/` | Approved | Live and production-validated |
+| PP-002 | Volleyball English word game | `/ingilizce-oyunlari/voleybol/` | Approved | Live and production-validated |
 
 ## Shared implementation contract
 
@@ -152,4 +152,4 @@ Final title/description must be checked for rendered length and SERP fit at impl
 - Unique titles, descriptions, canonicals, H1s, social metadata, visible breadcrumbs, and matching `BreadcrumbList` data are present.
 - Home → hub → sport-page links and sport-page return/cross-links are crawlable; play CTAs retain the verified hash game routes.
 - The sitemap and build manifest include all three documents and shared assets. CTA measurement remains consent-gated and sends only coarse page/content identifiers.
-- Automated acquisition, consent, build, and full application tests pass. Browser screenshot QA and production/indexing/analytics validation remain open under MT-012.
+- Automated acquisition, consent, build, and full application tests pass. Production 200 responses, canonicals, sitemap coverage, Search Console submission, and GA4 real-time page receipt were verified under MT-012. Canonical hostnames will change only through MT-013.

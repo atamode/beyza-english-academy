@@ -3,7 +3,7 @@
 > **Purpose:** Concise current-state snapshot.
 > **Update trigger:** Any shipped product, access, platform, or operating-model change.
 > **Related files:** [Roadmap](ROADMAP.md), [Active Sprint](ACTIVE_SPRINT.md), [Decisions](DECISIONS.md), [Done](DONE.md)
-> **Last reviewed:** 2026-07-22
+> **Last reviewed:** 2026-07-23
 
 ## Product
 
@@ -12,14 +12,15 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 ## Current verified baseline
 
 - Branch: `main`
-- Baseline reviewed: `737ae79` (`fix: restore public pricing visibility`), with Pomante OS commit `b36f431` applied locally.
+- Baseline reviewed: `c442525` (`feat: play victory video after football wins`); current Pomante OS/domain-migration documentation is not yet committed.
 - Curriculum data: lesson `000` plus lessons `001`–`065`, ten module reviews, vocabulary, diagnostic test, and Story 001.
 - Sport questions adapt to student progress through the shared sport-question engine.
 - Parent dashboard, weekly/monthly reports, payment review, refunds, membership expiry reminders, audit logging, CI, and live smoke coverage exist in repository history.
 - Public positioning and acquisition architecture are now governed by this Pomante OS.
-- Live organic search surface currently consists of one crawlable canonical document, `https://pomante.com.tr/`; public games, stories, login, and signup experiences use client-side hash routes and are not distinct crawlable pages.
-- The local build now adds independent crawlable documents for the English-game hub and football/volleyball product pages, including internal links, sitemap entries, breadcrumbs, and consent-safe CTA measurement. They are not treated as live until MT-012 production validation.
-- Privacy-safe analytics repair is implemented locally: GA is opt-in, refusal preserves full use, the preference is changeable, and safe route/landing/signup/core-learning events are connected. It is not live because repository push credentials are unavailable; GA receipt and numeric baseline remain unverified.
+- Public games, stories, login, and signup application experiences use client-side hash routes and are not distinct crawlable pages; the root plus three clean acquisition documents are crawlable.
+- The English-game hub and football/volleyball product pages are live as independent crawlable documents with production 200 responses, correct canonicals, sitemap coverage, Search Console submission, and GA4 real-time page receipt.
+- Football, volleyball, and Story 001 runtime media are optimized. The football win video is restored and runs only for a won match before its summary; the verified repository/live line is commit `c442525`.
+- Privacy-safe analytics repair is live: GA is opt-in, refusal preserves full use, the preference is changeable, and safe route/landing/signup/core-learning events are connected. GA4 real-time page receipt for the root, game hub, and football page was observed; broader event/configuration and numeric-baseline validation remain open under MT-009.
 
 ## Fixed boundaries
 
@@ -29,4 +30,4 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 
 ## Immediate operating focus
 
-Deploy the analytics repair and LP-002/PP-001/PP-002 acquisition network, then verify production responses, indexability, Search Console coverage, and GA receipt under MT-009/MT-012. KC-001 remains blocked on an assigned content owner and qualified education reviewer.
+Execute MT-013 from the approved [domain migration contract](DOMAIN_MIGRATION.md). Cutover remains blocked until the commercial-root host or an edge layer proves path-preserving HTTP 301 redirects for the three acquisition paths. The eventual `pomante.com.tr` root becomes the separate Pomante commercial site; Mediablu remains outside that site. MT-009 still needs broader GA4 event/configuration and numeric-baseline validation. KC-001 remains blocked on a qualified education reviewer before publication.
