@@ -4,6 +4,7 @@ import {getActiveStudentId} from "./account-storage.js";
 import { createFootballAudio } from "./football-audio.js";
 import { renderSportMedia } from "./sport-media.js";
 import { trackEvent } from "./analytics.js";
+import { sportPlayerName } from "./sport-player.js";
 
 const esc = v => String(v ?? "").replace(/[&<>\"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let resolverPromise = null, session = null, cleanup = () => {}, audio = null, mediaToken = 0, lastSoundVisual = null, soundListenerBound = false;
@@ -43,7 +44,8 @@ function render(app, context, resolver, words) {
   const q = session.currentQuestion;
   const isQuestion = session.phase.endsWith("_QUESTION");
   const isSummary = session.phase === "MATCH_SUMMARY";
-  app.innerHTML = `<section class="football-shell"><div class="lesson-head"><button class="button secondary" data-action="football-exit">← Oyun Merkezi</button><div class="progress"><span style="width:${Math.min(100, session.questionsAsked / Math.max(1, session.maxQuestions) * 100)}%"></span></div><span>${session.questionsAsked}/${session.maxQuestions}</span></div><article class="card football-card"><div class="football-score"><strong>Beyza ${session.goalsFor} - ${session.goalsAgainst} Rakip</strong><span>${esc(session.leagueLabel || "Başlangıç Ligi")} · Doğru ${session.correct} · Yanlış ${session.wrong} · Kurtarış ${session.saves}</span></div><div class="football-media" aria-live="polite">${renderFootballMedia(media, resolver, session.visual)}</div>${isSummary ? summaryHtml(session, stats, achievements) : isQuestion ? questionHtml(q, session) : resultHtml(session)}</article></section>`;
+  const player = sportPlayerName(context.state);
+  app.innerHTML = `<section class="football-shell"><div class="lesson-head"><button class="button secondary" data-action="football-exit">← Oyun Merkezi</button><div class="progress"><span style="width:${Math.min(100, session.questionsAsked / Math.max(1, session.maxQuestions) * 100)}%"></span></div><span>${session.questionsAsked}/${session.maxQuestions}</span></div><article class="card football-card"><div class="football-score"><strong>${esc(player)} ${session.goalsFor} - ${session.goalsAgainst} Rakip</strong><span>${esc(session.leagueLabel || "Başlangıç Ligi")} · Doğru ${session.correct} · Yanlış ${session.wrong} · Kurtarış ${session.saves}</span></div><div class="football-media" aria-live="polite">${renderFootballMedia(media, resolver, session.visual)}</div>${isSummary ? summaryHtml(session, stats, achievements) : isQuestion ? questionHtml(q, session) : resultHtml(session)}</article></section>`;
   bindRoutes(app);
   app.querySelector("[data-action='football-exit']")?.addEventListener("click", () => { cleanup(); audio.stopAmbient?.(); session = null; const back = sessionStorage.getItem("beyzaFootballReturnRoute") || "home"; sessionStorage.removeItem("beyzaFootballReturnRoute"); location.hash = `#/${back}`; });
   app.querySelector("[data-action='football-start']")?.addEventListener("click", () => { audio.unlock(); audio.startAmbient(); audio.playForVisual("MATCH_INTRO"); session = advanceFootball(session); render(app, context, resolver, words); });

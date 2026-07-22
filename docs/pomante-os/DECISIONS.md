@@ -48,3 +48,10 @@ Do not edit old entries to hide history. Add a new entry that names the supersed
 - **Status:** Active
 - **Decision:** Lead with the “free online English games for children” opportunity. The home page owns broad Poma Academy/platform evaluation; a future `/ingilizce-oyunlari/` hub owns playable-game discovery; football and volleyball receive truthful supporting product pages. Knowledge Center content may support selection and practice questions but must not compete for the hub's generic discovery intent.
 - **Reason:** Turkish SERPs confirm a real game-discovery need, the current product can satisfy it immediately, and sport-based progress-adaptive games provide credible differentiation. Live-tutor course queries mismatch the product; story inventory is not yet deep enough. Demand size is unknown and is not part of this decision.
+
+## D-007 — Sport scoreboard player name
+
+- **Date:** 2026-07-22
+- **Status:** Active
+- **Decision:** Football and volleyball scoreboards show the entered student profile name. When no student name exists, they show the neutral fallback “Poma”. The name is display-only and must not be sent to analytics.
+- **Reason:** Remove the legacy hardcoded “Beyza” label while making the game respond consistently to the active learner profile without weakening the child-data boundary in D-005.

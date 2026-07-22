@@ -38,7 +38,7 @@ Repository inspection on 2026-07-22 confirms:
 
 Permitted phrasing describes these mechanics as practice or reinforcement. Do not claim guaranteed learning, fluency, curriculum mastery, a scientifically proven outcome, or personalization beyond the implemented selection signals. Do not imply that two sports form a large game catalogue.
 
-Before launch, MT-007 must replace the legacy visible score label “Beyza” in both sport games with an approved product/character/player label. The brief does not decide that replacement name.
+The legacy visible score label “Beyza” was resolved under D-007: both sport games show the entered student profile name and fall back to “Poma” when it is empty. This display value remains prohibited from analytics.
 
 ## LP-002 — English game hub
 
@@ -140,9 +140,8 @@ Final title/description must be checked for rendered length and SERP fit at impl
 
 ## Build order and launch gate
 
-1. Resolve the approved replacement for the legacy “Beyza” score label under MT-007 and update both games consistently.
-2. Implement shared acquisition-page shell and LP-002.
-3. Implement PP-001 and PP-002 from the same maintained component/style system while preserving unique content.
-4. Add crawlable links from home and between the three pages; add KC-001 links only after KC-001 publication.
-5. Add sitemap/metadata/schema/consent-safe measurement, then run direct-load, content, accessibility, and game-launch verification.
-6. Deploy before treating pages as live; verify production HTTP responses, rendered metadata, indexability, and analytics receipt separately.
+1. Implement shared acquisition-page shell and LP-002.
+2. Implement PP-001 and PP-002 from the same maintained component/style system while preserving unique content.
+3. Add crawlable links from home and between the three pages; add KC-001 links only after KC-001 publication.
+4. Add sitemap/metadata/schema/consent-safe measurement, then run direct-load, content, accessibility, and game-launch verification.
+5. Deploy before treating pages as live; verify production HTTP responses, rendered metadata, indexability, and analytics receipt separately.

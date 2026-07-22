@@ -5,6 +5,7 @@ import { leagueProgressPercent, readFootballLeagueProgress } from "./football-en
 import {recordSportAnswer,recordSportGameCompletion} from "./football-engine.js";
 import {getActiveStudentId} from "./account-storage.js";
 import {trackEvent} from "./analytics.js";
+import {sportPlayerName} from "./sport-player.js";
 import {
   availableVolleyballWords,
   createVolleyballSession,
@@ -70,7 +71,8 @@ function render(app, context, resolver, words) {
   const q = session.currentQuestion;
   const isQuestion = session.phase.endsWith("_QUESTION");
   const isSummary = session.phase === "MATCH_SUMMARY";
-  app.innerHTML = `<section class="football-shell volleyball-shell"><div class="lesson-head"><button class="button secondary" data-action="volleyball-exit">← Oyun Merkezi</button><div class="progress"><span style="width:${Math.min(100, session.questionsAsked / Math.max(1, session.maxQuestions) * 100)}%"></span></div><span>${session.questionsAsked}/${session.maxQuestions}</span></div><article class="card football-card volleyball-card"><div class="football-score"><strong>Beyza ${session.pointsFor} - ${session.pointsAgainst} Rakip</strong><span>${esc(session.leagueLabel || "Başlangıç Ligi")} · Doğru ${session.correct} · Yanlış ${session.wrong} · Blok ${session.blocks} · Kurtarış ${session.saves}</span></div><div class="football-media" aria-live="polite">${renderVolleyballMedia(media, resolver, session.visual)}</div>${isSummary ? summaryHtml(session, stats, achievements) : isQuestion ? questionHtml(q, session) : resultHtml(session)}</article></section>`;
+  const player = sportPlayerName(context.state);
+  app.innerHTML = `<section class="football-shell volleyball-shell"><div class="lesson-head"><button class="button secondary" data-action="volleyball-exit">← Oyun Merkezi</button><div class="progress"><span style="width:${Math.min(100, session.questionsAsked / Math.max(1, session.maxQuestions) * 100)}%"></span></div><span>${session.questionsAsked}/${session.maxQuestions}</span></div><article class="card football-card volleyball-card"><div class="football-score"><strong>${esc(player)} ${session.pointsFor} - ${session.pointsAgainst} Rakip</strong><span>${esc(session.leagueLabel || "Başlangıç Ligi")} · Doğru ${session.correct} · Yanlış ${session.wrong} · Blok ${session.blocks} · Kurtarış ${session.saves}</span></div><div class="football-media" aria-live="polite">${renderVolleyballMedia(media, resolver, session.visual)}</div>${isSummary ? summaryHtml(session, stats, achievements) : isQuestion ? questionHtml(q, session) : resultHtml(session)}</article></section>`;
   bindRoutes(app);
   app.querySelector("[data-action='volleyball-exit']")?.addEventListener("click", () => { cleanup(); audio.stopAmbient?.(); session = null; location.hash = "#/games"; });
   app.querySelector("[data-action='volleyball-start']")?.addEventListener("click", () => { audio.unlock(); audio.startAmbient(); audio.playForVisual("MATCH_INTRO"); session = advanceVolleyball(session); render(app, context, resolver, words); });

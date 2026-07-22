@@ -21,6 +21,7 @@ base.splice(base.indexOf("js/student-repository.js"), 0, "js/payment-config.js",
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/analytics.js", "js/analytics-consent.js", "js/pricing-state.js", "js/pricing-views.js", "js/pricing-entry.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/report-periods.js", "js/learning-report-service.js", "js/learning-report-views.js", "js/learning-report-entry.js");
 base.splice(base.indexOf("js/football-engine.js"), 0, "js/sport-question-engine.js");
+base.splice(base.indexOf("js/football-game.js"), 0, "js/sport-player.js");
 base.splice(base.indexOf("js/learning-report-entry.js"), 0, "js/parent-dashboard-service.js", "js/parent-dashboard-views.js");
 base.splice(base.indexOf("js/student-repository.js"), 0, "js/teacher-partner-service.js", "js/teacher-partner-views.js", "js/admin-audit-view.js", "js/teacher-partner-entry.js");
 const duplicateFiles=[...new Set(base.filter((file,index)=>base.indexOf(file)!==index))];

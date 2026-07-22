@@ -15,8 +15,8 @@ Create a trustworthy operating baseline before implementing new acquisition page
 
 ## Ready
 
-- **MT-007:** Resolve confirmed public naming/schema risks, including the legacy sport score label required before page launch.
-- **MT-006:** Build LP-002, PP-001, and PP-002 after the bounded MT-007 dependency.
+- **MT-007:** Sport score label resolved; story naming and root schema review remain.
+- **MT-006:** Build LP-002, PP-001, and PP-002 from the approved briefs.
 
 ## Completed this sprint
 

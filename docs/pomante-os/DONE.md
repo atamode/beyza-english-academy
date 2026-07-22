@@ -7,6 +7,7 @@
 
 ## 2026-07
 
+- **D-007 / MT-007 partial — Dynamic sport player label:** Removed the hardcoded football/volleyball score name; both games now show the entered student name with escaped output and a neutral “Poma” fallback.
 - **MT-010 — First acquisition-page briefs approved:** LP-002, PP-001, and PP-002 now have production contracts for content, claims, routes, metadata, linking, measurement, testing, and launch dependencies.
 - **MT-005 — First Knowledge Center brief approved:** KC-001 defines a parent-facing English word-game selection framework, evidence/reviewer gates, and a non-cannibalizing relationship with the planned game hub.
 - **MT-004 — First acquisition opportunity validated:** “Free online English games for children” selected; home, game hub, sport product pages, and supporting-guide intent boundaries recorded without inventing volume.
