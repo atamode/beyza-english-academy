@@ -42,6 +42,7 @@ export const PHASES = {
   KEEPER_RESULT: { correctVisual: "SAVE_SUCCESS", wrongVisual: "GOAL_CONCEDED", correctNext: "POSSESSION_QUESTION", wrongNext: "ROUND_RESET", correctSave: 1, wrongConcede: 1 },
   GOAL_CELEBRATION: { visual: "GOAL_CELEBRATION", next: "ROUND_RESET" },
   ROUND_RESET: { visual: "MATCH_INTRO", next: "POSSESSION_QUESTION" },
+  MATCH_WIN_VIDEO: { visual: "MATCH_WIN", next: "MATCH_SUMMARY" },
   MATCH_SUMMARY: { visual: "MATCH_INTRO" }
 };
 
@@ -291,7 +292,8 @@ export function applyResult(session, resultPhase, correct) {
 
 export function advanceFootball(session) {
   if (session.phase === "MATCH_INTRO") return { ...session, phase: "POSSESSION_QUESTION", visual: "POSSESSION_POMA" };
-  if (session.questionsAsked >= session.maxQuestions && !["GOAL_CELEBRATION"].includes(session.phase)) return summarizeFootball(session);
+  if (session.phase === "MATCH_WIN_VIDEO") return { ...session, phase: "MATCH_SUMMARY", visual: "MATCH_INTRO", pendingNext: null };
+  if (session.questionsAsked >= session.maxQuestions && !["GOAL_CELEBRATION", "MATCH_WIN_VIDEO"].includes(session.phase)) return summarizeFootball(session);
   const next = session.pendingNext || PHASES[session.phase]?.next || "POSSESSION_QUESTION";
   if (next === "ROUND_RESET") {
     if (session.questionsAsked >= session.maxQuestions) return summarizeFootball(session);
@@ -303,10 +305,12 @@ export function advanceFootball(session) {
 
 export function summarizeFootball(session) {
   const studied = new Set(session.recentWordIds).size;
+  const won = session.goalsFor > session.goalsAgainst;
   return {
     ...session,
-    phase: "MATCH_SUMMARY",
-    visual: "MATCH_INTRO",
+    phase: won ? "MATCH_WIN_VIDEO" : "MATCH_SUMMARY",
+    visual: won ? "MATCH_WIN" : "MATCH_INTRO",
+    pendingNext: won ? "MATCH_SUMMARY" : null,
     summary: {
       score: `${session.goalsFor}-${session.goalsAgainst}`,
       correct: session.correct,
@@ -412,5 +416,5 @@ export function unlockTrophies(stats, achievements = defaultAchievements()) {
 }
 
 export function shouldUseVideo(event, reducedMotion = false) {
-  return !reducedMotion && ["GOAL_SCORED", "SHOT_MISSED_POST", "SAVE_SUCCESS", "GOAL_CONCEDED"].includes(event);
+  return !reducedMotion && ["GOAL_SCORED", "SHOT_MISSED_POST", "SAVE_SUCCESS", "GOAL_CONCEDED", "MATCH_WIN"].includes(event);
 }

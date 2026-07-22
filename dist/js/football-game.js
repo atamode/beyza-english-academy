@@ -81,6 +81,7 @@ function questionHtml(q, s) {
 
 function resultHtml(s) {
   if (s.phase === "MATCH_INTRO") return `<div class="football-panel"><p class="eyebrow">FUTBOL V1 · ${esc(s.leagueLabel || "Başlangıç Ligi")}</p><h1>Poma sahaya çıkıyor.</h1><p class="lead">Kelime Ligi bu maç için ${s.maxQuestions} soru hazırladı. Kolay kelimelerden başlayıp lig lig ilerlersin.</p><button class="button primary" data-action="football-start">Maça başla →</button></div>`;
+  if (s.phase === "MATCH_WIN_VIDEO") return `<div class="football-panel"><p class="eyebrow">MAÇ SONU</p><h1>Maçı kazandın!</h1><p class="lead">Poma galibiyeti kutluyor. Kutlamadan sonra maç özetin açılacak.</p><button class="button primary" data-action="football-continue" hidden>Özeti göster →</button></div>`;
   return `<div class="football-panel"><p class="eyebrow">${s.lastResult?.correct ? "✓ Doğru hamle" : "↻ Geliştirilecek hamle"}</p><h1>${visualTitle(s.visual)}</h1><p class="lead">${esc(s.lastResult?.explanation || "Oyun akışı devam ediyor.")}</p><button class="button primary" data-action="football-continue" hidden>Devam →</button></div>`;
 }
 
@@ -103,6 +104,7 @@ export function makeOnce(fn) {
 
 function setupResultAdvance(app, context, resolver, words) {
   const token = ++mediaToken;
+  const finalVideo = session.phase === "MATCH_WIN_VIDEO";
   let timer = null, hardStop = null, readyTimer = null, minPosterTimer = null, posterReady = false, videoReady = false;
   const go = makeOnce(() => {
     if (token !== mediaToken) return;
@@ -151,7 +153,7 @@ function setupResultAdvance(app, context, resolver, words) {
     if (!timer) timer = setTimeout(go, FOOTBALL_CONFIG.resultDelayMs);
   };
   minPosterTimer = setTimeout(() => { posterReady = true; showVideo(); }, FOOTBALL_CONFIG.posterMinMs);
-  readyTimer = setTimeout(fail, FOOTBALL_CONFIG.videoReadyTimeoutMs);
+  readyTimer = setTimeout(fail, finalVideo ? 8000 : FOOTBALL_CONFIG.videoReadyTimeoutMs);
   video.addEventListener("loadeddata", ready, { once: true });
   video.addEventListener("canplay", ready, { once: true });
   video.addEventListener("ended", go, { once: true });
@@ -159,7 +161,7 @@ function setupResultAdvance(app, context, resolver, words) {
   video.addEventListener("stalled", fail, { once: true });
   video.load?.();
   timer = setTimeout(() => app.querySelector("[data-action='football-continue']")?.removeAttribute("hidden"), FOOTBALL_CONFIG.continueDelayMs);
-  hardStop = setTimeout(go, FOOTBALL_CONFIG.videoTimeoutMs);
+  hardStop = setTimeout(go, finalVideo ? 22000 : FOOTBALL_CONFIG.videoTimeoutMs);
   cleanup = () => {
     mediaToken++;
     clearTimeout(timer); clearTimeout(hardStop); clearTimeout(readyTimer); clearTimeout(minPosterTimer);
@@ -189,4 +191,4 @@ function persistSummary(context) {
 
 function bindRoutes(app) { app.querySelectorAll("[data-route]").forEach(b => b.onclick = () => { location.hash = `#/${b.dataset.route}`; }); }
 function phaseTitle(phase) { return ({ POSSESSION_QUESTION: "Top kimde?", GIVE_AND_GO_QUESTION: "Ver-kaç", SHOT_QUESTION: "Şut", OPPONENT_ATTACK_QUESTION: "Defans", OPPONENT_SHOT_QUESTION: "Kurtarış" })[phase] || "Futbol"; }
-function visualTitle(visual) { return ({ PASS_SUCCESS: "Pas başarılı!", PASS_FAILED: "Top rakibe geçti.", GIVE_AND_GO_SUCCESS: "Ver-kaç tuttu!", GOAL_SCORED: "Gol!", GOAL_CELEBRATION: "Gol sevinci!", SHOT_MISSED_POST: "Direkten döndü.", DEFENCE_SUCCESS: "Savunma başarılı.", DEFENCE_FAILED: "Rakip geçti.", SAVE_SUCCESS: "Harika kurtarış!", GOAL_CONCEDED: "Gol yedik." })[visual] || "Devam"; }
+function visualTitle(visual) { return ({ PASS_SUCCESS: "Pas başarılı!", PASS_FAILED: "Top rakibe geçti.", GIVE_AND_GO_SUCCESS: "Ver-kaç tuttu!", GOAL_SCORED: "Gol!", GOAL_CELEBRATION: "Gol sevinci!", SHOT_MISSED_POST: "Direkten döndü.", DEFENCE_SUCCESS: "Savunma başarılı.", DEFENCE_FAILED: "Rakip geçti.", SAVE_SUCCESS: "Harika kurtarış!", GOAL_CONCEDED: "Gol yedik.", MATCH_WIN: "Maçı kazandın!" })[visual] || "Devam"; }

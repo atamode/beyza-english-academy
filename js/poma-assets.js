@@ -77,7 +77,8 @@ export function altText(id) {
     DEFENCE_FAILED: "Savunma geçildi.",
     OPPONENT_SHOT_PREPARE: "Rakip şuta hazırlanıyor.",
     SAVE_SUCCESS: "Kaleci kurtardı.",
-    GOAL_CONCEDED: "Gol yedin."
+    GOAL_CONCEDED: "Gol yedin.",
+    MATCH_WIN: "Poma maç galibiyetini kutluyor."
   };
   return map[id] || "Futbol oyunu görseli.";
 }

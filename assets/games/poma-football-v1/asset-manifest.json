@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "project": "Poma Academy Football V1",
   "status": "complete-visual-video-v1",
   "assets": [
@@ -98,6 +98,16 @@
       "width": 1672,
       "height": 941,
       "sha256": "fdd4cf7d0b7a258d992095158f83e0dc85034d57dea8ed86eb466259168805d0"
+    },
+    {
+      "id": "MATCH_WIN",
+      "path": "02-results/goal-celebration.webp",
+      "type": "result",
+      "width": 1672,
+      "height": 941,
+      "sha256": "fdd4cf7d0b7a258d992095158f83e0dc85034d57dea8ed86eb466259168805d0",
+      "video": "03-videos/match-win.mp4",
+      "poster": "02-results/goal-celebration.webp"
     },
     {
       "id": "GOAL_CONCEDED",
@@ -221,6 +231,21 @@
       "fps": 30,
       "durationSeconds": 5.1,
       "sizeBytes": 1474202
+    },
+    {
+      "id": "MATCH_WIN_VIDEO",
+      "path": "03-videos/match-win.mp4",
+      "type": "video",
+      "event": "MATCH_WIN",
+      "poster": "02-results/goal-celebration.webp",
+      "fallback": "02-results/goal-celebration.webp",
+      "sha256": "9d24548a68c07c6bbe84bb01776267a5da0a9b5f0f16c75e5f768a96f01e74e9",
+      "codec": "h264",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "durationSeconds": 10.005,
+      "sizeBytes": 2081960
     }
   ],
   "videoPlayback": {
@@ -232,7 +257,8 @@
       "GOAL_SCORED",
       "SHOT_MISSED_POST",
       "SAVE_SUCCESS",
-      "GOAL_CONCEDED"
+      "GOAL_CONCEDED",
+      "MATCH_WIN"
     ]
   }
 }

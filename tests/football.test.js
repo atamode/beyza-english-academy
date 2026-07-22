@@ -44,8 +44,8 @@ test("football manifest loads, resolves IDs and all asset paths exist",()=>{
   }
 });
 
-test("four video events have poster and fallback records",()=>{
-  assert.deepEqual(pomaVideoEvents(manifest),["GOAL_SCORED","SHOT_MISSED_POST","SAVE_SUCCESS","GOAL_CONCEDED"]);
+test("five video events have poster and fallback records",()=>{
+  assert.deepEqual(pomaVideoEvents(manifest),["GOAL_SCORED","SHOT_MISSED_POST","SAVE_SUCCESS","GOAL_CONCEDED","MATCH_WIN"]);
   for(const event of pomaVideoEvents(manifest)){
     const video=resolver.video(event);
     assert.ok(video.url.endsWith(".mp4"),event);
@@ -232,8 +232,9 @@ test("football question validation rejects missing, duplicate and empty options"
   assert.equal(validateFootballQuestion({...q,options:["gol","kitapçı","sınıf","müze"],correctAnswer:"gol",correctIndex:0}),true);
 });
 
-test("video fallback policy is limited to four events and respects reduced motion",()=>{
+test("video fallback policy is limited to five events and respects reduced motion",()=>{
   assert.equal(shouldUseVideo("GOAL_SCORED",false),true);
+  assert.equal(shouldUseVideo("MATCH_WIN",false),true);
   assert.equal(shouldUseVideo("PASS_SUCCESS",false),false);
   assert.equal(shouldUseVideo("GOAL_SCORED",true),false);
 });
@@ -299,12 +300,22 @@ test("match reaches summary at question limit",()=>{
     const idx=s.currentQuestion.correctIndex;
     s=answerFootballQuestion(s,idx,words,{vocabularyProgress:{}},()=>0);
     s=advanceFootball(s);
-    if(s.phase==="MATCH_SUMMARY")break;
+    if(s.phase==="MATCH_SUMMARY"||s.phase==="MATCH_WIN_VIDEO")break;
     if(!s.phase.endsWith("_QUESTION"))s=advanceFootball(s);
   }
-  s=s.phase==="MATCH_SUMMARY"?s:summarizeFootball(s);
+  s=s.phase==="MATCH_SUMMARY"?s:s.phase==="MATCH_WIN_VIDEO"?advanceFootball(s):summarizeFootball(s);
   assert.equal(s.phase,"MATCH_SUMMARY");
   assert.ok(s.summary.percent>=0);
+});
+
+test("won matches play the victory video before summary while draws and losses do not",()=>{
+  const base={...createFootballSession(words,{vocabularyProgress:{}},()=>0),questionsAsked:10,currentQuestion:null};
+  const won=summarizeFootball({...base,goalsFor:2,goalsAgainst:1});
+  assert.equal(won.phase,"MATCH_WIN_VIDEO");
+  assert.equal(won.visual,"MATCH_WIN");
+  assert.equal(advanceFootball(won).phase,"MATCH_SUMMARY");
+  assert.equal(summarizeFootball({...base,goalsFor:1,goalsAgainst:1}).phase,"MATCH_SUMMARY");
+  assert.equal(summarizeFootball({...base,goalsFor:0,goalsAgainst:1}).phase,"MATCH_SUMMARY");
 });
 
 test("football integration text preserves UTF-8",()=>{
