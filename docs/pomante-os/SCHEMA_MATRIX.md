@@ -15,3 +15,15 @@
 | Video page | `VideoObject` | Playable video and accurate metadata are visible | Markup for absent/inaccessible media |
 
 Structured data describes content; it does not create eligibility by itself. Validate syntax, rendered visibility, canonical consistency, and current search-engine rules at implementation time. Record errors and enhancements in [Search Console](SEARCH_CONSOLE.md).
+
+## Live root inventory — 2026-07-22
+
+The root currently emits one JSON-LD block containing `Organization`, `WebSite`, `SoftwareApplication`, `FAQPage`, and `VideoObject` entities.
+
+- Organization/WebSite names and canonical URL are present.
+- FAQ questions/answers and the referenced video are visible after the public landing JavaScript renders.
+- The initial server HTML contains only a short fallback introduction, not the full FAQ/video landing content. Eligibility and content parity therefore depend on successful client rendering.
+- `SoftwareApplication.offers` currently declares a zero-price TRY offer while the live landing also loads plan/pricing choices. Review whether this entity accurately represents the free entry point versus the full commercial offer; do not change it without checking visible pricing and current structured-data rules.
+- All fragment routes inherit the same root JSON-LD. No route-specific schema exists, and none should be assumed.
+
+**MT-007** owns correction of confirmed brand/schema consistency risks after a scoped implementation review.

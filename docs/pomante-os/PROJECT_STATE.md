@@ -12,11 +12,12 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 ## Current verified baseline
 
 - Branch: `main`
-- Baseline reviewed: `737ae79` (`fix: restore public pricing visibility`)
+- Baseline reviewed: `737ae79` (`fix: restore public pricing visibility`), with Pomante OS commit `b36f431` applied locally.
 - Curriculum data: lesson `000` plus lessons `001`–`065`, ten module reviews, vocabulary, diagnostic test, and Story 001.
 - Sport questions adapt to student progress through the shared sport-question engine.
 - Parent dashboard, weekly/monthly reports, payment review, refunds, membership expiry reminders, audit logging, CI, and live smoke coverage exist in repository history.
 - Public positioning and acquisition architecture are now governed by this Pomante OS.
+- Live organic search surface currently consists of one crawlable canonical document, `https://pomante.com.tr/`; public games, stories, login, and signup experiences use client-side hash routes and are not distinct crawlable pages.
 
 ## Fixed boundaries
 
@@ -26,4 +27,4 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 
 ## Immediate operating focus
 
-Establish measurement baselines, inventory existing public pages, and turn the SEO/Knowledge Center architecture into a prioritized implementation backlog without weakening the learning product.
+Verify the analytics funnel baseline, then validate the first acquisition opportunity before designing crawlable product or Knowledge Center routes.

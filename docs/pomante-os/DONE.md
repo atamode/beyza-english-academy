@@ -7,6 +7,7 @@
 
 ## 2026-07
 
+- **MT-002 — Public route and SEO inventory:** live host, robots, sitemap, metadata, structured data, public hash routes, access boundaries, and conversion actions documented; implementation gaps converted into tracked work.
 - **MT-001 — Pomante OS established:** canonical project state, decisions, execution, brand, SEO, Knowledge Center, growth, research, and competitor records created; repository agent workflow defined.
 - Sport questions adapted to student progress (repository commit `b4205ab`).
 - Parent dashboard and weekly/monthly report center completed (repository history through `73fba2b`).

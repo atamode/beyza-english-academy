@@ -19,3 +19,7 @@ Use descriptive, natural anchor text; vary it only when language remains honest.
 ## Audit measures
 
 Track orphan count, click depth, broken links, pages with excessive repeated anchors, internal-link clicks, and assisted activation. Page-type registries own the destination; this file owns the rules.
+
+## Baseline finding — 2026-07-22
+
+The current public root links by JavaScript/hash navigation to signup, login, games, stories, and sport games. These are valid product navigation actions but not crawlable internal links between distinct SEO documents. Instagram and YouTube are external actions. No crawlable content cluster or product-page network exists yet, so orphan/click-depth analysis begins only after real acquisition paths are approved.

@@ -5,16 +5,25 @@
 > **Related files:** [Project State](PROJECT_STATE.md), [Landing Page Library](LANDING_PAGE_LIBRARY.md), [Schema Matrix](SCHEMA_MATRIX.md)
 > **Last reviewed:** 2026-07-22
 
-## Candidate inventory
+## Verified route inventory
 
-These are verified repository capabilities, not yet verified standalone public/indexable pages.
+Audited 2026-07-22. “Public runtime” means usable without sign-in; it does not mean independently crawlable or indexable.
 
-| Candidate | User value to explain | Inventory status |
-|---|---|---|
-| Poma Academy | Coherent English-learning product | Route audit needed |
-| Lessons | Structured lesson progression | Route audit needed |
-| Football and volleyball games | Game-based practice | Route audit needed |
-| Pomante Krallığı stories | English story practice | Route audit needed |
-| Parent reports | Understandable progress visibility | Route audit needed |
+| Product surface | Runtime route | Access | Search status | Conversion / next action |
+|---|---|---|---|---|
+| Poma Academy overview | `/` | Public | Only crawlable/indexable product document | Free signup, video, login, social, coupon |
+| Entertainment hub | `/#/games` | Public runtime | Fragment state; shares root canonical and metadata | Open story, football, or volleyball |
+| Football game | `/#/game/football` | Public runtime | Fragment state; shares root canonical and metadata | Play / return to hub |
+| Volleyball game | `/#/game/volleyball` | Public runtime | Fragment state; shares root canonical and metadata | Play / return to hub |
+| Story library | `/#/stories` | Public runtime | Fragment state; shares root canonical and metadata | Open Story 001 |
+| Story 001 | `/#/story/story-001` | Public runtime | Fragment state; shares root canonical and metadata | Read/listen/quiz |
+| Membership and payment | `/#/membership` | Sign-in required | Application utility; not an acquisition page | Manage plan/payment |
+| Lessons, diagnostic, vocabulary, reports | Multiple hash routes | Sign-in/profile required | Application states; not acquisition pages | Learn / review progress |
+
+No standalone crawlable product page currently exists for lessons, games, stories, parent reporting, or membership. Their suitability as future pages remains a content-and-intent decision, not an automatic route conversion.
+
+## Confirmed consistency gap
+
+The story list/card source uses “Poma Kingdom”, which conflicts with [Brand Guide](BRAND_GUIDE.md). Correct it to the approved contextual name under **MT-007**; do not broaden that task into a redesign.
 
 Each approved page must describe only available behavior, show who it is for, disclose access/pricing clearly, offer a relevant next action, and have unique measurement. Product structured data is used only where visible content and current eligibility support it.

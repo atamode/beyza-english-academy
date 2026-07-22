@@ -15,8 +15,11 @@ Create a trustworthy operating baseline before implementing new acquisition page
 
 ## Ready
 
-- **MT-002:** Inventory current public routes, titles, descriptions, canonical behavior, indexing controls, schema, and conversion actions.
 - **MT-003:** Audit the current analytics implementation and record a verified baseline.
+
+## Completed this sprint
+
+- **MT-002:** Public route and SEO inventory completed against repository source and the live site on 2026-07-22.
 
 ## Exit criteria
 
