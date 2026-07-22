@@ -112,6 +112,7 @@ function publicLandingView(){return `
       <p class="eyebrow">SPOR MİNİ OYUNLARI</p>
       <h2>Futbol ve voleybol mini oyunları</h2>
       <p>İngilizce kelime ve cümle tekrarları futbol ve voleybol oyunlarıyla birleşir. Çocuk yalnızca izleyici değil, doğru cevaplarla oyunu ilerleten aktif oyuncu olur.</p>
+      <p><a href="/ingilizce-oyunlari/">Ücretsiz İngilizce oyunlarını keşfedin</a></p>
     </article>
     <article class="card landing-info-card">
       <p class="eyebrow">HİKÂYELER</p>

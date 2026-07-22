@@ -1,7 +1,7 @@
 {
-  "name":"Beyza English Academy",
-  "short_name":"Beyza English",
-  "description":"Beyza için etkileşimli ve çevrimdışı İngilizce öğrenme uygulaması",
+  "name":"Pomante | Poma Academy",
+  "short_name":"Poma Academy",
+  "description":"Çocuklar için oyunlar, hikâyeler ve derslerle İngilizce öğrenme uygulaması",
   "start_url":"./",
   "scope":"./",
   "display":"standalone",

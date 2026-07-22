@@ -23,7 +23,7 @@ No dedicated audience, age, grade/class, campaign, or Knowledge Center landing p
 
 | ID | Proposed URL | Audience and role | Intent status | Build status |
 |---|---|---|---|---|
-| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | [Brief approved](PAGE_BRIEFS.md); implementation not started |
+| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | [Implemented locally](PAGE_BRIEFS.md); production validation pending MT-012 |
 
 LP-002 must honestly present the current football and volleyball inventory, explain lesson-progress adaptation only as implemented, and avoid implying a large game catalogue. It owns game discovery; the home page retains broad platform evaluation.
 
@@ -34,7 +34,7 @@ LP-002 must honestly present the current football and volleyball inventory, expl
 - Canonical: `https://pomante.com.tr/`
 - Robots meta: `index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1`
 - `robots.txt`: permits all crawling and declares the sitemap.
-- `sitemap.xml`: contains only the canonical root URL; recorded `lastmod` is 2026-07-16 at audit time.
+- Live `sitemap.xml` contained only the canonical root URL at audit time; the local build now declares the root plus LP-002, PP-001, and PP-002 pending deployment.
 - Social metadata: root-specific Open Graph and Twitter card fields with one shared wide image.
 
 ## Approval rules

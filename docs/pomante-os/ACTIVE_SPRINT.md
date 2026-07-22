@@ -7,15 +7,12 @@
 
 ## Sprint goal
 
-Create a trustworthy operating baseline before implementing new acquisition pages.
+Complete the trustworthy operating baseline and prepare the first acquisition network for production validation.
 
 ## In progress
 
 - **MT-003 / MT-009:** Numeric funnel baseline blocked pending push/deploy and authenticated GA4 property/report access.
-
-## Ready
-
-- **MT-006:** Build LP-002, PP-001, and PP-002 from the approved briefs.
+- **MT-012:** Acquisition-network production validation is blocked pending push/deploy, Search Console access, and analytics receipt.
 
 ## Completed this sprint
 
@@ -26,6 +23,7 @@ Create a trustworthy operating baseline before implementing new acquisition page
 - **MT-005:** KC-001 selection-framework brief approved with SERP boundary, evidence plan, outline, exclusions, measurement, and review gate.
 - **MT-010:** Game hub and football/volleyball production briefs approved from verified mechanics, access, media, analytics, and route behavior.
 - **MT-007:** Dynamic sport player label, approved Pomante Kingdom/Krallığı naming, and evidence-bounded root structured data implemented and fully tested locally.
+- **MT-006:** Crawlable English-game hub and football/volleyball product pages implemented with direct-load HTML, unique metadata, internal links, sitemap entries, BreadcrumbList markup, and consent-safe CTA measurement; local build, HTTP, and full-suite checks pass.
 
 ## Exit criteria
 

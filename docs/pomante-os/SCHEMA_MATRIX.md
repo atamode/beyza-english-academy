@@ -27,3 +27,7 @@ The root now emits one JSON-LD block containing `Organization`, `WebSite`, and `
 - All fragment routes inherit the same root JSON-LD. No route-specific schema exists, and none should be assumed.
 
 Evidence: [Google structured-data general guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies), [SoftwareApplication requirements](https://developers.google.com/search/docs/appearance/structured-data/software-app), [FAQ feature removal](https://developers.google.com/search/updates#removing-faq-rich-result), and [VideoObject requirements](https://developers.google.com/search/docs/appearance/structured-data/video). Production validation remains required after deployment.
+
+## Acquisition-page inventory — implemented locally 2026-07-22
+
+LP-002, PP-001, and PP-002 each emit a visible breadcrumb trail with matching `BreadcrumbList` JSON-LD and a self-referencing canonical. No ratings, reviews, offers, or unsupported product claims are marked up. Syntax and page-contract tests pass locally; production rich-result and URL inspection remain MT-012 work.

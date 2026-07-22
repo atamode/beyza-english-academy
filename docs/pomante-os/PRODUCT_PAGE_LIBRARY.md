@@ -26,8 +26,8 @@ No standalone crawlable product page currently exists for lessons, games, storie
 
 | ID | Proposed URL | Verified product | Intent role | Status |
 |---|---|---|---|---|
-| PP-001 | `/ingilizce-oyunlari/futbol/` | Football game | Specific playable product; supports game hub | [Brief approved](PAGE_BRIEFS.md); not built; demand unknown |
-| PP-002 | `/ingilizce-oyunlari/voleybol/` | Volleyball game | Specific playable product; supports game hub | [Brief approved](PAGE_BRIEFS.md); not built; demand unknown |
+| PP-001 | `/ingilizce-oyunlari/futbol/` | Football game | Specific playable product; supports game hub | [Implemented locally](PAGE_BRIEFS.md); production validation pending; demand unknown |
+| PP-002 | `/ingilizce-oyunlari/voleybol/` | Volleyball game | Specific playable product; supports game hub | [Implemented locally](PAGE_BRIEFS.md); production validation pending; demand unknown |
 
 These pages must expose or faithfully lead into the real games, describe only verified mechanics, and use distinct visible copy and metadata. Sparse exact-match SERPs indicate differentiation potential, not proven search volume.
 

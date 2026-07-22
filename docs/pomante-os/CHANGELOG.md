@@ -7,6 +7,7 @@
 
 ## 2026-07-22
 
+- Completed MT-006 locally: added the crawlable English-game hub and football/volleyball product pages with unique metadata, honest server-rendered content, internal links, sitemap/build coverage, breadcrumbs, and consent-safe CTA measurement; opened MT-012 for deployment and production validation.
 - Completed MT-007: corrected public Pomante Kingdom/Krallığı naming and reduced root JSON-LD to verified Organization, WebSite, and VideoObject entities under current official guidance.
 - Recorded D-007 and the implemented sport-score repair: entered student name when available, “Poma” fallback otherwise, with names remaining outside analytics.
 - Approved production briefs for the crawlable English-game hub and football/volleyball product pages from verified runtime mechanics; recorded the legacy sport score label as an MT-007 launch dependency.

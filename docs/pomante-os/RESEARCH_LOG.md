@@ -19,6 +19,7 @@ Separate observation from interpretation and recommendation. Record source, date
 | R-004 | What should the first supporting Knowledge Center guide answer? | Turkish parent/game-selection SERP review plus authoritative source scan; 2026-07-22 | A practical word-game selection framework fills a clearer informational gap than another game list and stays distinct from LP-002 | Medium for user-value hypothesis; none for volume | MT-005 / KC-001 | Complete |
 | R-005 | What can the first acquisition pages truthfully promise? | Football/volleyball engines, views, assets, access tests, analytics, and route inventory; 2026-07-22 | Public guest play, ten-question word matches/sets, shared Word League, signed-in progress signals, summaries, media states, and limitations are briefable; legacy score label was resolved by D-007 | High | MT-010 / MT-007 / MT-006 | Complete |
 | R-006 | Which root schema entities remain supportable? | Root visible/source parity, real video probe, current official Google structured-data documentation; 2026-07-22 | Keep Organization, WebSite, and VideoObject; remove unsupported/misaligned SoftwareApplication and obsolete FAQPage markup while retaining visible content | High | MT-007 | Complete |
+| R-007 | Does the first acquisition build satisfy its approved technical contract? | Source review, local build, automated tests, and direct local HTTP requests; 2026-07-22 | All three routes have independent HTML, unique metadata, crawlable links, sitemap/build coverage, honest game CTAs, and consent-gated coarse analytics | High locally; none for production/indexing | MT-006 / MT-012 | Local verification complete |
 
 ## R-001 evidence and limits
 
@@ -68,3 +69,9 @@ Separate observation from interpretation and recommendation. Record source, date
 - Google [removed the FAQ rich-result feature](https://developers.google.com/search/updates#removing-faq-rich-result) from Search in May 2026 and removed its documentation in June. Visible root FAQs remain useful to users; their `FAQPage` markup no longer has a supported Google Search feature role.
 - The root's real MP4 is 49.536 seconds by local `ffprobe`. `VideoObject` retains its real content URL, thumbnail, name, description, upload date, and measured duration; `embedUrl` was removed because the MP4 URL is content bytes, not a player URL, consistent with Google's [VideoObject definitions](https://developers.google.com/search/docs/appearance/structured-data/video).
 - [General structured-data guidance](https://developers.google.com/search/docs/appearance/structured-data/sd-policies) requires markup to represent visible page content. Local JSON parsing and parity tests pass; Rich Results Test and production URL Inspection remain blocked until deployment.
+
+## R-007 evidence and limits
+
+- Repository evidence: three server-rendered acquisition documents, shared responsive styles, consent-aware acquisition analytics, home/hub/product internal links, sitemap entries, and build inclusion.
+- Local verification: direct requests returned HTTP 200 for all three clean trailing-slash routes and their shared CSS/JavaScript; the full application suite passed after a production build.
+- Limitation: Playwright Chromium was not installed in the execution environment, so screenshot-based browser QA was not completed. Production HTTP, rendering, Search Console indexing, and analytics receipt remain unverified under MT-012.

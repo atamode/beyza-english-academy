@@ -5,6 +5,7 @@ const EVENTS = new Set([
   ,"teacher_partner_panel_opened", "teacher_partner_code_copied", "teacher_partner_payment_started", "partner_code_validated",
   "start_free_trial", "watch_intro_video", "signup_click", "instagram_click", "youtube_click", "coupon_signup_click",
   "signup_form_submitted", "signup_completed", "learning_started", "learning_completed"
+  ,"product_cta_click"
 ]);
 const PARAMS = new Set(["plan_code", "source", "status", "period_type", "has_data", "content_type", "content_id"]);
 
@@ -33,6 +34,10 @@ export function trackRouteView(route, target = globalThis) {
   const context = routeAnalyticsContext(route);
   const origin = target.location?.origin || "https://pomante.com.tr";
   const pathname = target.location?.pathname || "/";
+  if (pathname !== "/" && !target.location?.hash) {
+    target.gtag("event", "page_view", { page_location: `${origin}${pathname}`, page_title: target.document?.title || "Poma Academy" });
+    return true;
+  }
   target.gtag("event", "page_view", { page_location: `${origin}${pathname}#/${context.route}`, page_title: target.document?.title || "Poma Academy" });
   if (context.content_type) trackEvent("learning_started", { content_type: context.content_type, content_id: context.content_id, source: "route" }, target);
   return true;

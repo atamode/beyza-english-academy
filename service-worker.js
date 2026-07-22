@@ -1,10 +1,16 @@
-const CACHE="beyza-english-1e56aef93966";
+const CACHE="beyza-english-0d943b9f159e";
 const ASSETS=[
   "./",
   "index.html",
+  "ingilizce-oyunlari/index.html",
+  "ingilizce-oyunlari/futbol/index.html",
+  "ingilizce-oyunlari/voleybol/index.html",
+  "sitemap.xml",
+  "robots.txt",
   "manifest.webmanifest",
   "css/reset.css",
   "css/variables.css",
+  "css/acquisition-pages.css",
   "css/app.css",
   "css/responsive.css",
   "css/sprint2.css",
@@ -19,6 +25,7 @@ const ASSETS=[
   "css/football.css",
   "css/story.css",
   "js/app.js",
+  "js/acquisition-page.js",
   "js/router.js",
   "js/storage.js",
   "js/account-config.js",

@@ -9,9 +9,9 @@
 
 | ID | Page | Canonical URL | Brief status | Build status |
 |---|---|---|---|---|
-| LP-002 | English game hub | `/ingilizce-oyunlari/` | Approved | Not built |
-| PP-001 | Football English word game | `/ingilizce-oyunlari/futbol/` | Approved | Not built |
-| PP-002 | Volleyball English word game | `/ingilizce-oyunlari/voleybol/` | Approved | Not built |
+| LP-002 | English game hub | `/ingilizce-oyunlari/` | Approved | Implemented locally; production validation pending |
+| PP-001 | Football English word game | `/ingilizce-oyunlari/futbol/` | Approved | Implemented locally; production validation pending |
+| PP-002 | Volleyball English word game | `/ingilizce-oyunlari/voleybol/` | Approved | Implemented locally; production validation pending |
 
 ## Shared implementation contract
 
@@ -145,3 +145,11 @@ Final title/description must be checked for rendered length and SERP fit at impl
 3. Add crawlable links from home and between the three pages; add KC-001 links only after KC-001 publication.
 4. Add sitemap/metadata/schema/consent-safe measurement, then run direct-load, content, accessibility, and game-launch verification.
 5. Deploy before treating pages as live; verify production HTTP responses, rendered metadata, indexability, and analytics receipt separately.
+
+## Implementation verification — 2026-07-22
+
+- All three clean routes return their own HTTP 200 HTML documents from the local server and expose their core content without JavaScript.
+- Unique titles, descriptions, canonicals, H1s, social metadata, visible breadcrumbs, and matching `BreadcrumbList` data are present.
+- Home → hub → sport-page links and sport-page return/cross-links are crawlable; play CTAs retain the verified hash game routes.
+- The sitemap and build manifest include all three documents and shared assets. CTA measurement remains consent-gated and sends only coarse page/content identifiers.
+- Automated acquisition, consent, build, and full application tests pass. Browser screenshot QA and production/indexing/analytics validation remain open under MT-012.

@@ -14,6 +14,6 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     url = f"http://127.0.0.1:{PORT}"
     threading.Timer(0.7, lambda: webbrowser.open(url)).start()
-    print(f"Beyza English Academy: {url}")
+    print(f"Poma Academy: {url}")
     print("Kapatmak için Ctrl+C tuşlarına basın.")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
