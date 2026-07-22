@@ -5,56 +5,56 @@
   "assets": {
     "kingdom-empty": {
       "type": "image",
-      "file": "story-001-01-village-empty-master-1280x720.png"
+      "file": "story-001-01-village-empty-master-1280x720.webp"
     },
     "poma-welcome-poster": {
       "type": "image",
-      "file": "story-001-poma-welcome-poster.png"
+      "file": "story-001-poma-welcome-poster.webp"
     },
     "poma-welcome-video": {
       "type": "video",
       "file": "story-001-02-03-poma-wave-i-you.mp4",
-      "poster": "story-001-poma-welcome-poster.png",
+      "poster": "story-001-poma-welcome-poster.webp",
       "muted": true,
       "playsinline": true,
       "preload": "metadata"
     },
     "poma-dahi-castle": {
       "type": "image",
-      "file": "story-001-04-he-poma-dahi-visual-1280x720.png"
+      "file": "story-001-04-he-poma-dahi-visual-1280x720.webp"
     },
     "influencer-castle": {
       "type": "image",
-      "file": "story-001-05-she-influencer-poma-visual-1280x720.png"
+      "file": "story-001-05-she-influencer-poma-visual-1280x720.webp"
     },
     "bozkurt-wolf-castle": {
       "type": "image",
-      "file": "story-001-06-it-little-wolf-visual-1280x720.png"
+      "file": "story-001-06-it-little-wolf-visual-1280x720.webp"
     },
     "little-wolf": {
       "type": "image",
-      "file": "story-001-06-it-little-wolf-visual-1280x720.png"
+      "file": "story-001-06-it-little-wolf-visual-1280x720.webp"
     },
     "poma-group-lineup": {
       "type": "image",
-      "file": "story-001-08-they-pomas-visual-1280x720.png"
+      "file": "story-001-08-they-pomas-visual-1280x720.webp"
     },
     "we-friends-group": {
       "type": "image",
-      "file": "story-001-we-friends-group.png"
+      "file": "story-001-we-friends-group.webp"
     },
     "they-poma-points-to-group": {
       "type": "image",
-      "file": "story-001-they-poma-points-to-group.png"
+      "file": "story-001-they-poma-points-to-group.webp"
     },
     "story-intro-room": {
       "type": "image",
-      "file": "story-001-00-room-master.jpeg"
+      "file": "story-001-00-room-master.webp"
     },
     "story-book-opening": {
       "type": "video",
       "file": "story-001-00-book-opening.mp4",
-      "poster": "story-001-00-room-master.jpeg",
+      "poster": "story-001-00-room-master.webp",
       "muted": true,
       "playsinline": true,
       "preload": "metadata"

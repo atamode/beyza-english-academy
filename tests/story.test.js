@@ -66,6 +66,18 @@ test("asset manifest resolves every referenced path", () => {
   }
 });
 
+test("Story 001 runtime media stays within practical delivery budgets", () => {
+  const files = new Set();
+  for (const asset of Object.values(story.assetManifest.assets)) {
+    files.add(asset.file);
+    if (asset.poster) files.add(asset.poster);
+  }
+  const imageBytes = [...files].filter(file => file.endsWith(".webp")).reduce((sum, file) => sum + fs.statSync(path.join(root, "assets/stories/story-001", file)).size, 0);
+  const videoBytes = [...files].filter(file => file.endsWith(".mp4")).reduce((sum, file) => sum + fs.statSync(path.join(root, "assets/stories/story-001", file)).size, 0);
+  assert.ok(imageBytes < 2 * 1024 * 1024, `story images are ${(imageBytes / 1048576).toFixed(1)} MB`);
+  assert.ok(videoBytes < 3 * 1024 * 1024, `story videos are ${(videoBytes / 1048576).toFixed(1)} MB`);
+});
+
 test("video poster fallback uses one fixed media stage", () => {
   const view = read("js/story-view.js");
   assert.match(view, /data-story-video-stage/);
@@ -162,8 +174,8 @@ test("little wolf card uses the single wolf asset without Bozkurt Poma", () => {
   const itPair = scene9.interaction.pairs.find(pair => pair.pronoun === "it");
   assert.equal(itPair.mediaId, "little-wolf");
   assert.equal(story.quiz.find(q => q.id === "q4").mediaId, "little-wolf");
-  assert.equal(manifest["little-wolf"].file, "story-001-06-it-little-wolf-visual-1280x720.png");
-  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-06-it-little-wolf-visual-1280x720.png")), true);
+  assert.equal(manifest["little-wolf"].file, "story-001-06-it-little-wolf-visual-1280x720.webp");
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-06-it-little-wolf-visual-1280x720.webp")), true);
   assert.notEqual(itPair.mediaId, "bozkurt-wolf-castle");
 });
 
@@ -173,7 +185,7 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
   const scene8 = story.slides.find(s => s.id === "scene-08");
   const scene10 = story.slides.find(s => s.id === "scene-10");
   const quiz5 = story.quiz.find(q => q.id === "q5");
-  assert.equal(story.assetManifest.assets["story-intro-room"].file, "story-001-00-room-master.jpeg");
+  assert.equal(story.assetManifest.assets["story-intro-room"].file, "story-001-00-room-master.webp");
   assert.equal(story.assetManifest.assets["story-book-opening"].file, "story-001-00-book-opening.mp4");
   assert.equal(scene7.type, "image");
   assert.equal(scene7.mediaId, "we-friends-group");
@@ -181,9 +193,9 @@ test("intro and Story 001 We/They scenes use the dedicated clean assets", () => 
   assert.equal(scene8.mediaId, "they-poma-points-to-group");
   assert.equal(scene10.type, "image");
   assert.equal(scene10.mediaId, "they-poma-points-to-group");
-  assert.equal(story.assetManifest.assets["we-friends-group"].file, "story-001-we-friends-group.png");
-  assert.equal(story.assetManifest.assets["they-poma-points-to-group"].file, "story-001-they-poma-points-to-group.png");
-  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-room-master.jpeg")), true);
+  assert.equal(story.assetManifest.assets["we-friends-group"].file, "story-001-we-friends-group.webp");
+  assert.equal(story.assetManifest.assets["they-poma-points-to-group"].file, "story-001-they-poma-points-to-group.webp");
+  assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-room-master.webp")), true);
   assert.equal(fs.existsSync(path.join(root, "assets/stories/story-001/story-001-00-book-opening.mp4")), true);
   assert.equal(quiz5.mediaId, "we-friends-group");
   assert.equal(quiz5.uiOverlay, undefined);
