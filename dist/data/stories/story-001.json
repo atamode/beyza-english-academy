@@ -59,10 +59,10 @@
       "type": "image",
       "mediaId": "kingdom-empty",
       "text": [
-        "Welcome to Poma Kingdom.",
+        "Welcome to Pomante Kingdom.",
         "The castle gate is open."
       ],
-      "narration": "Welcome to Poma Kingdom. The castle gate is open.",
+      "narration": "Welcome to Pomante Kingdom. The castle gate is open.",
       "focusTokens": [
         "welcome",
         "castle",

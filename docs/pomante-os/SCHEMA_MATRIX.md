@@ -16,14 +16,14 @@
 
 Structured data describes content; it does not create eligibility by itself. Validate syntax, rendered visibility, canonical consistency, and current search-engine rules at implementation time. Record errors and enhancements in [Search Console](SEARCH_CONSOLE.md).
 
-## Live root inventory — 2026-07-22
+## Root inventory — repaired locally 2026-07-22
 
-The root currently emits one JSON-LD block containing `Organization`, `WebSite`, `SoftwareApplication`, `FAQPage`, and `VideoObject` entities.
+The root now emits one JSON-LD block containing `Organization`, `WebSite`, and `VideoObject` entities. The repair is local until deployment.
 
 - Organization/WebSite names and canonical URL are present.
-- FAQ questions/answers and the referenced video are visible after the public landing JavaScript renders.
-- The initial server HTML contains only a short fallback introduction, not the full FAQ/video landing content. Eligibility and content parity therefore depend on successful client rendering.
-- `SoftwareApplication.offers` currently declares a zero-price TRY offer while the live landing also loads plan/pricing choices. Review whether this entity accurately represents the free entry point versus the full commercial offer; do not change it without checking visible pricing and current structured-data rules.
+- The referenced video is visible after the public landing JavaScript renders; its content URL, thumbnail, publish date, and measured duration are recorded. The invalid MP4-as-player `embedUrl` was removed.
+- `SoftwareApplication` was removed from the root because the page exposes free and paid plans while the markup reduced the offer to zero TRY, and no real review/rating exists for Google's required rich-result pairing.
+- `FAQPage` was removed while the visible FAQ content remains. Google removed the FAQ rich-result feature in May 2026 and its documentation in June 2026.
 - All fragment routes inherit the same root JSON-LD. No route-specific schema exists, and none should be assumed.
 
-**MT-007** owns correction of confirmed brand/schema consistency risks after a scoped implementation review.
+Evidence: [Google structured-data general guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies), [SoftwareApplication requirements](https://developers.google.com/search/docs/appearance/structured-data/software-app), [FAQ feature removal](https://developers.google.com/search/updates#removing-faq-rich-result), and [VideoObject requirements](https://developers.google.com/search/docs/appearance/structured-data/video). Production validation remains required after deployment.

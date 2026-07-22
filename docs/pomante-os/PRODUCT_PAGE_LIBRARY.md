@@ -31,8 +31,8 @@ No standalone crawlable product page currently exists for lessons, games, storie
 
 These pages must expose or faithfully lead into the real games, describe only verified mechanics, and use distinct visible copy and metadata. Sparse exact-match SERPs indicate differentiation potential, not proven search volume.
 
-## Confirmed consistency gap
+## Resolved consistency gap
 
-The story list/card source uses “Poma Kingdom”, which conflicts with [Brand Guide](BRAND_GUIDE.md). Correct it to the approved contextual name under **MT-007**; do not broaden that task into a redesign.
+The story list/card source formerly used “Poma Kingdom”. MT-007 corrected Turkish UI/alt text to “Pomante Krallığı” and the English story line to “Pomante Kingdom”; tests prohibit the rejected variants.
 
 Each approved page must describe only available behavior, show who it is for, disclose access/pricing clearly, offer a relevant next action, and have unique measurement. Product structured data is used only where visible content and current eligibility support it.

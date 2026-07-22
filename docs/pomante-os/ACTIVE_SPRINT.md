@@ -15,7 +15,6 @@ Create a trustworthy operating baseline before implementing new acquisition page
 
 ## Ready
 
-- **MT-007:** Sport score label resolved; story naming and root schema review remain.
 - **MT-006:** Build LP-002, PP-001, and PP-002 from the approved briefs.
 
 ## Completed this sprint
@@ -26,6 +25,7 @@ Create a trustworthy operating baseline before implementing new acquisition page
 - **MT-004:** Turkish SERPs and current product capability evaluated; first acquisition opportunity, canonical intent owners, exclusions, and evidence limits recorded.
 - **MT-005:** KC-001 selection-framework brief approved with SERP boundary, evidence plan, outline, exclusions, measurement, and review gate.
 - **MT-010:** Game hub and football/volleyball production briefs approved from verified mechanics, access, media, analytics, and route behavior.
+- **MT-007:** Dynamic sport player label, approved Pomante Kingdom/Krallığı naming, and evidence-bounded root structured data implemented and fully tested locally.
 
 ## Exit criteria
 

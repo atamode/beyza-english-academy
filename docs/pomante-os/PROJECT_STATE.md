@@ -28,4 +28,4 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 
 ## Immediate operating focus
 
-Deploy the analytics repair and verify GA event receipt when access is available. Independently, resolve the bounded MT-007 naming/schema risks and implement the approved LP-002/PP-001/PP-002 acquisition network. KC-001 remains ready for an assigned content owner and education reviewer.
+Deploy the analytics repair and verify GA event receipt when access is available. Independently, implement the approved LP-002/PP-001/PP-002 acquisition network; its MT-007 naming/schema dependency is resolved locally. KC-001 remains ready for an assigned content owner and education reviewer.
