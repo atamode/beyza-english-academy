@@ -7,6 +7,7 @@
 
 ## 2026-07-22
 
+- Approved production briefs for the crawlable English-game hub and football/volleyball product pages from verified runtime mechanics; recorded the legacy sport score label as an MT-007 launch dependency.
 - Approved KC-001 as the first Knowledge Center brief, including its parent decision job, SERP/cannibalization boundary, evidence plan, outline, exclusions, measurement, and reviewer gate.
 - Recorded R-003 and Decision D-006: the first acquisition opportunity, canonical page ownership, product-page proposals, supporting-content boundary, and explicit absence of volume evidence.
 - Recorded Decision D-005 and MT-008: explicit analytics opt-in, child-data minimization boundary, repaired funnel events, and the remaining deployment/GA receipt blocker.

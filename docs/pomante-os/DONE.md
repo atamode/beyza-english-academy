@@ -7,6 +7,7 @@
 
 ## 2026-07
 
+- **MT-010 — First acquisition-page briefs approved:** LP-002, PP-001, and PP-002 now have production contracts for content, claims, routes, metadata, linking, measurement, testing, and launch dependencies.
 - **MT-005 — First Knowledge Center brief approved:** KC-001 defines a parent-facing English word-game selection framework, evidence/reviewer gates, and a non-cannibalizing relationship with the planned game hub.
 - **MT-004 — First acquisition opportunity validated:** “Free online English games for children” selected; home, game hub, sport product pages, and supporting-guide intent boundaries recorded without inventing volume.
 - **MT-008 — Privacy-safe analytics repair:** GA loading changed to explicit opt-in; rejection keeps the product usable; safe route, landing, signup, lesson, diagnostic, football, volleyball, and story funnel events added with prohibited-data filtering.

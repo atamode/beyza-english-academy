@@ -17,6 +17,7 @@ Separate observation from interpretation and recommendation. Record source, date
 | R-002 | What is the verified analytics baseline? | Repository/live audit plus local MT-008 implementation; 2026-07-22 | Previous live funnel was incomplete. Opt-in consent and minimum funnel repair now pass local targeted tests, but deployment and GA receipt/numeric baseline require MT-009. | High for implementation; none for received data | MT-003 / MT-008 / MT-009 / D-005 | Repair complete; data blocked |
 | R-003 | Which acquisition cluster should launch first? | Turkish Google SERP review plus verified current product inventory; 2026-07-22 | Free online English games for children offers the strongest first fit; game hub and sport pages need distinct ownership | Medium for opportunity; high for product fit; none for volume | OD-001 / MT-004 / D-006 | Complete |
 | R-004 | What should the first supporting Knowledge Center guide answer? | Turkish parent/game-selection SERP review plus authoritative source scan; 2026-07-22 | A practical word-game selection framework fills a clearer informational gap than another game list and stays distinct from LP-002 | Medium for user-value hypothesis; none for volume | MT-005 / KC-001 | Complete |
+| R-005 | What can the first acquisition pages truthfully promise? | Football/volleyball engines, views, assets, access tests, analytics, and route inventory; 2026-07-22 | Public guest play, ten-question word matches/sets, shared Word League, signed-in progress signals, summaries, media states, and limitations are briefable; legacy score label blocks launch consistency | High | MT-010 / MT-007 / MT-006 | Complete |
 
 ## R-001 evidence and limits
 
@@ -52,3 +53,10 @@ Separate observation from interpretation and recommendation. Record source, date
 - The reviewed Turkish result set did not expose a clear, comprehensive parent decision framework covering goal, observed level, learning action, feedback, return/transfer, and practical/safety fit together.
 - KC-001 therefore owns evaluation rather than game discovery. The source plan includes British Council practice examples and Cambridge-hosted research on retrieval and technology-assisted L2 vocabulary learning; publication still requires full-source review and qualified claim checking.
 - Limitation: sparse/noisy results can reflect low query demand as well as a content gap. No volume, Search Console, interviews, or usability evidence was available. The brief is an evidence-bounded value hypothesis, not a traffic forecast.
+
+## R-005 evidence and limits
+
+- Repository evidence: public route handling in `js/app.js`; shared selection in `js/sport-question-engine.js`; league/question/session behavior in `js/football-engine.js` and `js/volleyball-engine.js`; visible interaction and summaries in both game views; media manifests; access, adaptation, game, analytics, and reduced-motion tests.
+- Guest sessions use namespaced session storage; active-student sessions can use lesson/vocabulary signals and persist sport learning events. The acquisition copy must not collapse those behaviors into one universal personalization/reporting promise.
+- Both games currently expose “Beyza” as the player-side score label. This is a verified legacy brand inconsistency and a pre-launch dependency under MT-007; R-005 does not select the replacement label.
+- Limitation: this was a repository behavior audit, not a deployed cross-browser, child-usability, performance, or production analytics test. Every product claim and route must be reverified after implementation and deployment.

@@ -15,7 +15,8 @@ Create a trustworthy operating baseline before implementing new acquisition page
 
 ## Ready
 
-- **MT-010:** Brief the crawlable game hub and truthful football/volleyball product pages.
+- **MT-007:** Resolve confirmed public naming/schema risks, including the legacy sport score label required before page launch.
+- **MT-006:** Build LP-002, PP-001, and PP-002 after the bounded MT-007 dependency.
 
 ## Completed this sprint
 
@@ -24,6 +25,7 @@ Create a trustworthy operating baseline before implementing new acquisition page
 - **MT-008:** Opt-in analytics loading, equal accept/reject controls, changeable preference, safe SPA route views, landing CTAs, signup, and core learning completion events implemented and tested locally.
 - **MT-004:** Turkish SERPs and current product capability evaluated; first acquisition opportunity, canonical intent owners, exclusions, and evidence limits recorded.
 - **MT-005:** KC-001 selection-framework brief approved with SERP boundary, evidence plan, outline, exclusions, measurement, and review gate.
+- **MT-010:** Game hub and football/volleyball production briefs approved from verified mechanics, access, media, analytics, and route behavior.
 
 ## Exit criteria
 

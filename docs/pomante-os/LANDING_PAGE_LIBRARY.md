@@ -2,7 +2,7 @@
 
 > **Purpose:** Registry and brief standard for audience, class, campaign, and intent-led landing pages.
 > **Update trigger:** A landing page is proposed, approved, launched, changed, or retired.
-> **Related files:** [Keyword Map](KEYWORD_MAP.md), [Product Page Library](PRODUCT_PAGE_LIBRARY.md), [Internal Linking](INTERNAL_LINKING.md)
+> **Related files:** [Keyword Map](KEYWORD_MAP.md), [Product Page Library](PRODUCT_PAGE_LIBRARY.md), [Acquisition Page Briefs](PAGE_BRIEFS.md), [Internal Linking](INTERNAL_LINKING.md)
 > **Last reviewed:** 2026-07-22
 
 ## Verified live registry
@@ -23,7 +23,7 @@ No dedicated audience, age, grade/class, campaign, or Knowledge Center landing p
 
 | ID | Proposed URL | Audience and role | Intent status | Build status |
 |---|---|---|---|---|
-| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | Brief and implementation not started |
+| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | [Brief approved](PAGE_BRIEFS.md); implementation not started |
 
 LP-002 must honestly present the current football and volleyball inventory, explain lesson-progress adaptation only as implemented, and avoid implying a large game catalogue. It owns game discovery; the home page retains broad platform evaluation.
 

@@ -12,6 +12,8 @@
 
 Resolved 2026-07-22: OD-001 became [Decision D-006](DECISIONS.md); traffic potential remains unquantified until Search Console or keyword-volume evidence is available.
 
+Partially resolved 2026-07-22: football and volleyball were approved as PP-001/PP-002 under MT-010. OD-003 remains open for lessons, stories, reporting, membership, and other public product features.
+
 Resolved 2026-07-22: OD-004 became [Decision D-005](DECISIONS.md); formal aydınlatma/KVKK text still requires qualified owner review before live release.
 
 When resolved, append the decision to [Decisions](DECISIONS.md) and remove the item here with a short resolution reference.

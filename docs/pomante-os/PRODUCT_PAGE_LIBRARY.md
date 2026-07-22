@@ -2,7 +2,7 @@
 
 > **Purpose:** Canonical registry for pages representing verified products and features.
 > **Update trigger:** A product page is proposed, launched, materially changed, or retired.
-> **Related files:** [Project State](PROJECT_STATE.md), [Landing Page Library](LANDING_PAGE_LIBRARY.md), [Schema Matrix](SCHEMA_MATRIX.md)
+> **Related files:** [Project State](PROJECT_STATE.md), [Landing Page Library](LANDING_PAGE_LIBRARY.md), [Acquisition Page Briefs](PAGE_BRIEFS.md), [Schema Matrix](SCHEMA_MATRIX.md)
 > **Last reviewed:** 2026-07-22
 
 ## Verified route inventory
@@ -26,8 +26,8 @@ No standalone crawlable product page currently exists for lessons, games, storie
 
 | ID | Proposed URL | Verified product | Intent role | Status |
 |---|---|---|---|---|
-| PP-001 | `/ingilizce-oyunlari/futbol/` | Football game | Specific playable product; supports game hub | Approved for brief; not built; demand unknown |
-| PP-002 | `/ingilizce-oyunlari/voleybol/` | Volleyball game | Specific playable product; supports game hub | Approved for brief; not built; demand unknown |
+| PP-001 | `/ingilizce-oyunlari/futbol/` | Football game | Specific playable product; supports game hub | [Brief approved](PAGE_BRIEFS.md); not built; demand unknown |
+| PP-002 | `/ingilizce-oyunlari/voleybol/` | Volleyball game | Specific playable product; supports game hub | [Brief approved](PAGE_BRIEFS.md); not built; demand unknown |
 
 These pages must expose or faithfully lead into the real games, describe only verified mechanics, and use distinct visible copy and metadata. Sparse exact-match SERPs indicate differentiation potential, not proven search volume.
 

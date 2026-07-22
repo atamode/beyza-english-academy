@@ -10,7 +10,7 @@
 - Quantify the approved game opportunity with Search Console and/or a named keyword-volume source when access exists.
 - Validate parent, age/grade, story, and beginner-English needs without creating thin variants.
 - Assign a content owner and education reviewer, then draft KC-001 using the approved brief.
-- Complete the game-page briefs using the approved intent boundary.
+- Implement and deploy the approved game-page network after the bounded MT-007 dependency.
 - Define baseline Search Console and analytics reporting after access/data are verified.
 
 ## P2 — After foundations
