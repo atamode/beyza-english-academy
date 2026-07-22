@@ -37,8 +37,8 @@ function answerAndAdvance(session, correct=true, state={vocabularyProgress:{}}) 
 
 test("football manifest loads, resolves IDs and all asset paths exist",()=>{
   assert.equal(manifest.project,"Poma Academy Football V1");
-  assert.equal(resolver.state("MATCH_INTRO").url.endsWith("match-intro.png"),true);
-  assert.equal(resolver.state("DEFENCE_FAILED").url.includes("defence-failed.png"),true);
+  assert.equal(resolver.state("MATCH_INTRO").url.endsWith("match-intro.webp"),true);
+  assert.equal(resolver.state("DEFENCE_FAILED").url.includes("defence-failed.webp"),true);
   for(const rel of requiredPomaAssetPaths(manifest)){
     assert.equal(fs.existsSync(path.join(root,"assets/games/poma-football-v1",rel)),true,rel);
   }
@@ -49,9 +49,17 @@ test("four video events have poster and fallback records",()=>{
   for(const event of pomaVideoEvents(manifest)){
     const video=resolver.video(event);
     assert.ok(video.url.endsWith(".mp4"),event);
-    assert.ok(video.posterUrl.endsWith(".png"),event);
-    assert.ok(video.fallbackUrl.endsWith(".png"),event);
+    assert.ok(video.posterUrl.endsWith(".webp"),event);
+    assert.ok(video.fallbackUrl.endsWith(".webp"),event);
   }
+});
+
+test("football runtime media stays within practical delivery budgets",()=>{
+  const referencedPosters=requiredPomaAssetPaths(manifest).filter(x=>x.endsWith(".webp"));
+  const posterBytes=[...new Set(referencedPosters)].reduce((sum,rel)=>sum+fs.statSync(path.join(root,"assets/games/poma-football-v1",rel)).size,0);
+  const videoBytes=pomaVideoEvents(manifest).reduce((sum,event)=>sum+fs.statSync(path.join(root,"assets/games/poma-football-v1",resolver.video(event).path)).size,0);
+  assert.ok(posterBytes<4*1024*1024,`football posters are ${(posterBytes/1048576).toFixed(1)} MB`);
+  assert.ok(videoBytes<8*1024*1024,`football videos are ${(videoBytes/1048576).toFixed(1)} MB`);
 });
 
 test("MATCH_INTRO advances to POSSESSION_QUESTION",()=>{
