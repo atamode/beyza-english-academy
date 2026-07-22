@@ -1,0 +1,28 @@
+# SEO Architecture
+
+> **Purpose:** Canonical model for organic discovery surfaces and their roles.
+> **Update trigger:** Search intent, site hierarchy, page-type, or indexing rules change.
+> **Related files:** [Keyword Map](KEYWORD_MAP.md), [Internal Linking](INTERNAL_LINKING.md), [Schema Matrix](SCHEMA_MATRIX.md), [Knowledge Center](KNOWLEDGE_CENTER.md)
+> **Last reviewed:** 2026-07-22
+
+## Network model
+
+The SEO network has four complementary layers:
+
+1. **Product pages** explain a distinct product or feature and support conversion.
+2. **Audience/class landing pages** answer a specific child's, parent's, or teacher's need without doorway-page duplication.
+3. **Evergreen Knowledge Center guides** solve durable learning or parenting questions and connect relevant intent to product experiences.
+4. **Timely blog/editorial posts** cover genuinely time-sensitive news, campaigns, or research; they must not replace evergreen guides.
+
+Every indexable page needs one primary intent, a useful standalone answer, a clear next action, and at least one logical inward and outward link. Page generation at scale is prohibited unless every page has distinct human value.
+
+## Page hierarchy
+
+- Home: brand/product promise and primary paths.
+- Product layer: Academy, lessons, stories, games, parent reporting, and other verified offers.
+- Audience/class layer: only validated age, grade, level, parent, or teacher needs.
+- Knowledge Center: topic hubs → evergreen guides/glossary/FAQ → relevant product or audience page.
+
+## Quality and measurement
+
+Human usefulness overrides keyword coverage. Measure indexing, non-brand impressions/clicks, qualified landing sessions, product-start actions, registration, lesson/game/story starts, and paid conversion where applicable. See [KPI](KPI.md) and [Analytics](ANALYTICS.md).
