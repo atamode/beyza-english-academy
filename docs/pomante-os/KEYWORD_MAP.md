@@ -14,7 +14,7 @@ The first intent family was approved on 2026-07-22 from Turkish SERP evidence an
 | Free online English games for children | Crawlable game hub | Proposed `/ingilizce-oyunlari/` | Approved intent; volume unknown; R-003 |
 | Football English game | Crawlable product page | Proposed `/ingilizce-oyunlari/futbol/` | Approved supporting intent; sparse exact SERP; demand unknown |
 | Volleyball English game | Crawlable product page | Proposed `/ingilizce-oyunlari/voleybol/` | Approved supporting intent; sparse exact SERP; demand unknown |
-| Choosing/using English word games | Knowledge Center guide | Brief under MT-005 | Approved support role; must answer an informational question |
+| Choosing an English word game for a child | Knowledge Center guide | Proposed `/bilgi-merkezi/ingilizce-kelime-oyunu-nasil-secilir/` (KC-001) | Brief approved; demand unknown; distinct from game discovery |
 | Children's beginner English | Audience/evergreen guide | Unassigned | Needs query/SERP research |
 | English stories for children | Product or evergreen guide by intent | Unassigned | Needs query/SERP research and deeper inventory |
 | Parent progress reporting | Product/evergreen guide | Unassigned | Needs query/SERP research |

@@ -15,7 +15,6 @@ Create a trustworthy operating baseline before implementing new acquisition page
 
 ## Ready
 
-- **MT-005:** Turn the approved English-through-play support cluster into a non-cannibalizing Knowledge Center brief.
 - **MT-010:** Brief the crawlable game hub and truthful football/volleyball product pages.
 
 ## Completed this sprint
@@ -24,6 +23,7 @@ Create a trustworthy operating baseline before implementing new acquisition page
 - **MT-003 implementation audit:** Live tag, event allowlist, call sites, funnel gaps, and data-access boundary documented on 2026-07-22; task remains blocked for received-data verification.
 - **MT-008:** Opt-in analytics loading, equal accept/reject controls, changeable preference, safe SPA route views, landing CTAs, signup, and core learning completion events implemented and tested locally.
 - **MT-004:** Turkish SERPs and current product capability evaluated; first acquisition opportunity, canonical intent owners, exclusions, and evidence limits recorded.
+- **MT-005:** KC-001 selection-framework brief approved with SERP boundary, evidence plan, outline, exclusions, measurement, and review gate.
 
 ## Exit criteria
 

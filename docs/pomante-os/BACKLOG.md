@@ -9,7 +9,8 @@
 
 - Quantify the approved game opportunity with Search Console and/or a named keyword-volume source when access exists.
 - Validate parent, age/grade, story, and beginner-English needs without creating thin variants.
-- Complete the first Knowledge Center guide and game-page briefs using the approved intent boundary.
+- Assign a content owner and education reviewer, then draft KC-001 using the approved brief.
+- Complete the game-page briefs using the approved intent boundary.
 - Define baseline Search Console and analytics reporting after access/data are verified.
 
 ## P2 — After foundations

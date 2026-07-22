@@ -2,7 +2,7 @@
 
 > **Purpose:** Define the Knowledge Center as an acquisition and trust product.
 > **Update trigger:** Topic taxonomy, content type, governance, or quality standards change.
-> **Related files:** [Content Clusters](CONTENT_CLUSTERS.md), [Editorial Guide](EDITORIAL_GUIDE.md), [Article Template](ARTICLE_TEMPLATE.md), [FAQ Plan](FAQ_PLAN.md), [Glossary Plan](GLOSSARY_PLAN.md)
+> **Related files:** [Content Clusters](CONTENT_CLUSTERS.md), [Content Briefs](CONTENT_BRIEFS.md), [Editorial Guide](EDITORIAL_GUIDE.md), [Article Template](ARTICLE_TEMPLATE.md), [FAQ Plan](FAQ_PLAN.md), [Glossary Plan](GLOSSARY_PLAN.md)
 > **Last reviewed:** 2026-07-22
 
 ## Mission

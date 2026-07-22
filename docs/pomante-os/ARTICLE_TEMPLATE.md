@@ -2,7 +2,7 @@
 
 > **Purpose:** Reusable brief and draft structure for Knowledge Center articles.
 > **Update trigger:** Required editorial, SEO, evidence, or measurement fields change.
-> **Related files:** [Editorial Guide](EDITORIAL_GUIDE.md), [Content Clusters](CONTENT_CLUSTERS.md), [Internal Linking](INTERNAL_LINKING.md)
+> **Related files:** [Editorial Guide](EDITORIAL_GUIDE.md), [Content Clusters](CONTENT_CLUSTERS.md), [Content Briefs](CONTENT_BRIEFS.md), [Internal Linking](INTERNAL_LINKING.md)
 > **Last reviewed:** 2026-07-22
 
 ## Brief
