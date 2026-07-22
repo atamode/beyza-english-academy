@@ -28,4 +28,4 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 
 ## Immediate operating focus
 
-Deploy the analytics repair and verify GA event receipt when access is available; independently, validate the first acquisition opportunity before designing crawlable product or Knowledge Center routes.
+Deploy the analytics repair and verify GA event receipt when access is available. Independently, brief the approved English-game hub/product network and its non-cannibalizing Knowledge Center support guide before implementation.

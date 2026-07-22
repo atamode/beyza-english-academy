@@ -17,7 +17,15 @@ Audited 2026-07-22 against repository source and the live GitHub Pages response.
 
 The server returns the same `index.html` for fragment variants because URL fragments are not sent in HTTP requests. Therefore `/#/login` and `/#/signup` inherit the root title, description, canonical, robots directive, social metadata, and structured data. They are product utilities, not approved SEO landing pages.
 
-No dedicated audience, age, grade/class, campaign, or Knowledge Center landing page exists. New page proposals remain blocked on intent validation in **MT-004** and **MT-005**.
+No dedicated audience, age, grade/class, campaign, or Knowledge Center landing page exists.
+
+## Approved proposal
+
+| ID | Proposed URL | Audience and role | Intent status | Build status |
+|---|---|---|---|---|
+| LP-002 | `/ingilizce-oyunlari/` | Parents/children seeking free, immediately playable online English games; product hub | Approved by R-003; volume unknown | Brief and implementation not started |
+
+LP-002 must honestly present the current football and volleyball inventory, explain lesson-progress adaptation only as implemented, and avoid implying a large game catalogue. It owns game discovery; the home page retains broad platform evaluation.
 
 ## Root metadata baseline
 

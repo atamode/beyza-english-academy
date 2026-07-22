@@ -7,13 +7,14 @@
 
 ## P1 — Validate next
 
-- Research real search demand and user language for parent, age/grade, game, story, and beginner-English needs.
-- Select one Knowledge Center topic cluster using product fit, evidence, and achievable quality.
+- Quantify the approved game opportunity with Search Console and/or a named keyword-volume source when access exists.
+- Validate parent, age/grade, story, and beginner-English needs without creating thin variants.
+- Complete the first Knowledge Center guide and game-page briefs using the approved intent boundary.
 - Define baseline Search Console and analytics reporting after access/data are verified.
 
 ## P2 — After foundations
 
-- Produce distinct product-page briefs for verified features.
+- Evaluate standalone product pages beyond the approved football and volleyball set.
 - Evaluate audience/class pages only where intent and content can be meaningfully distinct.
 - Test AI answer-engine citation readiness on a small set of evidence-backed guides.
 

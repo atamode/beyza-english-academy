@@ -22,6 +22,15 @@ Audited 2026-07-22. “Public runtime” means usable without sign-in; it does n
 
 No standalone crawlable product page currently exists for lessons, games, stories, parent reporting, or membership. Their suitability as future pages remains a content-and-intent decision, not an automatic route conversion.
 
+## Approved crawlable proposals
+
+| ID | Proposed URL | Verified product | Intent role | Status |
+|---|---|---|---|---|
+| PP-001 | `/ingilizce-oyunlari/futbol/` | Football game | Specific playable product; supports game hub | Approved for brief; not built; demand unknown |
+| PP-002 | `/ingilizce-oyunlari/voleybol/` | Volleyball game | Specific playable product; supports game hub | Approved for brief; not built; demand unknown |
+
+These pages must expose or faithfully lead into the real games, describe only verified mechanics, and use distinct visible copy and metadata. Sparse exact-match SERPs indicate differentiation potential, not proven search volume.
+
 ## Confirmed consistency gap
 
 The story list/card source uses “Poma Kingdom”, which conflicts with [Brand Guide](BRAND_GUIDE.md). Correct it to the approved contextual name under **MT-007**; do not broaden that task into a redesign.

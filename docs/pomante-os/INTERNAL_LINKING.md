@@ -22,4 +22,12 @@ Track orphan count, click depth, broken links, pages with excessive repeated anc
 
 ## Baseline finding — 2026-07-22
 
-The current public root links by JavaScript/hash navigation to signup, login, games, stories, and sport games. These are valid product navigation actions but not crawlable internal links between distinct SEO documents. Instagram and YouTube are external actions. No crawlable content cluster or product-page network exists yet, so orphan/click-depth analysis begins only after real acquisition paths are approved.
+The current public root links by JavaScript/hash navigation to signup, login, games, stories, and sport games. These are valid product navigation actions but not crawlable internal links between distinct SEO documents. Instagram and YouTube are external actions. No crawlable content cluster or product-page network exists yet, so orphan/click-depth analysis begins only after real acquisition paths are built.
+
+## Approved first network — not yet built
+
+- Home links to the English-game hub as a core verified product path.
+- The hub links to football and volleyball with descriptive game names.
+- Each sport page links back to the hub and offers the relevant play/signup action.
+- The first English-through-play guide links to the hub only when it helps the reader act; the hub may link back as optional parent guidance.
+- No generic Knowledge Center article duplicates the hub's game-discovery intent.

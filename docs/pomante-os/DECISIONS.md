@@ -41,3 +41,10 @@ Do not edit old entries to hide history. Add a new entry that names the supersed
 - **Status:** Active
 - **Decision:** Google Analytics is opt-in. The tag must not load before an explicit “Kabul Et” action; refusal must leave the application fully usable, and the choice must remain changeable. Analytics may receive only coarse route/content, source, plan, status, period, and availability fields. Names, emails, user/child identifiers, free text, payment details, receipts, and exact learning answers are prohibited.
 - **Reason:** Poma Academy serves children and families; measurement must be subordinate to privacy, explicit choice, and data minimization.
+
+## D-006 — First acquisition opportunity and intent ownership
+
+- **Date:** 2026-07-22
+- **Status:** Active
+- **Decision:** Lead with the “free online English games for children” opportunity. The home page owns broad Poma Academy/platform evaluation; a future `/ingilizce-oyunlari/` hub owns playable-game discovery; football and volleyball receive truthful supporting product pages. Knowledge Center content may support selection and practice questions but must not compete for the hub's generic discovery intent.
+- **Reason:** Turkish SERPs confirm a real game-discovery need, the current product can satisfy it immediately, and sport-based progress-adaptive games provide credible differentiation. Live-tutor course queries mismatch the product; story inventory is not yet deep enough. Demand size is unknown and is not part of this decision.

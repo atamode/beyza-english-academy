@@ -5,12 +5,19 @@
 > **Related files:** [Knowledge Center](KNOWLEDGE_CENTER.md), [Keyword Map](KEYWORD_MAP.md), [Editorial Guide](EDITORIAL_GUIDE.md)
 > **Last reviewed:** 2026-07-22
 
-## Candidate clusters — validation required
+## First approved cluster — brief required
+
+| Cluster | User need | Hub role | Product bridge | Status |
+|---|---|---|---|---|
+| English through play | Understand how to choose and use useful English game practice for a child | A durable decision/use guide, not a game directory | Crawlable English-game hub plus football and volleyball | Approved for MT-005 brief; demand size unknown |
+
+The first guide should answer a distinct informational question such as how to choose an age/level-appropriate word game or how to turn short game sessions into practice. Final wording requires a SERP check during briefing. It must not target the game hub's “free online English games for children” discovery intent.
+
+## Later candidate clusters — validation required
 
 | Cluster | User need | Possible hub role | Product bridge |
 |---|---|---|---|
 | Starting children's English | Decide where and how to begin | Beginner path guide | Lessons / diagnostic experience |
-| English through play | Choose useful game practice | Game-based learning guide | Football / volleyball games |
 | Stories and reading | Support comprehension and routine | Story-learning guide | Pomante Krallığı stories |
 | Understanding progress | Interpret learning signals | Parent progress guide | Parent reports |
 
