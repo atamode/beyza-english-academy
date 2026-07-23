@@ -8,7 +8,7 @@ export default defineConfig({
   workers: 1,
   reporter: "line",
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL || "https://pomante.com.tr",
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || "https://academy.pomante.com.tr",
     serviceWorkers: "block",
     trace: "first-retry",
     screenshot: "only-on-failure",

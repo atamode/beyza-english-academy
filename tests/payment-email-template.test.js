@@ -15,7 +15,7 @@ test("approved payment email renders exact Turkish in text and HTML",()=>{
   const result=renderPaymentDecisionEmail({...base,decision:"approved"});
   assert.equal(result.subject,"Ödemeniz onaylandı — Poma Academy");
   assert.match(result.text,/Ödemeniz onaylandı/);assert.match(result.text,/Ödeme kodu: POMA-<b>"42"<\/b>/);assert.match(result.text,/1\.299,50/);assert.match(result.text,/Üyelik\/öğretmen erişim bitiş tarihi/);assert.match(result.text,/Poma Academy’ye Git/);assert.match(result.text,/Bu e-posta otomatik bir işlem bildirimidir\./);
-  assert.match(result.html,/<meta charset="utf-8">/);assert.match(result.html,/<meta name="viewport" content="width=device-width,initial-scale=1">/);assert.match(result.html,/<h1[^>]*>Ödemeniz onaylandı<\/h1>/);assert.match(result.html,/Aile &lt;script&gt;alert\(1\)&lt;\/script&gt;/);assert.doesNotMatch(result.html,/<script>|<b>"42"<\/b>/);assert.match(result.html,/https:\/\/pomante\.com\.tr\/#\/membership/);
+  assert.match(result.html,/<meta charset="utf-8">/);assert.match(result.html,/<meta name="viewport" content="width=device-width,initial-scale=1">/);assert.match(result.html,/<h1[^>]*>Ödemeniz onaylandı<\/h1>/);assert.match(result.html,/Aile &lt;script&gt;alert\(1\)&lt;\/script&gt;/);assert.doesNotMatch(result.html,/<script>|<b>"42"<\/b>/);assert.match(result.html,/https:\/\/academy\.pomante\.com\.tr\/#\/membership/);
   assertCleanOutput(result);
 });
 

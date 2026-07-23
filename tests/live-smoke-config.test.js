@@ -10,7 +10,7 @@ const pkg = JSON.parse(read("package.json"));
 
 test("live smoke config is Chromium-only and blocks service workers", () => {
   assert.equal(pkg.scripts["test:smoke:live"], "playwright test --config=playwright.live.config.mjs");
-  assert.match(config, /PLAYWRIGHT_BASE_URL \|\| "https:\/\/pomante\.com\.tr"/);
+  assert.match(config, /PLAYWRIGHT_BASE_URL \|\| "https:\/\/academy\.pomante\.com\.tr"/);
   assert.match(config, /projects:[\s\S]*name: "chromium"[\s\S]*browserName: "chromium"/);
   assert.doesNotMatch(config, /firefox|webkit/i);
   assert.match(config, /serviceWorkers: "block"/);

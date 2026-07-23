@@ -7,6 +7,7 @@
 
 ## 2026-07-23
 
+- Prepared the non-live MT-013 Academy hostname patch on an isolated branch: updated public discovery URLs, live-check defaults, analytics fallback, email links, and transitional CORS; added guards that keep `CNAME` unchanged until coordinated cutover.
 - Completed MT-012: verified the deployed acquisition pages, sitemap/canonicals, Search Console submissions, and GA4 real-time page receipt.
 - Recorded the sport/story media performance repair and restored football win-only victory-video flow, verified on production at commit `c442525` with 475/475 tests.
 - Opened MT-013/MT-014 for the settled brand-domain split: Academy on `academy.pomante.com.tr`, then a separate Pomante commercial root site.

@@ -1,7 +1,7 @@
 const escapeHtml=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 const amount=value=>new Intl.NumberFormat("tr-TR",{style:"currency",currency:"TRY"}).format(Number(value||0));
 const date=value=>value?new Intl.DateTimeFormat("tr-TR",{dateStyle:"long",timeStyle:"short",timeZone:"Europe/Istanbul"}).format(new Date(value)):"\u2014";
-const LINK="https://pomante.com.tr/#/membership";
+const LINK="https://academy.pomante.com.tr/#/membership";
 
 export function renderPaymentDecisionEmail(delivery){
   const approved=delivery.decision==="approved",subject=approved?"\u00d6demeniz onayland\u0131 \u2014 Poma Academy":"\u00d6deme talebiniz hakk\u0131nda \u2014 Poma Academy";

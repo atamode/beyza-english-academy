@@ -12,7 +12,7 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 ## Current verified baseline
 
 - Branch: `main`
-- Baseline reviewed: `3d80f64` (`docs: define Academy domain migration contract`).
+- Baseline reviewed: `c95f36b` (`docs: close commercial site phase one`).
 - Curriculum data: lesson `000` plus lessons `001`–`065`, ten module reviews, vocabulary, diagnostic test, and Story 001.
 - Sport questions adapt to student progress through the shared sport-question engine.
 - Parent dashboard, weekly/monthly reports, payment review, refunds, membership expiry reminders, audit logging, CI, and live smoke coverage exist in repository history.
@@ -22,6 +22,7 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 - Football, volleyball, and Story 001 runtime media are optimized. The football win video is restored and runs only for a won match before its summary; the verified repository/live line is commit `c442525`.
 - Privacy-safe analytics repair is live: GA is opt-in, refusal preserves full use, the preference is changeable, and safe route/landing/signup/core-learning events are connected. GA4 real-time page receipt for the root, game hub, and football page was observed; broader event/configuration and numeric-baseline validation remain open under MT-009.
 - A separate Pomante commercial site now has a privately deployed Phase 1 build. It includes the approved product/B2B scope, “Poma ile Eğitim” bridge, and source-level 301 handlers for the three Academy acquisition paths. Real `pomante.com.tr` activation has not occurred; advanced site architecture and motion refinement are deferred.
+- The Academy hostname source patch is prepared on the isolated `mt-013-academy-hostname` branch. Source metadata, sitemap/robots, live checks, analytics fallback, email links, and transitional CORS target Academy; the tracked `CNAME` deliberately remains on the current root until coordinated cutover.
 
 ## Fixed boundaries
 
@@ -31,4 +32,4 @@ Poma Academy is Pomante's English-learning product for children. The repository 
 
 ## Immediate operating focus
 
-Prepare the non-live Academy hostname patch under MT-013 from the approved [domain migration contract](DOMAIN_MIGRATION.md). The commercial site now contains the required redirect handlers, but cutover remains blocked until they are verified on the final custom domain and DNS/Pages/Supabase/GA/Search Console/rollback access is confirmed. Mediablu remains outside Pomante. MT-009 and KC-001 retain their existing blockers.
+Validate and hold the prepared non-live Academy hostname patch under MT-013 until a coordinated cutover window. The commercial site contains the required redirect handlers, but activation remains blocked until they are verified on the final custom domain and DNS/Pages/Supabase/GA/Search Console/rollback access is confirmed. Mediablu remains outside Pomante. MT-009 and KC-001 retain their existing blockers.

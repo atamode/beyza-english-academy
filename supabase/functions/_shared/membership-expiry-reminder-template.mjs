@@ -1,4 +1,4 @@
-const LINK="https://pomante.com.tr/#/membership";
+const LINK="https://academy.pomante.com.tr/#/membership";
 const escapeHtml=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[char]);
 const formatDate=value=>new Intl.DateTimeFormat("tr-TR",{timeZone:"Europe/Istanbul",dateStyle:"long",timeStyle:"short"}).format(new Date(value));
 

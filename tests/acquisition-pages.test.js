@@ -7,9 +7,9 @@ import { ANALYTICS_EVENTS } from "../js/analytics.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pages = [
-  { file:"ingilizce-oyunlari/index.html", canonical:"https://pomante.com.tr/ingilizce-oyunlari/", h1:"Çocuklar için ücretsiz online İngilizce oyunları" },
-  { file:"ingilizce-oyunlari/futbol/index.html", canonical:"https://pomante.com.tr/ingilizce-oyunlari/futbol/", h1:"İngilizce futbol kelime oyunu" },
-  { file:"ingilizce-oyunlari/voleybol/index.html", canonical:"https://pomante.com.tr/ingilizce-oyunlari/voleybol/", h1:"İngilizce voleybol kelime oyunu" }
+  { file:"ingilizce-oyunlari/index.html", canonical:"https://academy.pomante.com.tr/ingilizce-oyunlari/", h1:"Çocuklar için ücretsiz online İngilizce oyunları" },
+  { file:"ingilizce-oyunlari/futbol/index.html", canonical:"https://academy.pomante.com.tr/ingilizce-oyunlari/futbol/", h1:"İngilizce futbol kelime oyunu" },
+  { file:"ingilizce-oyunlari/voleybol/index.html", canonical:"https://academy.pomante.com.tr/ingilizce-oyunlari/voleybol/", h1:"İngilizce voleybol kelime oyunu" }
 ];
 
 const read = file => fs.readFileSync(path.join(root, file), "utf8");

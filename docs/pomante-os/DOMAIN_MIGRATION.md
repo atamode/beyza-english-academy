@@ -13,6 +13,13 @@
 - Every former indexable Academy URL must receive a path-preserving permanent redirect to its Academy equivalent. Hash fragments are client-side and cannot be redirected by the server; visible commercial navigation must provide a direct Academy entry.
 - Do not cut over until rollback ownership, redirect capability, DNS access, GitHub Pages access, Supabase Auth configuration access, Search Console access, and GA4 access are confirmed.
 
+## Preparation status
+
+- Prepared on isolated branch: `mt-013-academy-hostname`.
+- Updated in source: canonicals, Open Graph/structured-data URLs, sitemap, robots, live-check defaults, analytics fallback, report/payment/reminder email links, and the payment Edge Function's transitional CORS allowlist.
+- Intentionally unchanged before cutover: tracked `CNAME`, GitHub Pages custom domain, DNS, Supabase Auth dashboard settings, deployed Edge Functions, GA4, and Search Console.
+- Automated migration guards require Academy discovery/email URLs, both old and new transition origins in CORS, portable PWA scope, and the current root `CNAME`.
+
 ## Verified repository dependency inventory
 
 | Surface | Current dependency | Required migration change |

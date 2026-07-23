@@ -20,7 +20,7 @@ test("root structured data keeps only verified page-parity entities", () => {
   const graph = JSON.parse(raw);
   assert.deepEqual(graph.map(item => item["@type"]), ["Organization", "WebSite", "VideoObject"]);
   const video = graph.find(item => item["@type"] === "VideoObject");
-  assert.equal(video.contentUrl, "https://pomante.com.tr/assets/video/poma-academy/poma-world-intro.web.mp4");
+  assert.equal(video.contentUrl, "https://academy.pomante.com.tr/assets/video/poma-academy/poma-world-intro.web.mp4");
   assert.equal(video.duration, "PT49.536S");
   assert.equal("embedUrl" in video, false);
   assert.doesNotMatch(raw, /FAQPage|SoftwareApplication|AggregateRating|Review/);

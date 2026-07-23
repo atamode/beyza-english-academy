@@ -32,7 +32,7 @@ export function trackRouteView(route, target = globalThis) {
   if (target === globalThis && globalThis.__pomaAnalyticsAllowed !== true) return false;
   if (typeof target?.gtag !== "function") return false;
   const context = routeAnalyticsContext(route);
-  const origin = target.location?.origin || "https://pomante.com.tr";
+  const origin = target.location?.origin || "https://academy.pomante.com.tr";
   const pathname = target.location?.pathname || "/";
   if (pathname !== "/" && !target.location?.hash) {
     target.gtag("event", "page_view", { page_location: `${origin}${pathname}`, page_title: target.document?.title || "Poma Academy" });

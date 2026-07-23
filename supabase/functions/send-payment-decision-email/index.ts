@@ -1,7 +1,7 @@
 import {createClient} from "@supabase/supabase-js";
 import {renderPaymentDecisionEmail} from "../_shared/payment-email-template.mjs";
 
-const allowedOrigins=new Set(["https://pomante.com.tr","https://www.pomante.com.tr"]);
+const allowedOrigins=new Set(["https://academy.pomante.com.tr","https://pomante.com.tr","https://www.pomante.com.tr"]);
 const localOrigin=/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 const json=(body:unknown,status=200,origin?:string)=>new Response(JSON.stringify(body),{status,headers:{"Content-Type":"application/json; charset=utf-8",...(origin?{"Access-Control-Allow-Origin":origin,"Vary":"Origin"}:{})}});
 const safeError=(value:unknown)=>String(value instanceof Error?value.message:value||"E-posta sa\u011flay\u0131c\u0131s\u0131 iste\u011fi ba\u015far\u0131s\u0131z oldu.").replace(/[\r\n]+/g," ").slice(0,500);
