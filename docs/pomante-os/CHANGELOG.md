@@ -11,6 +11,7 @@
 - Recorded the sport/story media performance repair and restored football win-only victory-video flow, verified on production at commit `c442525` with 475/475 tests.
 - Opened MT-013/MT-014 for the settled brand-domain split: Academy on `academy.pomante.com.tr`, then a separate Pomante commercial root site.
 - Added the MT-013 domain migration contract with verified repository dependencies, a canonical/redirect map, ordered cutover, acceptance checks, and rollback. Recorded real HTTP 301 capability for the commercial root as a cutover blocker.
+- Recorded MT-014 Phase 1 completion: separate privately deployed Pomante commercial site with the approved product/B2B scope, Academy bridge, and prepared acquisition-path 301 handlers. Deferred advanced site architecture/motion and real custom-domain activation.
 
 ## 2026-07-22
 

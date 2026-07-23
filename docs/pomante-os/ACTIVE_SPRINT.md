@@ -12,7 +12,8 @@ Preserve the verified Academy launch while preparing the Pomante root/Academy su
 ## In progress
 
 - **MT-003 / MT-009:** Numeric funnel baseline blocked pending push/deploy and authenticated GA4 property/report access.
-- **MT-013:** Migration contract and repository dependency audit completed. Prepare the Academy hostname patch and commercial-root redirect proof; do not cut over until DNS/Pages/Supabase/GA/Search Console access and rollback ownership are confirmed.
+- **MT-013:** Migration contract and repository dependency audit completed. Prepare the Academy hostname source patch without cutting over; DNS/Pages/Supabase/GA/Search Console access and rollback ownership remain required for activation.
+- **MT-014:** Phase 1 commercial site is complete for now. Custom-domain activation remains coordinated with MT-013; deeper information architecture and Dora/Framer-style motion are explicitly deferred to a later refinement pass.
 
 ## Completed this sprint
 
@@ -27,6 +28,7 @@ Preserve the verified Academy launch while preparing the Pomante root/Academy su
 - **MT-012:** Acquisition hub and sport pages deployed; clean URLs, assets, canonicals, sitemap, Search Console submission, and GA4 real-time page receipt verified on production.
 - **Performance repair:** Football, volleyball, and Story 001 media optimized; football victory video restored for wins only; production assets return 200 and the full suite passes at 475/475.
 - **MT-013 contract:** Exact hostname dependencies, URL/redirect map, ordered GitHub Pages/DNS/Supabase/analytics/Search Console cutover, acceptance checks, and rollback triggers recorded in [Domain Migration](DOMAIN_MIGRATION.md).
+- **MT-014 Phase 1:** Separate Pomante commercial site created and privately deployed with the selected warm retail palette, fast-sale hero/category flow, Kayseri/Duble Katla product focus, Renkli Mola, corporate ordering, “Poma ile Eğitim” bridge, and three Academy 301 route handlers.
 
 ## Exit criteria
 

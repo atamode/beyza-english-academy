@@ -7,6 +7,7 @@
 
 ## 2026-07
 
+- **MT-014 Phase 1 — Pomante commercial site:** Separate commercial site built and privately deployed with the selected warm retail direction, fast-sale navigation, Kayseri/Duble Katla-led menu structure, Renkli Mola, B2B ordering, Academy bridge, and prepared 301 handlers. Custom-domain launch and advanced site/motion refinement remain later work.
 - **MT-012 — First acquisition network deployed and validated:** Hub and two sport pages return production 200 responses with correct canonicals and sitemap coverage; all three were submitted through Search Console and GA4 received the live page paths.
 - **Sport/story media performance repair:** Heavy football PNGs moved to runtime WebP, sport/story videos were recompressed, Story 001 runtime assets were moved to WebP, and the missing football win video now plays only before the summary of a won match.
 - **MT-006 — First acquisition surfaces implemented:** LP-002, PP-001, and PP-002 now exist as direct-load crawlable documents with honest product copy, unique metadata, internal links, sitemap coverage, breadcrumbs, and consent-safe CTA measurement; production validation remains MT-012.

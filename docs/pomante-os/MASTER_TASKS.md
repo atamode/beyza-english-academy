@@ -20,6 +20,6 @@
 | MT-011 | Draft, review, and publish KC-001 | Blocked | P1 | Content owner and qualified education reviewer required; route implementation under MT-006 |
 | MT-012 | Deploy and validate acquisition network | Done | P1 | Production 200/canonical/sitemap checks, Search Console submissions, and GA4 page receipt verified |
 | MT-013 | Move Poma Academy to `academy.pomante.com.tr` without breaking live access or search equity | In progress | P0 | [Migration contract](DOMAIN_MIGRATION.md) complete; cutover blocked on proven root-host 301 capability and operational access |
-| MT-014 | Launch Pomante commercial root site in a separate repository | Blocked | P0 | MT-013 migration contract and dedicated `pomante-restaurant` repository required |
+| MT-014 | Launch Pomante commercial root site in a separate repository | In progress | P0 | Phase 1 commercial site built and deployed to a private review URL with Academy bridge and 301 route handlers; custom-domain cutover and later site-architecture/motion refinement remain |
 
 Task IDs remain stable. Detailed ideas that are not accepted work belong in [Backlog](BACKLOG.md) or [Idea Bank](IDEA_BANK.md).
