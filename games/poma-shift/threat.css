@@ -40,6 +40,17 @@
   color: #ffe3e7;
 }
 
+/* RUSH timer heartbeat: only while the series timer is in its red/hot phase. */
+.game-card.timer-heartbeat:not([data-shift-threat="2"]) .shift-threat-vignette {
+  opacity: .82;
+  animation: timerHeartbeatVignette 1.02s cubic-bezier(.2,.72,.2,1) infinite;
+}
+
+.game-card.timer-heartbeat:not([data-shift-threat="2"]) #game {
+  transform-origin: 50% 48%;
+  animation: timerHeartbeatCanvas 1.02s cubic-bezier(.2,.72,.2,1) infinite;
+}
+
 @keyframes shiftThreatPulse {
   0%, 100% {
     box-shadow: inset 0 0 0 2px rgba(255, 76, 98, .18), inset 0 0 42px rgba(255, 44, 68, .08);
@@ -56,9 +67,43 @@
   50% { transform: scale(1.035); box-shadow: 0 0 20px rgba(255, 80, 102, .32); }
 }
 
+/* Double-beat rhythm: bump, second smaller bump, settle. */
+@keyframes timerHeartbeatVignette {
+  0%, 100% {
+    box-shadow: inset 0 0 0 1px rgba(255, 68, 91, .14), inset 0 0 44px rgba(255, 35, 60, .06);
+    background: rgba(115, 8, 25, .01);
+  }
+  12% {
+    box-shadow: inset 0 0 0 2px rgba(255, 78, 98, .38), inset 0 0 82px rgba(255, 35, 60, .16);
+    background: rgba(115, 8, 25, .045);
+  }
+  22% {
+    box-shadow: inset 0 0 0 1px rgba(255, 68, 91, .18), inset 0 0 50px rgba(255, 35, 60, .08);
+    background: rgba(115, 8, 25, .018);
+  }
+  34% {
+    box-shadow: inset 0 0 0 2px rgba(255, 78, 98, .28), inset 0 0 70px rgba(255, 35, 60, .12);
+    background: rgba(115, 8, 25, .032);
+  }
+  48% {
+    box-shadow: inset 0 0 0 1px rgba(255, 68, 91, .15), inset 0 0 46px rgba(255, 35, 60, .065);
+    background: rgba(115, 8, 25, .012);
+  }
+}
+
+@keyframes timerHeartbeatCanvas {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  12% { transform: scale(1.004); filter: brightness(1.045); }
+  22% { transform: scale(1.001); filter: brightness(1.015); }
+  34% { transform: scale(1.003); filter: brightness(1.035); }
+  48% { transform: scale(1); filter: brightness(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .game-card[data-shift-threat="2"] .shift-threat-vignette,
-  .topbar > div[data-shift-threat="2"] {
+  .topbar > div[data-shift-threat="2"],
+  .game-card.timer-heartbeat .shift-threat-vignette,
+  .game-card.timer-heartbeat #game {
     animation-duration: .01ms !important;
   }
 }
