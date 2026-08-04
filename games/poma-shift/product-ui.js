@@ -67,9 +67,15 @@
     return 18 + Math.max(0, config.targetShifts - 1) * 14 + config.startStage * 2;
   }
 
+  function isRushLevel(level) {
+    if (level < 11) return false;
+    return level === 11 || level % 5 === 0;
+  }
+
   function trayWindowForLevel(level) {
-    if (level <= 1) return 0;
-    if (level === 2) return 7000;
+    if (!isRushLevel(level)) return 0;
+    if (level < 25) return 7000;
+    if (level < 50) return 6000;
     return 5000;
   }
 
@@ -205,7 +211,8 @@
   function renderTimerWaiting(ready = true) {
     const windowMs = trayWindowForLevel(state.level);
     seriesTimer.hidden = false;
-    seriesTime.textContent = windowMs === 0 ? 'SERBEST' : ready ? 'HAZIR' : '—';
+    seriesTimer.classList.toggle('is-rush', windowMs > 0);
+    seriesTime.textContent = windowMs === 0 ? 'SERBEST' : ready ? `RUSH ${(windowMs / 1000).toFixed(0)}s` : '—';
     seriesBar.style.transform = 'scaleX(1)';
     seriesTimer.classList.remove('is-hot', 'is-expired', 'is-paused');
   }
@@ -375,10 +382,11 @@
       const locked = level > highest;
       const complete = level < highest;
       const active = level === current;
+      const rush = isRushLevel(level);
       nodes.push(`
-        <button class="level-node ${locked ? 'locked' : ''} ${complete ? 'complete' : ''} ${active ? 'active' : ''}"
-          type="button" data-level="${level}" ${locked ? 'disabled' : ''} aria-label="Level ${level}${locked ? ' kilitli' : ''}">
-          <span>${complete ? '✓' : level}</span>
+        <button class="level-node ${locked ? 'locked' : ''} ${complete ? 'complete' : ''} ${active ? 'active' : ''} ${rush ? 'rush' : ''}"
+          type="button" data-level="${level}" ${locked ? 'disabled' : ''} aria-label="Level ${level}${rush ? ' RUSH' : ''}${locked ? ' kilitli' : ''}">
+          <span>${complete ? '✓' : level}</span>${rush ? '<small>⚡</small>' : ''}
         </button>
       `);
     }
@@ -386,7 +394,7 @@
       <div class="map-head">
         <span class="eyebrow">POMA SHIFT</span>
         <h2>Level Yolu</h2>
-        <p>Aşağıdan başla, her bölümde yukarı çık.</p>
+        <p>Aşağıdan başla, her bölümde yukarı çık. ⚡ düğümler RUSH bölümleridir.</p>
       </div>
       <div class="level-path">${nodes.join('')}</div>
     `;
