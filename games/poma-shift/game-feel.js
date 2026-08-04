@@ -41,7 +41,6 @@
     inputUnlockTimer = window.setTimeout(releaseInputWhenReady, Math.max(0, inputUnlockAt - performance.now()));
   }
 
-  // Phone UX: keep the dragged piece above the finger so the target cells remain visible.
   const baseBoardCellFromPoint = boardCellFromPoint;
   boardCellFromPoint = function liftedBoardCellFromPoint(x, y, piece) {
     return baseBoardCellFromPoint(x, y - DRAG_LIFT, piece);
@@ -56,7 +55,6 @@
     state.drag.y = originalY;
   };
 
-  // Early levels intentionally teach the vocabulary before longer/harder shapes arrive.
   const baseRandomPiece = randomPiece;
   randomPiece = function tunedRandomPiece() {
     const easyLimit = state.level <= 1 ? 6 : state.level === 2 ? 8 : 11;
@@ -84,8 +82,6 @@
     };
   };
 
-  // Minimum fairness: if at least one generated shape can legally fit, never deal a completely dead tray.
-  // This does not rescue bad board management; it only prevents a clearly unfair generator loss.
   const baseRefillTray = refillTray;
   refillTray = function fairRefillTray() {
     baseRefillTray();
@@ -105,7 +101,7 @@
     fxLayer.dataset.lines = String(cleared);
     replayClass(card, 'line-clear-fx', 300);
     replayClass(fxLayer, 'line-clear-active', 300);
-    haptic(cleared > 1 ? [12, 25, 12] : 12);
+    haptic(cleared > 1 ? [18, 18, 22, 16, 18] : [16, 16, 20]);
     briefInputLock(120);
   }
 
@@ -113,13 +109,13 @@
     shiftBoard.textContent = `${from.cols}×${from.rows} → ${to.cols}×${to.rows}`;
     replayClass(card, 'shift-fx', 480);
     replayClass(fxLayer, 'shift-active', 480);
-    haptic([20, 35, 28]);
+    haptic([30, 18, 45, 16, 28]);
     briefInputLock(340);
   }
 
   function playInvalid() {
     replayClass(card, 'invalid-fx', 190);
-    haptic(8);
+    haptic([9, 8, 9]);
   }
 
   const basePerformShift = performShift;
@@ -150,12 +146,10 @@
     }, 0);
   });
 
-  // Keep first ten levels intentionally progressive, not randomly spiky.
   const tunedHardChance = [0, 0, 0, 0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.18];
   for (let level = 1; level <= 10; level += 1) {
     if (LEVEL_PRESETS[level]) LEVEL_PRESETS[level].hardChance = tunedHardChance[level - 1];
   }
 
-  // Re-deal the current level so the tuning applies from the first visible tray.
   setupLevel(state.level);
 })();
