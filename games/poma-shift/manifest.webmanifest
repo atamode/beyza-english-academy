@@ -1,0 +1,19 @@
+{
+  "name": "Poma Shift",
+  "short_name": "Poma Shift",
+  "description": "Tahta genişledikçe yüksekliğin azaldığı web-first casual puzzle prototipi.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#071022",
+  "theme_color": "#0b1530",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
