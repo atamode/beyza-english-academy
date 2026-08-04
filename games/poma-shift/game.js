@@ -1,5 +1,6 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
+
 const ui = {
   level: document.getElementById('levelValue'),
   score: document.getElementById('scoreValue'),
@@ -11,6 +12,7 @@ const ui = {
 };
 
 const COLORS = ['#ffb703', '#8ecae6', '#90be6d', '#f28482', '#c77dff', '#ff7b54'];
+
 const BOARD_STAGES = [
   { cols: 6, rows: 12 },
   { cols: 7, rows: 11 },
@@ -20,25 +22,47 @@ const BOARD_STAGES = [
   { cols: 11, rows: 7 },
   { cols: 12, rows: 6 },
 ];
+
 const SHAPES = [
-  [[0,0]],
-  [[0,0],[1,0]],
-  [[0,0],[0,1]],
-  [[0,0],[1,0],[2,0]],
-  [[0,0],[0,1],[0,2]],
-  [[0,0],[1,0],[0,1],[1,1]],
-  [[0,0],[1,0],[2,0],[1,1]],
-  [[0,0],[0,1],[1,1]],
-  [[1,0],[0,1],[1,1]],
-  [[0,0],[1,0],[1,1]],
-  [[0,0],[0,1],[1,0]],
-  [[0,0],[1,0],[2,0],[3,0]],
-  [[0,0],[0,1],[0,2],[0,3]],
-  [[0,0],[1,0],[1,1],[2,1]],
-  [[1,0],[2,0],[0,1],[1,1]],
-  [[0,0],[0,1],[0,2],[1,2]],
-  [[1,0],[1,1],[1,2],[0,2]],
+  [[0, 0]],
+  [[0, 0], [1, 0]],
+  [[0, 0], [0, 1]],
+  [[0, 0], [1, 0], [2, 0]],
+  [[0, 0], [0, 1], [0, 2]],
+  [[0, 0], [1, 0], [0, 1], [1, 1]],
+  [[0, 0], [1, 0], [2, 0], [1, 1]],
+  [[0, 0], [0, 1], [1, 1]],
+  [[1, 0], [0, 1], [1, 1]],
+  [[0, 0], [1, 0], [1, 1]],
+  [[0, 0], [0, 1], [1, 0]],
+  [[0, 0], [1, 0], [2, 0], [3, 0]],
+  [[0, 0], [0, 1], [0, 2], [0, 3]],
+  [[0, 0], [1, 0], [1, 1], [2, 1]],
+  [[1, 0], [2, 0], [0, 1], [1, 1]],
+  [[0, 0], [0, 1], [0, 2], [1, 2]],
+  [[1, 0], [1, 1], [1, 2], [0, 2]],
 ];
+
+const LEVEL_PRESETS = [
+  null,
+  { startStage: 0, targetShifts: 1, shiftEvery: 3, hardChance: 0.00 },
+  { startStage: 0, targetShifts: 2, shiftEvery: 3, hardChance: 0.00 },
+  { startStage: 0, targetShifts: 3, shiftEvery: 3, hardChance: 0.02 },
+  { startStage: 1, targetShifts: 3, shiftEvery: 3, hardChance: 0.04 },
+  { startStage: 0, targetShifts: 4, shiftEvery: 3, hardChance: 0.06 },
+  { startStage: 2, targetShifts: 3, shiftEvery: 3, hardChance: 0.08 },
+  { startStage: 0, targetShifts: 5, shiftEvery: 3, hardChance: 0.10 },
+  { startStage: 1, targetShifts: 5, shiftEvery: 3, hardChance: 0.12 },
+  { startStage: 0, targetShifts: 6, shiftEvery: 3, hardChance: 0.15 },
+  { startStage: 0, targetShifts: 6, shiftEvery: 3, hardChance: 0.22 },
+];
+
+const STORAGE_KEYS = {
+  progress: 'pomaShift.progress.v1',
+  metrics: 'pomaShift.metrics.v1',
+};
+
+const sessionId = crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`;
 
 const state = {
   level: 1,
@@ -46,7 +70,7 @@ const state = {
   stageIndex: 0,
   linesTowardShift: 0,
   shiftEvery: 3,
-  targetShifts: 3,
+  targetShifts: 1,
   shiftsDone: 0,
   grid: [],
   tray: [],
@@ -55,7 +79,82 @@ const state = {
   status: 'playing',
   boardRect: null,
   trayRects: [],
+  levelStartedAt: 0,
+  moves: 0,
+  invalidDrops: 0,
+  linesCleared: 0,
+  hardChance: 0,
+  lastShapeIndex: -1,
 };
+
+function safeRead(key, fallback) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function safeWrite(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // Prototype remains playable even when storage is unavailable.
+  }
+}
+
+function getProgress() {
+  return safeRead(STORAGE_KEYS.progress, { highestUnlocked: 1, lastLevel: 1 });
+}
+
+function saveProgress(levelCompleted) {
+  const current = getProgress();
+  safeWrite(STORAGE_KEYS.progress, {
+    highestUnlocked: Math.max(current.highestUnlocked || 1, levelCompleted + 1),
+    lastLevel: levelCompleted + 1,
+  });
+}
+
+function metric(name, payload = {}) {
+  const events = safeRead(STORAGE_KEYS.metrics, []);
+  events.push({
+    name,
+    at: Date.now(),
+    sessionId,
+    level: state.level,
+    ...payload,
+  });
+  if (events.length > 1000) events.splice(0, events.length - 1000);
+  safeWrite(STORAGE_KEYS.metrics, events);
+}
+
+window.PomaShiftMetrics = {
+  export() {
+    return safeRead(STORAGE_KEYS.metrics, []);
+  },
+  clear() {
+    safeWrite(STORAGE_KEYS.metrics, []);
+  },
+  progress() {
+    return getProgress();
+  },
+};
+
+function levelConfig(level) {
+  if (LEVEL_PRESETS[level]) return LEVEL_PRESETS[level];
+
+  const n = level - 11;
+  const startStage = n % 4 === 3 ? 1 : 0;
+  const maxMorphs = BOARD_STAGES.length - 1 - startStage;
+
+  return {
+    startStage,
+    targetShifts: Math.min(maxMorphs, 4 + Math.floor(n / 8)),
+    shiftEvery: 3,
+    hardChance: Math.min(0.38, 0.20 + n * 0.008),
+  };
+}
 
 function makeGrid(cols, rows) {
   return Array.from({ length: rows }, () => Array(cols).fill(null));
@@ -63,16 +162,29 @@ function makeGrid(cols, rows) {
 
 function pieceBounds(cells) {
   const maxX = Math.max(...cells.map(([x]) => x));
-  const maxY = Math.max(...cells.map(([,y]) => y));
+  const maxY = Math.max(...cells.map(([, y]) => y));
   return { w: maxX + 1, h: maxY + 1 };
 }
 
 function randomPiece() {
-  const maxShapeIndex = Math.min(SHAPES.length, 7 + Math.floor(state.level / 4));
-  const cells = SHAPES[Math.floor(Math.random() * maxShapeIndex)].map(([x,y]) => [x,y]);
+  const hardStart = 11;
+  const useHard = Math.random() < state.hardChance;
+  const pool = useHard
+    ? Array.from({ length: SHAPES.length - hardStart }, (_, i) => i + hardStart)
+    : Array.from({ length: Math.min(hardStart, SHAPES.length) }, (_, i) => i);
+
+  let shapeIndex = pool[Math.floor(Math.random() * pool.length)];
+  if (pool.length > 1 && shapeIndex === state.lastShapeIndex) {
+    const currentIndex = pool.indexOf(shapeIndex);
+    const offset = 1 + Math.floor(Math.random() * (pool.length - 1));
+    shapeIndex = pool[(currentIndex + offset) % pool.length];
+  }
+  state.lastShapeIndex = shapeIndex;
+
   return {
     id: crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`,
-    cells,
+    shapeIndex,
+    cells: SHAPES[shapeIndex].map(([x, y]) => [x, y]),
     color: COLORS[Math.floor(Math.random() * COLORS.length)],
     used: false,
   };
@@ -80,6 +192,7 @@ function randomPiece() {
 
 function refillTray() {
   state.tray = [randomPiece(), randomPiece(), randomPiece()];
+  metric('tray_dealt', { shapes: state.tray.map((piece) => piece.shapeIndex) });
 }
 
 function currentStage() {
@@ -87,22 +200,36 @@ function currentStage() {
 }
 
 function setupLevel(level = state.level) {
+  const config = levelConfig(level);
   state.level = level;
   state.score = 0;
-  state.stageIndex = Math.min(Math.floor((level - 1) / 8), 2);
+  state.stageIndex = config.startStage;
   state.linesTowardShift = 0;
-  state.shiftEvery = Math.max(2, 3 - Math.floor(level / 25));
-  state.targetShifts = Math.min(6, 2 + Math.floor(level / 3));
+  state.shiftEvery = config.shiftEvery;
+  state.targetShifts = config.targetShifts;
   state.shiftsDone = 0;
+  state.hardChance = config.hardChance;
+  state.lastShapeIndex = -1;
+  state.moves = 0;
+  state.invalidDrops = 0;
+  state.linesCleared = 0;
+  state.levelStartedAt = performance.now();
+
   const { cols, rows } = currentStage();
   state.grid = makeGrid(cols, rows);
   state.status = 'playing';
   state.drag = null;
   state.hover = null;
   refillTray();
+
   ui.next.hidden = true;
   ui.restart.hidden = true;
-  setMessage('3 parçadan birini sürükle ve tahtaya bırak.');
+  setMessage(`Hedef: ${state.targetShifts} SHIFT. 3 parçadan birini sürükle.`);
+  metric('level_start', {
+    startBoard: `${cols}x${rows}`,
+    targetShifts: state.targetShifts,
+    hardChance: state.hardChance,
+  });
   syncUi();
   render();
 }
@@ -139,6 +266,7 @@ function layout() {
   const boardH = cell * stage.rows;
   const x = Math.floor((w - boardW) / 2);
   const y = 72 + Math.max(0, Math.floor((maxBoardH - boardH) / 2));
+
   state.boardRect = { x, y, w: boardW, h: boardH, cell };
 
   const trayY = Math.min(h - 122, y + maxBoardH + 20);
@@ -146,7 +274,13 @@ function layout() {
   const gap = 8;
   const total = slotW * 3 + gap * 2;
   const startX = (w - total) / 2;
-  state.trayRects = state.tray.map((_, i) => ({ x: startX + i * (slotW + gap), y: trayY, w: slotW, h: 100 }));
+
+  state.trayRects = state.tray.map((_, index) => ({
+    x: startX + index * (slotW + gap),
+    y: trayY,
+    w: slotW,
+    h: 100,
+  }));
 }
 
 function roundedRect(x, y, w, h, r) {
@@ -176,6 +310,7 @@ function drawBlock(x, y, size, color, alpha = 1) {
 function render() {
   if (!ctx || !canvas.clientWidth) return;
   layout();
+
   const w = canvas.clientWidth;
   const h = canvas.clientHeight;
   ctx.clearRect(0, 0, w, h);
@@ -198,19 +333,26 @@ function drawShiftMeter() {
   const y = 22;
   const meterW = w - 56;
   const meterH = 12;
+
   roundedRect(x, y, meterW, meterH, 10);
   ctx.fillStyle = '#263557';
   ctx.fill();
+
   const ratio = state.linesTowardShift / state.shiftEvery;
   if (ratio > 0) {
     roundedRect(x, y, meterW * ratio, meterH, 10);
     ctx.fillStyle = ratio >= 0.66 ? '#ff9f1c' : '#49dcb1';
     ctx.fill();
   }
+
   ctx.fillStyle = '#d9e5ff';
   ctx.font = '700 12px system-ui, sans-serif';
   ctx.textAlign = 'center';
-  ctx.fillText(`SHIFT ${state.linesTowardShift}/${state.shiftEvery}`, w / 2, 52);
+  ctx.fillText(
+    `SHIFT ${state.linesTowardShift}/${state.shiftEvery}  •  ${state.shiftsDone}/${state.targetShifts}`,
+    w / 2,
+    52,
+  );
 }
 
 function drawBoard() {
@@ -221,18 +363,20 @@ function drawBoard() {
   ctx.fillStyle = '#182646';
   ctx.fill();
 
-  const warning = state.linesTowardShift === state.shiftEvery - 1 && state.stageIndex < BOARD_STAGES.length - 1;
+  const warning =
+    state.linesTowardShift === state.shiftEvery - 1 &&
+    state.stageIndex < BOARD_STAGES.length - 1;
 
-  for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {
-      const px = x + c * cell;
-      const py = y + r * cell;
-      ctx.fillStyle = warning && r === 0 ? '#4a2633' : '#101a32';
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      const px = x + col * cell;
+      const py = y + row * cell;
+      ctx.fillStyle = warning && row === 0 ? '#4a2633' : '#101a32';
       ctx.fillRect(px + 1, py + 1, cell - 2, cell - 2);
       ctx.strokeStyle = '#26385e';
       ctx.lineWidth = 1;
       ctx.strokeRect(px + 1.5, py + 1.5, cell - 3, cell - 3);
-      if (state.grid[r][c]) drawBlock(px, py, cell, state.grid[r][c]);
+      if (state.grid[row][col]) drawBlock(px, py, cell, state.grid[row][col]);
     }
   }
 
@@ -246,31 +390,41 @@ function drawBoard() {
   if (state.drag && state.hover) {
     const valid = canPlace(state.drag.piece, state.hover.col, state.hover.row);
     for (const [dx, dy] of state.drag.piece.cells) {
-      const c = state.hover.col + dx;
-      const r = state.hover.row + dy;
-      if (c < 0 || c >= cols || r < 0 || r >= rows) continue;
-      drawBlock(x + c * cell, y + r * cell, cell, valid ? state.drag.piece.color : '#ff5d73', 0.48);
+      const col = state.hover.col + dx;
+      const row = state.hover.row + dy;
+      if (col < 0 || col >= cols || row < 0 || row >= rows) continue;
+      drawBlock(
+        x + col * cell,
+        y + row * cell,
+        cell,
+        valid ? state.drag.piece.color : '#ff5d73',
+        0.48,
+      );
     }
   }
 }
 
 function drawTray() {
-  state.tray.forEach((piece, i) => {
-    const rect = state.trayRects[i];
+  state.tray.forEach((piece, index) => {
+    const rect = state.trayRects[index];
     roundedRect(rect.x, rect.y, rect.w, rect.h, 18);
     ctx.fillStyle = piece.used ? '#111a2d' : '#1a2949';
     ctx.fill();
     ctx.strokeStyle = piece.used ? '#1f2a3f' : '#334b78';
     ctx.stroke();
+
     if (piece.used) return;
 
     const { w, h } = pieceBounds(piece.cells);
     const unit = Math.min(25, Math.floor((rect.w - 22) / Math.max(w, h)));
-    const pw = w * unit;
-    const ph = h * unit;
-    const ox = rect.x + (rect.w - pw) / 2;
-    const oy = rect.y + (rect.h - ph) / 2;
-    piece.cells.forEach(([dx,dy]) => drawBlock(ox + dx * unit, oy + dy * unit, unit, piece.color));
+    const pieceW = w * unit;
+    const pieceH = h * unit;
+    const ox = rect.x + (rect.w - pieceW) / 2;
+    const oy = rect.y + (rect.h - pieceH) / 2;
+
+    piece.cells.forEach(([dx, dy]) => {
+      drawBlock(ox + dx * unit, oy + dy * unit, unit, piece.color);
+    });
   });
 }
 
@@ -280,7 +434,10 @@ function drawDraggedPiece() {
   const unit = 30;
   const ox = x - (w * unit) / 2;
   const oy = y - (h * unit) / 2;
-  piece.cells.forEach(([dx,dy]) => drawBlock(ox + dx * unit, oy + dy * unit, unit, piece.color, 0.86));
+
+  piece.cells.forEach(([dx, dy]) => {
+    drawBlock(ox + dx * unit, oy + dy * unit, unit, piece.color, 0.86);
+  });
 }
 
 function pointInRect(x, y, rect) {
@@ -289,37 +446,58 @@ function pointInRect(x, y, rect) {
 
 function pointerPosition(event) {
   const rect = canvas.getBoundingClientRect();
-  return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  return {
+    x: event.clientX - rect.left,
+    y: event.clientY - rect.top,
+  };
 }
 
 function boardCellFromPoint(x, y, piece) {
-  const b = state.boardRect;
+  const board = state.boardRect;
   const { w, h } = pieceBounds(piece.cells);
-  const col = Math.round((x - b.x) / b.cell - w / 2);
-  const row = Math.round((y - b.y) / b.cell - h / 2);
-  return { col, row };
+  return {
+    col: Math.round((x - board.x) / board.cell - w / 2),
+    row: Math.round((y - board.y) / board.cell - h / 2),
+  };
 }
 
 function canPlace(piece, col, row) {
   const { cols, rows } = currentStage();
-  return piece.cells.every(([dx,dy]) => {
-    const c = col + dx;
-    const r = row + dy;
-    return c >= 0 && c < cols && r >= 0 && r < rows && !state.grid[r][c];
+  return piece.cells.every(([dx, dy]) => {
+    const targetCol = col + dx;
+    const targetRow = row + dy;
+    return (
+      targetCol >= 0 &&
+      targetCol < cols &&
+      targetRow >= 0 &&
+      targetRow < rows &&
+      !state.grid[targetRow][targetCol]
+    );
   });
 }
 
 function placePiece(piece, col, row) {
   if (!canPlace(piece, col, row)) return false;
-  piece.cells.forEach(([dx,dy]) => {
+
+  piece.cells.forEach(([dx, dy]) => {
     state.grid[row + dy][col + dx] = piece.color;
   });
+
   piece.used = true;
+  state.moves += 1;
   state.score += piece.cells.length * 10;
+  metric('piece_placed', {
+    shape: piece.shapeIndex,
+    cells: piece.cells.length,
+    col,
+    row,
+    move: state.moves,
+  });
+
   clearLines();
   if (state.status !== 'playing') return true;
 
-  if (state.tray.every(p => p.used)) refillTray();
+  if (state.tray.every((trayPiece) => trayPiece.used)) refillTray();
   checkNoMoves();
   syncUi();
   return true;
@@ -327,18 +505,27 @@ function placePiece(piece, col, row) {
 
 function clearLines() {
   let cleared = 0;
-  for (let r = state.grid.length - 1; r >= 0; r--) {
-    if (state.grid[r].every(Boolean)) {
-      state.grid.splice(r, 1);
+
+  for (let row = state.grid.length - 1; row >= 0; row--) {
+    if (state.grid[row].every(Boolean)) {
+      state.grid.splice(row, 1);
       state.grid.unshift(Array(currentStage().cols).fill(null));
-      cleared++;
-      r++;
+      cleared += 1;
+      row += 1;
     }
   }
+
   if (!cleared) return;
 
   state.score += cleared * cleared * 100;
+  state.linesCleared += cleared;
   state.linesTowardShift += cleared;
+  metric('line_clear', {
+    cleared,
+    totalLines: state.linesCleared,
+    score: state.score,
+  });
+
   setMessage(cleared > 1 ? `${cleared} satır! Combo.` : 'Satır temizlendi.');
 
   while (state.linesTowardShift >= state.shiftEvery && state.status === 'playing') {
@@ -349,55 +536,83 @@ function clearLines() {
 
 function performShift() {
   if (state.stageIndex >= BOARD_STAGES.length - 1) {
-    state.shiftsDone++;
+    state.shiftsDone += 1;
     state.score += 250;
+    metric('shift', {
+      stage: state.stageIndex,
+      board: `${currentStage().cols}x${currentStage().rows}`,
+      shiftsDone: state.shiftsDone,
+    });
     checkWin();
     return;
   }
 
-  const old = currentStage();
-  const next = BOARD_STAGES[state.stageIndex + 1];
-  const removedRows = old.rows - next.rows;
-  for (let r = 0; r < removedRows; r++) {
-    if (state.grid[r].some(Boolean)) {
-      lose('Tavan bloklara çarptı.');
+  const oldStage = currentStage();
+  const nextStage = BOARD_STAGES[state.stageIndex + 1];
+  const removedRows = oldStage.rows - nextStage.rows;
+
+  for (let row = 0; row < removedRows; row++) {
+    if (state.grid[row].some(Boolean)) {
+      lose('Tavan bloklara çarptı.', 'morph_crush');
       return;
     }
   }
 
-  const surviving = state.grid.slice(removedRows);
-  const extraCols = next.cols - old.cols;
+  const survivingRows = state.grid.slice(removedRows);
+  const extraCols = nextStage.cols - oldStage.cols;
   const leftAdd = Math.floor(extraCols / 2);
   const rightAdd = extraCols - leftAdd;
-  state.grid = surviving.map(row => [
+
+  state.grid = survivingRows.map((row) => [
     ...Array(leftAdd).fill(null),
     ...row,
     ...Array(rightAdd).fill(null),
   ]);
-  state.stageIndex++;
-  state.shiftsDone++;
+
+  state.stageIndex += 1;
+  state.shiftsDone += 1;
   state.score += 250;
-  setMessage(`SHIFT! Tahta ${next.cols}×${next.rows} oldu.`);
+  metric('shift', {
+    stage: state.stageIndex,
+    board: `${nextStage.cols}x${nextStage.rows}`,
+    shiftsDone: state.shiftsDone,
+  });
+
+  setMessage(`SHIFT! Tahta ${nextStage.cols}×${nextStage.rows} oldu.`);
   checkWin();
 }
 
 function checkWin() {
-  if (state.shiftsDone >= state.targetShifts) {
-    state.status = 'won';
-    state.score += 1000;
-    setMessage(`Level ${state.level} tamamlandı.`);
-    ui.next.hidden = false;
-    ui.restart.hidden = true;
-  }
+  if (state.shiftsDone < state.targetShifts) return;
+
+  state.status = 'won';
+  state.score += 1000;
+  const durationMs = Math.round(performance.now() - state.levelStartedAt);
+  saveProgress(state.level);
+  metric('level_complete', {
+    durationMs,
+    score: state.score,
+    moves: state.moves,
+    invalidDrops: state.invalidDrops,
+    linesCleared: state.linesCleared,
+    shifts: state.shiftsDone,
+  });
+
+  setMessage(`Level ${state.level} tamamlandı.`);
+  ui.next.hidden = false;
+  ui.restart.hidden = true;
+  syncUi();
 }
 
 function anyPlacementFor(piece) {
   if (piece.used) return false;
+
   const { cols, rows } = currentStage();
   const { w, h } = pieceBounds(piece.cells);
-  for (let r = 0; r <= rows - h; r++) {
-    for (let c = 0; c <= cols - w; c++) {
-      if (canPlace(piece, c, r)) return true;
+
+  for (let row = 0; row <= rows - h; row++) {
+    for (let col = 0; col <= cols - w; col++) {
+      if (canPlace(piece, col, row)) return true;
     }
   }
   return false;
@@ -405,13 +620,26 @@ function anyPlacementFor(piece) {
 
 function checkNoMoves() {
   if (state.status !== 'playing') return;
-  const available = state.tray.filter(p => !p.used);
+
+  const available = state.tray.filter((piece) => !piece.used);
   if (available.length && available.some(anyPlacementFor)) return;
-  lose('Yer kalmadı.');
+
+  lose('Yer kalmadı.', 'no_legal_move');
 }
 
-function lose(reason) {
+function lose(reason, reasonCode = 'unknown') {
   state.status = 'lost';
+  const durationMs = Math.round(performance.now() - state.levelStartedAt);
+  metric('level_fail', {
+    reason: reasonCode,
+    durationMs,
+    score: state.score,
+    moves: state.moves,
+    invalidDrops: state.invalidDrops,
+    linesCleared: state.linesCleared,
+    shifts: state.shiftsDone,
+  });
+
   setMessage(`${reason} Tekrar dene.`);
   ui.restart.hidden = false;
   ui.next.hidden = true;
@@ -419,29 +647,49 @@ function lose(reason) {
 
 canvas.addEventListener('pointerdown', (event) => {
   if (state.status !== 'playing') return;
-  const p = pointerPosition(event);
-  const index = state.trayRects.findIndex(rect => pointInRect(p.x, p.y, rect));
+
+  const pointer = pointerPosition(event);
+  const index = state.trayRects.findIndex((rect) => pointInRect(pointer.x, pointer.y, rect));
   if (index < 0 || state.tray[index].used) return;
+
   canvas.setPointerCapture(event.pointerId);
-  state.drag = { piece: state.tray[index], trayIndex: index, x: p.x, y: p.y };
-  state.hover = boardCellFromPoint(p.x, p.y, state.drag.piece);
+  state.drag = {
+    piece: state.tray[index],
+    trayIndex: index,
+    x: pointer.x,
+    y: pointer.y,
+  };
+  state.hover = boardCellFromPoint(pointer.x, pointer.y, state.drag.piece);
   render();
 });
 
 canvas.addEventListener('pointermove', (event) => {
   if (!state.drag) return;
-  const p = pointerPosition(event);
-  state.drag.x = p.x;
-  state.drag.y = p.y;
-  state.hover = boardCellFromPoint(p.x, p.y, state.drag.piece);
+
+  const pointer = pointerPosition(event);
+  state.drag.x = pointer.x;
+  state.drag.y = pointer.y;
+  state.hover = boardCellFromPoint(pointer.x, pointer.y, state.drag.piece);
   render();
 });
 
 canvas.addEventListener('pointerup', (event) => {
   if (!state.drag) return;
-  const p = pointerPosition(event);
-  const target = boardCellFromPoint(p.x, p.y, state.drag.piece);
-  placePiece(state.drag.piece, target.col, target.row);
+
+  const pointer = pointerPosition(event);
+  const target = boardCellFromPoint(pointer.x, pointer.y, state.drag.piece);
+  const placed = placePiece(state.drag.piece, target.col, target.row);
+
+  if (!placed) {
+    state.invalidDrops += 1;
+    metric('invalid_drop', {
+      shape: state.drag.piece.shapeIndex,
+      col: target.col,
+      row: target.row,
+      invalidDrops: state.invalidDrops,
+    });
+  }
+
   state.drag = null;
   state.hover = null;
   render();
@@ -453,9 +701,21 @@ canvas.addEventListener('pointercancel', () => {
   render();
 });
 
-ui.restart.addEventListener('click', () => setupLevel(state.level));
-ui.next.addEventListener('click', () => setupLevel(state.level + 1));
+ui.restart.addEventListener('click', () => {
+  metric('level_restart', { cause: state.status });
+  setupLevel(state.level);
+});
+
+ui.next.addEventListener('click', () => {
+  setupLevel(state.level + 1);
+});
+
 window.addEventListener('resize', resizeCanvas);
 
-setupLevel(1);
+const initialProgress = getProgress();
+metric('session_start', {
+  userAgent: navigator.userAgent,
+  viewport: `${window.innerWidth}x${window.innerHeight}`,
+});
+setupLevel(Math.max(1, initialProgress.lastLevel || 1));
 resizeCanvas();
