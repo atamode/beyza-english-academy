@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#0b1530" />
+  <title>Poma Shift — Prototype</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div><span class="label">LEVEL</span><strong id="levelValue">1</strong></div>
+      <div><span class="label">SKOR</span><strong id="scoreValue">0</strong></div>
+      <div><span class="label">SHIFT</span><strong id="shiftValue">0/3</strong></div>
+      <div><span class="label">TAHTA</span><strong id="boardValue">6×12</strong></div>
+    </header>
+
+    <section class="game-card">
+      <canvas id="game" aria-label="Poma Shift oyun alanı"></canvas>
+    </section>
+
+    <section class="hud">
+      <p id="message">3 parçadan birini sürükle ve tahtaya bırak.</p>
+      <div class="actions">
+        <button id="restartBtn" hidden>Tekrar Dene</button>
+        <button id="nextBtn" hidden>Sonraki Level</button>
+      </div>
+    </section>
+  </main>
+  <script src="./game.js" defer></script>
+</body>
+</html>
