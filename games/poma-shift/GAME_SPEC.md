@@ -1,6 +1,6 @@
 # POMA SHIFT — GAME SPEC
 
-**Status:** V0.3 / PLAYABLE PROTOTYPE  
+**Status:** V0.4 / PLAYABLE PROTOTYPE  
 **Project type:** Web-first casual puzzle  
 **Working name:** Poma Shift  
 **Final name:** OPEN
@@ -61,7 +61,15 @@ Kaldırılacak üst satır doluysa:
 
 **GAME OVER — MORPH CRUSH**
 
-SHIFT öncesinde tehlikeli üst sıra kırmızı uyarılır.
+SHIFT oyunun ana kimliğidir ve görsel olarak saklanmaz.
+
+Tehdit sistemi:
+- 0/3: silinecek üst satır sürekli görünür, sonraki board hayalet çerçevesi gösterilir
+- 1/3: sarı uyarı + hafif ses/titreşim
+- 2/3: kırmızı alarm + pulse + alarm sesi + güçlü titreşim
+- SHIFT: kesme/bıçak hissi veren ses + güçlü feedback
+
+Amaç oyuncuyu bilgilendirmek ama aynı zamanda baskı altında hata yapmaya açık hale getirmektir.
 
 ---
 
@@ -79,7 +87,7 @@ Renk şu anda yalnızca görsel ayrımdır.
 
 ---
 
-# 5. PIECE SYSTEM — LOCKED FOR V0.3
+# 5. PIECE SYSTEM — LOCKED FOR V0.4
 
 - 1–4 hücreli basit polyomino şekilleri
 - yalnızca klasik Tetris tetrominolarına bağlı değil
@@ -89,6 +97,7 @@ Renk şu anda yalnızca görsel ayrımdır.
 - geçersiz drop tray'e geri döner
 - drag sırasında valid/invalid preview görünür
 - telefonda parça parmağın yaklaşık 62 px üstünde taşınır
+- mobilde tray board alanının dışında ayrı alt bölgede kalır
 
 Amaç: tek parmak, düşük öğrenme maliyeti.
 
@@ -107,33 +116,41 @@ Bu yapı “bu üç parçayı nasıl sığdırırım?” mikro problemini üreti
 
 ---
 
-# 7. SERIES TIMER — ACTIVE TEST RULE
+# 7. SERIES TIMER / RUSH LEVELS — LOCKED FOR V0.4
 
-V0.3 ile üçlü batch'e zaman baskısı eklendi.
+Timer ana mekanik değildir.
+Timer yalnız özel **RUSH** levellerinde tempo değiştirici olarak kullanılır.
 
-### Level 1
-- timer yok
-- öğrenme leveli
+### Level 1–10
+- timer YOK
+- oyuncu önce board + SHIFT + move budget dilini öğrenir
 
-### Level 2
-- ilk parça yerleştirildikten sonra **7 saniye**
+### İlk RUSH
+- Level 11
 
-### Level 3+
-- ilk parça yerleştirildikten sonra kalan batch için **5 saniye**
+### Sonraki RUSH levelleri
+- 15, 20, 25, 30... gibi her 5 levelde bir
+- Level 11 özel ilk tanıtım RUSH levelidir
+
+### RUSH süreleri
+- Level 11–24: **7 saniye**
+- Level 25–49: **6 saniye**
+- Level 50+: **5 saniye**
 
 Timer batch ekrana geldiği anda başlamaz.
-Oyuncu önce parçaları inceleyebilir.
-İlk yerleştirmeden sonra süre başlar.
+Oyuncu önce üç parçayı inceleyebilir.
+İlk parça yerleştirildikten sonra süre başlar.
 
 Süre dolarsa:
 - kullanılmamış parçalar yanar
-- her kullanılmamış parça **+1 hamle cezası** sayılır
-- yeni üçlü batch gelir
+- her kullanılmamış parça +1 hamle cezası sayılır
+- yeni batch gelir
 
 Timer tek başına anında game-over üretmez.
 Hamle bütçesini tüketerek baskı yaratır.
 
-Bu süreler tuning değeridir ve test verisine göre değişebilir.
+Haritada RUSH node'ları ⚡ ile ayrılır.
+Normal levellerde timer göstergesi **SERBEST** olarak görünür.
 
 ---
 
@@ -141,7 +158,7 @@ Bu süreler tuning değeridir ve test verisine göre değişebilir.
 
 Her levelin maksimum hamle bütçesi vardır.
 Yerleştirilen her parça = 1 hamle.
-Timer nedeniyle yanan her parça = 1 ceza hamlesi.
+RUSH timeout nedeniyle yanan her parça = 1 ceza hamlesi.
 
 İlk 10 level başlangıç limitleri:
 
@@ -162,7 +179,7 @@ Level 11+ başlangıç formülü:
 
 `18 + ((targetShifts - 1) × 14) + (startStage × 2)`
 
-Bu değerler ekonomik veya nihai difficulty kararı değildir; playtest tuning başlangıcıdır.
+Bu değerler tuning başlangıcıdır.
 
 Hamle limiti dolduğunda hedef tamamlanmamışsa:
 
@@ -170,7 +187,7 @@ Hamle limiti dolduğunda hedef tamamlanmamışsa:
 
 ---
 
-# 9. FAIL CONDITIONS — LOCKED FOR V0.3
+# 9. FAIL CONDITIONS — LOCKED
 
 Üç fail tipi vardır:
 
@@ -183,7 +200,7 @@ SHIFT sırasında kaldırılacak üst sırada blok var.
 ### C. MOVE LIMIT
 Level hamle bütçesi tükendi.
 
-Timer timeout doğrudan ölüm değildir; move budget cezasıdır.
+RUSH timeout doğrudan ölüm değildir; move budget cezasıdır.
 
 ---
 
@@ -206,22 +223,22 @@ Oyuncuyu sürekli kurtaran gizli rescue sistemi kurulmaz.
 
 ---
 
-# 11. FIRST 10 LEVELS
+# 11. FIRST 10 LEVELS — LEARNING CURVE
 
 | Level | Start | Target SHIFT | Timer |
 |---|---|---:|---:|
 | 1 | 6×12 | 1 | yok |
-| 2 | 6×12 | 2 | 7 sn |
-| 3 | 6×12 | 3 | 5 sn |
-| 4 | 7×11 | 3 | 5 sn |
-| 5 | 6×12 | 4 | 5 sn |
-| 6 | 8×10 | 3 | 5 sn |
-| 7 | 6×12 | 5 | 5 sn |
-| 8 | 7×11 | 5 | 5 sn |
-| 9 | 6×12 | 6 | 5 sn |
-| 10 | 6×12 | 6 | 5 sn + daha zor bag |
+| 2 | 6×12 | 2 | yok |
+| 3 | 6×12 | 3 | yok |
+| 4 | 7×11 | 3 | yok |
+| 5 | 6×12 | 4 | yok |
+| 6 | 8×10 | 3 | yok |
+| 7 | 6×12 | 5 | yok |
+| 8 | 7×11 | 5 | yok |
+| 9 | 6×12 | 6 | yok |
+| 10 | 6×12 | 6 | yok + daha zor bag |
 
-İlk 10 level final içerik değil, tuning setidir.
+İlk 10 level motor öğretim/tuning setidir.
 
 ---
 
@@ -230,9 +247,9 @@ Oyuncuyu sürekli kurtaran gizli rescue sistemi kurulmaz.
 Ses feedback'i shape'e göre ayrılır.
 
 ### Placement
-- tek kare: çok kısa, daha yüksek ve keskin “cik”
+- tek kare: çok kısa, yüksek ve keskin “cik”
 - 3/4 uzun çubuk: daha keskin çift “çıt”
-- kare blok: daha tok mevcut yerleşme sesi
+- kare blok: daha tok placement sesi
 - diğer şekiller: orta frekans placement sesi
 
 ### Line clear
@@ -240,7 +257,7 @@ Ses feedback'i shape'e göre ayrılır.
 - belirgin çift titreşim
 
 ### SHIFT
-- sentetik **bıçak/kesme** benzeri noise sweep
+- sentetik bıçak/kesme benzeri noise sweep
 - kısa düşük frekans vurgu
 - güçlü titreşim paterni
 
@@ -259,6 +276,7 @@ Tutorial:
 - toolbar ile canvas arasında ayrı bilgi şeridinde görünür
 - board hücrelerini kapatmaz
 - tray parçalarını kapatmaz
+- küçük Poma rehber görseli kullanılabilir
 
 Akış:
 1. parçayı tut
@@ -277,23 +295,72 @@ Görsel yön:
 
 > **Level 1 aşağıda, sonraki leveller yukarı doğru çıkar.**
 
-Harita Candy Crush benzeri kıvrımlı node path mantığında olabilir.
-Oyuncu ilerledikçe görsel olarak yukarı tırmanır.
+- kıvrımlı node path
+- aktif level yanında küçük Poma rehberi
+- RUSH level ⚡ ile işaretli
+- Poma haritada ilerler; board içine girmez
 
 ---
 
-# 15. PROGRESS / SCORE
+# 15. POMA BRAND INTEGRATION — LOCKED
+
+Temel oran:
+
+> **%80 bağımsız casual oyun / %20 Poma marka kimliği**
+
+Poma'nın görevi oyunu taşımak değil, tutan oyuncuyu Pomante markasına bağlamaktır.
+
+Poma KULLANILIR:
+- tutorial rehberi
+- level haritasında aktif node
+- level complete reaksiyonu
+- fail ekranında hafif reaksiyon
+- ileride loading/menu/store icon gibi marka yüzleri
+
+Poma KULLANILMAZ:
+- grid hücreleri
+- blokların üstü
+- line clear kuralı
+- SHIFT mekaniği
+- zorunlu gameplay power'ı
+
+Amaç oyunun geniş casual kitleye bağımsız görünmesini korumaktır.
+
+---
+
+# 16. VISUAL DIRECTION — LOCKED TARGET
+
+Mevcut prototip çizgi/flat görünümü final değildir.
+
+Hedef:
+- premium casual
+- soft plastic / hafif hacimli bloklar
+- yumuşak köşe
+- tok dokunma hissi
+- koyu ve temiz board
+- az yazı, güçlü görsel feedback
+- alarm satırında glow/pulse/tehlike bandı
+
+Kaçınılacak:
+- aşırı çocuk çizgi-film görünümü
+- fazla teknik çizgi/wireframe hissi
+- çok fazla açıklama metni
+- Poma'yı board'u domine edecek kadar büyütmek
+
+---
+
+# 17. PROGRESS / SCORE
 
 Progress localStorage:
 - son level
 - en yüksek açılan level
 
 Score çalışır ancak ana retention sistemi değildir.
-HUD'da skor yerine **hamle bütçesi** önceliklidir.
+HUD'da skor yerine hamle bütçesi önceliklidir.
 
 ---
 
-# 16. TELEMETRY
+# 18. TELEMETRY
 
 Mevcut local eventler:
 - `session_start`
@@ -316,7 +383,7 @@ Fail reason:
 
 Ölçülecek:
 - moves
-- timeout penalty
+- RUSH timeout penalty
 - invalid drops
 - level duration
 - lines cleared
@@ -325,7 +392,7 @@ Fail reason:
 
 ---
 
-# 17. GO / NO-GO
+# 19. GO / NO-GO
 
 İlk 20–50 oyuncuda iç test sinyalleri:
 
@@ -336,22 +403,23 @@ Fail reason:
 - invalid drop ilk level sonrası düşmeli
 - fairness adjustment < %10 batch
 
-Özellikle ayrıca ölçülecek:
-- 5 saniye timer eğlenceli baskı mı, sinir bozucu baskı mı?
-- timeout oranı hangi levelde yükseliyor?
-- move limit nedeniyle fail oranı aşırı mı?
+RUSH ayrı ölçülür:
+- Level 11'e ulaşma oranı
+- ilk RUSH completion
+- timeout oranı
+- RUSH sonrası devam oranı
 
-Motor oyuncuyu istemeden zorlamaya başlarsa timer/move değerleri değiştirilir; core mechanic gereksiz özelliklerle maskelenmez.
+Timer yüzünden oyuncu bırakıyorsa timer core mechanic değildir; azaltılır veya seyrekleştirilir.
 
 ---
 
-# 18. STRICT OUT OF SCOPE
+# 20. STRICT OUT OF SCOPE
 
 Motor doğrulanmadan YOK:
 - match-3
 - renk patlatma
 - bomba/joker/power-up
-- Poma güçleri
+- Poma gameplay güçleri
 - karakter geliştirme
 - Poma Kingdom meta progression
 - coin
@@ -366,7 +434,7 @@ Motor doğrulanmadan YOK:
 
 ---
 
-# 19. WEB-FIRST ARCHITECTURE — LOCKED
+# 21. WEB-FIRST ARCHITECTURE — LOCKED
 
 İlk prototip:
 - HTML
@@ -378,8 +446,6 @@ Motor doğrulanmadan YOK:
 - service worker
 - PWA manifest
 
-Amaç motoru en ucuz/hızlı şekilde doğrulamaktır.
-
 Store yönü:
 
 `Web assets → Capacitor native shell → Android / iOS`
@@ -389,7 +455,7 @@ Ana HTML/JS/CSS/assets uygulama bundle'ı içinde bulunacak.
 
 ---
 
-# 20. CURRENT FILE STRUCTURE
+# 22. CURRENT FILE STRUCTURE
 
 ```text
 games/poma-shift/
@@ -398,9 +464,14 @@ games/poma-shift/
   README.md
   index.html
   styles.css
+  threat.css
+  poma-brand.css
   game.js
+  mobile-layout.js
   game-feel.js
   product-ui.js
+  threat-system.js
+  poma-brand.js
   manifest.webmanifest
   sw.js
   icon.svg
@@ -408,13 +479,13 @@ games/poma-shift/
 
 ---
 
-# 21. FINAL V0.3 RULE
+# 23. FINAL V0.4 RULE
 
 Başarı kriteri:
 
-- güzel Poma artwork değil
+- Poma artwork kalitesi değil
 - Store build değil
 - reklam geliri değil
 - özellik sayısı değil
 
-**Oyuncunun baskıya rağmen oyunu adil bulması ve kendi isteğiyle bir sonraki levele geçmesi.**
+**Oyuncunun SHIFT baskısını anlayıp adil bulması ve kendi isteğiyle bir sonraki levele geçmesi.**
