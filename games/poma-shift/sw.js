@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.0';
+const CACHE = 'poma-shift-v0.1.1';
 const CORE = [
   './',
   './index.html',
