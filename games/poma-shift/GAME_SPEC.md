@@ -1,6 +1,6 @@
 # POMA SHIFT — GAME SPEC
 
-**Status:** V0.2 / PLAYABLE PROTOTYPE  
+**Status:** V0.3 / PLAYABLE PROTOTYPE  
 **Project type:** Web-first casual puzzle  
 **Working name:** Poma Shift  
 **Final name:** OPEN
@@ -11,57 +11,35 @@
 
 Bu dosya Poma Shift için yaşayan tek ana oyun/motor spesifikasyonudur.
 
-Burada kilitlenenler:
-- core loop
-- oyun sınırları
-- board morph sistemi
-- parça ve tray sistemi
-- level kuralları
-- win/fail şartları
-- prototip metrikleri
-- web-first mimari
-- Store paketleme yönü
+Ana hedef:
 
-Ana amaç özellik eklemek değil, çıplak motorun oyuncuda **“bir level daha”** isteği üretip üretmediğini doğrulamaktır.
+> Oyuncunun kendi isteğiyle “bir level daha” demesini sağlayan sade bir core loop doğrulamak.
+
+Poma görseli, reklam ve meta özellikler motoru kurtarmak için kullanılmaz.
 
 ---
 
-# 2. PRODUCT PRINCIPLE — LOCKED
+# 2. CORE LOOP — LOCKED
 
-> Oyun Poma görseli olmadan da oynanmak istenmeli.
-
-V0.x motor testi:
-- renkli bloklar
-- sade grid
-- Poma zorunlu değil
-
-Poma karakter/marka katmanı yalnızca motor doğrulandıktan sonra eklenir.
-
----
-
-# 3. CORE LOOP — LOCKED
-
-Oyuncunun önünde 3 parça vardır.
+Oyuncuya üç parçalık bir set verilir.
 
 Akış:
 1. 3 parçadan birini seç
 2. sürükleyip grid'e yerleştir
 3. yatay satırı tamamen doldur
 4. satır temizlensin
-5. belirli sayıda temizlenen satırdan sonra SHIFT olsun
+5. 3 temizlenen satırdan sonra SHIFT olsun
 6. tahta +1 genişlesin, -1 alçalsın
-7. yaklaşan tavan riskini yönet
+7. tavan ve hamle bütçesini yönet
 8. hedef SHIFT sayısına ulaş veya kaybet
 
 Ana farklılaştırıcı:
 
 > Başarı arttıkça oyun alanı genişler fakat tavan aşağı iner.
 
-Zaman sayacı yoktur.
-
 ---
 
-# 4. BOARD MORPH — LOCKED FOR V0.2
+# 3. BOARD MORPH — LOCKED
 
 | Stage | Board | Area |
 |---|---:|---:|
@@ -76,165 +54,248 @@ Zaman sayacı yoktur.
 SHIFT olduğunda:
 - üstten 1 satır kaldırılır
 - genişliğe 1 kolon eklenir
-- ek kolon sağ/sol kenara dağıtılır
-- board içeriği korunur
+- yeni kolon sağ/sol kenara dağıtılır
+- kalan board içeriği korunur
 
-Yeni stage'e geçerken kaldırılacak üst satırda blok varsa:
+Kaldırılacak üst satır doluysa:
 
 **GAME OVER — MORPH CRUSH**
 
-SHIFT öncesi tehlikeli üst satır görsel olarak kırmızı uyarılır.
-Gizli ceza yoktur.
+SHIFT öncesinde tehlikeli üst sıra kırmızı uyarılır.
 
 ---
 
-# 5. LINE CLEAR — LOCKED
+# 4. LINE CLEAR — LOCKED
 
 Yalnızca tamamen dolu **yatay satır** temizlenir.
 
-V0.2'de YOK:
-- renk eşleştirme
+YOK:
 - match-3
-- 3/4 aynı renk patlatma
-- dikey kolon temizleme
-- çapraz temizleme
+- aynı renk patlatma
+- dikey kolon clear
+- çapraz clear
 
 Renk şu anda yalnızca görsel ayrımdır.
 
 ---
 
-# 6. PIECES — LOCKED FOR PROTOTYPE
+# 5. PIECE SYSTEM — LOCKED FOR V0.3
 
 - 1–4 hücreli basit polyomino şekilleri
-- sadece klasik 7 tetromino ile sınırlı değil
+- yalnızca klasik Tetris tetrominolarına bağlı değil
 - yukarıdan düşme yok
-- parça döndürme yok
+- döndürme yok
 - yerleştirilen parça geri alınmaz
-- geçersiz noktaya bırakılırsa tray'e geri döner
-- drag sırasında geçerli/geçersiz preview gösterilir
+- geçersiz drop tray'e geri döner
+- drag sırasında valid/invalid preview görünür
+- telefonda parça parmağın yaklaşık 62 px üstünde taşınır
 
-Amaç tek parmakla, açıklamasız anlaşılabilecek kontrol üretmektir.
+Amaç: tek parmak, düşük öğrenme maliyeti.
 
 ---
 
-# 7. THREE-PIECE TRAY — LOCKED FOR V0.2
+# 6. THREE-PIECE BATCH — LOCKED
 
-Oyuncuya **3 parçalık batch** verilir.
+Oyuncuya 3 parçalık batch verilir.
 
 Kural:
-- oyuncu 3 parçayı istediği sırayla kullanır
+- üç parçayı istediği sırayla kullanır
 - kullanılan slot boş kalır
-- üçü de kullanıldıktan sonra yeni 3'lü set gelir
+- üçü tamamlanınca yeni batch gelir
 
-Neden:
-- oyuncuya kısa vadeli planlama alanı verir
-- her hamlede yeni taş gelmesine göre daha az rastgele hissettirir
-- “bu üç parçayı nasıl sığdırırım?” mikro problemi yaratır
-
-Slot bazlı anında refill V0.2'de kullanılmaz.
-Gerekirse ileride A/B test edilir.
+Bu yapı “bu üç parçayı nasıl sığdırırım?” mikro problemini üretir.
 
 ---
 
-# 8. PIECE GENERATION / FAIRNESS
+# 7. SERIES TIMER — ACTIVE TEST RULE
 
-V0.2 jeneratörü tamamen eşit rastgele değildir.
+V0.3 ile üçlü batch'e zaman baskısı eklendi.
 
-Mevcut yaklaşım:
-- kolay şekil havuzu
-- zor şekil havuzu
-- level arttıkça zor shape olasılığı kontrollü artar
-- aynı shape'in arka arkaya gelmesi azaltılır
-- ilk levellerde zor shape oranı çok düşüktür
+### Level 1
+- timer yok
+- öğrenme leveli
 
-Oyuncuyu sürekli kurtaran gizli rescue algoritması YOK.
+### Level 2
+- ilk parça yerleştirildikten sonra **7 saniye**
 
-Fail ana olarak:
-- kötü board yönetimi
-- yanlış parça sırası
-- yaklaşan SHIFT'i hesaba katmama
+### Level 3+
+- ilk parça yerleştirildikten sonra kalan batch için **5 saniye**
 
-sonucu olmalıdır.
+Timer batch ekrana geldiği anda başlamaz.
+Oyuncu önce parçaları inceleyebilir.
+İlk yerleştirmeden sonra süre başlar.
+
+Süre dolarsa:
+- kullanılmamış parçalar yanar
+- her kullanılmamış parça **+1 hamle cezası** sayılır
+- yeni üçlü batch gelir
+
+Timer tek başına anında game-over üretmez.
+Hamle bütçesini tüketerek baskı yaratır.
+
+Bu süreler tuning değeridir ve test verisine göre değişebilir.
 
 ---
 
-# 9. LOSS CONDITIONS — LOCKED
+# 8. MOVE BUDGET — ACTIVE TEST RULE
 
-Yalnızca iki ana fail:
+Her levelin maksimum hamle bütçesi vardır.
+Yerleştirilen her parça = 1 hamle.
+Timer nedeniyle yanan her parça = 1 ceza hamlesi.
+
+İlk 10 level başlangıç limitleri:
+
+| Level | Max Move |
+|---|---:|
+| 1 | 18 |
+| 2 | 32 |
+| 3 | 46 |
+| 4 | 48 |
+| 5 | 60 |
+| 6 | 50 |
+| 7 | 74 |
+| 8 | 76 |
+| 9 | 88 |
+| 10 | 88 |
+
+Level 11+ başlangıç formülü:
+
+`18 + ((targetShifts - 1) × 14) + (startStage × 2)`
+
+Bu değerler ekonomik veya nihai difficulty kararı değildir; playtest tuning başlangıcıdır.
+
+Hamle limiti dolduğunda hedef tamamlanmamışsa:
+
+**GAME OVER — MOVE LIMIT**
+
+---
+
+# 9. FAIL CONDITIONS — LOCKED FOR V0.3
+
+Üç fail tipi vardır:
 
 ### A. NO LEGAL MOVE
-Tray'de kalan parçaların hiçbirinin geçerli yerleşimi yok.
+Tray'de kalan hiçbir parça yerleşemiyor.
 
 ### B. MORPH CRUSH
 SHIFT sırasında kaldırılacak üst sırada blok var.
 
-V0.x boyunca üçüncü ölüm koşulu eklenmez.
+### C. MOVE LIMIT
+Level hamle bütçesi tükendi.
+
+Timer timeout doğrudan ölüm değildir; move budget cezasıdır.
 
 ---
 
-# 10. FIRST 10 LEVELS — LOCKED TEST SET
+# 10. PIECE GENERATION / FAIRNESS
 
-| Level | Start | Target | Hard-piece direction |
+Jeneratör tamamen eşit random değildir.
+
+- ilk leveller kolay shape havuzu
+- level arttıkça zor shape ihtimali artar
+- aynı shape'in sürekli tekrarı azaltılır
+- bariz şekilde ölü üçlü set verilmesi minimum fairness katmanıyla engellenir
+
+`fairness_adjustment` nadir çalışmalıdır.
+
+Alarm:
+
+> Batch'lerin %10+'unda fairness adjustment gerekiyorsa generator kötü ayarlanmıştır.
+
+Oyuncuyu sürekli kurtaran gizli rescue sistemi kurulmaz.
+
+---
+
+# 11. FIRST 10 LEVELS
+
+| Level | Start | Target SHIFT | Timer |
 |---|---|---:|---:|
-| 1 | 6×12 | 1 SHIFT | çok kolay |
-| 2 | 6×12 | 2 SHIFT | çok kolay |
-| 3 | 6×12 | 3 SHIFT | çok düşük |
-| 4 | 7×11 | 3 SHIFT | düşük |
-| 5 | 6×12 | 4 SHIFT | düşük |
-| 6 | 8×10 | 3 SHIFT | düşük |
-| 7 | 6×12 | 5 SHIFT | orta-alt |
-| 8 | 7×11 | 5 SHIFT | orta-alt |
-| 9 | 6×12 | 6 SHIFT | orta |
-| 10 | 6×12 | 6 SHIFT | belirgin daha zor |
+| 1 | 6×12 | 1 | yok |
+| 2 | 6×12 | 2 | 7 sn |
+| 3 | 6×12 | 3 | 5 sn |
+| 4 | 7×11 | 3 | 5 sn |
+| 5 | 6×12 | 4 | 5 sn |
+| 6 | 8×10 | 3 | 5 sn |
+| 7 | 6×12 | 5 | 5 sn |
+| 8 | 7×11 | 5 | 5 sn |
+| 9 | 6×12 | 6 | 5 sn |
+| 10 | 6×12 | 6 | 5 sn + daha zor bag |
 
-Level 11+ algoritmik tuning ile devam eder.
-
-İlk 10 level nihai içerik değildir; motor testi setidir.
+İlk 10 level final içerik değil, tuning setidir.
 
 ---
 
-# 11. TARGET SESSION FEEL
+# 12. SOUND / HAPTIC LANGUAGE — ACTIVE
 
-Timer YOK.
+Ses feedback'i shape'e göre ayrılır.
 
-Hedef gerçek oynama süresi:
-- Level 1: yaklaşık 20–45 sn kabul edilebilir
-- sonraki normal leveller: yaklaşık 45–90 sn hedef
+### Placement
+- tek kare: çok kısa, daha yüksek ve keskin “cik”
+- 3/4 uzun çubuk: daha keskin çift “çıt”
+- kare blok: daha tok mevcut yerleşme sesi
+- diğer şekiller: orta frekans placement sesi
 
-Bu süre zorla dayatılmaz; telemetride ölçülür.
+### Line clear
+- çift yükselen kısa efekt
+- belirgin çift titreşim
+
+### SHIFT
+- sentetik **bıçak/kesme** benzeri noise sweep
+- kısa düşük frekans vurgu
+- güçlü titreşim paterni
+
+### Fail / complete
+- ayrı ses ve titreşim paterni
+
+Ses kapatma düğmesi zorunludur.
 
 ---
 
-# 12. SCORE — CURRENT IMPLEMENTATION
+# 13. TUTORIAL UX — LOCKED
 
-- yerleştirilen hücre: **+10**
-- 1 satır clear: **+100**
-- aynı hamlede çoklu clear: `cleared² × 100`
-- SHIFT: **+250**
-- level complete: **+1000**
+Level 1 açıklamaları oyun alanının üstüne bindirilmez.
 
-Skor retention motoru değildir.
-Level progression ana hedeftir.
+Tutorial:
+- toolbar ile canvas arasında ayrı bilgi şeridinde görünür
+- board hücrelerini kapatmaz
+- tray parçalarını kapatmaz
+
+Akış:
+1. parçayı tut
+2. satırı doldur
+3. SHIFT mantığını gör
+
+Tutorial tamamlandıktan sonra localStorage ile tekrar gösterilmez.
 
 ---
 
-# 13. PROGRESS SAVE
+# 14. LEVEL MAP — LOCKED DIRECTION
 
-V0.2 web sürümünde:
+Level haritası gameplay değildir; progression göstergesidir.
+
+Görsel yön:
+
+> **Level 1 aşağıda, sonraki leveller yukarı doğru çıkar.**
+
+Harita Candy Crush benzeri kıvrımlı node path mantığında olabilir.
+Oyuncu ilerledikçe görsel olarak yukarı tırmanır.
+
+---
+
+# 15. PROGRESS / SCORE
+
+Progress localStorage:
 - son level
-- açılan en yüksek level
+- en yüksek açılan level
 
-`localStorage` içinde saklanır.
-
-Backend/cloud save yoktur.
+Score çalışır ancak ana retention sistemi değildir.
+HUD'da skor yerine **hamle bütçesi** önceliklidir.
 
 ---
 
-# 14. TELEMETRY — IMPLEMENTED LOCALLY
+# 16. TELEMETRY
 
-V0.2 backend kullanmadan test eventlerini `localStorage` içinde tutar.
-
-Eventler:
+Mevcut local eventler:
 - `session_start`
 - `level_start`
 - `tray_dealt`
@@ -242,117 +303,72 @@ Eventler:
 - `invalid_drop`
 - `line_clear`
 - `shift`
+- `fairness_adjustment`
+- `tray_timeout`
 - `level_fail`
 - `level_restart`
 - `level_complete`
 
-Level complete/fail kaydında ayrıca:
-- süre
-- skor
-- move sayısı
-- invalid drop
-- temizlenen satır
-- tamamlanan SHIFT
-- fail nedeni
-
-tutulur.
-
-Test export:
-
-```js
-PomaShiftMetrics.export()
-```
-
-Temizleme:
-
-```js
-PomaShiftMetrics.clear()
-```
-
-Bu sistem ürün analytics altyapısı değildir; ilk motor testi içindir.
-
----
-
-# 15. PROTOTYPE METRICS — INTERNAL GO / NO-GO
-
-İlk hedef 20–50 gerçek test oyuncusudur.
-Bu eşikler piyasa benchmark garantisi değil, ürünü öldürme/geliştirme iç filtresidir.
-
-### UX gate
-- ilk taşı yardımsız yerleştirebilen: **≥ %90**
-- invalid drop oranı: tercihen **< %15**
-- oyuncu fail sebebini anlayabiliyor olmalı
-
-### Core-loop gate
-- Level 1 completion: **≥ %70**
-- Level 3'e ulaşma: **≥ %50**
-- ilk 3 levelden sonra kendi isteğiyle devam eden: **≥ %60**
-- median test session: en az **5 level** hedef
-
-### Feel gate
-Test sonunda şu soru sorulur:
-
-> “Bir level daha oynar mısın?”
-
-Güçlü çoğunluk istemiyorsa görsel/power-up ekleyerek motor kurtarılmaya çalışılmaz.
-Önce core mechanic değiştirilir.
-
-### Fail diagnosis
-Şunlar ayrı izlenir:
+Fail reason:
 - `no_legal_move`
 - `morph_crush`
-- aşırı invalid drag/drop
-- beklenenden uzun level
-- çok kolay level
+- `move_limit`
+
+Ölçülecek:
+- moves
+- timeout penalty
+- invalid drops
+- level duration
+- lines cleared
+- shifts
+- fail nedeni
 
 ---
 
-# 16. RETENTION / MONETIZATION — NOT YET LOCKED
+# 17. GO / NO-GO
 
-D1/D3/D7 retention ve reklam metrikleri **soft launch** aşamasının konusudur.
+İlk 20–50 oyuncuda iç test sinyalleri:
 
-V0.x motor testinde:
-- reklam yok
-- rewarded ad yok
-- interstitial yok
-- IAP yok
+- Level 1 completion ≥ %70
+- Level 1 bitirenlerin Level 2'ye geçişi ≥ %70
+- Level 3'e ulaşma ≥ %50
+- fail sonrası restart ≥ %40
+- invalid drop ilk level sonrası düşmeli
+- fairness adjustment < %10 batch
 
-Önce retention sinyali, sonra monetization.
+Özellikle ayrıca ölçülecek:
+- 5 saniye timer eğlenceli baskı mı, sinir bozucu baskı mı?
+- timeout oranı hangi levelde yükseliyor?
+- move limit nedeniyle fail oranı aşırı mı?
+
+Motor oyuncuyu istemeden zorlamaya başlarsa timer/move değerleri değiştirilir; core mechanic gereksiz özelliklerle maskelenmez.
 
 ---
 
-# 17. STRICT OUT OF SCOPE FOR V0.x
+# 18. STRICT OUT OF SCOPE
 
+Motor doğrulanmadan YOK:
 - match-3
 - renk patlatma
-- bomba
-- joker
-- power-up
+- bomba/joker/power-up
 - Poma güçleri
 - karakter geliştirme
-- Poma Kingdom meta ilerleme
-- ev/bina geliştirme
+- Poma Kingdom meta progression
 - coin
 - günlük görev
 - battle pass
 - shop
-- skin satışı
 - multiplayer
 - leaderboard
 - login
-- backend zorunluluğu
-- hikâye
 - reklam
-- gerçek para satışı
-
-Bunlardan biri ancak core loop verisi gerekçelendirirse açılır.
+- IAP
 
 ---
 
-# 18. CURRENT WEB IMPLEMENTATION
+# 19. WEB-FIRST ARCHITECTURE — LOCKED
 
-V0.2 doğrulama sürümü bilinçli olarak hafif tutulur:
-
+İlk prototip:
 - HTML
 - CSS
 - vanilla JavaScript
@@ -362,29 +378,29 @@ V0.2 doğrulama sürümü bilinçli olarak hafif tutulur:
 - service worker
 - PWA manifest
 
-Neden Phaser/TypeScript hemen kullanılmadı:
-- motoru en hızlı ve en ucuz şekilde doğrulamak
-- framework maliyetini eğlence testiyle karıştırmamak
-- çalışan prototipi birkaç dosyada tutmak
+Amaç motoru en ucuz/hızlı şekilde doğrulamaktır.
 
-Core mechanic doğrulanırsa kod:
-- TypeScript'e ayrıştırılabilir
-- game logic/render katmanı bölünebilir
-- gerekirse Phaser render/tween/audio katmanına taşınabilir
+Store yönü:
 
-Bu geçiş oyunu yeniden tasarlamak anlamına gelmez.
+`Web assets → Capacitor native shell → Android / iOS`
+
+Store uygulaması yalnız uzak site açan boş WebView olmayacak.
+Ana HTML/JS/CSS/assets uygulama bundle'ı içinde bulunacak.
 
 ---
 
-# 19. CURRENT FILE STRUCTURE
+# 20. CURRENT FILE STRUCTURE
 
 ```text
 games/poma-shift/
   GAME_SPEC.md
+  TEST_PLAN.md
   README.md
   index.html
   styles.css
   game.js
+  game-feel.js
+  product-ui.js
   manifest.webmanifest
   sw.js
   icon.svg
@@ -392,84 +408,13 @@ games/poma-shift/
 
 ---
 
-# 20. WEB-FIRST / STORE DIRECTION — LOCKED
+# 21. FINAL V0.3 RULE
 
-Ana prensip:
+Başarı kriteri:
 
-> Tek web oyun motoru → Web/PWA + Android + iOS.
-
-Web sürümü önce geliştirilir.
-
-Store aşamasında hedef:
-
-`Web assets → Capacitor native shell → Android/iOS`
-
-Ancak uygulama yalnızca uzaktaki URL'yi açan boş WebView olmayacaktır.
-
-Bundle içinde bulunacak:
-- HTML
-- JavaScript
-- CSS
-- temel assetler
-- core level/config
-
-İleride sunucudan alınabilecek:
-- level JSON
-- balance config
-- A/B config
-- içerik metadata
-
-Ana oyun internet kesildiğinde de oynanabilir kalmalıdır.
-
----
-
-# 21. PWA — IMPLEMENTED
-
-Mevcut web prototipinde:
-- manifest vardır
-- portrait standalone yönü tanımlıdır
-- service worker vardır
-- core dosyalar cache edilir
-- HTTPS altında telefona kurulabilir yapı hazırlanmıştır
-
-PWA, Store uygulamasının alternatifi değil; aynı motorun web dağıtım katmanıdır.
-
----
-
-# 22. VISUAL RULE
-
-Şimdilik:
-- Poma yok
-- basit renkli blok
-- koyu sade arka plan
-- okunaklı grid
-- yaklaşan SHIFT için kırmızı üst sıra uyarısı
-- geçerli/geçersiz drop preview
-
-Motor doğrulanmadan pahalı art/animasyon üretimi yapılmaz.
-
----
-
-# 23. NEXT DEVELOPMENT ORDER
-
-1. gerçek cihazda drag/drop hissini test et
-2. Level 1–10 denge testini yap
-3. morph/line-clear görsel feedback'i güçlendir
-4. test telemetrisini gerçek oyunculardan topla
-5. GO / NO-GO verisini değerlendir
-6. motor geçerse Poma görsel katmanını tasarla
-7. sonra native Capacitor paketini aç
-8. monetization ancak retention sinyali sonrasında
-
----
-
-# 24. FINAL V0.2 RULE
-
-Şu anda başarı kriteri:
-
+- güzel Poma artwork değil
 - Store build değil
-- Poma görseli değil
 - reklam geliri değil
-- çok özellik değil
+- özellik sayısı değil
 
-**Oyuncunun kendi isteğiyle “bir level daha” demesi.**
+**Oyuncunun baskıya rağmen oyunu adil bulması ve kendi isteğiyle bir sonraki levele geçmesi.**
