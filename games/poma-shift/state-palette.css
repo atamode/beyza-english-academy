@@ -1,0 +1,131 @@
+:root {
+  --ps-bg-deep: #050c1d;
+  --ps-bg: #091735;
+  --ps-panel: rgba(15, 34, 69, .90);
+  --ps-panel-soft: rgba(18, 42, 82, .78);
+  --ps-blue: #5aa9ff;
+  --ps-blue-soft: #9cc8ff;
+  --ps-teal: #45d6b4;
+  --ps-teal-soft: #a5f3df;
+  --ps-amber: #ffbf56;
+  --ps-red: #ff5369;
+  --ps-red-soft: #ffd9df;
+}
+
+/* STATE LANGUAGE
+   calm/control = blue
+   positive/clear = teal
+   approaching risk = amber
+   critical danger = red
+*/
+html,
+body {
+  background: radial-gradient(circle at 50% -8%, #1a3973 0%, #0b1c42 32%, var(--ps-bg-deep) 100%);
+}
+
+.game-card {
+  border-color: rgba(90, 169, 255, .22);
+  background: #08152f;
+  box-shadow: 0 24px 68px rgba(0, 0, 0, .34), 0 0 28px rgba(67, 135, 230, .06);
+}
+
+.topbar > div,
+.tool-button,
+.series-timer {
+  background: var(--ps-panel);
+  border-color: rgba(112, 168, 255, .19);
+}
+
+.label,
+.series-timer-copy span {
+  color: #86a9df;
+}
+
+.topbar strong,
+.series-timer-copy strong,
+.tool-button {
+  color: #e9f2ff;
+}
+
+.goal-pill {
+  background: rgba(69, 214, 180, .08);
+  border-color: rgba(69, 214, 180, .20);
+}
+
+.goal-pill span {
+  color: #61dcbc;
+}
+
+.goal-pill strong {
+  color: #e9fff8;
+}
+
+/* Relaxed/normal timer: cool blue -> teal, never red. */
+.series-timer-track {
+  background: #1a3158;
+}
+
+.series-timer-track i {
+  background: linear-gradient(90deg, var(--ps-blue), var(--ps-teal));
+}
+
+.series-timer.is-rush:not(.is-hot) {
+  border-color: rgba(90, 169, 255, .34);
+  background: rgba(11, 31, 65, .92);
+}
+
+.series-timer.is-rush:not(.is-hot) .series-timer-copy strong {
+  color: var(--ps-blue-soft);
+}
+
+/* Warning stays amber. */
+.game-card[data-shift-threat="1"] {
+  border-color: rgba(255, 191, 86, .26);
+}
+
+.topbar > div[data-shift-threat="1"] {
+  border-color: rgba(255, 191, 86, .62);
+  background: rgba(75, 51, 14, .88);
+}
+
+.topbar > div[data-shift-threat="1"] .label,
+.topbar > div[data-shift-threat="1"] strong {
+  color: #ffdc98;
+}
+
+/* Red is reserved for real critical danger only. */
+.series-timer.is-hot {
+  border-color: rgba(255, 83, 105, .62);
+  background: rgba(90, 16, 35, .58);
+}
+
+.series-timer.is-hot .series-timer-copy strong {
+  color: #ffb6c0;
+}
+
+.series-timer.is-hot .series-timer-track i {
+  background: linear-gradient(90deg, #ffb34d, var(--ps-red));
+}
+
+.game-card[data-shift-threat="2"] {
+  border-color: rgba(255, 83, 105, .42);
+  box-shadow: 0 24px 68px rgba(0, 0, 0, .36), 0 0 30px rgba(255, 58, 84, .08);
+}
+
+/* Positive reward language: teal, not red. */
+.line-burst {
+  box-shadow: 0 0 12px #fff, 0 0 30px rgba(69, 214, 180, .92), 0 0 56px rgba(90, 169, 255, .42);
+}
+
+.shift-badge {
+  border-color: rgba(69, 214, 180, .44);
+  box-shadow: 0 12px 42px rgba(0,0,0,.35), 0 0 38px rgba(69,214,180,.20);
+}
+
+.shift-badge strong {
+  text-shadow: 0 0 20px rgba(69,214,180,.74);
+}
+
+.shift-badge span {
+  color: var(--ps-teal-soft);
+}
