@@ -1,28 +1,34 @@
 (() => {
   const screen = document.querySelector('.modal-screen');
-  if (!screen) return;
+  const content = screen?.querySelector('[data-modal-content]');
+  if (!screen || !content) return;
 
-  let delaying = false;
+  let revealTimer = 0;
+  let lastWinKey = '';
 
-  const observer = new MutationObserver(() => {
-    if (delaying || screen.hidden) return;
-    const winView = screen.querySelector('.win-view');
+  function delayWinOnce() {
+    const winView = content.querySelector('.win-view');
     if (!winView) return;
 
-    // Level completion is caused by the target SHIFT. Keep the transformed board
-    // visible long enough for the player to actually perceive the widen/lower mechanic.
-    delaying = true;
-    screen.hidden = true;
-    window.setTimeout(() => {
-      if (screen.querySelector('.win-view')) screen.hidden = false;
-      delaying = false;
-    }, 420);
-  });
+    // showWin() renders the result after the final SHIFT. Delay that result only once
+    // so the transformed board remains visible, then leave the modal system alone.
+    const key = `${state.level}:${state.shiftsDone}:${state.levelStartedAt}`;
+    if (key === lastWinKey) return;
+    lastWinKey = key;
 
-  observer.observe(screen, {
+    window.clearTimeout(revealTimer);
+    screen.hidden = true;
+    revealTimer = window.setTimeout(() => {
+      // Only reopen if this same win screen is still the active modal.
+      if (content.querySelector('.win-view')) screen.hidden = false;
+    }, 420);
+  }
+
+  // Watch only modal content changes. Do NOT observe the hidden attribute: doing so
+  // causes an open -> hide -> open loop and breaks Next Level / Map progression.
+  const observer = new MutationObserver(() => delayWinOnce());
+  observer.observe(content, {
     childList: true,
     subtree: true,
-    attributes: true,
-    attributeFilter: ['hidden'],
   });
 })();
