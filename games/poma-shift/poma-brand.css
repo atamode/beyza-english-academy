@@ -1,0 +1,91 @@
+.tutorial-hint.has-poma {
+  grid-template-columns: 42px auto 1fr;
+}
+.poma-tutorial-avatar {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  align-self: center;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.22));
+}
+
+.level-node.has-poma {
+  overflow: visible;
+}
+.poma-map-avatar {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  right: -42px;
+  top: -30px;
+  pointer-events: none;
+  filter: drop-shadow(0 7px 10px rgba(0,0,0,.32));
+  animation: pomaMapFloat 1.8s ease-in-out infinite;
+}
+
+.poma-result-avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  margin: -8px auto 4px;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.28));
+}
+.poma-result-avatar.poma-win {
+  animation: pomaWin .62s cubic-bezier(.2,.8,.2,1);
+}
+.poma-result-avatar.poma-fail {
+  opacity: .82;
+  transform: rotate(-5deg) scale(.9);
+  filter: grayscale(.12) drop-shadow(0 10px 18px rgba(0,0,0,.28));
+}
+
+.level-node.rush {
+  border-color: rgba(255,196,76,.9);
+  box-shadow: 0 0 0 3px rgba(255,196,76,.10), 0 8px 20px rgba(0,0,0,.28);
+}
+.level-node.rush small {
+  position: absolute;
+  right: -6px;
+  bottom: -5px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #1a2340;
+  color: #ffd166;
+  font-size: 12px;
+  border: 2px solid #ffd166;
+}
+.series-timer.is-rush {
+  border-color: rgba(255,209,102,.34);
+  background: rgba(92,64,10,.24);
+}
+.series-timer.is-rush .series-timer-copy span,
+.series-timer.is-rush .series-timer-copy strong {
+  color: #ffd166;
+}
+
+@keyframes pomaMapFloat {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-5px) rotate(2deg); }
+}
+@keyframes pomaWin {
+  0% { opacity: 0; transform: translateY(12px) scale(.78); }
+  58% { opacity: 1; transform: translateY(-4px) scale(1.06); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 360px) {
+  .tutorial-hint.has-poma { grid-template-columns: 34px auto 1fr; }
+  .poma-tutorial-avatar { width: 34px; height: 34px; }
+  .poma-map-avatar { width: 40px; height: 40px; right: -34px; top: -24px; }
+  .poma-result-avatar { width: 82px; height: 82px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poma-map-avatar,
+  .poma-result-avatar.poma-win { animation: none !important; }
+}
