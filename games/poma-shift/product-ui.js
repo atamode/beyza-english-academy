@@ -4,7 +4,6 @@
     sound: 'pomaShift.sound.v1',
   };
 
-  const shell = document.querySelector('.app-shell');
   const topbar = document.querySelector('.topbar');
   const card = document.querySelector('.game-card');
   const moveValue = document.getElementById('moveValue');
@@ -59,6 +58,9 @@
   let trayTimerEndsAt = 0;
   let trayTimerDuration = 0;
   let trayTimerRunning = false;
+  let pausedTimerRemaining = 0;
+  let modalPausesTimer = false;
+  let visibilityPaused = false;
 
   function moveLimitFor(level) {
     const config = levelConfig(level);
@@ -200,16 +202,42 @@
     }
   }
 
-  function stopTrayTimer({ ready = true } = {}) {
-    trayTimerRunning = false;
-    trayTimerEndsAt = 0;
-    window.clearInterval(trayTimerHandle);
-    trayTimerHandle = 0;
+  function renderTimerWaiting(ready = true) {
     const windowMs = trayWindowForLevel(state.level);
     seriesTimer.hidden = false;
     seriesTime.textContent = windowMs === 0 ? 'SERBEST' : ready ? 'HAZIR' : '—';
     seriesBar.style.transform = 'scaleX(1)';
-    seriesTimer.classList.remove('is-hot', 'is-expired');
+    seriesTimer.classList.remove('is-hot', 'is-expired', 'is-paused');
+  }
+
+  function stopTrayTimer({ ready = true } = {}) {
+    trayTimerRunning = false;
+    trayTimerEndsAt = 0;
+    pausedTimerRemaining = 0;
+    window.clearInterval(trayTimerHandle);
+    trayTimerHandle = 0;
+    renderTimerWaiting(ready);
+  }
+
+  function pauseTrayTimer() {
+    if (!trayTimerRunning) return;
+    pausedTimerRemaining = Math.max(0, trayTimerEndsAt - performance.now());
+    trayTimerRunning = false;
+    window.clearInterval(trayTimerHandle);
+    trayTimerHandle = 0;
+    seriesTimer.classList.add('is-paused');
+    seriesTime.textContent = 'DURDU';
+  }
+
+  function resumeTrayTimer() {
+    if (trayTimerRunning || pausedTimerRemaining <= 0 || state.status !== 'playing') return;
+    trayTimerEndsAt = performance.now() + pausedTimerRemaining;
+    pausedTimerRemaining = 0;
+    trayTimerRunning = true;
+    seriesTimer.classList.remove('is-paused');
+    window.clearInterval(trayTimerHandle);
+    trayTimerHandle = window.setInterval(updateTrayTimer, 50);
+    updateTrayTimer();
   }
 
   function updateTrayTimer() {
@@ -233,11 +261,17 @@
     if (!duration || trayTimerRunning || state.status !== 'playing') return;
     trayTimerDuration = duration;
     trayTimerEndsAt = performance.now() + duration;
+    pausedTimerRemaining = 0;
     trayTimerRunning = true;
-    seriesTimer.classList.remove('is-expired');
+    seriesTimer.classList.remove('is-expired', 'is-paused');
     window.clearInterval(trayTimerHandle);
     trayTimerHandle = window.setInterval(updateTrayTimer, 50);
     updateTrayTimer();
+  }
+
+  function extendActiveTimer(ms) {
+    if (trayTimerRunning) trayTimerEndsAt += ms;
+    else if (pausedTimerRemaining > 0) pausedTimerRemaining += ms;
   }
 
   function expireTray() {
@@ -309,12 +343,20 @@
     goalValue.textContent = remaining === 1 ? '1 SHIFT' : `${remaining} SHIFT`;
   }
 
-  function hideModal() {
+  function hideModal({ resumeTimer = true } = {}) {
     screen.hidden = true;
     content.innerHTML = '';
+    if (modalPausesTimer) {
+      modalPausesTimer = false;
+      if (resumeTimer && !visibilityPaused) resumeTrayTimer();
+    }
   }
 
-  function showModal(markup, { closable = true } = {}) {
+  function showModal(markup, { closable = true, pauseTimer = false } = {}) {
+    if (pauseTimer) {
+      pauseTrayTimer();
+      modalPausesTimer = true;
+    }
     content.innerHTML = markup;
     screen.hidden = false;
     screen.classList.toggle('no-close', !closable);
@@ -329,7 +371,6 @@
     const maxVisible = Math.max(30, Math.min(100, highest + 15));
     const nodes = [];
 
-    // Render high levels first so Level 1 is physically at the bottom and progression climbs upward.
     for (let level = maxVisible; level >= 1; level -= 1) {
       const locked = level > highest;
       const complete = level < highest;
@@ -352,7 +393,7 @@
   }
 
   function showMap() {
-    showModal(createLevelMapMarkup());
+    showModal(createLevelMapMarkup(), { pauseTimer: state.status === 'playing' });
     const activeNode = content.querySelector('.level-node.active') || content.querySelector('.level-node:not(.locked):last-child');
     requestAnimationFrame(() => activeNode?.scrollIntoView({ block: 'center', behavior: 'smooth' }));
   }
@@ -414,17 +455,17 @@
     if (target.matches('[data-level]')) {
       const level = Number(target.dataset.level);
       if (!Number.isFinite(level)) return;
-      hideModal();
+      hideModal({ resumeTimer: false });
       setupLevel(level);
       return;
     }
     if (target.matches('[data-next]')) {
-      hideModal();
+      hideModal({ resumeTimer: false });
       setupLevel(state.level + 1);
       return;
     }
     if (target.matches('[data-retry]')) {
-      hideModal();
+      hideModal({ resumeTimer: false });
       setupLevel(state.level);
       return;
     }
@@ -432,6 +473,16 @@
   });
 
   document.addEventListener('pointerdown', () => ensureAudio(), { once: true, passive: true });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      visibilityPaused = true;
+      pauseTrayTimer();
+    } else {
+      visibilityPaused = false;
+      if (!modalPausesTimer) resumeTrayTimer();
+    }
+  });
 
   const baseMetric = metric;
   metric = function productMetric(name, payload = {}) {
@@ -444,6 +495,10 @@
       if (usedCount >= 3) stopTrayTimer();
       updateMoveHud();
     }
+
+    // Do not charge the player for mandatory feedback animations.
+    if (name === 'line_clear') extendActiveTimer(130);
+    if (name === 'shift') extendActiveTimer(230);
 
     if (!tutorialDone() && state.level === 1) {
       if (name === 'piece_placed' && tutorialStep === 0) showTutorial(1);
@@ -466,7 +521,7 @@
 
   const baseSetupLevel = setupLevel;
   setupLevel = function productSetupLevel(level = state.level) {
-    hideModal();
+    hideModal({ resumeTimer: false });
     stopTrayTimer({ ready: false });
     currentMoveLimit = moveLimitFor(level);
     const result = baseSetupLevel(level);
