@@ -22,11 +22,23 @@
     if (navigator.vibrate) navigator.vibrate(pattern);
   }
 
+  let inputUnlockAt = 0;
+  let inputUnlockTimer = 0;
+
+  function releaseInputWhenReady() {
+    const remaining = inputUnlockAt - performance.now();
+    if (remaining > 4) {
+      inputUnlockTimer = window.setTimeout(releaseInputWhenReady, remaining);
+      return;
+    }
+    gameCanvas.style.pointerEvents = '';
+  }
+
   function briefInputLock(ms) {
+    inputUnlockAt = Math.max(inputUnlockAt, performance.now() + ms);
     gameCanvas.style.pointerEvents = 'none';
-    window.setTimeout(() => {
-      if (state.status === 'playing') gameCanvas.style.pointerEvents = '';
-    }, ms);
+    window.clearTimeout(inputUnlockTimer);
+    inputUnlockTimer = window.setTimeout(releaseInputWhenReady, Math.max(0, inputUnlockAt - performance.now()));
   }
 
   // Phone UX: keep the dragged piece above the finger so the target cells remain visible.
