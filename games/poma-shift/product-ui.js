@@ -21,7 +21,7 @@
   tutorial.className = 'tutorial-hint';
   tutorial.hidden = true;
   tutorial.innerHTML = '<strong></strong><span></span>';
-  card.appendChild(tutorial);
+  toolbar.insertAdjacentElement('afterend', tutorial);
 
   const screen = document.createElement('div');
   screen.className = 'modal-screen';
@@ -82,30 +82,6 @@
     oscillator.stop(start + duration + 0.02);
   }
 
-  function playSound(name, payload = {}) {
-    if (!soundEnabled) return;
-    if (name === 'piece_placed') tone(260, 0.045, 'sine', 0.018);
-    if (name === 'invalid_drop') tone(120, 0.08, 'square', 0.018);
-    if (name === 'line_clear') {
-      tone(420, 0.08, 'triangle', 0.035);
-      tone(payload.cleared > 1 ? 720 : 590, 0.10, 'triangle', 0.03, 0.055);
-    }
-    if (name === 'shift') {
-      tone(260, 0.08, 'sine', 0.035);
-      tone(390, 0.09, 'sine', 0.035, 0.06);
-      tone(620, 0.13, 'sine', 0.032, 0.13);
-    }
-    if (name === 'level_complete') {
-      tone(440, 0.09, 'triangle', 0.035);
-      tone(660, 0.10, 'triangle', 0.035, 0.08);
-      tone(880, 0.16, 'triangle', 0.032, 0.17);
-    }
-    if (name === 'level_fail') {
-      tone(230, 0.12, 'sawtooth', 0.022);
-      tone(150, 0.18, 'sawtooth', 0.018, 0.10);
-    }
-  }
-
   function tutorialDone() {
     return localStorage.getItem(UI_STORAGE.tutorial) === 'done';
   }
@@ -160,7 +136,7 @@
     const current = state.level;
     const maxVisible = Math.max(30, Math.min(100, highest + 15));
     const nodes = [];
-    for (let level = 1; level <= maxVisible; level += 1) {
+    for (let level = maxVisible; level >= 1; level -= 1) {
       const locked = level > highest;
       const complete = level < highest;
       const active = level === current;
@@ -175,7 +151,7 @@
       <div class="map-head">
         <span class="eyebrow">POMA SHIFT</span>
         <h2>Level Yolu</h2>
-        <p>Geçtiğin her bölüm seni bir sonraki düğüme taşır.</p>
+        <p>Aşağıdan başla, her bölümde yukarı çık.</p>
       </div>
       <div class="level-path">${nodes.join('')}</div>
     `;
