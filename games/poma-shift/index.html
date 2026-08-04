@@ -16,7 +16,7 @@
   <main class="app-shell">
     <header class="topbar">
       <div><span class="label">LEVEL</span><strong id="levelValue">1</strong></div>
-      <div><span class="label">SKOR</span><strong id="scoreValue">0</strong></div>
+      <div><span class="label">HAMLE</span><strong id="moveValue">0/18</strong></div>
       <div><span class="label">SHIFT</span><strong id="shiftValue">0/3</strong></div>
       <div><span class="label">TAHTA</span><strong id="boardValue">6×12</strong></div>
     </header>
@@ -27,6 +27,7 @@
 
     <section class="hud">
       <p id="message">3 parçadan birini sürükle ve tahtaya bırak.</p>
+      <span id="scoreValue" hidden>0</span>
       <div class="actions">
         <button id="restartBtn" hidden>Tekrar Dene</button>
         <button id="nextBtn" hidden>Sonraki Level</button>
