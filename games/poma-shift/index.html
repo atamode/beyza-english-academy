@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./character-art.css" />
   <link rel="stylesheet" href="./launch-polish.css" />
   <link rel="stylesheet" href="./boss-ui.css" />
+  <link rel="stylesheet" href="./dev-panel.css" />
 </head>
 <body>
   <main class="app-shell">
@@ -56,6 +57,7 @@
   <script src="./boss-ui.js" defer></script>
   <script src="./timed-level-guard.js" defer></script>
   <script src="./analytics-bridge.js" defer></script>
+  <script src="./dev-panel.js" defer></script>
   <script>
     if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === '127.0.0.1' || location.hostname === 'localhost')) {
       window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
