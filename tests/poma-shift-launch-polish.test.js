@@ -21,7 +21,7 @@ test('booster dock stays hidden before first unlock and becomes compact on mobil
   assert.match(polish, /Object\.values\(unlocked\)\.filter\(Boolean\)\.length/);
   assert.match(polish, /dock\.hidden = count === 0/);
   assert.match(polish, /pomaShift\.powerDockOpen\.v1/);
-  assert.match(polish, /data\.powerToggle/);
+  assert.match(polish, /dataset\.powerToggle/);
   assert.match(polish, /min-width: 700px/);
 });
 
