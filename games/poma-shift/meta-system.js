@@ -73,6 +73,7 @@
     lastFailReason: 'unknown',
     levelFirstClear: true,
     interstitialPending: false,
+    lifeChargedForAttempt: false,
   };
 
   function safeMetaRead() {
@@ -750,10 +751,14 @@
     if (state.status === 'lost') return;
     runtime.lastFailReason = reasonCode;
     stopSugarCloud();
-    consumeLife();
-    const result = baseLose(reason, reasonCode);
-    metric('life_consumed', { lives: meta.lives, reason: reasonCode });
-    return result;
+    if (!runtime.lifeChargedForAttempt) {
+      consumeLife();
+      runtime.lifeChargedForAttempt = true;
+      metric('life_consumed', { lives: meta.lives, reason: reasonCode });
+    } else {
+      metric('continued_attempt_failed', { lives: meta.lives, reason: reasonCode });
+    }
+    return baseLose(reason, reasonCode);
   };
 
   async function rewardedContinue() {
@@ -921,6 +926,7 @@
     runtime.pendingPower = null;
     runtime.lastFailReason = 'unknown';
     runtime.levelFirstClear = (getProgress().highestUnlocked || 1) <= level;
+    runtime.lifeChargedForAttempt = false;
     syncUnlocks();
     syncMetaUi();
     if (isSugarBoss(level)) startSugarCloud();
