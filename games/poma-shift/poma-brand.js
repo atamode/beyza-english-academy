@@ -1,12 +1,13 @@
 (() => {
   const POMA_SRC = '../../assets/brand/poma-academy/poma-main-wave.png';
+  const SAD_POMA_SRC = '../../assets/brand/poma-academy/poma-sad.png';
   const tutorial = document.querySelector('.tutorial-hint');
   const modalContent = document.querySelector('[data-modal-content]');
 
-  function makePoma(className, alt = 'Poma') {
+  function makePoma(className, alt = 'Poma', src = POMA_SRC) {
     const img = document.createElement('img');
     img.className = className;
-    img.src = POMA_SRC;
+    img.src = src;
     img.alt = alt;
     img.loading = 'eager';
     img.decoding = 'async';
@@ -41,7 +42,7 @@
       win.prepend(makePoma('poma-result-avatar poma-win', 'Poma kutluyor'));
     }
     if (fail && !fail.querySelector('.poma-result-avatar')) {
-      fail.prepend(makePoma('poma-result-avatar poma-fail', 'Poma yeniden denemeni bekliyor'));
+      fail.prepend(makePoma('poma-result-avatar poma-fail poma-result-sad', 'Üzgün Poma', SAD_POMA_SRC));
     }
   }
 
