@@ -11,15 +11,31 @@
   <title>Poma Shift</title>
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./threat.css" />
-  <link rel="stylesheet" href="./poma-brand.css" />
-  <link rel="stylesheet" href="./state-palette.css" />
-  <link rel="stylesheet" href="./meta-system.css" />
-  <link rel="stylesheet" href="./character-art.css" />
-  <link rel="stylesheet" href="./launch-polish.css" />
-  <link rel="stylesheet" href="./boss-ui.css" />
-  <link rel="stylesheet" href="./dev-panel.css" />
+  <link rel="stylesheet" href="./styles.css?v=31" />
+  <link rel="stylesheet" href="./threat.css?v=31" />
+  <link rel="stylesheet" href="./poma-brand.css?v=31" />
+  <link rel="stylesheet" href="./state-palette.css?v=31" />
+  <link rel="stylesheet" href="./meta-system.css?v=31" />
+  <link rel="stylesheet" href="./character-art.css?v=31" />
+  <link rel="stylesheet" href="./launch-polish.css?v=31" />
+  <link rel="stylesheet" href="./boss-ui.css?v=31" />
+  <link rel="stylesheet" href="./dev-panel.css?v=31" />
+  <script>
+    (() => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          registrations
+            .filter((registration) => registration.scope.includes('/games/poma-shift/'))
+            .forEach((registration) => registration.unregister().catch(() => {}));
+        }).catch(() => {});
+      }
+      if ('caches' in window) {
+        caches.keys().then((keys) => Promise.all(
+          keys.filter((key) => key.startsWith('poma-shift-')).map((key) => caches.delete(key)),
+        )).catch(() => {});
+      }
+    })();
+  </script>
 </head>
 <body>
   <main class="app-shell">
@@ -43,30 +59,25 @@
       </div>
     </section>
   </main>
-  <script src="./game.js" defer></script>
-  <script src="./mobile-layout.js" defer></script>
-  <script src="./game-feel.js" defer></script>
-  <script src="./rush-disable.js" defer></script>
-  <script src="./product-ui.js" defer></script>
-  <script src="./win-reveal.js" defer></script>
-  <script src="./threat-system.js" defer></script>
-  <script src="./timer-heartbeat.js" defer></script>
-  <script src="./poma-brand.js" defer></script>
-  <script src="./meta-system.js" defer></script>
-  <script src="./character-art.js" defer></script>
-  <script src="./launch-polish.js" defer></script>
-  <script src="./boss-ui.js" defer></script>
-  <script src="./timed-level-guard.js" defer></script>
-  <script src="./analytics-bridge.js" defer></script>
-  <script src="./dev-panel.js" defer></script>
-  <script src="./combo-system.js" defer></script>
-  <script src="./rush-mode.js?v=30" defer></script>
-  <script src="./ui-hotfix.js?v=30" defer></script>
-  <script src="./audio-mix.js" defer></script>
-  <script>
-    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === '127.0.0.1' || location.hostname === 'localhost')) {
-      navigator.serviceWorker.register('./sw.js?v=30').catch(() => {});
-    }
-  </script>
+  <script src="./game.js?v=31" defer></script>
+  <script src="./mobile-layout.js?v=31" defer></script>
+  <script src="./game-feel.js?v=31" defer></script>
+  <script src="./rush-disable.js?v=31" defer></script>
+  <script src="./product-ui.js?v=31" defer></script>
+  <script src="./win-reveal.js?v=31" defer></script>
+  <script src="./threat-system.js?v=31" defer></script>
+  <script src="./timer-heartbeat.js?v=31" defer></script>
+  <script src="./poma-brand.js?v=31" defer></script>
+  <script src="./meta-system.js?v=31" defer></script>
+  <script src="./character-art.js?v=31" defer></script>
+  <script src="./launch-polish.js?v=31" defer></script>
+  <script src="./boss-ui.js?v=31" defer></script>
+  <script src="./timed-level-guard.js?v=31" defer></script>
+  <script src="./analytics-bridge.js?v=31" defer></script>
+  <script src="./dev-panel.js?v=31" defer></script>
+  <script src="./combo-system.js?v=31" defer></script>
+  <script src="./rush-mode.js?v=31" defer></script>
+  <script src="./ui-hotfix.js?v=31" defer></script>
+  <script src="./audio-mix.js?v=31" defer></script>
 </body>
 </html>
