@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.24';
+const CACHE = 'poma-shift-v0.1.25';
 const CORE = [
   './',
   './index.html',
@@ -27,6 +27,7 @@ const CORE = [
   './timed-level-guard.js',
   './analytics-bridge.js',
   './dev-panel.js',
+  './combo-system.js',
   './GAME_SPEC.md',
   './META_SPEC.md',
   '../../assets/brand/poma-academy/poma-main-wave.png',
