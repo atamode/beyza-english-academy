@@ -11,7 +11,8 @@ test('Poma Shift public page loads core game and meta UI', async ({ page }) => {
   await expect(page.locator('#moveValue')).toHaveText(/\d+\/\d+/);
   await expect(page.locator('[data-meta-coins]')).toHaveText(/\d+/);
   await expect(page.locator('[data-meta-life-count]')).toContainText('/3');
-  await expect(page.locator('.power-dock')).toBeVisible();
+  await expect(page.locator('.power-dock')).toBeAttached();
+  await expect(page.locator('.power-dock')).toBeHidden();
 
   const spriteResponse = await page.request.get('/assets/brand/poma-academy/poma-shift-character-sprite.webp');
   expect(spriteResponse.ok()).toBe(true);
