@@ -175,9 +175,6 @@
     return level >= FIRST_BOSS_LEVEL && (level - FIRST_BOSS_LEVEL) % BOSS_STEP === 0;
   }
 
-  // 10,000+ level support: keep the first 10 hand-tuned levels, then use a
-  // deterministic difficulty wave. The core rules never change; only the
-  // starting board, target SHIFT count and hard-shape pressure vary.
   const baseLevelConfig = levelConfig;
   levelConfig = function scalableLevelConfig(level) {
     if (level <= 10) return baseLevelConfig(level);
@@ -953,7 +950,7 @@
   function showLongMap(centerLevel = state.level) {
     const progress = getProgress();
     const highest = Math.max(1, progress.highestUnlocked || 1);
-    const center = Math.max(1, Math.min(Math.max(highest, centerLevel), centerLevel));
+    const center = Math.max(1, Number(centerLevel) || state.level);
     const start = Math.max(1, center - 25);
     const end = Math.max(60, Math.min(Math.max(highest + 15, center + 35), center + 60));
     const nodes = [];
@@ -1055,6 +1052,8 @@
     showLives();
   }
 
+  const devEnabled = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || new URLSearchParams(location.search).has('dev');
+
   window.PomaShiftMeta = {
     snapshot() {
       return JSON.parse(JSON.stringify({ meta, runtime: { ...runtime, sugarTimer: Boolean(runtime.sugarTimer) } }));
@@ -1063,5 +1062,32 @@
     boosters: BOOSTERS,
     isBossLevel,
     claimReturnGift,
+    dev: devEnabled ? {
+      goto(level) {
+        setupLevel(Math.max(1, Number(level) || 1));
+      },
+      unlockThrough(level) {
+        const target = Math.max(1, Number(level) || 1);
+        safeWrite(STORAGE_KEYS.progress, { highestUnlocked: target + 1, lastLevel: target });
+        syncUnlocks();
+        syncMetaUi();
+        return getProgress();
+      },
+      setCoins(value) {
+        meta.coins = Math.max(0, Math.floor(Number(value) || 0));
+        saveMeta();
+        syncMetaUi();
+      },
+      setLives(value) {
+        meta.lives = Math.max(0, Math.min(MAX_LIVES, Math.floor(Number(value) || 0)));
+        if (meta.lives > 0) meta.lifeReadyAt = 0;
+        saveMeta();
+        syncMetaUi();
+      },
+      resetMeta() {
+        localStorage.removeItem(META_KEYS.economy);
+        location.reload();
+      },
+    } : null,
   };
 })();
