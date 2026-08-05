@@ -1,0 +1,100 @@
+.boss-hud {
+  position: absolute;
+  z-index: 8;
+  left: 10px;
+  right: 10px;
+  top: 8px;
+  min-height: 48px;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 62px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 9px;
+  border: 1px solid rgba(255, 143, 200, .38);
+  border-radius: 15px;
+  background: linear-gradient(180deg, rgba(67, 27, 65, .94), rgba(35, 21, 53, .94));
+  box-shadow: 0 10px 25px rgba(0,0,0,.26), inset 0 1px rgba(255,255,255,.05);
+  color: #fff;
+  pointer-events: none;
+}
+
+.boss-hud[hidden] { display: none !important; }
+
+.boss-hud-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  background: rgba(255, 143, 200, .14);
+  animation: sugar-cloud-float 1.8s ease-in-out infinite alternate;
+}
+
+.boss-hud-copy { min-width: 0; display: grid; gap: 1px; }
+.boss-hud-copy span {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  color: #ffb9dc;
+}
+.boss-hud-copy strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.boss-hud-timer {
+  position: relative;
+  height: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(4, 10, 25, .42);
+  display: grid;
+  place-items: center;
+}
+.boss-hud-timer i {
+  position: absolute;
+  inset: 0;
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(255,143,200,.28), rgba(255,143,200,.72));
+  animation: sugar-cloud-countdown 3s linear infinite;
+}
+.boss-hud-timer small {
+  position: relative;
+  z-index: 1;
+  font-size: 9px;
+  font-weight: 900;
+  color: #fff;
+}
+.boss-hud-timer.pulse-reset i { animation-name: sugar-cloud-countdown-reset; }
+.boss-hud.is-paused .boss-hud-timer i,
+.boss-hud.is-paused .boss-hud-icon { animation-play-state: paused; }
+.boss-hud.is-paused .boss-hud-timer small::after { content: ' · DURDU'; }
+
+@keyframes sugar-cloud-countdown {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes sugar-cloud-countdown-reset {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes sugar-cloud-float {
+  from { transform: translateY(-1px) rotate(-2deg); }
+  to { transform: translateY(2px) rotate(2deg); }
+}
+
+@media (max-width: 480px) {
+  .boss-hud {
+    left: 7px;
+    right: 7px;
+    grid-template-columns: 32px minmax(0, 1fr) 54px;
+    min-height: 42px;
+    padding: 5px 7px;
+  }
+  .boss-hud-icon { width: 30px; height: 30px; font-size: 20px; }
+  .boss-hud-copy strong { font-size: 10px; }
+  .boss-hud-copy span { font-size: 7px; }
+}
