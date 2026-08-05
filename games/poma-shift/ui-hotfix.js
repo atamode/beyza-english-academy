@@ -1,6 +1,17 @@
 (() => {
   const SAD_POMA_SRC = '../../assets/brand/poma-academy/poma-sad.png';
 
+  function normalizeGameCopy(value) {
+    if (typeof value !== 'string') return value;
+    return value
+      .replace(/RUSH tavanındaki 2 tehlike satırına blok değdi\./gi, 'RUSH: Blok loft bölgesine değdi.')
+      .replace(/Tavan satırına blok değdi\./gi, 'Blok lofta değdi.')
+      .replace(/Tavan bloklara çarptı\./gi, 'Blok lofta değdi.')
+      .replace(/TAVAN/g, 'LOFT')
+      .replace(/Tavan/g, 'Loft')
+      .replace(/tavan/g, 'loft');
+  }
+
   const style = document.createElement('style');
   style.textContent = `
     .meta-modal-close {
@@ -37,16 +48,50 @@
       vertical-align: middle;
     }
 
+    .fail-view {
+      gap: 8px !important;
+      padding-top: 2px !important;
+      padding-bottom: 2px !important;
+    }
+
+    .fail-view .result-icon {
+      display: none !important;
+    }
+
     .fail-view .poma-result-sad {
-      display: block;
-      width: 104px;
-      height: 112px;
-      object-fit: contain;
-      margin: -8px auto 2px;
-      border: 0;
-      border-radius: 0;
-      background: transparent;
-      filter: drop-shadow(0 10px 18px rgba(0,0,0,.25));
+      display: block !important;
+      width: 88px !important;
+      height: 96px !important;
+      object-fit: contain !important;
+      margin: -8px auto 0 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: drop-shadow(0 9px 16px rgba(0,0,0,.24));
+    }
+
+    .fail-view .eyebrow {
+      margin-top: -2px !important;
+    }
+
+    .fail-view h2 {
+      margin: 2px 0 0 !important;
+      line-height: 1.05 !important;
+    }
+
+    .fail-view > p {
+      margin: 2px 0 !important;
+    }
+
+    .fail-view .continue-ad-action,
+    .fail-view .primary-action,
+    .fail-view .secondary-action {
+      margin-top: 6px !important;
+    }
+
+    .fail-view .fail-life-line {
+      margin: 2px 0 0 !important;
     }
 
     @media (max-width: 699px) {
@@ -56,17 +101,18 @@
         font-size: 22px !important;
       }
       .fail-view .poma-result-sad {
-        width: 74px;
-        height: 82px;
-        margin: -5px auto 0;
+        width: 72px !important;
+        height: 78px !important;
+        margin: -5px auto -1px !important;
       }
     }
 
     @media (max-width: 699px) and (max-height: 700px) {
       .fail-view .poma-result-sad {
-        width: 60px;
-        height: 66px;
+        width: 60px !important;
+        height: 64px !important;
       }
+      .fail-view { gap: 5px !important; }
     }
   `;
   document.head.appendChild(style);
@@ -101,26 +147,41 @@
     });
   }
 
+  function patchVisibleCopy(root = document) {
+    const nodes = [];
+    if (root.nodeType === Node.TEXT_NODE) nodes.push(root);
+    if (root.nodeType === Node.ELEMENT_NODE || root.nodeType === Node.DOCUMENT_NODE) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      let node = walker.nextNode();
+      while (node) {
+        nodes.push(node);
+        node = walker.nextNode();
+      }
+    }
+    nodes.forEach((node) => {
+      const next = normalizeGameCopy(node.nodeValue || '');
+      if (next !== node.nodeValue) node.nodeValue = next;
+    });
+  }
+
   function patchFailArt(root = document) {
     root.querySelectorAll?.('.fail-view').forEach((view) => {
-      const art = view.querySelector('.poma-result-art');
-      if (!art || art.classList.contains('poma-result-sad')) return;
-      if (art.dataset.sadPomaPending === '1') return;
+      const currentSad = view.querySelector('.poma-result-sad');
+      if (currentSad) {
+        currentSad.classList.add('poma-result-avatar', 'poma-result-art');
+        currentSad.src = SAD_POMA_SRC;
+        currentSad.alt = 'Üzgün Poma';
+        return;
+      }
 
-      art.dataset.sadPomaPending = '1';
+      view.querySelectorAll('.poma-result-avatar, .poma-result-art').forEach((node) => node.remove());
+      view.querySelector('.result-icon')?.remove();
+
       const sad = document.createElement('img');
-      sad.className = 'poma-result-art poma-result-sad';
+      sad.className = 'poma-result-avatar poma-result-art poma-result-sad';
       sad.alt = 'Üzgün Poma';
-
-      sad.addEventListener('load', () => {
-        if (art.isConnected) art.replaceWith(sad);
-      }, { once: true });
-
-      sad.addEventListener('error', () => {
-        delete art.dataset.sadPomaPending;
-      }, { once: true });
-
       sad.src = SAD_POMA_SRC;
+      view.prepend(sad);
     });
   }
 
@@ -128,6 +189,21 @@
     patchLifeButtons(root);
     patchCloseButtons(root);
     patchFailArt(root);
+    patchVisibleCopy(root);
+  }
+
+  if (typeof setMessage === 'function') {
+    const baseSetMessage = setMessage;
+    setMessage = function loftSetMessage(text) {
+      return baseSetMessage(normalizeGameCopy(text));
+    };
+  }
+
+  if (typeof lose === 'function') {
+    const baseLose = lose;
+    lose = function loftLose(reason, reasonCode = 'unknown') {
+      return baseLose(normalizeGameCopy(reason), reasonCode);
+    };
   }
 
   // Fix tray rendering at the source: every shape scales against BOTH slot width and slot height.
@@ -165,7 +241,7 @@
   const observer = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
       mutation.addedNodes.forEach((node) => {
-        if (node instanceof Element) patchUi(node);
+        if (node instanceof Element || node.nodeType === Node.TEXT_NODE) patchUi(node);
       });
     }
   });
