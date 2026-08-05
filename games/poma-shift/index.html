@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./threat.css" />
   <link rel="stylesheet" href="./poma-brand.css" />
   <link rel="stylesheet" href="./state-palette.css" />
+  <link rel="stylesheet" href="./meta-system.css" />
 </head>
 <body>
   <main class="app-shell">
@@ -45,6 +46,7 @@
   <script src="./threat-system.js" defer></script>
   <script src="./timer-heartbeat.js" defer></script>
   <script src="./poma-brand.js" defer></script>
+  <script src="./meta-system.js" defer></script>
   <script>
     if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === '127.0.0.1' || location.hostname === 'localhost')) {
       window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
