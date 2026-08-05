@@ -89,7 +89,7 @@
 
     ctx.save();
 
-    // The top row is the ceiling-crush zone. It is never a safe auto-clear zone.
+    // The top row is the LOFT crush zone. It is never a safe auto-clear zone.
     const rowAlpha = level === 2 ? 0.38 : level === 1 ? 0.22 : 0.08;
     ctx.fillStyle = `rgba(255, 72, 92, ${rowAlpha})`;
     ctx.fillRect(x, y, w, cell);
@@ -116,8 +116,8 @@
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     const rowCopy = topRowOccupied
-      ? '⚠ TAVAN İNERSE KAYBEDERSİN'
-      : 'TAVAN SINIRI';
+      ? '⚠ LOFT İNERSE KAYBEDERSİN'
+      : 'LOFT SINIRI';
     ctx.fillText(rowCopy, x + w / 2, y + cell / 2);
 
     if (level >= 1) {
@@ -125,7 +125,7 @@
       const text = level === 2
         ? topRowOccupied
           ? 'ALARM • 1 SATIR SONRA ÇARPIŞMA'
-          : 'ALARM • 1 SATIR SONRA TAVAN İNER'
+          : 'ALARM • 1 SATIR SONRA LOFT İNER'
         : `${remaining} SATIR SONRA SHIFT`;
       const boxW = Math.min(w, level === 2 ? 238 : 174);
       const boxH = level === 2 ? 30 : 24;
