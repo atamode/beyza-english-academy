@@ -71,6 +71,15 @@ test('Poma Shift life, continue and return-gift contracts are locked', async () 
   assert.match(meta, /return 30 \* 60 \* 1000/);
 });
 
+test('rewarded continue remains in the same life attempt', async () => {
+  const meta = await read('meta-system.js');
+  assert.match(meta, /lifeChargedForAttempt: false/);
+  assert.match(meta, /if \(!runtime\.lifeChargedForAttempt\)/);
+  assert.match(meta, /runtime\.lifeChargedForAttempt = true/);
+  assert.match(meta, /runtime\.lifeChargedForAttempt = false/);
+  assert.match(meta, /continued_attempt_failed/);
+});
+
 test('Poma Shift Sugar Cloud first boss contract is locked', async () => {
   const meta = await read('meta-system.js');
   assert.match(meta, /SUGAR_INTERVAL_MS = 3000/);
