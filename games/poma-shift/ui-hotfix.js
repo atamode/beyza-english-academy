@@ -96,8 +96,8 @@
 
   function patchCloseButtons(root = document) {
     root.querySelectorAll?.('.meta-modal-close').forEach((button) => {
-      button.textContent = '×';
-      button.setAttribute('aria-label', 'Kapat');
+      if (button.textContent !== '×') button.textContent = '×';
+      if (button.getAttribute('aria-label') !== 'Kapat') button.setAttribute('aria-label', 'Kapat');
     });
   }
 
@@ -168,7 +168,6 @@
         if (node instanceof Element) patchUi(node);
       });
     }
-    patchUi(document);
   });
 
   function start() {
