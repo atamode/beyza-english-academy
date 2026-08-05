@@ -23,7 +23,10 @@ test("public smoke remains read-only and contains no privileged credentials", ()
 });
 
 test("workflow runs after successful Pages deployment without secrets", () => {
-  assert.match(workflow, /workflow_run:[\s\S]*workflows:[\s\S]*pages-build-deployment[\s\S]*types:[\s\S]*completed/);
+  assert.match(
+    workflow,
+    /workflow_run:[\s\S]*workflows:[\s\S]*(?:pages-build-deployment|Deploy Pomante Pages \(clean\))[\s\S]*types:[\s\S]*completed/,
+  );
   assert.match(workflow, /workflow_run\.conclusion == 'success'/);
   assert.doesNotMatch(workflow, /secrets\.|SUPABASE_|\.env\.e2e/i);
   assert.match(workflow, /uses: actions\/upload-artifact@v4[\s\S]*if-no-files-found: ignore/);
