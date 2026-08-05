@@ -60,12 +60,12 @@
   <script src="./analytics-bridge.js" defer></script>
   <script src="./dev-panel.js" defer></script>
   <script src="./combo-system.js" defer></script>
-  <script src="./rush-mode.js" defer></script>
-  <script src="./ui-hotfix.js" defer></script>
+  <script src="./rush-mode.js?v=30" defer></script>
+  <script src="./ui-hotfix.js?v=30" defer></script>
   <script src="./audio-mix.js" defer></script>
   <script>
     if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === '127.0.0.1' || location.hostname === 'localhost')) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+      navigator.serviceWorker.register('./sw.js?v=30').catch(() => {});
     }
   </script>
 </body>
