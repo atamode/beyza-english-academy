@@ -1,0 +1,88 @@
+(() => {
+  if (typeof window.metric !== 'function') return;
+
+  const baseMetric = window.metric;
+  let providerErrorCount = 0;
+
+  function sendToProvider(name, payload) {
+    const provider = window.PomaShiftAnalytics;
+    if (!provider || typeof provider.track !== 'function') return;
+    try {
+      const result = provider.track(name, payload);
+      if (result && typeof result.catch === 'function') {
+        result.catch(() => { providerErrorCount += 1; });
+      }
+    } catch {
+      providerErrorCount += 1;
+    }
+  }
+
+  window.metric = function analyticsMetric(name, payload = {}) {
+    baseMetric(name, payload);
+    const envelope = {
+      name,
+      level: Number(window.state?.level || 0),
+      at: Date.now(),
+      ...payload,
+    };
+    window.dispatchEvent(new CustomEvent('poma-shift:metric', { detail: envelope }));
+    sendToProvider(name, envelope);
+  };
+
+  function summarize() {
+    const events = window.PomaShiftMetrics?.export?.() || [];
+    const count = eventName => events.filter(event => event.name === eventName).length;
+    const failReasons = {};
+    const adPlacements = {};
+    let coinsEarned = 0;
+    let coinsSpent = 0;
+
+    events.forEach((event) => {
+      if (event.name === 'level_fail') {
+        const reason = event.reason || 'unknown';
+        failReasons[reason] = (failReasons[reason] || 0) + 1;
+      }
+      if (event.name === 'ad_complete') {
+        const placement = event.placement || 'unknown';
+        adPlacements[placement] = (adPlacements[placement] || 0) + 1;
+      }
+      if (event.name === 'coin_reward') coinsEarned += Number(event.reward || 0);
+      if (event.name === 'return_gift_claimed') coinsEarned += Number(event.coins || 0);
+      if (event.name === 'booster_purchase') coinsSpent += Number(event.price || 0);
+      if (event.name === 'booster_pack_purchase') coinsSpent += Number(event.price || 0);
+      if (event.name === 'life_purchase') coinsSpent += Number(event.price || 0);
+    });
+
+    const starts = count('level_start');
+    const completes = count('level_complete');
+    const fails = count('level_fail');
+    return {
+      events: events.length,
+      sessions: count('session_start'),
+      levelStarts: starts,
+      levelCompletes: completes,
+      levelFails: fails,
+      completionRate: starts ? completes / starts : 0,
+      restarts: count('level_restart'),
+      continues: count('continue_rewarded'),
+      rewardedAds: events.filter(event => event.name === 'ad_complete' && event.format === 'rewarded').length,
+      interstitialAds: events.filter(event => event.name === 'ad_complete' && event.format === 'interstitial').length,
+      adPlacements,
+      failReasons,
+      coinsEarned,
+      coinsSpent,
+      boosterPurchases: count('booster_purchase') + count('booster_pack_purchase'),
+      boosterUses: count('booster_used'),
+      fairnessAdjustments: count('fairness_adjustment'),
+      rushTimeouts: count('tray_timeout'),
+      sugarCloudFills: count('sugar_cloud_fill'),
+      providerErrorCount,
+      progress: window.PomaShiftMetrics?.progress?.() || null,
+    };
+  }
+
+  window.PomaShiftAnalyticsBridge = {
+    summarize,
+    providerErrors() { return providerErrorCount; },
+  };
+})();
