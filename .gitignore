@@ -35,5 +35,11 @@ build/cache/
 tmp/
 temp/
 
+# Poma Shift native generated output
+/games/poma-shift/native/www/
+/games/poma-shift/native/android/
+/games/poma-shift/native/ios/
+/games/poma-shift/native/node_modules/
+
 # Local guarded live E2E credentials
 .env.e2e.local
