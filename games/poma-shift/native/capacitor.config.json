@@ -1,0 +1,9 @@
+{
+  "appId": "com.pomante.pomashift",
+  "appName": "Poma Shift",
+  "webDir": "www",
+  "backgroundColor": "#071022",
+  "android": {
+    "allowMixedContent": false
+  }
+}
