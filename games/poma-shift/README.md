@@ -31,13 +31,33 @@ Canlı DNS/deploy durumu ayrıca doğrulanmalıdır; GitHub dosyasının mevcut 
 - yalnız tam yatay satır clear
 - her 3 satırda SHIFT
 - board morph: 6×12 → 7×11 → 8×10 → 9×9 → 10×8 → 11×7 → 12×6
-- SHIFT sırasında tavan çarpışması = morph crush
-- no-legal-move ve move-limit fail türleri
-- RUSH levelleri
+- SHIFT sırasında gerçek tavan kontrolü / Morph Crush
+- normal levelde 1 danger row
+- RUSH levelde 2 danger row
+- no-legal-move, morph-crush, move-limit ve rush-timeout fail türleri
 - fairness katmanı
-- ses / haptic / threat feedback
+- action-based combo
+- müzik / ses / haptic / threat feedback
 - local progress ve telemetry
 - PWA/offline cache
+
+## RUSH — kilitli son karar
+
+RUSH için `RUSH_RULES.md` otoritedir ve `GAME_SPEC.md` içindeki eski 7/6/5 saniyelik tray-timer anlatımının yerine geçer.
+
+- ilk RUSH Level 11
+- sonra her 5 levelde bir; boss slotları hariç
+- eski tray timer kalıcı olarak kapalıdır
+- RUSH'ta bütün level sürelidir
+- level başlamadan kural kartı çıkar
+- **BAŞLA** denmeden sayaç başlamaz
+- Level 11: 60 sn / 2 SHIFT
+- Level 15–24: 50 sn / 3 SHIFT
+- Level 25–49: 45 sn / 3 SHIFT
+- Level 50+: 40 sn / 4 SHIFT
+- RUSH SHIFT öncesi üstteki 2 danger row boş olmalıdır
+- uygulama arka plana alınırsa clock durur
+- aktif RUSH sırasında harita / mağaza / can / hediye modalları kapalıdır
 
 ## Meta / ekonomi katmanı
 
@@ -70,10 +90,15 @@ Canlı DNS/deploy durumu ayrıca doğrulanmalıdır; GitHub dosyasının mevcut 
 ## Ana dosyalar
 
 - `GAME_SPEC.md` — çekirdek motor spesifikasyonu
+- `RUSH_RULES.md` — güncel ve kilitli RUSH kuralları
 - `META_SPEC.md` — meta progression / ekonomi / reklam / boss kilitleri
 - `game.js` — core motor
 - `game-feel.js` — mobil feel, animasyon ve fairness
-- `product-ui.js` — move budget, RUSH, modal ve temel map UI
+- `product-ui.js` — move budget, modal ve temel map UI
+- `rush-disable.js` — eski exploitable tray timerı kalıcı olarak engeller
+- `rush-mode.js` — full-level RUSH clock, giriş kartı ve danger-zone kuralı
+- `combo-system.js` — hamle bazlı satır clear combo
+- `audio-mix.js` — güçlendirilmiş SFX ve arka plan müziği
 - `meta-system.js` — Coin, can, booster, boss, reklam hook'ları, scalable map
 - `meta-system.css` — meta UI
 - `TEST_PLAN.md` — core oyuncu test planı
