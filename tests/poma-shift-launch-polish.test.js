@@ -16,14 +16,19 @@ test('public Poma Shift no longer presents itself as a prototype', async () => {
   assert.doesNotMatch(manifest, /prototip/i);
 });
 
-test('booster dock is hidden until the player unlocks a character power', async () => {
+test('booster dock stays hidden before first unlock and becomes compact on mobile', async () => {
   const polish = await read('launch-polish.js');
-  assert.match(polish, /Object\.values\(unlocked\)\.some\(Boolean\)/);
-  assert.match(polish, /dock\.hidden = !/);
+  assert.match(polish, /Object\.values\(unlocked\)\.filter\(Boolean\)\.length/);
+  assert.match(polish, /dock\.hidden = count === 0/);
+  assert.match(polish, /pomaShift\.powerDockOpen\.v1/);
+  assert.match(polish, /data\.powerToggle/);
+  assert.match(polish, /min-width: 700px/);
 });
 
-test('launch polish is wired into page and PWA cache', async () => {
+test('launch polish JS and CSS are wired into page and PWA cache', async () => {
   const [index, sw] = await Promise.all([read('index.html'), read('sw.js')]);
+  assert.match(index, /launch-polish\.css/);
   assert.match(index, /launch-polish\.js/);
+  assert.match(sw, /launch-polish\.css/);
   assert.match(sw, /launch-polish\.js/);
 });
