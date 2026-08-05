@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.29';
+const CACHE = 'poma-shift-v0.1.30';
 const CORE = [
   './',
   './index.html',
@@ -54,13 +54,36 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
+async function networkFirst(request) {
+  try {
+    const response = await fetch(request, { cache: 'no-store' });
+    if (response && response.ok) {
+      const copy = response.clone();
+      caches.open(CACHE).then(cache => cache.put(request, copy));
+    }
+    return response;
+  } catch (error) {
+    const cached = await caches.match(request);
+    if (cached) return cached;
+    throw error;
+  }
+}
+
+async function cacheFirst(request) {
+  const cached = await caches.match(request);
+  if (cached) return cached;
+  const response = await fetch(request);
+  if (response && response.ok) {
+    const copy = response.clone();
+    caches.open(CACHE).then(cache => cache.put(request, copy));
+  }
+  return response;
+}
+
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
-  event.respondWith(
-    caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
-      const copy = response.clone();
-      caches.open(CACHE).then(cache => cache.put(event.request, copy));
-      return response;
-    }))
-  );
+
+  const destination = event.request.destination;
+  const freshCode = event.request.mode === 'navigate' || destination === 'document' || destination === 'script' || destination === 'style';
+  event.respondWith(freshCode ? networkFirst(event.request) : cacheFirst(event.request));
 });
