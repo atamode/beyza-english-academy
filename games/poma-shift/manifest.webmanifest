@@ -1,7 +1,7 @@
 {
   "name": "Poma Shift",
   "short_name": "Poma Shift",
-  "description": "Tahta genişledikçe yüksekliğin azaldığı web-first casual puzzle prototipi.",
+  "description": "Satırları temizle, SHIFT ile değişen tahtayı yönet ve Poma karakter güçlerini aç.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
