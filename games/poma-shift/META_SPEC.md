@@ -135,6 +135,7 @@ Başarısız levelde:
 - 1 rewarded reklam = **+3 hamle**
 - aynı levelde maksimum **5 continue reklamı**
 - maksimum reklamlı ek hamle = **15 hamle**
+- rewarded continue aynı oyun denemesinin devamıdır; ilk failde düşen can dışında aynı continue zincirinde ikinci kez can düşmez
 
 `no_legal_move` failinde +3 hamlenin kullanılabilir olması için ölü tray yeni batch ile değiştirilir.
 Bu yalnız continuation repair'dir; ekstra booster değildir.
