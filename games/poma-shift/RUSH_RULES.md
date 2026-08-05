@@ -61,8 +61,8 @@ RUSH level:
 - Bu iki satırdan herhangi birinde temizlenmeyen blok varsa Morph Crush olur.
 
 Önemli:
-- kontrol line-clear gravity yeni boş satır oluşturmadan önceki gerçek tavana göre yapılır
-- böylece alt satır temizleyerek tavandaki blokların otomatik kaçması engellenir
+- kontrol line-clear gravity yeni boş satır oluşturmadan önceki gerçek LOFT bölgesine göre yapılır
+- böylece alt satır temizleyerek LOFT bölgesindeki blokların otomatik kaçması engellenir
 - tamamen doldurulup aynı hamlede temizlenen danger row blok sayılmaz
 - Bilgisayar gücü board morph'u dondurduğu sürede Morph Crush uygulanmaz
 
