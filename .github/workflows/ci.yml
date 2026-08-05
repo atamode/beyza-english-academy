@@ -39,6 +39,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify Poma Shift native web + AdMob bridge build
+        working-directory: games/poma-shift/native
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
       - name: Check whitespace errors
         run: git diff --check
 
