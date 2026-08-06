@@ -45,6 +45,10 @@ jobs:
           npm install --no-audit --no-fund
           npm run build
 
+      - name: Verify Poma Shift Capacitor Android project generation
+        working-directory: games/poma-shift/native
+        run: npm run android:add
+
       - name: Check whitespace errors
         run: git diff --check
 
