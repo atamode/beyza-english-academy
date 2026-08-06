@@ -132,6 +132,7 @@
     <div class="poma-lobby-toast" data-lobby-toast hidden></div>
   `;
   document.body.appendChild(lobby);
+  document.documentElement.classList.remove('poma-lobby-boot');
   document.body.classList.add('poma-lobby-open');
 
   const map = lobby.querySelector('[data-lobby-map]');
@@ -321,13 +322,15 @@
     }, 170);
   }
 
-  function openLobby({ animate = true } = {}) {
+  function openLobby({ animate = true, syncLevel = false } = {}) {
     window.PomaShiftLobbyActive = true;
     document.body.classList.add('poma-lobby-open');
     lobby.hidden = false;
     selected = readLoadout();
     selectedLevel = currentLevel();
-    try { setupLevel(selectedLevel); } catch {}
+    if (syncLevel) {
+      try { setupLevel(selectedLevel); } catch {}
+    }
     renderStatus();
     renderSlots();
     renderPowers();
@@ -393,7 +396,14 @@
           return;
         }
       } catch {}
-      try { window.location.href = '../../'; } catch { window.close(); }
+      try {
+        const nativePlatform = Boolean(window.Capacitor?.isNativePlatform?.());
+        if (nativePlatform) {
+          window.history.back();
+          return;
+        }
+        window.location.href = '../../';
+      } catch { window.close(); }
     }
   });
 
@@ -401,7 +411,7 @@
     if (!event.target.closest('[data-action="map"]')) return;
     event.preventDefault();
     event.stopPropagation();
-    openLobby({ animate: false });
+    openLobby({ animate: false, syncLevel: false });
   }, true);
 
   window.PomaShiftLobby = {
@@ -409,7 +419,7 @@
     selected: () => [...selected],
   };
 
-  openLobby({ animate: true });
+  openLobby({ animate: true, syncLevel: true });
   window.setInterval(() => {
     if (lobby.hidden) return;
     renderStatus();
