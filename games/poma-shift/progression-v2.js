@@ -45,7 +45,8 @@
       if (Object.hasOwn(CHARACTER_LEVELS, character.id)) character.level = CHARACTER_LEVELS[character.id];
     });
     if (!meta.characters.some((character) => character.id === 'fire')) {
-      meta.characters.splice(meta.characters.length - 1, 0, {
+      const heroIndex = meta.characters.findIndex((character) => character.id === 'hero');
+      meta.characters.splice(heroIndex < 0 ? meta.characters.length : heroIndex, 0, {
         level: 70,
         id: 'fire',
         name: 'Fire Poma',
@@ -60,15 +61,6 @@
     Object.entries(BOOSTER_LEVELS).forEach(([id, level]) => {
       if (meta.boosters[id]) meta.boosters[id].unlockLevel = level;
     });
-    if (!meta.boosters.firewave) {
-      meta.boosters.firewave = {
-        name: 'Alev Dalgası',
-        icon: '🔥',
-        price: 1800,
-        unlockLevel: 70,
-        description: 'Üst bölgedeki ilk 2 satırı tamamen yakar.',
-      };
-    }
   }
 
   const visuals = window.PomaShiftCharacterArt?.visuals;
