@@ -1,6 +1,8 @@
 (() => {
   const params = new URLSearchParams(location.search);
-  const enabled = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || params.has('dev');
+  const nativeApp = Boolean(window.Capacitor?.isNativePlatform?.());
+  const localBrowser = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  const enabled = params.has('dev') || (localBrowser && !nativeApp);
   if (!enabled) return;
 
   const panel = document.createElement('aside');
