@@ -17,6 +17,7 @@ Bu dosya yeni sohbetlerde veya yeni geliştirme oturumlarında Poma Shift'i baş
 5. `TEST_PLAN.md` + `META_TEST_PLAN.md` — release doğrulaması
 6. `ART_DIRECTION.md` — görsel dil
 7. `PRODUCT_AUDIT.md` — yaşayan launch audit
+8. `PLAY_RELEASE_CHECKLIST.md` — Google Play teknik/compliance çalışma listesi
 
 Eski dokümanlarda kalan ve üstteki kaynaklarla çelişen kurallar geçersizdir.
 
@@ -201,9 +202,9 @@ Müzik yönü:
 
 ---
 
-# 10. IMPLEMENTED STATUS
+# 10. IMPLEMENTED / VERIFIED STATUS
 
-Repo içinde mevcut ve kod karşılığı doğrulanmış başlıklar:
+Repo içinde mevcut ve kod/test karşılığı doğrulanmış başlıklar:
 - core board / SHIFT / line clear
 - RUSH full-level timer ve 2 danger row
 - scalable level generator
@@ -218,14 +219,22 @@ Repo içinde mevcut ve kod karşılığı doğrulanmış başlıklar:
 - scalable map shell
 - local telemetry + analytics bridge contract
 - audio/SFX/haptic layer
+- premium board depth + soft-plastic block material launch layer
+- premium HUD/game-shell ilk polish geçişi
 - `games/poma-shift/native/` altında Capacitor Android scaffold
 - Capacitor 8.4.2 + `@capacitor-community/admob` 8.0.0 bridge
 - Google test ad ID'leri + production env ID desteği
 - AdMob consent request/form akışı
 - CI root test/build + native web/AdMob build + Capacitor Android project generation
-- ayrı Android Debug workflow: Capacitor project generation + Gradle `assembleDebug` + APK artifact
-- 2026-08-06 doğrulanmış debug APK artifact: `poma-shift-android-debug`, yaklaşık 10.45 MB
-- Poma Shift için ayrı Node contract testleri: analytics, meta, RUSH, continue, native shell, boss UI, character art, launch polish, map audio ve timed guard
+- Android workflow: `assembleDebug` + `bundleRelease`
+- debug APK artifact doğrulandı: yaklaşık 10.46 MB
+- unsigned release AAB artifact doğrulandı: yaklaşık 8.88 MB
+- AAB içinden: package `com.pomante.pomashift`, minSdk 24, compileSdk 36, targetSdk 36
+- 31 Ağustos 2026 Google Play API 36 target gereksinimi teknik olarak karşılanıyor
+- signed production AAB workflow hazır; gerçek credentials/secrets henüz provision edilmedi
+- Poma Shift için Node contract testleri: analytics, meta, RUSH, continue, native shell, boss UI, character art, launch polish, map audio ve timed guard
+- live Playwright suite L11 RUSH / L90 boss / L10000 generator smoke testlerini içeriyor; güncel head için deploy sonrası sonuç bekleniyor
+- `PLAY_RELEASE_CHECKLIST.md` ile Play release/Data Safety baseline kayda alındı
 
 Web cache policy:
 - `manifest.webmanifest` ve `sw.js` repository'de korunur
@@ -236,13 +245,17 @@ Web cache policy:
 
 ---
 
-# 11. KNOWN TECHNICAL DEBT / RELEASE BLOCKERS
+# 11. KNOWN RELEASE BLOCKERS
 
-P0:
+P0 — external/runtime:
+- güncel live deploy Playwright smoke sonucunu PASS olarak doğrula
 - Core + Meta release gate'i gerçek cihazlarda çalıştır ve PASS/FAIL kaydı üret
 - gerçek production analytics provider bağla
-- production AdMob unit ID'lerini provision et ve production build smoke test yap
-- Android signing / release AAB hattını doğrula
+- production AdMob App ID + rewarded/interstitial unit ID'lerini provision et
+- GitHub production release secrets gir
+- signed production AAB workflow'u çalıştır ve PASS al
+- privacy policy için aktif HTTPS URL + resmi privacy contact mechanism oluştur
+- Play Console Data Safety / Ads / Target Audience / Content Rating beyanlarını tamamla
 - gerçek cihaz rewarded/interstitial + consent smoke test
 - 5–10 kişi kör test
 - 20–50 dış test telemetry
@@ -251,12 +264,16 @@ P0:
 Resolved 2026-08-06:
 - yaşayan master context oluşturuldu
 - `GAME_SPEC.md`, `ART_DIRECTION.md`, `PRODUCT_AUDIT.md` güncel otoriteyle hizalandı
-- analytics summary eski `tray_timeout` yerine güncel `rush_timeout` eventini sayacak şekilde düzeltildi ve contract test ile kilitlendi
-- native kaynak konumu doğrulandı: `games/poma-shift/native/`
-- Capacitor/AdMob bridge doğrulandı
-- CI'da Capacitor Android project generation doğrulandı
-- ayrı Android workflow'un gerçek debug APK ürettiği doğrulandı
-- web service-worker/cache politikası launch için bilinçli `disabled` olarak netleştirildi; README/runtime hizalandı
+- analytics `rush_timeout` bugı düzeltildi ve testle kilitlendi
+- native kaynak konumu ve Capacitor/AdMob bridge doğrulandı
+- CI Android project generation doğrulandı
+- gerçek debug APK üretimi doğrulandı
+- gerçek unsigned release AAB üretimi doğrulandı
+- targetSdk/compileSdk 36 doğrulandı
+- production signed-AAB workflow hazırlandı
+- web cache politikası netleştirildi
+- premium board/block/HUD ilk polish katmanı eklendi
+- Google Play release checklist/Data Safety teknik baseline oluşturuldu
 
 ---
 
@@ -282,15 +299,14 @@ Bu eşikler karşılanmadan yeni feature eklemek öncelik değildir.
 
 # 13. CURRENT WORK ORDER
 
-1. Gerçek cihaz Core + Meta release gate / smoke
-2. Premium board + blocks + HUD polish
-3. Map / character / unlock polish
-4. Level 90 boss presentation polish
-5. Production analytics + production AdMob IDs + signing/AAB
-6. Blind playtest
-7. External telemetry test
-8. Data-driven tuning
-9. Store release
+1. Current live deploy smoke PASS
+2. Gerçek cihaz Core + Meta release gate
+3. Map / character / unlock / boss presentation polish
+4. Production privacy + analytics + AdMob credentials + signed AAB
+5. Blind playtest
+6. External telemetry test
+7. Data-driven tuning
+8. Store release
 
 ---
 
