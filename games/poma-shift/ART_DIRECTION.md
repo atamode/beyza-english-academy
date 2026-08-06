@@ -1,8 +1,8 @@
 # POMA SHIFT — ART DIRECTION / STATE LANGUAGE
 
-**Status:** LOCKED FOR CURRENT MVP
+**Status:** CURRENT VISUAL AUTHORITY
 
-Bu dosya Poma Shift'in görsel durum dilini ve kozmetik yönünü sabitler.
+Bu dosya Poma Shift'in görsel durum dilini ve kozmetik yönünü sabitler. Ürün/genel durum için `POMA_SHIFT_MASTER_CONTEXT.md`, RUSH davranışı için `RUSH_RULES.md` otoritedir.
 
 ## 1. TEMEL SANAT YÖNÜ
 
@@ -21,7 +21,7 @@ Poma kullanımı:
 - yaklaşık %80 bağımsız casual oyun
 - yaklaşık %20 Poma marka/meta katmanı
 - Poma board ve blokların üstüne basılmaz
-- tutorial, level map, sonuç ekranı, menu/loading gibi alanlarda kullanılır
+- tutorial, level map, sonuç ekranı, menu/loading, karakter milestone ve unlock alanlarında kullanılır
 
 ## 2. RENK DURUM DİLİ — LOCKED
 
@@ -29,7 +29,7 @@ Poma kullanımı:
 Ana duygu: sakinlik ve kontrol.
 - lacivert / koyu mavi arka plan
 - mavi UI vurguları
-- normal timer mavi -> teal
+- normal göstergelerde mavi / teal
 - kırmızı normal durumda kullanılmaz
 
 ### POSITIVE / SUCCESS
@@ -66,14 +66,15 @@ Oyuncu doğal olarak aşağıdan yukarı doğru blok biriktirir.
 
 Kritik ölüm kuralı:
 
-> SHIFT geldiğinde tavanın ineceği üst sırada tek bir blok bile varsa GAME OVER — MORPH CRUSH.
+> SHIFT geldiğinde normal levelde üstteki gerçek 1 danger row, RUSH levelde üstteki gerçek 2 danger row güvenli değilse GAME OVER — MORPH CRUSH.
 
-Üst satır blokları güvenli biçimde silinip oyun devam etmez.
+Danger bölgesi blokları güvenli biçimde silinip oyun devam etmez.
 
 Oyuncunun kurtuluş yolu:
 - SHIFT gelmeden önce aşağıda satır tamamlamak
 - satır temizleyerek mevcut blok yapısını aşağı taşımak
 - tavanla çarpışmadan alan açmak
+- envanterde mevcut uygun boosterı kullanmak
 
 Bu oyunun ana gerilim loop'udur.
 
@@ -85,28 +86,34 @@ Görsel dil:
 - normal: sakin board
 - 1/3 sonrası: amber hazırlık
 - 2/3: kırmızı alarm
-- üst risk satırı görünür
-- mesaj anlamı: "Tavan inecek; burada blok varsa kaybedersin."
+- normal levelde üst 1 risk satırı görünür
+- RUSH levelde üst 2 risk satırı görünür
+- mesaj anlamı: "Tavan inecek; tehlike bölgesinde blok kalırsa kaybedersin."
 
 "Bu satır silinir" gibi güvenli silme çağrışımı yapan copy kullanılmaz.
 
-## 5. RUSH TIMER — LOCKED
+## 5. RUSH TIMER — LOCKED CURRENT RULE
 
+RUSH davranışı için `RUSH_RULES.md` tek otoritedir.
+
+Eski 7/6/5 saniyelik tray timer **kalıcı olarak iptal edilmiştir**.
+
+Güncel görsel akış:
 - Level 1–10 timer yok
 - Level 11 ilk RUSH
-- sonra seçili özel RUSH level düğümleri
-- erken RUSH: yaklaşık 7 sn
-- orta RUSH: 6 sn
-- ileri RUSH: 5 sn
+- sonra 15, 20, 25, 30...; boss slotları hariç
+- RUSH başlamadan önce kural kartı çıkar
+- `BAŞLA` denmeden timer çalışmaz
+- timer bütün leveli sayar
+- Level 11: 60 saniye / 2 SHIFT
+- Level 15–24: 50 saniye / 3 SHIFT
+- Level 25–49: 45 saniye / 3 SHIFT
+- Level 50+: 40 saniye / 4 SHIFT
 
-Timer batch geldiğinde değil, ilk parça yerleştirildikten sonra başlar.
-
-Normal timer dili:
-- mavi / teal
-
-Kritik son bölüm:
-- kırmızı
-- timer son yaklaşık %35'inde heartbeat devreye girer
+Timer dili:
+- normal kalan sürede mavi / teal
+- son yaklaşık %30'da kırmızı critical state
+- süre baskısı okunur ancak board readability bozulmaz
 
 ## 6. HEARTBEAT / IMMERSION
 
@@ -135,20 +142,36 @@ Hedef tamamlanınca:
 1. input kapanır / level kazanılır
 2. final board morph kısa süre görünür kalır
 3. sonuç ekranı açılır
-4. Sonraki Level ve Haritaya Bak aksiyonları çalışır
+4. Coin / milestone / unlock varsa açık biçimde gösterilir
+5. Sonraki Level ve Haritaya Bak aksiyonları çalışır
 
 Harita progression:
 - Level 1 aşağıda
 - ilerleme yukarı doğru
 - RUSH düğümleri özel işaretli
+- boss düğümleri RUSH gibi gösterilmez
+- karakter milestone hedefleri görünür
 
-## 8. KOZMETİK SONRAKİ SPRINT
+## 8. AUDIO DIRECTION — CURRENT
 
-Yeni mekanik eklenmeden önce öncelik:
+- haritada background music kullanılabilir
+- gameplay'de SFX önceliklidir
+- placement, line clear, SHIFT, fail, complete, booster ve boss olayları ayrı okunmalıdır
+- kritik SFX gerektiğinde müziği duck edebilir
+- ses aç/kapat zorunludur
+
+## 9. LAUNCH POLISH ORDER
+
+Yeni mekanik eklemeden önce görsel/ürün önceliği:
 1. board yüzey derinliği
 2. soft-plastic blok materyali
 3. premium HUD sadeleştirme
 4. SHIFT fiziksel kesilme / tavan hissi
-5. renk paleti ve state language polish
+5. renk paleti ve state-language polish
+6. map / character milestone presentation final
+7. unlock / reward modal final
+8. Level 90 Sugar Cloud boss presentation final
+9. fail / complete ekranı polish
+10. ilk 10 level onboarding polish
 
-Yeni coin, power-up, joker, meta progression, shop veya karakter sistemi bu sprintte eklenmez.
+Coin, booster, karakter, reklam ve boss sistemleri artık mevcut meta katmanıdır; bu dosyada "sonra eklenmeyecek" olarak değerlendirilmez.
