@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.30';
+const CACHE = 'poma-shift-v0.1.31';
 const CORE = [
   './',
   './index.html',
@@ -29,6 +29,7 @@ const CORE = [
   './dev-panel.js',
   './combo-system.js',
   './rush-mode.js',
+  './rush-continue.js',
   './ui-hotfix.js',
   './audio-mix.js',
   './poma-sports-loop.mp3',
