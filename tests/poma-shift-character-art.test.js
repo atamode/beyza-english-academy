@@ -20,13 +20,14 @@ test('Poma Shift ships the uploaded milestone character artwork', async () => {
     'poma-wolf.png',
     'poma-baby.png',
     'poma-elder.png',
+    'poma-hero.png',
     'poma-sad.png',
   ]) {
     await access(path.join(assetDir, file));
   }
 });
 
-test('character art maps the locked milestone identities', async () => {
+test('character art maps the locked milestone identities and goal copy', async () => {
   const source = await read('character-art.js');
   for (const [level, id] of [
     [10, 'poma'], [20, 'genius'], [30, 'influencer'], [40, 'archer'],
@@ -38,6 +39,10 @@ test('character art maps the locked milestone identities', async () => {
   assert.match(source, /Atkısız Poma/);
   assert.match(source, /decorateRushMilestone/);
   assert.match(source, /rush-character-art/);
+  assert.match(source, /poma-character-goal/);
+  assert.match(source, /BU LEVELDE AÇILIR/);
+  assert.match(source, /SONRAKİ KARAKTER HEDEFİ/);
+  assert.match(source, /Level \$\{character\.level\} tamamlanınca açılır/);
 });
 
 test('character CSS keeps Fire Poma separate and reserves Hero for its own leaf artwork', async () => {
@@ -50,6 +55,8 @@ test('character CSS keeps Fire Poma separate and reserves Hero for its own leaf 
   }
   assert.doesNotMatch(css, /fire%20poma\.png/);
   assert.doesNotMatch(css, /poma-shift-character-sprite\.webp/);
+  assert.match(css, /\.poma-next-goal/);
+  assert.match(css, /\.poma-character-goal/);
 });
 
 test('index and PWA cache load only currently valid milestone assets', async () => {
@@ -58,7 +65,7 @@ test('index and PWA cache load only currently valid milestone assets', async () 
   assert.match(index, /character-art\.js/);
   for (const file of [
     'poma-genius.png', 'poma-influencer.png', 'poma-archer.png', 'poma-wolf.png',
-    'poma-baby.png', 'poma-elder.png',
+    'poma-baby.png', 'poma-elder.png', 'poma-hero.png',
   ]) {
     assert.match(sw, new RegExp(file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
   }
