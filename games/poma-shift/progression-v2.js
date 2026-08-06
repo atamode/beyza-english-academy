@@ -7,7 +7,8 @@
     wolf: 40,
     baby: 50,
     elder: 60,
-    hero: 70,
+    fire: 70,
+    hero: 80,
   };
 
   const BOOSTER_LEVELS = {
@@ -17,7 +18,8 @@
     claw: 40,
     pacifier: 50,
     staff: 60,
-    leaf: 70,
+    firewave: 70,
+    leaf: 80,
   };
 
   const RUSH_MILESTONES = {
@@ -26,20 +28,47 @@
     40: { character: 'Bozkurt Poma', item: 'Kurt Pençesi', icon: '🐾' },
     50: { character: 'Baby Poma', item: 'Emzik Salyası', icon: '🍼' },
     60: { character: 'Dede Poma', item: 'Asa Gücü', icon: '🪄' },
-    70: { character: 'Hero Poma', item: 'Sihirli Yaprak', icon: '🍃' },
+    70: { character: 'Fire Poma', item: 'Alev Dalgası', icon: '🔥' },
+    80: { character: 'PomaHero', item: 'Sihirli Yaprak', icon: '🍃' },
   };
 
   const meta = window.PomaShiftMeta;
   if (meta?.characters) {
     meta.characters.forEach((character) => {
+      if (character.id === 'poma') {
+        character.level = 0;
+        character.name = 'Poma';
+        character.note = 'Başlangıç Poma';
+        return;
+      }
+      if (character.id === 'hero') character.name = 'PomaHero';
       if (Object.hasOwn(CHARACTER_LEVELS, character.id)) character.level = CHARACTER_LEVELS[character.id];
     });
+    if (!meta.characters.some((character) => character.id === 'fire')) {
+      meta.characters.splice(meta.characters.length - 1, 0, {
+        level: 70,
+        id: 'fire',
+        name: 'Fire Poma',
+        item: 'firewave',
+        icon: '🔥',
+        note: 'Alev Dalgası',
+      });
+    }
   }
 
   if (meta?.boosters) {
     Object.entries(BOOSTER_LEVELS).forEach(([id, level]) => {
       if (meta.boosters[id]) meta.boosters[id].unlockLevel = level;
     });
+    if (!meta.boosters.firewave) {
+      meta.boosters.firewave = {
+        name: 'Alev Dalgası',
+        icon: '🔥',
+        price: 1800,
+        unlockLevel: 70,
+        description: 'Üst bölgedeki ilk 2 satırı tamamen yakar.',
+      };
+    }
   }
 
   const visuals = window.PomaShiftCharacterArt?.visuals;
@@ -48,11 +77,23 @@
       if (visual.id === 'poma') {
         visual.level = null;
         visual.min = 1;
-        visual.max = 10;
+        visual.max = 9;
+        visual.name = 'Poma';
+        visual.reward = 'Başlangıç karakteri';
         return;
       }
+      if (visual.id === 'hero') visual.name = 'PomaHero';
       if (Object.hasOwn(CHARACTER_LEVELS, visual.id)) visual.level = CHARACTER_LEVELS[visual.id];
     });
+    if (!visuals.some((visual) => visual.id === 'fire')) {
+      const heroIndex = visuals.findIndex((visual) => visual.id === 'hero');
+      visuals.splice(heroIndex < 0 ? visuals.length : heroIndex, 0, {
+        level: 70,
+        id: 'fire',
+        name: 'Fire Poma',
+        reward: 'Alev Dalgası',
+      });
+    }
     window.PomaShiftCharacterArt.decorate(document);
   }
 
