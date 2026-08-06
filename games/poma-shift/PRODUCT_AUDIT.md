@@ -84,14 +84,19 @@ Bu dosya mevcut ürünün launch öncesi gerçek eksiklerini izler.
 
 - [x] web test rewarded/interstitial adapter
 - [x] native shell konumu: `games/poma-shift/native/`
-- [x] Capacitor Android shell
+- [x] Capacitor Android scaffold
 - [x] `@capacitor-community/admob` rewarded provider bridge
 - [x] `@capacitor-community/admob` interstitial provider bridge
 - [x] consent info/form kod akışı
 - [x] Google demo ad ID'leriyle safe test mode
 - [x] production AdMob unit ID environment desteği
 - [x] native shell contract testleri
-- [x] CI native web + AdMob bridge build adımı
+- [x] CI native web + AdMob bridge build
+- [x] CI Capacitor Android project generation
+- [x] ayrı Android Debug workflow
+- [x] Gradle `assembleDebug` ile gerçek APK build
+- [x] GitHub Actions APK artifact upload
+- [x] 2026-08-06 debug artifact doğrulandı: yaklaşık 10.45 MB
 - [ ] production AdMob unit ID'lerini provision et
 - [ ] production mode build smoke
 - [ ] Android signing / AAB release hattını doğrula
@@ -124,11 +129,13 @@ Bu dosya mevcut ürünün launch öncesi gerçek eksiklerini izler.
 - [ ] boss node görsel final
 - [ ] high-progress navigation gerçek cihaz testi
 
-## P1 — PWA / cache discrepancy
+## Web cache policy — CLOSED
 
-- [x] manifest/service-worker dosyaları mevcut
-- [ ] `index.html` açılışta Poma Shift service worker/cache temizlediği için offline iddiası netleştirilmeli
-- [ ] release kararı: PWA cache gerçekten açık mı kapalı mı tek kaynağa bağlanmalı
+- [x] manifest/service-worker dosyaları repository'de korunuyor
+- [x] launch-candidate web runtime service-worker/cache'leri bilinçli temizliyor
+- [x] web sürümü şu aşamada offline PWA olarak vaat edilmiyor
+- [x] README/runtime/master aynı politikaya hizalandı
+- [x] native bundle browser service-worker cache'ine bağımlı değil
 
 ## P0 — Real player validation
 
@@ -156,4 +163,4 @@ Launch öncesi yeni feature eklenmez.
 
 Öncelik:
 
-> regression PASS → premium polish → production ad/analytics → gerçek oyuncu testi → data-driven tuning → store release.
+> gerçek cihaz regression PASS → premium polish → production ad/analytics → gerçek oyuncu testi → data-driven tuning → store release.
