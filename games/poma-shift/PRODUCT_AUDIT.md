@@ -85,22 +85,37 @@ Bu dosya mevcut ürünün launch öncesi gerçek eksiklerini izler.
 - [x] web test rewarded/interstitial adapter
 - [x] native shell konumu: `games/poma-shift/native/`
 - [x] Capacitor Android scaffold
-- [x] `@capacitor-community/admob` rewarded provider bridge
-- [x] `@capacitor-community/admob` interstitial provider bridge
+- [x] `@capacitor-community/admob` rewarded/interstitial bridge
 - [x] consent info/form kod akışı
 - [x] Google demo ad ID'leriyle safe test mode
 - [x] production AdMob unit ID environment desteği
 - [x] native shell contract testleri
 - [x] CI native web + AdMob bridge build
 - [x] CI Capacitor Android project generation
-- [x] ayrı Android Debug workflow
 - [x] Gradle `assembleDebug` ile gerçek APK build
-- [x] GitHub Actions APK artifact upload
-- [x] 2026-08-06 debug artifact doğrulandı: yaklaşık 10.45 MB
-- [ ] production AdMob unit ID'lerini provision et
-- [ ] production mode build smoke
-- [ ] Android signing / AAB release hattını doğrula
+- [x] GitHub Actions debug APK artifact
+- [x] Gradle `bundleRelease` ile unsigned release AAB build
+- [x] GitHub Actions unsigned release AAB artifact
+- [x] AAB içinden `minSdk 24 / compileSdk 36 / targetSdk 36` doğrulandı
+- [x] Google Play 31 Ağustos 2026 API 36 target şartı teknik olarak karşılanıyor
+- [x] production signed-AAB workflow hazır; keystore/AdMob credentials GitHub Secrets'tan alınacak
+- [ ] production AdMob App ID + unit ID'leri provision et
+- [ ] production secrets gir
+- [ ] signed production workflow SUCCESS
 - [ ] gerçek cihaz rewarded/interstitial/consent smoke test
+
+## P0 — Google Play compliance
+
+- [x] `PLAY_RELEASE_CHECKLIST.md` oluşturuldu
+- [x] AdMob build davranışına göre Data Safety baseline çıkarıldı
+- [x] build'de konum izni olmadığı doğrulandı
+- [x] build'de Advertising ID izni olduğu doğrulandı
+- [ ] aktif privacy-policy URL
+- [ ] resmi privacy contact mechanism
+- [ ] privacy policy app içinden erişilebilir
+- [ ] Play Console Data Safety formu tamamlandı
+- [ ] Ads declaration
+- [ ] Target audience / content rating
 
 ## P1 — Game feel / visual quality
 
@@ -108,9 +123,10 @@ Bu dosya mevcut ürünün launch öncesi gerçek eksiklerini izler.
 - [x] placement / clear / SHIFT SFX altyapısı
 - [x] map-only music yönü
 - [x] map character goals
-- [ ] board yüzey derinliği final
-- [ ] soft-plastic block material final
-- [ ] premium HUD sadeleştirme
+- [x] premium board depth katmanı eklendi
+- [x] soft-plastic block material katmanı eklendi
+- [x] HUD/game-shell ilk premium sadeleştirme geçişi
+- [ ] premium polish gerçek cihaz/görsel kalite onayı
 - [ ] SHIFT fiziksel kesilme/tavan hissi final
 - [ ] fail / complete ekranı polish
 - [ ] unlock / reward modal polish
@@ -163,4 +179,4 @@ Launch öncesi yeni feature eklenmez.
 
 Öncelik:
 
-> gerçek cihaz regression PASS → premium polish → production ad/analytics → gerçek oyuncu testi → data-driven tuning → store release.
+> current live smoke PASS → gerçek cihaz regression → production ad/privacy/analytics → gerçek oyuncu testi → data-driven tuning → store release.
