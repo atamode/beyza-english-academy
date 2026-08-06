@@ -50,6 +50,7 @@ const rewriteFiles = [
   'poma-brand.js',
   'character-art.css',
   'boss-ui.js',
+  'lobby-v1.css',
   'sw.js',
 ];
 for (const name of rewriteFiles) {
