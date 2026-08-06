@@ -49,6 +49,30 @@ test('mobile release uses a three-slot loadout, one-screen fit, stronger danger 
   assert.match(css, /sugar-shot/);
 });
 
+test('map lobby is the launch surface and preserves the locked power-card contract', async () => {
+  const source = await readGame('lobby-v1.js');
+  const css = await readGame('lobby-v1.css');
+  const index = await readGame('index.html');
+
+  assert.doesNotThrow(() => new Function(source), 'lobby-v1.js should parse');
+  assert.match(index, /lobby-v1\.css\?v=41/);
+  assert.match(index, /lobby-v1\.js\?v=41/);
+  assert.match(source, /openLobby\(\{ animate: true \}\)/);
+  assert.match(source, /scrollIntoView\(\{ behavior: 'smooth', block: 'center' \}\)/);
+  assert.match(source, /poma-map-node/);
+  assert.match(source, /poma-lobby-node-character/);
+  assert.match(source, /data-lobby-slots/);
+  assert.match(source, /data-lobby-powers/);
+  assert.match(source, /label: `🔒 Lv\$\{power\.level\}`/);
+  assert.match(source, /label: `×\$\{qty\}`/);
+  assert.match(source, /label: `\$\{power\.price\} 🪙`/);
+  assert.match(source, /Oyundan çıkmak istediğine emin misin\?/);
+  assert.match(source, /data-detail-slot/);
+  assert.match(source, /data-detail-buy/);
+  assert.match(css, /@keyframes pomaNodeLive/);
+  assert.match(css, /\.poma-power-mini/);
+});
+
 test('Android bundle includes every milestone character image including Fire Poma', async () => {
   const build = await readFile(path.join(gameDir, 'native', 'scripts', 'build-web.mjs'), 'utf8');
   for (const asset of [
@@ -66,10 +90,11 @@ test('Android bundle includes every milestone character image including Fire Pom
 
 test('release overlay scripts parse and are loaded by the game page', async () => {
   const index = await readGame('index.html');
-  for (const file of ['character-progression-v2.js', 'fire-compat.js', 'mobile-release-v2.js']) {
+  for (const file of ['character-progression-v2.js', 'fire-compat.js', 'mobile-release-v2.js', 'lobby-v1.js']) {
     const source = await readGame(file);
     assert.doesNotThrow(() => new Function(source), `${file} should parse`);
     assert.match(index, new RegExp(file.replace('.', '\\.')));
   }
   assert.match(index, /mobile-release-v2\.css/);
+  assert.match(index, /lobby-v1\.css/);
 });
