@@ -28,6 +28,12 @@ test('analytics summary contains commercial and retention signals', async () => 
   }
 });
 
+test('analytics summary counts the current full-level Rush timeout event', async () => {
+  const source = await read('analytics-bridge.js');
+  assert.match(source, /rushTimeouts:\s*count\('rush_timeout'\)/);
+  assert.doesNotMatch(source, /rushTimeouts:\s*count\('tray_timeout'\)/);
+});
+
 test('analytics bridge is loaded and cached', async () => {
   const [index, sw] = await Promise.all([read('index.html'), read('sw.js')]);
   assert.match(index, /analytics-bridge\.js/);
