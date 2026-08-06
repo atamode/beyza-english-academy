@@ -23,18 +23,21 @@ Poma Shift kısa 80–100 bölümlük oyun değildir.
 
 | Level | Karakter | Eşya / Güç |
 |---:|---|---|
-| 1–10 | Atkısız Poma | özel güç yok |
-| 20 | Poma Dahi | Bilgisayar |
-| 30 | Influencer Poma | Telefon |
-| 40 | Okçu Poma | Ok |
-| 50 | Bozkurt Poma | Kurt Pençesi |
-| 60 | Baby Poma | Emzik Salyası |
-| 70 | Dede Poma | Asa Gücü |
-| 80 | Hero Poma | Sihirli Yaprak |
+| 1–9 | Poma | özel güç yok |
+| 10 | Poma Dahi | Bilgisayar |
+| 20 | Influencer Poma | Telefon |
+| 30 | Okçu Poma | Ok |
+| 40 | Bozkurt Poma | Kurt Pençesi |
+| 50 | Baby Poma | Emzik Salyası |
+| 60 | Dede Poma | Asa Gücü |
+| 70 | Fire Poma | Alev Dalgası |
+| 80 | PomaHero | Sihirli Yaprak |
 | 90 | Yapışkan Şeker Bulutu | ilk boss |
 
+Poma oyunun başlangıç karakteridir. Arayüzde “Atkısız Poma” ifadesi kullanılmaz.
+
 Karakter milestone'u ilk kez tamamlandığında:
-- eşya kilidi açılır
+- ilgili güç kilidi açılır
 - ilk kullanımdan 1 adet ücretsiz verilir
 - sonraki kullanımlar Coin ile alınır
 
@@ -42,14 +45,9 @@ Karakter milestone'u ilk kez tamamlandığında:
 
 ## 3. BOOSTER EFFECTS — LOCKED
 
-### Baby Poma — Emzik Salyası
-- oyuncu 1 dolu kare seçer
-- o kare silinir
-
-### Bozkurt Poma — Kurt Pençesi
-- oyuncu 1 dolu kare seçer
-- seçilen kare + bitişik 1 dolu kare silinir
-- toplam 2 kare
+### Poma Dahi — Bilgisayar
+- board daralması 10 hamle durur
+- SHIFT sayılır; board morph uygulanmaz
 
 ### Influencer Poma — Telefon
 - board'un üst bölgelerindeki en tehlikeli 3 dolu kare silinir
@@ -57,16 +55,27 @@ Karakter milestone'u ilk kez tamamlandığında:
 ### Okçu Poma — Ok
 - board üzerindeki en üst 4 dolu kare silinir
 
-### Poma Dahi — Bilgisayar
-- board daralması 10 hamle durur
-- SHIFT sayılır; board morph uygulanmaz
+### Bozkurt Poma — Kurt Pençesi
+- oyuncu 1 dolu kare seçer
+- seçilen kare + bitişik 1 dolu kare silinir
+- toplam 2 kare
+
+### Baby Poma — Emzik Salyası
+- oyuncu 1 dolu kare seçer
+- o kare silinir
 
 ### Dede Poma — Asa Gücü
 - mevcut board yeniden oynanabilir düzene taşınır
 
-### Hero Poma — Sihirli Yaprak
+### Fire Poma — Alev Dalgası
+- **LOFT bölgesindeki ilk 2 satırı tamamen yakar**
+- boardun en üstteki ilk 2 satırındaki tüm bloklar silinir
+- görsel efekt: alev yukarıdan iki satırı süpürür; bloklar kül partikülleriyle kaybolur
+- güçlüdür fakat PomaHero / Sihirli Yaprak'tan daha güçlü değildir
+
+### PomaHero — Sihirli Yaprak
 - board üzerindeki bütün mevcut bloklar temizlenir
-- en güçlü / en pahalı güç
+- oyundaki **en güçlü / en pahalı güç**
 
 ---
 
@@ -80,13 +89,14 @@ Karakter milestone'u ilk kez tamamlandığında:
 | Ok | 700 Coin |
 | Bilgisayar | 1.100 Coin |
 | Asa Gücü | 1.600 Coin |
+| Alev Dalgası | 1.800 Coin |
 | Sihirli Yaprak | 2.000 Coin |
 
 ### Poma Güç Paketi
 - fiyat: **3.500 Coin**
 - Dede Poma / Asa açıldıktan sonra satışa açılır
-- Yaprak hariç ilk 6 boosterın her birinden 1 adet verir
-- Yaprak pakete dahil değildir
+- mevcut ilk 6 klasik boosterın her birinden 1 adet verir
+- Alev Dalgası ve Sihirli Yaprak pakete dahil değildir
 
 ---
 
@@ -158,11 +168,11 @@ Store sürümünde gerçek reklam SDK'sı adapterın yerine bağlanacaktır.
 
 Her claim sonrası 12 saat cooldown:
 - **100 Poma Coin**
-- **1 rastgele açılmış karakter eşyası**
+- **1 rastgele açılmış klasik karakter eşyası**
 
 Henüz eşya açılmadıysa 100 Coin verilir; kilitli karakter eşyası verilmez.
 
-Ağırlıklar açılmış havuz içinde normalize edilir:
+V1 weighted pool:
 - Emzik Salyası: %40
 - Telefon: %25
 - Ok: %15
@@ -171,8 +181,8 @@ Ağırlıklar açılmış havuz içinde normalize edilir:
 - Kurt Pençesi: %2
 - Sihirli Yaprak: %1
 
-Hero Poma açılmadan Sihirli Yaprak havuza giremez.
-Aynı kural tüm karakter eşyaları için geçerlidir.
+Alev Dalgası V1 return-gift havuzunda değildir; Fire Poma milestone ücretsiz kullanımı ve mağaza satın alımı üzerinden yönetilir.
+PomaHero açılmadan Sihirli Yaprak havuza giremez.
 
 ---
 
@@ -186,10 +196,6 @@ Davranış:
 - her **3 saniyede 1 kare** kapatır
 - Şeker Bulutu kareleri normal satır temizleme ve uygun karakter güçleriyle temizlenebilir
 - Şeker Bulutu tavana ulaştığında oyun biter
-
-İleri Şeker Bulutu varyasyonları:
-- daha tehlikeli üst satırlara bias verilebilir
-- ana interval / davranış parametreleri update ile zorlaştırılabilir
 
 ### Future boss slots
 Level 90'dan sonra her **30 levelde bir boss slotu** vardır:
@@ -220,7 +226,9 @@ Oyun yalnız çocuklara yönelik konumlanmaz; geniş casual kitle hedeflenir.
 ## 12. IMPLEMENTATION FILES
 
 Meta katman:
-- `meta-system.js` — Coin, can, booster, rewarded/interstitial hooks, milestone, boss, scalable map
+- `meta-system.js` — Coin, can, klasik booster, rewarded/interstitial hooks, boss, scalable map
+- `character-progression-v2.js` — güncel milestone sırası + Fire Poma / Alev Dalgası
+- `character-art.js` / `character-art.css` — milestone karakter görselleri + Fire efektleri
 - `meta-system.css` — meta HUD / shop / booster / map / test ad UI
 
 Reklam entegrasyon kontratı:
@@ -243,9 +251,10 @@ Aşağıdakiler artık yeniden sıfırdan tasarlanmaz:
 - SHIFT core
 - board morph
 - 3-piece batch
-- karakter milestone sırası
+- karakter milestone sırası: **Poma → Dahi 10 → Influencer 20 → Okçu 30 → Bozkurt 40 → Baby 50 → Dede 60 → Fire Poma 70 → PomaHero 80 → Boss 90**
 - booster ana etkileri
 - booster fiyatları
+- PomaHero'nun en güçlü karakter/güç olması
 - 3 can limiti
 - continue +3 hamle / 5 reklam limiti
 - ilk boss Level 90
