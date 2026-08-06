@@ -1,19 +1,20 @@
 (() => {
   const VISUALS = [
-    { min: 1, max: 10, level: 10, id: 'poma', name: 'Atkısız Poma', reward: 'Başlangıç karakteri' },
-    { level: 20, id: 'genius', name: 'Poma Dahi', reward: 'Bilgisayar' },
-    { level: 30, id: 'influencer', name: 'Influencer Poma', reward: 'Telefon' },
-    { level: 40, id: 'archer', name: 'Okçu Poma', reward: 'Ok' },
-    { level: 50, id: 'wolf', name: 'Bozkurt Poma', reward: 'Kurt Pençesi' },
-    { level: 60, id: 'baby', name: 'Baby Poma', reward: 'Emzik Salyası' },
-    { level: 70, id: 'elder', name: 'Dede Poma', reward: 'Asa Gücü' },
-    { level: 80, id: 'hero', name: 'Hero Poma', reward: 'Sihirli Yaprak' },
+    { min: 1, max: 9, level: 1, id: 'poma', name: 'Poma', reward: 'Başlangıç karakteri' },
+    { level: 10, id: 'genius', name: 'Poma Dahi', reward: 'Bilgisayar' },
+    { level: 20, id: 'influencer', name: 'Influencer Poma', reward: 'Telefon' },
+    { level: 30, id: 'archer', name: 'Okçu Poma', reward: 'Ok' },
+    { level: 40, id: 'wolf', name: 'Bozkurt Poma', reward: 'Kurt Pençesi' },
+    { level: 50, id: 'baby', name: 'Baby Poma', reward: 'Emzik Salyası' },
+    { level: 60, id: 'elder', name: 'Dede Poma', reward: 'Asa Gücü' },
+    { level: 70, id: 'fire', name: 'Fire Poma', reward: 'Alev Dalgası' },
+    { level: 80, id: 'hero', name: 'PomaHero', reward: 'Sihirli Yaprak' },
   ];
 
   function characterForLevel(level, { activeFallback = false } = {}) {
     const exact = VISUALS.find((item) => item.level === level);
     if (exact) return exact;
-    if (activeFallback && level >= 1 && level <= 10) return VISUALS[0];
+    if (activeFallback && level >= 1 && level <= 9) return VISUALS[0];
     return null;
   }
 
@@ -27,7 +28,7 @@
   }
 
   function goalState(node, character) {
-    if (character.level === 10) return 'BAŞLANGIÇ';
+    if (character.level === 1) return 'BAŞLANGIÇ';
     if (node.classList.contains('complete')) return 'AÇILDI';
     return 'BU LEVELDE AÇILIR';
   }
@@ -77,7 +78,7 @@
     root.querySelectorAll('.unlock-badge').forEach((badge) => {
       if (badge.querySelector('.poma-character-portrait')) return;
       const title = badge.querySelector('strong')?.textContent?.trim() || '';
-      const character = VISUALS.find((item) => title.includes(item.name.replace('Atkısız ', '')));
+      const character = VISUALS.find((item) => title.includes(item.name));
       if (!character) return;
       const emoji = badge.querySelector(':scope > span');
       emoji?.replaceWith(portrait(character));
@@ -89,7 +90,7 @@
       if (badge.querySelector('.poma-character-portrait')) return;
       const level = Number(window.state?.level || 0);
       const character = characterForLevel(level);
-      if (!character || level < 20 || level > 80) return;
+      if (!character || level < 10 || level > 80) return;
       badge.prepend(portrait(character, 'rush-character-art'));
     });
   }
@@ -100,7 +101,7 @@
       const levelText = view.querySelector('.eyebrow')?.textContent || '';
       const match = levelText.match(/(\d+)/);
       const level = match ? Number(match[1]) : Number(window.state?.level || 0);
-      if (!(level >= 1 && level <= 10)) return;
+      if (!(level >= 1 && level <= 9)) return;
 
       view.querySelector('.poma-result-avatar')?.classList.add('is-replaced-by-character-art');
       const art = portrait(VISUALS[0], 'poma-result-art');
@@ -110,14 +111,14 @@
         const note = document.createElement('span');
         note.className = 'poma-scarfless-badge';
         note.append(portrait(VISUALS[0]));
-        note.append(document.createTextNode('İlk 10 level · Atkısız Poma'));
+        note.append(document.createTextNode('Başlangıç karakteri · Poma'));
         view.querySelector('h2')?.insertAdjacentElement('afterend', note);
       }
     });
   }
 
   function nextVisibleCharacterGoal(map) {
-    for (const character of VISUALS.filter((item) => item.level >= 20)) {
+    for (const character of VISUALS.filter((item) => item.level >= 10)) {
       const node = map.querySelector(`.meta-level-node[data-meta-level="${character.level}"]`);
       if (node && !node.classList.contains('complete')) return character;
     }
