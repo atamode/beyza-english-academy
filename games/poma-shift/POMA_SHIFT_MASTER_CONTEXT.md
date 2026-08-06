@@ -1,25 +1,20 @@
 # POMA SHIFT — MASTER CONTEXT
 
 **Status:** LIVING SOURCE OF TRUTH  
-**Last reset:** 2026-08-06  
-**Scope:** Product, gameplay, progression, economy, release readiness
+**Updated:** 2026-08-06  
+**Scope:** Product, gameplay, progression, economy, Android/release readiness
 
-Bu dosya yeni sohbetlerde veya yeni geliştirme oturumlarında Poma Shift'i başa sarmamak için yaşayan ana durum kaydıdır.
+Bu dosya yeni sohbetlerde veya geliştirme oturumlarında Poma Shift'i başa sarmamak için ana durum kaydıdır.
 
 ## Authority order
-
-Çelişki olduğunda bu sıra geçerlidir:
-
-1. `POMA_SHIFT_MASTER_CONTEXT.md` — güncel ürün durumu ve çalışma önceliği
-2. `RUSH_RULES.md` — RUSH davranışı
-3. `META_SPEC.md` — meta, ekonomi, karakter, reklam hook'ları ve boss
-4. `GAME_SPEC.md` — core puzzle motoru
-5. `TEST_PLAN.md` + `META_TEST_PLAN.md` — release doğrulaması
-6. `ART_DIRECTION.md` — görsel dil
-7. `PRODUCT_AUDIT.md` — yaşayan launch audit
-8. `PLAY_RELEASE_CHECKLIST.md` — Google Play teknik/compliance çalışma listesi
-
-Eski dokümanlarda kalan ve üstteki kaynaklarla çelişen kurallar geçersizdir.
+1. `POMA_SHIFT_MASTER_CONTEXT.md`
+2. `RUSH_RULES.md`
+3. `META_SPEC.md`
+4. `GAME_SPEC.md`
+5. test planları
+6. `ART_DIRECTION.md`
+7. `PRODUCT_AUDIT.md`
+8. `PLAY_RELEASE_CHECKLIST.md`
 
 ---
 
@@ -28,303 +23,241 @@ Eski dokümanlarda kalan ve üstteki kaynaklarla çelişen kurallar geçersizdir
 Poma Shift geniş casual kitleye yönelik, Poma IP'sini meta/progression katmanında kullanan uzun ömürlü puzzle oyunudur.
 
 Ana ticari hedef:
-
 > Retention üreten basit core loop + reklam/coin ekonomisi + düşük içerik üretim maliyetiyle uzun level ömrü.
 
-Yeni özellik eklemek launch öncesi ana hedef değildir. Öncelik: kalite, test, ölçüm ve release.
+Launch öncesi öncelik: kalite, test, ölçüm ve release.
 
 ---
 
 # 2. CORE — LOCKED
 
 - 3-piece batch
-- drag/drop
+- manuel drag/drop
 - yalnız tam yatay satır clear
-- her 3 gerçek satır clear = SHIFT
+- her 3 gerçek satır clear = 1 SHIFT
 - board morph: `6×12 → 7×11 → 8×10 → 9×9 → 10×8 → 11×7 → 12×6`
-- normal levelde 1 danger row
-- fail türleri: no legal move / morph crush / move limit
+- normal 1 danger row
+- fail: no legal move / morph crush / move limit / RUSH timeout
 - fairness katmanı
-- combo
-- mobil finger offset
-- haptic / SFX / threat feedback
+- combo + SFX + haptic
 
-Core mekanik veri olmadan yeniden tasarlanmaz.
+Core veri olmadan yeniden tasarlanmaz.
 
 ---
 
 # 3. RUSH — LOCKED
 
-`RUSH_RULES.md` otoritedir.
+Eski 7/6/5 saniyelik tray timer kalıcı olarak geçersizdir.
 
-Eski 7/6/5 saniyelik tray timer **kalıcı olarak iptal edilmiştir**.
-
-Güncel RUSH:
 - ilk RUSH Level 11
-- sonra 15, 20, 25, 30...; boss slotları hariç
-- tüm level süreli
-- giriş kartı → `BAŞLA` → timer
-- Level 11: 60 sn / 2 SHIFT
-- Level 15–24: 50 sn / 3 SHIFT
-- Level 25–49: 45 sn / 3 SHIFT
-- Level 50+: 40 sn / 4 SHIFT
-- RUSH'ta 2 danger row
-- background/tab hidden durumunda timer durur
-- RUSH timeout fail reason: `rush_timeout`
+- sonra 15, 20, 25, 30... boss slotları hariç
+- full-level timer
+- giriş kartı → BAŞLA → timer
+- L11: 60 sn / 2 SHIFT
+- L15–24: 50 sn / 3 SHIFT
+- L25–49: 45 sn / 3 SHIFT
+- L50+: 40 sn / 4 SHIFT
+- RUSH 2 danger row
+- background timer pause
+- fail reason `rush_timeout`
+
+Android gerçek cihaz testinde eski 5 saniyelik tray timer görülmüş ve `rush-disable.js` + `rush-runtime-guard.js` ile hard-disable edilmiştir.
 
 ---
 
-# 4. LONG-RUN LEVEL SYSTEM — LOCKED
+# 4. LONG-RUN LEVEL SYSTEM
 
-- Level 1–10: elle ayarlı onboarding/tuning
+- Level 1–10: elle ayarlı onboarding
 - Level 11+: deterministik difficulty-wave generator
-- hedef: 10.000+ level taşıyabilmek
-- map yalnız oyuncu çevresindeki node'ları render eder
-- future boss slotu hazır değilse normal generator challenge üretir; progression bloklanmaz
+- hedef: 10.000+ level
+- map yalnız aktif level çevresini render eder
+- hazır olmayan future boss slot progression'ı bloklamaz
 
 ---
 
 # 5. CHARACTER PROGRESSION — LOCKED
 
-| Level | Character | Item / Power |
+| Level | Character | Power |
 |---:|---|---|
-| 1–10 | Atkısız Poma | yok |
-| 20 | Poma Dahi | Bilgisayar |
-| 30 | Influencer Poma | Telefon |
-| 40 | Okçu Poma | Ok |
-| 50 | Bozkurt Poma | Kurt Pençesi |
-| 60 | Baby Poma | Emzik Salyası |
-| 70 | Dede Poma | Asa Gücü |
-| 80 | Hero Poma | Sihirli Yaprak |
-| 90 | Yapışkan Şeker Bulutu | ilk boss |
+| 1–9 | **Poma** | özel güç yok |
+| 10 | **Poma Dahi** | Bilgisayar |
+| 20 | **Influencer Poma** | Telefon |
+| 30 | **Okçu Poma** | Ok |
+| 40 | **Bozkurt Poma** | Kurt Pençesi |
+| 50 | **Baby Poma** | Emzik Salyası |
+| 60 | **Dede Poma** | Asa Gücü |
+| 70 | **Fire Poma** | Alev Dalgası |
+| 80 | **PomaHero** | Sihirli Yaprak |
+| 90 | **Yapışkan Şeker Bulutu** | first boss |
 
-Milestone ilk kez tamamlanınca item unlock olur ve ilk kullanımdan 1 adet ücretsiz verilir.
+Kurallar:
+- başlangıç karakterinin adı yalnız **Poma**; “Atkısız Poma” ifadesi kullanılmaz
+- Fire Poma Level 70
+- PomaHero Level 80
+- oyundaki en güçlü karakter/güç **PomaHero / Sihirli Yaprak** olarak kalır
+- boss Level 90 değişmez
 
 ---
 
-# 6. BOOSTERS — LOCKED
+# 6. POWERS / PRICES — LOCKED
 
-- Emzik Salyası: seçilen 1 dolu kareyi siler — 100 Coin
-- Kurt Pençesi: seçilen kare + bitişik 1 dolu kare — 300 Coin
-- Telefon: üst bölgelerdeki 3 tehlikeli kare — 500 Coin
+- Bilgisayar: morph 10 hamle durur — 1.100 Coin
+- Telefon: üst bölgelerde 3 tehlikeli kare — 500 Coin
 - Ok: en üst 4 dolu kare — 700 Coin
-- Bilgisayar: board morph 10 placed-piece boyunca durur — 1.100 Coin
-- Asa: board'u yeniden oynanabilir düzene taşır — 1.600 Coin
-- Sihirli Yaprak: tüm mevcut blokları temizler — 2.000 Coin
-- Güç Paketi: ilk 6 booster ×1, Yaprak hariç — 3.500 Coin
+- Kurt Pençesi: seçilen + bitişik 1 kare — 300 Coin
+- Emzik Salyası: seçilen 1 kare — 100 Coin
+- Asa Gücü: board reshuffle — 1.600 Coin
+- **Alev Dalgası: LOFT bölgesindeki ilk 2 satırı tamamen yakar — 1.800 Coin**
+- **Sihirli Yaprak: bütün boardu temizler — 2.000 Coin / en güçlü güç**
+
+Fire Poma görsel efekti:
+- alev yukarıdan boardun ilk 2 satırını süpürür
+- bloklar silinir
+- kül partikülleri dağılır
+
+Poma Güç Paketi:
+- 3.500 Coin
+- ilk 6 klasik güç ×1
+- Alev Dalgası ve Yaprak pakete dahil değil
 
 ---
 
-# 7. ECONOMY / LIVES / ADS — LOCKED
+# 7. ECONOMY / LIVES / ADS
 
-Coin first-clear ödülü:
-- normal: 5
-- RUSH/hard: 10
-- boss: 20
-- replay Coin farm üretmez
+Coin first-clear:
+- normal +5
+- RUSH/hard +10
+- boss +20
+- replay farm yok
 
 Lives:
-- max 3
-- fail sonunda 1 can düşer
-- gün içi ilk depletion: 1 dk sonra 1 can
-- ikinci depletion: 15 dk
-- üçüncü+: 30 dk
-- rewarded: +1 can, max 3
-- 1 can: 100 Coin
-- 3 can: 250 Coin
+- max/start 3
+- fail sonunda 1 can
+- depletion timers: 1 dk / 15 dk / 30 dk+
+- rewarded +1 life max 3
+- 1 life 100 / 3 life 250 Coin
 
 Continue:
-- rewarded ad = +3 hamle
-- level başına max 5 rewarded continue
-- aynı attempt zincirinde ikinci kez can düşmez
+- rewarded +3 moves
+- max 5 continue ads / level
+- aynı attemptte ikinci kez life düşmez
 
 Interstitial:
-- Level 1–4 yok
-- Level 5+ completion placement
+- L1–4 yok
+- L5+ completion placement
 
-Return gift:
-- claim sonrası 12 saat cooldown
-- 100 Coin
-- yalnız açılmış booster havuzundan 1 weighted item
-
-Reklam implementasyonu:
-- web prototipte test adapterı var
-- native shell `@capacitor-community/admob` kullanıyor
-- rewarded + interstitial bridge kodu var
-- consent info/form akışı kodda var
-- default build test modunda Google demo ID'leri kullanıyor
-- production build `POMA_ADS_TESTING=false` + platforma özel AdMob unit ID environment değişkenlerini bekliyor
+12h gift:
+- 100 Coin + weighted unlocked classic booster
+- Fire Alev Dalgası V1 gift poolunda değil
 
 ---
 
-# 8. BOSS — LOCKED V1
+# 8. BOSS
 
 Level 90: **Yapışkan Şeker Bulutu**
+- her 3 saniyede 1 kare
+- row clear / uygun booster ile temizlenebilir
+- tavana ulaşırsa fail
 
-- level başında aktif
-- her 3 saniyede 1 kare kapatır
-- kareler line clear ve uygun boosterlarla temizlenebilir
-- tavana ulaştığında fail
-
-Future boss slots:
-`120, 150, 180, 210...`
-
-V1 release için yalnız Level 90 bossu zorunludur.
+Future boss slots: `120, 150, 180, 210...`
 
 ---
 
-# 9. ART DIRECTION — LOCKED
+# 9. ART DIRECTION
 
-Hedef:
+Target:
+> premium casual / soft plastic blocks / dark modern board
 
-> Premium casual / soft plastic blocks / koyu modern board.
+Poma yaklaşık %20 IP/meta katmanında kullanılır; board/blok yüzlerine logo/karakter basılmaz.
 
-Poma kullanım oranı yaklaşık `%80 bağımsız casual / %20 Poma IP`.
+Fire Poma için gerçek repo asseti:
+- `assets/brand/poma-academy/fire poma.png`
 
-Poma kullanılır:
-- tutorial
-- map
-- character goals
-- unlock / complete / fail reaksiyonları
-- menu/loading/store shell
-
-Poma board hücreleri ve blokların üstüne basılmaz.
-
-Renk dili:
-- normal/control: koyu mavi / teal
-- success: mint / yumuşak yeşil
-- warning: amber
-- critical danger: kırmızı yalnız gerçek tehlikede
-
-Müzik yönü:
-- map music
-- gameplay'de SFX öncelikli
+PomaHero asseti:
+- `assets/brand/poma-academy/poma-hero.png`
 
 ---
 
-# 10. IMPLEMENTED / VERIFIED STATUS
+# 10. ANDROID / NATIVE STATUS
 
-Repo içinde mevcut ve kod/test karşılığı doğrulanmış başlıklar:
-- core board / SHIFT / line clear
-- RUSH full-level timer ve 2 danger row
-- scalable level generator
-- character milestones
-- booster inventory / purchase / effects
-- Coin economy
-- 3-life system ve depletion timers
-- rewarded continue
-- interstitial/rewarded test adapter
-- 12-hour return gift
-- Level 90 Sugar Cloud boss
-- scalable map shell
-- local telemetry + analytics bridge contract
-- audio/SFX/haptic layer
-- premium board depth + soft-plastic block material launch layer
-- premium HUD/game-shell ilk polish geçişi
-- `games/poma-shift/native/` altında Capacitor Android scaffold
-- Capacitor 8.4.2 + `@capacitor-community/admob` 8.0.0 bridge
-- Google test ad ID'leri + production env ID desteği
-- AdMob consent request/form akışı
-- CI root test/build + native web/AdMob build + Capacitor Android project generation
-- Android workflow: `assembleDebug` + `bundleRelease`
-- debug APK artifact doğrulandı: yaklaşık 10.46 MB
-- unsigned release AAB artifact doğrulandı: yaklaşık 8.88 MB
-- AAB içinden: package `com.pomante.pomashift`, minSdk 24, compileSdk 36, targetSdk 36
-- 31 Ağustos 2026 Google Play API 36 target gereksinimi teknik olarak karşılanıyor
-- signed production AAB workflow hazır; gerçek credentials/secrets henüz provision edilmedi
-- Poma Shift için Node contract testleri: analytics, meta, RUSH, continue, native shell, boss UI, character art, launch polish, map audio ve timed guard
-- live Playwright suite L11 RUSH / L90 boss / L10000 generator smoke testlerini içeriyor; güncel head için deploy sonrası sonuç bekleniyor
-- `PLAY_RELEASE_CHECKLIST.md` ile Play release/Data Safety baseline kayda alındı
+App ID: `com.pomante.pomashift`
 
-Web cache policy:
-- `manifest.webmanifest` ve `sw.js` repository'de korunur
-- launch-candidate web runtime eski Poma Shift service-worker/cache'lerini bilinçli olarak temizler
-- web sürümü şu aşamada offline PWA olarak vaat edilmez
-- amaç stale gameplay/economy deploy riskini kaldırmaktır
-- native uygulama web assetlerini yerel bundle'a aldığı için browser SW'ye bağımlı değildir
+Native:
+- Capacitor 8.4.2
+- `@capacitor-community/admob` 8.0.0
+- Android minSdk 24
+- compileSdk 36
+- targetSdk 36
+- debug APK + unsigned release AAB workflow mevcut
+- production signed AAB workflow hazır; secrets henüz provision edilmedi
+
+2026-08-06 gerçek cihaz screenshot testinde yakalanıp düzeltilenler:
+- eski 5 saniyelik RUSH tray timer
+- native sonuç/boss görsellerinin eksik paketlenmesi
+- DEV panelinin APK'da görünmesi
+- version query yüzünden native AdMob bridge injection riski
+- Fire Poma dahil milestone karakter assetlerinin native pakete eksiksiz alınması
+
+Native build artık şu görselleri paketler:
+- Poma
+- Dahi
+- Influencer
+- Okçu
+- Bozkurt
+- Baby
+- Dede
+- Fire Poma
+- PomaHero
+- sad/result Poma
+- Sugar Cloud
 
 ---
 
-# 11. KNOWN RELEASE BLOCKERS
+# 11. CURRENT RELEASE BLOCKERS
 
-P0 — external/runtime:
-- güncel live deploy Playwright smoke sonucunu PASS olarak doğrula
-- Core + Meta release gate'i gerçek cihazlarda çalıştır ve PASS/FAIL kaydı üret
-- gerçek production analytics provider bağla
-- production AdMob App ID + rewarded/interstitial unit ID'lerini provision et
-- GitHub production release secrets gir
-- signed production AAB workflow'u çalıştır ve PASS al
-- privacy policy için aktif HTTPS URL + resmi privacy contact mechanism oluştur
-- Play Console Data Safety / Ads / Target Audience / Content Rating beyanlarını tamamla
-- gerçek cihaz rewarded/interstitial + consent smoke test
-- 5–10 kişi kör test
-- 20–50 dış test telemetry
-- ilk 10 level + RUSH tuning'i gerçek veriyle yap
-
-Resolved 2026-08-06:
-- yaşayan master context oluşturuldu
-- `GAME_SPEC.md`, `ART_DIRECTION.md`, `PRODUCT_AUDIT.md` güncel otoriteyle hizalandı
-- analytics `rush_timeout` bugı düzeltildi ve testle kilitlendi
-- native kaynak konumu ve Capacitor/AdMob bridge doğrulandı
-- CI Android project generation doğrulandı
-- gerçek debug APK üretimi doğrulandı
-- gerçek unsigned release AAB üretimi doğrulandı
-- targetSdk/compileSdk 36 doğrulandı
-- production signed-AAB workflow hazırlandı
-- web cache politikası netleştirildi
-- premium board/block/HUD ilk polish katmanı eklendi
-- Google Play release checklist/Data Safety teknik baseline oluşturuldu
+- yeni Android APK gerçek cihaz smoke testi
+- L11 RUSH süre doğrulaması
+- L70 Fire Poma unlock + Alev Dalgası animasyonu
+- L80 PomaHero / Yaprak
+- L90 boss görsel/runtime
+- rewarded/interstitial test reklamları gerçek cihaz
+- production analytics
+- production AdMob IDs
+- signed AAB secrets/build
+- privacy policy / Data Safety / Play listing
+- 5–10 blind test
+- 20–50 external telemetry test
 
 ---
 
-# 12. GO / NO-GO METRICS
+# 12. CURRENT WORK ORDER
 
-İlk dış test hedefleri:
-- Level 1 completion ≥ %70
-- Level 1 complete → Level 2 start ≥ %70
-- Level 3'e ulaşma ≥ %50
-- fail sonrası restart ≥ %40
-- fairness adjustment < %10 batch
-
-RUSH ayrıca ölçülür:
-- Level 11 reach
-- first RUSH completion
-- rush timeout rate
-- remaining time
-- RUSH sonrası continuation
-
-Bu eşikler karşılanmadan yeni feature eklemek öncelik değildir.
+1. CI + Android build PASS
+2. Yeni APK'yı telefonda smoke test
+3. Görsel/UI kalan kusurları kapat
+4. AdMob/analytics production
+5. signed AAB
+6. Play privacy/Data Safety/store assets
+7. blind/external test
+8. data-driven tuning
+9. release
 
 ---
 
-# 13. CURRENT WORK ORDER
+# 13. DO NOT REOPEN WITHOUT DATA
 
-1. Current live deploy smoke PASS
-2. Gerçek cihaz Core + Meta release gate
-3. Map / character / unlock / boss presentation polish
-4. Production privacy + analytics + AdMob credentials + signed AAB
-5. Blind playtest
-6. External telemetry test
-7. Data-driven tuning
-8. Store release
-
----
-
-# 14. DO NOT REOPEN WITHOUT DATA
-
-Aşağıdakiler yeniden sıfırdan tartışılmaz:
-- line clear kuralı
-- SHIFT core ve board morph
+Yeniden sıfırdan tartışılmaz:
+- line clear
+- SHIFT + board morph
 - 3-piece batch
-- RUSH'un full-level timer olması
-- normal 1 / RUSH 2 danger row
-- character milestone sırası
-- booster ana etkileri ve fiyatları
-- 3-life limiti
-- continue +3 / max 5
-- Level 90 first boss
-- 30-level future boss slotları
-- 12-hour gift
-- 10.000+ level yönü
+- RUSH full-level timer
+- character order: **Poma → Dahi 10 → Influencer 20 → Okçu 30 → Bozkurt 40 → Baby 50 → Dede 60 → Fire Poma 70 → PomaHero 80 → Boss 90**
+- PomaHero en güçlü karakterdir
+- Fire Alev Dalgası ilk 2 satırı temizler
+- booster fiyatları
+- 3 life
+- continue +3 / max5
+- boss90
+- 10.000+ level direction
 
 Değişiklik yalnız gerçek oyuncu verisi, gelir/retention verisi veya teknik zorunlulukla yapılır.
