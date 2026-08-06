@@ -1,21 +1,23 @@
 # POMA SHIFT — GAME SPEC
 
-**Status:** V0.4 / PLAYABLE PROTOTYPE  
+**Status:** CORE LOCKED / LAUNCH TRACK  
 **Project type:** Web-first casual puzzle  
 **Working name:** Poma Shift  
 **Final name:** OPEN
+
+**Authority note:** Genel yaşayan durum için `POMA_SHIFT_MASTER_CONTEXT.md`; RUSH için `RUSH_RULES.md`; ekonomi/karakter/reklam/boss için `META_SPEC.md` üst otoritedir. Bu dosya core puzzle motorunu tanımlar.
 
 ---
 
 # 1. PURPOSE
 
-Bu dosya Poma Shift için yaşayan tek ana oyun/motor spesifikasyonudur.
+Bu dosya Poma Shift core oyun/motor spesifikasyonudur.
 
 Ana hedef:
 
-> Oyuncunun kendi isteğiyle “bir level daha” demesini sağlayan sade bir core loop doğrulamak.
+> Oyuncunun kendi isteğiyle “bir level daha” demesini sağlayan sade bir core loop doğrulamak ve bunu uzun ömürlü progression/meta katmanının altında stabil tutmak.
 
-Poma görseli, reklam ve meta özellikler motoru kurtarmak için kullanılmaz.
+Poma görseli, reklam ve meta özellikler kötü bir core motoru kurtarmak için kullanılmaz.
 
 ---
 
@@ -57,17 +59,20 @@ SHIFT olduğunda:
 - yeni kolon sağ/sol kenara dağıtılır
 - kalan board içeriği korunur
 
-Kaldırılacak üst satır doluysa:
+Normal levelde SHIFT öncesi gerçek üst 1 danger row kontrol edilir. RUSH'ta bu kontrol 2 danger row'dur; fiziksel board yine yalnız 1 satır kısalır.
+
+Danger bölgesinde temizlenmeyen blok varsa:
 
 **GAME OVER — MORPH CRUSH**
 
 SHIFT oyunun ana kimliğidir ve görsel olarak saklanmaz.
 
 Tehdit sistemi:
-- 0/3: silinecek üst satır sürekli görünür, sonraki board hayalet çerçevesi gösterilir
-- 1/3: sarı uyarı + hafif ses/titreşim
-- 2/3: kırmızı alarm + pulse + alarm sesi + güçlü titreşim
+- normal durumda sakin board
+- 1/3: amber hazırlık + hafif feedback
+- 2/3: kırmızı alarm + pulse + daha güçlü feedback
 - SHIFT: kesme/bıçak hissi veren ses + güçlü feedback
+- risk satırı açıkça görünür; dış ghost/wireframe board kullanılmaz
 
 Amaç oyuncuyu bilgilendirmek ama aynı zamanda baskı altında hata yapmaya açık hale getirmektir.
 
@@ -83,11 +88,11 @@ YOK:
 - dikey kolon clear
 - çapraz clear
 
-Renk şu anda yalnızca görsel ayrımdır.
+Renk core kurala etki etmez; görsel ayrımdır.
 
 ---
 
-# 5. PIECE SYSTEM — LOCKED FOR V0.4
+# 5. PIECE SYSTEM — LOCKED
 
 - 1–4 hücreli basit polyomino şekilleri
 - yalnızca klasik Tetris tetrominolarına bağlı değil
@@ -111,54 +116,39 @@ Kural:
 - üç parçayı istediği sırayla kullanır
 - kullanılan slot boş kalır
 - üçü tamamlanınca yeni batch gelir
+- beklemek yeni batch üretmez
 
 Bu yapı “bu üç parçayı nasıl sığdırırım?” mikro problemini üretir.
 
 ---
 
-# 7. SERIES TIMER / RUSH LEVELS — LOCKED FOR V0.4
+# 7. RUSH LEVELS — LOCKED CURRENT RULE
 
-Timer ana mekanik değildir.
-Timer yalnız özel **RUSH** levellerinde tempo değiştirici olarak kullanılır.
+RUSH için `RUSH_RULES.md` tek otoritedir.
 
-### Level 1–10
-- timer YOK
-- oyuncu önce board + SHIFT + move budget dilini öğrenir
+Eski 7/6/5 saniyelik tray timer ve kullanılmamış parçaları yakma kuralı **kalıcı olarak iptal edilmiştir**.
 
-### İlk RUSH
-- Level 11
-
-### Sonraki RUSH levelleri
-- 15, 20, 25, 30... gibi her 5 levelde bir
-- Level 11 özel ilk tanıtım RUSH levelidir
-
-### RUSH süreleri
-- Level 11–24: **7 saniye**
-- Level 25–49: **6 saniye**
-- Level 50+: **5 saniye**
-
-Timer batch ekrana geldiği anda başlamaz.
-Oyuncu önce üç parçayı inceleyebilir.
-İlk parça yerleştirildikten sonra süre başlar.
-
-Süre dolarsa:
-- kullanılmamış parçalar yanar
-- her kullanılmamış parça +1 hamle cezası sayılır
-- yeni batch gelir
-
-Timer tek başına anında game-over üretmez.
-Hamle bütçesini tüketerek baskı yaratır.
-
-Haritada RUSH node'ları ⚡ ile ayrılır.
-Normal levellerde timer göstergesi **SERBEST** olarak görünür.
+Güncel özet:
+- Level 1–10 timer yok
+- ilk RUSH Level 11
+- sonra 15, 20, 25, 30...; boss slotları hariç
+- bütün RUSH level süreli
+- kural kartı gösterilir
+- `BAŞLA` denmeden clock çalışmaz
+- Level 11: 60 sn / 2 SHIFT
+- Level 15–24: 50 sn / 3 SHIFT
+- Level 25–49: 45 sn / 3 SHIFT
+- Level 50+: 40 sn / 4 SHIFT
+- RUSH'ta 2 danger row
+- süre biter ve hedef tamamlanmamışsa `RUSH TIMEOUT`
+- uygulama arka plana alınırsa clock durur
 
 ---
 
-# 8. MOVE BUDGET — ACTIVE TEST RULE
+# 8. MOVE BUDGET — ACTIVE TUNING RULE
 
 Her levelin maksimum hamle bütçesi vardır.
 Yerleştirilen her parça = 1 hamle.
-RUSH timeout nedeniyle yanan her parça = 1 ceza hamlesi.
 
 İlk 10 level başlangıç limitleri:
 
@@ -175,32 +165,35 @@ RUSH timeout nedeniyle yanan her parça = 1 ceza hamlesi.
 | 9 | 88 |
 | 10 | 88 |
 
-Level 11+ başlangıç formülü:
+Level 11+ başlangıç formülü core tuning tabanıdır:
 
 `18 + ((targetShifts - 1) × 14) + (startStage × 2)`
 
-Bu değerler tuning başlangıcıdır.
+Meta generator yüksek levellerde kendi difficulty-wave konfigürasyonunu uygular.
 
 Hamle limiti dolduğunda hedef tamamlanmamışsa:
 
 **GAME OVER — MOVE LIMIT**
 
+Rewarded continue meta katmanında aynı attempt'e +3 efektif hamle ekleyebilir; level başına üst sınır `META_SPEC.md` içindedir.
+
 ---
 
 # 9. FAIL CONDITIONS — LOCKED
-
-Üç fail tipi vardır:
 
 ### A. NO LEGAL MOVE
 Tray'de kalan hiçbir parça yerleşemiyor.
 
 ### B. MORPH CRUSH
-SHIFT sırasında kaldırılacak üst sırada blok var.
+SHIFT öncesi geçerli danger bölgesinde temizlenmeyen blok var.
 
 ### C. MOVE LIMIT
 Level hamle bütçesi tükendi.
 
-RUSH timeout doğrudan ölüm değildir; move budget cezasıdır.
+### D. RUSH TIMEOUT
+Yalnız RUSH levelde full-level süre bitti ve hedef tamamlanmadı.
+
+Boss'a özgü fail reason'lar meta/boss katmanında ayrıca üretilebilir.
 
 ---
 
@@ -238,7 +231,7 @@ Oyuncuyu sürekli kurtaran gizli rescue sistemi kurulmaz.
 | 9 | 6×12 | 6 | yok |
 | 10 | 6×12 | 6 | yok + daha zor bag |
 
-İlk 10 level motor öğretim/tuning setidir.
+İlk 10 level motor öğretim/tuning setidir ve gerçek oyuncu verisiyle tune edilir.
 
 ---
 
@@ -263,6 +256,9 @@ Ses feedback'i shape'e göre ayrılır.
 
 ### Fail / complete
 - ayrı ses ve titreşim paterni
+
+### Music
+- güncel yön: haritada background music; gameplay'de SFX öncelikli
 
 Ses kapatma düğmesi zorunludur.
 
@@ -296,9 +292,12 @@ Görsel yön:
 > **Level 1 aşağıda, sonraki leveller yukarı doğru çıkar.**
 
 - kıvrımlı node path
-- aktif level yanında küçük Poma rehberi
+- aktif level yanında Poma / karakter progression sunumu
 - RUSH level ⚡ ile işaretli
+- boss node ayrı görsel dil kullanır
+- milestone karakter hedefleri haritada gösterilebilir
 - Poma haritada ilerler; board içine girmez
+- yüksek levelde yalnız oyuncu çevresindeki node'lar render edilir
 
 ---
 
@@ -312,25 +311,24 @@ Poma'nın görevi oyunu taşımak değil, tutan oyuncuyu Pomante markasına bağ
 
 Poma KULLANILIR:
 - tutorial rehberi
-- level haritasında aktif node
+- level haritası
+- character milestone / unlock
 - level complete reaksiyonu
 - fail ekranında hafif reaksiyon
-- ileride loading/menu/store icon gibi marka yüzleri
+- loading/menu/store shell
+- meta booster sistemi
 
 Poma KULLANILMAZ:
-- grid hücreleri
-- blokların üstü
-- line clear kuralı
-- SHIFT mekaniği
-- zorunlu gameplay power'ı
+- grid hücrelerinin dekorasyonu olarak
+- blokların üstünde sürekli artwork olarak
+- line clear kuralını değiştirmek için
+- SHIFT core mekaniğini değiştirmek için
 
-Amaç oyunun geniş casual kitleye bağımsız görünmesini korumaktır.
+Karakter güçleri opsiyonel meta booster'dır; core puzzle kuralının yerine geçmez.
 
 ---
 
 # 16. VISUAL DIRECTION — LOCKED TARGET
-
-Mevcut prototip çizgi/flat görünümü final değildir.
 
 Hedef:
 - premium casual
@@ -347,6 +345,8 @@ Kaçınılacak:
 - çok fazla açıklama metni
 - Poma'yı board'u domine edecek kadar büyütmek
 
+Detay için `ART_DIRECTION.md`.
+
 ---
 
 # 17. PROGRESS / SCORE
@@ -355,14 +355,16 @@ Progress localStorage:
 - son level
 - en yüksek açılan level
 
-Score çalışır ancak ana retention sistemi değildir.
-HUD'da skor yerine hamle bütçesi önceliklidir.
+Meta katmanı ayrıca Coin, can, inventory ve unlock state tutar.
+
+Score çalışabilir ancak ana retention sistemi değildir.
+HUD'da skor yerine hamle bütçesi / hedef / risk önceliklidir.
 
 ---
 
 # 18. TELEMETRY
 
-Mevcut local eventler:
+Core/local eventler arasında:
 - `session_start`
 - `level_start`
 - `tray_dealt`
@@ -371,30 +373,43 @@ Mevcut local eventler:
 - `line_clear`
 - `shift`
 - `fairness_adjustment`
-- `tray_timeout`
 - `level_fail`
 - `level_restart`
 - `level_complete`
+- `line_combo`
 
-Fail reason:
+RUSH:
+- `rush_intro_shown`
+- `rush_start`
+- `rush_timeout`
+- `rush_complete`
+- `morph_crush_danger_zone`
+
+Meta ayrıca ad / Coin / booster / gift / boss eventleri üretir.
+
+Core fail reason:
 - `no_legal_move`
 - `morph_crush`
 - `move_limit`
+- `rush_timeout`
 
 Ölçülecek:
 - moves
-- RUSH timeout penalty
 - invalid drops
 - level duration
 - lines cleared
 - shifts
-- fail nedeni
+- fail reason
+- fairness adjustment
+- RUSH reach / completion / timeout / remaining time
+
+Production merkezi analytics provider launch blocker'dır; local log tek başına yeterli değildir.
 
 ---
 
 # 19. GO / NO-GO
 
-İlk 20–50 oyuncuda iç test sinyalleri:
+İlk 20–50 oyuncuda test sinyalleri:
 
 - Level 1 completion ≥ %70
 - Level 1 bitirenlerin Level 2'ye geçişi ≥ %70
@@ -407,85 +422,104 @@ RUSH ayrı ölçülür:
 - Level 11'e ulaşma oranı
 - ilk RUSH completion
 - timeout oranı
+- kalan süre
 - RUSH sonrası devam oranı
 
-Timer yüzünden oyuncu bırakıyorsa timer core mechanic değildir; azaltılır veya seyrekleştirilir.
+RUSH completion çok düşükse önce süre/target tuning yapılır; mekanik veri olmadan yeniden tasarlanmaz.
 
 ---
 
-# 20. STRICT OUT OF SCOPE
+# 20. CURRENT LAUNCH OUT OF SCOPE
 
-Motor doğrulanmadan YOK:
-- match-3
-- renk patlatma
-- bomba/joker/power-up
-- Poma gameplay güçleri
-- karakter geliştirme
-- Poma Kingdom meta progression
-- coin
+Launch öncesi yeni sistem olarak EKLENMEZ:
+- match-3 / renk patlatma core değişikliği
+- yeni joker sınıfları
 - günlük görev
 - battle pass
-- shop
 - multiplayer
 - leaderboard
-- login
-- reklam
-- IAP
+- login/account sistemi
+- IAP mağazası
+- Level 90 dışındaki yeni özel boss karakterleri
+- kapsamı büyüten yeni meta world mekanikleri
+
+Mevcut ve korunacak meta sistemleri `META_SPEC.md` içindedir:
+- Coin
+- shop/booster
+- character progression
+- rewarded/interstitial hook
+- lives
+- return gift
+- Level 90 boss
 
 ---
 
-# 21. WEB-FIRST ARCHITECTURE — LOCKED
+# 21. WEB-FIRST ARCHITECTURE — LOCKED DIRECTION
 
-İlk prototip:
+Web motoru:
 - HTML
 - CSS
 - vanilla JavaScript
 - Canvas 2D
 - Pointer Events
 - localStorage
-- service worker
-- PWA manifest
+- PWA manifest/service-worker dosyaları
 
 Store yönü:
 
-`Web assets → Capacitor native shell → Android / iOS`
+`Web assets → native shell → Android / iOS`
 
 Store uygulaması yalnız uzak site açan boş WebView olmayacak.
 Ana HTML/JS/CSS/assets uygulama bundle'ı içinde bulunacak.
 
+**Release blocker:** Android/Capacitor kaynak konumu ve gerçek native ad provider güncel main release hattında ayrıca doğrulanmalıdır.
+
+**Known discrepancy:** mevcut web `index.html` açılışta Poma Shift service-worker registration/cache'lerini temizliyor; offline/PWA davranışı release öncesi tek karara bağlanmalıdır.
+
 ---
 
-# 22. CURRENT FILE STRUCTURE
+# 22. CURRENT FILE STRUCTURE — KEY FILES
 
 ```text
 games/poma-shift/
+  POMA_SHIFT_MASTER_CONTEXT.md
   GAME_SPEC.md
+  RUSH_RULES.md
+  META_SPEC.md
+  ART_DIRECTION.md
+  PRODUCT_AUDIT.md
   TEST_PLAN.md
+  META_TEST_PLAN.md
   README.md
   index.html
-  styles.css
-  threat.css
-  poma-brand.css
   game.js
-  mobile-layout.js
   game-feel.js
   product-ui.js
-  threat-system.js
-  poma-brand.js
+  rush-disable.js
+  rush-mode.js
+  combo-system.js
+  meta-system.js
+  analytics-bridge.js
+  audio-mix.js
+  boss-ui.js
   manifest.webmanifest
   sw.js
-  icon.svg
+  ...visual / UI support files
 ```
 
 ---
 
-# 23. FINAL V0.4 RULE
+# 23. FINAL CORE RULE
 
-Başarı kriteri:
-
-- Poma artwork kalitesi değil
-- Store build değil
-- reklam geliri değil
-- özellik sayısı değil
+Core başarı kriteri:
 
 **Oyuncunun SHIFT baskısını anlayıp adil bulması ve kendi isteğiyle bir sonraki levele geçmesi.**
+
+Launch başarı kriteri ise buna ek olarak:
+- regression testlerinin geçmesi
+- premium görsel kalite
+- gerçek analytics
+- gerçek native reklam entegrasyonu
+- ölçülen retention / restart / funnel sinyalleri
+
+Yeni feature sayısı başarı kriteri değildir.
