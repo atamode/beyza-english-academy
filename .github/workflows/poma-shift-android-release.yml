@@ -1,0 +1,101 @@
+name: Poma Shift Android Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: poma-shift-android-release
+  cancel-in-progress: false
+
+jobs:
+  signed-aab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      POMA_ADS_TESTING: 'false'
+      POMA_ADMOB_ANDROID_APP_ID: ${{ secrets.POMA_ADMOB_ANDROID_APP_ID }}
+      POMA_ANDROID_REWARDED_AD_UNIT_ID: ${{ secrets.POMA_ANDROID_REWARDED_AD_UNIT_ID }}
+      POMA_ANDROID_INTERSTITIAL_AD_UNIT_ID: ${{ secrets.POMA_ANDROID_INTERSTITIAL_AD_UNIT_ID }}
+      POMA_ANDROID_KEYSTORE_B64: ${{ secrets.POMA_ANDROID_KEYSTORE_B64 }}
+      POMA_ANDROID_KEYSTORE_PASSWORD: ${{ secrets.POMA_ANDROID_KEYSTORE_PASSWORD }}
+      POMA_ANDROID_KEY_ALIAS: ${{ secrets.POMA_ANDROID_KEY_ALIAS }}
+      POMA_ANDROID_KEY_PASSWORD: ${{ secrets.POMA_ANDROID_KEY_PASSWORD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Validate production secrets
+        shell: bash
+        run: |
+          required=(
+            POMA_ADMOB_ANDROID_APP_ID
+            POMA_ANDROID_REWARDED_AD_UNIT_ID
+            POMA_ANDROID_INTERSTITIAL_AD_UNIT_ID
+            POMA_ANDROID_KEYSTORE_B64
+            POMA_ANDROID_KEYSTORE_PASSWORD
+            POMA_ANDROID_KEY_ALIAS
+            POMA_ANDROID_KEY_PASSWORD
+          )
+          missing=0
+          for name in "${required[@]}"; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing required GitHub secret: ${name}"
+              missing=1
+            fi
+          done
+          exit "$missing"
+
+      - name: Install native dependencies
+        working-directory: games/poma-shift/native
+        run: npm install --no-audit --no-fund
+
+      - name: Generate production Capacitor Android project
+        working-directory: games/poma-shift/native
+        run: npm run android:add
+
+      - name: Configure production AdMob app ID
+        working-directory: games/poma-shift/native
+        run: node scripts/configure-android-test.mjs
+
+      - name: Restore Android upload keystore
+        shell: bash
+        run: |
+          echo "$POMA_ANDROID_KEYSTORE_B64" | base64 --decode > "$RUNNER_TEMP/poma-upload.jks"
+          test -s "$RUNNER_TEMP/poma-upload.jks"
+
+      - name: Build signed release AAB
+        working-directory: games/poma-shift/native/android
+        shell: bash
+        run: |
+          chmod +x gradlew
+          ./gradlew bundleRelease --no-daemon \
+            -Pandroid.injected.signing.store.file="$RUNNER_TEMP/poma-upload.jks" \
+            -Pandroid.injected.signing.store.password="$POMA_ANDROID_KEYSTORE_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$POMA_ANDROID_KEY_ALIAS" \
+            -Pandroid.injected.signing.key.password="$POMA_ANDROID_KEY_PASSWORD"
+
+      - name: Verify bundle signature
+        shell: bash
+        run: jarsigner -verify games/poma-shift/native/android/app/build/outputs/bundle/release/app-release.aab
+
+      - name: Upload signed release AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: poma-shift-android-release-signed
+          path: games/poma-shift/native/android/app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+          retention-days: 7
