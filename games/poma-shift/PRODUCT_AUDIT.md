@@ -3,7 +3,7 @@
 **Status:** LAUNCH-CANDIDATE AUDIT  
 **Authority:** Genel durum için `POMA_SHIFT_MASTER_CONTEXT.md`
 
-Bu dosya artık eski V0.1.3 prototip kapsamını değil, mevcut ürünün launch öncesi gerçek eksiklerini izler.
+Bu dosya mevcut ürünün launch öncesi gerçek eksiklerini izler.
 
 ## P0 — Core regression / usability
 
@@ -32,7 +32,8 @@ Bu dosya artık eski V0.1.3 prototip kapsamını değil, mevcut ürünün launch
 - [x] background/tab hidden olduğunda pause
 - [x] RUSH timeout fail reason
 - [x] RUSH sırasında 2 danger row
-- [ ] Level 11 / 15 / 25 / 50 smoke test PASS kaydı
+- [x] static contract testleri RUSH süre/danger/boss-exclusion davranışını koruyor
+- [ ] Level 11 / 15 / 25 / 50 gerçek gameplay smoke PASS kaydı
 - [ ] RUSH süreleri gerçek oyuncu datasıyla tune edilmeli
 
 ## P0 — Meta / economy regression
@@ -48,11 +49,12 @@ Bu dosya artık eski V0.1.3 prototip kapsamını değil, mevcut ürünün launch
 - [x] 12-hour return gift
 - [x] character milestones 20–80
 - [x] scalable 10.000+ level generator
-- [ ] `META_TEST_PLAN.md` release gate tam PASS kaydı
-- [ ] 1 / 20 / 80 / 90 / 120 / 1000 / 10000 smoke PASS
-- [ ] life timer edge-case testi
-- [ ] continue 5-cap edge-case testi
-- [ ] booster effects full regression
+- [x] static meta contract testleri temel ekonomi sabitlerini koruyor
+- [ ] `META_TEST_PLAN.md` gerçek gameplay release gate tam PASS kaydı
+- [ ] 1 / 20 / 80 / 90 / 120 / 1000 / 10000 gerçek smoke PASS
+- [ ] life timer runtime edge-case testi
+- [ ] continue 5-cap runtime edge-case testi
+- [ ] booster effects full runtime regression
 
 ## P0 — Boss
 
@@ -60,8 +62,9 @@ Bu dosya artık eski V0.1.3 prototip kapsamını değil, mevcut ürünün launch
 - [x] 3 saniyelik fill interval
 - [x] line clear / booster ile temizlenebilir sugar cells
 - [x] ceiling fail
+- [x] static contract testi boss interval/ceiling kuralını koruyor
 - [ ] Level 90 gerçek gameplay regression PASS
-- [ ] boss interval cleanup / continue sonrası restart PASS
+- [ ] boss interval cleanup / continue sonrası restart runtime PASS
 - [ ] boss görsel presentation final
 
 ## P0 — Measurement
@@ -70,6 +73,7 @@ Bu dosya artık eski V0.1.3 prototip kapsamını değil, mevcut ürünün launch
 - [x] analytics bridge contract
 - [x] analytics summary
 - [x] `rush_timeout` summary bug fix
+- [x] analytics bridge static contract testleri
 - [ ] gerçek production analytics provider
 - [ ] level funnel dashboard/rapor
 - [ ] fail reason dağılım raporu
@@ -79,12 +83,19 @@ Bu dosya artık eski V0.1.3 prototip kapsamını değil, mevcut ürünün launch
 ## P0 — Native / monetization
 
 - [x] web test rewarded/interstitial adapter
-- [ ] Android/Capacitor source location tek release hattında doğrulanmalı
-- [ ] gerçek rewarded provider bağlanmalı
-- [ ] gerçek interstitial provider bağlanmalı
-- [ ] consent/privacy akışı doğrulanmalı
-- [ ] production signing/build hattı doğrulanmalı
-- [ ] gerçek cihaz ad smoke test
+- [x] native shell konumu: `games/poma-shift/native/`
+- [x] Capacitor Android shell
+- [x] `@capacitor-community/admob` rewarded provider bridge
+- [x] `@capacitor-community/admob` interstitial provider bridge
+- [x] consent info/form kod akışı
+- [x] Google demo ad ID'leriyle safe test mode
+- [x] production AdMob unit ID environment desteği
+- [x] native shell contract testleri
+- [x] CI native web + AdMob bridge build adımı
+- [ ] production AdMob unit ID'lerini provision et
+- [ ] production mode build smoke
+- [ ] Android signing / AAB release hattını doğrula
+- [ ] gerçek cihaz rewarded/interstitial/consent smoke test
 
 ## P1 — Game feel / visual quality
 
@@ -145,4 +156,4 @@ Launch öncesi yeni feature eklenmez.
 
 Öncelik:
 
-> regression PASS → premium polish → native ad/analytics → gerçek oyuncu testi → data-driven tuning → store release.
+> regression PASS → premium polish → production ad/analytics → gerçek oyuncu testi → data-driven tuning → store release.
