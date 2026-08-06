@@ -1,13 +1,13 @@
 (() => {
   const VISUALS = [
-    { min: 1, max: 10, level: 10, id: 'poma', name: 'Atkısız Poma' },
-    { level: 20, id: 'genius', name: 'Poma Dahi' },
-    { level: 30, id: 'influencer', name: 'Influencer Poma' },
-    { level: 40, id: 'archer', name: 'Okçu Poma' },
-    { level: 50, id: 'wolf', name: 'Bozkurt Poma' },
-    { level: 60, id: 'baby', name: 'Baby Poma' },
-    { level: 70, id: 'elder', name: 'Dede Poma' },
-    { level: 80, id: 'hero', name: 'Hero Poma' },
+    { min: 1, max: 10, level: 10, id: 'poma', name: 'Atkısız Poma', reward: 'Başlangıç karakteri' },
+    { level: 20, id: 'genius', name: 'Poma Dahi', reward: 'Bilgisayar' },
+    { level: 30, id: 'influencer', name: 'Influencer Poma', reward: 'Telefon' },
+    { level: 40, id: 'archer', name: 'Okçu Poma', reward: 'Ok' },
+    { level: 50, id: 'wolf', name: 'Bozkurt Poma', reward: 'Kurt Pençesi' },
+    { level: 60, id: 'baby', name: 'Baby Poma', reward: 'Emzik Salyası' },
+    { level: 70, id: 'elder', name: 'Dede Poma', reward: 'Asa Gücü' },
+    { level: 80, id: 'hero', name: 'Hero Poma', reward: 'Sihirli Yaprak' },
   ];
 
   function characterForLevel(level, { activeFallback = false } = {}) {
@@ -26,14 +26,33 @@
     return node;
   }
 
+  function goalState(node, character) {
+    if (character.level === 10) return 'BAŞLANGIÇ';
+    if (node.classList.contains('complete')) return 'AÇILDI';
+    return 'BU LEVELDE AÇILIR';
+  }
+
+  function ensureGoalLabel(node, character) {
+    let label = node.querySelector('.poma-character-goal');
+    if (!label) {
+      label = document.createElement('small');
+      label.className = 'poma-character-goal';
+      label.innerHTML = '<strong></strong><em></em>';
+      node.appendChild(label);
+    }
+    label.querySelector('strong').textContent = character.name;
+    label.querySelector('em').textContent = goalState(node, character);
+    node.classList.add('has-character-goal');
+  }
+
   function decorateMetaMap(root = document) {
     root.querySelectorAll('.meta-level-node[data-meta-level]').forEach((node) => {
-      if (node.querySelector('.poma-character-portrait')) return;
       const level = Number(node.dataset.metaLevel);
       const character = characterForLevel(level, { activeFallback: node.classList.contains('active') });
       if (!character) return;
       node.querySelector('b')?.remove();
-      node.appendChild(portrait(character));
+      if (!node.querySelector('.poma-character-portrait')) node.appendChild(portrait(character));
+      if (character.level === level) ensureGoalLabel(node, character);
     });
   }
 
@@ -41,10 +60,13 @@
     root.querySelectorAll('.level-node[data-level]').forEach((node) => {
       const level = Number(node.dataset.level);
       const character = characterForLevel(level, { activeFallback: node.classList.contains('active') });
-      if (!character || node.querySelector('.poma-character-portrait')) return;
-      node.querySelector('.meta-map-marker')?.remove();
-      node.querySelector('.poma-map-avatar')?.classList.add('is-replaced-by-character-art');
-      node.appendChild(portrait(character));
+      if (!character) return;
+      if (!node.querySelector('.poma-character-portrait')) {
+        node.querySelector('.meta-map-marker')?.remove();
+        node.querySelector('.poma-map-avatar')?.classList.add('is-replaced-by-character-art');
+        node.appendChild(portrait(character));
+      }
+      if (character.level === level) ensureGoalLabel(node, character);
     });
   }
 
@@ -91,12 +113,48 @@
     });
   }
 
+  function nextVisibleCharacterGoal(map) {
+    for (const character of VISUALS.filter((item) => item.level >= 20)) {
+      const node = map.querySelector(`.meta-level-node[data-meta-level="${character.level}"]`);
+      if (node && !node.classList.contains('complete')) return character;
+    }
+    return null;
+  }
+
+  function decorateMapGoal(root = document) {
+    root.querySelectorAll('.meta-map').forEach((map) => {
+      const character = nextVisibleCharacterGoal(map);
+      const existing = map.querySelector('.poma-next-goal');
+      if (!character) {
+        existing?.remove();
+        return;
+      }
+      if (existing?.dataset.character === character.id) return;
+      existing?.remove();
+
+      const banner = document.createElement('div');
+      banner.className = 'poma-next-goal';
+      banner.dataset.character = character.id;
+      banner.appendChild(portrait(character, 'poma-next-goal-art'));
+
+      const copy = document.createElement('div');
+      copy.innerHTML = `
+        <small>SONRAKİ KARAKTER HEDEFİ</small>
+        <strong>${character.name}</strong>
+        <span>Level ${character.level} tamamlanınca açılır · ${character.reward}</span>
+      `;
+      banner.appendChild(copy);
+      map.querySelector('.meta-map-nav')?.insertAdjacentElement('beforebegin', banner);
+    });
+  }
+
   function decorate(root = document) {
     decorateMetaMap(root);
     decorateLegacyMap(root);
     decorateUnlock(root);
     decorateRushMilestone(root);
     decorateResult(root);
+    decorateMapGoal(root);
   }
 
   const observer = new MutationObserver((mutations) => {
