@@ -34,7 +34,7 @@ Bu komut:
 
 ## App ID
 
-Şimdiki hazırlık kimliği:
+Hazırlık kimliği:
 
 ```text
 com.pomante.pomashift
@@ -44,41 +44,26 @@ Google Play'e ilk production upload yapılmadan önce son kez kontrol edilmelidi
 
 ## AdMob test modu
 
-Varsayılan build güvenli şekilde **TEST MODE** çalışır.
-Google'ın demo rewarded/interstitial ID'leri native bridge içinde otomatik kullanılır.
+Varsayılan build güvenli şekilde **TEST MODE** çalışır. Google'ın demo rewarded/interstitial ID'leri native bridge içinde otomatik kullanılır.
 
-Production reklam için ortam değişkenleri:
+## Production AdMob config
+
+Build script'in kullandığı environment değişkenleri:
 
 ```bash
 POMA_ADS_TESTING=false
-POMA_ADMOB_ANDROID_REWARDED=ca-app-pub-.../...
-POMA_ADMOB_ANDROID_INTERSTITIAL=ca-app-pub-.../...
-POMA_ADMOB_IOS_REWARDED=ca-app-pub-.../...
-POMA_ADMOB_IOS_INTERSTITIAL=ca-app-pub-.../...
-npm run android:sync
+POMA_ADMOB_ANDROID_APP_ID=ca-app-pub-...~...
+POMA_ANDROID_REWARDED_AD_UNIT_ID=ca-app-pub-.../...
+POMA_ANDROID_INTERSTITIAL_AD_UNIT_ID=ca-app-pub-.../...
+POMA_IOS_REWARDED_AD_UNIT_ID=ca-app-pub-.../...
+POMA_IOS_INTERSTITIAL_AD_UNIT_ID=ca-app-pub-.../...
 ```
 
-Production build'de ID yoksa bridge reklam göstermeyi reddeder; boş ID ile sahte başarı vermez.
+Production modunda gerekli ad unit ID yoksa bridge build'i hata verir; boş ID ile sahte başarı üretmez.
 
-## Android AdMob App ID
+Android AdMob App ID, `scripts/configure-android-test.mjs` tarafından `POMA_ADMOB_ANDROID_APP_ID` environment değerinden `AndroidManifest.xml` içine yazılır. Environment değeri yoksa yalnız test/debug build için Google sample App ID kullanılır.
 
-`npx cap add android` sonrasında gerçek AdMob **App ID** ayrıca Android native projeye girilmelidir.
-
-`android/app/src/main/AndroidManifest.xml` application içine:
-
-```xml
-<meta-data
-  android:name="com.google.android.gms.ads.APPLICATION_ID"
-  android:value="@string/admob_app_id" />
-```
-
-`android/app/src/main/res/values/strings.xml`:
-
-```xml
-<string name="admob_app_id">ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY</string>
-```
-
-Bu **App ID**, rewarded/interstitial ad unit ID ile aynı şey değildir.
+**AdMob App ID** rewarded/interstitial ad unit ID ile aynı şey değildir.
 
 ## Consent
 
@@ -103,16 +88,50 @@ window.PomaShiftAds = {
 
 Web sürümünde test stub, native build'de gerçek AdMob adapterı kullanılır. Böylece oyun ekonomisi reklam SDK'sına bağlanmaz.
 
+## CI build hatları
+
+### Otomatik Android build
+
+`.github/workflows/poma-shift-android.yml`
+
+Poma Shift dosyaları değiştiğinde:
+- Capacitor Android project üretir
+- safe/test AdMob App ID uygular
+- debug APK derler
+- unsigned release AAB derler
+- iki artifact'i de GitHub Actions'a yükler
+
+### Production signed AAB
+
+`.github/workflows/poma-shift-android-release.yml`
+
+Yalnız manuel çalışır. Keystore veya şifre repository'ye yazılmaz; GitHub Secrets kullanılır.
+
+Gerekli GitHub Secrets:
+
+```text
+POMA_ADMOB_ANDROID_APP_ID
+POMA_ANDROID_REWARDED_AD_UNIT_ID
+POMA_ANDROID_INTERSTITIAL_AD_UNIT_ID
+POMA_ANDROID_KEYSTORE_B64
+POMA_ANDROID_KEYSTORE_PASSWORD
+POMA_ANDROID_KEY_ALIAS
+POMA_ANDROID_KEY_PASSWORD
+```
+
+`POMA_ANDROID_KEYSTORE_B64`, Android upload keystore dosyasının base64 karşılığıdır. Workflow keystore'u geçici runner diskine açar, `bundleRelease` sırasında signing bilgilerini Gradle'a runtime parametreleriyle verir, AAB imzasını doğrular ve signed AAB artifact'i üretir.
+
 ## Release engelleri
 
 Production mağaza build'i almadan önce zorunlu:
 - gerçek AdMob App ID
 - gerçek rewarded/interstitial unit ID'leri
+- GitHub release secrets / upload keystore
 - gizlilik politikası URL'si
 - UMP/GDPR mesajlarının AdMob panelinde kurulması
 - Google Play Data safety cevapları
 - final launcher icon / adaptive icon
-- signed Android App Bundle (AAB)
-- gerçek cihazda test reklamlarıyla rewarded + interstitial akış testi
+- signed Android App Bundle (AAB) workflow'unun başarılı koşusu
+- gerçek cihazda rewarded + interstitial + consent akış testi
 
-Şu an bu klasör store altyapısını hazırlar; production reklam hesabı kimlikleri bilerek repoya gömülmez.
+Production reklam ve signing kimlikleri bilerek repoya gömülmez.
