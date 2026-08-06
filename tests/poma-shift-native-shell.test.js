@@ -8,6 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const root = path.resolve(path.dirname(__filename), '..');
 const nativeDir = path.join(root, 'games', 'poma-shift', 'native');
 const read = name => readFile(path.join(nativeDir, name), 'utf8');
+const readRoot = name => readFile(path.join(root, name), 'utf8');
 
 test('native shell uses aligned Capacitor and AdMob majors', async () => {
   const pkg = JSON.parse(await read('package.json'));
@@ -44,4 +45,33 @@ test('native ads use safe Google demo IDs in test mode and env IDs in production
   assert.match(source, /prepareInterstitial/);
   assert.match(source, /showInterstitial/);
   assert.match(source, /requestConsentInfo/);
+});
+
+test('automatic Android workflow builds both debug APK and release AAB', async () => {
+  const workflow = await readRoot(path.join('.github', 'workflows', 'poma-shift-android.yml'));
+  assert.match(workflow, /assembleDebug bundleRelease/);
+  assert.match(workflow, /poma-shift-android-debug/);
+  assert.match(workflow, /app-debug\.apk/);
+  assert.match(workflow, /poma-shift-android-release-unsigned/);
+  assert.match(workflow, /app-release\.aab/);
+});
+
+test('manual production workflow keeps AdMob and signing credentials in GitHub Secrets', async () => {
+  const workflow = await readRoot(path.join('.github', 'workflows', 'poma-shift-android-release.yml'));
+  for (const secret of [
+    'POMA_ADMOB_ANDROID_APP_ID',
+    'POMA_ANDROID_REWARDED_AD_UNIT_ID',
+    'POMA_ANDROID_INTERSTITIAL_AD_UNIT_ID',
+    'POMA_ANDROID_KEYSTORE_B64',
+    'POMA_ANDROID_KEYSTORE_PASSWORD',
+    'POMA_ANDROID_KEY_ALIAS',
+    'POMA_ANDROID_KEY_PASSWORD',
+  ]) {
+    assert.match(workflow, new RegExp(`secrets\\.${secret}`));
+  }
+  assert.match(workflow, /POMA_ADS_TESTING: 'false'/);
+  assert.match(workflow, /bundleRelease/);
+  assert.match(workflow, /android\.injected\.signing\.store\.file/);
+  assert.match(workflow, /jarsigner -verify/);
+  assert.match(workflow, /poma-shift-android-release-signed/);
 });
