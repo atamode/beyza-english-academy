@@ -29,13 +29,19 @@ for (const entry of await (await import('node:fs/promises')).readdir(gameDir, { 
 const brandSource = path.join(repoRoot, 'assets', 'brand', 'poma-academy');
 const brandTarget = path.join(www, 'assets', 'brand', 'poma-academy');
 await mkdir(brandTarget, { recursive: true });
-for (const name of ['poma-main-wave.png', 'poma-shift-character-sprite.webp']) {
+for (const name of [
+  'poma-main-wave.png',
+  'poma-sad.png',
+  'poma-shift-character-sprite.webp',
+  'sugar-cloud.png',
+]) {
   await cp(path.join(brandSource, name), path.join(brandTarget, name));
 }
 
 const rewriteFiles = [
   'poma-brand.js',
   'character-art.css',
+  'boss-ui.js',
   'sw.js',
 ];
 for (const name of rewriteFiles) {
@@ -48,8 +54,8 @@ for (const name of rewriteFiles) {
 const indexFile = path.join(www, 'index.html');
 let index = await readFile(indexFile, 'utf8');
 index = index.replace(
-  '<script src="./meta-system.js" defer></script>',
-  '<script src="./native-ads.js"></script>\n  <script src="./meta-system.js" defer></script>',
+  /(\s*<script src="\.\/meta-system\.js(?:\?[^\"]*)?" defer><\/script>)/,
+  '\n  <script src="./native-ads.js"></script>$1',
 );
 index = index.replace(/\n  <script>\n    if \('serviceWorker'[\s\S]*?<\/script>/, '');
 await writeFile(indexFile, index);
