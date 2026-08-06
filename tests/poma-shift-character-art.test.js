@@ -7,11 +7,24 @@ import path from 'node:path';
 const __filename = fileURLToPath(import.meta.url);
 const root = path.resolve(path.dirname(__filename), '..');
 const gameDir = path.join(root, 'games', 'poma-shift');
+const assetDir = path.join(root, 'assets', 'brand', 'poma-academy');
 
 const read = name => readFile(path.join(gameDir, name), 'utf8');
 
-test('Poma Shift ships the milestone character sprite', async () => {
-  await access(path.join(root, 'assets', 'brand', 'poma-academy', 'poma-shift-character-sprite.webp'));
+test('Poma Shift ships individual milestone character artwork', async () => {
+  for (const file of [
+    'poma-main-wave.png',
+    'poma-genius.png',
+    'poma-influencer.png',
+    'poma-archer.png',
+    'poma-wolf.png',
+    'poma-baby.png',
+    'poma-elder.png',
+    'fire poma.png',
+    'poma-sad.png',
+  ]) {
+    await access(path.join(assetDir, file));
+  }
 });
 
 test('character art maps the locked milestone identities', async () => {
@@ -24,13 +37,31 @@ test('character art maps the locked milestone identities', async () => {
   }
   assert.match(source, /min: 1, max: 10/);
   assert.match(source, /Atkısız Poma/);
+  assert.match(source, /decorateRushMilestone/);
+  assert.match(source, /rush-character-art/);
+});
+
+test('character CSS uses the uploaded individual assets instead of the old sprite', async () => {
+  const css = await read('character-art.css');
+  for (const file of [
+    'poma-main-wave.png', 'poma-genius.png', 'poma-influencer.png', 'poma-archer.png',
+    'poma-wolf.png', 'poma-baby.png', 'poma-elder.png', 'fire%20poma.png',
+  ]) {
+    assert.match(css, new RegExp(file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
+  assert.doesNotMatch(css, /poma-shift-character-sprite\.webp/);
 });
 
 test('index and PWA cache load character art', async () => {
   const [index, sw] = await Promise.all([read('index.html'), read('sw.js')]);
   assert.match(index, /character-art\.css/);
   assert.match(index, /character-art\.js/);
-  assert.match(sw, /poma-shift-character-sprite\.webp/);
+  for (const file of [
+    'poma-genius.png', 'poma-influencer.png', 'poma-archer.png', 'poma-wolf.png',
+    'poma-baby.png', 'poma-elder.png', 'fire poma.png',
+  ]) {
+    assert.match(sw, new RegExp(file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
   assert.match(sw, /character-art\.css/);
   assert.match(sw, /character-art\.js/);
 });
