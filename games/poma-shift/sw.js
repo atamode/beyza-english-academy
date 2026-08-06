@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.34';
+const CACHE = 'poma-shift-v0.1.38';
 const CORE = [
   './',
   './index.html',
@@ -21,6 +21,7 @@ const CORE = [
   './timer-heartbeat.js',
   './poma-brand.js',
   './meta-system.js',
+  './character-progression-v2.js',
   './character-art.js',
   './launch-polish.js',
   './boss-ui.js',
@@ -30,6 +31,7 @@ const CORE = [
   './combo-system.js',
   './rush-mode.js',
   './rush-continue.js',
+  './rush-runtime-guard.js',
   './ui-hotfix.js',
   './audio-mix.js',
   './poma-sports-loop.mp3',
@@ -43,6 +45,7 @@ const CORE = [
   '../../assets/brand/poma-academy/poma-wolf.png',
   '../../assets/brand/poma-academy/poma-baby.png',
   '../../assets/brand/poma-academy/poma-elder.png',
+  '../../assets/brand/poma-academy/fire poma.png',
   '../../assets/brand/poma-academy/poma-hero.png',
   '../../assets/brand/poma-academy/poma-sad.png',
   '../../assets/brand/poma-academy/sugar-cloud.png',
