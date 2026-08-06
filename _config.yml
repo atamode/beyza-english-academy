@@ -35,3 +35,21 @@ exclude:
   - server.js
   - server.py
   - START_APP.bat
+  # Story 001 has webp production copies; these heavy source images are not
+  # referenced by the live app and only inflate the Pages deployment artifact.
+  - assets/stories/story-001/story-001-poma-group-lineup.png
+  - assets/stories/story-001/story-001-01-village-empty-master-1280x720.png
+  - assets/stories/story-001/story-001-intro-room.png
+  - assets/stories/story-001/story-001-influencer-castle.png
+  - assets/stories/story-001/story-001-08-they-pomas-visual-1280x720.png
+  - assets/stories/story-001/story-001-bozkurt-wolf-castle.png
+  - assets/stories/story-001/story-001-04-he-poma-dahi-visual-1280x720.png
+  - assets/stories/story-001/story-001-00-room-master.jpeg
+  - assets/stories/story-001/story-001-we-friends-group.png
+  - assets/stories/story-001/story-001-poma-welcome-poster.png
+  - assets/stories/story-001/story-001-05-she-influencer-poma-visual-1280x720.png
+  - assets/stories/story-001/story-001-poma-dahi-castle.png
+  - assets/stories/story-001/story-001-they-poma-points-to-group.png
+  - assets/stories/story-001/story-001-kingdom-empty.png
+  - assets/stories/story-001/story-001-06-it-little-wolf-visual-1280x720.png
+  - assets/stories/story-001/story-001-little-wolf.png
