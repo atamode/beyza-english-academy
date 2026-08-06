@@ -32,6 +32,14 @@ await mkdir(brandTarget, { recursive: true });
 for (const name of [
   'poma-main-wave.png',
   'poma-sad.png',
+  'poma-genius.png',
+  'poma-influencer.png',
+  'poma-archer.png',
+  'poma-wolf.png',
+  'poma-baby.png',
+  'poma-elder.png',
+  'fire poma.png',
+  'poma-hero.png',
   'poma-shift-character-sprite.webp',
   'sugar-cloud.png',
 ]) {
