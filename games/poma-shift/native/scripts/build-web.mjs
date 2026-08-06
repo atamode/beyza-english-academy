@@ -49,6 +49,7 @@ for (const name of [
 const rewriteFiles = [
   'poma-brand.js',
   'character-art.css',
+  'fire-power.css',
   'boss-ui.js',
   'sw.js',
 ];
