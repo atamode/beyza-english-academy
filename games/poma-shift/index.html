@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="./boss-ui.css?v=34" />
   <link rel="stylesheet" href="./dev-panel.css?v=34" />
   <script>
+    // Launch-candidate web policy: disable the legacy service-worker cache so a deploy
+    // cannot strand players on stale gameplay/economy code. The native app bundles
+    // these same web assets locally and does not depend on this browser cache.
     (() => {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then((registrations) => {
