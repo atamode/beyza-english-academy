@@ -35,8 +35,15 @@
 .poma-character-portrait.char-elder {
   --poma-art: url('../../assets/brand/poma-academy/poma-elder.png');
 }
+.poma-character-portrait.char-fire {
+  --poma-art: url('../../assets/brand/poma-academy/fire%20poma.png');
+  border-color: rgba(255,139,44,.58);
+  box-shadow: 0 0 0 2px rgba(255,92,24,.12), 0 7px 22px rgba(255,77,20,.28);
+}
 .poma-character-portrait.char-hero {
   --poma-art: url('../../assets/brand/poma-academy/poma-hero.png');
+  border-color: rgba(112,255,174,.52);
+  box-shadow: 0 0 0 2px rgba(112,255,174,.12), 0 7px 22px rgba(63,219,138,.24);
 }
 
 .meta-level-node .poma-character-portrait,
@@ -196,6 +203,116 @@
 .level-node .poma-map-avatar.is-replaced-by-character-art,
 .result-view .poma-result-avatar.is-replaced-by-character-art {
   display: none !important;
+}
+
+.game-card {
+  position: relative;
+}
+
+.fire-power-button:not(.locked) {
+  box-shadow: inset 0 0 0 1px rgba(255,110,35,.34), 0 5px 16px rgba(112,39,12,.18);
+}
+
+.fire-shop-item:not(.locked) {
+  box-shadow: inset 0 0 0 1px rgba(255,105,38,.24);
+}
+
+.fire-wave-overlay {
+  position: absolute;
+  z-index: 40;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 9px;
+  opacity: 1;
+  filter: saturate(1.15);
+  animation: fireWaveEnvelope 1.05s ease-out both;
+}
+
+.fire-wave-front,
+.fire-wave-glow {
+  position: absolute;
+  inset: 0;
+}
+
+.fire-wave-glow {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255,236,113,.85), transparent 35%),
+    linear-gradient(180deg, rgba(255,220,77,.75), rgba(255,78,17,.8) 52%, rgba(62,13,6,.35));
+  filter: blur(4px);
+  animation: fireGlow 700ms ease-out both;
+}
+
+.fire-wave-front {
+  background:
+    radial-gradient(ellipse at 8% 100%, rgba(255,235,90,.98) 0 9%, rgba(255,107,22,.92) 10% 22%, transparent 23%),
+    radial-gradient(ellipse at 27% 100%, rgba(255,244,129,.96) 0 10%, rgba(255,87,15,.9) 11% 25%, transparent 26%),
+    radial-gradient(ellipse at 50% 100%, rgba(255,239,102,.98) 0 10%, rgba(255,83,11,.92) 11% 27%, transparent 28%),
+    radial-gradient(ellipse at 73% 100%, rgba(255,244,129,.96) 0 10%, rgba(255,87,15,.9) 11% 25%, transparent 26%),
+    radial-gradient(ellipse at 92% 100%, rgba(255,235,90,.98) 0 9%, rgba(255,107,22,.92) 10% 22%, transparent 23%),
+    linear-gradient(180deg, rgba(255,201,45,.75), rgba(255,54,8,.84));
+  transform-origin: top;
+  animation: fireSweep 620ms cubic-bezier(.16,.84,.3,1) both;
+}
+
+.fire-wave-overlay i {
+  position: absolute;
+  left: calc((var(--i) * 7.1%) - 2%);
+  top: -14px;
+  font-style: normal;
+  font-size: 25px;
+  filter: drop-shadow(0 3px 5px rgba(119,28,3,.55));
+  animation: flameFall 720ms cubic-bezier(.2,.75,.35,1) both;
+  animation-delay: calc(var(--i) * 18ms);
+}
+
+.fire-wave-overlay b {
+  position: absolute;
+  left: calc((var(--i) * 5.6%) + 1%);
+  top: 52%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #30251f;
+  box-shadow: 0 0 5px rgba(255,113,35,.55);
+  opacity: 0;
+  animation: ashScatter 620ms ease-out 310ms both;
+  animation-delay: calc(300ms + var(--i) * 13ms);
+}
+
+.fire-wave-overlay.is-ash .fire-wave-front,
+.fire-wave-overlay.is-ash .fire-wave-glow,
+.fire-wave-overlay.is-ash i {
+  opacity: .22;
+}
+
+@keyframes fireSweep {
+  0% { transform: translateY(-112%) scaleY(.35); opacity: 0; }
+  20% { opacity: 1; }
+  65% { transform: translateY(0) scaleY(1.04); opacity: 1; }
+  100% { transform: translateY(18%) scaleY(.88); opacity: .5; }
+}
+
+@keyframes fireGlow {
+  0% { opacity: 0; transform: scaleY(.25); }
+  35% { opacity: .95; }
+  100% { opacity: .18; transform: scaleY(1.15); }
+}
+
+@keyframes flameFall {
+  0% { transform: translateY(-35px) scale(.55) rotate(-8deg); opacity: 0; }
+  28% { opacity: 1; }
+  100% { transform: translateY(70px) scale(1.1) rotate(9deg); opacity: 0; }
+}
+
+@keyframes ashScatter {
+  0% { transform: translate(0,0) scale(.35); opacity: 0; }
+  28% { opacity: .9; }
+  100% { transform: translate(calc((var(--i) - 8) * 2px), 45px) scale(.85); opacity: 0; }
+}
+
+@keyframes fireWaveEnvelope {
+  0%, 82% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 @media (max-width: 520px) {
