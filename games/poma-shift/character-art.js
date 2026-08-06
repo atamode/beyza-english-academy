@@ -59,6 +59,16 @@
     });
   }
 
+  function decorateRushMilestone(root = document) {
+    root.querySelectorAll('.rush-milestone:not([hidden])').forEach((badge) => {
+      if (badge.querySelector('.poma-character-portrait')) return;
+      const level = Number(window.state?.level || 0);
+      const character = characterForLevel(level);
+      if (!character || level < 20 || level > 80) return;
+      badge.prepend(portrait(character, 'rush-character-art'));
+    });
+  }
+
   function decorateResult(root = document) {
     root.querySelectorAll('.result-view').forEach((view) => {
       if (view.querySelector('.poma-result-art')) return;
@@ -85,6 +95,7 @@
     decorateMetaMap(root);
     decorateLegacyMap(root);
     decorateUnlock(root);
+    decorateRushMilestone(root);
     decorateResult(root);
   }
 
