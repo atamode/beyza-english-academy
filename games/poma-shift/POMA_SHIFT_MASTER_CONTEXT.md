@@ -218,13 +218,21 @@ Repo içinde mevcut ve kod karşılığı doğrulanmış başlıklar:
 - scalable map shell
 - local telemetry + analytics bridge contract
 - audio/SFX/haptic layer
-- PWA manifest/service worker dosyaları
-- `games/poma-shift/native/` altında Capacitor Android shell
+- `games/poma-shift/native/` altında Capacitor Android scaffold
 - Capacitor 8.4.2 + `@capacitor-community/admob` 8.0.0 bridge
 - Google test ad ID'leri + production env ID desteği
 - AdMob consent request/form akışı
-- CI içinde root test/build + native web/AdMob bridge build
+- CI root test/build + native web/AdMob build + Capacitor Android project generation
+- ayrı Android Debug workflow: Capacitor project generation + Gradle `assembleDebug` + APK artifact
+- 2026-08-06 doğrulanmış debug APK artifact: `poma-shift-android-debug`, yaklaşık 10.45 MB
 - Poma Shift için ayrı Node contract testleri: analytics, meta, RUSH, continue, native shell, boss UI, character art, launch polish, map audio ve timed guard
+
+Web cache policy:
+- `manifest.webmanifest` ve `sw.js` repository'de korunur
+- launch-candidate web runtime eski Poma Shift service-worker/cache'lerini bilinçli olarak temizler
+- web sürümü şu aşamada offline PWA olarak vaat edilmez
+- amaç stale gameplay/economy deploy riskini kaldırmaktır
+- native uygulama web assetlerini yerel bundle'a aldığı için browser SW'ye bağımlı değildir
 
 ---
 
@@ -240,15 +248,15 @@ P0:
 - 20–50 dış test telemetry
 - ilk 10 level + RUSH tuning'i gerçek veriyle yap
 
-Known discrepancy:
-- web `index.html` Poma Shift service worker registration/cache'lerini açılışta temizliyor; README'deki offline/PWA iddiası release öncesi netleştirilmeli
-
 Resolved 2026-08-06:
 - yaşayan master context oluşturuldu
 - `GAME_SPEC.md`, `ART_DIRECTION.md`, `PRODUCT_AUDIT.md` güncel otoriteyle hizalandı
-- analytics summary eski `tray_timeout` yerine güncel `rush_timeout` eventini sayacak şekilde düzeltildi
+- analytics summary eski `tray_timeout` yerine güncel `rush_timeout` eventini sayacak şekilde düzeltildi ve contract test ile kilitlendi
 - native kaynak konumu doğrulandı: `games/poma-shift/native/`
-- Capacitor/AdMob bridge ve CI native build adımı doğrulandı
+- Capacitor/AdMob bridge doğrulandı
+- CI'da Capacitor Android project generation doğrulandı
+- ayrı Android workflow'un gerçek debug APK ürettiği doğrulandı
+- web service-worker/cache politikası launch için bilinçli `disabled` olarak netleştirildi; README/runtime hizalandı
 
 ---
 
@@ -274,16 +282,15 @@ Bu eşikler karşılanmadan yeni feature eklemek öncelik değildir.
 
 # 13. CURRENT WORK ORDER
 
-1. Static/CI regression contractlarını güçlendir ve CI durumunu doğrula
-2. Gerçek cihaz release gate / smoke
-3. Premium board + blocks + HUD polish
-4. Map / character / unlock polish
-5. Level 90 boss presentation polish
-6. Production analytics + production AdMob IDs + signing
-7. Blind playtest
-8. External telemetry test
-9. Data-driven tuning
-10. Store release
+1. Gerçek cihaz Core + Meta release gate / smoke
+2. Premium board + blocks + HUD polish
+3. Map / character / unlock polish
+4. Level 90 boss presentation polish
+5. Production analytics + production AdMob IDs + signing/AAB
+6. Blind playtest
+7. External telemetry test
+8. Data-driven tuning
+9. Store release
 
 ---
 
