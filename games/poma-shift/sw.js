@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.32';
+const CACHE = 'poma-shift-v0.1.33';
 const CORE = [
   './',
   './index.html',
@@ -43,7 +43,6 @@ const CORE = [
   '../../assets/brand/poma-academy/poma-wolf.png',
   '../../assets/brand/poma-academy/poma-baby.png',
   '../../assets/brand/poma-academy/poma-elder.png',
-  '../../assets/brand/poma-academy/fire poma.png',
   '../../assets/brand/poma-academy/poma-sad.png',
   '../../assets/brand/poma-academy/sugar-cloud.png',
   './manifest.webmanifest',
