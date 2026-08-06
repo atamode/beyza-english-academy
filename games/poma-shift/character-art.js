@@ -40,8 +40,11 @@
       label.innerHTML = '<strong></strong><em></em>';
       node.appendChild(label);
     }
-    label.querySelector('strong').textContent = character.name;
-    label.querySelector('em').textContent = goalState(node, character);
+    const strong = label.querySelector('strong');
+    const stateLabel = label.querySelector('em');
+    const nextState = goalState(node, character);
+    if (strong.textContent !== character.name) strong.textContent = character.name;
+    if (stateLabel.textContent !== nextState) stateLabel.textContent = nextState;
     node.classList.add('has-character-goal');
   }
 
