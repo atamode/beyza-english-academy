@@ -1,4 +1,4 @@
-name: Poma Shift Android Debug
+name: Poma Shift Android Build
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  android-debug:
+  android-build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -47,16 +47,24 @@ jobs:
         working-directory: games/poma-shift/native
         run: node scripts/configure-android-test.mjs
 
-      - name: Build debug APK
+      - name: Build debug APK and unsigned release AAB
         working-directory: games/poma-shift/native/android
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          ./gradlew assembleDebug bundleRelease --no-daemon
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
           name: poma-shift-android-debug
           path: games/poma-shift/native/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Upload unsigned release AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: poma-shift-android-release-unsigned
+          path: games/poma-shift/native/android/app/build/outputs/bundle/release/app-release.aab
           if-no-files-found: error
           retention-days: 7
