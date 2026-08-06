@@ -26,12 +26,15 @@ test('native shell has a stable candidate application id and local webDir', asyn
   assert.equal(config.webDir, 'www');
 });
 
-test('native web build injects AdMob before meta-system and rewrites Poma assets', async () => {
+test('native web build injects AdMob before versioned meta-system and rewrites Poma assets', async () => {
   const source = await read(path.join('scripts', 'build-web.mjs'));
   assert.match(source, /native-ads\.js/);
-  assert.match(source, /meta-system\.js/);
+  assert.match(source, /meta-system/);
   assert.match(source, /replaceAll\('\.\.\/\.\.\/assets\/brand\/poma-academy\//);
   assert.match(source, /poma-shift-character-sprite\.webp/);
+  assert.match(source, /poma-sad\.png/);
+  assert.match(source, /sugar-cloud\.png/);
+  assert.match(source, /boss-ui\.js/);
 });
 
 test('native ads use safe Google demo IDs in test mode and env IDs in production', async () => {
