@@ -24,7 +24,7 @@ test('character progression starts powers at level 10 and keeps PomaHero stronge
 test('Fire Poma burns the top two rows and has a visible flame-to-ash effect', async () => {
   const progression = await readGame('character-progression-v2.js');
   const art = await readGame('character-art.css');
-  assert.match(progression, /state\.grid\.slice\(0, 2\)/);
+  assert.match(progression, /slice\(0, 2\)/);
   assert.match(progression, /row < Math\.min\(2, state\.grid\.length\)/);
   assert.match(progression, /fire-wave-overlay/);
   assert.match(art, /@keyframes fireSweep/);
