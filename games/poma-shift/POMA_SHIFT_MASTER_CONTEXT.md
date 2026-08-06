@@ -146,7 +146,13 @@ Return gift:
 - 100 Coin
 - yalnız açılmış booster havuzundan 1 weighted item
 
-Web prototipte test ad adapter vardır. Native release için gerçek ad provider ayrıca bağlanmalıdır.
+Reklam implementasyonu:
+- web prototipte test adapterı var
+- native shell `@capacitor-community/admob` kullanıyor
+- rewarded + interstitial bridge kodu var
+- consent info/form akışı kodda var
+- default build test modunda Google demo ID'leri kullanıyor
+- production build `POMA_ADS_TESTING=false` + platforma özel AdMob unit ID environment değişkenlerini bekliyor
 
 ---
 
@@ -213,17 +219,23 @@ Repo içinde mevcut ve kod karşılığı doğrulanmış başlıklar:
 - local telemetry + analytics bridge contract
 - audio/SFX/haptic layer
 - PWA manifest/service worker dosyaları
+- `games/poma-shift/native/` altında Capacitor Android shell
+- Capacitor 8.4.2 + `@capacitor-community/admob` 8.0.0 bridge
+- Google test ad ID'leri + production env ID desteği
+- AdMob consent request/form akışı
+- CI içinde root test/build + native web/AdMob bridge build
+- Poma Shift için ayrı Node contract testleri: analytics, meta, RUSH, continue, native shell, boss UI, character art, launch polish, map audio ve timed guard
 
 ---
 
 # 11. KNOWN TECHNICAL DEBT / RELEASE BLOCKERS
 
 P0:
-- `GAME_SPEC.md`, `ART_DIRECTION.md`, `PRODUCT_AUDIT.md` içindeki eski kararları güncel otoriteyle hizala
-- Core + Meta release gate'i gerçekten çalıştır ve PASS/FAIL kaydı üret
+- Core + Meta release gate'i gerçek cihazlarda çalıştır ve PASS/FAIL kaydı üret
 - gerçek production analytics provider bağla
-- Android/Capacitor kaynak konumunu doğrula ve tek release hattına al
-- gerçek rewarded/interstitial provider bağla
+- production AdMob unit ID'lerini provision et ve production build smoke test yap
+- Android signing / release AAB hattını doğrula
+- gerçek cihaz rewarded/interstitial + consent smoke test
 - 5–10 kişi kör test
 - 20–50 dış test telemetry
 - ilk 10 level + RUSH tuning'i gerçek veriyle yap
@@ -232,7 +244,11 @@ Known discrepancy:
 - web `index.html` Poma Shift service worker registration/cache'lerini açılışta temizliyor; README'deki offline/PWA iddiası release öncesi netleştirilmeli
 
 Resolved 2026-08-06:
+- yaşayan master context oluşturuldu
+- `GAME_SPEC.md`, `ART_DIRECTION.md`, `PRODUCT_AUDIT.md` güncel otoriteyle hizalandı
 - analytics summary eski `tray_timeout` yerine güncel `rush_timeout` eventini sayacak şekilde düzeltildi
+- native kaynak konumu doğrulandı: `games/poma-shift/native/`
+- Capacitor/AdMob bridge ve CI native build adımı doğrulandı
 
 ---
 
@@ -258,17 +274,16 @@ Bu eşikler karşılanmadan yeni feature eklemek öncelik değildir.
 
 # 13. CURRENT WORK ORDER
 
-1. Master/context ve doküman consistency
-2. Analytics correctness
-3. Release gate / regression tests
-4. Premium board + blocks + HUD polish
-5. Map / character / unlock polish
-6. Level 90 boss presentation polish
-7. Android/native ad/analytics release integration
-8. Blind playtest
-9. External telemetry test
-10. Data-driven tuning
-11. Store release
+1. Static/CI regression contractlarını güçlendir ve CI durumunu doğrula
+2. Gerçek cihaz release gate / smoke
+3. Premium board + blocks + HUD polish
+4. Map / character / unlock polish
+5. Level 90 boss presentation polish
+6. Production analytics + production AdMob IDs + signing
+7. Blind playtest
+8. External telemetry test
+9. Data-driven tuning
+10. Store release
 
 ---
 
