@@ -14,6 +14,14 @@
     return localStorage.getItem(SOUND_KEY) !== 'off';
   }
 
+  function mapMusicVisible() {
+    const metaMap = document.querySelector('.meta-modal:not([hidden]) .meta-map');
+    const legacyMap = document.querySelector(
+      '.modal-screen:not([hidden]) .map-view, .modal-screen:not([hidden]) .level-map, .modal-screen:not([hidden]) .level-path',
+    );
+    return Boolean(metaMap || legacyMap);
+  }
+
   function ensureContext() {
     if (!soundEnabled()) return null;
     try {
@@ -50,7 +58,10 @@
   }
 
   function playMusic() {
-    if (!soundEnabled() || document.hidden || state?.status === 'lost' || state?.status === 'won') return;
+    if (!soundEnabled() || document.hidden || !mapMusicVisible()) {
+      pauseMusic();
+      return;
+    }
     const track = ensureMusic();
     if (!track) return;
     track.volume = MUSIC_VOLUME;
@@ -65,12 +76,11 @@
   }
 
   function syncMusic() {
-    if (!soundEnabled() || document.hidden) {
+    if (!soundEnabled() || document.hidden || !mapMusicVisible()) {
       pauseMusic();
       return;
     }
-    if (state?.status === 'playing') playMusic();
-    else pauseMusic();
+    playMusic();
   }
 
   function duckMusic(duration = 240, level = MUSIC_DUCK_VOLUME) {
@@ -190,28 +200,32 @@
   const baseSetupLevel = setupLevel;
   setupLevel = function audioMixSetupLevel(level = state.level) {
     const result = baseSetupLevel(level);
-    window.setTimeout(syncMusic, 60);
+    window.setTimeout(syncMusic, 0);
     return result;
   };
 
   function unlockAudio() {
     ensureContext();
-    if (!musicUnlocked) playMusic();
+    if (!musicUnlocked && mapMusicVisible()) playMusic();
   }
 
   document.addEventListener('pointerdown', unlockAudio, { passive: true });
   document.addEventListener('keydown', unlockAudio, { passive: true });
-  document.addEventListener('click', (event) => {
-    if (event.target.closest('[data-action="sound"]')) {
-      window.setTimeout(syncMusic, 0);
-    }
-  });
+  document.addEventListener('click', syncMusic);
   document.addEventListener('visibilitychange', syncMusic);
+
+  const modalObserver = new MutationObserver(syncMusic);
+  document.querySelectorAll('.meta-modal, .modal-screen').forEach((modal) => {
+    modalObserver.observe(modal, { attributes: true, attributeFilter: ['hidden'], childList: true, subtree: true });
+  });
+
+  syncMusic();
 
   window.PomaShiftAudioMix = {
     sync: syncMusic,
     play: playMusic,
     pause: pauseMusic,
+    isMapMusicVisible: mapMusicVisible,
     musicSource: MUSIC_SRC,
     musicVolume: MUSIC_VOLUME,
   };
