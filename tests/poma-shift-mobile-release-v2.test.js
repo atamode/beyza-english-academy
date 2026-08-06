@@ -55,9 +55,11 @@ test('map lobby is the launch surface and preserves the locked power-card contra
   const index = await readGame('index.html');
 
   assert.doesNotThrow(() => new Function(source), 'lobby-v1.js should parse');
-  assert.match(index, /lobby-v1\.css\?v=41/);
-  assert.match(index, /lobby-v1\.js\?v=41/);
-  assert.match(source, /openLobby\(\{ animate: true \}\)/);
+  assert.match(index, /class="poma-lobby-boot"/);
+  assert.match(index, /lobby-v1\.css\?v=42/);
+  assert.match(index, /lobby-v1\.js\?v=42/);
+  assert.match(source, /openLobby\(\{ animate: true, syncLevel: true \}\)/);
+  assert.match(source, /openLobby\(\{ animate: false, syncLevel: false \}\)/);
   assert.match(source, /scrollIntoView\(\{ behavior: 'smooth', block: 'center' \}\)/);
   assert.match(source, /poma-map-node/);
   assert.match(source, /poma-lobby-node-character/);
@@ -69,11 +71,12 @@ test('map lobby is the launch surface and preserves the locked power-card contra
   assert.match(source, /Oyundan çıkmak istediğine emin misin\?/);
   assert.match(source, /data-detail-slot/);
   assert.match(source, /data-detail-buy/);
+  assert.match(css, /html\.poma-lobby-boot \.app-shell/);
   assert.match(css, /@keyframes pomaNodeLive/);
   assert.match(css, /\.poma-power-mini/);
 });
 
-test('Android bundle includes every milestone character image including Fire Poma', async () => {
+test('Android bundle includes every milestone character image including Fire Poma and rewrites lobby art paths', async () => {
   const build = await readFile(path.join(gameDir, 'native', 'scripts', 'build-web.mjs'), 'utf8');
   for (const asset of [
     'poma-genius.png',
@@ -86,6 +89,7 @@ test('Android bundle includes every milestone character image including Fire Pom
     'poma-hero.png',
     'sugar-cloud.png',
   ]) assert.match(build, new RegExp(asset.replace('.', '\\.')));
+  assert.match(build, /'lobby-v1\.css'/);
 });
 
 test('release overlay scripts parse and are loaded by the game page', async () => {
