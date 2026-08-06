@@ -60,6 +60,98 @@
   box-shadow: 0 0 0 2px rgba(255,183,3,.16), 0 7px 18px rgba(0,0,0,.32);
 }
 
+.meta-level-node.has-character-goal.locked {
+  opacity: .78;
+  border-color: rgba(255,209,92,.58);
+  box-shadow: 0 0 0 2px rgba(255,209,92,.10), 0 0 22px rgba(255,183,3,.08);
+}
+
+.poma-character-goal {
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  width: 116px;
+  padding: 6px 7px;
+  border-radius: 10px;
+  background: rgba(12,24,48,.94);
+  border: 1px solid rgba(255,209,92,.30);
+  box-shadow: 0 7px 18px rgba(0,0,0,.24);
+  color: #eef5ff;
+  text-align: left;
+  pointer-events: none;
+}
+
+.poma-character-goal strong,
+.poma-character-goal em {
+  display: block;
+  font-style: normal;
+  line-height: 1.12;
+}
+
+.poma-character-goal strong {
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.poma-character-goal em {
+  margin-top: 2px;
+  color: #ffd15c;
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: .03em;
+}
+
+.meta-level-node:nth-child(4n+3) .poma-character-goal {
+  left: auto;
+  right: calc(100% + 12px);
+  text-align: right;
+}
+
+.poma-next-goal {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255,183,3,.12), rgba(73,220,177,.07));
+  border: 1px solid rgba(255,209,92,.30);
+}
+
+.poma-next-goal .poma-next-goal-art {
+  position: static;
+  width: 60px;
+  height: 60px;
+  border-color: rgba(255,209,92,.58);
+}
+
+.poma-next-goal > div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.poma-next-goal small {
+  color: #ffd15c;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.poma-next-goal strong {
+  font-size: 15px;
+  line-height: 1.05;
+}
+
+.poma-next-goal span {
+  color: #a9bad5;
+  font-size: 9px;
+  line-height: 1.25;
+}
+
 .unlock-badge .poma-character-portrait {
   width: 58px;
   height: 58px;
@@ -120,6 +212,20 @@
     height: 40px;
     right: -25px;
     top: -25px;
+  }
+  .poma-character-goal {
+    width: 102px;
+    padding: 5px 6px;
+  }
+  .poma-character-goal strong { font-size: 8px; }
+  .poma-character-goal em { font-size: 6.5px; }
+  .poma-next-goal {
+    grid-template-columns: 54px 1fr;
+    padding: 9px 10px;
+  }
+  .poma-next-goal .poma-next-goal-art {
+    width: 50px;
+    height: 50px;
   }
   .rush-milestone .rush-character-art {
     width: 50px;
