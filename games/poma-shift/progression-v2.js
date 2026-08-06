@@ -50,9 +50,9 @@
         level: 70,
         id: 'fire',
         name: 'Fire Poma',
-        item: 'firewave',
+        item: null,
         icon: '🔥',
-        note: 'Alev Dalgası',
+        note: 'Alev Dalgası açıldı · ilk kullanım ücretsiz',
       });
     }
   }
@@ -91,7 +91,7 @@
 
   function refreshRushMilestone(root = document) {
     root.querySelectorAll?.('.rush-milestone:not([hidden])').forEach((badge) => {
-      const reward = RUSH_MILESTONES[Number(window.state?.level || 0)];
+      const reward = RUSH_MILESTONES[Number(state?.level || 0)];
       if (!reward) return;
       badge.textContent = `${reward.icon} ${reward.character} · Tamamlayınca ${reward.item} açılır.`;
       window.PomaShiftCharacterArt?.decorate?.(badge);
