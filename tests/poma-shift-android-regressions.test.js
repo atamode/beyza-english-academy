@@ -31,10 +31,15 @@ test('authoritative RUSH UI guard is loaded after rush-mode', async () => {
   assert.match(source, /SERBEST/);
 });
 
-test('native package includes result and boss artwork and rewrites boss paths', async () => {
+test('native package includes all milestone, result and boss artwork', async () => {
   const source = await readNative(path.join('scripts', 'build-web.mjs'));
-  assert.match(source, /poma-sad\.png/);
-  assert.match(source, /sugar-cloud\.png/);
+  for (const file of [
+    'poma-main-wave.png', 'poma-sad.png', 'poma-genius.png', 'poma-influencer.png',
+    'poma-archer.png', 'poma-wolf.png', 'poma-baby.png', 'poma-elder.png',
+    'fire poma.png', 'poma-hero.png', 'sugar-cloud.png',
+  ]) {
+    assert.match(source, new RegExp(file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
   assert.match(source, /boss-ui\.js/);
   assert.match(source, /replaceAll\('\.\.\/\.\.\/assets\/brand\/poma-academy\//);
 });
