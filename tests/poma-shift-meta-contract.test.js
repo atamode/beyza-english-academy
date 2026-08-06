@@ -17,27 +17,48 @@ test('Poma Shift core + meta files are wired into index', async () => {
   const index = await read('index.html');
   assert.match(index, /meta-system\.css/);
   assert.match(index, /meta-system\.js/);
+  assert.match(index, /character-progression-v2\.js/);
   assert.match(index, /game\.js/);
 });
 
-test('Poma Shift locked character milestone order is preserved', async () => {
-  const meta = await read('meta-system.js');
+test('Poma Shift revised character milestone order is locked', async () => {
+  const progression = await read('character-progression-v2.js');
   const expected = [
-    [10, 'poma'],
-    [20, 'genius'],
-    [30, 'influencer'],
-    [40, 'archer'],
-    [50, 'wolf'],
-    [60, 'baby'],
-    [70, 'elder'],
+    [1, 'poma'],
+    [10, 'genius'],
+    [20, 'influencer'],
+    [30, 'archer'],
+    [40, 'wolf'],
+    [50, 'baby'],
+    [60, 'elder'],
+    [70, 'fire'],
     [80, 'hero'],
   ];
 
   for (const [level, id] of expected) {
-    assert.match(meta, new RegExp(`level: ${level}, id: '${id}'`));
+    assert.match(progression, new RegExp(`level: ${level}, id: '${id}'`));
   }
+  assert.match(progression, /name: 'Poma'/);
+  assert.match(progression, /name: 'Fire Poma'/);
+  assert.match(progression, /name: 'PomaHero'/);
+
+  const meta = await read('meta-system.js');
   assert.match(meta, /FIRST_BOSS_LEVEL = 90/);
   assert.match(meta, /BOSS_STEP = 30/);
+});
+
+test('revised booster unlock levels start at level 10 and keep PomaHero strongest at 80', async () => {
+  const progression = await read('character-progression-v2.js');
+  for (const [id, level] of [
+    ['computer', 10], ['phone', 20], ['arrow', 30], ['claw', 40],
+    ['pacifier', 50], ['staff', 60], ['leaf', 80],
+  ]) {
+    assert.match(progression, new RegExp(`boosters\\.${id}[\\s\\S]{0,80}?unlockLevel: ${level}`));
+  }
+  assert.match(progression, /FIRE_LEVEL = 70/);
+  assert.match(progression, /FIRE_PRICE = 1800/);
+  assert.match(progression, /LOFT bölgesindeki ilk 2 satırı tamamen yakar\./);
+  assert.match(progression, /state\.grid\[row\]\.fill\(null\)/);
 });
 
 test('Poma Shift locked booster prices are preserved', async () => {
@@ -100,9 +121,10 @@ test('Poma Shift meta spec documents the same commercial rules', async () => {
   assert.match(spec, /\*\*Level 90 — Yapışkan Şeker Bulutu\*\*/);
 });
 
-test('PWA cache includes meta system', async () => {
+test('PWA cache includes current meta and character progression files', async () => {
   const sw = await read('sw.js');
   assert.match(sw, /meta-system\.css/);
   assert.match(sw, /meta-system\.js/);
+  assert.match(sw, /character-progression-v2\.js/);
   assert.match(sw, /META_SPEC\.md/);
 });
