@@ -74,7 +74,7 @@
       boosterPurchases: count('booster_purchase') + count('booster_pack_purchase'),
       boosterUses: count('booster_used'),
       fairnessAdjustments: count('fairness_adjustment'),
-      rushTimeouts: count('tray_timeout'),
+      rushTimeouts: count('rush_timeout'),
       sugarCloudFills: count('sugar_cloud_fill'),
       providerErrorCount,
       progress: window.PomaShiftMetrics?.progress?.() || null,
