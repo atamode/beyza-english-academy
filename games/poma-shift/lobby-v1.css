@@ -1,3 +1,4 @@
+html.poma-lobby-boot .app-shell { visibility: hidden; }
 body.poma-lobby-open { overflow: hidden !important; }
 .poma-lobby {
   position: fixed;
