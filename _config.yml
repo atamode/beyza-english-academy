@@ -1,0 +1,37 @@
+# GitHub Pages publishes from repository root. Keep only runtime web assets in the
+# generated site; development/build sources below are not required in production.
+exclude:
+  - .github
+  - dist
+  - docs
+  - tests
+  - scripts
+  - supabase
+  - node_modules
+  - games/poma-shift/native
+  - AGENTS.md
+  - CODEX_FINAL_PROGRESS.md
+  - FINAL_MASTER_CODEX_KOMUTU.md
+  - FINAL_QA2_REPORT.md
+  - FINAL_QA_REPAIR_V2_CODEX_KOMUTU.md
+  - FINAL_REPAIR_CODEX_KOMUTU.md
+  - FINAL_REPAIR_REPORT.md
+  - FINAL_TEST_REPORT.md
+  - POMA_FOOTBALL_V1_HOTFIX_REPORT.md
+  - POMA_FOOTBALL_V1_REPORT.md
+  - README_KULLANIM.md
+  - SPRINT_2_4_CODEX_KOMUTU.md
+  - modul3_english_academy_REVIZE_FINAL.md
+  - modul4_english_academy_REVIZE_FINAL.md
+  - modul5_english_academy_REVIZE_FINAL.md
+  - modul6_english_academy_REVIZE_FINAL.md
+  - modul7_english_academy_REVIZE_FINAL.md
+  - modul8_english_academy_REVIZE_FINAL.md
+  - modul9_english_academy_REVIZE_FINAL.md
+  - modul10_english_academy_REVIZE_FINAL.md
+  - package-lock.json
+  - package.json
+  - playwright.live.config.mjs
+  - server.js
+  - server.py
+  - START_APP.bat
