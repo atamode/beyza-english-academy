@@ -1,32 +1,42 @@
 .poma-character-portrait {
-  --poma-col: 0;
-  --poma-row: 0;
+  --poma-art: url('../../assets/brand/poma-academy/poma-main-wave.png?v=2');
   display: inline-block;
   width: 46px;
   height: 46px;
   flex: 0 0 46px;
   border-radius: 50%;
-  background-image: url('../../assets/brand/poma-academy/poma-shift-character-sprite.webp');
-  background-size: 200% 400%;
-  background-position: calc(var(--poma-col) * 100%) calc(var(--poma-row) * 33.333333%);
+  background-image: var(--poma-art);
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #101c36;
   border: 2px solid rgba(255,255,255,.18);
   box-shadow: 0 6px 18px rgba(0,0,0,.28);
 }
 
-.poma-character-portrait.char-poma { --poma-col: 0; --poma-row: 0; }
-.poma-character-portrait.char-genius { --poma-col: 1; --poma-row: 0; }
-.poma-character-portrait.char-influencer { --poma-col: 0; --poma-row: 1; }
-.poma-character-portrait.char-archer { --poma-col: 1; --poma-row: 1; }
-.poma-character-portrait.char-wolf { --poma-col: 0; --poma-row: 2; }
-.poma-character-portrait.char-baby { --poma-col: 1; --poma-row: 2; }
-.poma-character-portrait.char-elder { --poma-col: 0; --poma-row: 3; }
-
+.poma-character-portrait.char-poma {
+  --poma-art: url('../../assets/brand/poma-academy/poma-main-wave.png?v=2');
+}
+.poma-character-portrait.char-genius {
+  --poma-art: url('../../assets/brand/poma-academy/poma-genius.png');
+}
+.poma-character-portrait.char-influencer {
+  --poma-art: url('../../assets/brand/poma-academy/poma-influencer.png');
+}
+.poma-character-portrait.char-archer {
+  --poma-art: url('../../assets/brand/poma-academy/poma-archer.png');
+}
+.poma-character-portrait.char-wolf {
+  --poma-art: url('../../assets/brand/poma-academy/poma-wolf.png');
+}
+.poma-character-portrait.char-baby {
+  --poma-art: url('../../assets/brand/poma-academy/poma-baby.png');
+}
+.poma-character-portrait.char-elder {
+  --poma-art: url('../../assets/brand/poma-academy/poma-elder.png');
+}
 .poma-character-portrait.char-hero {
-  background-image: url('../../assets/brand/poma-academy/poma-main-wave.png');
-  background-size: cover;
-  background-position: center 20%;
+  --poma-art: url('../../assets/brand/poma-academy/fire%20poma.png');
 }
 
 .meta-level-node .poma-character-portrait,
