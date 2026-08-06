@@ -28,7 +28,7 @@
   let lastFailureRemainingMs = 0;
 
   function currentLevel() {
-    return Number(window.state?.level || 0);
+    return Number(state.level || 0);
   }
 
   function isCurrentRush() {
@@ -81,15 +81,15 @@
   }
 
   function expireContinuation() {
-    if (!continuationMode || window.state?.status !== 'playing') return;
+    if (!continuationMode || state.status !== 'playing') return;
     stopContinuation({ paintZero: true });
     lastFailureRemainingMs = 0;
     if (typeof window.metric === 'function') {
       window.metric('rush_timeout', {
         durationMs: CONTINUE_BONUS_MS,
         continuation: true,
-        shifts: Number(window.state?.shiftsDone || 0),
-        targetShifts: Number(window.state?.targetShifts || 0),
+        shifts: Number(state.shiftsDone || 0),
+        targetShifts: Number(state.targetShifts || 0),
       });
     }
     if (typeof window.lose === 'function') window.lose('RUSH süresi bitti.', 'rush_timeout');
@@ -100,7 +100,7 @@
       clearContinuationInterval();
       return;
     }
-    if (window.state?.status !== 'playing') {
+    if (state.status !== 'playing') {
       clearContinuationInterval();
       return;
     }
@@ -251,7 +251,7 @@
       mirrorEndsAt = performance.now() + mirrorPausedMs;
       mirrorPausedMs = 0;
     }
-    if (continuationMode && continuationPausedMs > 0 && window.state?.status === 'playing') {
+    if (continuationMode && continuationPausedMs > 0 && state.status === 'playing') {
       continuationEndsAt = performance.now() + continuationPausedMs;
       continuationPausedMs = 0;
       clearContinuationInterval();
