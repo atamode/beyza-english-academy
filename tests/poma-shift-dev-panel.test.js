@@ -9,20 +9,23 @@ const root = path.resolve(path.dirname(__filename), '..');
 const gameDir = path.join(root, 'games', 'poma-shift');
 const read = name => readFile(path.join(gameDir, name), 'utf8');
 
-test('dev panel is production-inert unless localhost or ?dev is used', async () => {
+test('dev panel is production-inert unless localhost, ?dev, or native QA test mode is used', async () => {
   const source = await read('dev-panel.js');
   assert.match(source, /location\.hostname === 'localhost'/);
   assert.match(source, /params\.has\('dev'\)/);
+  assert.match(source, /PomaShiftAds\?\.testMode/);
+  assert.match(source, /nativeQaBuild/);
   assert.match(source, /if \(!enabled\) return/);
 });
 
-test('dev panel exposes high-level and economy smoke shortcuts', async () => {
+test('QA panel exposes milestone, Rush, boss and economy smoke shortcuts', async () => {
   const source = await read('dev-panel.js');
-  for (const level of [20, 80, 90, 120, 1000, 10000]) {
-    assert.match(source, new RegExp(String(level)));
+  for (const level of [1, 10, 11, 20, 30, 40, 50, 60, 70, 80, 90, 120, 10000]) {
+    assert.match(source, new RegExp(`\\b${level}\\b`));
   }
-  assert.match(source, /setCoins\(10000\)/);
-  assert.match(source, /setLives\(3\)/);
+  assert.match(source, /qaSetCoins\(10000\)/);
+  assert.match(source, /qaSetLives\(3\)/);
+  assert.match(source, /qaUnlockThrough\(80\)/);
   assert.match(source, /PomaShiftAnalyticsBridge/);
 });
 
