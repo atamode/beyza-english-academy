@@ -50,9 +50,12 @@ test('native build injects AdMob bridge even when meta-system has cache query st
   assert.match(source, /native-ads\.js/);
 });
 
-test('DEV controls stay hidden in native builds unless explicitly requested', async () => {
+test('native QA controls require the test ad build flag and stay closed in production', async () => {
   const source = await readGame('dev-panel.js');
   assert.match(source, /Capacitor\?\.isNativePlatform/);
+  assert.match(source, /PomaShiftAds\?\.native/);
+  assert.match(source, /PomaShiftAds\?\.testMode/);
   assert.match(source, /params\.has\('dev'\)/);
+  assert.match(source, /nativeQaBuild/);
   assert.match(source, /localBrowser && !nativeApp/);
 });
