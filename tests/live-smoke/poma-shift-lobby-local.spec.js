@@ -75,7 +75,7 @@ test('5/5 rewarded continues end in an actionable fail screen instead of a dead 
 
     const fail = page.locator('.fail-view');
     await expect(fail).toBeVisible({ timeout: 3_000 });
-    const continueButton = fail.locator('[data-meta-continue]');
+    const continueButton = fail.locator('button[data-meta-continue]');
     await expect(continueButton).toBeVisible({ timeout: 2_000 });
     await continueButton.click();
 
@@ -91,7 +91,7 @@ test('5/5 rewarded continues end in an actionable fail screen instead of a dead 
   await page.evaluate(() => lose('Test terminal fail', 'move_limit'));
   let fail = page.locator('.fail-view');
   await expect(fail).toBeVisible({ timeout: 3_000 });
-  await expect(fail.locator('[data-meta-continue]')).toHaveCount(0);
+  await expect(fail.locator('button[data-meta-continue]')).toHaveCount(0);
   await expect(fail.locator('[data-terminal-continue-note]')).toContainText('5/5 reklam devamı kullanıldı');
   await expect(fail.locator('[data-retry]')).toBeEnabled();
   await expect(fail.locator('[data-map]')).toBeEnabled();
