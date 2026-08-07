@@ -19,6 +19,7 @@
         <button type="button" data-dev-unlock>80'e kadar aç</button>
         <button type="button" data-dev-coins>10K Coin</button>
         <button type="button" data-dev-lives>3 Can</button>
+        ${nativeQaBuild ? '<button type="button" data-dev-complete>Leveli Bitir</button>' : ''}
         <button type="button" data-dev-metrics>KPI</button>
         <button type="button" data-dev-reset>Meta Reset</button>
       </div>
@@ -78,11 +79,23 @@
   function qaSetLives(value) {
     if (window.PomaShiftMeta?.dev?.setLives) return window.PomaShiftMeta.dev.setLives(value);
     const ok = writeMeta((meta) => {
-      meta.lives = Math.max(0, Math.min(3, Math.floor(Number(value) || 0)));
+      meta.lives = Math.max(0, Math.min(3, Math.floor(Number(value) || 0));
       if (meta.lives > 0) meta.lifeReadyAt = 0;
     });
     if (ok) location.reload();
     return ok;
+  }
+
+  function qaCompleteLevel() {
+    if (!nativeQaBuild) return false;
+    try {
+      if (typeof state === 'undefined' || state.status !== 'playing') return false;
+      state.shiftsDone = state.targetShifts;
+      checkWin();
+      return state.status === 'won';
+    } catch {
+      return false;
+    }
   }
 
   function qaReset() {
@@ -117,6 +130,10 @@
     }
     if (event.target.closest('[data-dev-lives]')) {
       qaSetLives(3);
+      return;
+    }
+    if (event.target.closest('[data-dev-complete]')) {
+      write(qaCompleteLevel() ? 'Level tamamlandı.' : 'Önce aktif leveli başlat.');
       return;
     }
     if (event.target.closest('[data-dev-metrics]')) {
