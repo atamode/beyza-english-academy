@@ -86,6 +86,7 @@
       button.type = 'button';
       button.dataset.useFire = '1';
       button.className = 'power-button fire-power-button';
+      button.innerHTML = '<span>🔥</span><strong></strong><small></small>';
       const leaf = list.querySelector('[data-use-power="leaf"]');
       if (leaf) leaf.insertAdjacentElement('beforebegin', button);
       else list.appendChild(button);
@@ -93,11 +94,12 @@
     const unlocked = fireState.unlocked;
     button.disabled = !unlocked;
     button.classList.toggle('locked', !unlocked);
-    button.innerHTML = `
-      <span>🔥</span>
-      <strong>${fireState.inventory}</strong>
-      <small>${unlocked ? 'Alev Dalgası' : 'Lv.70'}</small>
-    `;
+    const count = button.querySelector('strong');
+    const label = button.querySelector('small');
+    const nextCount = String(fireState.inventory);
+    const nextLabel = unlocked ? 'Alev Dalgası' : 'Lv.70';
+    if (count && count.textContent !== nextCount) count.textContent = nextCount;
+    if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
   }
 
   function ensureFireShopItem() {
