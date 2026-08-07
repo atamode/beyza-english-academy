@@ -15,11 +15,21 @@ async function openDevGame(page, suffix) {
   return pageErrors;
 }
 
-async function settlePreparation(page) {
+async function settlePreparation(page, level) {
   await page.waitForTimeout(160);
 
   const intro = page.locator('.rush-intro');
   if (await intro.isVisible().catch(() => false)) {
+    if (level === 70) {
+      await expect(intro.locator('[data-rush-milestone]')).toContainText('Fire Poma');
+      await expect(intro.locator('[data-rush-milestone]')).toContainText('Alev Dalgası');
+      await expect(intro.locator('[data-rush-milestone]')).not.toContainText('Dede Poma');
+    }
+    if (level === 80) {
+      await expect(intro.locator('[data-rush-milestone]')).toContainText('PomaHero');
+      await expect(intro.locator('[data-rush-milestone]')).toContainText('Sihirli Yaprak');
+      await expect(intro.locator('[data-rush-milestone]')).not.toContainText('Hero Poma');
+    }
     await intro.locator('[data-rush-start]').click();
     await expect(intro).toBeHidden({ timeout: 3_000 });
   }
@@ -42,7 +52,7 @@ async function enterDevLevel(page, level) {
     window.PomaShiftLobbyActive = false;
   }, level);
 
-  await settlePreparation(page);
+  await settlePreparation(page, level);
   await expect.poll(() => page.evaluate(() => ({ status: state.status, level: state.level })), { timeout: 3_000 })
     .toEqual({ status: 'playing', level });
 }
