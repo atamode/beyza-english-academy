@@ -32,6 +32,9 @@
     .poma-scarfless-badge .poma-character-portrait {
       display: none !important;
     }
+    [data-meta-continue-sentinel] {
+      display: none !important;
+    }
     .terminal-continue-note {
       margin: 4px 0 0 !important;
       color: #b9c9e3;
@@ -101,16 +104,37 @@
     hero.removeAttribute('aria-hidden');
 
     const icon = view.querySelector(':scope > .result-icon');
-    if (icon) view.insertBefore(hero, icon);
-    else if (view.firstElementChild !== hero) view.prepend(hero);
+    if (icon) {
+      if (hero.parentElement !== view || hero.nextElementSibling !== icon) view.insertBefore(hero, icon);
+    } else if (view.firstElementChild !== hero) {
+      view.prepend(hero);
+    }
 
     view.querySelectorAll('.poma-scarfless-badge .poma-character-portrait').forEach((node) => node.remove());
+  }
+
+  function ensureTerminalObserverSentinel(fail) {
+    let sentinel = fail.querySelector('[data-meta-continue-sentinel]');
+    if (sentinel) return sentinel;
+
+    sentinel = document.createElement('span');
+    sentinel.hidden = true;
+    sentinel.dataset.metaContinue = 'terminal-limit';
+    sentinel.dataset.metaContinueSentinel = '1';
+    sentinel.setAttribute('aria-hidden', 'true');
+    fail.prepend(sentinel);
+    return sentinel;
   }
 
   function makeTerminalFailActionable(fail) {
     if (continueCount() < MAX_CONTINUES) return;
 
-    fail.querySelector('[data-meta-continue]')?.remove();
+    // meta-system's legacy fail decorator stops mutating once it sees any
+    // [data-meta-continue] node. At 5/5 it otherwise appends a life line on
+    // every MutationObserver pass forever, starving the result UI and making
+    // the screen look frozen. Keep a hidden sentinel instead of a real ad CTA.
+    fail.querySelectorAll('button[data-meta-continue]').forEach((button) => button.remove());
+    ensureTerminalObserverSentinel(fail);
 
     let note = fail.querySelector('[data-terminal-continue-note]');
     if (!note) {
@@ -121,9 +145,10 @@
       if (retry) retry.insertAdjacentElement('beforebegin', note);
       else fail.appendChild(note);
     }
-    note.textContent = livesRemaining() > 0
+    const noteText = livesRemaining() > 0
       ? '5/5 reklam devamı kullanıldı. Yeniden oynayabilir veya haritaya dönebilirsin.'
       : '5/5 reklam devamı kullanıldı. Haritaya dönebilir veya can alabilirsin.';
+    if (note.textContent !== noteText) note.textContent = noteText;
 
     fail.querySelectorAll('button').forEach((button) => {
       button.disabled = false;
@@ -181,7 +206,10 @@
     }
   }, true);
 
-  const observer = new MutationObserver(() => requestAnimationFrame(patchResultUi));
+  // This callback must stay synchronous. meta-system registers its own observer
+  // after this script and at the 5/5 continue limit would otherwise begin an
+  // unbounded fail-life-line mutation loop before a deferred frame can guard it.
+  const observer = new MutationObserver(() => patchResultUi());
   observer.observe(content, { childList: true, subtree: true });
 
   window.addEventListener('poma-shift:metric', (event) => {
