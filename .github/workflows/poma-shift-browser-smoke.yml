@@ -7,6 +7,7 @@ on:
       - 'games/poma-shift/**'
       - 'tests/live-smoke/poma-shift-lobby-local.spec.js'
       - '.github/workflows/poma-shift-browser-smoke.yml'
+      - '.github/workflows/poma-shift-production-smoke.yml'
   workflow_dispatch:
 
 permissions:
