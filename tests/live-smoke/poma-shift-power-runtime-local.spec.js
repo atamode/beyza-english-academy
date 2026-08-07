@@ -10,7 +10,27 @@ async function openDevGame(page, suffix) {
     timeout: 8_000,
   });
   await page.waitForFunction(() => Boolean(window.PomaShiftMeta?.dev?.goto));
+  // Let one-time boot callbacks finish before jumping dozens of levels in dev mode.
+  await page.waitForTimeout(450);
   return pageErrors;
+}
+
+async function settlePreparation(page) {
+  await page.waitForTimeout(160);
+
+  const intro = page.locator('.rush-intro');
+  if (await intro.isVisible().catch(() => false)) {
+    await intro.locator('[data-rush-start]').click();
+    await expect(intro).toBeHidden({ timeout: 3_000 });
+  }
+
+  const picker = page.locator('.loadout-screen');
+  if (await picker.isVisible().catch(() => false)) {
+    await picker.locator('[data-picker-start]').click();
+    await expect(picker).toBeHidden({ timeout: 3_000 });
+  }
+
+  await page.waitForTimeout(120);
 }
 
 async function enterDevLevel(page, level) {
@@ -22,11 +42,7 @@ async function enterDevLevel(page, level) {
     window.PomaShiftLobbyActive = false;
   }, level);
 
-  const intro = page.locator('.rush-intro');
-  if (await intro.isVisible().catch(() => false)) {
-    await intro.locator('[data-rush-start]').click();
-    await expect(intro).toBeHidden({ timeout: 3_000 });
-  }
+  await settlePreparation(page);
   await expect.poll(() => page.evaluate(() => ({ status: state.status, level: state.level })), { timeout: 3_000 })
     .toEqual({ status: 'playing', level });
 }
@@ -67,9 +83,14 @@ async function unlockPowerAndOpenLobbyDetail(page, level, id, powerName, charact
 
   await page.locator('[data-lobby-play]').click();
   await expect(lobby).toBeHidden({ timeout: 4_000 });
-  await expect(page.locator('.loadout-screen')).toBeHidden({ timeout: 4_000 });
   await expect.poll(() => page.evaluate(() => ({ status: state.status, level: state.level })), { timeout: 4_000 })
     .toEqual({ status: 'playing', level: level + 1 });
+
+  // Lobby play synchronizes and auto-commits the selected three slots. Give its
+  // 110 ms bridge time to finish and verify no stale preparation overlay remains.
+  await page.waitForTimeout(220);
+  await expect(page.locator('.loadout-screen')).toBeHidden({ timeout: 3_000 });
+  await expect(page.locator('.rush-intro')).toBeHidden({ timeout: 3_000 });
 
   const firstSlot = page.locator('.battle-loadout [data-loadout-slot="0"]');
   await expect(firstSlot).toContainText(powerName);
