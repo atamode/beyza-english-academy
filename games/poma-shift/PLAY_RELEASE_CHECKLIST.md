@@ -1,7 +1,7 @@
 # POMA SHIFT — GOOGLE PLAY RELEASE CHECKLIST
 
 **Status:** RELEASE WORKING CHECKLIST  
-**Updated:** 2026-08-06
+**Updated:** 2026-08-07
 
 Bu dosya Google Play yayın hazırlığını teknik gerçeklere göre izler. Ürün kararları için `POMA_SHIFT_MASTER_CONTEXT.md`, runtime audit için `PRODUCT_AUDIT.md` otoritedir.
 
@@ -54,10 +54,25 @@ Production öncesi dış kurulum:
 
 ---
 
-## 3. DATA SAFETY — EVIDENCE BASELINE
+## 3. ANALYTICS / DATA SAFETY — EVIDENCE BASELINE
 
-**Önemli:** Play Console formu submit edilmeden önce kullanılan SDK sürümü ve production analytics tekrar kontrol edilir. Bu bölüm teknik hazırlık notudur; Play Console adına otomatik beyan değildir.
+**Önemli:** Play Console formu submit edilmeden önce kullanılan SDK/tag sürümleri ve gerçek production davranışı tekrar kontrol edilir. Bu bölüm teknik hazırlık notudur; Play Console adına otomatik beyan değildir.
 
+### Poma Shift analytics provider
+Kod tarafında production provider hazırdır:
+- GA4 measurement property: `G-LVDEFW23S9`
+- oyun eventleri ayrı `ps_*` namespace'i kullanır
+- kullanıcı tercihi: `poma.analytics.consent.v1`
+- analytics reddedilirse Google tag yüklenmez; local oyun telemetry çalışmaya devam eder
+- analytics tercihi lobby içinden tekrar değiştirilebilir
+- analytics katmanı reklam depolama/kullanıcı verisi/kişiselleştirme consentini açmaz
+- remote event/payload strict whitelist kullanır; isim, e-posta, cevap ve serbest kullanıcı metni gönderilmez
+- test/production smoke `testing=true` kullanır; gerçek GA4 property test trafiğiyle kirletilmez
+
+External doğrulama:
+- [ ] gerçek production consent ile en az bir `ps_*` eventin GA4 Realtime/DebugView içinde görüldüğünü doğrula
+
+### AdMob / Google Mobile Ads
 Mevcut build yalnız kendi localStorage oyun state'i açısından cihaz içinde çalışır; ancak AdMob SDK ağ üzerinden veri işler. Bu nedenle `No data collected/shared` seçeneği güvenli değildir.
 
 Google Mobile Ads SDK dokümantasyonuna göre değerlendirilmesi gereken veri kategorileri:
@@ -76,6 +91,7 @@ Amaçlar:
 - app launch
 - taps
 - ad/video interactions
+- Poma Shift GA4 tarafında consent sonrası level sonucu / reklam tamamlanması / güç kullanımı gibi whitelist edilmiş oyun olayları
 
 Amaçlar:
 - advertising / marketing
@@ -97,7 +113,7 @@ Amaçlar:
 Örnek:
 - Android Advertising ID
 - App Set ID
-- SDK'nin kullandığı ilgili device/account identifiers
+- SDK/tag tarafından işlenebilecek ilgili device/client identifiers
 
 Amaçlar:
 - advertising / marketing
@@ -105,9 +121,6 @@ Amaçlar:
 - fraud prevention / security
 
 Google Mobile Ads tarafındaki iletimin TLS ile şifreli olduğu Google'ın SDK disclosure dokümantasyonunda belirtilir.
-
-### Production analytics eklenirse
-`window.PomaShiftAnalytics` için ileride hangi provider bağlanırsa, onun topladığı tüm veri türleri yukarıdaki forma ayrıca eklenmelidir. Şu anda production merkezi analytics provider **bağlı değildir**.
 
 ---
 
@@ -120,10 +133,10 @@ Google Play release öncesi:
 - [ ] policy developer/app identity ile tutarlı
 - [ ] privacy inquiry/contact mechanism var
 - [ ] AdMob/Google üçüncü taraf paylaşımı açıklanmış
+- [ ] GA4 / `ps_*` oyun analytics kullanımı ve consent tercihi açıklanmış
 - [ ] veri türleri / amaçları açıklanmış
 - [ ] consent / regional privacy choices açıklanmış
 - [ ] retention/deletion dili gerçek uygulama davranışıyla tutarlı
-- [ ] production analytics eklenirse policy güncellendi
 
 **Blocker:** Privacy contact adresi/mekanizması için production'da kullanılacak resmi kanal henüz repoda tanımlı değil. Kişisel e-posta veya sahte adres otomatik eklenmez.
 
@@ -192,21 +205,24 @@ Automated:
 - [x] debug APK generation
 - [x] unsigned release AAB generation
 - [x] API 36 target verification
-- [ ] current live deploy Playwright smoke PASS
+- [x] current main live deploy Playwright smoke PASS
+- [x] production analytics code/provider local Chromium contracts PASS
 
 Runtime / human:
 - [ ] L1 tutorial first-use test
 - [ ] L11 RUSH real device smoke
 - [ ] L20 milestone/booster unlock smoke
-- [ ] L80 Hero unlock smoke
-- [ ] L90 Sugar Cloud boss smoke
-- [ ] rewarded continue max-5 runtime smoke
+- [ ] L70 Fire Poma real device smoke
+- [ ] L80 PomaHero unlock/power real device smoke
+- [ ] L90 Sugar Cloud boss real device smoke
+- [ ] rewarded continue max-5 real device smoke
 - [ ] lives 1/15/30 minute edge cases
 - [ ] 5–10 blind testers
 - [ ] 20–50 external telemetry test
 
 Commercial gate:
-- [ ] production analytics
+- [x] production analytics provider code
+- [ ] GA4 Realtime/DebugView real production event verification
 - [ ] real AdMob IDs
 - [ ] real retention/fail/restart/RUSH data
 - [ ] tuning based on data, not guesses
@@ -218,6 +234,7 @@ Commercial gate:
 Aşağıdakiler gerçek external setup/test olmadan tamamlandı işaretlenmez:
 - signed production AAB
 - real AdMob serving
+- GA4 Realtime/DebugView real event visibility
 - privacy policy contact
 - Play Data Safety submission
 - real-device ad/consent test
