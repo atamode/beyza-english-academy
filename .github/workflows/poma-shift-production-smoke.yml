@@ -53,7 +53,7 @@ jobs:
           exit 1
 
       - name: Run deployed Poma Shift Chromium flow
-        run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js --config=playwright.live.config.mjs
+        run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js poma-shift-power-runtime-local.spec.js --config=playwright.live.config.mjs
 
       - name: Upload failure evidence
         if: failure()
