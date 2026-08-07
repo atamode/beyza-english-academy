@@ -41,7 +41,9 @@ test('living lobby Level 90 boss node starts Sugar Cloud through the existing th
   await expect(bossNode.locator('.poma-boss-node-label')).toHaveText('BOSS');
   await expect(bossNode.locator('.poma-boss-cloud')).toHaveCount(0);
 
-  await bossNode.click();
+  // The active map node intentionally bounces forever. Native DOM click tests the
+  // same selection handler without asking Playwright to wait for visual stability.
+  await bossNode.evaluate((node) => node.click());
   await expect(page.locator('[data-lobby-play-level]')).toHaveText('90');
   await page.locator('[data-lobby-play]').click();
 
