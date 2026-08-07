@@ -49,7 +49,14 @@ test('living lobby Level 90 boss node starts Sugar Cloud through the existing th
 
   await expect(lobby).toBeHidden({ timeout: 3_000 });
   await expect.poll(() => page.evaluate(() => ({ level: state.level, status: state.status }))).toEqual({ level: 90, status: 'playing' });
-  await expect(page.locator('.loadout-screen')).toBeHidden({ timeout: 3_000 });
+
+  const picker = page.locator('.loadout-screen');
+  await expect(picker).toBeVisible({ timeout: 3_000 });
+  const prep = picker.locator('.loadout-card.is-boss');
+  await expect(prep.locator('.boss-prep-identity')).toContainText('Yapışkan Şeker Bulutu');
+  await expect(prep.locator('.loadout-picker-slot')).toHaveCount(3);
+  await prep.locator('[data-picker-start]').click();
+  await expect(picker).toBeHidden({ timeout: 3_000 });
 
   const bossHud = page.locator('.boss-hud');
   await expect(bossHud).toBeVisible({ timeout: 3_000 });
