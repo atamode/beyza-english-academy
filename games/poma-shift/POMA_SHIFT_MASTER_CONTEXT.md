@@ -1,7 +1,7 @@
 # POMA SHIFT — MASTER CONTEXT
 
 **Status:** LIVING SOURCE OF TRUTH  
-**Updated:** 2026-08-06  
+**Updated:** 2026-08-07  
 **Scope:** Product, gameplay, progression, economy, Android/release readiness
 
 Bu dosya yeni sohbetlerde veya geliştirme oturumlarında Poma Shift'i başa sarmamak için ana durum kaydıdır.
@@ -210,6 +210,13 @@ Native build artık şu görselleri paketler:
 - PomaHero
 - sad/result Poma
 - Sugar Cloud
+
+2026-08-07 web/UX baseline:
+- canlı `harita → OYNA → Level 1` Chromium akışı doğrulandı
+- sonuç ekranında tek ana Poma kuralı uygulanıyor: win = mutlu Poma, fail = üzgün Poma
+- 5/5 rewarded continue sonrası yeni fail ekranı terminal/donuk state bırakmamalı; retry ve harita aksiyonları guard ile açık tutuluyor
+- sonuç ekranındaki `Haritaya Bak` legacy modal yerine yaşayan Poma Shift lobby/haritasına dönüyor
+- yeni result-flow guard native buildde asset path rewrite kapsamına alındı
 
 ---
 
