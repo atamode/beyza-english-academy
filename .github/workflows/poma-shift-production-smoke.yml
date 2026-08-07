@@ -46,7 +46,8 @@ jobs:
                printf '%s' "$body" | grep -q 'unlock-card-v1.js?v=49' && \
                printf '%s' "$body" | grep -q 'boss-ui.js?v=50' && \
                printf '%s' "$body" | grep -q 'mobile-release-v2.js?v=51' && \
-               printf '%s' "$body" | grep -q 'loadout-sync-v1.js?v=51'; then
+               printf '%s' "$body" | grep -q 'loadout-sync-v1.js?v=51' && \
+               printf '%s' "$body" | grep -q 'rush-runtime-guard.js?v=52'; then
               exit 0
             fi
             sleep 5
