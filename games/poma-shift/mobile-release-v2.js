@@ -150,6 +150,9 @@
   }
 
   function showPicker(level = state.level, { force = false } = {}) {
+    // Loadout belongs to level preparation only. A delayed setup callback must
+    // never cover a win/fail/unlock result after the level has already ended.
+    if (state.status !== 'playing') return;
     const hasAnything = availablePowers().length > 0;
     if (!force && level !== 90 && !hasAnything) return;
     pickerLevel = Number(level || state.level);
