@@ -49,32 +49,43 @@ test('mobile release uses a three-slot loadout, one-screen fit, stronger danger 
   assert.match(css, /sugar-shot/);
 });
 
-test('map lobby is the launch surface and preserves the locked power-card contract', async () => {
+test('map lobby is responsive, clickable and preserves the locked power-card contract', async () => {
   const source = await readGame('lobby-v1.js');
+  const freeze = await readGame('lobby-freeze-v1.js');
   const css = await readGame('lobby-v1.css');
   const index = await readGame('index.html');
 
   assert.doesNotThrow(() => new Function(source), 'lobby-v1.js should parse');
+  assert.doesNotThrow(() => new Function(freeze), 'lobby-freeze-v1.js should parse');
   assert.match(index, /class="poma-lobby-boot"/);
-  assert.match(index, /lobby-v1\.css\?v=43/);
-  assert.match(index, /lobby-v1\.js\?v=43/);
+  assert.match(index, /lobby-v1\.css\?v=44/);
+  assert.match(index, /lobby-v1\.js\?v=44/);
+  assert.match(index, /lobby-freeze-v1\.js\?v=44/);
   assert.match(index, /Harita yüklenemedi\. Oyun geçici modda açıldı\./);
-  assert.match(index, /setTimeout\(\(\) => \{/);
-  assert.ok(index.indexOf('lobby-v1.js?v=43') < index.indexOf('mobile-layout.js?v=40'), 'lobby should load before enhancement scripts');
-  assert.match(source, /openLobby\(\{ animate: true, syncLevel: true \}\)/);
-  assert.match(source, /openLobby\(\{ animate: false, syncLevel: false \}\)/);
-  assert.match(source, /scrollIntoView\(\{ behavior: 'smooth', block: 'center' \}\)/);
+  assert.ok(index.indexOf('lobby-v1.js?v=44') < index.indexOf('mobile-layout.js?v=40'), 'lobby should load before enhancement scripts');
+
+  assert.match(source, /pomaShift\.prelaunch-clean\.v44/);
+  assert.match(source, /highestUnlocked:1, lastLevel:1/);
+  assert.match(source, /openLobby\(\{ animate:true \}\)/);
+  assert.match(source, /map\.scrollTo\(\{ top:targetTop\(\), behavior:'smooth' \}\)/);
+  assert.doesNotMatch(source, /openLobby\(\{ animate: true, syncLevel: true \}\)/);
   assert.match(source, /poma-map-node/);
   assert.match(source, /poma-lobby-node-character/);
   assert.match(source, /data-lobby-slots/);
   assert.match(source, /data-lobby-powers/);
-  assert.match(source, /label: `🔒 Lv\$\{power\.level\}`/);
-  assert.match(source, /label: `×\$\{qty\}`/);
-  assert.match(source, /label: `\$\{power\.price\} 🪙`/);
+  assert.match(source, /label:`🔒 Lv\$\{power\.level\}`/);
+  assert.match(source, /label:`×\$\{qty\}`/);
+  assert.match(source, /label:`\$\{power\.price\} 🪙`/);
   assert.match(source, /Oyundan çıkmak istediğine emin misin\?/);
   assert.match(source, /data-detail-slot/);
   assert.match(source, /data-detail-buy/);
+
+  assert.doesNotMatch(freeze, /setInterval/);
+  assert.match(freeze, /poma:lobby-state/);
   assert.match(css, /html\.poma-lobby-boot \.app-shell/);
+  assert.match(css, /\.poma-map-road \{ display:none !important; \}/);
+  assert.match(css, /z-index: 7000/);
+  assert.match(css, /body\.poma-lobby-open \.loadout-screen/);
   assert.match(css, /@keyframes pomaNodeLive/);
   assert.match(css, /\.poma-power-mini/);
 });
