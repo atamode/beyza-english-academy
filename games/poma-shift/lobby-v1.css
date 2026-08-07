@@ -1,112 +1,109 @@
 html.poma-lobby-boot .app-shell { visibility: hidden; }
 body.poma-lobby-open { overflow: hidden !important; }
+body.poma-lobby-open .loadout-screen,
+body.poma-lobby-open .meta-modal,
+body.poma-lobby-open .modal-screen { visibility: hidden !important; pointer-events: none !important; }
+
 .poma-lobby {
   position: fixed;
   inset: 0;
-  z-index: 260;
+  z-index: 7000;
   display: grid;
   grid-template-rows: auto minmax(0,1fr) auto;
   background:
-    radial-gradient(circle at 50% -12%, rgba(106,174,255,.34), transparent 42%),
-    linear-gradient(180deg,#173463 0%,#10284e 42%,#0a1831 100%);
-  color: #eef6ff;
-  overflow: hidden;
-  isolation: isolate;
+    radial-gradient(circle at 50% -8%, rgba(106,174,255,.30), transparent 40%),
+    linear-gradient(180deg,#173b70 0%,#12335d 43%,#0b2343 100%);
+  color:#eef6ff;
+  overflow:hidden;
+  isolation:isolate;
+  pointer-events:auto;
 }
-.poma-lobby[hidden] { display:none; }
+.poma-lobby[hidden] { display:none !important; }
 .poma-lobby::before,
 .poma-lobby::after {
   content:"";
   position:absolute;
-  left:-10%; right:-10%;
+  left:-18%;right:-18%;
   z-index:-1;
   border-radius:50% 50% 0 0 / 100% 100% 0 0;
   pointer-events:none;
 }
 .poma-lobby::before {
-  bottom:28%; height:35%;
-  background:linear-gradient(180deg,rgba(56,129,104,.64),rgba(20,73,62,.82));
-  transform:rotate(-3deg) scale(1.15);
-  opacity:.72;
+  bottom:23%;height:38%;
+  background:linear-gradient(180deg,rgba(51,133,108,.78),rgba(22,80,68,.94));
+  transform:rotate(-4deg) scale(1.12);
 }
 .poma-lobby::after {
-  bottom:-8%; height:42%;
-  background:linear-gradient(180deg,#1d6b5c,#0b3c39);
-  transform:rotate(3deg) scale(1.2);
+  bottom:-11%;height:43%;
+  background:linear-gradient(180deg,#23806a,#0c4b42);
+  transform:rotate(4deg) scale(1.18);
 }
-.poma-lobby-sky { position:absolute; inset:0; z-index:-1; overflow:hidden; pointer-events:none; }
-.poma-lobby-sky i { position:absolute; width:72px; height:22px; border-radius:999px; background:rgba(255,255,255,.12); filter:blur(.2px); }
-.poma-lobby-sky i::before,.poma-lobby-sky i::after { content:""; position:absolute; border-radius:50%; background:inherit; }
+.poma-lobby-sky { position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none; }
+.poma-lobby-sky i { position:absolute;width:72px;height:22px;border-radius:999px;background:rgba(255,255,255,.11); }
+.poma-lobby-sky i::before,.poma-lobby-sky i::after { content:"";position:absolute;border-radius:50%;background:inherit; }
 .poma-lobby-sky i::before { width:34px;height:34px;left:12px;bottom:4px; }
 .poma-lobby-sky i::after { width:26px;height:26px;right:10px;bottom:3px; }
-.poma-lobby-sky i:nth-child(1){top:10%;left:10%;transform:scale(.8)}
-.poma-lobby-sky i:nth-child(2){top:20%;right:8%;transform:scale(1.1)}
-.poma-lobby-sky i:nth-child(3){top:39%;left:3%;transform:scale(.55)}
+.poma-lobby-sky i:nth-child(1){top:10%;left:11%;transform:scale(.8)}
+.poma-lobby-sky i:nth-child(2){top:21%;right:8%;transform:scale(1.08)}
+.poma-lobby-sky i:nth-child(3){top:42%;left:5%;transform:scale(.55)}
 
+.poma-lobby button { touch-action:manipulation; -webkit-tap-highlight-color:transparent; cursor:pointer; }
 .poma-lobby-topbar {
-  position:relative;
-  z-index:4;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
+  position:relative;z-index:4;display:flex;justify-content:space-between;align-items:center;gap:10px;
   padding:max(10px,env(safe-area-inset-top)) 12px 7px;
 }
 .poma-lobby-exit {
-  width:38px;height:38px;padding:0;border-radius:50%;
-  border:1px solid rgba(255,255,255,.14);
-  background:rgba(6,18,39,.72);color:#e8f1ff;
-  box-shadow:0 7px 20px rgba(0,0,0,.24);font-size:23px;line-height:1;
+  width:40px;height:40px;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.16);
+  background:rgba(6,18,39,.76);color:#eef5ff;box-shadow:0 7px 20px rgba(0,0,0,.24);font-size:23px;line-height:1;
 }
 .poma-lobby-wallet { display:flex;align-items:center;gap:7px; }
 .poma-lobby-wallet span {
-  display:flex;align-items:center;gap:5px;min-height:36px;padding:6px 10px;border-radius:999px;
-  background:rgba(8,24,51,.78);border:1px solid rgba(159,192,255,.18);box-shadow:0 7px 22px rgba(0,0,0,.22);
-  font-size:14px;
+  display:flex;align-items:center;gap:5px;min-height:37px;padding:6px 11px;border-radius:999px;
+  background:rgba(8,24,51,.80);border:1px solid rgba(159,192,255,.20);box-shadow:0 7px 22px rgba(0,0,0,.20);font-size:14px;
 }
 .poma-lobby-wallet strong { font-size:12px;color:#fff; }
 
 .poma-lobby-map-wrap { position:relative;min-height:0;overflow:hidden;padding:0 10px 5px; }
 .poma-lobby-map {
-  position:relative;height:100%;overflow:auto;overscroll-behavior:contain;scrollbar-width:none;
-  padding:46vh 22px 54vh;
-  mask-image:linear-gradient(180deg,transparent 0,#000 7%,#000 91%,transparent 100%);
+  position:relative;height:100%;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:none;
+  padding:42vh 22px 50vh;
 }
-.poma-lobby-map::-webkit-scrollbar{display:none}
-.poma-map-road {
-  position:absolute;top:0;bottom:0;left:50%;width:72px;transform:translateX(-50%);
-  background:linear-gradient(90deg,transparent 0 12%,rgba(227,215,178,.16) 12% 18%,rgba(226,214,177,.34) 18% 82%,rgba(227,215,178,.16) 82% 88%,transparent 88%);
-  border-radius:40px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.16));pointer-events:none;
-}
-.poma-map-road::after { content:""; position:absolute; inset:0 33px; background:repeating-linear-gradient(180deg,rgba(255,255,255,.42) 0 11px,transparent 11px 28px); }
+.poma-lobby-map::-webkit-scrollbar { display:none; }
+/* The old winding-node layout is intentional. No giant straight road behind the levels. */
+.poma-map-road { display:none !important; }
 .poma-map-node {
-  position:relative;display:grid;place-items:center;width:54px;height:54px;margin:24px auto;padding:0;border-radius:50%;
-  background:linear-gradient(180deg,#294b7c,#17345d);border:2px solid rgba(185,210,255,.28);color:#eaf3ff;
-  box-shadow:0 7px 18px rgba(0,0,0,.30),inset 0 1px rgba(255,255,255,.08);font-weight:900;
-  transform:translateX(var(--lane,0));transition:transform .18s ease,filter .18s ease,opacity .18s ease;
+  --lane:0px;
+  position:relative;display:grid;place-items:center;width:68px;height:68px;margin:15px auto;padding:0;
+  border-radius:25px;border:1px solid rgba(173,204,255,.26);color:#eaf3ff;
+  background:linear-gradient(180deg,rgba(45,76,124,.96),rgba(23,52,93,.98));
+  box-shadow:0 9px 24px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.09);
+  font-weight:950;transform:translateX(var(--lane));transition:filter .16s ease,opacity .16s ease,box-shadow .16s ease;
 }
-.poma-map-node.side-0{--lane:-64px}.poma-map-node.side-1{--lane:22px}.poma-map-node.side-2{--lane:62px}.poma-map-node.side-3{--lane:-20px}
-.poma-map-node > span { font-size:13px;position:relative;z-index:2; }
-.poma-map-node.complete { background:linear-gradient(180deg,#277661,#164d46);border-color:rgba(93,227,184,.42); }
-.poma-map-node.locked { opacity:.45;filter:saturate(.55); }
-.poma-map-node.selected { outline:3px solid rgba(255,213,94,.22); }
+.poma-map-node.side-0{--lane:-62px}
+.poma-map-node.side-1{--lane:0px}
+.poma-map-node.side-2{--lane:62px}
+.poma-map-node.side-3{--lane:0px}
+.poma-map-node > span { position:relative;z-index:2;font-size:14px; }
+.poma-map-node.complete { background:linear-gradient(180deg,#2b7c67,#175247);border-color:rgba(93,227,184,.42); }
+.poma-map-node.locked { opacity:.43;filter:saturate(.5); }
+.poma-map-node.selected:not(.active) { box-shadow:0 0 0 3px rgba(255,213,94,.22),0 9px 24px rgba(0,0,0,.28); }
 .poma-map-node.active {
-  opacity:1;filter:none;border-color:#ffd15c;background:linear-gradient(180deg,#3a6195,#1b3e70);
+  opacity:1;filter:none;border-color:#ffd15c;background:linear-gradient(180deg,#426ea7,#204879);
   box-shadow:0 0 0 5px rgba(255,209,92,.12),0 0 30px rgba(255,198,58,.44),0 10px 24px rgba(0,0,0,.34);
   animation:pomaNodeLive 1.15s ease-in-out infinite;
 }
-.poma-map-node.boss { border-radius:17px;background:linear-gradient(180deg,#914c82,#522e66);border-color:rgba(255,153,215,.6); }
+.poma-map-node.boss { border-radius:22px;background:linear-gradient(180deg,#914c82,#522e66);border-color:rgba(255,153,215,.6); }
 .poma-boss-cloud { position:absolute;right:-23px;top:-22px;font-size:29px;filter:drop-shadow(0 5px 8px rgba(0,0,0,.35)); }
 .poma-lobby-node-character {
-  position:absolute !important;left:44px !important;right:auto !important;top:-26px !important;width:45px !important;height:45px !important;
+  position:absolute !important;left:54px !important;right:auto !important;top:-19px !important;width:51px !important;height:51px !important;
   border-color:rgba(255,217,103,.58) !important;box-shadow:0 6px 16px rgba(0,0,0,.32),0 0 18px rgba(255,204,82,.16) !important;
 }
-.poma-map-node.side-1 .poma-lobby-node-character,.poma-map-node.side-2 .poma-lobby-node-character { left:auto !important;right:42px !important; }
-.poma-map-gap { margin:38px auto;color:rgba(255,255,255,.48);text-align:center;font-size:18px;letter-spacing:.38em; }
+.poma-map-node.side-2 .poma-lobby-node-character { left:auto !important;right:54px !important; }
+.poma-map-gap { margin:34px auto;color:rgba(255,255,255,.46);text-align:center;font-size:18px;letter-spacing:.38em; }
 .poma-lobby-play {
-  position:absolute;left:50%;bottom:9px;transform:translateX(-50%);z-index:5;min-width:172px;min-height:43px;padding:8px 20px;border-radius:999px;
-  border:1px solid rgba(255,217,103,.48);background:linear-gradient(180deg,#ffc94e,#efaa22);color:#2c220c;font-weight:950;letter-spacing:.03em;
-  box-shadow:0 11px 28px rgba(0,0,0,.32),0 0 24px rgba(255,190,49,.18);
+  position:absolute;left:50%;bottom:9px;transform:translateX(-50%);z-index:5;min-width:178px;min-height:45px;padding:8px 20px;
+  border-radius:999px;border:1px solid rgba(255,217,103,.52);background:linear-gradient(180deg,#ffd05a,#efaa22);color:#2c220c;
+  font-weight:950;letter-spacing:.03em;box-shadow:0 11px 28px rgba(0,0,0,.32),0 0 24px rgba(255,190,49,.18);
 }
 .poma-lobby-play.locked { filter:grayscale(.7);opacity:.55; }
 
@@ -117,48 +114,65 @@ body.poma-lobby-open { overflow: hidden !important; }
 }
 .poma-lobby-slots { display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:7px; }
 .poma-lobby-slot {
-  height:42px;padding:3px 8px;border-radius:12px;border:1px solid rgba(90,226,181,.30);background:rgba(45,153,125,.10);color:#effffb;
+  height:43px;padding:3px 8px;border-radius:12px;border:1px solid rgba(90,226,181,.30);background:rgba(45,153,125,.10);color:#effffb;
   display:flex;align-items:center;justify-content:center;gap:7px;box-shadow:none;
 }
-.poma-lobby-slot > span { font-size:21px; }.poma-lobby-slot small{font-size:9px;color:#ffd15c;font-weight:900}
+.poma-lobby-slot > span { font-size:21px; }
+.poma-lobby-slot small { font-size:9px;color:#ffd15c;font-weight:900; }
 .poma-lobby-slot.empty { border-style:dashed;border-color:rgba(141,171,222,.25);background:rgba(255,255,255,.025);color:#7087ac; }
 .poma-lobby-powers { display:grid;grid-template-columns:repeat(8,minmax(52px,1fr));gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:1px; }
-.poma-lobby-powers::-webkit-scrollbar{display:none}
+.poma-lobby-powers::-webkit-scrollbar { display:none; }
 .poma-power-mini {
-  min-width:52px;height:57px;padding:4px 3px;border-radius:12px;border:1px solid rgba(126,158,222,.16);background:rgba(17,34,66,.86);color:#eaf2ff;
-  display:grid;place-items:center;align-content:center;gap:1px;box-shadow:none;
+  min-width:52px;height:58px;padding:4px 3px;border-radius:12px;border:1px solid rgba(126,158,222,.17);background:rgba(17,34,66,.88);color:#eaf2ff;
+  display:grid;place-items:center;align-content:center;gap:2px;box-shadow:none;
 }
-.poma-power-mini > span { font-size:24px;line-height:1; }.poma-power-mini strong{font-size:8px;line-height:1;color:#ffd15c;white-space:nowrap}
-.poma-power-mini.locked { opacity:.54;filter:grayscale(.38); }.poma-power-mini.equipped{border-color:rgba(82,230,184,.65);background:rgba(48,176,139,.12);box-shadow:inset 0 0 0 1px rgba(82,230,184,.14)}
+.poma-power-mini > span { font-size:24px;line-height:1; }
+.poma-power-mini strong { font-size:8px;line-height:1;color:#ffd15c;white-space:nowrap; }
+.poma-power-mini.locked { opacity:.54;filter:grayscale(.38); }
+.poma-power-mini.equipped { border-color:rgba(82,230,184,.65);background:rgba(48,176,139,.12);box-shadow:inset 0 0 0 1px rgba(82,230,184,.14); }
 
-.poma-lobby-detail,.poma-lobby-confirm { position:fixed;inset:0;z-index:290;display:grid;place-items:center;padding:16px; }
-.poma-lobby-detail[hidden],.poma-lobby-confirm[hidden]{display:none}
-.poma-lobby-detail-backdrop,.poma-lobby-confirm::before{content:"";position:absolute;inset:0;background:rgba(2,7,18,.79);backdrop-filter:blur(8px)}
+.poma-lobby-detail,.poma-lobby-confirm { position:fixed;inset:0;z-index:7200;display:grid;place-items:center;padding:16px;pointer-events:auto; }
+.poma-lobby-confirm { z-index:7300; }
+.poma-lobby-detail[hidden],.poma-lobby-confirm[hidden] { display:none !important; }
+.poma-lobby-detail-backdrop,.poma-lobby-confirm::before { content:"";position:absolute;inset:0;background:rgba(2,7,18,.79);backdrop-filter:blur(6px); }
 .poma-lobby-detail-card,.poma-lobby-confirm-card {
   position:relative;z-index:2;width:min(390px,100%);border-radius:24px;padding:18px 16px 16px;background:linear-gradient(180deg,#172b50,#0a1730);
   border:1px solid rgba(135,169,226,.28);box-shadow:0 30px 80px rgba(0,0,0,.48);text-align:center;
 }
-.poma-detail-close { position:absolute;right:10px;top:10px;width:32px;height:32px;padding:0;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);color:#dfeaff;box-shadow:none;font-size:20px; }
+.poma-detail-close { position:absolute;right:10px;top:10px;width:34px;height:34px;padding:0;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);color:#dfeaff;box-shadow:none;font-size:20px; }
 .poma-detail-hero { display:flex;align-items:center;justify-content:center;gap:5px;min-height:76px; }
 .poma-detail-character { width:76px!important;height:76px!important;flex:0 0 76px!important;position:static!important; }
 .poma-detail-hero > span:last-child { font-size:40px;margin-left:-12px;margin-top:35px;filter:drop-shadow(0 5px 9px rgba(0,0,0,.38)); }
 .poma-lobby-detail-card > small { color:#ffd15c;font-size:9px;font-weight:950;letter-spacing:.07em; }
-.poma-lobby-detail-card h2 { margin:5px 0 1px;font-size:22px; }.poma-lobby-detail-card > strong{font-size:11px;color:#9fb4d7}.poma-lobby-detail-card p{margin:11px auto;color:#c2d1e8;font-size:11px;line-height:1.4;max-width:310px}
+.poma-lobby-detail-card h2 { margin:5px 0 1px;font-size:22px; }
+.poma-lobby-detail-card > strong { font-size:11px;color:#9fb4d7; }
+.poma-lobby-detail-card p { margin:11px auto;color:#c2d1e8;font-size:11px;line-height:1.4;max-width:310px; }
 .poma-detail-state { margin:10px 0;padding:9px 10px;border-radius:12px;background:rgba(255,255,255,.045);color:#eaf3ff;font-size:10px; }
-.poma-detail-actions { display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:7px;margin-top:10px; }.poma-detail-actions button{min-height:42px;padding:8px;border-radius:12px}.poma-detail-actions .buy{background:linear-gradient(180deg,#ffc94e,#e9a622);color:#2d220b}
-.poma-lobby-confirm-card { max-width:330px; }.poma-lobby-confirm-card h2{font-size:18px;line-height:1.25;margin:8px 0 14px}.poma-lobby-confirm-card>div{display:grid;grid-template-columns:1fr 1fr;gap:8px}.poma-lobby-confirm-card button{min-height:42px}.poma-lobby-sad{width:92px!important;height:92px!important;position:static!important;background-image:url('../../assets/brand/poma-academy/poma-sad.png')!important;margin:auto}
-.poma-lobby-toast { position:fixed;z-index:310;left:50%;bottom:142px;transform:translateX(-50%);padding:8px 12px;border-radius:999px;background:rgba(5,15,32,.94);border:1px solid rgba(255,209,92,.35);box-shadow:0 8px 28px rgba(0,0,0,.35);font-size:10px;font-weight:800;color:#fff4bd;white-space:nowrap; }
-.poma-lobby-toast[hidden]{display:none}
+.poma-detail-actions { display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:7px;margin-top:10px; }
+.poma-detail-actions button { min-height:42px;padding:8px;border-radius:12px; }
+.poma-detail-actions .buy { background:linear-gradient(180deg,#ffc94e,#e9a622);color:#2d220b; }
+.poma-lobby-confirm-card { max-width:330px; }
+.poma-lobby-confirm-card h2 { font-size:18px;line-height:1.25;margin:8px 0 14px; }
+.poma-lobby-confirm-card>div { display:grid;grid-template-columns:1fr 1fr;gap:8px; }
+.poma-lobby-confirm-card button { min-height:42px; }
+.poma-lobby-sad { width:92px!important;height:92px!important;position:static!important;background-image:url('../../assets/brand/poma-academy/poma-sad.png')!important;margin:auto; }
+.poma-lobby-toast { position:fixed;z-index:7400;left:50%;bottom:142px;transform:translateX(-50%);padding:8px 12px;border-radius:999px;background:rgba(5,15,32,.94);border:1px solid rgba(255,209,92,.35);box-shadow:0 8px 28px rgba(0,0,0,.35);font-size:10px;font-weight:800;color:#fff4bd;white-space:nowrap; }
+.poma-lobby-toast[hidden] { display:none !important; }
 
 @keyframes pomaNodeLive {
-  0%,100% { transform:translateX(var(--lane,0)) translateY(0) scale(1); }
-  45% { transform:translateX(var(--lane,0)) translateY(-5px) scale(1.06); }
-  70% { transform:translateX(var(--lane,0)) translateY(-2px) scale(1.02); }
+  0%,100% { transform:translateX(var(--lane)) translateY(0) scale(1); }
+  45% { transform:translateX(var(--lane)) translateY(-5px) scale(1.06); }
+  70% { transform:translateX(var(--lane)) translateY(-2px) scale(1.02); }
 }
 
-@media (min-width:701px){
+@media (min-width:701px) {
   .poma-lobby { width:min(520px,100%);left:50%;right:auto;transform:translateX(-50%);box-shadow:0 0 90px rgba(0,0,0,.55); }
 }
-@media (max-height:700px){
-  .poma-lobby-map{padding-top:40vh;padding-bottom:46vh}.poma-map-node{margin:19px auto;width:49px;height:49px}.poma-lobby-loadout{padding-top:5px}.poma-lobby-slot{height:37px}.poma-power-mini{height:51px}.poma-power-mini>span{font-size:21px}
+@media (max-height:700px) {
+  .poma-lobby-map { padding-top:38vh;padding-bottom:44vh; }
+  .poma-map-node { margin:12px auto;width:60px;height:60px; }
+  .poma-lobby-loadout { padding-top:5px; }
+  .poma-lobby-slot { height:38px; }
+  .poma-power-mini { height:52px; }
+  .poma-power-mini>span { font-size:21px; }
 }
