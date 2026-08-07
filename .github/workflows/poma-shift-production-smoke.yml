@@ -41,7 +41,9 @@ jobs:
         run: |
           for i in {1..24}; do
             body="$(curl -fsS 'https://pomante.com.tr/games/poma-shift/?production-smoke='${{ github.event.workflow_run.head_sha }} || true)"
-            if printf '%s' "$body" | grep -q 'result-flow-fix-v1.js?v=47' && printf '%s' "$body" | grep -q 'rush-continue.js?v=48'; then
+            if printf '%s' "$body" | grep -q 'result-flow-fix-v1.js?v=47' && \
+               printf '%s' "$body" | grep -q 'rush-continue.js?v=48' && \
+               printf '%s' "$body" | grep -q 'unlock-card-v1.js?v=49'; then
               exit 0
             fi
             sleep 5
@@ -50,7 +52,7 @@ jobs:
           exit 1
 
       - name: Run deployed Poma Shift Chromium flow
-        run: npx playwright test poma-shift-lobby-local.spec.js --config=playwright.live.config.mjs
+        run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js --config=playwright.live.config.mjs
 
       - name: Upload failure evidence
         if: failure()
