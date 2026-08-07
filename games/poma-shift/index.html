@@ -9,6 +9,33 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="description" content="Poma Shift: satırları temizle, SHIFT ile değişen tahtayı yönet ve Poma karakter güçlerini aç." />
   <title>Poma Shift</title>
+  <style>
+    html.poma-lobby-boot body::before {
+      content: 'POMA SHIFT';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      padding-bottom: 34px;
+      background: radial-gradient(circle at 50% 18%, #173463 0, #0b1732 46%, #050b18 100%);
+      color: #eef6ff;
+      font: 900 24px/1 system-ui, sans-serif;
+      letter-spacing: .08em;
+    }
+    html.poma-lobby-boot body::after {
+      content: 'Yükleniyor…';
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 50%;
+      z-index: 10000;
+      margin-top: 22px;
+      text-align: center;
+      color: #9fb5d9;
+      font: 700 12px/1 system-ui, sans-serif;
+    }
+  </style>
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles.css?v=40" />
@@ -21,7 +48,7 @@
   <link rel="stylesheet" href="./boss-ui.css?v=40" />
   <link rel="stylesheet" href="./dev-panel.css?v=40" />
   <link rel="stylesheet" href="./mobile-release-v2.css?v=40" />
-  <link rel="stylesheet" href="./lobby-v1.css?v=42" />
+  <link rel="stylesheet" href="./lobby-v1.css?v=43" />
   <script>
     // Launch-candidate web policy: disable the legacy service-worker cache so a deploy
     // cannot strand players on stale gameplay/economy code. The native app bundles
@@ -39,6 +66,17 @@
           keys.filter((key) => key.startsWith('poma-shift-')).map((key) => caches.delete(key)),
         )).catch(() => {});
       }
+
+      // Never strand the player behind the lobby boot curtain. If the lobby or one of
+      // its prerequisites cannot execute promptly, reveal the core board as a safe fallback.
+      window.setTimeout(() => {
+        const root = document.documentElement;
+        if (!root.classList.contains('poma-lobby-boot')) return;
+        root.classList.remove('poma-lobby-boot');
+        root.classList.add('poma-lobby-fallback');
+        const message = document.getElementById('message');
+        if (message) message.textContent = 'Harita yüklenemedi. Oyun geçici modda açıldı.';
+      }, 3500);
     })();
   </script>
 </head>
@@ -65,6 +103,10 @@
     </section>
   </main>
   <script src="./game.js?v=40" defer></script>
+  <!-- The lobby is a first-class boot surface. Load it immediately after the core game
+       instead of waiting behind every enhancement script. -->
+  <script src="./lobby-v1.js?v=43" defer onerror="document.documentElement.classList.remove('poma-lobby-boot')"></script>
+  <script src="./lobby-freeze-v1.js?v=43" defer></script>
   <script src="./mobile-layout.js?v=40" defer></script>
   <script src="./game-feel.js?v=40" defer></script>
   <script src="./rush-disable.js?v=40" defer></script>
@@ -89,7 +131,5 @@
   <script src="./audio-mix.js?v=40" defer></script>
   <script src="./fire-compat.js?v=40" defer></script>
   <script src="./mobile-release-v2.js?v=40" defer></script>
-  <script src="./lobby-v1.js?v=42" defer></script>
-  <script src="./lobby-freeze-v1.js?v=42" defer></script>
 </body>
 </html>
