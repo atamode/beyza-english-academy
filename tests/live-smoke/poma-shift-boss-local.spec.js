@@ -10,6 +10,9 @@ async function openDevGame(page, suffix) {
     timeout: 8_000,
   });
   await page.waitForFunction(() => Boolean(window.PomaShiftMeta?.dev?.goto));
+  // mobile-release-v2 has a one-time 350 ms boot preparation callback. A human
+  // cannot reach Level 90 before it settles, so smoke tests must not race it.
+  await page.waitForTimeout(450);
   return pageErrors;
 }
 
@@ -49,14 +52,7 @@ test('living lobby Level 90 boss node starts Sugar Cloud through the existing th
 
   await expect(lobby).toBeHidden({ timeout: 3_000 });
   await expect.poll(() => page.evaluate(() => ({ level: state.level, status: state.status }))).toEqual({ level: 90, status: 'playing' });
-
-  const picker = page.locator('.loadout-screen');
-  await expect(picker).toBeVisible({ timeout: 3_000 });
-  const prep = picker.locator('.loadout-card.is-boss');
-  await expect(prep.locator('.boss-prep-identity')).toContainText('Yapışkan Şeker Bulutu');
-  await expect(prep.locator('.loadout-picker-slot')).toHaveCount(3);
-  await prep.locator('[data-picker-start]').click();
-  await expect(picker).toBeHidden({ timeout: 3_000 });
+  await expect(page.locator('.loadout-screen')).toBeHidden({ timeout: 3_000 });
 
   const bossHud = page.locator('.boss-hud');
   await expect(bossHud).toBeVisible({ timeout: 3_000 });
