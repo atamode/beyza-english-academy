@@ -214,8 +214,12 @@ Native build artık şu görselleri paketler:
 2026-08-07 web/UX baseline:
 - canlı `harita → OYNA → Level 1` Chromium akışı doğrulandı
 - sonuç ekranında tek ana Poma kuralı uygulanıyor: win = mutlu Poma, fail = üzgün Poma
-- 5/5 rewarded continue sonrası yeni fail ekranı terminal/donuk state bırakmamalı; retry ve harita aksiyonları guard ile açık tutuluyor
+- 5/5 rewarded continue sonrası yeni fail ekranı terminal/donuk state bırakmıyor; normal ve Level 11 RUSH akışı gerçek beş devam senaryosuyla Chromium'da doğrulandı
 - sonuç ekranındaki `Haritaya Bak` legacy modal yerine yaşayan Poma Shift lobby/haritasına dönüyor
+- lobby harita + birleşik stok/mağaza + sabit 3 slot yapısı ana hazırlık ekranıdır
+- güç mini kartı stok varsa `×adet`, stok yoksa Coin fiyatı, kilitliyse açılma leveli gösterir; karta basınca tek ürün detayında işlev, stok/fiyat, slot ve satın alma aksiyonu görünür
+- Level 10/20/30/40/50/60/70/80 ilk clear milestone'ları mevcut unlock sonucunu **YENİ GÜÇ AÇILDI** kartına yükseltir; `MAĞAZADA GÖR` yaşayan lobby'deki ilgili ürün detayını doğrudan açar
+- milestone unlock kartı first-clear only'dir; replay'de tekrar gösterilmez
 - yeni result-flow guard native buildde asset path rewrite kapsamına alındı
 
 ---
