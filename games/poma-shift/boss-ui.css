@@ -80,7 +80,16 @@
 .boss-hud.is-paused .boss-hud-timer small::after { content: ' · DURDU'; }
 
 .meta-level-node,
-.level-node { position: relative; }
+.level-node,
+.poma-map-node { position: relative; }
+
+.sugar-cloud-boss-node {
+  border-color: rgba(255, 151, 212, .72) !important;
+  box-shadow:
+    0 0 0 4px rgba(255, 143, 200, .10),
+    0 0 28px rgba(255, 118, 196, .28),
+    0 10px 24px rgba(0,0,0,.30) !important;
+}
 
 .sugar-cloud-map-art {
   position: absolute;
@@ -94,6 +103,129 @@
   pointer-events: none;
 }
 
+.poma-map-node .poma-lobby-sugar-cloud {
+  width: 62px;
+  height: 62px;
+  right: -43px;
+  top: -35px;
+  filter: drop-shadow(0 7px 12px rgba(0,0,0,.34)) drop-shadow(0 0 12px rgba(255,142,205,.20));
+  animation: sugar-cloud-float 1.55s ease-in-out infinite alternate;
+}
+.poma-map-node.side-2 .poma-lobby-sugar-cloud {
+  right: auto;
+  left: -43px;
+}
+
+.poma-boss-node-label {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  padding: 3px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 203, 99, .55);
+  background: linear-gradient(180deg, #7b315f, #4c234e);
+  color: #ffe39b;
+  box-shadow: 0 5px 12px rgba(0,0,0,.25);
+  font-size: 7px;
+  font-weight: 950;
+  letter-spacing: .10em;
+  pointer-events: none;
+}
+
+.boss-prep-identity {
+  display: grid;
+  grid-template-columns: 88px minmax(0,1fr);
+  align-items: center;
+  gap: 12px;
+  margin: 2px 0 12px;
+  padding: 11px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 143, 200, .30);
+  background: linear-gradient(135deg, rgba(118,48,93,.24), rgba(36,27,67,.24));
+  box-shadow: inset 0 1px rgba(255,255,255,.05);
+  text-align: left;
+}
+.boss-prep-art {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 14px rgba(0,0,0,.30));
+  animation: sugar-cloud-float 1.7s ease-in-out infinite alternate;
+}
+.boss-prep-identity > div {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+.boss-prep-identity small {
+  color: #ffb9dc;
+  font-size: 8px;
+  font-weight: 950;
+  letter-spacing: .08em;
+}
+.boss-prep-identity strong {
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.05;
+}
+.boss-prep-identity span {
+  color: #c8b9d4;
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+.boss-result-opponent {
+  display: grid;
+  grid-template-columns: 62px minmax(0,1fr);
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 7px 0 9px;
+  padding: 9px 11px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,143,200,.24);
+  background: rgba(75,35,72,.16);
+  text-align: left;
+}
+.boss-result-opponent.is-defeated {
+  border-color: rgba(90,224,180,.26);
+  background: linear-gradient(135deg, rgba(49,166,133,.10), rgba(75,35,72,.12));
+}
+.boss-result-opponent-art {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 7px 12px rgba(0,0,0,.26));
+}
+.boss-result-opponent.is-defeated .boss-result-opponent-art {
+  opacity: .72;
+  transform: rotate(-7deg) scale(.92);
+}
+.boss-result-opponent > div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.boss-result-opponent small {
+  color: #ffb9dc;
+  font-size: 7px;
+  font-weight: 950;
+  letter-spacing: .08em;
+}
+.boss-result-opponent strong {
+  color: #f8f2fb;
+  font-size: 12px;
+  line-height: 1.08;
+}
+.boss-result-opponent span {
+  color: #bfaecb;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+/* Kept for compatibility with cached markup; current JS removes this old full-size result art. */
 .sugar-cloud-result-art {
   display: block;
   width: 104px;
@@ -133,8 +265,35 @@
     right: -23px;
     top: -24px;
   }
-  .sugar-cloud-result-art {
-    width: 88px;
-    height: 88px;
+  .poma-map-node .poma-lobby-sugar-cloud {
+    width: 54px;
+    height: 54px;
+    right: -37px;
+    top: -30px;
   }
+  .poma-map-node.side-2 .poma-lobby-sugar-cloud {
+    right: auto;
+    left: -37px;
+  }
+  .boss-prep-identity {
+    grid-template-columns: 68px minmax(0,1fr);
+    gap: 9px;
+    padding: 9px 10px;
+  }
+  .boss-prep-art { width: 66px; height: 66px; }
+  .boss-prep-identity strong { font-size: 15px; }
+  .boss-result-opponent {
+    grid-template-columns: 52px minmax(0,1fr);
+    gap: 8px;
+    padding: 8px 9px;
+  }
+  .boss-result-opponent-art { width: 50px; height: 50px; }
+  .sugar-cloud-result-art { width: 88px; height: 88px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boss-hud-icon,
+  .boss-hud-timer i,
+  .poma-lobby-sugar-cloud,
+  .boss-prep-art { animation: none !important; }
 }

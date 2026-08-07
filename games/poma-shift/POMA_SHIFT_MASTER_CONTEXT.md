@@ -159,6 +159,16 @@ Level 90: **Yapışkan Şeker Bulutu**
 - row clear / uygun booster ile temizlenebilir
 - tavana ulaşırsa fail
 
+Level 90 presentation / UX baseline:
+- yaşayan lobby Level 90 node'unda cloud emoji yerine gerçek Sugar Cloud art + `BOSS` etiketi kullanılır
+- boss hazırlığında ana kaynak yaşayan lobby'deki mevcut 3 slot seçimidir; ayrı ekonomi/loadout sistemi oluşturulmaz
+- runtime boss hazırlık kartı gösterildiğinde `Yapışkan Şeker Bulutu`, gerçek art ve “her 3 saniyede 1 kare” mekaniğini açıkça anlatır
+- oyun içinde boss HUD gerçek Sugar Cloud artını, adını ve 3 sn ritmini gösterir
+- sonuç ekranında ana hero yine tek Poma'dır; Sugar Cloud ikinci büyük karakter olarak tekrarlanmaz, kompakt boss sonuç kartında görünür
+- win: `Şeker Bulutu dağıldı!`; fail: `Şeker Bulutu hâlâ burada`
+- sonuçtaki `Haritaya Bak` yaşayan lobby'ye döner
+- boss mekanik/timing/reward bu sunum katmanıyla değiştirilmez
+
 Future boss slots: `120, 150, 180, 210...`
 
 ---
@@ -220,6 +230,8 @@ Native build artık şu görselleri paketler:
 - güç mini kartı stok varsa `×adet`, stok yoksa Coin fiyatı, kilitliyse açılma leveli gösterir; karta basınca tek ürün detayında işlev, stok/fiyat, slot ve satın alma aksiyonu görünür
 - Level 10/20/30/40/50/60/70/80 ilk clear milestone'ları mevcut unlock sonucunu **YENİ GÜÇ AÇILDI** kartına yükseltir; `MAĞAZADA GÖR` yaşayan lobby'deki ilgili ürün detayını doğrudan açar
 - milestone unlock kartı first-clear only'dir; replay'de tekrar gösterilmez
+- Level 90 boss local Chromium regression'ı `lobby boss node → 3 slot → boss → gerçek sugar cast → win → harita` ve `boss hazırlık → fail → harita` zincirlerini kapsar
+- boss HUD artık `window.state` varsayımı yerine gerçek lexical game `state` üzerinden çalışır
 - yeni result-flow guard native buildde asset path rewrite kapsamına alındı
 
 ---
@@ -230,7 +242,7 @@ Native build artık şu görselleri paketler:
 - L11 RUSH süre doğrulaması
 - L70 Fire Poma unlock + Alev Dalgası animasyonu
 - L80 PomaHero / Yaprak
-- L90 boss görsel/runtime
+- L90 boss Android gerçek cihaz smoke
 - rewarded/interstitial test reklamları gerçek cihaz
 - production analytics
 - production AdMob IDs

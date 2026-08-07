@@ -7,6 +7,7 @@
 
 ## 2026-08
 
+- **Poma Shift Level 90 boss presentation:** The living lobby now marks Level 90 with real Yapışkan Şeker Bulutu art + `BOSS`, preserves the existing three-slot preparation flow, identifies the boss in preparation/HUD, and keeps one main Poma on win/fail while Sugar Cloud appears as a compact opponent result. Local Chromium verifies lobby→boss→real sugar cast→win→map and preparation→fail→map without changing the locked 3-second mechanic or reward.
 - **Poma Shift milestone unlock cards:** Level 10–80 first-clear milestones now promote the existing unlock result into a one-time **YENİ GÜÇ AÇILDI** card with `MAĞAZADA GÖR`; the CTA routes into the matching product detail in the living lobby so the existing stock/price/3-slot/purchase flow remains the single source of truth, while replay does not repeat the unlock card.
 - **Poma Shift result/continue recovery:** Result cards were normalized to one state-aware Poma hero; the 5/5 rewarded-continue MutationObserver freeze was eliminated; result-map CTA now returns to the current lobby; native asset rewriting was extended; normal Level 1 terminal recovery passed local and production Chromium smoke; and Level 11 RUSH was hardened to preserve the same terminal guard, avoid duplicate 5/5 copy, and passed the real five-rewarded-continue Chromium regression before merge.
 
