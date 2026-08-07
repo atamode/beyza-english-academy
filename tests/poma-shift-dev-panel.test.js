@@ -29,6 +29,16 @@ test('QA panel exposes milestone, Rush, boss and economy smoke shortcuts', async
   assert.match(source, /PomaShiftAnalyticsBridge/);
 });
 
+test('native QA fast-complete exists only behind the native test-mode guard', async () => {
+  const source = await read('dev-panel.js');
+  assert.match(source, /nativeQaBuild \? '<button type="button" data-dev-complete>Leveli Bitir<\/button>' : ''/);
+  assert.match(source, /function qaCompleteLevel\(\)/);
+  assert.match(source, /if \(!nativeQaBuild\) return false/);
+  assert.match(source, /state\.shiftsDone = state\.targetShifts/);
+  assert.match(source, /checkWin\(\)/);
+  assert.match(source, /state\.status === 'won'/);
+});
+
 test('dev panel is loaded and cached', async () => {
   const [index, sw] = await Promise.all([read('index.html'), read('sw.js')]);
   assert.match(index, /dev-panel\.css/);
