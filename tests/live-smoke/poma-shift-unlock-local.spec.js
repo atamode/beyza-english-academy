@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe.configure({ retries: 0, timeout: 20_000 });
+test.describe.configure({ retries: 0, timeout: 22_000 });
 
 async function hideLobbyForDevPlay(page) {
   await page.evaluate(() => {
@@ -9,6 +9,19 @@ async function hideLobbyForDevPlay(page) {
     document.body.classList.remove('poma-lobby-open');
     window.PomaShiftLobbyActive = false;
   });
+}
+
+async function settleLevelPreparation(page) {
+  // mobile-release-v2 schedules its loadout decision shortly after setupLevel.
+  // Real players cannot clear a level before this settles, so the smoke test
+  // must wait for the same preparation window instead of racing it.
+  await page.waitForTimeout(140);
+  const picker = page.locator('.loadout-screen');
+  const pickerStart = page.locator('[data-picker-start]');
+  if (await pickerStart.isVisible().catch(() => false)) {
+    await pickerStart.click();
+    await expect(picker).toBeHidden({ timeout: 2_000 });
+  }
 }
 
 async function completeCurrentLevel(page) {
@@ -31,6 +44,7 @@ test('Level 10 first clear promotes Poma Dahi unlock to a one-time shop card', a
   await page.evaluate(() => window.PomaShiftMeta.dev.goto(10));
   await hideLobbyForDevPlay(page);
   await expect(page.locator('#levelValue')).toHaveText('10');
+  await settleLevelPreparation(page);
 
   await completeCurrentLevel(page);
   const win = page.locator('.win-view');
@@ -57,6 +71,7 @@ test('Level 10 first clear promotes Poma Dahi unlock to a one-time shop card', a
   await detail.locator('[data-detail-close]').click();
   await page.evaluate(() => window.PomaShiftMeta.dev.goto(10));
   await hideLobbyForDevPlay(page);
+  await settleLevelPreparation(page);
   await completeCurrentLevel(page);
 
   const replayWin = page.locator('.win-view');
