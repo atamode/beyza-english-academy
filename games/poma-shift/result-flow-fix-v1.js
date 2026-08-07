@@ -145,9 +145,10 @@
       if (retry) retry.insertAdjacentElement('beforebegin', note);
       else fail.appendChild(note);
     }
-    note.textContent = livesRemaining() > 0
+    const noteText = livesRemaining() > 0
       ? '5/5 reklam devamı kullanıldı. Yeniden oynayabilir veya haritaya dönebilirsin.'
       : '5/5 reklam devamı kullanıldı. Haritaya dönebilir veya can alabilirsin.';
+    if (note.textContent !== noteText) note.textContent = noteText;
 
     fail.querySelectorAll('button').forEach((button) => {
       button.disabled = false;
