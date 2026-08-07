@@ -32,6 +32,9 @@
     .poma-scarfless-badge .poma-character-portrait {
       display: none !important;
     }
+    [data-meta-continue-sentinel] {
+      display: none !important;
+    }
     .terminal-continue-note {
       margin: 4px 0 0 !important;
       color: #b9c9e3;
@@ -107,10 +110,28 @@
     view.querySelectorAll('.poma-scarfless-badge .poma-character-portrait').forEach((node) => node.remove());
   }
 
+  function ensureTerminalObserverSentinel(fail) {
+    let sentinel = fail.querySelector('[data-meta-continue-sentinel]');
+    if (sentinel) return sentinel;
+
+    sentinel = document.createElement('span');
+    sentinel.hidden = true;
+    sentinel.dataset.metaContinue = 'terminal-limit';
+    sentinel.dataset.metaContinueSentinel = '1';
+    sentinel.setAttribute('aria-hidden', 'true');
+    fail.prepend(sentinel);
+    return sentinel;
+  }
+
   function makeTerminalFailActionable(fail) {
     if (continueCount() < MAX_CONTINUES) return;
 
-    fail.querySelector('[data-meta-continue]')?.remove();
+    // meta-system's legacy fail decorator stops mutating once it sees any
+    // [data-meta-continue] node. At 5/5 it otherwise appends a life line on
+    // every MutationObserver pass forever, starving the result UI and making
+    // the screen look frozen. Keep a hidden sentinel instead of a real ad CTA.
+    fail.querySelectorAll('button[data-meta-continue]').forEach((button) => button.remove());
+    ensureTerminalObserverSentinel(fail);
 
     let note = fail.querySelector('[data-terminal-continue-note]');
     if (!note) {
