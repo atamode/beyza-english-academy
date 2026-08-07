@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -8,6 +10,11 @@ const __filename = fileURLToPath(import.meta.url);
 const root = path.resolve(path.dirname(__filename), '..');
 const gameDir = path.join(root, 'games', 'poma-shift');
 const read = name => readFile(path.join(gameDir, name), 'utf8');
+const execFileAsync = promisify(execFile);
+
+test('dev panel JavaScript parses before browser smoke', async () => {
+  await execFileAsync(process.execPath, ['--check', path.join(gameDir, 'dev-panel.js')]);
+});
 
 test('dev panel is production-inert unless localhost, ?dev, or native QA test mode is used', async () => {
   const source = await read('dev-panel.js');
