@@ -68,7 +68,7 @@ test('Level 10 first clear promotes Poma Dahi unlock to a one-time shop card', a
   await expect(detail).toContainText('Poma Dahi');
   await expect(detail).toContainText('Stok: ×1');
 
-  await detail.locator('[data-detail-close]').click();
+  await detail.locator('button.poma-detail-close[data-detail-close]').click();
   await page.evaluate(() => window.PomaShiftMeta.dev.goto(10));
   await hideLobbyForDevPlay(page);
   await settleLevelPreparation(page);
