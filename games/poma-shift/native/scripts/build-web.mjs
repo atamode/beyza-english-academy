@@ -51,6 +51,7 @@ const rewriteFiles = [
   'character-art.css',
   'boss-ui.js',
   'lobby-v1.css',
+  'result-flow-fix-v1.js',
   'sw.js',
 ];
 for (const name of rewriteFiles) {

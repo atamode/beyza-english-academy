@@ -3,7 +3,11 @@
 > **Purpose:** Concise index of completed operating and product milestones.
 > **Update trigger:** Accepted work is completed and verified.
 > **Related files:** [Master Tasks](MASTER_TASKS.md), [Project State](PROJECT_STATE.md), [Changelog](CHANGELOG.md)
-> **Last reviewed:** 2026-07-23
+> **Last reviewed:** 2026-08-07
+
+## 2026-08
+
+- **Poma Shift result/continue recovery:** Result cards were normalized to one state-aware Poma hero, terminal 5/5 rewarded-continue failure was guarded against dead navigation, result-map CTA now returns to the current lobby, native asset rewriting was extended, and the PR CI suite passed test/build/native/Android generation checks.
 
 ## 2026-07
 
