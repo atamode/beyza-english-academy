@@ -27,13 +27,22 @@ test('Rush continuation preserves remaining time, survives visibility pause, and
   assert.match(source, /rush\.remainingMs = function rushRemainingWithContinue/);
 });
 
-test('fifth rewarded continue ends in an actionable fail screen instead of a dead state', async () => {
+test('fifth rewarded continue ends in an actionable fail screen without disturbing the terminal sentinel', async () => {
   const source = await read('rush-continue.js');
   assert.match(source, /MAX_CONTINUES = 5/);
   assert.match(source, /continueCount\(\) < MAX_CONTINUES/);
+  assert.match(source, /button\[data-meta-continue\]/);
+  assert.doesNotMatch(source, /fail\.querySelector\('\[data-meta-continue\]'\)\?\.remove\(\)/);
+  assert.match(source, /note\.textContent !== noteText/);
   assert.match(source, /5\/5 reklam devamı kullanıldı/);
   assert.match(source, /button\.disabled = false/);
   assert.match(source, /modal\.hidden = false/);
+});
+
+test('Rush copy patch only mutates real continue buttons, not hidden result-flow guards', async () => {
+  const source = await read('rush-continue.js');
+  assert.match(source, /querySelectorAll\?\.\('button\[data-meta-continue\]'\)/);
+  assert.match(source, /button\.textContent !== next/);
 });
 
 test('Rush continuation controller loads after Rush mode and is cached', async () => {
