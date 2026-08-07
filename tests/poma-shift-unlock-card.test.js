@@ -29,6 +29,12 @@ test('first-clear unlock card exposes one direct shop CTA into the living lobby'
   assert.match(source, /button\.click\(\)/);
 });
 
+test('loadout picker is constrained to active level preparation and cannot cover a result screen', async () => {
+  const source = await read('mobile-release-v2.js');
+  assert.match(source, /function showPicker\(level = state\.level/);
+  assert.match(source, /if \(state\.status !== 'playing'\) return;/);
+});
+
 test('unlock card runtime and style are loaded with the current cache version', async () => {
   const index = await read('index.html');
   assert.match(index, /unlock-card-v1\.css\?v=49/);
