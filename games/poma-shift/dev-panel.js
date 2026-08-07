@@ -79,7 +79,7 @@
   function qaSetLives(value) {
     if (window.PomaShiftMeta?.dev?.setLives) return window.PomaShiftMeta.dev.setLives(value);
     const ok = writeMeta((meta) => {
-      meta.lives = Math.max(0, Math.min(3, Math.floor(Number(value) || 0));
+      meta.lives = Math.max(0, Math.min(3, Math.floor(Number(value) || 0)));
       if (meta.lives > 0) meta.lifeReadyAt = 0;
     });
     if (ok) location.reload();
