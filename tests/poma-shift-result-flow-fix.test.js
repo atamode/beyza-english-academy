@@ -13,7 +13,7 @@ test('result screen normalizer keeps one state-aware Poma hero', async () => {
   const source = await read('result-flow-fix-v1.js');
   assert.match(source, /HAPPY_POMA_SRC/);
   assert.match(source, /SAD_POMA_SRC/);
-  assert.match(source, /data\.pomaResultMain = '1'/);
+  assert.match(source, /dataset\.pomaResultMain = '1'/);
   assert.match(source, /candidates\.forEach/);
   assert.match(source, /if \(node !== hero\) node\.remove\(\)/);
   assert.match(source, /failed \? SAD_POMA_SRC : HAPPY_POMA_SRC/);
