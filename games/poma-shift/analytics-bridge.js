@@ -4,11 +4,23 @@
   const baseMetric = window.metric;
   let providerErrorCount = 0;
 
-  function sendToProvider(name, payload) {
-    const provider = window.PomaShiftAnalytics;
-    if (!provider || typeof provider.track !== 'function') return;
+  function currentLevel() {
     try {
-      const result = provider.track(name, payload);
+      return typeof state !== 'undefined' ? Number(state.level || 0) : 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  function provider() {
+    return window.PomaShiftAnalytics;
+  }
+
+  function sendToProvider(name, payload) {
+    const target = provider();
+    if (!target || typeof target.track !== 'function') return;
+    try {
+      const result = target.track(name, payload);
       if (result && typeof result.catch === 'function') {
         result.catch(() => { providerErrorCount += 1; });
       }
@@ -21,13 +33,24 @@
     baseMetric(name, payload);
     const envelope = {
       name,
-      level: Number(window.state?.level || 0),
       at: Date.now(),
       ...payload,
+      level: Number(payload.level ?? currentLevel()),
     };
     window.dispatchEvent(new CustomEvent('poma-shift:metric', { detail: envelope }));
     sendToProvider(name, envelope);
   };
+
+  function bootstrapProvider() {
+    const target = provider();
+    if (!target || typeof target.bootstrap !== 'function') return;
+    try {
+      const events = window.PomaShiftMetrics?.export?.() || [];
+      target.bootstrap(events);
+    } catch {
+      providerErrorCount += 1;
+    }
+  }
 
   function summarize() {
     const events = window.PomaShiftMetrics?.export?.() || [];
@@ -85,4 +108,6 @@
     summarize,
     providerErrors() { return providerErrorCount; },
   };
+
+  bootstrapProvider();
 })();
