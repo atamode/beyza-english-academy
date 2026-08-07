@@ -115,6 +115,17 @@
     }
   }
 
+  function setSelected(next = []) {
+    const valid = Array.isArray(next)
+      ? next.filter((id) => POWER_INFO[id] && powerUnlocked(id) && powerQty(id) > 0).slice(0, 3)
+      : [];
+    selected = valid;
+    pickerSelected = [...valid];
+    saveLoadout();
+    renderBar();
+    return [...selected];
+  }
+
   function renderPicker() {
     const boss = pickerLevel === 90;
     const available = availablePowers();
@@ -150,8 +161,6 @@
   }
 
   function showPicker(level = state.level, { force = false } = {}) {
-    // Loadout belongs to level preparation only. A delayed setup callback must
-    // never cover a win/fail/unlock result after the level has already ended.
     if (state.status !== 'playing') return;
     const hasAnything = availablePowers().length > 0;
     if (!force && level !== 90 && !hasAnything) return;
@@ -414,6 +423,7 @@
 
   window.PomaShiftLoadout = {
     selected: () => [...selected],
+    setSelected,
     open: () => showPicker(state.level, { force: true }),
   };
 })();
