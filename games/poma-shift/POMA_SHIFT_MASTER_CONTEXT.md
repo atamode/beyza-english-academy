@@ -230,19 +230,21 @@ Native build artık şu görselleri paketler:
 - güç mini kartı stok varsa `×adet`, stok yoksa Coin fiyatı, kilitliyse açılma leveli gösterir; karta basınca tek ürün detayında işlev, stok/fiyat, slot ve satın alma aksiyonu görünür
 - Level 10/20/30/40/50/60/70/80 ilk clear milestone'ları mevcut unlock sonucunu **YENİ GÜÇ AÇILDI** kartına yükseltir; `MAĞAZADA GÖR` yaşayan lobby'deki ilgili ürün detayını doğrudan açar
 - milestone unlock kartı first-clear only'dir; replay'de tekrar gösterilmez
-- Level 90 boss local Chromium regression'ı `lobby boss node → 3 slot → boss → gerçek sugar cast → win → harita` ve `boss hazırlık → fail → harita` zincirlerini kapsar
+- yaşayan lobby'de seçilen 3 güç `pomaShift.loadout.v2` üzerinden runtime `battle-loadout` state'ine deterministik aktarılır; lobby'de `SLOTA EKLE` seçimi oyun içinde kaybolmaz
+- Level 70 Chromium zinciri `first clear → Fire Poma/Alev Dalgası unlock → mağaza detayı → stok ×1 → slot → runtime` olarak doğrulandı; Alev Dalgası yalnız ilk 2 board satırını temizler ve 3. satırı korur
+- Level 80 Chromium zinciri `first clear → PomaHero/Sihirli Yaprak unlock → mağaza detayı → stok ×1 → slot → runtime` olarak doğrulandı; Sihirli Yaprak bütün boardu temizler
+- RUSH runtime guard non-RUSH levele geçildiğinde stale RUSH intro overlay'ini zorla kapatır; RUSH milestone metni locked karakter sırasına göre normalize edilir (`70 Fire Poma/Alev Dalgası`, `80 PomaHero/Sihirli Yaprak`)
+- Level 90 boss Chromium regression'ı `lobby boss node → 3 slot → boss → gerçek sugar cast → win → harita` ve `boss hazırlık → fail → harita` zincirlerini kapsar
 - boss HUD artık `window.state` varsayımı yerine gerçek lexical game `state` üzerinden çalışır
-- yeni result-flow guard native buildde asset path rewrite kapsamına alındı
+- yeni result-flow ve loadout/RUSH guard dosyaları native build kapsamına alınır
 
 ---
 
 # 11. CURRENT RELEASE BLOCKERS
 
 - yeni Android APK gerçek cihaz smoke testi
-- L11 RUSH süre doğrulaması
-- L70 Fire Poma unlock + Alev Dalgası animasyonu
-- L80 PomaHero / Yaprak
-- L90 boss Android gerçek cihaz smoke
+- L11 RUSH süre doğrulaması gerçek cihaz
+- L70 Fire Poma / L80 PomaHero / L90 Boss Android gerçek cihaz görsel-runtime smoke
 - rewarded/interstitial test reklamları gerçek cihaz
 - production analytics
 - production AdMob IDs
