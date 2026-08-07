@@ -21,6 +21,14 @@
 
   let lastSugarCount = -1;
 
+  function currentGameState() {
+    try {
+      return typeof state !== 'undefined' ? state : null;
+    } catch {
+      return null;
+    }
+  }
+
   function modalOpen() {
     const selectors = ['.modal-screen', '.meta-modal', '.meta-ad-overlay', '.loadout-screen'];
     return selectors.some((selector) => {
@@ -47,7 +55,7 @@
   function bossLevelFromResult(view) {
     const levelText = view.querySelector('.eyebrow')?.textContent || '';
     const match = levelText.match(/(\d+)/);
-    return match ? Number(match[1]) : Number(window.state?.level || 0);
+    return match ? Number(match[1]) : Number(currentGameState()?.level || 0);
   }
 
   function makeSugarArt(className, alt = 'Yapışkan Şeker Bulutu') {
@@ -146,7 +154,8 @@
   }
 
   function sync() {
-    const active = Number(window.state?.level) === BOSS_LEVEL && window.state?.status === 'playing';
+    const gameState = currentGameState();
+    const active = Number(gameState?.level) === BOSS_LEVEL && gameState?.status === 'playing';
     hud.hidden = !active;
     if (!active) return;
 
