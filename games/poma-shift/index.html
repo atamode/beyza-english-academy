@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="./mobile-release-v2.css?v=40" />
   <link rel="stylesheet" href="./lobby-v1.css?v=44" />
   <script>
+    // Launch-candidate web policy: disable the legacy service-worker cache so a deploy
+    // cannot strand players on stale gameplay/economy code.
     (() => {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then((registrations) => {
