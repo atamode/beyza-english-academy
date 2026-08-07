@@ -66,25 +66,23 @@ test('win and fail results show exactly one state-aware Poma and map returns to 
 });
 
 test('5/5 rewarded continues end in an actionable fail screen instead of a dead state', async ({ page }) => {
-  await page.goto('/games/poma-shift/?browser-smoke=terminal', {
-    waitUntil: 'domcontentloaded',
-    timeout: 8_000,
+  await page.addInitScript(() => {
+    localStorage.setItem('pomaShift.prelaunch-clean.v44', '1');
+    localStorage.setItem('pomaShift.progress.v1', JSON.stringify({ highestUnlocked: 1, lastLevel: 1 }));
+    localStorage.setItem('pomaShift.meta.v1', JSON.stringify({
+      lives: 2,
+      continueAdsByLevel: { '1': 5 },
+    }));
   });
-  await expect(page.locator('.poma-lobby')).toBeVisible({ timeout: 3_000 });
 
-  await page.evaluate(() => {
-    const key = 'pomaShift.meta.v1';
-    const meta = JSON.parse(localStorage.getItem(key) || '{}');
-    meta.lives = 2;
-    meta.continueAdsByLevel = { ...(meta.continueAdsByLevel || {}), '1': 5 };
-    localStorage.setItem(key, JSON.stringify(meta));
-  });
-  await page.reload({ waitUntil: 'domcontentloaded' });
+  const { lobby, pageErrors } = await openLevelOne(page);
+  await expect.poll(() => page.evaluate(() => state.status)).toBe('playing');
 
-  const lobby = page.locator('.poma-lobby');
-  await expect(lobby).toBeVisible({ timeout: 3_000 });
-  await page.locator('[data-lobby-play]').click();
-  await expect(lobby).toBeHidden({ timeout: 3_000 });
+  const seeded = await page.evaluate(() => ({
+    lives: window.PomaShiftMeta?.snapshot?.()?.meta?.lives,
+    continues: window.PomaShiftMeta?.snapshot?.()?.meta?.continueAdsByLevel?.['1'],
+  }));
+  expect(seeded).toEqual({ lives: 2, continues: 5 });
 
   await page.evaluate(() => lose('Test terminal fail', 'move_limit'));
   let fail = page.locator('.fail-view');
@@ -101,6 +99,9 @@ test('5/5 rewarded continues end in an actionable fail screen instead of a dead 
   await page.evaluate(() => lose('Test terminal fail again', 'move_limit'));
   fail = page.locator('.fail-view');
   await expect(fail).toBeVisible({ timeout: 3_000 });
+  await expect(fail.locator('[data-retry]')).toBeEnabled();
+  await expect(fail.locator('[data-map]')).toBeEnabled();
   await fail.locator('[data-map]').click();
   await expect(lobby).toBeVisible({ timeout: 3_000 });
+  expect(pageErrors).toEqual([]);
 });
