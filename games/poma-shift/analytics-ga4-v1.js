@@ -220,8 +220,9 @@
   function syncConsentPanelVisibility() {
     const panel = consentPanel();
     if (!panel) return false;
-    panel.hidden = !lobbyVisible();
-    return !panel.hidden;
+    const shouldHide = !lobbyVisible();
+    if (panel.hidden !== shouldHide) panel.hidden = shouldHide;
+    return !shouldHide;
   }
 
   function setConsent(value) {
@@ -295,8 +296,10 @@
       const wallet = topbar.querySelector('.poma-lobby-wallet');
       topbar.insertBefore(button, wallet || null);
     }
-    button.textContent = consent === 'granted' ? 'Analitik ✓' : 'Analitik';
-    button.setAttribute('aria-label', `Analitik ayarları · ${consent === 'granted' ? 'açık' : consent === 'denied' ? 'kapalı' : 'seçilmedi'}`);
+    const text = consent === 'granted' ? 'Analitik ✓' : 'Analitik';
+    if (button.textContent !== text) button.textContent = text;
+    const label = `Analitik ayarları · ${consent === 'granted' ? 'açık' : consent === 'denied' ? 'kapalı' : 'seçilmedi'}`;
+    if (button.getAttribute('aria-label') !== label) button.setAttribute('aria-label', label);
     return true;
   }
 
@@ -307,19 +310,12 @@
 
   function initUi() {
     ensureStyles();
-    syncSettingsButton();
-    const observer = new MutationObserver(syncUi);
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-      attributes: true,
-      attributeFilter: ['hidden', 'class'],
-    });
+    syncUi();
 
     document.addEventListener('click', (event) => {
       if (!event.target.closest('[data-lobby-play]')) return;
       const panel = consentPanel();
-      if (panel) panel.hidden = true;
+      if (panel && !panel.hidden) panel.hidden = true;
     }, true);
 
     if (consent === 'unknown') {
@@ -329,9 +325,11 @@
       }, 700);
     }
 
+    // No MutationObserver here: result/lobby decorators already use observers and
+    // analytics must never create a self-triggering DOM mutation loop. This poll is
+    // idempotent and only writes when visible state/copy actually changes.
     uiSyncHandle = window.setInterval(syncUi, 250);
     window.addEventListener('pagehide', () => {
-      observer.disconnect();
       window.clearInterval(uiSyncHandle);
     }, { once: true });
   }
@@ -342,6 +340,7 @@
     setConsent,
     openSettings,
     status() {
+      const panel = consentPanel();
       return {
         consent,
         measurementId,
@@ -349,7 +348,7 @@
         buffered: buffer.length,
         tagReady,
         surface: surface(),
-        panelVisible: Boolean(consentPanel() && !consentPanel().hidden),
+        panelVisible: Boolean(panel && !panel.hidden),
       };
     },
   };
