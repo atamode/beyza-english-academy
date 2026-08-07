@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'games/poma-shift/**'
-      - 'tests/poma-shift-browser-smoke.spec.js'
+      - 'tests/live-smoke/poma-shift-lobby-local.spec.js'
       - '.github/workflows/poma-shift-browser-smoke.yml'
   workflow_dispatch:
 
@@ -46,7 +46,7 @@ jobs:
           exit 1
 
       - name: Run Poma Shift browser smoke
-        run: npx playwright test tests/poma-shift-browser-smoke.spec.js --config=playwright.live.config.mjs
+        run: npx playwright test poma-shift-lobby-local.spec.js --config=playwright.live.config.mjs
         env:
           PLAYWRIGHT_BASE_URL: http://127.0.0.1:8765
 
