@@ -9,11 +9,14 @@ const root = path.resolve(path.dirname(__filename), '..');
 const gameDir = path.join(root, 'games', 'poma-shift');
 const read = name => readFile(path.join(gameDir, name), 'utf8');
 
-test('Sugar Cloud boss HUD is restricted to level 90 gameplay and uses real art', async () => {
+test('Sugar Cloud boss HUD is restricted to level 90 gameplay and reads the live lexical game state', async () => {
   const source = await read('boss-ui.js');
   assert.match(source, /BOSS_LEVEL = 90/);
-  assert.match(source, /Number\(window\.state\?\.level\) === BOSS_LEVEL/);
-  assert.match(source, /state\?\.status === 'playing'/);
+  assert.match(source, /function currentGameState\(\)/);
+  assert.match(source, /typeof state !== 'undefined' \? state : null/);
+  assert.match(source, /Number\(gameState\?\.level\) === BOSS_LEVEL/);
+  assert.match(source, /gameState\?\.status === 'playing'/);
+  assert.doesNotMatch(source, /Number\(window\.state\?\.level\)/);
   assert.match(source, /sugar_cloud_fill/);
   assert.match(source, /Yapışkan Şeker Bulutu/);
   assert.match(source, /sugar-cloud\.png/);
