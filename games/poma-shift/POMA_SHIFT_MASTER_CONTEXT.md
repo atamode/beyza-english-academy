@@ -238,6 +238,16 @@ Native build artık şu görselleri paketler:
 - boss HUD artık `window.state` varsayımı yerine gerçek lexical game `state` üzerinden çalışır
 - yeni result-flow ve loadout/RUSH guard dosyaları native build kapsamına alınır
 
+2026-08-07 analytics baseline:
+- production telemetry provider GA4 web tag üzerinden bağlıdır; launch measurement property `G-LVDEFW23S9` ve Poma Shift eventleri `ps_*` namespace'iyle ayrıştırılır
+- analytics tercihi `poma.analytics.consent.v1` ile tutulur; bilinmeyen kullanıcı lobby içinde seçim görür, reddeden kullanıcıda Google tag yüklenmez ve oyun/local telemetry çalışmaya devam eder
+- consent kartı yalnız yaşayan lobby açıkken görünür; oyun ve sonuç ekranlarına taşmaz / CTA'ları bloke etmez
+- analytics consent reklam consentinden ayrıdır; `ad_storage`, `ad_user_data`, `ad_personalization` analytics katmanında denied kalır
+- remote payload strict whitelist kullanır; isim/e-posta/serbest metin/cevap gibi alanlar gönderilmez
+- merkezi bridge gerçek lexical game `state` level'ını kullanır ve provider sonradan yüklense bile mevcut local session/start eventlerini bootstrap eder
+- Chromium analytics testleri deny → local-only → grant, reversible settings, `ps_*` namespace, Level 70 doğru level değeri ve payload whitelist akışını doğrular
+- CI/test ortamında provider `testing=true` ile çalıştırılır; gerçek GA4 verisi testlerle kirletilmez
+
 ---
 
 # 11. CURRENT RELEASE BLOCKERS
@@ -246,7 +256,7 @@ Native build artık şu görselleri paketler:
 - L11 RUSH süre doğrulaması gerçek cihaz
 - L70 Fire Poma / L80 PomaHero / L90 Boss Android gerçek cihaz görsel-runtime smoke
 - rewarded/interstitial test reklamları gerçek cihaz
-- production analytics
+- production GA4 eventinin Analytics Realtime/DebugView içinde dışarıdan doğrulanması
 - production AdMob IDs
 - signed AAB secrets/build
 - privacy policy / Data Safety / Play listing
@@ -260,7 +270,7 @@ Native build artık şu görselleri paketler:
 1. CI + Android build PASS
 2. Yeni APK'yı telefonda smoke test
 3. Görsel/UI kalan kusurları kapat
-4. AdMob/analytics production
+4. AdMob/analytics external production verification
 5. signed AAB
 6. Play privacy/Data Safety/store assets
 7. blind/external test
