@@ -1,6 +1,6 @@
 # POMA SHIFT — PLAYTEST PLAN
 
-**Status:** V0.4 / RUSH LOCKED
+**Status:** V0.5 / RUSH LOCKED / DEVICE QA READY
 
 ## Amaç
 
@@ -18,6 +18,76 @@ Motorun oyuncuyu kendi isteğiyle sonraki levele taşıyıp taşımadığını; 
 8. RUSH'ta 2 danger row kuralı anlaşılır mı?
 9. Shape bazlı sesler ve SHIFT efekti yeterince güçlü mü?
 10. Oyuncu kaybettikten sonra kendi isteğiyle yeniden oynuyor mu?
+
+---
+
+## Android QA debug — 5 dakikalık smoke
+
+Bu akış yalnız **debug / Google test-ad native QA build** içindir. Production release buildde `QA` paneli ve `Leveli Bitir` kısayolu görünmemelidir.
+
+### Hazırlık
+1. En güncel `poma-shift-android-debug` APK'yı kur.
+2. Uygulamayı aç; yaşayan lobby görünmeli.
+3. Küçük `QA` toggle görünmeli.
+4. `QA → Meta Reset` ile temiz state başlat.
+
+### A — Level 1 / sonuç akışı
+1. Level 1'i aç ve normal oynanışın dokunma/sürükleme çalıştığını kontrol et.
+2. Sonuç ekranında tek ana Poma kuralını kontrol et:
+   - win = mutlu Poma
+   - fail = üzgün Poma
+3. `Haritaya Bak` yaşayan lobby'ye dönmeli.
+
+### B — Level 11 RUSH
+1. `QA → 11`.
+2. RUSH giriş kartı görünmeli.
+3. `BAŞLA` öncesi clock ilerlememeli.
+4. `BAŞLA` sonrası süre **60 sn** ve hedef **2 SHIFT** olmalı.
+5. Legacy 5 saniyelik tray timer görünmemeli/çalışmamalı.
+6. Uygulamayı kısa süre arka plana alıp dön; full-level clock background sırasında ilerlememeli.
+
+### C — Level 70 Fire Poma / Alev Dalgası
+1. Temiz first-clear için gerekirse `Meta Reset` yap.
+2. `QA → 70`.
+3. RUSH kartında milestone **Fire Poma / Alev Dalgası** olmalı.
+4. `BAŞLA`.
+5. `QA → Leveli Bitir`.
+6. Sonuçta `YENİ GÜÇ AÇILDI` → **Fire Poma / Alev Dalgası** görünmeli.
+7. `MAĞAZADA GÖR` → Alev Dalgası detayında `Stok: ×1` görünmeli.
+8. `SLOTA EKLE` → sonraki leveli başlat; oyun içi 3 slotta Alev Dalgası görünmeli.
+9. Gücü kullan; alev efekti üstten gelmeli ve yalnız boardun ilk 2 satırını temizlemeli.
+
+### D — Level 80 PomaHero / Sihirli Yaprak
+1. Temiz first-clear için gerekirse `Meta Reset` yap.
+2. `QA → 80`.
+3. RUSH kartında milestone **PomaHero / Sihirli Yaprak** olmalı.
+4. `BAŞLA`.
+5. `QA → Leveli Bitir`.
+6. Sonuçta `YENİ GÜÇ AÇILDI` → **PomaHero / Sihirli Yaprak** görünmeli.
+7. `MAĞAZADA GÖR` → detayda `Stok: ×1` görünmeli.
+8. `SLOTA EKLE` → sonraki leveli başlat; oyun içi slotta Sihirli Yaprak görünmeli.
+9. Gücü kullan; bütün board temizlenmeli.
+
+### E — Level 90 Yapışkan Şeker Bulutu
+1. `QA → 90`.
+2. Boss hazırlığında gerçek Sugar Cloud artwork + 3 slot + `her 3 saniyede 1 kare` bilgisi görünmeli.
+3. `BOSSA BAŞLA` sonrası boss HUD görünmeli.
+4. Şeker Bulutu yaklaşık her 3 saniyede bir kareyi yapıştırmalı.
+5. Fail sonucu: tek üzgün Poma + kompakt `Şeker Bulutu hâlâ burada` boss kartı.
+6. Win sonucu QA `Leveli Bitir` ile hızlı doğrulanabilir: tek mutlu Poma + `Şeker Bulutu dağıldı!`.
+7. `Haritaya Bak` yaşayan lobby'ye dönmeli.
+
+### F — reklam / analytics hızlı kontrol
+1. Test rewarded reklamı açılabiliyorsa bir kez continue reklamı tamamla; +3 hamle gelmeli.
+2. Reklam dönüşünde oyun input'u kilitlenmemeli.
+3. Lobby `Analitik` ayarı açılmalı; Reddet seçilince oyun çalışmaya devam etmeli.
+4. Kabul Et seçilince UI kilitlenmemeli; consent kartı gameplay/result üstüne taşmamalı.
+5. `QA → KPI` local özet üretmeli.
+
+### QA build güvenlik kuralı
+- `Leveli Bitir` yalnız `nativeQaBuild` test modunda bulunur.
+- Production/release AAB'de QA panelinin görünmesi **release blocker**dır.
+- QA shortcut gerçek oyuncu tuning verisi üretmek için kullanılmaz; yalnız smoke/debug hızlandırmasıdır.
 
 ---
 
@@ -137,14 +207,14 @@ Beklenen:
 - BAŞLA öncesi canvas oynanamaz / overlay arkayı kapatır
 - BAŞLA anında level süresi ve level duration ölçümü başlar
 
-Milestone RUSH:
-- 20: Poma Dahi / Bilgisayar
-- 30: Influencer Poma / Telefon
-- 40: Okçu Poma / Ok
-- 50: Bozkurt Poma / Kurt Pençesi
-- 60: Baby Poma / Emzik Salyası
-- 70: Dede Poma / Asa
-- 80: Hero Poma / Yaprak
+Milestone RUSH — locked progression:
+- 20: Influencer Poma / Telefon
+- 30: Okçu Poma / Ok
+- 40: Bozkurt Poma / Kurt Pençesi
+- 50: Baby Poma / Emzik Salyası
+- 60: Dede Poma / Asa Gücü
+- 70: Fire Poma / Alev Dalgası
+- 80: PomaHero / Sihirli Yaprak
 
 Kart, milestone ödülünü gösterir; eşya mevcut ekonomi kuralına göre level ilk kez tamamlandıktan sonra açılır.
 
