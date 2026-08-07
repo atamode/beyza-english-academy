@@ -10,6 +10,9 @@ async function openDevGame(page, suffix) {
     timeout: 8_000,
   });
   await page.waitForFunction(() => Boolean(window.PomaShiftMeta?.dev?.goto));
+  // mobile-release-v2 has a one-time 350 ms boot preparation callback. A human
+  // cannot reach Level 90 before it settles, so smoke tests must not race it.
+  await page.waitForTimeout(450);
   return pageErrors;
 }
 
