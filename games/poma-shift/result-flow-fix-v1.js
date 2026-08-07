@@ -104,8 +104,11 @@
     hero.removeAttribute('aria-hidden');
 
     const icon = view.querySelector(':scope > .result-icon');
-    if (icon) view.insertBefore(hero, icon);
-    else if (view.firstElementChild !== hero) view.prepend(hero);
+    if (icon) {
+      if (hero.parentElement !== view || hero.nextElementSibling !== icon) view.insertBefore(hero, icon);
+    } else if (view.firstElementChild !== hero) {
+      view.prepend(hero);
+    }
 
     view.querySelectorAll('.poma-scarfless-badge .poma-character-portrait').forEach((node) => node.remove());
   }
