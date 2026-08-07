@@ -1,4 +1,4 @@
-const CACHE = 'poma-shift-v0.1.38';
+const CACHE = 'poma-shift-v0.1.39';
 const CORE = [
   './',
   './index.html',
@@ -26,6 +26,8 @@ const CORE = [
   './launch-polish.js',
   './boss-ui.js',
   './timed-level-guard.js',
+  './analytics-config.js',
+  './analytics-ga4-v1.js',
   './analytics-bridge.js',
   './dev-panel.js',
   './combo-system.js',
