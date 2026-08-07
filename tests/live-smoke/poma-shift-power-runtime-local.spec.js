@@ -13,6 +13,24 @@ async function openDevGame(page, suffix) {
   return pageErrors;
 }
 
+async function enterDevLevel(page, level) {
+  await page.evaluate((target) => {
+    window.PomaShiftMeta.dev.goto(target);
+    const lobby = document.querySelector('.poma-lobby');
+    if (lobby) lobby.hidden = true;
+    document.body.classList.remove('poma-lobby-open');
+    window.PomaShiftLobbyActive = false;
+  }, level);
+
+  const intro = page.locator('.rush-intro');
+  if (await intro.isVisible().catch(() => false)) {
+    await intro.locator('[data-rush-start]').click();
+    await expect(intro).toBeHidden({ timeout: 3_000 });
+  }
+  await expect.poll(() => page.evaluate(() => ({ status: state.status, level: state.level })), { timeout: 3_000 })
+    .toEqual({ status: 'playing', level });
+}
+
 async function completeCurrentLevel(page) {
   await page.evaluate(() => {
     state.shiftsDone = state.targetShifts;
@@ -22,7 +40,7 @@ async function completeCurrentLevel(page) {
 }
 
 async function unlockPowerAndOpenLobbyDetail(page, level, id, powerName, characterName) {
-  await page.evaluate((target) => window.PomaShiftMeta.dev.goto(target), level);
+  await enterDevLevel(page, level);
   await completeCurrentLevel(page);
 
   const win = page.locator('.win-view');
