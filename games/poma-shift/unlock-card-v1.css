@@ -1,0 +1,87 @@
+.unlock-badge.poma-unlock-card {
+  display: grid;
+  grid-template-columns: 72px minmax(0,1fr);
+  align-items: center;
+  gap: 10px 12px;
+  width: 100%;
+  margin: 10px 0 5px;
+  padding: 12px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(39,184,143,.14), rgba(255,193,67,.10));
+  border: 1px solid rgba(88,231,186,.34);
+  box-shadow: inset 0 1px rgba(255,255,255,.06), 0 10px 28px rgba(0,0,0,.16);
+  text-align: left;
+}
+
+.unlock-badge.poma-unlock-card > .poma-character-portrait {
+  width: 70px;
+  height: 70px;
+  flex-basis: 70px;
+  grid-row: 1;
+  grid-column: 1;
+  border-color: rgba(255,211,99,.58);
+  box-shadow: 0 0 0 3px rgba(255,202,64,.08), 0 8px 20px rgba(0,0,0,.26);
+}
+
+.unlock-badge.poma-unlock-card > div {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.poma-unlock-kicker {
+  color: #67e4bd;
+  font-size: 8px;
+  font-weight: 950;
+  letter-spacing: .09em;
+}
+
+.unlock-badge.poma-unlock-card strong {
+  color: #f5f9ff;
+  font-size: 15px;
+  line-height: 1.05;
+}
+
+.unlock-badge.poma-unlock-card small {
+  color: #bacbe3;
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+.poma-unlock-shop {
+  grid-column: 1 / -1;
+  min-height: 41px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,211,94,.48);
+  border-radius: 12px;
+  background: linear-gradient(180deg,#ffd05a,#efaa22);
+  color: #2c220c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: 950 11px/1 system-ui,sans-serif;
+  letter-spacing: .035em;
+  box-shadow: 0 8px 18px rgba(0,0,0,.18), 0 0 18px rgba(255,190,49,.10);
+  cursor: pointer;
+}
+
+.poma-unlock-shop b {
+  font-size: 17px;
+  line-height: 1;
+}
+
+@media (max-width: 380px) {
+  .unlock-badge.poma-unlock-card {
+    grid-template-columns: 60px minmax(0,1fr);
+    padding: 10px;
+  }
+  .unlock-badge.poma-unlock-card > .poma-character-portrait {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+  .unlock-badge.poma-unlock-card strong { font-size: 14px; }
+}
