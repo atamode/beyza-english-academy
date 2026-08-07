@@ -59,6 +59,7 @@
   let consent = readConsent();
   let tagReady = false;
   let buffer = [];
+  let uiSyncHandle = 0;
   const seen = new Set();
 
   function readConsent() {
@@ -88,6 +89,11 @@
     } catch {
       return 'web';
     }
+  }
+
+  function lobbyVisible() {
+    const lobby = document.querySelector('.poma-lobby');
+    return Boolean(lobby && !lobby.hidden && document.body.classList.contains('poma-lobby-open'));
   }
 
   function clearAnalyticsCookies() {
@@ -203,8 +209,19 @@
     return sent;
   }
 
+  function consentPanel() {
+    return document.querySelector('[data-poma-shift-analytics-consent]');
+  }
+
   function removeConsentPanel() {
-    document.querySelector('[data-poma-shift-analytics-consent]')?.remove();
+    consentPanel()?.remove();
+  }
+
+  function syncConsentPanelVisibility() {
+    const panel = consentPanel();
+    if (!panel) return false;
+    panel.hidden = !lobbyVisible();
+    return !panel.hidden;
   }
 
   function setConsent(value) {
@@ -237,7 +254,7 @@
     style.dataset.pomaShiftAnalyticsStyle = '';
     style.textContent = `
       .ps-analytics-consent{position:fixed;z-index:10050;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));max-width:520px;margin:auto;padding:12px;border:1px solid rgba(159,192,255,.24);border-radius:16px;background:rgba(7,18,39,.97);box-shadow:0 14px 38px rgba(0,0,0,.38);color:#eef6ff;font:600 12px/1.35 system-ui,sans-serif}
-      .ps-analytics-consent strong{display:block;margin-bottom:4px;font-size:13px}.ps-analytics-consent p{margin:0;color:#b9c9e5}.ps-analytics-consent div{display:flex;gap:8px;margin-top:10px}.ps-analytics-consent button{flex:1;min-height:38px;border-radius:11px;border:1px solid rgba(255,255,255,.16);background:#182b4d;color:#f5f8ff;font:800 12px system-ui,sans-serif}.ps-analytics-consent button[data-choice="granted"]{background:#ffd052;color:#101826;border-color:#ffd052}
+      .ps-analytics-consent[hidden]{display:none!important}.ps-analytics-consent strong{display:block;margin-bottom:4px;font-size:13px}.ps-analytics-consent p{margin:0;color:#b9c9e5}.ps-analytics-consent div{display:flex;gap:8px;margin-top:10px}.ps-analytics-consent button{flex:1;min-height:38px;border-radius:11px;border:1px solid rgba(255,255,255,.16);background:#182b4d;color:#f5f8ff;font:800 12px system-ui,sans-serif}.ps-analytics-consent button[data-choice="granted"]{background:#ffd052;color:#101826;border-color:#ffd052}
       .poma-analytics-settings{min-height:32px;padding:5px 9px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(6,18,39,.58);color:#c9d8ef;font:800 9px system-ui,sans-serif;letter-spacing:.02em}
     `;
     document.head.appendChild(style);
@@ -261,6 +278,7 @@
       if (choice) setConsent(choice);
     });
     document.body.appendChild(panel);
+    syncConsentPanelVisibility();
     return panel;
   }
 
@@ -282,14 +300,40 @@
     return true;
   }
 
+  function syncUi() {
+    syncSettingsButton();
+    syncConsentPanelVisibility();
+  }
+
   function initUi() {
     ensureStyles();
     syncSettingsButton();
-    const observer = new MutationObserver(() => {
-      if (syncSettingsButton()) observer.disconnect();
+    const observer = new MutationObserver(syncUi);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['hidden', 'class'],
     });
-    if (!document.querySelector('.poma-lobby-topbar')) observer.observe(document.body, { childList: true, subtree: true });
-    if (consent === 'unknown') window.setTimeout(openSettings, 700);
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('[data-lobby-play]')) return;
+      const panel = consentPanel();
+      if (panel) panel.hidden = true;
+    }, true);
+
+    if (consent === 'unknown') {
+      window.setTimeout(() => {
+        if (!consentPanel()) openSettings();
+        syncConsentPanelVisibility();
+      }, 700);
+    }
+
+    uiSyncHandle = window.setInterval(syncUi, 250);
+    window.addEventListener('pagehide', () => {
+      observer.disconnect();
+      window.clearInterval(uiSyncHandle);
+    }, { once: true });
   }
 
   window.PomaShiftAnalytics = {
@@ -305,6 +349,7 @@
         buffered: buffer.length,
         tagReady,
         surface: surface(),
+        panelVisible: Boolean(consentPanel() && !consentPanel().hidden),
       };
     },
   };
