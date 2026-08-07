@@ -9,6 +9,7 @@ on:
       - 'tests/live-smoke/poma-shift-unlock-local.spec.js'
       - 'tests/live-smoke/poma-shift-boss-local.spec.js'
       - 'tests/live-smoke/poma-shift-power-runtime-local.spec.js'
+      - 'tests/live-smoke/poma-shift-analytics-local.spec.js'
       - '.github/workflows/poma-shift-browser-smoke.yml'
       - '.github/workflows/poma-shift-production-smoke.yml'
   pull_request:
@@ -19,6 +20,7 @@ on:
       - 'tests/live-smoke/poma-shift-unlock-local.spec.js'
       - 'tests/live-smoke/poma-shift-boss-local.spec.js'
       - 'tests/live-smoke/poma-shift-power-runtime-local.spec.js'
+      - 'tests/live-smoke/poma-shift-analytics-local.spec.js'
       - '.github/workflows/poma-shift-browser-smoke.yml'
       - '.github/workflows/poma-shift-production-smoke.yml'
   workflow_dispatch:
@@ -60,7 +62,7 @@ jobs:
           exit 1
 
       - name: Run Poma Shift browser smoke
-        run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js poma-shift-power-runtime-local.spec.js --config=playwright.live.config.mjs
+        run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js poma-shift-power-runtime-local.spec.js poma-shift-analytics-local.spec.js --config=playwright.live.config.mjs
         env:
           PLAYWRIGHT_BASE_URL: http://127.0.0.1:8765
 
