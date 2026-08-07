@@ -202,7 +202,10 @@
     }
   }, true);
 
-  const observer = new MutationObserver(() => requestAnimationFrame(patchResultUi));
+  // This callback must stay synchronous. meta-system registers its own observer
+  // after this script and at the 5/5 continue limit would otherwise begin an
+  // unbounded fail-life-line mutation loop before a deferred frame can guard it.
+  const observer = new MutationObserver(() => patchResultUi());
   observer.observe(content, { childList: true, subtree: true });
 
   window.addEventListener('poma-shift:metric', (event) => {
