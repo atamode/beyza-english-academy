@@ -142,9 +142,10 @@
 
   function patchContinueCopy(root = document) {
     if (!isCurrentRush()) return;
-    root.querySelectorAll?.('[data-meta-continue]').forEach((button) => {
+    root.querySelectorAll?.('button[data-meta-continue]').forEach((button) => {
       const used = continueCount();
-      button.textContent = `🎬 Reklam İzle · +3 Hamle +10 sn (${used}/${MAX_CONTINUES})`;
+      const next = `🎬 Reklam İzle · +3 Hamle +10 sn (${used}/${MAX_CONTINUES})`;
+      if (button.textContent !== next) button.textContent = next;
     });
   }
 
@@ -153,20 +154,30 @@
     const fail = root.querySelector?.('.fail-view') || document.querySelector('.fail-view');
     if (!fail) return;
 
-    fail.querySelector('[data-meta-continue]')?.remove();
+    // Keep result-flow's hidden [data-meta-continue] sentinel intact. Only a real
+    // rewarded-ad CTA should disappear at 5/5; removing the sentinel would let
+    // the legacy fail decorator re-enter its terminal MutationObserver loop.
+    fail.querySelector('button[data-meta-continue]')?.remove();
 
-    let note = fail.querySelector('[data-rush-continue-limit]');
-    if (!note) {
-      note = document.createElement('p');
-      note.dataset.rushContinueLimit = '1';
-      note.className = 'result-sub';
-      const retry = fail.querySelector('[data-retry]');
-      if (retry) retry.insertAdjacentElement('beforebegin', note);
-      else fail.appendChild(note);
+    const sharedTerminalNote = fail.querySelector('[data-terminal-continue-note]');
+    const existingRushNote = fail.querySelector('[data-rush-continue-limit]');
+    if (sharedTerminalNote) {
+      existingRushNote?.remove();
+    } else {
+      let note = existingRushNote;
+      if (!note) {
+        note = document.createElement('p');
+        note.dataset.rushContinueLimit = '1';
+        note.className = 'result-sub';
+        const retry = fail.querySelector('[data-retry]');
+        if (retry) retry.insertAdjacentElement('beforebegin', note);
+        else fail.appendChild(note);
+      }
+      const noteText = livesRemaining() > 0
+        ? '5/5 reklam devamı kullanıldı. Bu deneme bitti.'
+        : '5/5 reklam devamı kullanıldı. Devam etmek için can al veya haritaya dön.';
+      if (note.textContent !== noteText) note.textContent = noteText;
     }
-    note.textContent = livesRemaining() > 0
-      ? '5/5 reklam devamı kullanıldı. Bu deneme bitti.'
-      : '5/5 reklam devamı kullanıldı. Devam etmek için can al veya haritaya dön.';
 
     fail.querySelectorAll('button').forEach((button) => {
       button.disabled = false;

@@ -7,7 +7,7 @@
 
 ## 2026-08
 
-- **Poma Shift result/continue recovery:** Result cards were normalized to one state-aware Poma hero, terminal 5/5 rewarded-continue failure was guarded against dead navigation, result-map CTA now returns to the current lobby, native asset rewriting was extended, and the PR CI suite passed test/build/native/Android generation checks.
+- **Poma Shift result/continue recovery:** Result cards were normalized to one state-aware Poma hero; the 5/5 rewarded-continue MutationObserver freeze was eliminated; result-map CTA now returns to the current lobby; native asset rewriting was extended; normal Level 1 terminal recovery passed local and production Chromium smoke; and Level 11 RUSH was hardened to preserve the same terminal guard, avoid duplicate 5/5 copy, and passed the real five-rewarded-continue Chromium regression before merge.
 
 ## 2026-07
 
