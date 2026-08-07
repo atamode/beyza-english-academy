@@ -1,0 +1,63 @@
+name: Poma Shift Browser Smoke
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'games/poma-shift/**'
+      - 'tests/poma-shift-browser-smoke.spec.js'
+      - '.github/workflows/poma-shift-browser-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: poma-shift-browser-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Start local server
+        run: |
+          node server.js > /tmp/poma-shift-server.log 2>&1 &
+          echo $! > /tmp/poma-shift-server.pid
+          for i in {1..20}; do
+            if curl -fsS http://127.0.0.1:8765/games/poma-shift/ >/dev/null; then exit 0; fi
+            sleep 0.5
+          done
+          cat /tmp/poma-shift-server.log
+          exit 1
+
+      - name: Run Poma Shift browser smoke
+        run: npx playwright test tests/poma-shift-browser-smoke.spec.js --config=playwright.live.config.mjs
+        env:
+          PLAYWRIGHT_BASE_URL: http://127.0.0.1:8765
+
+      - name: Upload failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: poma-shift-browser-smoke-failure
+          path: |
+            test-results
+            playwright-report
+            /tmp/poma-shift-server.log
+          if-no-files-found: ignore
+          retention-days: 7
