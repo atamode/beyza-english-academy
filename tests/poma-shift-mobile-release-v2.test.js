@@ -56,8 +56,11 @@ test('map lobby is the launch surface and preserves the locked power-card contra
 
   assert.doesNotThrow(() => new Function(source), 'lobby-v1.js should parse');
   assert.match(index, /class="poma-lobby-boot"/);
-  assert.match(index, /lobby-v1\.css\?v=42/);
-  assert.match(index, /lobby-v1\.js\?v=42/);
+  assert.match(index, /lobby-v1\.css\?v=43/);
+  assert.match(index, /lobby-v1\.js\?v=43/);
+  assert.match(index, /Harita yüklenemedi\. Oyun geçici modda açıldı\./);
+  assert.match(index, /setTimeout\(\(\) => \{/);
+  assert.ok(index.indexOf('lobby-v1.js?v=43') < index.indexOf('mobile-layout.js?v=40'), 'lobby should load before enhancement scripts');
   assert.match(source, /openLobby\(\{ animate: true, syncLevel: true \}\)/);
   assert.match(source, /openLobby\(\{ animate: false, syncLevel: false \}\)/);
   assert.match(source, /scrollIntoView\(\{ behavior: 'smooth', block: 'center' \}\)/);
