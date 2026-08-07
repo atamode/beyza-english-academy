@@ -1,15 +1,17 @@
 import { test, expect } from '@playwright/test';
 
-const enhancements = [
+const firstHalf = [
   'mobile-layout.js','game-feel.js','rush-disable.js','product-ui.js','win-reveal.js',
   'threat-system.js','timer-heartbeat.js','poma-brand.js','meta-system.js',
+];
+const secondA = [
   'character-progression-v2.js','character-art.js','launch-polish.js','boss-ui.js',
   'timed-level-guard.js','analytics-bridge.js','dev-panel.js','combo-system.js',
+];
+const secondB = [
   'rush-mode.js','rush-continue.js','rush-runtime-guard.js','ui-hotfix.js','audio-mix.js',
   'fire-compat.js','mobile-release-v2.js',
 ];
-const firstHalf = enhancements.slice(0, 9);
-const secondHalf = enhancements.slice(9);
 
 async function abortScripts(page, names) {
   await page.route('**/*.js*', async (route) => {
@@ -29,21 +31,12 @@ async function expectBoot(page) {
 
 test.describe.configure({ retries: 0, timeout: 8_000 });
 
-test('diagnostic A: core + lobby only boots', async ({ page }) => {
-  await abortScripts(page, enhancements);
+test('diagnostic E: first half + secondA', async ({ page }) => {
+  await abortScripts(page, secondB);
   await expectBoot(page);
 });
 
-test('diagnostic B: first enhancement half boots when second half blocked', async ({ page }) => {
-  await abortScripts(page, secondHalf);
-  await expectBoot(page);
-});
-
-test('diagnostic C: second enhancement half boots when first half blocked', async ({ page }) => {
-  await abortScripts(page, firstHalf);
-  await expectBoot(page);
-});
-
-test('diagnostic D: full Poma Shift boots', async ({ page }) => {
+test('diagnostic F: first half + secondB', async ({ page }) => {
+  await abortScripts(page, secondA);
   await expectBoot(page);
 });
