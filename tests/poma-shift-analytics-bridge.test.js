@@ -9,11 +9,14 @@ const root = path.resolve(path.dirname(__filename), '..');
 const gameDir = path.join(root, 'games', 'poma-shift');
 const read = name => readFile(path.join(gameDir, name), 'utf8');
 
-test('analytics bridge preserves local telemetry and supports a remote provider', async () => {
+test('analytics bridge preserves local telemetry, uses lexical level, and bootstraps a provider', async () => {
   const source = await read('analytics-bridge.js');
   assert.match(source, /baseMetric\(name, payload\)/);
   assert.match(source, /PomaShiftAnalytics/);
-  assert.match(source, /provider\.track/);
+  assert.match(source, /target\.track/);
+  assert.match(source, /target\.bootstrap/);
+  assert.match(source, /typeof state !== 'undefined'/);
+  assert.doesNotMatch(source, /Number\(window\.state\?\.level/);
   assert.match(source, /poma-shift:metric/);
 });
 
@@ -34,8 +37,30 @@ test('analytics summary counts the current full-level Rush timeout event', async
   assert.doesNotMatch(source, /rushTimeouts:\s*count\('tray_timeout'\)/);
 });
 
-test('analytics bridge is loaded and cached', async () => {
+test('GA4 provider is consent-gated, namespaced, and remote payloads are whitelisted', async () => {
+  const source = await read('analytics-ga4-v1.js');
+  assert.match(source, /CONSENT_KEY = 'poma\.analytics\.consent\.v1'/);
+  assert.match(source, /consent !== 'granted'/);
+  assert.match(source, /data-poma-shift-ga4/);
+  assert.match(source, /`ps_\$\{name\}`/);
+  assert.match(source, /REMOTE_EVENTS/);
+  assert.match(source, /PARAM_ALIASES/);
+  assert.match(source, /secret_field/);
+  assert.doesNotMatch(source, /email|student|answer|password/i);
+});
+
+test('Poma Shift analytics config reuses the current Pomante GA4 property but remains overrideable', async () => {
+  const source = await read('analytics-config.js');
+  assert.match(source, /G-LVDEFW23S9/);
+  assert.match(source, /\.\.\.existing/);
+});
+
+test('analytics provider and bridge are loaded at the current cache version and included in cache manifest', async () => {
   const [index, sw] = await Promise.all([read('index.html'), read('sw.js')]);
-  assert.match(index, /analytics-bridge\.js/);
+  assert.match(index, /analytics-config\.js\?v=53/);
+  assert.match(index, /analytics-ga4-v1\.js\?v=53/);
+  assert.match(index, /analytics-bridge\.js\?v=53/);
+  assert.match(sw, /analytics-config\.js/);
+  assert.match(sw, /analytics-ga4-v1\.js/);
   assert.match(sw, /analytics-bridge\.js/);
 });
