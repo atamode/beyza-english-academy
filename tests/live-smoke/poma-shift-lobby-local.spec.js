@@ -66,23 +66,27 @@ test('win and fail results show exactly one state-aware Poma and map returns to 
 });
 
 test('5/5 rewarded continues end in an actionable fail screen instead of a dead state', async ({ page }) => {
-  await page.addInitScript(() => {
-    localStorage.setItem('pomaShift.prelaunch-clean.v44', '1');
-    localStorage.setItem('pomaShift.progress.v1', JSON.stringify({ highestUnlocked: 1, lastLevel: 1 }));
-    localStorage.setItem('pomaShift.meta.v1', JSON.stringify({
-      lives: 2,
-      continueAdsByLevel: { '1': 5 },
-    }));
-  });
-
+  test.setTimeout(30_000);
   const { lobby, pageErrors } = await openLevelOne(page);
-  await expect.poll(() => page.evaluate(() => state.status)).toBe('playing');
 
-  const seeded = await page.evaluate(() => ({
-    lives: window.PomaShiftMeta?.snapshot?.()?.meta?.lives,
-    continues: window.PomaShiftMeta?.snapshot?.()?.meta?.continueAdsByLevel?.['1'],
-  }));
-  expect(seeded).toEqual({ lives: 2, continues: 5 });
+  for (let index = 0; index < 5; index += 1) {
+    await expect.poll(() => page.evaluate(() => state.status)).toBe('playing');
+    await page.evaluate((attempt) => lose(`Test continue fail ${attempt}`, 'move_limit'), index + 1);
+
+    const fail = page.locator('.fail-view');
+    await expect(fail).toBeVisible({ timeout: 3_000 });
+    const continueButton = fail.locator('[data-meta-continue]');
+    await expect(continueButton).toBeVisible({ timeout: 2_000 });
+    await continueButton.click();
+
+    await expect.poll(() => page.evaluate(() => state.status), { timeout: 3_000 }).toBe('playing');
+    await expect(fail).toBeHidden({ timeout: 3_000 });
+
+    const used = await page.evaluate(() => (
+      Number(window.PomaShiftMeta?.snapshot?.()?.meta?.continueAdsByLevel?.['1'] || 0)
+    ));
+    expect(used).toBe(index + 1);
+  }
 
   await page.evaluate(() => lose('Test terminal fail', 'move_limit'));
   let fail = page.locator('.fail-view');
@@ -91,6 +95,11 @@ test('5/5 rewarded continues end in an actionable fail screen instead of a dead 
   await expect(fail.locator('[data-terminal-continue-note]')).toContainText('5/5 reklam devamı kullanıldı');
   await expect(fail.locator('[data-retry]')).toBeEnabled();
   await expect(fail.locator('[data-map]')).toBeEnabled();
+
+  const lifeAfterContinuedAttempt = await page.evaluate(() => (
+    Number(window.PomaShiftMeta?.snapshot?.()?.meta?.lives)
+  ));
+  expect(lifeAfterContinuedAttempt).toBe(2);
 
   await fail.locator('[data-retry]').click();
   await expect(fail).toBeHidden({ timeout: 3_000 });
