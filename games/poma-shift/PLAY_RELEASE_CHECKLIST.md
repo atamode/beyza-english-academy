@@ -5,6 +5,10 @@
 
 Bu dosya Google Play yayın hazırlığını teknik gerçeklere göre izler. Ürün kararları için `POMA_SHIFT_MASTER_CONTEXT.md`, runtime audit için `PRODUCT_AUDIT.md` otoritedir.
 
+Internal release drafts:
+- `PRIVACY_DATA_SAFETY_DRAFT.md` — privacy/Data Safety evidence + publishable structure
+- `PLAY_STORE_LISTING_DRAFT.md` — truthful Play listing copy + screenshot/feature-graphic plan
+
 ## 1. VERIFIED ANDROID BUILD FACTS
 
 2026-08-06 üretilen release AAB artifact içinden doğrulandı:
@@ -58,6 +62,10 @@ Production öncesi dış kurulum:
 
 **Önemli:** Play Console formu submit edilmeden önce kullanılan SDK/tag sürümleri ve gerçek production davranışı tekrar kontrol edilir. Bu bölüm teknik hazırlık notudur; Play Console adına otomatik beyan değildir.
 
+Evidence draft:
+- [x] repo-level privacy/Data Safety evidence matrix prepared in `PRIVACY_DATA_SAFETY_DRAFT.md`
+- [ ] final matrix reconciled against exact signed production AAB + provider configuration
+
 ### Poma Shift analytics provider
 Kod tarafında production provider hazırdır:
 - GA4 measurement property: `G-LVDEFW23S9`
@@ -68,6 +76,7 @@ Kod tarafında production provider hazırdır:
 - analytics katmanı reklam depolama/kullanıcı verisi/kişiselleştirme consentini açmaz
 - remote event/payload strict whitelist kullanır; isim, e-posta, cevap ve serbest kullanıcı metni gönderilmez
 - test/production smoke `testing=true` kullanır; gerçek GA4 property test trafiğiyle kirletilmez
+- analytics v53 production deploy + 11-scenario live Chromium smoke: PASS
 
 External doğrulama:
 - [ ] gerçek production consent ile en az bir `ps_*` eventin GA4 Realtime/DebugView içinde görüldüğünü doğrula
@@ -122,9 +131,17 @@ Amaçlar:
 
 Google Mobile Ads tarafındaki iletimin TLS ile şifreli olduğu Google'ın SDK disclosure dokümantasyonunda belirtilir.
 
+**Version caveat:** current public Google Mobile Ads disclosure page latest SDK içindir; repo build'i 24.9.0. Final form exact shipped SDK ile yeniden teyit edilir.
+
 ---
 
 ## 4. PRIVACY POLICY
+
+Internal prep:
+- [x] publishable policy structure drafted in `PRIVACY_DATA_SAFETY_DRAFT.md`
+- [ ] official developer entity confirmed
+- [ ] official privacy contact/inquiry mechanism confirmed
+- [ ] GA4 real retention setting confirmed
 
 Google Play release öncesi:
 - [ ] aktif HTTPS privacy-policy URL
@@ -185,14 +202,21 @@ Keystore/şifre repository'ye commit edilmez.
 
 Mevcut web icon `games/poma-shift/icon.svg` işlevsel prototip/brand iconudur; final Play launcher/store creative olarak ayrıca kalite kontrolü gerekir.
 
+Copy prep:
+- [x] short description draft
+- [x] long description draft
+- [x] screenshot copy/order plan
+- [x] feature-graphic message/direction
+- source: `PLAY_STORE_LISTING_DRAFT.md`
+
 Eksik/review:
 - [ ] final adaptive launcher icon
 - [ ] 512×512 Play icon
 - [ ] feature graphic 1024×500
-- [ ] telefon screenshots
-- [ ] kısa açıklama
-- [ ] uzun açıklama
-- [ ] kategori / tags
+- [ ] production/native telefon screenshots
+- [ ] final kısa açıklama
+- [ ] final uzun açıklama
+- [ ] kategori / tags final selection
 - [ ] support/developer contact
 
 ---
@@ -206,7 +230,8 @@ Automated:
 - [x] unsigned release AAB generation
 - [x] API 36 target verification
 - [x] current main live deploy Playwright smoke PASS
-- [x] production analytics code/provider local Chromium contracts PASS
+- [x] production analytics code/provider Chromium contracts PASS
+- [x] analytics v53 production deploy 11-scenario Playwright smoke PASS
 
 Runtime / human:
 - [ ] L1 tutorial first-use test
@@ -222,6 +247,7 @@ Runtime / human:
 
 Commercial gate:
 - [x] production analytics provider code
+- [x] production analytics deploy/smoke
 - [ ] GA4 Realtime/DebugView real production event verification
 - [ ] real AdMob IDs
 - [ ] real retention/fail/restart/RUSH data
