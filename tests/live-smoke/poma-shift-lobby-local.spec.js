@@ -24,6 +24,33 @@ async function openLevelOne(page) {
   return { lobby, pageErrors };
 }
 
+async function openRushLevelEleven(page) {
+  const pageErrors = [];
+  page.on('pageerror', (error) => pageErrors.push(String(error)));
+
+  await page.goto('/games/poma-shift/?dev=1&browser-smoke=rush', {
+    waitUntil: 'domcontentloaded',
+    timeout: 8_000,
+  });
+  await page.waitForFunction(() => Boolean(window.PomaShiftMeta?.dev?.goto));
+  await page.evaluate(() => {
+    window.PomaShiftMeta.dev.goto(11);
+    const lobby = document.querySelector('.poma-lobby');
+    if (lobby) lobby.hidden = true;
+    document.body.classList.remove('poma-lobby-open');
+    window.PomaShiftLobbyActive = false;
+  });
+
+  const intro = page.locator('.rush-intro');
+  await expect(intro).toBeVisible({ timeout: 3_000 });
+  await expect(intro.locator('[data-rush-level]')).toHaveText('LEVEL 11');
+  await intro.locator('[data-rush-start]').click();
+  await expect(intro).toBeHidden({ timeout: 3_000 });
+  await expect.poll(() => page.evaluate(() => state.status)).toBe('playing');
+
+  return { lobby: page.locator('.poma-lobby'), pageErrors };
+}
+
 test('Poma Shift opens lobby and starts Level 1 in Chromium', async ({ page }) => {
   const { pageErrors } = await openLevelOne(page);
 
@@ -110,6 +137,43 @@ test('5/5 rewarded continues end in an actionable fail screen instead of a dead 
   await expect(fail).toBeVisible({ timeout: 3_000 });
   await expect(fail.locator('[data-retry]')).toBeEnabled();
   await expect(fail.locator('[data-map]')).toBeEnabled();
+  await fail.locator('[data-map]').click();
+  await expect(lobby).toBeVisible({ timeout: 3_000 });
+  expect(pageErrors).toEqual([]);
+});
+
+test('Level 11 Rush survives five rewarded continues and terminates without duplicate notes or freeze', async ({ page }) => {
+  test.setTimeout(35_000);
+  const { lobby, pageErrors } = await openRushLevelEleven(page);
+
+  for (let index = 0; index < 5; index += 1) {
+    await page.evaluate((attempt) => lose(`Test RUSH continue fail ${attempt}`, 'move_limit'), index + 1);
+    const fail = page.locator('.fail-view');
+    await expect(fail).toBeVisible({ timeout: 3_000 });
+
+    const continueButton = fail.locator('button[data-meta-continue]');
+    await expect(continueButton).toBeVisible({ timeout: 2_000 });
+    await expect(continueButton).toContainText('+10 sn');
+    await continueButton.click();
+
+    await expect.poll(() => page.evaluate(() => state.status), { timeout: 3_000 }).toBe('playing');
+    await expect(fail).toBeHidden({ timeout: 3_000 });
+    const used = await page.evaluate(() => (
+      Number(window.PomaShiftMeta?.snapshot?.()?.meta?.continueAdsByLevel?.['11'] || 0)
+    ));
+    expect(used).toBe(index + 1);
+  }
+
+  await page.evaluate(() => lose('Test RUSH terminal fail', 'move_limit'));
+  const fail = page.locator('.fail-view');
+  await expect(fail).toBeVisible({ timeout: 3_000 });
+  await expect(fail.locator('button[data-meta-continue]')).toHaveCount(0);
+  await expect(fail.locator('[data-terminal-continue-note]')).toHaveCount(1);
+  await expect(fail.locator('[data-terminal-continue-note]')).toContainText('5/5 reklam devamı kullanıldı');
+  await expect(fail.locator('[data-rush-continue-limit]')).toHaveCount(0);
+  await expect(fail.locator('[data-retry]')).toBeEnabled();
+  await expect(fail.locator('[data-map]')).toBeEnabled();
+
   await fail.locator('[data-map]').click();
   await expect(lobby).toBeVisible({ timeout: 3_000 });
   expect(pageErrors).toEqual([]);
