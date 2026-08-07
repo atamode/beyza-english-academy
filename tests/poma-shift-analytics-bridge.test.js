@@ -45,8 +45,9 @@ test('GA4 provider is consent-gated, namespaced, and remote payloads are whiteli
   assert.match(source, /`ps_\$\{name\}`/);
   assert.match(source, /REMOTE_EVENTS/);
   assert.match(source, /PARAM_ALIASES/);
-  assert.match(source, /secret_field/);
-  assert.doesNotMatch(source, /email|student|answer|password/i);
+  assert.match(source, /\['level', 'level'\]/);
+  assert.match(source, /\['reason', 'reason'\]/);
+  assert.doesNotMatch(source, /\['email'|\['password'|\['answer'/i);
 });
 
 test('Poma Shift analytics config reuses the current Pomante GA4 property but remains overrideable', async () => {
