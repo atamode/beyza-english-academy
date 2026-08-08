@@ -1,8 +1,22 @@
 # POMA SHIFT — ASSET WORK PLAN
 
-**Status:** ACTIVE  
+**Status:** ACTIVE — PAKET 1 GÖRSELİ ALINDI  
 **Date:** 2026-08-08  
 **Purpose:** Kod tarafı ilerlerken paralel üretilecek görsel / animasyon assetleri
+
+## 2026-08-08 Paket 1 teslim durumu
+
+Kullanıcıdan tek transparent sheet içinde aşağıdaki görseller alındı ve kabul edildi:
+- 6 token: star / leaf / drop / heart / crystal / energy
+- LOFT normal bar
+- LOFT warning bar varyantı
+- LOFT arrow
+- LOFT merkez/core detayı normal bardan ayrıştırılabilir
+- Okçu Poma: idle / cast_prepare / cast_release
+- arrow projectile
+- arrow impact
+
+Not: İlk brief'teki `loft_warning_glow.png` yerine gelen görsel tam bir warning-bar varyantıdır. Bu yeniden üretim gerektirmez; runtime `loft_warning_bar` olarak kullanabilir. Kaynak sheet üzerindeki yazı etiketleri runtime assetine dahil edilmemelidir; tekil transparent görseller olarak crop/export edilir.
 
 Bu dosya AI görsel üretiminde doğrudan brief olarak kullanılabilir.
 
@@ -48,7 +62,7 @@ LOFT artık oyunun ana tehdididir.
 - `assets/loft/loft_bar.png`
 - `assets/loft/loft_core.png`
 - `assets/loft/loft_arrow.png`
-- `assets/loft/loft_warning_glow.png`
+- `assets/loft/loft_warning_bar.png` — teslim edilen warning varyantı
 
 ### Görsel yön
 - koyu lacivert / bronz-metal gövde
@@ -63,7 +77,7 @@ LOFT artık oyunun ana tehdididir.
 - bar: yaklaşık 1600×220 transparent PNG
 - core: 512×512 transparent PNG
 - arrow: 256×256 transparent PNG
-- glow: 1024×256 transparent PNG
+- warning bar: yaklaşık 1600×220 transparent PNG
 
 ---
 
@@ -257,12 +271,12 @@ Kural:
 
 # TESLİM SIRASI
 
-## Paket 1 — en yüksek etki
-1. 6 token
-2. LOFT bar/core/arrow
-3. Okçu Poma idle + prepare + release + arrow projectile
+## Paket 1 — ALINDI
+1. 6 token ✅
+2. LOFT bar/core/arrow + warning bar ✅
+3. Okçu Poma idle + prepare + release + arrow projectile + impact ✅
 
-## Paket 2
+## Paket 2 — SIRADAKİ
 4. Dede Poma idle + prepare + release
 5. Influencer Poma idle + prepare + release
 6. Poma Dahi idle + prepare + release
@@ -287,5 +301,7 @@ Asset kabul edilmeden önce:
 - ok / asa / telefon gibi aksesuarlar net mi
 - çocuk uygulaması gibi ucuz görünmeden casual kalıyor mu
 - mevcut koyu lacivert UI üzerinde kontrast yeterli mi
+
+Paket 1 görseli bu kontroller açısından kullanıma uygun kabul edildi. Tekil exportlarda sheet üzerindeki label/yazılar temizlenmelidir.
 
 Bu dosyadaki dosya adları mümkün olduğunca korunur; böylece asset geldiğinde kod entegrasyonu hızlı yapılır.
