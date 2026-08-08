@@ -1,20 +1,23 @@
 # POMA SHIFT — MASTER CONTEXT
 
 **Status:** LIVING SOURCE OF TRUTH  
-**Updated:** 2026-08-07  
+**Updated:** 2026-08-08  
 **Scope:** Product, gameplay, progression, economy, Android/release readiness
 
 Bu dosya yeni sohbetlerde veya geliştirme oturumlarında Poma Shift'i başa sarmamak için ana durum kaydıdır.
 
 ## Authority order
 1. `POMA_SHIFT_MASTER_CONTEXT.md`
-2. `RUSH_RULES.md`
-3. `META_SPEC.md`
-4. `GAME_SPEC.md`
-5. test planları
-6. `ART_DIRECTION.md`
-7. `PRODUCT_AUDIT.md`
-8. `PLAY_RELEASE_CHECKLIST.md`
+2. `LOFT_CORE_V2.md`
+3. `RUSH_RULES.md`
+4. `META_SPEC.md`
+5. `GAME_SPEC.md`
+6. test planları
+7. `ART_DIRECTION.md`
+8. `PRODUCT_AUDIT.md`
+9. `PLAY_RELEASE_CHECKLIST.md`
+
+**2026-08-08 override:** `LOFT_CORE_V2.md`, eski dokümanlardaki aynı level içinde `+1 kolon / -1 satır` board-morph yönünü geçersiz kılar. Standard levelde kolon sayısı level boyunca sabittir; SHIFT yalnız LOFT'u üstten aşağı indirir.
 
 ---
 
@@ -35,11 +38,22 @@ Launch öncesi öncelik: kalite, test, ölçüm ve release.
 - manuel drag/drop
 - yalnız tam yatay satır clear
 - her 3 gerçek satır clear = 1 SHIFT
-- board morph: `6×12 → 7×11 → 8×10 → 9×9 → 10×8 → 11×7 → 12×6`
+- levelin başlangıç kolon sayısı level boyunca sabit kalır
+- SHIFT sırasında yanlardan kolon eklenmez
+- SHIFT = LOFT üstten 1 satır aşağı iner
+- hücre ölçüsü SHIFT boyunca sabit tutulur; board alt hattı görsel olarak sabit kalır
 - normal 1 danger row
-- fail: no legal move / morph crush / move limit / RUSH timeout
+- fail: no legal move / LOFT crush (`morph_crush` telemetry compatibility) / move limit / RUSH timeout
 - fairness katmanı
 - combo + SFX + haptic
+- core kimlik: **shape placement + descending LOFT + character powers**
+
+Örnek runtime geometri:
+- `6×12 → 6×11 → 6×10 ...`
+- `7×11 → 7×10 → 7×9 ...`
+- `8×10 → 8×9 → 8×8 ...`
+
+Yanlardan kapanma/büyüme standard core değildir; ileride yalnız özel boss/hard/event mekaniği olarak açıkça anlatılarak kullanılabilir.
 
 Core veri olmadan yeniden tasarlanmaz.
 
@@ -61,6 +75,8 @@ Eski 7/6/5 saniyelik tray timer kalıcı olarak geçersizdir.
 - background timer pause
 - fail reason `rush_timeout`
 
+RUSH'ta da kolon sayısı level boyunca sabittir; 2 danger row kuralı LOFT inişinden önce uygulanır.
+
 Android gerçek cihaz testinde eski 5 saniyelik tray timer görülmüş ve `rush-disable.js` + `rush-runtime-guard.js` ile hard-disable edilmiştir.
 
 ---
@@ -72,14 +88,15 @@ Android gerçek cihaz testinde eski 5 saniyelik tray timer görülmüş ve `rush
 - hedef: 10.000+ level
 - map yalnız aktif level çevresini render eder
 - hazır olmayan future boss slot progression'ı bloklamaz
+- startStage farklı level başlangıç genişliği/yüksekliği verebilir; aynı level içinde width sabitlenir
 
 ---
 
 # 5. CHARACTER PROGRESSION — LOCKED
 
-| Level | Character | Power |
+| Unlock Level | Character | Power |
 |---:|---|---|
-| 1–9 | **Poma** | özel güç yok |
+| 1 | **Poma** | özel güç yok |
 | 10 | **Poma Dahi** | Bilgisayar |
 | 20 | **Influencer Poma** | Telefon |
 | 30 | **Okçu Poma** | Ok |
@@ -90,7 +107,23 @@ Android gerçek cihaz testinde eski 5 saniyelik tray timer görülmüş ve `rush
 | 80 | **PomaHero** | Sihirli Yaprak |
 | 90 | **Yapışkan Şeker Bulutu** | first boss |
 
+Gameplay aktif karakter bandı:
+- 1–9 Poma
+- 10–19 Poma Dahi
+- 20–29 Influencer Poma
+- 30–39 Okçu Poma
+- 40–49 Bozkurt Poma
+- 50–59 Baby Poma
+- 60–69 Dede Poma
+- 70–79 Fire Poma
+- 80–89 PomaHero
+- Level 90 boss ekranında aktif hero PomaHero; Sugar Cloud ayrı boss tehdididir
+
 Kurallar:
+- gameplay ekranında tek aktif karakter görünür
+- aktif karakter idle / danger / power cast / win / lose tepkileri verir
+- güç kullanımı görsel olarak karakterden boarda doğru cast → projectile/effect → impact akışıyla sunulur
+- karakterin kendi imza gücünde signature cast, başka loadout gücünde kısa generic assist cast kullanılabilir
 - başlangıç karakterinin adı yalnız **Poma**; “Atkısız Poma” ifadesi kullanılmaz
 - Fire Poma Level 70
 - PomaHero Level 80
@@ -101,7 +134,7 @@ Kurallar:
 
 # 6. POWERS / PRICES — LOCKED
 
-- Bilgisayar: morph 10 hamle durur — 1.100 Coin
+- Bilgisayar: **LOFT inişi 10 hamle durur** — 1.100 Coin
 - Telefon: üst bölgelerde 3 tehlikeli kare — 500 Coin
 - Ok: en üst 4 dolu kare — 700 Coin
 - Kurt Pençesi: seçilen + bitişik 1 kare — 300 Coin
@@ -109,6 +142,14 @@ Kurallar:
 - Asa Gücü: board reshuffle — 1.600 Coin
 - **Alev Dalgası: LOFT bölgesindeki ilk 2 satırı tamamen yakar — 1.800 Coin**
 - **Sihirli Yaprak: bütün boardu temizler — 2.000 Coin / en güçlü güç**
+
+Power presentation:
+- mevcut mekanik sonucu korunur
+- animasyon core sonucundan ayrı presentation katmanıdır
+- Okçu Poma imza castinde yay germe → ok çıkışı → board impact hedeflenir
+- Dede Poma imza castinde asa hazırlık → büyü dalgası hedeflenir
+- Influencer Poma imza castinde telefon/flaş yönü hedeflenir
+- Poma Dahi imza castinde bilgisayar/koruma aktivasyonu hedeflenir
 
 Fire Poma görsel efekti:
 - alev yukarıdan boardun ilk 2 satırını süpürür
@@ -176,15 +217,34 @@ Future boss slots: `120, 150, 180, 210...`
 # 9. ART DIRECTION
 
 Target:
-> premium casual / soft plastic blocks / dark modern board
+> premium casual / dark modern board / distinctive soft-plastic tokens / visible LOFT mechanism
 
-Poma yaklaşık %20 IP/meta katmanında kullanılır; board/blok yüzlerine logo/karakter basılmaz.
+Board token kimliği:
+- sarı yıldız
+- yeşil yaprak
+- mavi damla
+- pembe kalp/petal
+- mor kristal
+- turuncu enerji/alev
+
+Grid matematiği kare kalır; düz/jenerik renkli kutu görünümü hedef değildir.
+
+Poma kullanım oranı artık gameplay character presentation nedeniyle eski %20 meta sınırından kontrollü biçimde genişler, ancak karakter boardu kapatmaz ve core okunabilirliğini bozmaz.
+
+Gameplay karakteri:
+- kompakt board üstü/HUD alanı
+- tek aktif karakter
+- kısa CSS/pose reaction
+- power cast karakterden çıkar
 
 Fire Poma için gerçek repo asseti:
 - `assets/brand/poma-academy/fire poma.png`
 
 PomaHero asseti:
 - `assets/brand/poma-academy/poma-hero.png`
+
+Yeni paralel asset brief:
+- `ASSET_WORK_PLAN.md`
 
 ---
 
@@ -238,6 +298,15 @@ Native build artık şu görselleri paketler:
 - boss HUD artık `window.state` varsayımı yerine gerçek lexical game `state` üzerinden çalışır
 - yeni result-flow ve loadout/RUSH guard dosyaları native build kapsamına alınır
 
+2026-08-08 LOFT/game-feel branch baseline:
+- `LOFT_CORE_V2.md` ile same-level side growth kapatıldı
+- `loft-core-v2.js` start width'i level boyunca sabitler ve yalnız satır baskısı uygular
+- board hücre ölçüsü sabit, alt hat ankrajlı; LOFT görsel olarak yukarıdan aşağı yaklaşır
+- altı token tipi için vector fallback çizimi eklendi; final PNG assetleri paralel üretilecektir
+- gameplay aktif karakter bandı ve signature/assist cast presentation katmanı `character-gameplay-v1.js` ile eklendi
+- karakter/LOFT/token asset üretim sırası `ASSET_WORK_PLAN.md` içine yazıldı
+- native build game klasörünü recursive kopyaladığı için yeni JS/CSS katmanları ayrıca whitelist gerektirmeden native pakete girer
+
 2026-08-07 analytics baseline:
 - production telemetry provider GA4 web tag üzerinden bağlıdır; launch measurement property `G-LVDEFW23S9` ve Poma Shift eventleri `ps_*` namespace'iyle ayrıştırılır
 - analytics tercihi `poma.analytics.consent.v1` ile tutulur; bilinmeyen kullanıcı lobby içinde seçim görür, reddeden kullanıcıda Google tag yüklenmez ve oyun/local telemetry çalışmaya devam eder
@@ -252,6 +321,12 @@ Native build artık şu görselleri paketler:
 
 # 11. CURRENT RELEASE BLOCKERS
 
+LOFT V2 öncesi mevcut blockerlar korunur ve yeni core regression eklenir:
+- LOFT V2 browser regression: Level 1 / 4 / 6 width sabit, row descent doğru
+- L11 RUSH 2 danger row + LOFT descent regression
+- Bilgisayar gücü LOFT inişini 10 hamle gerçekten durduruyor mu
+- active character bandı Level 1/10/20/30/60/70/80/90 doğru mu
+- booster cast presentation gameplay inputunu kilitlemeden çalışıyor mu
 - yeni Android APK gerçek cihaz smoke testi
 - L11 RUSH süre doğrulaması gerçek cihaz
 - L70 Fire Poma / L80 PomaHero / L90 Boss Android gerçek cihaz görsel-runtime smoke
@@ -263,19 +338,25 @@ Native build artık şu görselleri paketler:
 - 5–10 blind test
 - 20–50 external telemetry test
 
+Final token / LOFT / karakter pose PNG'leri gelmeden vector/static fallback ile test yapılabilir; release art polish için asset entegrasyonu ayrıca kapanmalıdır.
+
 ---
 
 # 12. CURRENT WORK ORDER
 
-1. CI + Android build PASS
-2. Yeni APK'yı telefonda smoke test
-3. Görsel/UI kalan kusurları kapat
-4. AdMob/analytics external production verification
-5. signed AAB
-6. Play privacy/Data Safety/store assets
-7. blind/external test
-8. data-driven tuning
-9. release
+1. LOFT V2 runtime + syntax/static tests PASS
+2. Browser smoke: Level 1 → SHIFT → width sabit / LOFT aşağı
+3. RUSH + booster + boss regression
+4. Paralel asset üretimi: 6 token + LOFT + Okçu signature set
+5. Final asset entegrasyonu
+6. Yeni APK'yı telefonda smoke test
+7. Görsel/UI kalan kusurları kapat
+8. AdMob/analytics external production verification
+9. signed AAB
+10. Play privacy/Data Safety/store assets
+11. blind/external test
+12. data-driven tuning
+13. release
 
 ---
 
@@ -283,10 +364,12 @@ Native build artık şu görselleri paketler:
 
 Yeniden sıfırdan tartışılmaz:
 - line clear
-- SHIFT + board morph
+- **SHIFT = same-level fixed width + descending LOFT**
+- standard levelde side growth yok
 - 3-piece batch
 - RUSH full-level timer
 - character order: **Poma → Dahi 10 → Influencer 20 → Okçu 30 → Bozkurt 40 → Baby 50 → Dede 60 → Fire Poma 70 → PomaHero 80 → Boss 90**
+- gameplay active character bandları
 - PomaHero en güçlü karakterdir
 - Fire Alev Dalgası ilk 2 satırı temizler
 - booster fiyatları
