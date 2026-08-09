@@ -1,103 +1,142 @@
 # POMA SHIFT — MASTER CONTEXT
 
 **Status:** LIVING SOURCE OF TRUTH  
-**Updated:** 2026-08-08  
-**Scope:** Product, gameplay, progression, economy, Android/release readiness
+**Updated:** 2026-08-09  
+**Scope:** Product, gameplay, progression, economy, art, Android/release readiness
 
 Bu dosya yeni sohbetlerde veya geliştirme oturumlarında Poma Shift'i başa sarmamak için ana durum kaydıdır.
 
 ## Authority order
 1. `POMA_SHIFT_MASTER_CONTEXT.md`
-2. `LOFT_CORE_V2.md`
+2. `SUGAR_CLOUD_CORE_V3.md`
 3. `RUSH_RULES.md`
 4. `META_SPEC.md`
 5. `GAME_SPEC.md`
 6. test planları
 7. `ART_DIRECTION.md`
-8. `PRODUCT_AUDIT.md`
-9. `PLAY_RELEASE_CHECKLIST.md`
+8. `ASSET_WORK_PLAN.md`
+9. `PRODUCT_AUDIT.md`
+10. `PLAY_RELEASE_CHECKLIST.md`
 
-**2026-08-08 override:** `LOFT_CORE_V2.md`, eski dokümanlardaki aynı level içinde `+1 kolon / -1 satır` board-morph yönünü geçersiz kılar. Standard levelde kolon sayısı level boyunca sabittir; SHIFT yalnız LOFT'u üstten aşağı indirir.
+**2026-08-09 override:** `SUGAR_CLOUD_CORE_V3.md`, `LOFT_CORE_V2.md` ve eski spec dosyalarındaki değişken board / descending-LOFT / Dahi Poma 10-hamle-freeze anlatımlarını geçersiz kılar. Çelişkide bu master + Sugar Cloud V3 uygulanır.
 
 ---
 
 # 1. PRODUCT GOAL
 
-Poma Shift geniş casual kitleye yönelik, Poma IP'sini meta/progression katmanında kullanan uzun ömürlü puzzle oyunudur.
+Poma Shift geniş casual kitleye yönelik, Poma IP'sini gameplay ve meta/progression katmanında kullanan uzun ömürlü puzzle oyunudur.
 
 Ana ticari hedef:
-> Retention üreten basit core loop + reklam/coin ekonomisi + düşük içerik üretim maliyetiyle uzun level ömrü.
+> Retention üreten basit core loop + karakter kimliği + reklam/coin ekonomisi + düşük içerik üretim maliyetiyle uzun level ömrü.
 
-Launch öncesi öncelik: kalite, test, ölçüm ve release.
+Launch öncesi öncelik: **oynanış kalitesi → hata kapatma → gerçek asset entegrasyonu → ölçüm → release**.
 
 ---
 
-# 2. CORE — LOCKED
+# 2. CORE — LOCKED: SUGAR CLOUD V3
 
+Ana kimlik:
+> **shape placement + growing Sugar Cloud + character powers**
+
+Kilit kurallar:
 - 3-piece batch
 - manuel drag/drop
 - yalnız tam yatay satır clear
 - her 3 gerçek satır clear = 1 SHIFT
-- levelin başlangıç kolon sayısı level boyunca sabit kalır
-- SHIFT sırasında yanlardan kolon eklenmez
-- SHIFT = LOFT üstten 1 satır aşağı iner
-- hücre ölçüsü SHIFT boyunca sabit tutulur; board alt hattı görsel olarak sabit kalır
-- normal 1 danger row
-- fail: no legal move / LOFT crush (`morph_crush` telemetry compatibility) / move limit / RUSH timeout
-- fairness katmanı
-- combo + SFX + haptic
-- core kimlik: **shape placement + descending LOFT + character powers**
+- **bütün standart gameplay boardları 7 sütun × 9 satırdır**
+- levelden levele 6×12 / 8×9 vb. geometri değişimi yok
+- SHIFT sırasında kolon eklenmez, board genişlemez/daralmaz
+- SHIFT sonrası canvas/grid fiziksel olarak küçülmez
+- grid matematiği her zaman **7×9** kalır
+- SHIFT = Şeker Bulutu üstten aşağı **1 satır büyür**
+- bulutun kapladığı satırlar kilitlenir ve parça yerleştirilemez
+- normal levelde bulutun sıradaki kapatacağı satırda blok varsa cloud-crush fail
+- no legal move / cloud crush / move limit / RUSH timeout fail türleri korunur
+- eski telemetry ile gerektiğinde `morph_crush` compatibility tutulabilir
+- fairness katmanı korunur
+- action-based combo + SFX + haptic korunur
 
-Örnek runtime geometri:
-- `6×12 → 6×11 → 6×10 ...`
-- `7×11 → 7×10 → 7×9 ...`
-- `8×10 → 8×9 → 8×8 ...`
+Örnek:
+- başlangıç: board `7×9`, bulut 0 satır
+- SHIFT 1: board yine `7×9`, bulut 1 satırı kaplar
+- SHIFT 2: board yine `7×9`, bulut 2 satırı kaplar
 
-Yanlardan kapanma/büyüme standard core değildir; ileride yalnız özel boss/hard/event mekaniği olarak açıkça anlatılarak kullanılabilir.
-
-Core veri olmadan yeniden tasarlanmaz.
+**Yanlardan kapanma/büyüme standard core değildir.** İleride yalnız açıkça anlatılan special/hard/boss/event mekaniği olabilir.
 
 ---
 
-# 3. RUSH — LOCKED
+# 3. ŞEKER BULUTU — VISUAL / FEEL LOCK
+
+Şeker Bulutu yalnız sayaç değildir; ana tehdit karakteridir.
+
+Durumlar:
+- güvenli: açık pembe/beyaz/mor, yumuşak puf/sparkle
+- uyarı: bulut ile en yakın blok arasında yaklaşık **2 satır** kaldığında hafif kararır
+- kritik: mesafe yaklaşık **1 satır** olduğunda daha koyu/pulse olur
+- kritik durumda kısa şimşekler görünür
+
+Her SHIFT:
+1. bulut kısa süre kabarır
+2. aşağı doğru 1 hücre/satır kadar büyüme hissi verir
+3. kısa `whoosh / puff / mekanik olmayan şeker fırtınası` SFX oynar
+4. hafif haptic kullanılabilir
+5. oyun akışı yaklaşık 0.5–0.7 sn içinde devam eder
+
+Amaç:
+> Oyuncu HUD okumadan bulutun yaklaştığını ve alan kaybettiğini hissetmelidir.
+
+`LOFT SINIRI` oyuncuya görünen ana terim değildir. UI dili **BULUT / ŞEKER BULUTU** olur.
+
+---
+
+# 4. RUSH — LOCKED
 
 Eski 7/6/5 saniyelik tray timer kalıcı olarak geçersizdir.
 
 - ilk RUSH Level 11
 - sonra 15, 20, 25, 30... boss slotları hariç
 - full-level timer
-- giriş kartı → BAŞLA → timer
+- giriş kartı → **BAŞLA** → timer
+- BAŞLA denmeden sayaç çalışmaz
 - L11: 60 sn / 2 SHIFT
 - L15–24: 50 sn / 3 SHIFT
 - L25–49: 45 sn / 3 SHIFT
 - L50+: 40 sn / 4 SHIFT
-- RUSH 2 danger row
 - background timer pause
 - fail reason `rush_timeout`
 
-RUSH'ta da kolon sayısı level boyunca sabittir; 2 danger row kuralı LOFT inişinden önce uygulanır.
+Sugar Cloud V3 ile RUSH danger kuralı:
+- danger row artık sabit row 0/1 değildir
+- her an **mevcut Şeker Bulutu kenarının altındaki sıradaki 2 açık satır** danger zone'dur
+- SHIFT öncesi bu 2 tehlike satırı güvenli olmalıdır
+- RUSH overlay kapanınca canvas/game input kesin açık kalmalıdır
+- runtime watchdog stale overlay/pointer lock yüzünden oyunu donduramaz
 
-Android gerçek cihaz testinde eski 5 saniyelik tray timer görülmüş ve `rush-disable.js` + `rush-runtime-guard.js` ile hard-disable edilmiştir.
+2026-08-09 Chromium regression:
+- Level 11 RUSH açılıyor
+- beş rewarded continue akışı çalışıyor
+- terminal sonuç ekranına donmadan ulaşıyor
 
 ---
 
-# 4. LONG-RUN LEVEL SYSTEM
+# 5. LONG-RUN LEVEL SYSTEM
 
-- Level 1–10: elle ayarlı onboarding
+- Level 1–10: elle ayarlı onboarding/difficulty
 - Level 11+: deterministik difficulty-wave generator
 - hedef: 10.000+ level
 - map yalnız aktif level çevresini render eder
-- hazır olmayan future boss slot progression'ı bloklamaz
-- startStage farklı level başlangıç genişliği/yüksekliği verebilir; aynı level içinde width sabitlenir
+- future boss slotları progression'ı bloklamaz
+- **startStage artık standart gameplay geometry'sini değiştirmez; board 7×9'dur**
+- zorluk geometri değiştirerek değil; move budget, hedef SHIFT, başlangıç blok yoğunluğu, RUSH, boss ve diğer açık kurallarla artar
 
 ---
 
-# 5. CHARACTER PROGRESSION — LOCKED
+# 6. CHARACTER PROGRESSION — LOCKED
 
-| Unlock Level | Character | Power |
+| Unlock | Character | Power |
 |---:|---|---|
 | 1 | **Poma** | özel güç yok |
-| 10 | **Poma Dahi** | Bilgisayar |
+| 10 | **Poma Dahi** | Güvenlik Kalkanı |
 | 20 | **Influencer Poma** | Telefon |
 | 30 | **Okçu Poma** | Ok |
 | 40 | **Bozkurt Poma** | Kurt Pençesi |
@@ -105,7 +144,7 @@ Android gerçek cihaz testinde eski 5 saniyelik tray timer görülmüş ve `rush
 | 60 | **Dede Poma** | Asa Gücü |
 | 70 | **Fire Poma** | Alev Dalgası |
 | 80 | **PomaHero** | Sihirli Yaprak |
-| 90 | **Yapışkan Şeker Bulutu** | first boss |
+| 90 | **Yapışkan Şeker Bulutu** | first boss variant |
 
 Gameplay aktif karakter bandı:
 - 1–9 Poma
@@ -117,44 +156,48 @@ Gameplay aktif karakter bandı:
 - 60–69 Dede Poma
 - 70–79 Fire Poma
 - 80–89 PomaHero
-- Level 90 boss ekranında aktif hero PomaHero; Sugar Cloud ayrı boss tehdididir
+- Level 90: aktif hero PomaHero + ayrı boss tehdidi
 
 Kurallar:
 - gameplay ekranında tek aktif karakter görünür
-- aktif karakter idle / danger / power cast / win / lose tepkileri verir
-- güç kullanımı görsel olarak karakterden boarda doğru cast → projectile/effect → impact akışıyla sunulur
-- karakterin kendi imza gücünde signature cast, başka loadout gücünde kısa generic assist cast kullanılabilir
-- başlangıç karakterinin adı yalnız **Poma**; “Atkısız Poma” ifadesi kullanılmaz
-- Fire Poma Level 70
-- PomaHero Level 80
-- oyundaki en güçlü karakter/güç **PomaHero / Sihirli Yaprak** olarak kalır
-- boss Level 90 değişmez
+- karakter level bandına göre otomatik değişir
+- güç kullanımı karakterden çıkar: **cast → projectile/effect → board impact**
+- animasyon core sonucu kilitlememeli; kısa ve interrupt-safe olmalı
+- normal match/placementte karakter gereksiz animasyon yapmaz
+- başlangıç karakterinin adı yalnız **Poma**
+- PomaHero en güçlü karakter/güç olarak kalır
+
+Danger / win / lose final PNG pose'ları henüz release core'una dahil değildir; önce core + gerçek gameplay asset entegrasyonu doğrulanır.
 
 ---
 
-# 6. POWERS / PRICES — LOCKED
+# 7. POWERS / PRICES — LOCKED
 
-- Bilgisayar: **LOFT inişi 10 hamle durur** — 1.100 Coin
+- **Güvenlik Kalkanı (Poma Dahi): Şeker Bulutu'nun bir sonraki ilerlemesini 1 kez engeller — 1.100 Coin**
 - Telefon: üst bölgelerde 3 tehlikeli kare — 500 Coin
-- Ok: en üst 4 dolu kare — 700 Coin
+- Ok: mevcut core sonucu korunur; Okçu presentation hedefi yay germe → ok → impact — 700 Coin
 - Kurt Pençesi: seçilen + bitişik 1 kare — 300 Coin
 - Emzik Salyası: seçilen 1 kare — 100 Coin
 - Asa Gücü: board reshuffle — 1.600 Coin
-- **Alev Dalgası: LOFT bölgesindeki ilk 2 satırı tamamen yakar — 1.800 Coin**
+- Alev Dalgası: mevcut iki-satır clear core sonucu — 1.800 Coin
 - **Sihirli Yaprak: bütün boardu temizler — 2.000 Coin / en güçlü güç**
 
-Power presentation:
-- mevcut mekanik sonucu korunur
-- animasyon core sonucundan ayrı presentation katmanıdır
-- Okçu Poma imza castinde yay germe → ok çıkışı → board impact hedeflenir
-- Dede Poma imza castinde asa hazırlık → büyü dalgası hedeflenir
-- Influencer Poma imza castinde telefon/flaş yönü hedeflenir
-- Poma Dahi imza castinde bilgisayar/koruma aktivasyonu hedeflenir
+## Dahi Poma — yeni kilit
 
-Fire Poma görsel efekti:
-- alev yukarıdan boardun ilk 2 satırını süpürür
-- bloklar silinir
-- kül partikülleri dağılır
+Eski davranış geçersiz:
+> Bilgisayar / LOFT 10 hamle donar.
+
+Yeni davranış:
+1. oyuncu Güvenlik Kalkanı kullanır
+2. Dahi Poma bilgisayarını aktive eder
+3. board üstünde cyan/mavi dijital kalkan görünür
+4. sonraki SHIFT gerçekleştiğinde SHIFT hedefte sayılır
+5. Şeker Bulutu o SHIFT'te büyümez
+6. kalkan tüketilir
+7. sonraki SHIFT normal cloud advance olur
+
+UI copy:
+> **Güvenlik Kalkanı — Şeker Bulutu'nun bir sonraki ilerlemesini durdurur.**
 
 Poma Güç Paketi:
 - 3.500 Coin
@@ -163,7 +206,7 @@ Poma Güç Paketi:
 
 ---
 
-# 7. ECONOMY / LIVES / ADS
+# 8. ECONOMY / LIVES / ADS
 
 Coin first-clear:
 - normal +5
@@ -193,31 +236,29 @@ Interstitial:
 
 ---
 
-# 8. BOSS
+# 9. BOSS
 
 Level 90: **Yapışkan Şeker Bulutu**
-- her 3 saniyede 1 kare
-- row clear / uygun booster ile temizlenebilir
-- tavana ulaşırsa fail
+- global Sugar Cloud core tehdidiyle aynı şey değildir
+- boss varyantı ayrı `sticky / sugar storm` mekanik katmanıdır
+- mevcut boss timing/reward regression'ı korunur
 
-Level 90 presentation / UX baseline:
-- yaşayan lobby Level 90 node'unda cloud emoji yerine gerçek Sugar Cloud art + `BOSS` etiketi kullanılır
-- boss hazırlığında ana kaynak yaşayan lobby'deki mevcut 3 slot seçimidir; ayrı ekonomi/loadout sistemi oluşturulmaz
-- runtime boss hazırlık kartı gösterildiğinde `Yapışkan Şeker Bulutu`, gerçek art ve “her 3 saniyede 1 kare” mekaniğini açıkça anlatır
-- oyun içinde boss HUD gerçek Sugar Cloud artını, adını ve 3 sn ritmini gösterir
-- sonuç ekranında ana hero yine tek Poma'dır; Sugar Cloud ikinci büyük karakter olarak tekrarlanmaz, kompakt boss sonuç kartında görünür
-- win: `Şeker Bulutu dağıldı!`; fail: `Şeker Bulutu hâlâ burada`
-- sonuçtaki `Haritaya Bak` yaşayan lobby'ye döner
-- boss mekanik/timing/reward bu sunum katmanıyla değiştirilmez
+Sunum baseline:
+- lobby Level 90 node: gerçek boss art + `BOSS`
+- boss hazırlığı mevcut 3 slot loadout kullanır
+- sonuçta ana hero tek PomaHero'dur; boss kompakt sonuç kartında kalır
+- win: `Şeker Bulutu dağıldı!`
+- fail: `Şeker Bulutu hâlâ burada`
+- `Haritaya Bak` yaşayan lobby'ye döner
 
 Future boss slots: `120, 150, 180, 210...`
 
 ---
 
-# 9. ART DIRECTION
+# 10. ART DIRECTION
 
 Target:
-> premium casual / dark modern board / distinctive soft-plastic tokens / visible LOFT mechanism
+> **premium casual / dark modern board / distinctive soft-plastic tokens / living Sugar Cloud threat / character-driven powers**
 
 Board token kimliği:
 - sarı yıldız
@@ -227,28 +268,41 @@ Board token kimliği:
 - mor kristal
 - turuncu enerji/alev
 
-Grid matematiği kare kalır; düz/jenerik renkli kutu görünümü hedef değildir.
-
-Poma kullanım oranı artık gameplay character presentation nedeniyle eski %20 meta sınırından kontrollü biçimde genişler, ancak karakter boardu kapatmaz ve core okunabilirliğini bozmaz.
+Grid hitbox matematiği kare kalır; oyuncuya görünen parça düz/jenerik kutu olmak zorunda değildir.
 
 Gameplay karakteri:
 - kompakt board üstü/HUD alanı
 - tek aktif karakter
-- kısa CSS/pose reaction
+- karakter boardu kapatmaz
 - power cast karakterden çıkar
 
-Fire Poma için gerçek repo asseti:
-- `assets/brand/poma-academy/fire poma.png`
+Şeker Bulutu:
+- ana tehdit görselidir
+- başlangıçta tatlı/aydınlık
+- 2 satır kala kararma
+- kritik yakınlıkta pulse + şimşek
+- SHIFT'te büyüme/puff/whoosh
 
-PomaHero asseti:
-- `assets/brand/poma-academy/poma-hero.png`
+Kabul edilen first-pass asset aileleri:
+- 6 token
+- Sugar Cloud/önceki LOFT yerine kullanılacak threat yönü
+- Poma
+- Poma Dahi
+- Influencer Poma
+- Okçu Poma
+- Bozkurt Poma
+- Baby Poma
+- Dede Poma
+- Fire Poma
+- PomaHero
 
-Yeni paralel asset brief:
-- `ASSET_WORK_PLAN.md`
+**Not:** sohbet içinde kabul edilen yüksek kaliteli final PNG'lerin tamamı henüz repository runtime asseti olarak bağlanmış sayılmaz. Kod/CSS fallback ile core doğrulandı; gerçek PNG entegrasyonu ayrı kapanacaktır.
+
+Asset brief: `ASSET_WORK_PLAN.md`.
 
 ---
 
-# 10. ANDROID / NATIVE STATUS
+# 11. WEB / ANDROID / RELEASE STATUS
 
 App ID: `com.pomante.pomashift`
 
@@ -259,120 +313,72 @@ Native:
 - compileSdk 36
 - targetSdk 36
 - debug APK + unsigned release AAB workflow mevcut
-- production signed AAB workflow hazır; secrets henüz provision edilmedi
+- production signed AAB workflow hazır; secrets provision durumu ayrıca doğrulanır
 
-2026-08-06 gerçek cihaz screenshot testinde yakalanıp düzeltilenler:
-- eski 5 saniyelik RUSH tray timer
-- native sonuç/boss görsellerinin eksik paketlenmesi
-- DEV panelinin APK'da görünmesi
-- version query yüzünden native AdMob bridge injection riski
-- Fire Poma dahil milestone karakter assetlerinin native pakete eksiksiz alınması
+Web cache policy:
+- launch candidate sırasında eski Poma Shift service-worker cache'i temizlenir
+- web runtime eski gameplay JS'e takılmamalıdır
 
-Native build artık şu görselleri paketler:
-- Poma
-- Dahi
-- Influencer
-- Okçu
-- Bozkurt
-- Baby
-- Dede
-- Fire Poma
-- PomaHero
-- sad/result Poma
-- Sugar Cloud
-
-2026-08-07 web/UX baseline:
-- canlı `harita → OYNA → Level 1` Chromium akışı doğrulandı
-- sonuç ekranında tek ana Poma kuralı uygulanıyor: win = mutlu Poma, fail = üzgün Poma
-- 5/5 rewarded continue sonrası yeni fail ekranı terminal/donuk state bırakmıyor; normal ve Level 11 RUSH akışı gerçek beş devam senaryosuyla Chromium'da doğrulandı
-- sonuç ekranındaki `Haritaya Bak` legacy modal yerine yaşayan Poma Shift lobby/haritasına dönüyor
-- lobby harita + birleşik stok/mağaza + sabit 3 slot yapısı ana hazırlık ekranıdır
-- güç mini kartı stok varsa `×adet`, stok yoksa Coin fiyatı, kilitliyse açılma leveli gösterir; karta basınca tek ürün detayında işlev, stok/fiyat, slot ve satın alma aksiyonu görünür
-- Level 10/20/30/40/50/60/70/80 ilk clear milestone'ları mevcut unlock sonucunu **YENİ GÜÇ AÇILDI** kartına yükseltir; `MAĞAZADA GÖR` yaşayan lobby'deki ilgili ürün detayını doğrudan açar
-- milestone unlock kartı first-clear only'dir; replay'de tekrar gösterilmez
-- yaşayan lobby'de seçilen 3 güç `pomaShift.loadout.v2` üzerinden runtime `battle-loadout` state'ine deterministik aktarılır; lobby'de `SLOTA EKLE` seçimi oyun içinde kaybolmaz
-- Level 70 Chromium zinciri `first clear → Fire Poma/Alev Dalgası unlock → mağaza detayı → stok ×1 → slot → runtime` olarak doğrulandı; Alev Dalgası yalnız ilk 2 board satırını temizler ve 3. satırı korur
-- Level 80 Chromium zinciri `first clear → PomaHero/Sihirli Yaprak unlock → mağaza detayı → stok ×1 → slot → runtime` olarak doğrulandı; Sihirli Yaprak bütün boardu temizler
-- RUSH runtime guard non-RUSH levele geçildiğinde stale RUSH intro overlay'ini zorla kapatır; RUSH milestone metni locked karakter sırasına göre normalize edilir (`70 Fire Poma/Alev Dalgası`, `80 PomaHero/Sihirli Yaprak`)
-- Level 90 boss Chromium regression'ı `lobby boss node → 3 slot → boss → gerçek sugar cast → win → harita` ve `boss hazırlık → fail → harita` zincirlerini kapsar
-- boss HUD artık `window.state` varsayımı yerine gerçek lexical game `state` üzerinden çalışır
-- yeni result-flow ve loadout/RUSH guard dosyaları native build kapsamına alınır
-
-2026-08-08 LOFT/game-feel branch baseline:
-- `LOFT_CORE_V2.md` ile same-level side growth kapatıldı
-- `loft-core-v2.js` start width'i level boyunca sabitler ve yalnız satır baskısı uygular
-- board hücre ölçüsü sabit, alt hat ankrajlı; LOFT görsel olarak yukarıdan aşağı yaklaşır
-- altı token tipi için vector fallback çizimi eklendi; final PNG assetleri paralel üretilecektir
-- gameplay aktif karakter bandı ve signature/assist cast presentation katmanı `character-gameplay-v1.js` ile eklendi
-- karakter/LOFT/token asset üretim sırası `ASSET_WORK_PLAN.md` içine yazıldı
-- native build game klasörünü recursive kopyaladığı için yeni JS/CSS katmanları ayrıca whitelist gerektirmeden native pakete girer
-
-2026-08-07 analytics baseline:
-- production telemetry provider GA4 web tag üzerinden bağlıdır; launch measurement property `G-LVDEFW23S9` ve Poma Shift eventleri `ps_*` namespace'iyle ayrıştırılır
-- analytics tercihi `poma.analytics.consent.v1` ile tutulur; bilinmeyen kullanıcı lobby içinde seçim görür, reddeden kullanıcıda Google tag yüklenmez ve oyun/local telemetry çalışmaya devam eder
-- consent kartı yalnız yaşayan lobby açıkken görünür; oyun ve sonuç ekranlarına taşmaz / CTA'ları bloke etmez
-- analytics consent reklam consentinden ayrıdır; `ad_storage`, `ad_user_data`, `ad_personalization` analytics katmanında denied kalır
-- remote payload strict whitelist kullanır; isim/e-posta/serbest metin/cevap gibi alanlar gönderilmez
-- merkezi bridge gerçek lexical game `state` level'ını kullanır ve provider sonradan yüklense bile mevcut local session/start eventlerini bootstrap eder
-- Chromium analytics testleri deny → local-only → grant, reversible settings, `ps_*` namespace, Level 70 doğru level değeri ve payload whitelist akışını doğrular
-- CI/test ortamında provider `testing=true` ile çalıştırılır; gerçek GA4 verisi testlerle kirletilmez
+2026-08-09 Sugar Cloud V3 release verification:
+- PR static CI: PASS
+- PR Chromium browser smoke: **11/11 PASS**
+- Level 11 RUSH five-continue / terminal freeze regression: PASS
+- main browser smoke: PASS
+- production deployed Chromium smoke: PASS
+- merged core commit: `11d75b0683c38792c114f3619576077804cfe864`
 
 ---
 
-# 11. CURRENT RELEASE BLOCKERS
+# 12. CURRENT WORK ORDER
 
-LOFT V2 öncesi mevcut blockerlar korunur ve yeni core regression eklenir:
-- LOFT V2 browser regression: Level 1 / 4 / 6 width sabit, row descent doğru
-- L11 RUSH 2 danger row + LOFT descent regression
-- Bilgisayar gücü LOFT inişini 10 hamle gerçekten durduruyor mu
-- active character bandı Level 1/10/20/30/60/70/80/90 doğru mu
-- booster cast presentation gameplay inputunu kilitlemeden çalışıyor mu
-- yeni Android APK gerçek cihaz smoke testi
-- L11 RUSH süre doğrulaması gerçek cihaz
-- L70 Fire Poma / L80 PomaHero / L90 Boss Android gerçek cihaz görsel-runtime smoke
+1. **Sugar Cloud V3 core — DONE / LIVE**
+2. bütün level boardlarının 7×9 gerçek cihaz kontrolü
+3. Sugar Cloud görsel boyut/konum/kararma/şimşek UX kontrolü
+4. Dahi Güvenlik Kalkanı gerçek kullanıcı akışı kontrolü
+5. RUSH gerçek telefon tekrar testi
+6. kabul edilen final PNG token/karakter/FX assetlerini repository runtime'a bağlama
+7. Okçu/Dede/Influencer/Dahi/Poma cast görsel kalitesini gerçek assetlerle doğrulama
+8. kalan game-feel: pop / combo / SFX / haptic polish
+9. danger / win / lose pose üretimi ve entegrasyonu
+10. Android APK smoke
+11. AdMob/analytics external production verification
+12. signed AAB + Play privacy/Data Safety/store assets
+13. blind/external test → data-driven tuning → release
+
+---
+
+# 13. CURRENT RELEASE BLOCKERS
+
+Core blocker olmayan ama release öncesi kapanacaklar:
+- final gerçek PNG asset entegrasyonu
+- Sugar Cloud gerçek cihaz visual/performance smoke
+- Dahi shield UX smoke
+- RUSH gerçek cihaz tekrar doğrulaması
+- Android APK visual/runtime smoke
 - rewarded/interstitial test reklamları gerçek cihaz
-- production GA4 eventinin Analytics Realtime/DebugView içinde dışarıdan doğrulanması
+- production GA4 external verification
 - production AdMob IDs
 - signed AAB secrets/build
 - privacy policy / Data Safety / Play listing
 - 5–10 blind test
 - 20–50 external telemetry test
 
-Final token / LOFT / karakter pose PNG'leri gelmeden vector/static fallback ile test yapılabilir; release art polish için asset entegrasyonu ayrıca kapanmalıdır.
-
 ---
 
-# 12. CURRENT WORK ORDER
-
-1. LOFT V2 runtime + syntax/static tests PASS
-2. Browser smoke: Level 1 → SHIFT → width sabit / LOFT aşağı
-3. RUSH + booster + boss regression
-4. Paralel asset üretimi: 6 token + LOFT + Okçu signature set
-5. Final asset entegrasyonu
-6. Yeni APK'yı telefonda smoke test
-7. Görsel/UI kalan kusurları kapat
-8. AdMob/analytics external production verification
-9. signed AAB
-10. Play privacy/Data Safety/store assets
-11. blind/external test
-12. data-driven tuning
-13. release
-
----
-
-# 13. DO NOT REOPEN WITHOUT DATA
+# 14. DO NOT REOPEN WITHOUT DATA
 
 Yeniden sıfırdan tartışılmaz:
 - line clear
-- **SHIFT = same-level fixed width + descending LOFT**
+- **standard board = 7×9 fixed**
+- **SHIFT = Sugar Cloud grows down 1 row; board does not resize**
 - standard levelde side growth yok
+- Sugar Cloud warning = yaklaşık 2 satır kala kararma; kritik = lightning/pulse
+- Poma Dahi = **next cloud advance one-use shield**, 10-move freeze değil
 - 3-piece batch
-- RUSH full-level timer
+- RUSH full-level timer + cloud-edge next 2 danger rows
 - character order: **Poma → Dahi 10 → Influencer 20 → Okçu 30 → Bozkurt 40 → Baby 50 → Dede 60 → Fire Poma 70 → PomaHero 80 → Boss 90**
-- gameplay active character bandları
+- gameplay active character bands
 - PomaHero en güçlü karakterdir
-- Fire Alev Dalgası ilk 2 satırı temizler
-- booster fiyatları
 - 3 life
 - continue +3 / max5
 - boss90
