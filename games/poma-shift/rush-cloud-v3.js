@@ -3,19 +3,21 @@
   const rush = window.PomaShiftRush;
   if (!cloud || !rush) return;
 
+  const RUSH_RULE_HTML = '☁️ Şeker Bulutu büyürken sıradaki <strong>2 tehlike satırı</strong> boş kalmalı.';
+
   function patchIntroCopy() {
     const intro = document.querySelector('.rush-intro');
     if (!intro) return;
     const rules = intro.querySelectorAll('.rush-rule');
-    if (rules[1]) rules[1].innerHTML = '☁️ Şeker Bulutu büyürken sıradaki <strong>2 tehlike satırı</strong> boş kalmalı.';
+    if (rules[1] && rules[1].innerHTML !== RUSH_RULE_HTML) rules[1].innerHTML = RUSH_RULE_HTML;
     const badge = intro.querySelector('.rush-intro-badge');
-    if (badge) badge.textContent = '⚡ RUSH BÖLÜMÜ';
+    if (badge && badge.textContent !== '⚡ RUSH BÖLÜMÜ') badge.textContent = '⚡ RUSH BÖLÜMÜ';
   }
 
   function fullRowsNow() {
     const rows = [];
     for (let row = 0; row < state.grid.length; row += 1) {
-      if (state.grid[row].every(Boolean)) rows.push(row);
+      if (state.grid[row].every(Boolean)) fullRows.push?.(row);
     }
     return rows;
   }
@@ -33,12 +35,13 @@
     return false;
   }
 
-  // Apply the real danger zone relative to the current cloud edge. The legacy RUSH
-  // layer remains underneath for timer/result handling, but no longer defines geometry.
   const baseClearLines = clearLines;
   clearLines = function sugarCloudRushClearLines() {
     if (!rush.isRushLevel?.(state.level) || state.status !== 'playing') return baseClearLines();
-    const fullRows = fullRowsNow();
+    const fullRows = [];
+    for (let row = 0; row < state.grid.length; row += 1) {
+      if (state.grid[row].every(Boolean)) fullRows.push(row);
+    }
     const pendingShift = fullRows.length > 0 && state.linesTowardShift + fullRows.length >= state.shiftEvery;
     if (pendingShift && rushDangerBlocked(fullRows)) {
       metric('cloud_crush_danger_zone', { dangerRows: 2, cloudRows: cloud.cloudRows(), rush: true });
@@ -68,24 +71,38 @@
     ctx.restore();
   };
 
-  function recoverRushInput() {
+  function recoverRushInput({ resetDrag = false } = {}) {
     const intro = document.querySelector('.rush-intro');
-    if (intro?.hidden) intro.style.pointerEvents = 'none';
+    if (intro?.hidden && intro.style.pointerEvents !== 'none') intro.style.pointerEvents = 'none';
     const canvasNode = document.getElementById('game');
     const gameCard = document.querySelector('.game-card');
+    let changed = false;
     if (canvasNode && state.status === 'playing') {
-      canvasNode.style.pointerEvents = 'auto';
-      canvasNode.removeAttribute('inert');
+      if (canvasNode.style.pointerEvents === 'none') {
+        canvasNode.style.pointerEvents = 'auto';
+        changed = true;
+      }
+      if (canvasNode.hasAttribute('inert')) {
+        canvasNode.removeAttribute('inert');
+        changed = true;
+      }
     }
     if (gameCard && state.status === 'playing') {
-      gameCard.style.pointerEvents = 'auto';
-      gameCard.removeAttribute('inert');
+      if (gameCard.style.pointerEvents === 'none') {
+        gameCard.style.pointerEvents = 'auto';
+        changed = true;
+      }
+      if (gameCard.hasAttribute('inert')) {
+        gameCard.removeAttribute('inert');
+        changed = true;
+      }
     }
-    if (state.status === 'playing') {
+    if (state.status === 'playing' && resetDrag) {
       state.drag = null;
       state.hover = null;
-      render();
+      changed = true;
     }
+    if (changed) render();
   }
 
   function wireStartRecovery() {
@@ -94,14 +111,13 @@
     if (!intro || !start || start.dataset.cloudRecovery === '1') return;
     start.dataset.cloudRecovery = '1';
     start.addEventListener('click', () => {
-      // rush-mode owns the timer; this only guarantees the overlay cannot strand input.
       window.setTimeout(() => {
         if (state.status !== 'playing') return;
         intro.hidden = true;
         intro.style.pointerEvents = 'none';
-        recoverRushInput();
+        recoverRushInput({ resetDrag: true });
       }, 40);
-      window.setTimeout(recoverRushInput, 220);
+      window.setTimeout(() => recoverRushInput(), 220);
     });
   }
 
@@ -118,10 +134,16 @@
     if (!rush.isRushLevel?.(state.level) || state.status !== 'playing') return;
     const intro = document.querySelector('.rush-intro');
     if (intro && !intro.hidden) {
-      intro.style.pointerEvents = 'auto';
+      if (intro.style.pointerEvents !== 'auto') intro.style.pointerEvents = 'auto';
       return;
     }
-    recoverRushInput();
+    const canvasNode = document.getElementById('game');
+    const gameCard = document.querySelector('.game-card');
+    const blocked = canvasNode?.style.pointerEvents === 'none'
+      || canvasNode?.hasAttribute('inert')
+      || gameCard?.style.pointerEvents === 'none'
+      || gameCard?.hasAttribute('inert');
+    if (blocked) recoverRushInput();
   }, 700);
 
   window.addEventListener('pagehide', () => window.clearInterval(watchdog), { once: true });
