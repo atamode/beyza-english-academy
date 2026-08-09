@@ -114,13 +114,15 @@
     document.querySelectorAll('.poma-lobby [data-lobby-level]').forEach((node) => {
       const level = Number(node.dataset.lobbyLevel || 0);
       if (!level || level > 90) return;
-      node.classList.remove('locked', 'complete');
-      node.classList.add('qa-open');
-      node.removeAttribute('aria-disabled');
+      if (node.classList.contains('locked')) node.classList.remove('locked');
+      if (node.classList.contains('complete')) node.classList.remove('complete');
+      if (!node.classList.contains('qa-open')) node.classList.add('qa-open');
+      if (node.hasAttribute('aria-disabled')) node.removeAttribute('aria-disabled');
       const label = node.querySelector(':scope > span');
-      if (label) label.textContent = String(level);
+      const nextLabel = String(level);
+      if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
     });
-    if (!document.querySelector('.poma-qa-badge')) {
+    if (!document.querySelector('.poma-qa-badge') && document.body) {
       const badge = document.createElement('div');
       badge.className = 'poma-qa-badge';
       badge.textContent = '🧪 QA · LEVEL 1–90 AÇIK';
@@ -128,7 +130,16 @@
     }
   }
 
-  const observer = new MutationObserver(patchLobby);
-  observer.observe(document.documentElement, { childList: true, subtree: true });
-  window.setTimeout(patchLobby, 0);
+  function schedulePatch() {
+    window.requestAnimationFrame(() => patchLobby());
+    window.setTimeout(patchLobby, 120);
+    window.setTimeout(patchLobby, 420);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', schedulePatch, { once: true });
+  } else {
+    schedulePatch();
+  }
+  document.addEventListener('poma:lobby-state', schedulePatch);
 })();
