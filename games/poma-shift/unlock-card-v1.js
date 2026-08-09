@@ -31,11 +31,15 @@
     badge.classList.add('poma-unlock-card');
 
     const copy = badge.querySelector(':scope > div');
-    if (copy && !copy.querySelector('.poma-unlock-kicker')) {
-      const kicker = document.createElement('span');
-      kicker.className = 'poma-unlock-kicker';
-      kicker.textContent = 'YENİ GÜÇ AÇILDI · İLK KULLANIM ×1 HEDİYE';
-      copy.prepend(kicker);
+    if (copy) {
+      const legacyPowerCopy = copy.querySelector('small');
+      if (legacyPowerCopy) legacyPowerCopy.textContent = `${power.name} açıldı · ilk kullanım ×1 hediye`;
+      if (!copy.querySelector('.poma-unlock-kicker')) {
+        const kicker = document.createElement('span');
+        kicker.className = 'poma-unlock-kicker';
+        kicker.textContent = 'YENİ GÜÇ AÇILDI · İLK KULLANIM ×1 HEDİYE';
+        copy.prepend(kicker);
+      }
     }
 
     let action = badge.querySelector('[data-unlock-shop]');
