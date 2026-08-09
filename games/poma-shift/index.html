@@ -53,6 +53,7 @@
   <link rel="stylesheet" href="./lobby-v1.css?v=44" />
   <link rel="stylesheet" href="./unlock-card-v1.css?v=49" />
   <script>
+    // Launch-candidate web policy: disable the legacy service-worker cache so a deploy cannot strand players on stale gameplay/economy code.
     (() => {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then((registrations) => {
