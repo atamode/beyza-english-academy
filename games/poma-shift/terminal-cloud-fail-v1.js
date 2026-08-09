@@ -6,8 +6,9 @@
     'sugar_full',
     'sugar_ceiling',
   ]);
+  let activeReason = '';
 
-  function lastFailReason() {
+  function snapshotFailReason() {
     try {
       return String(window.PomaShiftMeta?.snapshot?.()?.runtime?.lastFailReason || '');
     } catch {
@@ -15,8 +16,12 @@
     }
   }
 
+  function currentReason() {
+    return activeReason || snapshotFailReason();
+  }
+
   function isTerminalCloudFail() {
-    return TERMINAL_REASONS.has(lastFailReason());
+    return TERMINAL_REASONS.has(currentReason());
   }
 
   function ensureSentinel(fail) {
@@ -31,10 +36,10 @@
     return sentinel;
   }
 
-  function patchFail(root = document) {
-    if (!isTerminalCloudFail()) return;
-    const fail = root.matches?.('.fail-view') ? root : root.querySelector?.('.fail-view') || document.querySelector('.fail-view');
-    if (!fail) return;
+  function patchFail() {
+    if (!isTerminalCloudFail()) return false;
+    const fail = document.querySelector('.fail-view');
+    if (!fail) return false;
 
     fail.querySelectorAll('button[data-meta-continue]').forEach((button) => button.remove());
     ensureSentinel(fail);
@@ -48,23 +53,32 @@
       if (retry) retry.insertAdjacentElement('beforebegin', note);
       else fail.appendChild(note);
     }
-    note.textContent = '☁️ Şeker Bulutu oyun alanına ulaştı. Bu deneme bitti; ek hamle kullanılamaz.';
+    const copy = '☁️ Şeker Bulutu oyun alanına ulaştı. Bu deneme bitti; ek hamle kullanılamaz.';
+    if (note.textContent !== copy) note.textContent = copy;
+    return true;
   }
 
-  const observer = new MutationObserver((mutations) => {
-    for (const mutation of mutations) {
-      mutation.addedNodes.forEach((node) => {
-        if (node instanceof Element) patchFail(node);
-      });
-    }
-    patchFail(document);
-  });
-  observer.observe(document.body, { childList: true, subtree: true });
+  function schedulePatch() {
+    window.setTimeout(patchFail, 300);
+    window.setTimeout(patchFail, 440);
+    window.setTimeout(patchFail, 760);
+  }
+
+  if (typeof lose === 'function') {
+    const baseLose = lose;
+    lose = function terminalCloudLose(reason, reasonCode = 'unknown') {
+      activeReason = TERMINAL_REASONS.has(reasonCode) ? reasonCode : '';
+      const result = baseLose(reason, reasonCode);
+      if (activeReason) schedulePatch();
+      return result;
+    };
+  }
 
   window.addEventListener('poma-shift:metric', (event) => {
     if (event.detail?.name !== 'level_fail') return;
-    window.setTimeout(() => patchFail(document), 0);
-    window.setTimeout(() => patchFail(document), 360);
+    const reason = String(event.detail?.payload?.reason || snapshotFailReason() || '');
+    if (TERMINAL_REASONS.has(reason)) activeReason = reason;
+    if (isTerminalCloudFail()) schedulePatch();
   });
 
   window.PomaShiftTerminalCloudFail = {
