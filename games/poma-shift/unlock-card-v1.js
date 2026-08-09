@@ -1,6 +1,6 @@
 (() => {
   const MILESTONE_POWERS = {
-    10: { id: 'computer', name: 'Bilgisayar' },
+    10: { id: 'computer', name: 'Güvenlik Kalkanı' },
     20: { id: 'phone', name: 'Telefon' },
     30: { id: 'arrow', name: 'Ok' },
     40: { id: 'claw', name: 'Kurt Pençesi' },
@@ -31,11 +31,15 @@
     badge.classList.add('poma-unlock-card');
 
     const copy = badge.querySelector(':scope > div');
-    if (copy && !copy.querySelector('.poma-unlock-kicker')) {
-      const kicker = document.createElement('span');
-      kicker.className = 'poma-unlock-kicker';
-      kicker.textContent = 'YENİ GÜÇ AÇILDI';
-      copy.prepend(kicker);
+    if (copy) {
+      const legacyPowerCopy = copy.querySelector('small');
+      if (legacyPowerCopy) legacyPowerCopy.textContent = `${power.name} açıldı · ilk kullanım ×1 hediye`;
+      if (!copy.querySelector('.poma-unlock-kicker')) {
+        const kicker = document.createElement('span');
+        kicker.className = 'poma-unlock-kicker';
+        kicker.textContent = 'YENİ GÜÇ AÇILDI · İLK KULLANIM ×1 HEDİYE';
+        copy.prepend(kicker);
+      }
     }
 
     let action = badge.querySelector('[data-unlock-shop]');
@@ -44,8 +48,8 @@
       action.type = 'button';
       action.className = 'poma-unlock-shop';
       action.dataset.unlockShop = power.id;
-      action.setAttribute('aria-label', `${power.name} mağaza kartını aç`);
-      action.innerHTML = '<span>MAĞAZADA GÖR</span><b aria-hidden="true">→</b>';
+      action.setAttribute('aria-label', `${power.name} hediye stoğunu ve mağaza kartını aç`);
+      action.innerHTML = '<span>🎁 ×1 HEDİYE · MAĞAZADA GÖR</span><b aria-hidden="true">→</b>';
       badge.appendChild(action);
     }
   }

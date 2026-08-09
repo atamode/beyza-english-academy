@@ -64,6 +64,63 @@ test('Poma Shift opens lobby and starts Level 1 in Chromium', async ({ page }) =
   expect(pageErrors).toEqual([]);
 });
 
+test('QA preview opens Levels 1–90 without permanently changing normal progress', async ({ page }) => {
+  const pageErrors = [];
+  page.on('pageerror', (error) => pageErrors.push(String(error)));
+
+  await page.goto('/games/poma-shift/?qa=1&browser-smoke=qa', {
+    waitUntil: 'domcontentloaded',
+    timeout: 8_000,
+  });
+  await page.waitForFunction(() => Boolean(window.PomaShiftQAPreview?.active));
+
+  const lobby = page.locator('.poma-lobby');
+  await expect(lobby).toBeVisible({ timeout: 3_000 });
+  await expect(page.locator('.poma-qa-badge')).toContainText('LEVEL 1–90 AÇIK');
+
+  const level90 = page.locator('[data-lobby-level="90"]');
+  await expect(level90).toBeVisible();
+  await expect(level90).not.toHaveClass(/locked/);
+  await expect(level90.locator(':scope > span')).toHaveText('90');
+  await page.evaluate(() => document.querySelector('[data-lobby-level="90"]')?.click());
+  await expect(page.locator('[data-lobby-play-level]')).toHaveText('90');
+  await page.locator('[data-lobby-play]').click();
+  await expect(lobby).toBeHidden({ timeout: 3_000 });
+  await expect(page.locator('#levelValue')).toHaveText('90');
+
+  await page.goto('/games/poma-shift/?browser-smoke=qa-restored', {
+    waitUntil: 'domcontentloaded',
+    timeout: 8_000,
+  });
+  await expect(page.locator('.poma-lobby')).toBeVisible({ timeout: 3_000 });
+  await expect(page.locator('[data-lobby-play-level]')).toHaveText('1');
+  expect(pageErrors).toEqual([]);
+});
+
+test('first visit exposes a ready welcome gift and then returns to the 12-hour cadence', async ({ page }) => {
+  const { pageErrors } = await openLevelOne(page);
+
+  const giftTimer = page.locator('[data-meta-gift-timer]');
+  await expect(giftTimer).toHaveText('HAZIR', { timeout: 3_000 });
+  await page.locator('[data-meta-gift]').click();
+
+  const modal = page.locator('.meta-modal');
+  await expect(modal).toBeVisible({ timeout: 3_000 });
+  await expect(modal).toContainText('+100');
+
+  const stateAfterClaim = await page.evaluate(() => {
+    const snapshot = window.PomaShiftMeta?.snapshot?.()?.meta || {};
+    return {
+      coins: Number(snapshot.coins || 0),
+      giftReadyAt: Number(snapshot.returnGiftReadyAt || 0),
+      now: Date.now(),
+    };
+  });
+  expect(stateAfterClaim.coins).toBeGreaterThanOrEqual(100);
+  expect(stateAfterClaim.giftReadyAt).toBeGreaterThan(stateAfterClaim.now);
+  expect(pageErrors).toEqual([]);
+});
+
 test('win and fail results show exactly one state-aware Poma and map returns to the lobby', async ({ page }) => {
   const { lobby, pageErrors } = await openLevelOne(page);
 
@@ -89,6 +146,20 @@ test('win and fail results show exactly one state-aware Poma and map returns to 
   await expect(win.locator(':scope > .poma-result-main')).toHaveCount(1);
   await expect(win.locator(':scope > .poma-result-avatar, :scope > .poma-result-art')).toHaveCount(1);
   await expect(win.locator(':scope > .poma-result-main')).toHaveAttribute('src', /poma-main-wave\.png/);
+  expect(pageErrors).toEqual([]);
+});
+
+test('Sugar Cloud collision is terminal and cannot be revived by a rewarded move continue', async ({ page }) => {
+  const { pageErrors } = await openLevelOne(page);
+
+  await page.evaluate(() => lose('Şeker Bulutu bloklara ulaştı.', 'cloud_crush'));
+  const fail = page.locator('.fail-view');
+  await expect(fail).toBeVisible({ timeout: 3_000 });
+  await expect(fail.locator('button[data-meta-continue]')).toHaveCount(0);
+  await expect(fail.locator('[data-terminal-cloud-note]')).toContainText('ek hamle kullanılamaz');
+  await page.waitForTimeout(500);
+  await expect.poll(() => page.evaluate(() => state.status)).toBe('lost');
+  await expect(fail.locator('button[data-meta-continue]')).toHaveCount(0);
   expect(pageErrors).toEqual([]);
 });
 
@@ -176,5 +247,19 @@ test('Level 11 Rush survives five rewarded continues and terminates without dupl
 
   await fail.locator('[data-map]').click();
   await expect(lobby).toBeVisible({ timeout: 3_000 });
+  expect(pageErrors).toEqual([]);
+});
+
+test('leaving Rush for Level 13 cannot leave a stale Rush overlay or timer behind', async ({ page }) => {
+  const { pageErrors } = await openRushLevelEleven(page);
+
+  await page.evaluate(() => setupLevel(13));
+  await expect.poll(() => page.evaluate(() => state.level)).toBe(13);
+  await expect.poll(() => page.evaluate(() => state.status)).toBe('playing');
+  await page.waitForTimeout(350);
+
+  await expect(page.locator('.rush-intro')).toBeHidden();
+  await expect(page.locator('.series-timer-copy span')).toHaveText('SERİ');
+  await expect(page.locator('[data-series-time]')).toHaveText('SERBEST');
   expect(pageErrors).toEqual([]);
 });
