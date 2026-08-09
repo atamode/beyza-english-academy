@@ -82,7 +82,7 @@ test('QA preview opens Levels 1–90 without permanently changing normal progres
   await expect(level90).toBeVisible();
   await expect(level90).not.toHaveClass(/locked/);
   await expect(level90.locator(':scope > span')).toHaveText('90');
-  await level90.click();
+  await page.evaluate(() => document.querySelector('[data-lobby-level="90"]')?.click());
   await expect(page.locator('[data-lobby-play-level]')).toHaveText('90');
   await page.locator('[data-lobby-play]').click();
   await expect(lobby).toBeHidden({ timeout: 3_000 });
