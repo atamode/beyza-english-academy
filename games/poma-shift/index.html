@@ -53,8 +53,6 @@
   <link rel="stylesheet" href="./lobby-v1.css?v=44" />
   <link rel="stylesheet" href="./unlock-card-v1.css?v=49" />
   <script>
-    // Launch-candidate web policy: disable the legacy service-worker cache so a deploy
-    // cannot strand players on stale gameplay/economy code.
     (() => {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then((registrations) => {
@@ -128,6 +126,7 @@
   <script src="./rush-continue.js?v=48" defer></script>
   <script src="./rush-runtime-guard.js?v=52" defer></script>
   <script src="./ui-hotfix.js?v=40" defer></script>
+  <script src="./sugar-cloud-copy-v3.js?v=60" defer></script>
   <script src="./audio-mix.js?v=40" defer></script>
   <script src="./fire-compat.js?v=40" defer></script>
   <script src="./mobile-release-v2.js?v=51" defer></script>
