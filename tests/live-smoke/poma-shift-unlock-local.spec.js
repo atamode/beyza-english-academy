@@ -31,7 +31,7 @@ async function completeCurrentLevel(page) {
   });
 }
 
-test('Level 10 first clear promotes Poma Dahi unlock to a one-time shop card', async ({ page }) => {
+test('Level 10 first clear promotes Poma Dahi shield to an explicit one-time gift card', async ({ page }) => {
   const pageErrors = [];
   page.on('pageerror', (error) => pageErrors.push(String(error)));
 
@@ -52,20 +52,22 @@ test('Level 10 first clear promotes Poma Dahi unlock to a one-time shop card', a
 
   const card = win.locator('.unlock-badge.poma-unlock-card');
   await expect(card).toBeVisible({ timeout: 3_000 });
-  await expect(card.locator('.poma-unlock-kicker')).toHaveText('YENİ GÜÇ AÇILDI');
+  await expect(card.locator('.poma-unlock-kicker')).toContainText('İLK KULLANIM ×1 HEDİYE');
   await expect(card).toContainText('Poma Dahi');
-  await expect(card).toContainText('Bilgisayar');
+  await expect(card).toContainText('Güvenlik Kalkanı');
 
   const shop = card.locator('[data-unlock-shop="computer"]');
-  await expect(shop).toHaveText(/MAĞAZADA GÖR/);
+  await expect(shop).toContainText('×1 HEDİYE');
+  await expect(shop).toContainText('MAĞAZADA GÖR');
   await shop.click();
 
   const lobby = page.locator('.poma-lobby');
   await expect(lobby).toBeVisible({ timeout: 3_000 });
   const detail = page.locator('.poma-lobby-detail');
   await expect(detail).toBeVisible({ timeout: 3_000 });
-  await expect(detail.locator('h2')).toHaveText('Bilgisayar');
+  await expect(detail.locator('h2')).toHaveText('Güvenlik Kalkanı');
   await expect(detail).toContainText('Poma Dahi');
+  await expect(detail).toContainText('Şeker Bulutu’nun bir sonraki ilerlemesini');
   await expect(detail).toContainText('Stok: ×1');
 
   await detail.locator('button.poma-detail-close[data-detail-close]').click();
