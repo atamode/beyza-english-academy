@@ -1,0 +1,29 @@
+.gameplay-character-host.is-shield-ready {
+  filter: drop-shadow(0 0 9px rgba(73,220,255,.38));
+}
+.gameplay-character-host.is-shield-ready::after {
+  content: '🛡';
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(25,95,160,.92);
+  border: 1px solid rgba(101,229,255,.75);
+  box-shadow: 0 0 12px rgba(74,222,255,.5);
+  font-size: 13px;
+}
+.gameplay-character-host.is-cloud-block {
+  animation: dahiShieldReaction .7s cubic-bezier(.18,.78,.2,1);
+}
+@keyframes dahiShieldReaction {
+  0% { transform: scale(1); filter: brightness(1); }
+  35% { transform: scale(1.09) rotate(-2deg); filter: brightness(1.35) drop-shadow(0 0 14px rgba(78,224,255,.72)); }
+  100% { transform: scale(1); filter: brightness(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gameplay-character-host.is-cloud-block { animation: none !important; }
+}

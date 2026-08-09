@@ -1,0 +1,159 @@
+.sugar-cloud-threat {
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
+  overflow: visible;
+  transform-origin: 50% 0;
+  transition: height .48s cubic-bezier(.2,.82,.25,1), filter .28s ease;
+}
+
+.sugar-cloud-body {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 24px 24px 18px 18px;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(255,255,255,.96) 0 18px, transparent 19px),
+    radial-gradient(circle at 28% 8%, rgba(255,228,249,.97) 0 28px, transparent 29px),
+    radial-gradient(circle at 49% 10%, rgba(255,245,253,.98) 0 34px, transparent 35px),
+    radial-gradient(circle at 70% 7%, rgba(245,218,255,.97) 0 29px, transparent 30px),
+    radial-gradient(circle at 90% 13%, rgba(255,236,248,.97) 0 22px, transparent 23px),
+    linear-gradient(180deg, rgba(255,239,252,.98), rgba(226,171,235,.9) 55%, rgba(174,107,203,.82));
+  box-shadow: 0 9px 25px rgba(176,83,198,.22), inset 0 -8px 24px rgba(123,64,164,.16);
+  opacity: .94;
+  transition: background .28s ease, filter .28s ease, box-shadow .28s ease;
+}
+
+.sugar-cloud-body::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 28px;
+  background:
+    radial-gradient(ellipse at 8% 0, #e7b6ee 0 16px, transparent 17px),
+    radial-gradient(ellipse at 25% 0, #f5d4f2 0 21px, transparent 22px),
+    radial-gradient(ellipse at 45% 0, #d99ee7 0 18px, transparent 19px),
+    radial-gradient(ellipse at 64% 0, #f4cee9 0 22px, transparent 23px),
+    radial-gradient(ellipse at 84% 0, #dca5e8 0 19px, transparent 20px),
+    radial-gradient(ellipse at 98% 0, #efc3ec 0 15px, transparent 16px);
+}
+
+.sugar-cloud-threat strong {
+  position: absolute;
+  left: 50%;
+  top: 17px;
+  transform: translateX(-50%);
+  color: rgba(103,50,125,.86);
+  font: 900 10px/1 system-ui, sans-serif;
+  letter-spacing: .08em;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(255,255,255,.7);
+}
+
+.sugar-cloud-threat .puff {
+  position: absolute;
+  width: 36px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.33);
+  filter: blur(.2px);
+  animation: sugarPuff 2.4s ease-in-out infinite alternate;
+}
+.sugar-cloud-threat .p1 { left: 5%; top: 27px; }
+.sugar-cloud-threat .p2 { left: 24%; top: 12px; animation-delay: -.7s; }
+.sugar-cloud-threat .p3 { left: 48%; top: 31px; animation-delay: -1.1s; }
+.sugar-cloud-threat .p4 { right: 22%; top: 14px; animation-delay: -.4s; }
+.sugar-cloud-threat .p5 { right: 4%; top: 29px; animation-delay: -1.5s; }
+
+.cloud-spark {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff7c4;
+  box-shadow: 0 0 8px #fff4a5;
+  animation: sugarSpark 1.5s ease-in-out infinite;
+}
+.cloud-spark.s1 { left: 19%; top: 42px; }
+.cloud-spark.s2 { left: 62%; top: 27px; animation-delay: -.5s; }
+.cloud-spark.s3 { right: 11%; top: 48px; animation-delay: -.9s; }
+
+.cloud-lightning {
+  position: absolute;
+  top: 29%;
+  color: #fff4a8;
+  font: 900 34px/1 system-ui, sans-serif;
+  opacity: 0;
+  filter: drop-shadow(0 0 8px rgba(255,234,91,.95));
+}
+.cloud-lightning.l1 { left: 20%; transform: rotate(8deg); }
+.cloud-lightning.l2 { right: 18%; transform: rotate(-12deg); animation-delay: -.17s; }
+
+.sugar-cloud-threat.is-warning .sugar-cloud-body {
+  filter: brightness(.82) saturate(1.13);
+  background:
+    radial-gradient(circle at 20% 8%, rgba(247,216,245,.95) 0 29px, transparent 30px),
+    radial-gradient(circle at 50% 8%, rgba(228,190,237,.98) 0 35px, transparent 36px),
+    radial-gradient(circle at 78% 9%, rgba(239,205,240,.96) 0 30px, transparent 31px),
+    linear-gradient(180deg, rgba(222,192,229,.97), rgba(166,111,192,.94) 58%, rgba(108,70,150,.9));
+  box-shadow: 0 10px 32px rgba(119,55,154,.42), inset 0 -8px 26px rgba(66,32,105,.24);
+}
+
+.sugar-cloud-threat.is-warning strong { color: #fff0ff; text-shadow: 0 1px 5px rgba(74,27,100,.75); }
+
+.sugar-cloud-threat.is-critical .sugar-cloud-body {
+  filter: brightness(.68) saturate(1.18);
+  box-shadow: 0 11px 34px rgba(95,41,135,.62), 0 0 24px rgba(240,126,227,.2);
+  animation: cloudCriticalPulse .72s ease-in-out infinite alternate;
+}
+
+.sugar-cloud-threat.is-critical .cloud-lightning {
+  opacity: 1;
+  animation: cloudLightning .56s steps(2,end) infinite;
+}
+
+.sugar-cloud-threat.is-advancing {
+  animation: cloudDrop .62s cubic-bezier(.22,.75,.18,1);
+}
+
+.cloud-shield {
+  position: absolute;
+  left: -4%;
+  right: -4%;
+  bottom: -12px;
+  height: 32px;
+  opacity: 0;
+  transform: scaleX(.9);
+  transition: opacity .22s ease, transform .22s ease;
+}
+.cloud-shield span {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(78,224,255,.9);
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(65,216,255,.06), rgba(53,123,255,.18));
+  box-shadow: 0 0 18px rgba(57,211,255,.65), inset 0 0 14px rgba(85,224,255,.24);
+}
+.sugar-cloud-threat.is-shielded .cloud-shield {
+  opacity: 1;
+  transform: scaleX(1);
+  animation: shieldIdle 1.25s ease-in-out infinite alternate;
+}
+.sugar-cloud-threat.is-shield-hit .cloud-shield {
+  opacity: 1;
+  animation: shieldHit .66s ease-out;
+}
+
+@keyframes sugarPuff { from { transform: translateY(0) scale(.95); } to { transform: translateY(5px) scale(1.08); } }
+@keyframes sugarSpark { 0%,100% { opacity:.2; transform:scale(.7); } 50% { opacity:1; transform:scale(1.3); } }
+@keyframes cloudCriticalPulse { from { transform:scale(1); } to { transform:scale(1.012); } }
+@keyframes cloudLightning { 0%,55%,100% { opacity:0; } 56%,72% { opacity:1; } }
+@keyframes cloudDrop { 0% { transform:translateY(-7px) scaleY(.96); } 54% { transform:translateY(5px) scaleY(1.025); } 100% { transform:translateY(0) scaleY(1); } }
+@keyframes shieldIdle { from { filter:brightness(.9); } to { filter:brightness(1.25); } }
+@keyframes shieldHit { 0% { transform:scaleX(.92); filter:brightness(1); } 28% { transform:scaleX(1.08) scaleY(1.32); filter:brightness(1.9); } 100% { transform:scaleX(1); filter:brightness(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sugar-cloud-threat, .sugar-cloud-threat *, .sugar-cloud-threat::before, .sugar-cloud-threat::after { animation: none !important; transition-duration: .01ms !important; }
+}
