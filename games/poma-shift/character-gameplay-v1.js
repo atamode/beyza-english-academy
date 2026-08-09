@@ -28,7 +28,7 @@
   };
 
   const POWER_LABELS = {
-    computer: 'Bilgisayar',
+    computer: 'Güvenlik Kalkanı',
     phone: 'Telefon',
     arrow: 'Ok',
     claw: 'Kurt Pençesi',
@@ -69,12 +69,14 @@
   }
 
   function syncMood() {
+    const cloudGap = Number(window.PomaShiftCloudCore?.dangerGap?.() ?? 99);
     host.classList.toggle('is-win', state.status === 'won');
     host.classList.toggle('is-lose', state.status === 'lost');
     host.classList.toggle(
       'is-danger',
-      state.status === 'playing' && state.linesTowardShift >= Math.max(0, state.shiftEvery - 1),
+      state.status === 'playing' && (cloudGap <= 2 || state.linesTowardShift >= Math.max(0, state.shiftEvery - 1)),
     );
+    host.classList.toggle('is-shield-ready', Boolean(window.PomaShiftCloudShield?.active?.()));
   }
 
   function cardPointFromBoard(col = null, row = null) {
@@ -107,6 +109,10 @@
 
   function targetForPower(power) {
     const recentPointer = lastBoardPointer && performance.now() - lastBoardPointer.at < 1400;
+    if (power === 'computer') {
+      const cloudEdge = Number(window.PomaShiftCloudCore?.cloudRows?.() || 0);
+      return cardPointFromBoard((currentStage().cols - 1) / 2, Math.min(currentStage().rows - 1, cloudEdge));
+    }
     if (recentPointer && ['pacifier', 'claw', 'arrow'].includes(power)) {
       return cardPointFromBoard(lastBoardPointer.col, lastBoardPointer.row);
     }
@@ -183,12 +189,18 @@
 
   function patchPowerCopy() {
     const boosters = window.PomaShiftMeta?.boosters;
-    if (boosters?.computer) boosters.computer.description = 'LOFT inişini 10 hamle boyunca durdurur.';
+    if (boosters?.computer) {
+      boosters.computer.name = 'Güvenlik Kalkanı';
+      boosters.computer.description = 'Şeker Bulutu’nun bir sonraki ilerlemesini dijital kalkanla engeller.';
+    }
     document.querySelectorAll('.shop-item').forEach((item) => {
-      const strong = item.querySelector('strong')?.textContent || '';
-      if (!strong.includes('Bilgisayar')) return;
-      const small = item.querySelector('small');
-      if (small && small.textContent.includes('daral')) small.textContent = 'LOFT inişini 10 hamle boyunca durdurur.';
+      const strong = item.querySelector('strong');
+      if (!strong) return;
+      if (strong.textContent === 'Bilgisayar' || strong.textContent === 'Güvenlik Kalkanı') {
+        strong.textContent = 'Güvenlik Kalkanı';
+        const small = item.querySelector('small');
+        if (small) small.textContent = 'Şeker Bulutu’nun bir sonraki ilerlemesini dijital kalkanla engeller.';
+      }
     });
   }
 
@@ -198,6 +210,13 @@
     renderCharacter(Number(level || state.level));
     return result;
   };
+
+  window.addEventListener('poma-shift:cloud-blocked', () => {
+    host.classList.remove('is-cloud-block');
+    void host.offsetWidth;
+    host.classList.add('is-cloud-block');
+    window.setTimeout(() => host.classList.remove('is-cloud-block'), 720);
+  });
 
   window.setInterval(() => {
     renderCharacter(state.level);
