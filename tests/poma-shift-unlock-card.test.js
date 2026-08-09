@@ -19,9 +19,10 @@ test('milestone unlock cards map every launch power level to the lobby product',
   }
 });
 
-test('first-clear unlock card exposes one direct shop CTA into the living lobby', async () => {
+test('first-clear unlock card exposes one explicit gift/shop CTA into the living lobby', async () => {
   const source = await read('unlock-card-v1.js');
   assert.match(source, /YENİ GÜÇ AÇILDI/);
+  assert.match(source, /İLK KULLANIM ×1 HEDİYE/);
   assert.match(source, /MAĞAZADA GÖR/);
   assert.match(source, /data-unlock-shop/);
   assert.match(source, /window\.PomaShiftLobby\.open\(\{ animate: false \}\)/);
@@ -38,6 +39,6 @@ test('loadout picker is constrained to active level preparation and cannot cover
 test('unlock card runtime and style are loaded with the current cache version', async () => {
   const index = await read('index.html');
   assert.match(index, /unlock-card-v1\.css\?v=49/);
-  assert.match(index, /unlock-card-v1\.js\?v=49/);
+  assert.match(index, /unlock-card-v1\.js\?v=61/);
   assert.ok(index.indexOf('unlock-card-v1.js') > index.indexOf('mobile-release-v2.js'));
 });
