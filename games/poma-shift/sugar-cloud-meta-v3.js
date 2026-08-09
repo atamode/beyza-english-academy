@@ -71,14 +71,25 @@
     });
   }
 
+  function latestComputerUseKey() {
+    const events = window.PomaShiftMetrics?.export?.() || [];
+    for (let i = events.length - 1; i >= 0; i -= 1) {
+      const event = events[i];
+      if (event.name === 'booster_used' && event.booster === 'computer') return `${event.at}:${event.level}`;
+    }
+    return '';
+  }
+
+  let lastComputerUse = latestComputerUseKey();
+
   window.addEventListener('poma-shift:metric', (event) => {
     const detail = event.detail || {};
     if (detail.name !== 'booster_used' || detail.booster !== 'computer') return;
+    lastComputerUse = `${detail.at}:${detail.level}`;
     armShield();
   });
 
   // Fallback for sessions where analytics dispatch is unavailable.
-  let lastComputerUse = '';
   window.setInterval(() => {
     patchCopy();
     const events = window.PomaShiftMetrics?.export?.() || [];
@@ -86,10 +97,6 @@
       const event = events[i];
       if (event.name !== 'booster_used' || event.booster !== 'computer') continue;
       const key = `${event.at}:${event.level}`;
-      if (!lastComputerUse) {
-        lastComputerUse = key;
-        break;
-      }
       if (key !== lastComputerUse) {
         lastComputerUse = key;
         armShield();
