@@ -4,6 +4,9 @@ async function openDevGame(page) {
   const pageErrors = [];
   page.on('pageerror', error => pageErrors.push(String(error)));
 
+  await page.addInitScript(() => {
+    try { localStorage.setItem('poma.analytics.consent.v1', 'denied'); } catch {}
+  });
   await page.goto('/games/poma-shift/?dev=1', { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => Boolean(window.PomaShiftMeta?.dev?.goto));
 
