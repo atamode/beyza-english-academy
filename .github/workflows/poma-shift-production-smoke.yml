@@ -62,6 +62,21 @@ jobs:
           echo 'Expected Poma Shift deployment did not reach pomante.com.tr in time.'
           exit 1
 
+      - name: Verify live Volleyball manifest and PWA precache
+        run: |
+          manifest_url='https://pomante.com.tr/assets/games/poma-volleyball-v1/asset-manifest.json?production-smoke=${{ github.event.workflow_run.head_sha }}'
+          curl -fsS --retry 5 --retry-delay 2 "$manifest_url" -o /tmp/poma-volleyball-manifest.json
+          node --input-type=module -e "
+            import fs from 'node:fs';
+            const manifest = JSON.parse(fs.readFileSync('/tmp/poma-volleyball-manifest.json', 'utf8'));
+            if (manifest.id !== 'poma-volleyball-v1') throw new Error('Unexpected volleyball manifest id');
+            for (const key of ['shotSuccess', 'shotMissed', 'defenceSuccess', 'saveSuccess', 'conceded', 'win', 'lose']) {
+              if (!manifest.events?.[key]) throw new Error('Missing volleyball event: ' + key);
+            }
+          "
+          curl -fsS --retry 5 --retry-delay 2 'https://pomante.com.tr/service-worker.js?production-smoke=${{ github.event.workflow_run.head_sha }}' \
+            | grep -Fq 'assets/games/poma-volleyball-v1/asset-manifest.json'
+
       - name: Run deployed Poma Shift Chromium flow
         run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js poma-shift-power-runtime-local.spec.js poma-shift-analytics-local.spec.js --config=playwright.live.config.mjs
 
