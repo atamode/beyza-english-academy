@@ -85,6 +85,12 @@ export function createPomaSupabaseClient(config = SUPABASE_CONFIG, fetchImpl = g
     const api = {
       select(columns = "*") { query.select = columns; return api; },
       eq(column, value) { query.filters.push(`${encodeURIComponent(column)}=eq.${encodeURIComponent(value)}`); return api; },
+      gt(column, value) { query.filters.push(`${encodeURIComponent(column)}=gt.${encodeURIComponent(value)}`); return api; },
+      in(column, values = []) {
+        const list = Array.from(values).map(value => encodeURIComponent(value)).join(",");
+        query.filters.push(`${encodeURIComponent(column)}=in.(${list})`);
+        return api;
+      },
       order(column, opts = {}) { query.orderBy = `${column}.${opts.ascending === false ? "desc" : "asc"}`; return api; },
       limit(n) { query.limitValue = n; return api; },
       single() { query.singleMode = true; return api._run("GET"); },
