@@ -9,8 +9,18 @@ async function openDevGame(page) {
   });
   await page.goto('/games/poma-shift/?dev=1', { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => Boolean(window.PomaShiftMeta?.dev?.goto));
+  await page.waitForTimeout(450);
 
   return pageErrors;
+}
+
+async function hideLobby(page) {
+  await page.evaluate(() => {
+    const lobby = document.querySelector('.poma-lobby');
+    if (lobby) lobby.hidden = true;
+    document.body.classList.remove('poma-lobby-open');
+    window.PomaShiftLobbyActive = false;
+  });
 }
 
 test('Poma Shift public page loads core game and meta UI', async ({ page }) => {
@@ -37,6 +47,7 @@ test('Poma Shift live Level 11 uses the locked full-level Rush flow', async ({ p
   const pageErrors = await openDevGame(page);
 
   await page.evaluate(() => window.PomaShiftMeta.dev.goto(11));
+  await hideLobby(page);
 
   const intro = page.locator('.rush-intro');
   await expect(intro).toBeVisible();
@@ -63,14 +74,21 @@ test('Poma Shift live Level 90 starts Sugar Cloud boss runtime', async ({ page }
   const pageErrors = await openDevGame(page);
 
   await page.evaluate(() => window.PomaShiftMeta.dev.goto(90));
+  await hideLobby(page);
   await expect(page.locator('#levelValue')).toHaveText('90');
   await expect(page.locator('.rush-intro')).toBeHidden();
 
-  await page.waitForFunction(() => window.PomaShiftMeta?.snapshot?.().runtime?.sugarTimer === true);
-  await page.waitForFunction(() => (window.PomaShiftAnalyticsBridge?.summarize?.().sugarCloudFills || 0) >= 1, null, { timeout: 5000 });
+  const picker = page.locator('.loadout-screen');
+  await expect(picker).toBeVisible({ timeout: 3000 });
+  await picker.locator('[data-picker-start]').click();
+  await expect(picker).toBeHidden({ timeout: 3000 });
+  await expect(page.locator('.boss-hud')).toBeVisible({ timeout: 3000 });
 
-  const summary = await page.evaluate(() => window.PomaShiftAnalyticsBridge.summarize());
-  expect(summary.sugarCloudFills).toBeGreaterThanOrEqual(1);
+  await page.waitForFunction(() => window.PomaShiftMeta?.snapshot?.().runtime?.sugarTimer === true);
+  await expect.poll(() => page.evaluate(() => (
+    window.PomaShiftMetrics?.export?.().filter((event) => event.name === 'sugar_cloud_fill').length || 0
+  )), { timeout: 4500 }).toBeGreaterThan(0);
+
   expect(pageErrors).toEqual([]);
 });
 
