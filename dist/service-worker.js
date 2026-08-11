@@ -94,6 +94,8 @@ const ASSETS=[
   "data/vocabulary.json",
   "data/stories/story-001.json",
   "assets/icons/icon.svg",
+  "assets/games/poma-football-v1/asset-manifest.json",
+  "assets/games/poma-volleyball-v1/asset-manifest.json",
   "data/lessons/000-quick-start.json",
   "data/lessons/001-subject-pronouns.json",
   "data/lessons/002-am-is-are.json",
