@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'games/poma-shift/**'
+      - 'tests/live-smoke/poma-shift-public.spec.js'
       - 'tests/live-smoke/poma-shift-lobby-local.spec.js'
       - 'tests/live-smoke/poma-shift-unlock-local.spec.js'
       - 'tests/live-smoke/poma-shift-boss-local.spec.js'
@@ -16,6 +17,7 @@ on:
     branches: [main]
     paths:
       - 'games/poma-shift/**'
+      - 'tests/live-smoke/poma-shift-public.spec.js'
       - 'tests/live-smoke/poma-shift-lobby-local.spec.js'
       - 'tests/live-smoke/poma-shift-unlock-local.spec.js'
       - 'tests/live-smoke/poma-shift-boss-local.spec.js'
@@ -62,7 +64,7 @@ jobs:
           exit 1
 
       - name: Run Poma Shift browser smoke
-        run: npx playwright test poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js poma-shift-power-runtime-local.spec.js poma-shift-analytics-local.spec.js --config=playwright.live.config.mjs
+        run: npx playwright test poma-shift-public.spec.js poma-shift-lobby-local.spec.js poma-shift-unlock-local.spec.js poma-shift-boss-local.spec.js poma-shift-power-runtime-local.spec.js poma-shift-analytics-local.spec.js --config=playwright.live.config.mjs
         env:
           PLAYWRIGHT_BASE_URL: http://127.0.0.1:8765
 
