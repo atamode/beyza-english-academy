@@ -8,7 +8,12 @@ import { loadState, saveState, defaultState } from "./storage.js";
 export async function restoreAccountSession(client = getSupabaseClient()) {
   const { data } = await client.auth.getSession();
   if (!data.session) return { status: "signed-out", session: null };
-  const user = data.session.user || (await client.auth.getUser()).data.user;
+  let user = data.session.user;
+  if (typeof navigator === "undefined" || navigator.onLine !== false) {
+    try { user = (await client.auth.getUser()).data.user; }
+    catch { await client.auth.signOut().catch(() => {}); return { status: "signed-out", session: null }; }
+  }
+  if (!user) return { status: "signed-out", session: null };
   const profileRes = await client.from("parent_profiles").select("*").eq("id", user.id).maybeSingle();
   const profile = profileRes.data || { id: user.id, display_name: user.email?.split("@")[0] || "Kullanıcı", account_type: user.user_metadata?.account_type || "parent" };
   browserStorage().setItem(ACCOUNT_KEYS.session, JSON.stringify({ ...data.session, user }));
