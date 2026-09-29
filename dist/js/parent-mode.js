@@ -89,6 +89,11 @@ export function parentView(state, lesson, curriculum, lessonMap = new Map(), voc
     }
   }
 
+  const choiceLog = Object.entries(state.lessonProgress || {}).flatMap(([lessonId, progress]) => {
+    const source = lessonMap.get(lessonId);
+    return (progress.choiceLog || []).map(item => ({ ...item, lessonTitle: source?.title || lessonId }));
+  }).sort((a,b) => String(b.at).localeCompare(String(a.at))).slice(0, 100);
+
   const worksheet = lesson.parentGuide.worksheet;
   const strongText = report.strongestTopic
     ? `${e(report.strongestTopic.label)} · %${Number(report.strongestTopic.percent)}`
@@ -150,6 +155,9 @@ export function parentView(state, lesson, curriculum, lessonMap = new Map(), voc
     </article>
     ${review ? `<article class="card"><h2>Modül ${e(moduleNumber)} Genel Tekrar</h2><p><strong>${review.correct}/${review.total} doğru · %${review.percent}</strong></p>${review.topics.map(topic => `<div class="analysis-row"><span>${e(topic.label)}</span><strong>${topic.correct}/${topic.total}</strong><div class="progress"><span style="width:${topic.percent}%"></span></div></div>`).join("")}</article>` : ""}
     ${reviewPool.length ? `<article class="card"><h2>Yanlış tekrar ayrıntıları</h2><ul class="clean-list">${reviewPool.map(item => `<li><strong>${e(item.lessonTitle)}</strong> — ${e(item.screenTitle)}</li>`).join("")}</ul><button class="button secondary" data-route="review-mistakes">Yanlışları çalış</button></article>` : ""}
+    <article class="card"><h2>Cevap geçmişi</h2><p>En son 100 şık seçimi; yanlış denemeler ve sonraki doğru cevaplar ayrı görünür.</p>
+      ${choiceLog.length ? choiceLog.map(item => `<details><summary>${item.correct ? "✓ Doğru" : "✕ Yanlış"} · ${e(item.lessonTitle)} · ${e(item.question)}</summary><p>Seçtiği şık: <strong>${e(item.selected)}</strong></p><p>Doğru cevap: <strong>${e(item.correctAnswer)}</strong></p><p>${e(new Date(item.at).toLocaleString("tr-TR"))}${item.round > 1 ? ` · ${Number(item.round)}. soru` : ""}</p></details>`).join("") : "<p>Henüz kaydedilmiş şık seçimi yok.</p>"}
+    </article>
     <div class="parent-sections">
       <article class="card"><h2>Bugünün hedefi</h2><p>${e(lesson.parentGuide.todayGoal)}</p><h3>Konunun mantığı</h3><p>${e(lesson.parentGuide.summaryTr)}</p></article>
       <article class="card"><h2>Anlatım notları</h2><ul class="clean-list">${lesson.parentGuide.teachingTips.map(item => `<li>${e(item)}</li>`).join("")}</ul></article>
