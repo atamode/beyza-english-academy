@@ -5,7 +5,9 @@ export function authLandingView(message = "") {
 }
 
 export function loginView(message = "") {
-  return `<section class="welcome account-auth"><article class="card"><p class="eyebrow">GİRİŞ</p><h1>Poma Academy hesabı</h1>${message ? `<p class="feedback incorrect">${e(message)}</p>` : ""}<form class="profile-form" data-account-form="login"><div class="field"><label>E-posta</label><input name="email" type="email" autocomplete="email" required></div><div class="field"><label>Şifre</label><input name="password" type="password" autocomplete="current-password" minlength="8" required></div><div class="button-row"><button class="button primary">Giriş yap</button><button type="button" class="button secondary" data-route="signup">Kayıt ol</button></div></form></article></section>`;
+  let savedEmail = "";
+  try { savedEmail = localStorage.getItem("pomaAcademy.lastLoginEmail") || ""; } catch {}
+  return `<section class="welcome account-auth"><article class="card"><p class="eyebrow">GİRİŞ</p><h1>${savedEmail ? "Kaldığın yerden devam et" : "Poma Academy hesabı"}</h1>${message ? `<p class="feedback incorrect">${e(message)}</p>` : ""}<form class="profile-form" data-account-form="login"><div class="field"><label>E-posta</label><input name="email" type="email" autocomplete="email" value="${e(savedEmail)}" required></div><div class="field"><label>Şifre</label><input name="password" type="password" autocomplete="current-password" minlength="8" required></div><div class="button-row"><button class="button primary">${savedEmail ? "Devam et" : "Giriş yap"}</button><button type="button" class="button secondary" data-route="signup">Kayıt ol</button></div></form></article></section>`;
 }
 
 export function signupView(message = "") {
