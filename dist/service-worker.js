@@ -1,4 +1,4 @@
-const CACHE="beyza-english-231df331047f";
+const CACHE="beyza-english-d02f534b53bd";
 const ASSETS=[
   "./",
   "index.html",
@@ -63,6 +63,7 @@ const ASSETS=[
   "js/lesson-engine.js",
   "js/diagnostic-engine.js",
   "js/activity-renderers.js",
+  "js/offline-tutor.js",
   "js/parent-mode.js",
   "js/review-engine.js",
   "js/vocabulary-engine.js",
