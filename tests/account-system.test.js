@@ -80,7 +80,7 @@ test("home continues directly when the signed-in account has an active profile",
   assert.equal(getActiveStudentId("family-home"), "child-home");
   const app = read("js/app.js");
   assert.match(app, /if\(isStudentRoute&&!getActiveStudentId\(account\.user\.id\)\)/);
-  assert.match(app, /if\(!state\.onboardingComplete&&r==="home"\)return welcome\(\)/);
+  assert.doesNotMatch(app, /if\(!state\.onboardingComplete&&r==="home"\)return welcome\(\)/);
   assert.match(app, /home\(\)\}/);
 });
 
