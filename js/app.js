@@ -107,7 +107,7 @@ function publicLandingView(){return `
     <article class="card landing-info-card">
       <p class="eyebrow">VELİ TAKİBİ</p>
       <h2>Veli için takip ve güven</h2>
-      <p>Veli tarafında çocuğun ilerlemesi, öğrendiği kelimeler, tamamladığı dersler, hikâyeler ve oyun durumları takip edilebilir. Satış, ödeme ve açıklama dili veli tarafında kalır; öğrenci ekranı sade öğrenme deneyimine odaklanır.</p>
+      <p>Veli tarafında çocuğun ilerlemesi, öğrendiği kelimeler, tamamladığı dersler, hikâyeler ve oyun durumları takip edilebilir. Öğrenci ekranı sade öğrenme deneyimine odaklanır.</p>
     </article>
     <article class="card landing-info-card">
       <p class="eyebrow">SPOR MİNİ OYUNLARI</p>

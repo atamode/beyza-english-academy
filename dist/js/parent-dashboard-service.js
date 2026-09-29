@@ -1,4 +1,3 @@
-import {createPaymentService} from "./payment-service.js";
 import {createLearningReportService} from "./learning-report-service.js";
 import {createStudentRepository} from "./student-repository.js";
 
@@ -30,10 +29,10 @@ export function summarizeProgress(row){
   return {lastCompletedLesson:completed?completed[0]:null,currentLesson:current?current[0]:null,lastActivity:stories[0]?.completedAt?"Son hikâye etkinliği tamamlandı":null};
 }
 
-export function createParentDashboardService({client,paymentService=createPaymentService(client),reportService=createLearningReportService(client),studentRepository=createStudentRepository(client)}={}){
+export function createParentDashboardService({client,reportService=createLearningReportService(client),studentRepository=createStudentRepository(client)}={}){
   return {async load(userId,childId){
-    const results=await Promise.allSettled([paymentService.listMyPayments(userId),reportService.listReportPage("weekly",childId,0,1),reportService.listReportPage("monthly",childId,0,1),studentRepository.getStudentState(childId)]);
-    const value=(index,fallback)=>results[index].status==="fulfilled"?results[index].value:fallback,payments=value(0,[]),weekly=value(1,{rows:[]}).rows?.[0]||null,monthly=value(2,{rows:[]}).rows?.[0]||null,subscription=effectiveSubscription(payments);
-    return {payments,subscription,weekly,monthly,progress:summarizeProgress(value(3,null)),partial:results.some(result=>result.status==="rejected"),priority:selectParentPriority({payments,subscription,weekly,monthly})};
+    const results=await Promise.allSettled([reportService.listReportPage("weekly",childId,0,1),reportService.listReportPage("monthly",childId,0,1),studentRepository.getStudentState(childId)]);
+    const value=(index,fallback)=>results[index].status==="fulfilled"?results[index].value:fallback,weekly=value(0,{rows:[]}).rows?.[0]||null,monthly=value(1,{rows:[]}).rows?.[0]||null;
+    return {weekly,monthly,progress:summarizeProgress(value(2,null)),partial:results.some(result=>result.status==="rejected"),priority:selectParentPriority({weekly,monthly})};
   }};
 }
