@@ -60,6 +60,26 @@ export function createPomaSupabaseClient(config = SUPABASE_CONFIG, fetchImpl = g
       const data = await request("/auth/v1/token?grant_type=password", { method: "POST", body: JSON.stringify({ email, password }) });
       return { data: { user: data.user, session: auth.persistSession(data) }, error: null };
     },
+    async resetPasswordForEmail(email, { redirectTo } = {}) {
+      await request(`/auth/v1/recover?redirect_to=${encodeURIComponent(redirectTo)}`, { method: "POST", body: JSON.stringify({ email }) });
+      return { error: null };
+    },
+    async acceptRecoveryLink() {
+      const fragment = new URLSearchParams(globalThis.location?.hash?.slice(1) || "");
+      if (fragment.get("type") !== "recovery" || !fragment.get("access_token") || !fragment.get("refresh_token")) return false;
+      const session = { access_token: fragment.get("access_token"), refresh_token: fragment.get("refresh_token") };
+      auth.persistSession(session);
+      try {
+        const user = await request("/auth/v1/user");
+        auth.persistSession({ ...session, user });
+        globalThis.history.replaceState(null, "", `${globalThis.location.pathname}#/reset-password`);
+        return true;
+      } catch (error) { auth.persistSession(null); throw error; }
+    },
+    async updateUser({ password }) {
+      const user = await request("/auth/v1/user", { method: "PUT", body: JSON.stringify({ password }) });
+      return { data: { user }, error: null };
+    },
     async getSession() {
       const session = auth.getStoredSession();
       if (!session?.access_token) return { data: { session: null }, error: null };

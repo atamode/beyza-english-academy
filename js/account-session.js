@@ -64,6 +64,16 @@ export async function signOut(client = getSupabaseClient()) {
   }
 }
 
+export async function requestPasswordReset(email, client = getSupabaseClient()) {
+  const redirectTo = `${location.origin}${location.pathname}`;
+  return client.auth.resetPasswordForEmail(email, { redirectTo });
+}
+
+export async function completePasswordReset(password, client = getSupabaseClient()) {
+  if (String(password || "").length < 8) throw new Error("Şifre en az 8 karakter olmalı.");
+  return client.auth.updateUser({ password });
+}
+
 export async function loadChildrenForSession(account, repo = createStudentRepository()) {
   if (!account?.user) return [];
   const remote = await repo.listChildrenForAccount(account.user.id, account.profile?.account_type || "parent");

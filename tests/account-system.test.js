@@ -40,6 +40,22 @@ test("central Supabase client persists session without caching schema changes", 
   assert.ok(calls[0].url.includes("/auth/v1/token"));
 });
 
+test("password recovery sends a link and updates the password only with the recovery session", async () => {
+  const calls = [];
+  const client = createPomaSupabaseClient(SUPABASE_CONFIG, async (url, init = {}) => {
+    calls.push({ url: String(url), init });
+    return { ok: true, text: async () => JSON.stringify({ id: "student-1" }) };
+  });
+  await client.auth.resetPasswordForEmail("student@example.com", { redirectTo: "https://example.com/" });
+  assert.match(calls[0].url, /\/auth\/v1\/recover\?redirect_to=/);
+  assert.equal(JSON.parse(calls[0].init.body).email, "student@example.com");
+  client.auth.setSession({ access_token: "recovery-token" });
+  await client.auth.updateUser({ password: "new-password-123" });
+  assert.match(calls[1].url, /\/auth\/v1\/user$/);
+  assert.equal(calls[1].init.headers.Authorization, "Bearer recovery-token");
+  assert.equal(calls[1].init.method, "PUT");
+});
+
 test("Supabase select chains execute when awaited", async () => {
   const calls = [];
   const client = createPomaSupabaseClient(SUPABASE_CONFIG, async (url, init = {}) => {
@@ -80,7 +96,7 @@ test("home continues directly when the signed-in account has an active profile",
   assert.equal(getActiveStudentId("family-home"), "child-home");
   const app = read("js/app.js");
   assert.match(app, /if\(isStudentRoute&&!getActiveStudentId\(account\.user\.id\)\)/);
-  assert.match(app, /if\(!state\.onboardingComplete&&r==="home"\)return welcome\(\)/);
+  assert.doesNotMatch(app, /if\(!state\.onboardingComplete&&r==="home"\)return welcome\(\)/);
   assert.match(app, /home\(\)\}/);
 });
 
